@@ -1,0 +1,19 @@
+@abstract(Simple gui engine)
+
+This is a simple gui engine that uses function calls for describing the controls
+
+@bold(Sample)
+  @longcode(#
+  Gui:= TPHXSimpleGUI.Create(Canvas, Skin, Font);
+  ...
+  Gui.Prepare;
+  // Render a button
+  if Gui.Button(120, 185, 111, 29, 'Button1') then
+  begin
+    // The button is pressed
+  end;
+  Gui.Finish;
+#)
+
+Based on Sol on Immediate Mode GUIs (IMGUI) at
+http://iki.fi/sol/imgui/
