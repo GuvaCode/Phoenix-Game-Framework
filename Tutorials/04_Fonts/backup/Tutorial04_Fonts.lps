@@ -3,9 +3,9 @@
   <ProjectSession>
     <Version Value="11"/>
     <BuildModes Active="Default"/>
-    <Units Count="3">
+    <Units Count="2">
       <Unit0>
-        <Filename Value="Tutorial03_Animation.dpr"/>
+        <Filename Value="Tutorial04_Fonts.dpr"/>
         <IsPartOfProject Value="True"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
@@ -17,33 +17,17 @@
         <HasResources Value="True"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="65"/>
-        <CursorPos X="9" Y="76"/>
+        <TopLine Value="19"/>
+        <CursorPos X="18" Y="65"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit1>
-      <Unit2>
-        <Filename Value="../../Source/Providers/phxOpenGL_GLFW3.pas"/>
-        <EditorIndex Value="2"/>
-        <CursorPos X="21"/>
-        <UsageCount Value="10"/>
-        <Loaded Value="True"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
-      </Unit2>
     </Units>
-    <JumpHistory Count="3" HistoryIndex="2">
+    <JumpHistory Count="1">
       <Position1>
-        <Filename Value="Tutorial03_Animation.dpr"/>
+        <Filename Value="Tutorial04_Fonts.dpr"/>
       </Position1>
-      <Position2>
-        <Filename Value="Main.pas"/>
-        <Caret Line="24" Column="2" TopLine="102"/>
-      </Position2>
-      <Position3>
-        <Filename Value="Main.pas"/>
-        <Caret Line="66" Column="18" TopLine="50"/>
-      </Position3>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>

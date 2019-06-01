@@ -15,9 +15,7 @@
         <Filename Value="Main.pas"/>
         <IsPartOfProject Value="True"/>
         <HasResources Value="True"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="65"/>
         <CursorPos X="9" Y="76"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
@@ -25,6 +23,7 @@
       </Unit1>
       <Unit2>
         <Filename Value="../../Source/Providers/phxOpenGL_GLFW3.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
         <CursorPos X="21"/>
         <UsageCount Value="10"/>
