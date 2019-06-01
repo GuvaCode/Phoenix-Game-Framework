@@ -4,20 +4,21 @@
     <PathDelim Value="\"/>
     <Version Value="11"/>
     <BuildModes Active="Default"/>
-    <Units Count="17">
+    <Units Count="18">
       <Unit0>
         <Filename Value="Tutorial01_Basic.dpr"/>
         <IsPartOfProject Value="True"/>
-        <CursorPos X="10" Y="5"/>
+        <EditorIndex Value="1"/>
+        <CursorPos Y="16"/>
         <UsageCount Value="20"/>
+        <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit0>
       <Unit1>
         <Filename Value="Main.pas"/>
         <IsPartOfProject Value="True"/>
         <HasResources Value="True"/>
-        <TopLine Value="16"/>
-        <CursorPos X="10" Y="24"/>
+        <CursorPos X="3" Y="62"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
@@ -32,9 +33,9 @@
       </Unit2>
       <Unit3>
         <Filename Value="..\..\Source\phxDevice.pas"/>
-        <EditorIndex Value="1"/>
-        <TopLine Value="541"/>
-        <CursorPos X="11" Y="550"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="478"/>
+        <CursorPos X="28" Y="553"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
@@ -61,16 +62,15 @@
       </Unit6>
       <Unit7>
         <Filename Value="..\..\Source\phxGraphics_DDS.pas"/>
-        <EditorIndex Value="6"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="407"/>
         <CursorPos X="27" Y="425"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit7>
       <Unit8>
         <Filename Value="..\..\Source\phxGraphics_Vampyre.pas"/>
-        <EditorIndex Value="7"/>
+        <EditorIndex Value="5"/>
         <TopLine Value="24"/>
         <CursorPos X="9" Y="37"/>
         <UsageCount Value="10"/>
@@ -79,7 +79,7 @@
       </Unit8>
       <Unit9>
         <Filename Value="..\..\Source\phxProviderSelector.pas"/>
-        <EditorIndex Value="8"/>
+        <EditorIndex Value="6"/>
         <TopLine Value="20"/>
         <CursorPos X="3" Y="33"/>
         <UsageCount Value="10"/>
@@ -96,7 +96,8 @@
       </Unit10>
       <Unit11>
         <Filename Value="..\..\Source\phxTranslation.pas"/>
-        <EditorIndex Value="9"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="7"/>
         <TopLine Value="198"/>
         <CursorPos X="8" Y="198"/>
         <UsageCount Value="10"/>
@@ -113,100 +114,88 @@
       </Unit12>
       <Unit13>
         <Filename Value="..\..\Source\Providers\phxOpenGL_GLFW3.pas"/>
-        <EditorIndex Value="5"/>
-        <CursorPos X="21"/>
+        <EditorIndex Value="3"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit13>
       <Unit14>
         <Filename Value="..\..\Source\phxConfig.inc"/>
-        <EditorIndex Value="4"/>
+        <EditorIndex Value="-1"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit14>
       <Unit15>
         <Filename Value="..\..\Source\Providers\phxOpenGL.pas"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="34"/>
         <CursorPos X="13" Y="44"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit15>
       <Unit16>
         <Filename Value="..\..\Source\Headers\FreeImage.inc"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="161"/>
         <CursorPos Y="42"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit16>
+      <Unit17>
+        <Filename Value="..\..\Source\Headers\GLFW3.pas"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="4"/>
+        <CursorPos X="27" Y="14"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit17>
     </Units>
-    <JumpHistory Count="16" HistoryIndex="15">
+    <JumpHistory Count="12" HistoryIndex="11">
       <Position1>
         <Filename Value="Main.pas"/>
         <Caret Line="42" Column="23" TopLine="25"/>
       </Position1>
       <Position2>
-        <Filename Value="..\..\Source\phxGraphics_DDS.pas"/>
+        <Filename Value="..\..\Source\phxGraphics_Vampyre.pas"/>
       </Position2>
       <Position3>
-        <Filename Value="..\..\Source\phxGraphics_DDS.pas"/>
-        <Caret Line="326" Column="31" TopLine="305"/>
-      </Position3>
-      <Position4>
-        <Filename Value="..\..\Source\phxGraphics_DDS.pas"/>
-        <Caret Line="269" Column="41" TopLine="255"/>
-      </Position4>
-      <Position5>
-        <Filename Value="..\..\Source\phxGraphics_DDS.pas"/>
-        <Caret Line="328" Column="45" TopLine="315"/>
-      </Position5>
-      <Position6>
-        <Filename Value="..\..\Source\phxGraphics_DDS.pas"/>
-        <Caret Line="425" Column="43" TopLine="400"/>
-      </Position6>
-      <Position7>
-        <Filename Value="..\..\Source\phxGraphics_DDS.pas"/>
-        <Caret Line="413" Column="27" TopLine="400"/>
-      </Position7>
-      <Position8>
-        <Filename Value="..\..\Source\phxGraphics_Vampyre.pas"/>
-      </Position8>
-      <Position9>
         <Filename Value="..\..\Source\phxGraphics_Vampyre.pas"/>
         <Caret Line="37" Column="2" TopLine="23"/>
-      </Position9>
-      <Position10>
+      </Position3>
+      <Position4>
         <Filename Value="..\..\Source\phxProviderSelector.pas"/>
-      </Position10>
-      <Position11>
+      </Position4>
+      <Position5>
         <Filename Value="..\..\Source\phxTranslation.pas"/>
-      </Position11>
-      <Position12>
+      </Position5>
+      <Position6>
         <Filename Value="..\..\Source\phxTranslation.pas"/>
         <Caret Line="583" Column="2" TopLine="563"/>
-      </Position12>
-      <Position13>
+      </Position6>
+      <Position7>
         <Filename Value="Main.pas"/>
         <Caret Line="24" Column="10" TopLine="16"/>
-      </Position13>
-      <Position14>
+      </Position7>
+      <Position8>
         <Filename Value="..\..\Source\phxDevice.pas"/>
         <Caret Line="654" Column="5" TopLine="166"/>
-      </Position14>
-      <Position15>
+      </Position8>
+      <Position9>
         <Filename Value="..\..\Source\phxDevice.pas"/>
         <Caret Line="548" Column="14" TopLine="541"/>
-      </Position15>
-      <Position16>
-        <Filename Value="..\..\Source\Providers\phxOpenGL.pas"/>
-        <Caret Line="44" Column="13" TopLine="34"/>
-      </Position16>
+      </Position9>
+      <Position10>
+        <Filename Value="Main.pas"/>
+        <Caret Line="71" Column="9" TopLine="60"/>
+      </Position10>
+      <Position11>
+        <Filename Value="Main.pas"/>
+        <Caret Line="62" Column="37" TopLine="42"/>
+      </Position11>
+      <Position12>
+        <Filename Value="..\..\Source\Providers\phxOpenGL_GLFW3.pas"/>
+      </Position12>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>

@@ -59,8 +59,8 @@ implementation
 
 uses
   //phxOpenGL_SDL,
-   phxOpenGL_GLFW3,
-  phxGraphics_FreeImage;
+   phxOpenGL_GLFW3,   //libglfw.so.3
+  phxGraphics_FreeImage;  //libfreeimage.so.3
 
 //------------------------------------------------------------------------------
 procedure TGame.Init;
@@ -68,7 +68,7 @@ begin
   // Creates the device with the renderer from phxProvider_OpenGL_SDL.pas
   Device:= TPHXDevice.Create;
   // This loads a new icon for the window
-  Device.Window.Icon:= ContentPath + 'Phoenix.bmp';
+  Device.Icon:= ContentPath + 'Phoenix.bmp';
   // Initialize the window with a width of 800 and a height of 600 pixels
   Device.Initialize('Phoenix Demo', 800, 600);;
 

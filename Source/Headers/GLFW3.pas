@@ -11,7 +11,7 @@ const
     {$IFDEF DARWIN}
   GLFW3_LIB = 'libglfw3.dylib';
     {$ELSE}
-  GLFW3_LIB = 'libglfw3.so';
+  GLFW3_LIB = 'libglfw.so.3';
     {$ENDIF}
 {$ENDIF}
   _PU = '';

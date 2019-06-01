@@ -58,9 +58,9 @@ TGame = class(TPHXApplication)
 implementation
 
 uses
-  //phxOpenGL_SDL,
-   phxOpenGL_GLFW3,
-  phxGraphics_FreeImage;
+
+  phxOpenGL_GLFW3,   //libglfw.so.3
+  phxGraphics_FreeImage;  //libfreeimage.so.3
 
 //------------------------------------------------------------------------------
 procedure TGame.Init;
