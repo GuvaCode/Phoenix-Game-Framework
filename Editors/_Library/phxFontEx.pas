@@ -1,18 +1,10 @@
 unit phxFontEx;
 
-{$IFDEF FPC}
-  {$MODE Delphi}
-{$ENDIF}
-
 interface
 
-uses
-{$IFnDEF FPC}
-  XMLDoc, XMLIntf, xmldom,
-{$ELSE}
-{$ENDIF}
-  Graphics, Dialogs, SysUtils, Types,
+uses Graphics, Dialogs, SysUtils, Types,
 
+  xmldom, XMLIntf, XMLDoc,
 
   //phxGraphics,
   phxGraphics,

@@ -1,9 +1,5 @@
 Unit Partitions;
 
-{$IFDEF FPC}
-  {$MODE Delphi}
-{$ENDIF}
-
 Interface
 
 uses Types;

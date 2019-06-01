@@ -1,20 +1,14 @@
 unit uGenerator.Debug;
 
-{$IFDEF FPC}
-  {$MODE Delphi}
-{$ENDIF}
-
 interface
 
 uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs,
 
-{$IFnDEF FPC}
-  Vcl.StdCtrls, Vcl.Dialogs, Vcl.Forms, Vcl.Controls, Vcl.Graphics, System.Classes, System.Variants, System.SysUtils, Winapi.Messages, Winapi.Windows, Vcl.ExtCtrls,
-{$ELSE}
-{$ENDIF}
   phxFont,
 
-  uGenerator;
+  uGenerator, Vcl.StdCtrls, Vcl.ExtCtrls;
 
 type
   TFrmGeneratorDebug = class(TForm)
@@ -38,11 +32,7 @@ var
 
 implementation
 
-{$IFnDEF FPC}
-  {$R *.dfm}
-{$ELSE}
-  {$R *.lfm}
-{$ENDIF}
+{$R *.dfm}
 
 procedure TFrmGeneratorDebug.SetGenerator(const Value: TPHXFontGenerator);
 var Index: Integer;

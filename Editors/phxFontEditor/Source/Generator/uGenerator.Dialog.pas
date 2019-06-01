@@ -1,22 +1,14 @@
 unit uGenerator.Dialog;
 
-{$IFDEF FPC}
-  {$MODE Delphi}
-{$ENDIF}
-
 interface
 
 uses
-{$IFnDEF FPC}
-  XMLDoc, msxmldom, XMLIntf, xmldom, JvSpin, JvExMask, Vcl.ImgList, Mask, Windows,
-{$ELSE}
-  MaskEdit, LCLIntf, LCLType, LMessages,
-{$ENDIF}
-  Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, ComCtrls, StdCtrls, ExtCtrls, Buttons, Math,
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, ComCtrls, StdCtrls, ExtCtrls, Buttons, Mask, JvExMask, JvSpin , Math,
 
   Generics.Collections,
 
+  xmldom, XMLIntf, msxmldom, XMLDoc,
 
 //  phxGraphics,
   phxGraphicsEx,
@@ -25,7 +17,7 @@ uses
   phxFontEx,
 
   uGenerator,
-  uGenerator.Characters;
+  uGenerator.Characters, Vcl.ImgList;
 
 type
 
@@ -109,11 +101,7 @@ var
 
 implementation
 
-{$IFnDEF FPC}
-  {$R *.dfm}
-{$ELSE}
-  {$R *.lfm}
-{$ENDIF}
+{$R *.dfm}
 
 uses uGenerator.Debug;
 
@@ -193,7 +181,7 @@ Begin
       Inc(BmpCopyRGB);
     End;
   End;
-  // Alle Bildpunkte zurÃ¼ck ins Bmp-Bitmap schreiben und gleichzeitig VERTIKAL blurren
+  // Alle Bildpunkte zurück ins Bmp-Bitmap schreiben und gleichzeitig VERTIKAL blurren
   For y:=0 To Pred(BmpHeight) Do Begin
     BmpRGB:=Bmp.ScanLine[y];
     For x:=0 to Pred(BmpWidth) Do Begin

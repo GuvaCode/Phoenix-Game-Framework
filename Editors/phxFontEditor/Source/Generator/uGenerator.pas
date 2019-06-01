@@ -1,23 +1,15 @@
 unit uGenerator;
 
-{$IFDEF FPC}
-  {$MODE Delphi}
-{$ENDIF}
-
 interface
 
 uses
-{$IFnDEF FPC}
-  XMLDoc, msxmldom, XMLIntf, xmldom, Windows,
-{$ELSE}
-  LCLIntf, LCLType, LMessages,
-{$ENDIF}
-  Types, Classes, Graphics, Math,
+  Types, Classes, Windows, Graphics, Math,
 //  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
 //  Dialogs, ComCtrls, StdCtrls, ExtCtrls, Buttons, Mask, JvExMask, JvSpin , Math,
 
   Generics.Collections,
 
+  xmldom, XMLIntf, msxmldom, XMLDoc,
 
 //  phxGraphics,
   phxGraphicsEx,

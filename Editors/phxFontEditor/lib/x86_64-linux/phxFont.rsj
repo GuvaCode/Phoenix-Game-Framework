@@ -1,4 +1,0 @@
-{"version":1,"strings":[
-{"hash":85843534,"name":"phxfont.sversionerror","sourcebytes":[70,111,110,116,32,118,101,114,115,105,111,110,32,109,105,115,115,109,97,116,99,104,58,32,70,105,108,101,58,32,37,100,44,32,32,67,111,100,101,58,32,37,100,46],"value":"Font version missmatch: File: %d,  Code: %d."},
-{"hash":96368414,"name":"phxfont.sformaterror","sourcebytes":[78,111,116,32,97,32,118,97,108,105,100,32,80,104,111,101,110,105,120,32,102,111,110,116,46],"value":"Not a valid Phoenix font."}
-]}

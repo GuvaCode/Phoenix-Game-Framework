@@ -1,18 +1,8 @@
 unit phxGraphicsEx;
 
-{$IFDEF FPC}
-  {$MODE Delphi}
-{$ENDIF}
-
 interface
 
-uses
-{$IFnDEF FPC}
-  Windows,
-{$ELSE}
-  LCLIntf, LCLType, LMessages,
-{$ENDIF}
-  Graphics, Types, Classes, SysUtils, Controls, ImgList,
+uses Windows, Graphics, Types, Classes, SysUtils, Controls, ImgList,
 
   phxGraphics,
   phxTexture,

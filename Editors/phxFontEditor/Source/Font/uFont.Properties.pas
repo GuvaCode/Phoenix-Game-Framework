@@ -1,24 +1,15 @@
 unit uFont.Properties;
 
-{$IFDEF FPC}
-  {$MODE Delphi}
-{$ENDIF}
-
 interface
 
 uses
-{$IFnDEF FPC}
-  JvSpin, JvExMask, JvToolEdit, Mask, Windows,
-{$ELSE}
-  MaskEdit, LCLIntf, LCLType, LMessages,
-{$ENDIF}
-  Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, StdCtrls, ExtCtrls, TypInfo,
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms, 
+  Dialogs, StdCtrls, Mask, JvExMask, JvSpin, ExtCtrls, TypInfo,
 
 
   phxGraphics,
   phxFont,
-  phxFontEx;
+  phxFontEx, JvToolEdit;
 
 type
   TFrmFontProperties = class(TFrame)
@@ -90,11 +81,7 @@ type
 
 implementation
 
-{$IFnDEF FPC}
-  {$R *.dfm}
-{$ELSE}
-  {$R *.lfm}
-{$ENDIF}
+{$R *.dfm}
 
 uses uActions, uFont.WrapChars;
 

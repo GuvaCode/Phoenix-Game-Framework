@@ -1,19 +1,10 @@
 unit uCharacter.Detail;
 
-{$IFDEF FPC}
-  {$MODE Delphi}
-{$ENDIF}
-
 interface
 
 uses
-{$IFnDEF FPC}
-  JvExMask, JvSpin, Mask, Windows,
-{$ELSE}
-  MaskEdit, LCLIntf, LCLType, LMessages,
-{$ENDIF}
-  Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, StdCtrls, Spin, ExtCtrls,
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms, 
+  Dialogs, StdCtrls, Spin, ExtCtrls, Mask, JvExMask, JvSpin,
 
   phxGraphics,
   phxGraphicsEx,
@@ -77,11 +68,7 @@ type
 
 implementation
 
-{$IFnDEF FPC}
-  {$R *.dfm}
-{$ELSE}
-  {$R *.lfm}
-{$ENDIF}
+{$R *.dfm}
 
 uses uActions;
 

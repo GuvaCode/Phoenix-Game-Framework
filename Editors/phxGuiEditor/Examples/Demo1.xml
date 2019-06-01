@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<project name="Gui" background="background.png" skin="Default.phxskn" font="Calibri12.phxfnt">
+  <window name="Window" x="30" y="18" width="320" height="240"/>
+  <button name="Button1" x="60" y="49" width="120" height="40" text="Button" event=""/>
+  <button name="Button2" x="188" y="47" width="120" height="40" text="Button" event=""/>
+</project>

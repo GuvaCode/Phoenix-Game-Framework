@@ -1,21 +1,13 @@
 unit uActions;
 
-{$IFDEF FPC}
-  {$MODE Delphi}
-{$ENDIF}
-
 interface
 
 uses
-{$IFnDEF FPC}
-  xmldom, XMLIntf, msxmldom, XMLDoc, Windows,
-{$ELSE}
-  LCLIntf, LCLType, LMessages,
-{$ENDIF}
-  SysUtils, Classes, Dialogs, ImgList, Controls, Menus, Forms, ActnList,
+  SysUtils, Classes, Dialogs, ImgList, Controls, Menus, Forms, ActnList, Windows,
 
   Generics.Collections,
 
+  xmldom, XMLIntf, msxmldom, XMLDoc,
 
 
   phxFont,
@@ -199,11 +191,7 @@ resourcestring
 
   SRenameFont = 'The font name "%s" doesnt match the filename.'#13'Do you want to rename the font to "%s" before saving?';
 
-{$IFnDEF FPC}
-  {$R *.dfm}
-{$ELSE}
-  {$R *.lfm}
-{$ENDIF}
+{$R *.dfm}
 
 
 //------------------------------------------------------------------------------

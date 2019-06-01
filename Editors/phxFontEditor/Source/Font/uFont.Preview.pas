@@ -1,18 +1,9 @@
 unit uFont.Preview;
 
-{$IFDEF FPC}
-  {$MODE Delphi}
-{$ENDIF}
-
 interface
 
 uses
-{$IFnDEF FPC}
-  Vcl.Menus, Windows,
-{$ELSE}
-  LCLIntf, LCLType, LMessages,
-{$ENDIF}
-  Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms, 
   Dialogs, ExtCtrls, StdCtrls,
 
   phxTypes,
@@ -21,7 +12,7 @@ uses
   phxGraphicsEx,
 
   phxFont,
-  phxFontEx;
+  phxFontEx, Vcl.Menus;
 
 type
   TFrmFontPreview = class(TFrame)
@@ -60,11 +51,7 @@ type
 
 implementation
 
-{$IFnDEF FPC}
-  {$R *.dfm}
-{$ELSE}
-  {$R *.lfm}
-{$ENDIF}
+{$R *.dfm}
 
 //const COLOR_BACKGROUND1 = $00D8D8D8;
 //const COLOR_BACKGROUND2 = $00C0C0C0;

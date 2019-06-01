@@ -1,14 +1,6 @@
 program phxFontEditor;
 
-{$IFDEF FPC}
-  {$MODE Delphi}
-{$ENDIF}
-
 uses
-{$IFnDEF FPC}
-{$ELSE}
-  Interfaces,
-{$ENDIF}
   Forms,
   uMain in 'Source\uMain.pas' {FrmMain},
   uActions in 'Source\uActions.pas' {ModActions: TDataModule},

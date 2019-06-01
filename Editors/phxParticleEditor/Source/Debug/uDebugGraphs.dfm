@@ -1,0 +1,29 @@
+object FrmDebugGraphs: TFrmDebugGraphs
+  Left = 0
+  Top = 0
+  Caption = 'FrmDebugGraphs'
+  ClientHeight = 300
+  ClientWidth = 635
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object sgGraph: TStringGrid
+    Left = 0
+    Top = 0
+    Width = 635
+    Height = 300
+    Align = alClient
+    DefaultRowHeight = 16
+    TabOrder = 0
+    ExplicitLeft = 24
+    ExplicitTop = 8
+    ExplicitWidth = 320
+    ExplicitHeight = 120
+  end
+end
