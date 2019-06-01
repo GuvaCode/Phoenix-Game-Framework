@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.144,=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\_Library\phxImageDialog.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.282,=C:\Mina Dokument\Delphi\Phoenix\Editors\phxEditorLibrary\Phoenix.Design.Draw.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.827,C:\Mina Dokument\Delphi\Phoenix\Editors\phxEditorLibrary\Phoenix.Design.Draw.pas=C:\Mina Dokument\Delphi\Phoenix\Editors\phxEditorLibrary\phxDraw.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.466,C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\_Library\phxColorEditor.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.130,=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\_Library\phxFontEx.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.151,=vcl.dcp</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.468,C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\_Library\phxEditor.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.898,=C:\Mina Dokument\Delphi\Phoenix\Design\Editors\_Library\phxEditor.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.259,C:\Users\andrlago\Documents\RAD Studio\Projects\Package1.dproj=C:\Mina Dokument\Delphi\Phoenix\Editors\phxEditorLibrary\phxEditorLibrary.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.659,=C:\Mina Dokument\Delphi\Phoenix\Design\Source\Renderer.OpenGL\Library\dglOpenGL.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.998,=C:\Mina Dokument\Delphi\Phoenix\Design\Source\Renderer.OpenGL\Library\dglOpenGL.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.124,=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\_Library\phxEditor.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.610,=C:\Mina Dokument\Delphi\Phoenix\Editors\phxEditorLibrary\phxColorEditor.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.113,=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\_Library\phxTextureDialog.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.018,C:\Mina Dokument\Delphi\Phoenix\Editors\phxEditorLibrary\phxDraw.pas=C:\Mina Dokument\Delphi\Phoenix\Editors\phxEditorLibrary\Phoenix.Draw.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.136,=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\_Library\phxGraphicsEx.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.274,=C:\Mina Dokument\Delphi\Phoenix\Design\Source\Renderer.OpenGL\Library\sdl.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.335,C:\Mina Dokument\Delphi\Phoenix\Design\Source\Renderer.OpenGL\Library\sdl.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.718,C:\Mina Dokument\Delphi\Phoenix\Editors\phxEditorLibrary\Phoenix.Draw.pas=C:\Mina Dokument\Delphi\Phoenix\Editors\phxEditorLibrary\Phoenix.Renderer.Draw.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.997,=rtl.dcp</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.119,=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\_Library\phxColorEditor.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.503,=xmlrtl.dcp</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.281,=C:\Mina Dokument\Delphi\Phoenix\Design\Source\Renderer.OpenGL\Phoenix.Renderer.OpenGL.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.459,=C:\Mina Dokument\Delphi\Phoenix\Design\Source\Renderer.OpenGL\Phoenix.Renderer.OpenGL.pas</Transaction>
+  </Transactions>
+</BorlandProject>
