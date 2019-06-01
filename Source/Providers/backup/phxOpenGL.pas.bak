@@ -38,10 +38,9 @@ uses
 
   phxCanvas,
   phxEffect,
-  phxTexture
-  {$IFDEF Windows}
-  ,Windows
-  {$ENDIF};
+  phxTexture,
+
+  Windows;
 
 // const
 //  FLAG_RENDER_SDL = 100;

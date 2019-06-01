@@ -39,6 +39,9 @@
 //test for compiler
 {$IFDEF FPC}
   //Free pascal
+  {$IFNDEF CPU32}
+    {$ERROR "64 bit platforms not tested yet. Remove this line if you feel brave."}
+  {$ENDIF}
   {$IFNDEF ENDIAN_LITTLE}
     {$ERROR "Big endian CPUs not tested yet. Remove this line if you feel brave."}
   {$ENDIF}

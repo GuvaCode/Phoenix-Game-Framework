@@ -544,10 +544,6 @@ procedure EnumProviders(const Providers: TStrings);
 function CreateProvider(const ProviderName: String): TPHXProvider;
 
 implementation
-{$IFDEF FPC}
-uses dynlibs;
-{$ENDIF}
-
 
 resourcestring
   SRendererNotLoaded = 'The renderer is not loaded.';
