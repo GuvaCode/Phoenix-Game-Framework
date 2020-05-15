@@ -24,10 +24,10 @@ interface
 {$I phxConfig.inc}
 
 uses SysUtils,
-  // Basic phoenix types
-  phxTypes,
-  // Contains phoenix utility classes
-  phxClasses,
+
+  phxTypes,// Basic phoenix types
+
+  phxClasses,// Contains phoenix utility classes
   // Math functions
   phxMath,
   // Device

@@ -1,0 +1,4 @@
+{"version":1,"strings":[
+{"hash":111967184,"name":"phxconsole.sunknowncommand","sourcebytes":[85,110,107,110,111,119,110,32,99,111,109,109,97,110,100,58,32],"value":"Unknown command: "},
+{"hash":241044531,"name":"phxconsole.sinvalidparameters","sourcebytes":[73,110,118,97,108,105,100,32,112,97,114,97,109,101,116,101,114,115],"value":"Invalid parameters"}
+]}

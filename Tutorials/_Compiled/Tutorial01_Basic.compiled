@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="/usr/bin/fpc" Date="1540814642"/>
+  <Params Value=" -MDelphi -Scghi -Cg -O1 -g -gl -l -vewnhibq -Fi/home/vadim/Проекты/PGF/Source -Fi/home/vadim/Проекты/PGF/Tutorials/_Compiled -Fu/home/vadim/Проекты/PGF/Source -Fu/home/vadim/Проекты/PGF/Source/Providers -Fu/home/vadim/Проекты/PGF/Source/Headers -Fu/usr/share/lazarus/2.0.8/lcl/units/x86_64-linux -Fu/usr/share/lazarus/2.0.8/components/lazutils/lib/x86_64-linux -Fu/usr/share/lazarus/2.0.8/packager/units/x86_64-linux -Fu/home/vadim/Проекты/PGF/Tutorials/01_Basic/ -FU/home/vadim/Проекты/PGF/Tutorials/_Compiled/ -FE/home/vadim/Проекты/PGF/Tutorials/_Binary/ -o/home/vadim/Проекты/PGF/Tutorials/_Binary/Tutorial01_Basic Tutorial01_Basic.dpr"/>
+</CONFIG>
