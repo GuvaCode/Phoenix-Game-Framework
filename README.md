@@ -10,7 +10,7 @@ One of the main features over other similar engines is the editors that helps in
 Phoenix is mainly developed and tested on Linux, but Windows or MacOS is supported and due to the plugin nature of the engine adding support for other platforms is relatively easy.
 
 
-###Compilation of PGF in different OS's
+##Compilation of PGF in different OS's
 
 **GNU/Linux**
 
