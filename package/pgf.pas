@@ -8,15 +8,15 @@ unit pgf;
 interface
 
 uses
-  phxApplication, phxAudio, phxAudio_OpenAL, phxCamera, phxCanvas, phxClasses, 
-  phxConsole, phxDevice, phxEffect, phxEvents, phxFont, phxGraphics, 
-  phxGraphics_DDS, phxGraphics_FreeImage, phxGraphics_Vampyre, phxImage, 
-  phxInput, phxLogger, phxMath, phxModel, phxParticle, phxParticleAffectors, 
-  phxParticleGraphs, phxParticlePresets, phxParticleRenderers, phxPersistency, 
-  phxPrimitives, phxShape, phxSimpleGUI, phxSimpleXML, phxSkin, phxSprite, 
-  phxTexture, phxTiles, phxTimer, phxTranslation, phxTypes, phxOpenGL, 
-  phxOpenGL_Canvas, phxOpenGL_Effect, phxOpenGL_GLFW3, phxOpenGL_Shader, 
-  LazarusPackageIntf;
+  phxApplication, phxAudio, phxAudio_Bass, phxAudio_OpenAL, phxCamera, 
+  phxCanvas, phxClasses, phxConsole, phxDevice, phxEffect, phxEvents, phxFont, 
+  phxGraphics, phxGraphics_DDS, phxGraphics_FreeImage, phxGraphics_Vampyre, 
+  phxImage, phxInput, phxLogger, phxMath, phxModel, phxParticle, 
+  phxParticleAffectors, phxParticleGraphs, phxParticlePresets, 
+  phxParticleRenderers, phxPersistency, phxPrimitives, phxShape, phxSimpleGUI, 
+  phxSimpleXML, phxSkin, phxSprite, phxTexture, phxTiles, phxTimer, 
+  phxTranslation, phxTypes, phxOpenGL, phxOpenGL_Canvas, phxOpenGL_Effect, 
+  phxOpenGL_GLFW3, phxOpenGL_Shader, LazarusPackageIntf;
 
 implementation
 
