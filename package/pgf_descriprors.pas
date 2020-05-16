@@ -19,19 +19,16 @@ type
   end;
 
     { TPGFFileUnit }
-
     TPGFFileUnit = class(TFileDescPascalUnit)
   public
     constructor Create; override;
     function GetInterfaceUsesSection: string; override;
-  //  function GetLocalizedName: string; override;
-  //  function GetLocalizedDescription: string; override;
     function GetUnitDirectives: string; override;
     function GetImplementationSource(const Filename, SourceName, ResourceName: string): string; override;
     function GetInterfaceSource(const {%H-}aFilename, {%H-}aSourceName,{%H-}aResourceName: string): string; override;
-
     end;
-   const LE = #10;
+
+const LE = #10;
 
    procedure Register;
 
@@ -70,16 +67,6 @@ begin
 '  phxCanvas,'+LE+
 '  phxTexture'
 end;
-
-{function TPGFFileUnit.GetLocalizedName: string;
-begin
-  Result:='Phoenix Game Framework blank unit';
-end;
-
-function TPGFFileUnit.GetLocalizedDescription: string;
-begin
-  Result:='Create a new phoenix game framework blank unit';
-end;}
 
 function TPGFFileUnit.GetUnitDirectives: string;
 begin
