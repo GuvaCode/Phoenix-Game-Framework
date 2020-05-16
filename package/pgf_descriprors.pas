@@ -24,8 +24,8 @@ type
   public
     constructor Create; override;
     function GetInterfaceUsesSection: string; override;
-    function GetLocalizedName: string; override;
-    function GetLocalizedDescription: string; override;
+  //  function GetLocalizedName: string; override;
+  //  function GetLocalizedDescription: string; override;
     function GetUnitDirectives: string; override;
     function GetImplementationSource(const Filename, SourceName, ResourceName: string): string; override;
     function GetInterfaceSource(const {%H-}aFilename, {%H-}aSourceName,{%H-}aResourceName: string): string; override;
@@ -71,7 +71,7 @@ begin
 '  phxTexture'
 end;
 
-function TPGFFileUnit.GetLocalizedName: string;
+{function TPGFFileUnit.GetLocalizedName: string;
 begin
   Result:='Phoenix Game Framework blank unit';
 end;
@@ -79,7 +79,7 @@ end;
 function TPGFFileUnit.GetLocalizedDescription: string;
 begin
   Result:='Create a new phoenix game framework blank unit';
-end;
+end;}
 
 function TPGFFileUnit.GetUnitDirectives: string;
 begin
@@ -224,9 +224,10 @@ begin
   AProject.MainFile.SetSourceText(NewSource,true);
 
   AProject.AddPackageDependency('FCL');
-  AProject.AddPackageDependency('pgf');
+  AProject.AddPackageDependency('PGF');
   AProject.LazCompilerOptions.UnitOutputDirectory:='lib'+PathDelim+'$(TargetCPU)-$(TargetOS)';
   AProject.LazCompilerOptions.TargetFilename:='Game';
+
 end;
 
 function TPGFApplicationDescriptor.CreateStartFiles(AProject: TLazProject): TModalResult;
