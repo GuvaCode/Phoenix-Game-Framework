@@ -1,0 +1,11 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: phxconsole.sinvalidparameters
+msgid "Invalid parameters"
+msgstr ""
+
+#: phxconsole.sunknowncommand
+msgid "Unknown command: "
+msgstr ""
+

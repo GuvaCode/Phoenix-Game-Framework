@@ -1,0 +1,7 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: phxaudio.ssamplemissing
+msgid "The audio sample %s was not found"
+msgstr ""
+

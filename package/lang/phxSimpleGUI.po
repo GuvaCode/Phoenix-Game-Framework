@@ -1,0 +1,7 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: phxsimplegui.snotactive
+msgid "Tou must call Prepare before rendering any widgets"
+msgstr ""
+

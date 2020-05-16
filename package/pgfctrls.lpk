@@ -21,6 +21,11 @@
         <Type Value="Include"/>
       </Item2>
     </Files>
+    <i18n>
+      <EnableI18N Value="True"/>
+      <OutDir Value="lang"/>
+      <EnableI18NForLFM Value="True"/>
+    </i18n>
     <RequiredPkgs Count="3">
       <Item1>
         <PackageName Value="pgf"/>

@@ -1,0 +1,11 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: pgf_descriprors.aboutdsc
+msgid "The Phoenix Game Framework is a set of classes for helping in the creation of 2D and 3D games in pascal."
+msgstr "Phoenix Game Framework - это набор классов для помощи в создании 2D и 3D игр на паскале."
+
+#: pgf_descriprors.aboutprj
+msgid "PGF Game Application"
+msgstr "Игровое приложение PGF"
+

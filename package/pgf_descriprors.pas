@@ -28,9 +28,13 @@ type
     function GetInterfaceSource(const {%H-}aFilename, {%H-}aSourceName,{%H-}aResourceName: string): string; override;
     end;
 
-const LE = #10;
+ const LE = #10;
 
-   procedure Register;
+ procedure Register;
+
+ resourcestring
+   AboutPrj = 'PGF Game Application';
+   AboutDsc='The Phoenix Game Framework is a set of classes for helping in the creation of 2D and 3D games in pascal.';
 
 implementation
 
@@ -161,19 +165,17 @@ end;
 constructor TPGFApplicationDescriptor.Create;
 begin
   inherited Create;
-  Name := 'Phoenix Game Framework Blank Application';
+  Name := AboutPrj;
 end;
 
 function TPGFApplicationDescriptor.GetLocalizedName: string;
 begin
-  Result := 'Phoenix Game Framework Blank Application';
+  Result := AboutPrj;
 end;
 
 function TPGFApplicationDescriptor.GetLocalizedDescription: string;
 begin
-  Result := 'Phoenix Game Framework Blank Application'+LE+LE
-           +'The Phoenix Game Framework is a set of classes'+LE+
-           'for helping in the creation of 2D and 3D games in pascal.';
+  Result := AboutPrj+LE+LE+AboutDsc;
 end;
 
 function TPGFApplicationDescriptor.InitProject(AProject: TLazProject
