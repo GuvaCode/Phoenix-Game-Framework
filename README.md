@@ -1,6 +1,7 @@
 ![](Phoenix_banner.png) 
 # PGF
 **About**
+
 The Phoenix Game Framework is a set of classes for helping in the creation of 2D and 3D games in pascal.
 
 It contains classes for API independent device management, platform independent device creating, texture loading, image manipulation, sound support using plugins for different audio engines, input handling, sprite engine, particles, gui and much much more.
@@ -10,7 +11,7 @@ One of the main features over other similar engines is the editors that helps in
 Phoenix is mainly developed and tested on Linux, but Windows or MacOS is supported and due to the plugin nature of the engine adding support for other platforms is relatively easy.
 
 
-##Compilation of PGF in different OS's
+**Compilation of PGF in different OS's**
 
 **GNU/Linux**
 
