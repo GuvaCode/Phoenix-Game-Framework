@@ -6,9 +6,7 @@ Result:=
 '    Timer  : TPHXTimer;'+LE+
 '    Canvas : TPHXCanvas;'+LE+
 '  protected'+LE+
-  {$IFDEF PHX_KEY_EVENT}
-'    procedure KeyPressed(Key: TPHXVirtualKey; Shift: TPHXShiftStates); override;'+LE+
-  {$ENDIF}
+'    procedure KeyPressed(Key: TPHXVirtualKey; Shift: TPHXShiftStates); override;'+LE+ 
 '  public'+LE+
 '    constructor Create; override;'+LE+
 ''+LE+

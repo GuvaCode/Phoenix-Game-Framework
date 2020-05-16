@@ -34,15 +34,6 @@ Result:=
 'procedure TGame.Render;'+LE+
 'begin'+LE+
 '  Device.Clear;'+LE+
-'  // Change the color to white'+LE+
-'  Canvas.Color:= clrWhite;'+LE+
-'  // Draw a rectangle'+LE+
-'  Canvas.Rectangle(100, 100, 200, 200);'+LE+
-'  // Change the color to red'+LE+
-'  Canvas.Color:= clrRed;'+LE+
-'  // Draw a rectangle'+LE+
-'  Canvas.Rectangle(300, 100, 400, 200);'+LE+
-'  // Flush the canvas'+LE+
 '  Canvas.Flush;'+LE+
 ''+LE+
 '  Device.Flip;'+LE+
@@ -55,7 +46,7 @@ Result:=
 '  Device.Free;'+LE+
 'end;'+LE+
 ''+LE+
-{$IFDEF PHX_KEY_EVENT}
+
 'procedure TGame.KeyPressed(Key: TPHXVirtualKey; Shift: TPHXShiftStates);'+LE+
 'begin'+LE+
 '  inherited;'+LE+
@@ -65,4 +56,4 @@ Result:=
 '    Terminate;'+LE+
 '  end;'+LE+
 'end;'+LE
-{$ENDIF}
+
