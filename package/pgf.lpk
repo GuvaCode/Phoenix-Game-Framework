@@ -11,7 +11,7 @@
         <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
       </SearchPaths>
     </CompilerOptions>
-    <Files Count="38">
+    <Files Count="43">
       <Item1>
         <Filename Value="../source/phxApplication.pas"/>
         <UnitName Value="phxApplication"/>
@@ -164,6 +164,26 @@
         <Filename Value="../source/phxTypes.pas"/>
         <UnitName Value="phxTypes"/>
       </Item38>
+      <Item39>
+        <Filename Value="../source/providers/phxOpenGL.pas"/>
+        <UnitName Value="phxOpenGL"/>
+      </Item39>
+      <Item40>
+        <Filename Value="../source/providers/phxOpenGL_Canvas.pas"/>
+        <UnitName Value="phxOpenGL_Canvas"/>
+      </Item40>
+      <Item41>
+        <Filename Value="../source/providers/phxOpenGL_Effect.pas"/>
+        <UnitName Value="phxOpenGL_Effect"/>
+      </Item41>
+      <Item42>
+        <Filename Value="../source/providers/phxOpenGL_GLFW3.pas"/>
+        <UnitName Value="phxOpenGL_GLFW3"/>
+      </Item42>
+      <Item43>
+        <Filename Value="../source/providers/phxOpenGL_Shader.pas"/>
+        <UnitName Value="phxOpenGL_Shader"/>
+      </Item43>
     </Files>
     <RequiredPkgs Count="3">
       <Item1>

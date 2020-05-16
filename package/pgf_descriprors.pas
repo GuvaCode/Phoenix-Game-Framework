@@ -31,8 +31,8 @@ type
     function GetInterfaceSource(const {%H-}aFilename, {%H-}aSourceName,{%H-}aResourceName: string): string; override;
 
     end;
-   const L_E = #10;
-   const LE ='+'+L_LE+'+';
+   const LE = #10;
+
    procedure Register;
 
 implementation
@@ -59,19 +59,7 @@ end;
 
 function TPGFFileUnit.GetInterfaceUsesSection: string;
 begin
-  Result:= LineEnding+
-  ' SysUtils,'                                         +LineEnding+
-  ' phxTypes,'                                         +LineEnding+
-  ' phxClasses,'                                       +LineEnding+
-  ' phxMath,'                                          +LineEnding+
-  ' phxDevice,'                                        +LineEnding+
-  ' phxApplication,'                                   +LineEnding+
-  ' phxGraphics,'                                      +LineEnding+
-  ' phxCanvas,'                                        +LineEnding+
-  {$IFDEF phx_test}
-  ' phxTESTFILE,'                                       +LineEnding+
-  {$ENDIF}
-  ' phxTexture'                                        +LineEnding;
+  {$I InterfaceUses.inc}
 end;
 
 function TPGFFileUnit.GetLocalizedName: string;
@@ -92,25 +80,13 @@ end;
 function TPGFFileUnit.GetImplementationSource(const Filename, SourceName,
   ResourceName: string): string;
 begin
-{$I mincode.inc}
+{$I ImplementationSource.inc}
 end;
 
 function TPGFFileUnit.GetInterfaceSource(const aFilename, aSourceName,
   aResourceName: string): string;
-var Source:String;
 begin
-Source:='type'                                      +LE+LE+
- 'TGame = class(TPHXApplication)'                   +LE+
- '  private'                                        +LE+
- '    Device : TPHXDevice;'                         +LE+
- '    Canvas : TPHXCanvas;'                         +LE+
- '  public'                                         +LE+
- '    procedure Init; override;'                    +LE+
- '    procedure Update; override;'                  +LE+
- '    procedure Render; override;'                  +LE+
- '    procedure Shutdown; override;'                +LE+
- '  end;'                                           +LE+LE;
-  Result:=Source;
+ {$I interfacesource.inc}
 end;
 
 { TPGFApplicationDescriptor }
@@ -150,7 +126,7 @@ begin
   AProject.LazCompilerOptions.SyntaxMode:='Delphi';
 
    // create program source
-  {$I prjbody.inc}
+  {$I programsource.inc}
   AProject.MainFile.SetSourceText(NewSource,true);
 
   AProject.AddPackageDependency('FCL');
