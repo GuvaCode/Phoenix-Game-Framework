@@ -10,6 +10,15 @@ One of the main features over other similar engines is the editors that helps in
 
 Phoenix is mainly developed and tested on Linux, but Windows or MacOS is supported and due to the plugin nature of the engine adding support for other platforms is relatively easy.
 
+**Package installation**
+
+Open and compile pgf.lpk
+![](pictures/pkg_0.png) 
+
+Open and install pgfctrls.lpk
+![](pictures/pgk_1.png) 
+
+ 
 
 **Compilation of PGF in different OS's**
 

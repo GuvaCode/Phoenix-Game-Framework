@@ -8,14 +8,13 @@ unit pgf;
 interface
 
 uses
-  phxOpenGL, phxOpenGL_Canvas, phxOpenGL_Effect, phxOpenGL_Shader, 
-  phxOpenGL_GLFW3, phxApplication, phxAudio, phxAudio_OpenAL, phxCamera, 
-  phxCanvas, phxClasses, phxConsole, phxDevice, phxEffect, phxEvents, phxFont, 
-  phxGraphics, phxGraphics_DDS, phxGraphics_FreeImage, phxImage, phxInput, 
-  phxLogger, phxMath, phxModel, phxParticle, phxParticleAffectors, 
-  phxParticleGraphs, phxParticlePresets, phxParticleRenderers, phxPersistency, 
-  phxPrimitives, phxShape, phxSimpleGUI, phxSimpleXML, phxSkin, phxSprite, 
-  phxTexture, phxTiles, phxTimer, phxTranslation, phxTypes, LazarusPackageIntf;
+  phxApplication, phxAudio, phxAudio_OpenAL, phxCamera, phxCanvas, phxClasses, 
+  phxConsole, phxDevice, phxEffect, phxEvents, phxFont, phxGraphics, 
+  phxGraphics_DDS, phxGraphics_FreeImage, phxImage, phxInput, phxLogger, 
+  phxMath, phxModel, phxParticle, phxParticleAffectors, phxParticleGraphs, 
+  phxParticlePresets, phxParticleRenderers, phxPersistency, phxPrimitives, 
+  phxShape, phxSimpleGUI, phxSimpleXML, phxSkin, phxSprite, phxTexture, 
+  phxTiles, phxTimer, phxTranslation, phxTypes, LazarusPackageIntf;
 
 implementation
 
