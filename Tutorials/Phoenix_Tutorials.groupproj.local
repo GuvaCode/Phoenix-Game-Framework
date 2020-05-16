@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<BorlandProject>
-	<Transactions>
-    <Transaction>1899-12-30 00:00:00.000.713,D:\Program\Programmering\Phoenix\Design\Documentation\Tutorials\Phoenix_Tutorials.groupproj=C:\Users\Andreas Lago\Documents\RAD Studio\Projects\ProjectGroup1.groupproj</Transaction>
-  </Transactions>
-	<Default.Personality>
-		<Projects ActiveProject="D:\Program\Programmering\Phoenix\Design\Tutorials\01_Basic\Tutorial01_Basic.dproj"/>
-	</Default.Personality>
-</BorlandProject>

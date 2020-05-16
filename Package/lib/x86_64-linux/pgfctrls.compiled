@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CONFIG>
-  <Compiler Value="/usr/bin/fpc" Date="1540814642"/>
-  <Params Value=" -MObjFPC -Scghi -Cg -O1 -g -gl -l -vewnhibq -Fu/usr/share/lazarus/2.0.8/packager/units/x86_64-linux -Fu/usr/share/lazarus/2.0.8/components/lazutils/lib/x86_64-linux -Fu/usr/share/lazarus/2.0.8/lcl/units/x86_64-linux -Fu/usr/share/lazarus/2.0.8/lcl/units/x86_64-linux/gtk2 -Fu/home/vadim/Проекты/PGF/Package/lib/x86_64-linux -Fu/usr/share/lazarus/2.0.8/components/lazcontrols/lib/x86_64-linux/gtk2 -Fu/usr/share/lazarus/2.0.8/components/ideintf/units/x86_64-linux/gtk2 -Fu/home/vadim/Проекты/PGF/Package/ -FU/home/vadim/Проекты/PGF/Package/lib/x86_64-linux/ -dLCL -dLCLgtk2 pgfctrls.pas"/>
-</CONFIG>
