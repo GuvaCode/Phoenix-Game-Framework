@@ -1,0 +1,182 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Phoenix API Doc: phxTexture</title>
+<meta name="generator" content="PasDoc 0.13.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Phoenix API Doc</h2><p><a href="introduction.html" class="navigation">Introduction</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div></p></td><td class="content">
+<link rel="icon" type="image/ico" href="Phoenix_icon.png"></link>
+<link rel="shortcut icon" href="Phoenix_icon.png"></link>
+<h1 class="unit">Unit phxTexture</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td>Uses</td><td><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></td><td>Functions and Procedures</td><td><a class="section" href="#PasDoc-Types">Types</a></td><td><a class="section" href="#PasDoc-Constants">Constants</a></td><td>Variables</td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="description">Description</h2>
+<p>
+Texture classes</p>
+<a name="PasDoc-Uses"></a><h2 class="overview">Overview</h2>
+<a name="PasDoc-Classes"></a><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold" href="phxTexture.TPHXTextureHeader.html"><code>TPHXTextureHeader</code></a></td>
+<td class="itemdesc">The texture file header.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxTexture.TPHXTextureSettings.html"><code>TPHXTextureSettings</code></a></td>
+<td class="itemdesc">Settings for generating a texture</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxTexture.TPHXTexture.html"><code>TPHXTexture</code></a></td>
+<td class="itemdesc">Container for a 2D bitmap texture</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxTexture.TPHXTextureList.html"><code>TPHXTextureList</code></a></td>
+<td class="itemdesc">Container for a list of textures</td>
+</tr>
+</table>
+<a name="PasDoc-Types"></a><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTexture.html#TPHXTextureEvent">TPHXTextureEvent</a></b> = procedure(Texture: <a  href="phxTexture.TPHXTexture.html">TPHXTexture</a>) of object;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTexture.html#TPHXTextureFilter">TPHXTextureFilter</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTexture.html#TPHXTextureFilterMin">TPHXTextureFilterMin</a></b> = tfNearest .. tfLinearMipmapLinear;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTexture.html#TPHXTextureFilterMag">TPHXTextureFilterMag</a></b> = tfNearest .. tfLinear;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTexture.html#TPHXTextureWrap">TPHXTextureWrap</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTexture.html#PTextureList">PTextureList</a></b> = &circ;<a  href="phxTexture.html#TTextureList">TTextureList</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTexture.html#TTextureList">TTextureList</a></b> = array[0..$00FFFFFF] of <a  href="phxTexture.TPHXTexture.html">TPHXTexture</a>;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Constants"></a><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTexture.html#PHXTEXTURE_EXT">PHXTEXTURE_EXT</a></b>     = '.phxtex';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTexture.html#PHXTEXTURE_VERSION">PHXTEXTURE_VERSION</a></b> = 2;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXTextureEvent"></a><code><b>TPHXTextureEvent</b> = procedure(Texture: <a  href="phxTexture.TPHXTexture.html">TPHXTexture</a>) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXTextureFilter"></a><code><b>TPHXTextureFilter</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Possible values for the texure minifying and magnification functions</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+tfNearest: GL_NEAREST</li>
+<li>
+tfLinear: GL_LINEAR</li>
+<li>
+tfNearestMipmapNearest: GL_NEAREST_MIPMAP_NEAREST</li>
+<li>
+tfLinearMipmapNearest: GL_LINEAR_MIPMAP_NEAREST</li>
+<li>
+tfNearestMipmapLinear: GL_NEAREST_MIPMAP_LINEAR</li>
+<li>
+tfLinearMipmapLinear: GL_LINEAR_MIPMAP_LINEAR</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXTextureFilterMin"></a><code><b>TPHXTextureFilterMin</b> = tfNearest .. tfLinearMipmapLinear;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+The texture minifying function is used whenever the pixel being textured maps to an area greater than one texture element.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXTextureFilterMag"></a><code><b>TPHXTextureFilterMag</b> = tfNearest .. tfLinear;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+The texture magnification function is used when the pixel being textured maps to an area less than or equal to one texture element</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXTextureWrap"></a><code><b>TPHXTextureWrap</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Specifies the type of the texture wrapping to use.</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+twRepeat: Repeat the textures</li>
+<li>
+twClamp: Clamp the texture coordinates between 0.0 and 1.0</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PTextureList"></a><code><b>PTextureList</b> = &circ;<a  href="phxTexture.html#TTextureList">TTextureList</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TTextureList"></a><code><b>TTextureList</b> = array[0..$00FFFFFF] of <a  href="phxTexture.TPHXTexture.html">TPHXTexture</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PHXTEXTURE_EXT"></a><code><b>PHXTEXTURE_EXT</b>     = '.phxtex';</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Default texture extension for textures</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PHXTEXTURE_VERSION"></a><code><b>PHXTEXTURE_VERSION</b> = 2;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+The current texture version</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.13.0</a> on 2013-08-26 11:02:43</em>
+</span>
+</td></tr></table></body></html>

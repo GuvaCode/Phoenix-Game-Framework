@@ -1,0 +1,303 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Phoenix API Doc: phxDevice</title>
+<meta name="generator" content="PasDoc 0.13.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Phoenix API Doc</h2><p><a href="introduction.html" class="navigation">Introduction</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div></p></td><td class="content">
+<link rel="icon" type="image/ico" href="Phoenix_icon.png"></link>
+<link rel="shortcut icon" href="Phoenix_icon.png"></link>
+<h1 class="unit">Unit phxDevice</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td>Uses</td><td><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></td><td><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></td><td><a class="section" href="#PasDoc-Types">Types</a></td><td><a class="section" href="#PasDoc-Constants">Constants</a></td><td>Variables</td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="description">Description</h2>
+<p>
+Contains API independent rendering functions</p>
+<a name="PasDoc-Uses"></a><h2 class="overview">Overview</h2>
+<a name="PasDoc-Classes"></a><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxDevice.TPHXRenderTarget.html"><code>TPHXRenderTarget</code></a></td>
+<td class="itemdesc">A render target for render to texture</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxDevice.TPHXProvider.html"><code>TPHXProvider</code></a></td>
+<td class="itemdesc">A provider is responsible for creating a device for a given graphics API</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxDevice.TPHXProviderLibrary.html"><code>TPHXProviderLibrary</code></a></td>
+<td class="itemdesc">Provider that loads the renderer from a library (DLL)</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxDevice.TPHXProviderObject.html"><code>TPHXProviderObject</code></a></td>
+<td class="itemdesc">Provider that loads the renderer from a object</td>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold" href="phxDevice.TPHXDeviceParameters.html"><code>TPHXDeviceParameters</code></a></td>
+<td class="itemdesc">Allow resizing of the window Activate vertical syncronisation Show the cursor Parameters that are sent to the initialize function of the device</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxDevice.TPHXDisplay.html"><code>TPHXDisplay</code></a></td>
+<td class="itemdesc">Manager class for display modes</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxDevice.TPHXDevice.html"><code>TPHXDevice</code></a></td>
+<td class="itemdesc">The device manages a graphics device and its window</td>
+</tr>
+</table>
+<a name="PasDoc-FuncsProcs"></a><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="phxDevice.html#RegisterProvider">RegisterProvider</a></b>(const ProviderName: String; ProviderClass: <a  href="phxDevice.html#TPHXProviderClass">TPHXProviderClass</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="phxDevice.html#EnumProviders">EnumProviders</a></b>(const Providers: TStrings);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxDevice.html#CreateProvider">CreateProvider</a></b>(const ProviderName: String): <a  href="phxDevice.TPHXProvider.html">TPHXProvider</a>;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Types"></a><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxDevice.html#TPHXClearTarget">TPHXClearTarget</a></b> = set of (
+  
+  PHX_COLOR_BUFFER,
+  
+  PHX_DEPTH_BUFFER,
+  
+  PHX_ACCUM_BUFFER,
+  
+  PHX_STENCIL_BUFFER
+);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxDevice.html#TPHXTextureSampler">TPHXTextureSampler</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxDevice.html#TPHXWireframe">TPHXWireframe</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxDevice.html#TPHXProviderClass">TPHXProviderClass</a></b> = class of <a  href="phxDevice.TPHXProvider.html">TPHXProvider</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxDevice.html#TPHXProviderTarget">TPHXProviderTarget</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxDevice.html#TPHXWindowFlags">TPHXWindowFlags</a></b> = set of (
+  
+  wfResizable,
+  
+  wfVerticalSync,
+  
+  wfCursor
+);</code></td>
+</tr>
+</table>
+<a name="PasDoc-Constants"></a><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxDevice.html#DefaultBackground">DefaultBackground</a></b> : <a  href="phxTypes.TColor4f.html">TColor4f</a> = (Red: 0.109803922474384; Green: 0.141176477074623; Blue: 0.176470592617989; Alpha: 1);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxDevice.html#ViewportMinDepth">ViewportMinDepth</a></b> = -0.1;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxDevice.html#ViewportMaxDepth">ViewportMaxDepth</a></b> = 1000.0;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxDevice.html#DefaultWindowFlags">DefaultWindowFlags</a></b> = [wfCursor, wfVerticalSync];</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="RegisterProvider"></a><code>procedure <b>RegisterProvider</b>(const ProviderName: String; ProviderClass: <a  href="phxDevice.html#TPHXProviderClass">TPHXProviderClass</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Registers a provider</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="EnumProviders"></a><code>procedure <b>EnumProviders</b>(const Providers: TStrings);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Enumerate all provides</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CreateProvider"></a><code>function <b>CreateProvider</b>(const ProviderName: String): <a  href="phxDevice.TPHXProvider.html">TPHXProvider</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Creates a provider</p>
+</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXClearTarget"></a><code><b>TPHXClearTarget</b> = set of (
+  
+  PHX_COLOR_BUFFER,
+  
+  PHX_DEPTH_BUFFER,
+  
+  PHX_ACCUM_BUFFER,
+  
+  PHX_STENCIL_BUFFER
+);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Clear targets for TPHXDevice.Clear</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXTextureSampler"></a><code><b>TPHXTextureSampler</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Indicates the buffers currently enabled for color writing. Indicates the depth buffer. Indicates the accumulation buffer. Indicates the stencil buffer. Texture samplers (units)</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+PHX_TEXTURE_1 = 0: &nbsp;</li>
+<li>
+PHX_TEXTURE_2 = 1: &nbsp;</li>
+<li>
+PHX_TEXTURE_3 = 2: &nbsp;</li>
+<li>
+PHX_TEXTURE_4 = 3: &nbsp;</li>
+<li>
+PHX_TEXTURE_5 = 4: &nbsp;</li>
+<li>
+PHX_TEXTURE_6 = 5: &nbsp;</li>
+<li>
+PHX_TEXTURE_7 = 6: &nbsp;</li>
+<li>
+PHX_TEXTURE_8 = 7: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXWireframe"></a><code><b>TPHXWireframe</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Toggles wireframe</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+wfFill: Drawed filled triangles</li>
+<li>
+wfLines: Draw lines</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXProviderClass"></a><code><b>TPHXProviderClass</b> = class of <a  href="phxDevice.TPHXProvider.html">TPHXProvider</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Provider class</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXProviderTarget"></a><code><b>TPHXProviderTarget</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+The graphics API the provider is using</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+ptUnknown: Unknown renderer api</li>
+<li>
+ptOpenGL_3: OpenGL targeting the 3.x profile</li>
+<li>
+ptOpenGL_ES: OpenGL ES</li>
+<li>
+ptDirect3D9: Direct 3D 9.0c</li>
+<li>
+ptDirect3D10: Direct 3D 10</li>
+<li>
+ptDirect3D11: Direct 3D 11</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXWindowFlags"></a><code><b>TPHXWindowFlags</b> = set of (
+  
+  wfResizable,
+  
+  wfVerticalSync,
+  
+  wfCursor
+);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Flags for the window creation</p>
+</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DefaultBackground"></a><code><b>DefaultBackground</b> : <a  href="phxTypes.TColor4f.html">TColor4f</a> = (Red: 0.109803922474384; Green: 0.141176477074623; Blue: 0.176470592617989; Alpha: 1);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+For loadlibrary Default background color of the device</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ViewportMinDepth"></a><code><b>ViewportMinDepth</b> = -0.1;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Default minumum depth of the depth buffer</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ViewportMaxDepth"></a><code><b>ViewportMaxDepth</b> = 1000.0;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Default maximum depth of the depth buffer</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DefaultWindowFlags"></a><code><b>DefaultWindowFlags</b> = [wfCursor, wfVerticalSync];</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Default window Flag values Each implementing renderer should set this values when resetting the device</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.13.0</a> on 2013-08-26 11:02:36</em>
+</span>
+</td></tr></table></body></html>

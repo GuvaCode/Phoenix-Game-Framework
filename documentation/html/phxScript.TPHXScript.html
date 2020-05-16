@@ -1,0 +1,468 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Phoenix API Doc: phxScript: Class TPHXScript</title>
+<meta name="generator" content="PasDoc 0.13.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Phoenix API Doc</h2><p><a href="introduction.html" class="navigation">Introduction</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div></p></td><td class="content">
+<link rel="icon" type="image/ico" href="Phoenix_icon.png"></link>
+<link rel="shortcut icon" href="Phoenix_icon.png"></link>
+<a name="TPHXScript"></a><h1 class="cio">Class TPHXScript</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td><a class="section" href="#PasDoc-Properties">Properties</a></td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="phxScript.html">phxScript</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TPHXScript = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Class for implement scripting support via lua</p>
+<a name="PasDoc-Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TPHXScript</li></ul><h2 class="overview">Overview</h2>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxScript.TPHXScript.html#Print">Print</a></b>(const Text: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="phxScript.TPHXScript.html#Create">Create</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a  href="phxScript.TPHXScript.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxScript.TPHXScript.html#Register">Register</a></b>(const Timer: <a  href="phxApplication.html#TPHXTimer">TPHXTimer</a>; const Name: AnsiString = <a  href="phxScript.html#LIBRARY_TIMER">LIBRARY_TIMER</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxScript.TPHXScript.html#Register">Register</a></b>(const Input: <a  href="phxInput.TPHXInput.html">TPHXInput</a>; const Name: AnsiString = <a  href="phxScript.html#LIBRARY_INPUT">LIBRARY_INPUT</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxScript.TPHXScript.html#Register">Register</a></b>(const Audio: <a  href="phxAudio.TPHXAudioEngine.html">TPHXAudioEngine</a>; const Name: AnsiString = <a  href="phxScript.html#LIBRARY_AUDIO">LIBRARY_AUDIO</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxScript.TPHXScript.html#Register">Register</a></b>(const Instance: TPersistent; const Name: AnsiString); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxScript.TPHXScript.html#Register">Register</a></b>(const Event: <a  href="phxScript.html#TPHXScriptMethod">TPHXScriptMethod</a>; const Name: AnsiString); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxScript.TPHXScript.html#Register">Register</a></b>(const Event: <a  href="phxScript.html#TLuaFunction">TLuaFunction</a>; const Name: AnsiString); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxScript.TPHXScript.html#Register">Register</a></b>(const Event: lua_CFunction; const Name: AnsiString); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxScript.TPHXScript.html#LoadFromFile">LoadFromFile</a></b>(const FileName: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxScript.TPHXScript.html#LoadFromStream">LoadFromStream</a></b>(const Stream: TStream);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxScript.TPHXScript.html#LoadFromString">LoadFromString</a></b>(const Source: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxScript.TPHXScript.html#Compile">Compile</a></b>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxScript.TPHXScript.html#Compile">Compile</a></b>(const Source: AnsiString); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxScript.TPHXScript.html#Run">Run</a></b>(const Method: AnsiString); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxScript.TPHXScript.html#Run">Run</a></b>(const Method: AnsiString; const Param: Integer); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxScript.TPHXScript.html#Run">Run</a></b>(const Method: AnsiString; const Param: Double); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxScript.TPHXScript.html#Run">Run</a></b>(const Method: AnsiString; const Param: Boolean); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxScript.TPHXScript.html#Run">Run</a></b>(const Method: AnsiString; const Param: AnsiString); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxScript.TPHXScript.html#ListFunctions">ListFunctions</a></b>(List: TStrings);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxScript.TPHXScript.html#ListGlobals">ListGlobals</a></b>(List: TStrings);</code></td>
+</tr>
+</table>
+<a name="PasDoc-Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxScript.TPHXScript.html#Name">Name</a></b>: String read FName write FName;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxScript.TPHXScript.html#Source">Source</a></b>: AnsiString read FSource write FSource;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxScript.TPHXScript.html#State">State</a></b>: <a  href="phxScript.html#TLuaState">TLuaState</a> read FState;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxScript.TPHXScript.html#OnError">OnError</a></b>: <a  href="phxScript.html#TPHXScriptErrorEvent">TPHXScriptErrorEvent</a> read FOnError write FOnError;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxScript.TPHXScript.html#OnPrint">OnPrint</a></b>: <a  href="phxScript.html#TPHXScriptPrintEvent">TPHXScriptPrintEvent</a> read FOnPrint write FOnPrint;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxScript.TPHXScript.html#Variables">Variables</a></b>[constName:AnsiString]: Variant read GetVariable;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="Print"></a><code>procedure <b>Print</b>(const Text: String);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Create a new plugin list</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Default destructor</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Register"></a><code>procedure <b>Register</b>(const Timer: <a  href="phxApplication.html#TPHXTimer">TPHXTimer</a>; const Name: AnsiString = <a  href="phxScript.html#LIBRARY_TIMER">LIBRARY_TIMER</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Register a timer for scripting  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Timer</dt>
+<dd>the timer to register</dd>
+<dt>Name</dt>
+<dd>name of the lua table</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Register"></a><code>procedure <b>Register</b>(const Input: <a  href="phxInput.TPHXInput.html">TPHXInput</a>; const Name: AnsiString = <a  href="phxScript.html#LIBRARY_INPUT">LIBRARY_INPUT</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Register a input for scripting  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Input</dt>
+<dd>the input to register</dd>
+<dt>Name</dt>
+<dd>name of the lua table</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Register"></a><code>procedure <b>Register</b>(const Audio: <a  href="phxAudio.TPHXAudioEngine.html">TPHXAudioEngine</a>; const Name: AnsiString = <a  href="phxScript.html#LIBRARY_AUDIO">LIBRARY_AUDIO</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Register a audio engine for scripting  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Audio</dt>
+<dd>the audio engine to register</dd>
+<dt>Name</dt>
+<dd>name of the lua table</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Register"></a><code>procedure <b>Register</b>(const Instance: TPersistent; const Name: AnsiString); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Register a TPersistent instance for scripting using RTTI  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Instance</dt>
+<dd>the instance to register</dd>
+<dt>Name</dt>
+<dd>name of the lua table</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Register"></a><code>procedure <b>Register</b>(const Event: <a  href="phxScript.html#TPHXScriptMethod">TPHXScriptMethod</a>; const Name: AnsiString); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Register a script function with lua  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Name</dt>
+<dd>name of the function in lua</dd>
+<dt>Event</dt>
+<dd>the method to call</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Register"></a><code>procedure <b>Register</b>(const Event: <a  href="phxScript.html#TLuaFunction">TLuaFunction</a>; const Name: AnsiString); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Register a object function with lua</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Register"></a><code>procedure <b>Register</b>(const Event: lua_CFunction; const Name: AnsiString); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Register a static function with lia</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LoadFromFile"></a><code>procedure <b>LoadFromFile</b>(const FileName: String);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Load the script source from a file</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LoadFromStream"></a><code>procedure <b>LoadFromStream</b>(const Stream: TStream);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Load the script source from a stram</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LoadFromString"></a><code>procedure <b>LoadFromString</b>(const Source: String);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Load the script source from a string</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Compile"></a><code>procedure <b>Compile</b>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Compile the script source</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Compile"></a><code>procedure <b>Compile</b>(const Source: AnsiString); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Compile the script with a new source</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Run"></a><code>procedure <b>Run</b>(const Method: AnsiString); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Execute a script method</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Run"></a><code>procedure <b>Run</b>(const Method: AnsiString; const Param: Integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Execute a script method with a integer parameter</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Run"></a><code>procedure <b>Run</b>(const Method: AnsiString; const Param: Double); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Execute a script method with a number parameter</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Run"></a><code>procedure <b>Run</b>(const Method: AnsiString; const Param: Boolean); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Execute a script method with a boolean parameter</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Run"></a><code>procedure <b>Run</b>(const Method: AnsiString; const Param: AnsiString); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Execute a script method with a string parameter</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ListFunctions"></a><code>procedure <b>ListFunctions</b>(List: TStrings);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+List all the functions in the script</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ListGlobals"></a><code>procedure <b>ListGlobals</b>(List: TStrings);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+List all global variables</p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Name"></a><code>property <b>Name</b>: String read FName write FName;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Name of the script engine</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Source"></a><code>property <b>Source</b>: AnsiString read FSource write FSource;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Source code of the script</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="State"></a><code>property <b>State</b>: <a  href="phxScript.html#TLuaState">TLuaState</a> read FState;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The lua state of the script engine</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnError"></a><code>property <b>OnError</b>: <a  href="phxScript.html#TPHXScriptErrorEvent">TPHXScriptErrorEvent</a> read FOnError write FOnError;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Event for script errors</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnPrint"></a><code>property <b>OnPrint</b>: <a  href="phxScript.html#TPHXScriptPrintEvent">TPHXScriptPrintEvent</a> read FOnPrint write FOnPrint;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Messages from the lua print function</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Variables"></a><code>property <b>Variables</b>[constName:AnsiString]: Variant read GetVariable;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Read a variable from the lua state</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.13.0</a> on 2013-08-26 11:02:41</em>
+</span>
+</td></tr></table></body></html>

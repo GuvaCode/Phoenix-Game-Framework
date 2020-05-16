@@ -1,0 +1,637 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Phoenix API Doc: phxDevice: Class TPHXDevice</title>
+<meta name="generator" content="PasDoc 0.13.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Phoenix API Doc</h2><p><a href="introduction.html" class="navigation">Introduction</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div></p></td><td class="content">
+<link rel="icon" type="image/ico" href="Phoenix_icon.png"></link>
+<link rel="shortcut icon" href="Phoenix_icon.png"></link>
+<a name="TPHXDevice"></a><h1 class="cio">Class TPHXDevice</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td><a class="section" href="#PasDoc-Properties">Properties</a></td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="phxDevice.html">phxDevice</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TPHXDevice = class(TPHXCustomDevice)</code></p>
+<h2 class="description">Description</h2>
+<p>
+The device manages a graphics device and its window</p>
+<a name="PasDoc-Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TPHXCustomDevice</li>
+<li class="thisitem">TPHXDevice</li></ul><h2 class="overview">Overview</h2>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="phxDevice.TPHXDevice.html#Create">Create</a></b>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="phxDevice.TPHXDevice.html#Create">Create</a></b>(const AProvider: String); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="phxDevice.TPHXDevice.html#Create">Create</a></b>(const AProvider: <a  href="phxDevice.TPHXProvider.html">TPHXProvider</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="phxDevice.TPHXDevice.html#Create">Create</a></b>(const ADevice: IPHXDevice); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a  href="phxDevice.TPHXDevice.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxDevice.TPHXDevice.html#Initialize">Initialize</a></b>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxDevice.TPHXDevice.html#Initialize">Initialize</a></b>(const Title: String; const Width, Height: Integer); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxDevice.TPHXDevice.html#Initialize">Initialize</a></b>(const Title: String; const Width, Height: Integer; const Fullscreen: Boolean); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxDevice.TPHXDevice.html#Reinitialize">Reinitialize</a></b>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxDevice.TPHXDevice.html#Reinitialize">Reinitialize</a></b>(const Width, Height: Integer; const Fullscreen: Boolean); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxDevice.TPHXDevice.html#Finalize">Finalize</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxDevice.TPHXDevice.html#CreateRenderTarget">CreateRenderTarget</a></b>: <a  href="phxDevice.TPHXRenderTarget.html">TPHXRenderTarget</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxDevice.TPHXDevice.html#CreateCanvas">CreateCanvas</a></b>: <a  href="phxCanvas.TPHXCanvas.html">TPHXCanvas</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxDevice.TPHXDevice.html#CreateEffect">CreateEffect</a></b>: <a  href="phxEffect.TPHXEffect.html">TPHXEffect</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxDevice.TPHXDevice.html#CreateBuffer">CreateBuffer</a></b>: <a  href="phxClasses.TPHXBuffer.html">TPHXBuffer</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxDevice.TPHXDevice.html#CreateTexture">CreateTexture</a></b>: <a  href="phxTexture.TPHXTexture.html">TPHXTexture</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxDevice.TPHXDevice.html#SetRenderTarget">SetRenderTarget</a></b>(Target: <a  href="phxDevice.TPHXRenderTarget.html">TPHXRenderTarget</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxDevice.TPHXDevice.html#SetViewport">SetViewport</a></b>(const Viewport: <a  href="phxTypes.TViewport.html">TViewport</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxDevice.TPHXDevice.html#SetViewport">SetViewport</a></b>(const X, Y, Width, Height: Integer); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxDevice.TPHXDevice.html#SetViewport">SetViewport</a></b>(const Width, Height: Integer); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxDevice.TPHXDevice.html#SetClearColor">SetClearColor</a></b>(const Color: <a  href="phxTypes.TColor4f.html">TColor4f</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxDevice.TPHXDevice.html#SetClearColor">SetClearColor</a></b>(const Red, Green, Blue: Single); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxDevice.TPHXDevice.html#SetBlending">SetBlending</a></b>(const Value: <a  href="phxTypes.html#TPHXBlendMode">TPHXBlendMode</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxDevice.TPHXDevice.html#SetWireFrame">SetWireFrame</a></b>(const Value: Boolean);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxDevice.TPHXDevice.html#SetDepthMask">SetDepthMask</a></b>(const Value: Boolean);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxDevice.TPHXDevice.html#SetDepthTest">SetDepthTest</a></b>(const Value: Boolean);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxDevice.TPHXDevice.html#Update">Update</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxDevice.TPHXDevice.html#Clear">Clear</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxDevice.TPHXDevice.html#Flip">Flip</a></b>;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxDevice.TPHXDevice.html#Provider">Provider</a></b>: <a  href="phxDevice.TPHXProvider.html">TPHXProvider</a> read FProvider;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxDevice.TPHXDevice.html#Renderer">Renderer</a></b>: IPHXDevice read FRenderer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxDevice.TPHXDevice.html#Target">Target</a></b>: <a  href="phxDevice.html#TPHXProviderTarget">TPHXProviderTarget</a> read GetTarget;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxDevice.TPHXDevice.html#Display">Display</a></b>: <a  href="phxDevice.TPHXDisplay.html">TPHXDisplay</a> read FDisplay;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxDevice.TPHXDevice.html#Title">Title</a></b>: String read FTitle write SetTitle;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxDevice.TPHXDevice.html#Width">Width</a></b>: Integer read GetWidth;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxDevice.TPHXDevice.html#Height">Height</a></b>: Integer read GetHeight;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxDevice.TPHXDevice.html#Flags">Flags</a></b>: <a  href="phxDevice.html#TPHXWindowFlags">TPHXWindowFlags</a> read FFlags write SetFlags;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxDevice.TPHXDevice.html#Icon">Icon</a></b>: String read FIcon write SetIcon;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxDevice.TPHXDevice.html#Bounds">Bounds</a></b>: <a  href="phxTypes.TRectI.html">TRecti</a> read GetBounds;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxDevice.TPHXDevice.html#WireFrame">WireFrame</a></b>: Boolean read FWireFrame write <a  href="phxDevice.TPHXDevice.html#SetWireFrame">SetWireFrame</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates a device from the default provicer</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(const AProvider: String); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates a device from a registered provider</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(const AProvider: <a  href="phxDevice.TPHXProvider.html">TPHXProvider</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates a device from a custom provider</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(const ADevice: IPHXDevice); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates a device from a custom device</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Destroys the device</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Initialize"></a><code>procedure <b>Initialize</b>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Initialize the device using the selected display mode </p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="phxDevice.TPHXDisplay.html">TPHXDisplay</a></dt>
+  <dd>Manager class for display modes</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Initialize"></a><code>procedure <b>Initialize</b>(const Title: String; const Width, Height: Integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Initialize the device
+
+<p>  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Title</dt>
+<dd>The title of the window</dd>
+<dt>Width</dt>
+<dd>Width of the window</dd>
+<dt>Height</dt>
+<dd>Height of the window</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Initialize"></a><code>procedure <b>Initialize</b>(const Title: String; const Width, Height: Integer; const Fullscreen: Boolean); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Initialize the device
+
+<p>   </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Title</dt>
+<dd>The title of the window</dd>
+<dt>Width</dt>
+<dd>Width of the window</dd>
+<dt>Height</dt>
+<dd>Height of the window</dd>
+<dt>Fullscreen</dt>
+<dd>Toggles if the window should be opened in fullscreen mode</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Reinitialize"></a><code>procedure <b>Reinitialize</b>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Initialize the device using the selected display mode </p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="phxDevice.TPHXDisplay.html">TPHXDisplay</a></dt>
+  <dd>Manager class for display modes</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Reinitialize"></a><code>procedure <b>Reinitialize</b>(const Width, Height: Integer; const Fullscreen: Boolean); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Reinitializes the device using a new display mode</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Finalize"></a><code>procedure <b>Finalize</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Finalize the device</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CreateRenderTarget"></a><code>function <b>CreateRenderTarget</b>: <a  href="phxDevice.TPHXRenderTarget.html">TPHXRenderTarget</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Create a new render target</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CreateCanvas"></a><code>function <b>CreateCanvas</b>: <a  href="phxCanvas.TPHXCanvas.html">TPHXCanvas</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates a new canvas</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CreateEffect"></a><code>function <b>CreateEffect</b>: <a  href="phxEffect.TPHXEffect.html">TPHXEffect</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates a new basic effect</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CreateBuffer"></a><code>function <b>CreateBuffer</b>: <a  href="phxClasses.TPHXBuffer.html">TPHXBuffer</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates a render buffer</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CreateTexture"></a><code>function <b>CreateTexture</b>: <a  href="phxTexture.TPHXTexture.html">TPHXTexture</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates a new texture</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetRenderTarget"></a><code>procedure <b>SetRenderTarget</b>(Target: <a  href="phxDevice.TPHXRenderTarget.html">TPHXRenderTarget</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Create a stencil mask function CreateStencilMask: TPHXStencilMask; Set the current render target</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetViewport"></a><code>procedure <b>SetViewport</b>(const Viewport: <a  href="phxTypes.TViewport.html">TViewport</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Change the current graphical viewport</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetViewport"></a><code>procedure <b>SetViewport</b>(const X, Y, Width, Height: Integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Change the current graphical viewport</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetViewport"></a><code>procedure <b>SetViewport</b>(const Width, Height: Integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Change the current graphical viewport</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetClearColor"></a><code>procedure <b>SetClearColor</b>(const Color: <a  href="phxTypes.TColor4f.html">TColor4f</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Sets the clear color</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetClearColor"></a><code>procedure <b>SetClearColor</b>(const Red, Green, Blue: Single); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Sets the background color</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetBlending"></a><code>procedure <b>SetBlending</b>(const Value: <a  href="phxTypes.html#TPHXBlendMode">TPHXBlendMode</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Change the blend mode</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetWireFrame"></a><code>procedure <b>SetWireFrame</b>(const Value: Boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Toggles wireframe</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetDepthMask"></a><code>procedure <b>SetDepthMask</b>(const Value: Boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Enable or disable writing into the depth buffer</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetDepthTest"></a><code>procedure <b>SetDepthTest</b>(const Value: Boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Enable or disable depth testing</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Update"></a><code>procedure <b>Update</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Update the renderer</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Clear"></a><code>procedure <b>Clear</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Clear the back buffers</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Flip"></a><code>procedure <b>Flip</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Flip the front and back buffers</p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Provider"></a><code>property <b>Provider</b>: <a  href="phxDevice.TPHXProvider.html">TPHXProvider</a> read FProvider;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The provider</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Renderer"></a><code>property <b>Renderer</b>: IPHXDevice read FRenderer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The device interface</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Target"></a><code>property <b>Target</b>: <a  href="phxDevice.html#TPHXProviderTarget">TPHXProviderTarget</a> read GetTarget;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Return the provider target of this renderer</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Display"></a><code>property <b>Display</b>: <a  href="phxDevice.TPHXDisplay.html">TPHXDisplay</a> read FDisplay;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Selected display mode</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Title"></a><code>property <b>Title</b>: String read FTitle write SetTitle;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Change the window title</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Width"></a><code>property <b>Width</b>: Integer read GetWidth;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns the current width of the device window</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Height"></a><code>property <b>Height</b>: Integer read GetHeight;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns the current height of the device window</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Flags"></a><code>property <b>Flags</b>: <a  href="phxDevice.html#TPHXWindowFlags">TPHXWindowFlags</a> read FFlags write SetFlags;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Read or change the whe window flags</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Icon"></a><code>property <b>Icon</b>: String read FIcon write SetIcon;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The bitmap file containing the window icon</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Bounds"></a><code>property <b>Bounds</b>: <a  href="phxTypes.TRectI.html">TRecti</a> read GetBounds;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Return the bounding rectangle of the display</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="WireFrame"></a><code>property <b>WireFrame</b>: Boolean read FWireFrame write <a  href="phxDevice.TPHXDevice.html#SetWireFrame">SetWireFrame</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Toggles wireframe</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.13.0</a> on 2013-08-26 11:02:37</em>
+</span>
+</td></tr></table></body></html>

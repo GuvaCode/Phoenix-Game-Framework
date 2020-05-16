@@ -1,0 +1,312 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Phoenix API Doc: phxInput</title>
+<meta name="generator" content="PasDoc 0.13.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Phoenix API Doc</h2><p><a href="introduction.html" class="navigation">Introduction</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div></p></td><td class="content">
+<link rel="icon" type="image/ico" href="Phoenix_icon.png"></link>
+<link rel="shortcut icon" href="Phoenix_icon.png"></link>
+<h1 class="unit">Unit phxInput</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td>Uses</td><td><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></td><td><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></td><td><a class="section" href="#PasDoc-Types">Types</a></td><td>Constants</td><td>Variables</td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="description">Description</h2>
+<p>
+Input framework</p>
+<a name="PasDoc-Uses"></a><h2 class="overview">Overview</h2>
+<a name="PasDoc-Classes"></a><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold" href="phxInput.TPHXShortCut.html"><code>TPHXShortCut</code></a></td>
+<td class="itemdesc">Shortcut for bindings and events</td>
+</tr>
+<tr class="list2">
+<td class="itemname">record&nbsp;<a class="bold" href="phxInput.TPHXInputBinding.html"><code>TPHXInputBinding</code></a></td>
+<td class="itemdesc">Binds a input state to a device</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxInput.TPHXInputBindings.html"><code>TPHXInputBindings</code></a></td>
+<td class="itemdesc">List of input bindings for the device</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxInput.TPHXInputDevice.html"><code>TPHXInputDevice</code></a></td>
+<td class="itemdesc">Abstract input device</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxInput.TPHXKeyboard.html"><code>TPHXKeyboard</code></a></td>
+<td class="itemdesc">Input device for the keyboard</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxInput.TPHXMouse.html"><code>TPHXMouse</code></a></td>
+<td class="itemdesc">Input device for the mouse</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxInput.TPHXJoystick.html"><code>TPHXJoystick</code></a></td>
+<td class="itemdesc">Input device for a joystick</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxInput.TPHXInputDevices.html"><code>TPHXInputDevices</code></a></td>
+<td class="itemdesc">List of input devices</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxInput.TPHXInput.html"><code>TPHXInput</code></a></td>
+<td class="itemdesc">The input class manages different input devices</td>
+</tr>
+</table>
+<a name="PasDoc-FuncsProcs"></a><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxInput.html#InputStateToString">InputStateToString</a></b>(const Value: <a  href="phxInput.html#TPHXInputState">TPHXInputState</a>): String;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxInput.html#StringToInputState">StringToInputState</a></b>(const Value: String): <a  href="phxInput.html#TPHXInputState">TPHXInputState</a>;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Types"></a><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxInput.html#TPHXInputState">TPHXInputState</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxInput.html#TPHXInputStates">TPHXInputStates</a></b> = set of <a  href="phxInput.html#TPHXInputState">TPHXInputState</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxInput.html#TPHXInputSource">TPHXInputSource</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxInput.html#PBindingList">PBindingList</a></b> = &circ;<a  href="phxInput.html#TBindingList">TBindingList</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxInput.html#TBindingList">TBindingList</a></b> = array[0..$00FFFFFF] of <a  href="phxInput.TPHXInputBinding.html">TPHXInputBinding</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxInput.html#PInputDeviceList">PInputDeviceList</a></b> = &circ;<a  href="phxInput.html#TInputDeviceList">TInputDeviceList</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxInput.html#TInputDeviceList">TInputDeviceList</a></b> = array[0..$00FFFFFF] of <a  href="phxInput.TPHXInputDevice.html">TPHXInputDevice</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="InputStateToString"></a><code>function <b>InputStateToString</b>(const Value: <a  href="phxInput.html#TPHXInputState">TPHXInputState</a>): String;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Returns the string representation of a input state</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StringToInputState"></a><code>function <b>StringToInputState</b>(const Value: String): <a  href="phxInput.html#TPHXInputState">TPHXInputState</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Returns the input state for a string</p>
+</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXInputState"></a><code><b>TPHXInputState</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+{$MINENUMSIZE 4} Posssible input states</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+isNone: Unused</li>
+<li>
+isUp: Up key</li>
+<li>
+isDown: Down key</li>
+<li>
+isLeft: Left</li>
+<li>
+isRight: Right</li>
+<li>
+isButton1: Custom button 1</li>
+<li>
+isButton2: &nbsp;</li>
+<li>
+isButton3: &nbsp;</li>
+<li>
+isButton4: &nbsp;</li>
+<li>
+isButton5: &nbsp;</li>
+<li>
+isButton6: &nbsp;</li>
+<li>
+isButton7: &nbsp;</li>
+<li>
+isButton8: &nbsp;</li>
+<li>
+isButton9: &nbsp;</li>
+<li>
+isButton10: &nbsp;</li>
+<li>
+isButton11: &nbsp;</li>
+<li>
+isButton12: &nbsp;</li>
+<li>
+isButton13: &nbsp;</li>
+<li>
+isButton14: &nbsp;</li>
+<li>
+isButton15: &nbsp;</li>
+<li>
+isButton16: &nbsp;</li>
+<li>
+isButton17: &nbsp;</li>
+<li>
+isButton18: &nbsp;</li>
+<li>
+isButton19: &nbsp;</li>
+<li>
+isButton20: &nbsp;</li>
+<li>
+isButton21: &nbsp;</li>
+<li>
+isButton22: &nbsp;</li>
+<li>
+isButton23: &nbsp;</li>
+<li>
+isButton24: &nbsp;</li>
+<li>
+isButton25: &nbsp;</li>
+<li>
+isButton26: &nbsp;</li>
+<li>
+isButton27: &nbsp;</li>
+<li>
+isButton28: &nbsp;</li>
+<li>
+isButton29: &nbsp;</li>
+<li>
+isButton30: &nbsp;</li>
+<li>
+isButton31: &nbsp;</li>
+<li>
+isButton32: &nbsp;</li>
+<li>
+isButton33: &nbsp;</li>
+<li>
+isButton34: &nbsp;</li>
+<li>
+isButton35: &nbsp;</li>
+<li>
+isButton36: &nbsp;</li>
+<li>
+isButton37: &nbsp;</li>
+<li>
+isButton38: &nbsp;</li>
+<li>
+isButton39: &nbsp;</li>
+<li>
+isButton40: &nbsp;</li>
+<li>
+isButton41: &nbsp;</li>
+<li>
+isButton42: &nbsp;</li>
+<li>
+isButton43: &nbsp;</li>
+<li>
+isButton44: &nbsp;</li>
+<li>
+isButton45: &nbsp;</li>
+<li>
+isButton46: &nbsp;</li>
+<li>
+isButton47: &nbsp;</li>
+<li>
+isButton48: &nbsp;</li>
+<li>
+isButton49: &nbsp;</li>
+<li>
+isButton50: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXInputStates"></a><code><b>TPHXInputStates</b> = set of <a  href="phxInput.html#TPHXInputState">TPHXInputState</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Set of input states</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXInputSource"></a><code><b>TPHXInputSource</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Source a binding is originating from</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+isUnknown = 0: Unknown source</li>
+<li>
+isKeyboard = 1: The input comes from the keyboard</li>
+<li>
+isMouse = 2: The input comes from the mouse</li>
+<li>
+isJoystick1 = 3: The input comes from joystick #1</li>
+<li>
+isJoystick2 = 4: The input comes from joystick #2</li>
+<li>
+isJoystick3 = 5: The input comes from joystick #3</li>
+<li>
+isJoystick4 = 6: The input comes from joystick #4</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PBindingList"></a><code><b>PBindingList</b> = &circ;<a  href="phxInput.html#TBindingList">TBindingList</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TBindingList"></a><code><b>TBindingList</b> = array[0..$00FFFFFF] of <a  href="phxInput.TPHXInputBinding.html">TPHXInputBinding</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PInputDeviceList"></a><code><b>PInputDeviceList</b> = &circ;<a  href="phxInput.html#TInputDeviceList">TInputDeviceList</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Pointer a array of input devices</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TInputDeviceList"></a><code><b>TInputDeviceList</b> = array[0..$00FFFFFF] of <a  href="phxInput.TPHXInputDevice.html">TPHXInputDevice</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Array of input devices</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.13.0</a> on 2013-08-26 11:02:39</em>
+</span>
+</td></tr></table></body></html>

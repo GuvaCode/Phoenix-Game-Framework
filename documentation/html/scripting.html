@@ -1,0 +1,196 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Phoenix API Doc: scripting</title>
+<meta name="generator" content="PasDoc 0.13.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Phoenix API Doc</h2><p><a href="introduction.html" class="navigation">Introduction</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div></p></td><td class="content">
+<link rel="icon" type="image/ico" href="Phoenix_icon.png"></link>
+<link rel="shortcut icon" href="Phoenix_icon.png"></link>
+<h1 class="unit">Unit scripting</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td>Uses</td><td><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></td><td><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></td><td>Types</td><td>Constants</td><td><a class="section" href="#PasDoc-Variables">Variables</a></td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="description">Description</h2>
+<p>
+Lua scripting interface</p>
+<p>
+
+
+<p>This page documents the lua scripting interface.
+
+<p><i>This unit or the classes in it doesn't exist in the source but is avaiable from lua scripts.</i>
+
+<p></p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="phxScript.TPHXScript.html">TPHXScript</a></dt>
+  <dd>Class for implement scripting support via lua</dd>
+</dl>
+<a name="PasDoc-Uses"></a><h2 class="overview">Overview</h2>
+<a name="PasDoc-Classes"></a><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="scripting.TLuaTimer.html"><code>TLuaTimer</code></a></td>
+<td class="itemdesc">Scripting support for the timer</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="scripting.TLuaMouse.html"><code>TLuaMouse</code></a></td>
+<td class="itemdesc">Scripting support for mouse</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="scripting.TLuaKeyboard.html"><code>TLuaKeyboard</code></a></td>
+<td class="itemdesc">Scripting support for keyboard</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="scripting.TLuaInput.html"><code>TLuaInput</code></a></td>
+<td class="itemdesc">Scripting support for input</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="scripting.TLuaAudio.html"><code>TLuaAudio</code></a></td>
+<td class="itemdesc">Scripting support for audio</td>
+</tr>
+</table>
+<a name="PasDoc-FuncsProcs"></a><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="scripting.html#print">print</a></b>(values: array of variant);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="scripting.html#format">format</a></b>(format: string; values: array of variant);</code></td>
+</tr>
+</table>
+<a name="PasDoc-Variables"></a><h3 class="summary">Variables</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="scripting.html#timer">timer</a></b>: <a  href="scripting.TLuaTimer.html">TLuaTimer</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="scripting.html#input">input</a></b>: <a  href="scripting.TLuaInput.html">TLuaInput</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="scripting.html#audio">audio</a></b>: <a  href="scripting.TLuaAudio.html">TLuaAudio</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="print"></a><code>procedure <b>print</b>(values: array of variant);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Prints text for debuging</p>
+<p>
+ 
+
+<p>The print function prints all the texts and variables that are passed to the function
+
+<p><b>Sample</b>
+
+<p></p>
+
+<pre class="longcode">
+   print(&quot;hello&quot;, &quot;world&quot;)
+   print(x)
+ </pre>
+
+<p> </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>values</dt>
+<dd>The text or variable to print</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="phxScript.TPHXScript.html#OnPrint">TPHXScript.OnPrint</a></dt>
+  <dd>Messages from the lua print function</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="format"></a><code>procedure <b>format</b>(format: string; values: array of variant);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Formats a value</p>
+<p>
+  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>format</dt>
+<dd>The format string</dd>
+<dt>values</dt>
+<dd>The values to format</dd>
+</dl>
+</td></tr>
+</table>
+<h3 class="detail">Variables</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="timer"></a><code><b>timer</b>: <a  href="scripting.TLuaTimer.html">TLuaTimer</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+the timer namespace</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="input"></a><code><b>input</b>: <a  href="scripting.TLuaInput.html">TLuaInput</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+the input namespace</p>
+<p>
+
+
+<p><b>Sample</b>
+
+<p></p>
+
+<pre class="longcode">
+   <span class="pascal_keyword">if</span>(input.states[isButton1]) <span class="pascal_keyword">then</span>
+      fire(<span class="pascal_numeric">2</span>)
+   <span class="pascal_keyword">end</span>
+</pre>
+
+<p></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="audio"></a><code><b>audio</b>: <a  href="scripting.TLuaAudio.html">TLuaAudio</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+the audio namespace</p>
+<p>
+
+
+<p><b>Sample</b> </p>
+
+<pre class="longcode">
+   -- Load a sample from disk
+   audio.load(&quot;Boom.ogg&quot;)
+   -- Play the sample
+   audio.play(&quot;Boom&quot;, <span class="pascal_float">0.5</span>)
+</pre>
+
+<p></p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.13.0</a> on 2013-08-26 11:02:44</em>
+</span>
+</td></tr></table></body></html>

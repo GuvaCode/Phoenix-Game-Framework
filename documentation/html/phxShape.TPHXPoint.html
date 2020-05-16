@@ -1,0 +1,232 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Phoenix API Doc: phxShape: Class TPHXPoint</title>
+<meta name="generator" content="PasDoc 0.13.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Phoenix API Doc</h2><p><a href="introduction.html" class="navigation">Introduction</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div></p></td><td class="content">
+<link rel="icon" type="image/ico" href="Phoenix_icon.png"></link>
+<link rel="shortcut icon" href="Phoenix_icon.png"></link>
+<a name="TPHXPoint"></a><h1 class="cio">Class TPHXPoint</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td><a class="section" href="#PasDoc-Properties">Properties</a></td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="phxShape.html">phxShape</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TPHXPoint = class(<a class="normal" href="phxShape.TPHXShape.html">TPHXShape</a>)</code></p>
+<h2 class="description">Description</h2>
+<p>
+A point shape</p>
+<p>
+ Doesnt generate any additional SAT axes to test</p>
+<a name="PasDoc-Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="ancestor"><a class="normal" href="phxShape.TPHXShape.html">TPHXShape</a></li>
+<li class="thisitem">TPHXPoint</li></ul><h2 class="overview">Overview</h2>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxShape.TPHXPoint.html#LoadShape">LoadShape</a></b>(Reader: <a  href="phxClasses.TPHXReader.html">TPHXReader</a>); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxShape.TPHXPoint.html#SaveShape">SaveShape</a></b>(Writer: <a  href="phxClasses.TPHXWriter.html">TPHXWriter</a>); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxShape.TPHXPoint.html#GetBoundingBox">GetBoundingBox</a></b>: <a  href="phxTypes.TRectf.html">TRectf</a>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="phxShape.TPHXPoint.html#Create">Create</a></b>; overload; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxShape.TPHXPoint.html#Clone">Clone</a></b>: <a  href="phxShape.TPHXShape.html">TPHXShape</a>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxShape.TPHXPoint.html#Assign">Assign</a></b>(Shape: <a  href="phxShape.TPHXShape.html">TPHXShape</a>); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxShape.TPHXPoint.html#PointInside">PointInside</a></b>(const Point: <a  href="phxTypes.TVector2f.html">TVector2f</a>): Boolean; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxShape.TPHXPoint.html#Transform">Transform</a></b>(const Matrix: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxShape.TPHXPoint.html#Translate">Translate</a></b>(const Vector: <a  href="phxTypes.TVector2f.html">TVector2f</a>); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxShape.TPHXPoint.html#Render">Render</a></b>(Canvas: <a  href="phxCanvas.TPHXCanvas.html">TPHXCanvas</a>; const Offset: <a  href="phxTypes.TVector2f.html">TVector2f</a> ); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxShape.TPHXPoint.html#Project">Project</a></b>(const Axis: <a  href="phxTypes.TVector2f.html">TVector2f</a>; out Projection: <a  href="phxTypes.TRangef.html">TRangef</a>); override;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxShape.TPHXPoint.html#Position">Position</a></b>: <a  href="phxTypes.TVector2f.html">TVector2f</a> read FPosition write SetPosition;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxShape.TPHXPoint.html#PositionX">PositionX</a></b>: Single read FPosition.X write SetPositionX;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxShape.TPHXPoint.html#PositionY">PositionY</a></b>: Single read FPosition.Y write SetPositionY;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="LoadShape"></a><code>procedure <b>LoadShape</b>(Reader: <a  href="phxClasses.TPHXReader.html">TPHXReader</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="SaveShape"></a><code>procedure <b>SaveShape</b>(Writer: <a  href="phxClasses.TPHXWriter.html">TPHXWriter</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="GetBoundingBox"></a><code>function <b>GetBoundingBox</b>: <a  href="phxTypes.TRectf.html">TRectf</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>; overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates a new box</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Clone"></a><code>function <b>Clone</b>: <a  href="phxShape.TPHXShape.html">TPHXShape</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Create a clone of this box</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Assign"></a><code>procedure <b>Assign</b>(Shape: <a  href="phxShape.TPHXShape.html">TPHXShape</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Copy data from another box</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="PointInside"></a><code>function <b>PointInside</b>(const Point: <a  href="phxTypes.TVector2f.html">TVector2f</a>): Boolean; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns true if the point is inside the point</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Transform"></a><code>procedure <b>Transform</b>(const Matrix: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Transforms the shape by a matrix</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Translate"></a><code>procedure <b>Translate</b>(const Vector: <a  href="phxTypes.TVector2f.html">TVector2f</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Translate the shape by a vector</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Render"></a><code>procedure <b>Render</b>(Canvas: <a  href="phxCanvas.TPHXCanvas.html">TPHXCanvas</a>; const Offset: <a  href="phxTypes.TVector2f.html">TVector2f</a> ); override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw the box</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Project"></a><code>procedure <b>Project</b>(const Axis: <a  href="phxTypes.TVector2f.html">TVector2f</a>; out Projection: <a  href="phxTypes.TRangef.html">TRangef</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Projects the box on a axis, returns the projection as a min and max interval</p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Position"></a><code>property <b>Position</b>: <a  href="phxTypes.TVector2f.html">TVector2f</a> read FPosition write SetPosition;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Center position of the box</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="PositionX"></a><code>property <b>PositionX</b>: Single read FPosition.X write SetPositionX;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="PositionY"></a><code>property <b>PositionY</b>: Single read FPosition.Y write SetPositionY;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.13.0</a> on 2013-08-26 11:02:42</em>
+</span>
+</td></tr></table></body></html>

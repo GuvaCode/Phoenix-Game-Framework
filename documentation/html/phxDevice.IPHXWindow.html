@@ -1,0 +1,295 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Phoenix API Doc: phxDevice: Interface IPHXWindow</title>
+<meta name="generator" content="PasDoc 0.13.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Phoenix API Doc</h2><p><a href="introduction.html" class="navigation">Introduction</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div></p></td><td class="content">
+<link rel="icon" type="image/ico" href="Phoenix_icon.png"></link>
+<link rel="shortcut icon" href="Phoenix_icon.png"></link>
+<a name="IPHXWindow"></a><h1 class="cio">Interface IPHXWindow</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td><a class="section" href="#PasDoc-Properties">Properties</a></td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="phxDevice.html">phxDevice</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type IPHXWindow = interface(IInterface)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Allow resizing of the window Activate vertical syncronisation Show the cursor Window interface</p>
+<a name="PasDoc-Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">IInterface</li>
+<li class="thisitem">IPHXWindow</li></ul><h2 class="overview">Overview</h2>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxDevice.IPHXWindow.html#GetWindowWidth">GetWindowWidth</a></b>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxDevice.IPHXWindow.html#GetWindowHeight">GetWindowHeight</a></b>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxDevice.IPHXWindow.html#GetWindowFullscreen">GetWindowFullscreen</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxDevice.IPHXWindow.html#GetWindowFlags">GetWindowFlags</a></b>: <a  href="phxDevice.html#TPHXWindowFlags">TPHXWindowFlags</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxDevice.IPHXWindow.html#GetWindowIcon">GetWindowIcon</a></b>: String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxDevice.IPHXWindow.html#SetWindowTitle">SetWindowTitle</a></b>(const Title: String);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxDevice.IPHXWindow.html#SetWindowWidth">SetWindowWidth</a></b>(const Width: Integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxDevice.IPHXWindow.html#SetWindowHeight">SetWindowHeight</a></b>(const Height: Integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxDevice.IPHXWindow.html#SetWindowFullscreen">SetWindowFullscreen</a></b>(const Fullscreen: Boolean);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxDevice.IPHXWindow.html#SetWindowFlags">SetWindowFlags</a></b>(const Flags: <a  href="phxDevice.html#TPHXWindowFlags">TPHXWindowFlags</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxDevice.IPHXWindow.html#SetWindowIcon">SetWindowIcon</a></b>(const Icon: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxDevice.IPHXWindow.html#LoadIcon">LoadIcon</a></b>(const Icon: String);</code></td>
+</tr>
+</table>
+<a name="PasDoc-Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxDevice.IPHXWindow.html#Title">Title</a></b>: String write <a  href="phxDevice.IPHXWindow.html#SetWindowTitle">SetWindowTitle</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxDevice.IPHXWindow.html#Width">Width</a></b>: Integer read <a  href="phxDevice.IPHXWindow.html#GetWindowWidth">GetWindowWidth</a> write <a  href="phxDevice.IPHXWindow.html#SetWindowWidth">SetWindowWidth</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxDevice.IPHXWindow.html#Height">Height</a></b>: Integer read <a  href="phxDevice.IPHXWindow.html#GetWindowHeight">GetWindowHeight</a> write <a  href="phxDevice.IPHXWindow.html#SetWindowHeight">SetWindowHeight</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxDevice.IPHXWindow.html#Fullscreen">Fullscreen</a></b>: Boolean read <a  href="phxDevice.IPHXWindow.html#GetWindowFullscreen">GetWindowFullscreen</a> write <a  href="phxDevice.IPHXWindow.html#SetWindowFullscreen">SetWindowFullscreen</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxDevice.IPHXWindow.html#Flags">Flags</a></b>: <a  href="phxDevice.html#TPHXWindowFlags">TPHXWindowFlags</a> read <a  href="phxDevice.IPHXWindow.html#GetWindowFlags">GetWindowFlags</a> write <a  href="phxDevice.IPHXWindow.html#SetWindowFlags">SetWindowFlags</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxDevice.IPHXWindow.html#Icon">Icon</a></b>: String read <a  href="phxDevice.IPHXWindow.html#GetWindowIcon">GetWindowIcon</a> write <a  href="phxDevice.IPHXWindow.html#SetWindowIcon">SetWindowIcon</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetWindowWidth"></a><code>function <b>GetWindowWidth</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get the current window size</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetWindowHeight"></a><code>function <b>GetWindowHeight</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get the current window size</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetWindowFullscreen"></a><code>function <b>GetWindowFullscreen</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Return if the window is shown in fullscreen</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetWindowFlags"></a><code>function <b>GetWindowFlags</b>: <a  href="phxDevice.html#TPHXWindowFlags">TPHXWindowFlags</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get the window flags</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetWindowIcon"></a><code>function <b>GetWindowIcon</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get the current icon</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetWindowTitle"></a><code>procedure <b>SetWindowTitle</b>(const Title: String);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Set the window title</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetWindowWidth"></a><code>procedure <b>SetWindowWidth</b>(const Width: Integer);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Set the window width</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetWindowHeight"></a><code>procedure <b>SetWindowHeight</b>(const Height: Integer);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Set the window height</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetWindowFullscreen"></a><code>procedure <b>SetWindowFullscreen</b>(const Fullscreen: Boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Set if the window is shown in fullscreen</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetWindowFlags"></a><code>procedure <b>SetWindowFlags</b>(const Flags: <a  href="phxDevice.html#TPHXWindowFlags">TPHXWindowFlags</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Set the window flags</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetWindowIcon"></a><code>procedure <b>SetWindowIcon</b>(const Icon: String);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Set the icon for the window</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LoadIcon"></a><code>procedure <b>LoadIcon</b>(const Icon: String);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Load a new icon for the window</p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Title"></a><code>property <b>Title</b>: String write <a  href="phxDevice.IPHXWindow.html#SetWindowTitle">SetWindowTitle</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Change the window title</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Width"></a><code>property <b>Width</b>: Integer read <a  href="phxDevice.IPHXWindow.html#GetWindowWidth">GetWindowWidth</a> write <a  href="phxDevice.IPHXWindow.html#SetWindowWidth">SetWindowWidth</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The width of the window</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Height"></a><code>property <b>Height</b>: Integer read <a  href="phxDevice.IPHXWindow.html#GetWindowHeight">GetWindowHeight</a> write <a  href="phxDevice.IPHXWindow.html#SetWindowHeight">SetWindowHeight</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The height of the window</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Fullscreen"></a><code>property <b>Fullscreen</b>: Boolean read <a  href="phxDevice.IPHXWindow.html#GetWindowFullscreen">GetWindowFullscreen</a> write <a  href="phxDevice.IPHXWindow.html#SetWindowFullscreen">SetWindowFullscreen</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Is the window in fullscreen mode</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Flags"></a><code>property <b>Flags</b>: <a  href="phxDevice.html#TPHXWindowFlags">TPHXWindowFlags</a> read <a  href="phxDevice.IPHXWindow.html#GetWindowFlags">GetWindowFlags</a> write <a  href="phxDevice.IPHXWindow.html#SetWindowFlags">SetWindowFlags</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The window flags</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Icon"></a><code>property <b>Icon</b>: String read <a  href="phxDevice.IPHXWindow.html#GetWindowIcon">GetWindowIcon</a> write <a  href="phxDevice.IPHXWindow.html#SetWindowIcon">SetWindowIcon</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The bitmap file containing the window icon</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.13.0</a> on 2013-08-16 13:28:36</em>
+</span>
+</td></tr></table></body></html>

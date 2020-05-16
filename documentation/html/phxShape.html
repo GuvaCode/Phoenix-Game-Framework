@@ -1,0 +1,199 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Phoenix API Doc: phxShape</title>
+<meta name="generator" content="PasDoc 0.13.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Phoenix API Doc</h2><p><a href="introduction.html" class="navigation">Introduction</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div></p></td><td class="content">
+<link rel="icon" type="image/ico" href="Phoenix_icon.png"></link>
+<link rel="shortcut icon" href="Phoenix_icon.png"></link>
+<h1 class="unit">Unit phxShape</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td>Uses</td><td><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></td><td><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></td><td><a class="section" href="#PasDoc-Types">Types</a></td><td><a class="section" href="#PasDoc-Constants">Constants</a></td><td>Variables</td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="description">Description</h2>
+<p>
+Convex shapes and collision testing</p>
+<p>
+
+
+<p>Uses the separating Axis Theorem (SAT) for testing for collisions</p>
+<a name="PasDoc-Uses"></a><h2 class="overview">Overview</h2>
+<a name="PasDoc-Classes"></a><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold" href="phxShape.TPHXShapeHeader.html"><code>TPHXShapeHeader</code></a></td>
+<td class="itemdesc">The shape file header.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxShape.TPHXShape.html"><code>TPHXShape</code></a></td>
+<td class="itemdesc">Abstract shape class</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxShape.TPHXPoint.html"><code>TPHXPoint</code></a></td>
+<td class="itemdesc">A point shape</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxShape.TPHXBox.html"><code>TPHXBox</code></a></td>
+<td class="itemdesc">Box shape</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxShape.TPHXPolygon.html"><code>TPHXPolygon</code></a></td>
+<td class="itemdesc">Convex polygon shape</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxShape.TPHXLine.html"><code>TPHXLine</code></a></td>
+<td class="itemdesc">Line shape</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxShape.TPHXCircle.html"><code>TPHXCircle</code></a></td>
+<td class="itemdesc">Circle shape</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxShape.TPHXShapeList.html"><code>TPHXShapeList</code></a></td>
+<td class="itemdesc">List of shapes</td>
+</tr>
+</table>
+<a name="PasDoc-FuncsProcs"></a><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxShape.html#CreateShape">CreateShape</a></b>(Kind: <a  href="phxShape.html#TPHXShapeKind">TPHXShapeKind</a>): <a  href="phxShape.TPHXShape.html">TPHXShape</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxShape.html#LoadShape">LoadShape</a></b>(const FileName: String): <a  href="phxShape.TPHXShape.html">TPHXShape</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxShape.html#LoadShape">LoadShape</a></b>(Stream: TStream): <a  href="phxShape.TPHXShape.html">TPHXShape</a>; overload;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Types"></a><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxShape.html#TPHXShapeKind">TPHXShapeKind</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxShape.html#PShapeList">PShapeList</a></b> = &circ;<a  href="phxShape.html#TShapeList">TShapeList</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxShape.html#TShapeList">TShapeList</a></b> = array[0..$00FFFFFF] of <a  href="phxShape.TPHXShape.html">TPHXShape</a>;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Constants"></a><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxShape.html#PHXSHAPE_EXT">PHXSHAPE_EXT</a></b> = '.phxshp';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxShape.html#PHXSHAPE_VERSION">PHXSHAPE_VERSION</a></b> = 6;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxShape.html#PHXSHAPE_CONTACT_THRESHOLD">PHXSHAPE_CONTACT_THRESHOLD</a></b> = 1.0E-3;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CreateShape"></a><code>function <b>CreateShape</b>(Kind: <a  href="phxShape.html#TPHXShapeKind">TPHXShapeKind</a>): <a  href="phxShape.TPHXShape.html">TPHXShape</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Create the shape fir a kind</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="LoadShape"></a><code>function <b>LoadShape</b>(const FileName: String): <a  href="phxShape.TPHXShape.html">TPHXShape</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Create and load a shape from a file</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="LoadShape"></a><code>function <b>LoadShape</b>(Stream: TStream): <a  href="phxShape.TPHXShape.html">TPHXShape</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Create and load a shape from a stream</p>
+</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXShapeKind"></a><code><b>TPHXShapeKind</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+The supported shape types</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+PHX_SHAPE_POINT: Point shape</li>
+<li>
+PHX_SHAPE_BOX: Box shape</li>
+<li>
+PHX_SHAPE_POLYGON: Convex polygon shape</li>
+<li>
+PHX_SHAPE_CIRCLE: Circle shape</li>
+<li>
+PHX_SHAPE_LINE: Line shape</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PShapeList"></a><code><b>PShapeList</b> = &circ;<a  href="phxShape.html#TShapeList">TShapeList</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TShapeList"></a><code><b>TShapeList</b> = array[0..$00FFFFFF] of <a  href="phxShape.TPHXShape.html">TPHXShape</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PHXSHAPE_EXT"></a><code><b>PHXSHAPE_EXT</b> = '.phxshp';</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+File extension for the shape files</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PHXSHAPE_VERSION"></a><code><b>PHXSHAPE_VERSION</b> = 6;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Version</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PHXSHAPE_CONTACT_THRESHOLD"></a><code><b>PHXSHAPE_CONTACT_THRESHOLD</b> = 1.0E-3;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Constant determining if two contacts are parallel to the current axis</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.13.0</a> on 2013-08-26 11:02:42</em>
+</span>
+</td></tr></table></body></html>

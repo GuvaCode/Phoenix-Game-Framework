@@ -1,0 +1,324 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Phoenix API Doc: phxSkin</title>
+<meta name="generator" content="PasDoc 0.13.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Phoenix API Doc</h2><p><a href="introduction.html" class="navigation">Introduction</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div></p></td><td class="content">
+<link rel="icon" type="image/ico" href="Phoenix_icon.png"></link>
+<link rel="shortcut icon" href="Phoenix_icon.png"></link>
+<h1 class="unit">Unit phxSkin</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td>Uses</td><td><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></td><td><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></td><td><a class="section" href="#PasDoc-Types">Types</a></td><td><a class="section" href="#PasDoc-Constants">Constants</a></td><td>Variables</td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="description">Description</h2>
+<p>
+Skinning support for the gui engine</p>
+<a name="PasDoc-Uses"></a><h2 class="overview">Overview</h2>
+<a name="PasDoc-Classes"></a><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxSkin.TPHXSkinElement.html"><code>TPHXSkinElement</code></a></td>
+<td class="itemdesc">Contains the texture coordinates and properties for a element describing the apperance for a control in a given state</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxSkin.TPHXSkinElementList.html"><code>TPHXSkinElementList</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold" href="phxSkin.TPHXSkinHeader.html"><code>TPHXSkinHeader</code></a></td>
+<td class="itemdesc">The skin file header.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxSkin.TPHXSkin.html"><code>TPHXSkin</code></a></td>
+<td class="itemdesc">Contains a list of skin elements</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxSkin.TPHXSkinTransition.html"><code>TPHXSkinTransition</code></a></td>
+<td class="itemdesc">Class for managing transitions between skin states</td>
+</tr>
+</table>
+<a name="PasDoc-FuncsProcs"></a><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxSkin.html#GetControlName">GetControlName</a></b>(const Name: String): String;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxSkin.html#GetPartName">GetPartName</a></b>(const Name: String): String;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxSkin.html#ControlToString">ControlToString</a></b>(const Value: <a  href="phxSkin.html#TPHXThemedControl">TPHXThemedControl</a>): String;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxSkin.html#PartToString">PartToString</a></b>(const Value: <a  href="phxSkin.html#TPHXThemedPart">TPHXThemedPart</a> ): String;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxSkin.html#StringToPart">StringToPart</a></b>(const Value: String): <a  href="phxSkin.html#TPHXThemedPart">TPHXThemedPart</a>;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Types"></a><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxSkin.html#TPHXThemedControl">TPHXThemedControl</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxSkin.html#TPHXThemedPart">TPHXThemedPart</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxSkin.html#PSkinElementList">PSkinElementList</a></b> = &circ;<a  href="phxSkin.html#TSkinElementList">TSkinElementList</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxSkin.html#TSkinElementList">TSkinElementList</a></b> = array[0..$00FFFFFF] of <a  href="phxSkin.TPHXSkinElement.html">TPHXSkinElement</a>;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Constants"></a><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxSkin.html#PHXSKIN_EXT">PHXSKIN_EXT</a></b> = '.phxskn';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxSkin.html#PHXSKIN_VERSION">PHXSKIN_VERSION</a></b> = 7;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetControlName"></a><code>function <b>GetControlName</b>(const Name: String): String;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Returns the part before the dot in the element name</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetPartName"></a><code>function <b>GetPartName</b>(const Name: String): String;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Returns the part after the dot in the skin name</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ControlToString"></a><code>function <b>ControlToString</b>(const Value: <a  href="phxSkin.html#TPHXThemedControl">TPHXThemedControl</a>): String;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Get the name for a TPHXThemedControl</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PartToString"></a><code>function <b>PartToString</b>(const Value: <a  href="phxSkin.html#TPHXThemedPart">TPHXThemedPart</a> ): String;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Converts a themed part to string</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StringToPart"></a><code>function <b>StringToPart</b>(const Value: String): <a  href="phxSkin.html#TPHXThemedPart">TPHXThemedPart</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Converts a string to a themed part</p>
+</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXThemedControl"></a><code><b>TPHXThemedControl</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+List of controls</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+tcUnknown: Unknown control</li>
+<li>
+tcWindow: TPHXWindow</li>
+<li>
+tcPanel: TPHXPanel</li>
+<li>
+tcFrame: TPHXFrame</li>
+<li>
+tcButton: TPHXButton</li>
+<li>
+tcCheckBox: TPHXCheckBox</li>
+<li>
+tcRadioButton: TPHXRadioButton</li>
+<li>
+tcEdit: TPHXEdit</li>
+<li>
+tcSlider: TPHXSlider</li>
+<li>
+tcProgressBar: TPHXProgressbar,</li>
+<li>
+tcScrollbar: TPHXScrollbar</li>
+<li>
+tcListBox: TPHXListBox</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXThemedPart"></a><code><b>TPHXThemedPart</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+List of parts for the controls</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+teUnknown: Unknown part</li>
+<li>
+teWindowNormal: TPHXWindow</li>
+<li>
+teWindowHover: &nbsp;</li>
+<li>
+teWindowDisabled: &nbsp;</li>
+<li>
+tePanelNormal: TPHXPanel</li>
+<li>
+tePanelDisabled: &nbsp;</li>
+<li>
+teFrameNormal: TPHXFrame</li>
+<li>
+teFrameDisabled: &nbsp;</li>
+<li>
+teButtonNormal: TPHXButton</li>
+<li>
+teButtonHover: &nbsp;</li>
+<li>
+teButtonDisabled: &nbsp;</li>
+<li>
+teButtonPressed: &nbsp;</li>
+<li>
+teButtonFocused: &nbsp;</li>
+<li>
+teCheckBoxNormal: TPHXCheckBox</li>
+<li>
+teCheckBoxHover: &nbsp;</li>
+<li>
+teCheckBoxChecked: &nbsp;</li>
+<li>
+teCheckBoxDisabled: &nbsp;</li>
+<li>
+teRadioButtonNormal: TPHXRadioButton</li>
+<li>
+teRadioButtonHover: &nbsp;</li>
+<li>
+teRadioButtonChecked: &nbsp;</li>
+<li>
+teRadioButtonDisabled: &nbsp;</li>
+<li>
+teEditNormal: TPHXEdit</li>
+<li>
+teEditHover: &nbsp;</li>
+<li>
+teEditDisabled: &nbsp;</li>
+<li>
+teEditCursor: &nbsp;</li>
+<li>
+teEditSelection: &nbsp;</li>
+<li>
+teProgressBarFrame: TPHXProgressbar,</li>
+<li>
+teProgressBarHorz: &nbsp;</li>
+<li>
+teProgressBarVert: &nbsp;</li>
+<li>
+teSliderTrackNormal: TPHXSlider</li>
+<li>
+teSliderTrackDisabled: &nbsp;</li>
+<li>
+teSliderThumbNormal: &nbsp;</li>
+<li>
+teSliderThumbHover: &nbsp;</li>
+<li>
+teSliderThumbDisabled: &nbsp;</li>
+<li>
+teScrollbarTrackNormal: TPHXScrollbar</li>
+<li>
+teScrollbarTrackDisabled: &nbsp;</li>
+<li>
+teScrollbarThumbNormal: &nbsp;</li>
+<li>
+teScrollbarThumbDisabled: &nbsp;</li>
+<li>
+teScrollbarThumbHover: &nbsp;</li>
+<li>
+teScrollbarButtonIncNormal: &nbsp;</li>
+<li>
+teScrollbarButtonIncHover: &nbsp;</li>
+<li>
+teScrollbarButtonIncDisabled: &nbsp;</li>
+<li>
+teScrollbarButtonIncPressed: &nbsp;</li>
+<li>
+teScrollbarButtonDecNormal: &nbsp;</li>
+<li>
+teScrollbarButtonDecHover: &nbsp;</li>
+<li>
+teScrollbarButtonDecDisabled: &nbsp;</li>
+<li>
+teScrollbarButtonDecPressed: &nbsp;</li>
+<li>
+teListBoxNormal: TPHXListBox</li>
+<li>
+teListBoxDisabled: &nbsp;</li>
+<li>
+teListBoxItemNormal: &nbsp;</li>
+<li>
+teListBoxItemSelected: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PSkinElementList"></a><code><b>PSkinElementList</b> = &circ;<a  href="phxSkin.html#TSkinElementList">TSkinElementList</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TSkinElementList"></a><code><b>TSkinElementList</b> = array[0..$00FFFFFF] of <a  href="phxSkin.TPHXSkinElement.html">TPHXSkinElement</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PHXSKIN_EXT"></a><code><b>PHXSKIN_EXT</b> = '.phxskn';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PHXSKIN_VERSION"></a><code><b>PHXSKIN_VERSION</b> = 7;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Version</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.13.0</a> on 2013-08-26 11:02:42</em>
+</span>
+</td></tr></table></body></html>

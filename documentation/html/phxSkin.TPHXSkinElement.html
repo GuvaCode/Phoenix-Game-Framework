@@ -1,0 +1,417 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Phoenix API Doc: phxSkin: Class TPHXSkinElement</title>
+<meta name="generator" content="PasDoc 0.13.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Phoenix API Doc</h2><p><a href="introduction.html" class="navigation">Introduction</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div></p></td><td class="content">
+<link rel="icon" type="image/ico" href="Phoenix_icon.png"></link>
+<link rel="shortcut icon" href="Phoenix_icon.png"></link>
+<a name="TPHXSkinElement"></a><h1 class="cio">Class TPHXSkinElement</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></td><td><a class="section" href="#PasDoc-Fields">Fields</a></td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td><a class="section" href="#PasDoc-Properties">Properties</a></td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="phxSkin.html">phxSkin</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TPHXSkinElement = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Contains the texture coordinates and properties for a element describing the apperance for a control in a given state</p>
+<a name="PasDoc-Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TPHXSkinElement</li></ul><h2 class="overview">Overview</h2>
+<a name="PasDoc-Fields"></a><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a  href="phxSkin.TPHXSkinElement.html#PrimitiveCount">PrimitiveCount</a></b>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a  href="phxSkin.TPHXSkinElement.html#Vertices">Vertices</a></b>: array[0..15] of <a  href="phxTypes.TPHXVertex.html">TPHXVertex</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a  href="phxSkin.TPHXSkinElement.html#Indicies">Indicies</a></b>: array[0..53] of <a  href="phxTypes.html#TPHXIndex">TPHXIndex</a>;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxSkin.TPHXSkinElement.html#LoadElement">LoadElement</a></b>(Reader: <a  href="phxClasses.TPHXReader.html">TPHXReader</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxSkin.TPHXSkinElement.html#SaveElement">SaveElement</a></b>(Writer: <a  href="phxClasses.TPHXWriter.html">TPHXWriter</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="phxSkin.TPHXSkinElement.html#Create">Create</a></b>(ASkin: <a  href="phxSkin.TPHXSkin.html">TPHXSkin</a>); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a  href="phxSkin.TPHXSkinElement.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxSkin.TPHXSkinElement.html#Initialize">Initialize</a></b>(Texture: <a  href="phxTexture.TPHXTexture.html">TPHXTexture</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxSkin.TPHXSkinElement.html#LoadFromFile">LoadFromFile</a></b>(const FileName: String);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxSkin.TPHXSkinElement.html#LoadFromStream">LoadFromStream</a></b>(Stream: TStream);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxSkin.TPHXSkinElement.html#SaveToFile">SaveToFile</a></b>(const FileName: String);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxSkin.TPHXSkinElement.html#SaveToStream">SaveToStream</a></b>(Stream: TStream);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxSkin.TPHXSkinElement.html#Draw">Draw</a></b>(Canvas: <a  href="phxCanvas.TPHXCanvas.html">TPHXCanvas</a>; const Position: <a  href="phxTypes.TVector3f.html">TVector3f</a>; const Size: <a  href="phxTypes.TVector2f.html">TVector2f</a>; const Alpha: Single); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxSkin.TPHXSkinElement.html#Draw">Draw</a></b>(Canvas: <a  href="phxCanvas.TPHXCanvas.html">TPHXCanvas</a>; const Transform: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; const Size: <a  href="phxTypes.TVector2f.html">TVector2f</a>; const Alpha: Single); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxSkin.TPHXSkinElement.html#GetClientRect">GetClientRect</a></b>(const Bounds: <a  href="phxTypes.TRectf.html">TRectf</a>): <a  href="phxTypes.TRectf.html">TRectf</a>;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSkin.TPHXSkinElement.html#Skin">Skin</a></b>: <a  href="phxSkin.TPHXSkin.html">TPHXSkin</a> read FSkin;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSkin.TPHXSkinElement.html#Name">Name</a></b>: String read FName write SetName;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSkin.TPHXSkinElement.html#Part">Part</a></b>: <a  href="phxSkin.html#TPHXThemedPart">TPHXThemedPart</a> read FPart write FPart;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSkin.TPHXSkinElement.html#Width">Width</a></b>: Integer read GetWidth;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSkin.TPHXSkinElement.html#Height">Height</a></b>: Integer read GetHeight;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSkin.TPHXSkinElement.html#Size">Size</a></b>: <a  href="phxTypes.TVector2i.html">TVector2i</a> read GetSize;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSkin.TPHXSkinElement.html#Color">Color</a></b>: <a  href="phxTypes.TColor4f.html">TColor4f</a> read FColor write FColor;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSkin.TPHXSkinElement.html#Bounds">Bounds</a></b>: <a  href="phxTypes.TRectI.html">TRecti</a> read FBounds write FBounds;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSkin.TPHXSkinElement.html#Margins">Margins</a></b>: <a  href="phxTypes.TRectI.html">TRecti</a> read FMargins write FMargins;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSkin.TPHXSkinElement.html#Shadow">Shadow</a></b>: <a  href="phxTypes.TRectI.html">TRecti</a> read FShadow write FShadow;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSkin.TPHXSkinElement.html#TextPadding">TextPadding</a></b>: <a  href="phxTypes.TRectI.html">TRecti</a> read FTextPadding write FTextPadding;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSkin.TPHXSkinElement.html#TextColor">TextColor</a></b>: <a  href="phxTypes.TColor4f.html">TColor4f</a> read FTextColor write FTextColor;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="PrimitiveCount"></a><code><b>PrimitiveCount</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Number of required primitives</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="Vertices"></a><code><b>Vertices</b>: array[0..15] of <a  href="phxTypes.TPHXVertex.html">TPHXVertex</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="Indicies"></a><code><b>Indicies</b>: array[0..53] of <a  href="phxTypes.html#TPHXIndex">TPHXIndex</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="LoadElement"></a><code>procedure <b>LoadElement</b>(Reader: <a  href="phxClasses.TPHXReader.html">TPHXReader</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Load the element from a reader</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="SaveElement"></a><code>procedure <b>SaveElement</b>(Writer: <a  href="phxClasses.TPHXWriter.html">TPHXWriter</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Save the element to a writer</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(ASkin: <a  href="phxSkin.TPHXSkin.html">TPHXSkin</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Initialize"></a><code>procedure <b>Initialize</b>(Texture: <a  href="phxTexture.TPHXTexture.html">TPHXTexture</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Intialize the skin, must be called before rendering the skin</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LoadFromFile"></a><code>procedure <b>LoadFromFile</b>(const FileName: String);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Load from file</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LoadFromStream"></a><code>procedure <b>LoadFromStream</b>(Stream: TStream);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Load from stream</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SaveToFile"></a><code>procedure <b>SaveToFile</b>(const FileName: String);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Save the image to a file</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SaveToStream"></a><code>procedure <b>SaveToStream</b>(Stream: TStream);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Save the image to a stream</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Draw"></a><code>procedure <b>Draw</b>(Canvas: <a  href="phxCanvas.TPHXCanvas.html">TPHXCanvas</a>; const Position: <a  href="phxTypes.TVector3f.html">TVector3f</a>; const Size: <a  href="phxTypes.TVector2f.html">TVector2f</a>; const Alpha: Single); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Render the skin element</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Draw"></a><code>procedure <b>Draw</b>(Canvas: <a  href="phxCanvas.TPHXCanvas.html">TPHXCanvas</a>; const Transform: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; const Size: <a  href="phxTypes.TVector2f.html">TVector2f</a>; const Alpha: Single); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Render Draw skin element</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetClientRect"></a><code>function <b>GetClientRect</b>(const Bounds: <a  href="phxTypes.TRectf.html">TRectf</a>): <a  href="phxTypes.TRectf.html">TRectf</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get the client rectangle for a state, the input bounds are shrinked with the area Margins</p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Skin"></a><code>property <b>Skin</b>: <a  href="phxSkin.TPHXSkin.html">TPHXSkin</a> read FSkin;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The owning skin</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Name"></a><code>property <b>Name</b>: String read FName write SetName;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Name of the skin element</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Part"></a><code>property <b>Part</b>: <a  href="phxSkin.html#TPHXThemedPart">TPHXThemedPart</a> read FPart write FPart;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The part this element is</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Width"></a><code>property <b>Width</b>: Integer read GetWidth;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Calculate the width of the skin element</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Height"></a><code>property <b>Height</b>: Integer read GetHeight;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Calculate the height of the skin element</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Size"></a><code>property <b>Size</b>: <a  href="phxTypes.TVector2i.html">TVector2i</a> read GetSize;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Calculate the size of the skin element</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Color"></a><code>property <b>Color</b>: <a  href="phxTypes.TColor4f.html">TColor4f</a> read FColor write FColor;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Color of the element</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Bounds"></a><code>property <b>Bounds</b>: <a  href="phxTypes.TRectI.html">TRecti</a> read FBounds write FBounds;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The texture coordinates</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Margins"></a><code>property <b>Margins</b>: <a  href="phxTypes.TRectI.html">TRecti</a> read FMargins write FMargins;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Size of the fixed margins that doesnt change size when resizing the control</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Shadow"></a><code>property <b>Shadow</b>: <a  href="phxTypes.TRectI.html">TRecti</a> read FShadow write FShadow;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Margins that are drawn outside the control for shadows and such</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TextPadding"></a><code>property <b>TextPadding</b>: <a  href="phxTypes.TRectI.html">TRecti</a> read FTextPadding write FTextPadding;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Padding for the control text</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TextColor"></a><code>property <b>TextColor</b>: <a  href="phxTypes.TColor4f.html">TColor4f</a> read FTextColor write FTextColor;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Color for the control text</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.13.0</a> on 2013-08-26 11:02:42</em>
+</span>
+</td></tr></table></body></html>

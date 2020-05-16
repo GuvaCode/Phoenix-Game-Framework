@@ -1,0 +1,445 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Phoenix API Doc: phxPersistency: Class TPHXNode</title>
+<meta name="generator" content="PasDoc 0.13.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Phoenix API Doc</h2><p><a href="introduction.html" class="navigation">Introduction</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div></p></td><td class="content">
+<link rel="icon" type="image/ico" href="Phoenix_icon.png"></link>
+<link rel="shortcut icon" href="Phoenix_icon.png"></link>
+<a name="TPHXNode"></a><h1 class="cio">Class TPHXNode</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td><a class="section" href="#PasDoc-Properties">Properties</a></td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="phxPersistency.html">phxPersistency</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TPHXNode = class(TInterfacedObject, <a class="normal" href="phxPersistency.IPHXNode.html">IPHXNode</a>)</code></p>
+<h2 class="description">Description</h2>
+<a name="PasDoc-Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TInterfacedObject</li>
+<li class="thisitem">TPHXNode</li></ul><h2 class="overview">Overview</h2>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="phxPersistency.TPHXNode.html#Create">Create</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a  href="phxPersistency.TPHXNode.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxPersistency.TPHXNode.html#SaveNode">SaveNode</a></b>(Stream: TStream);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxPersistency.TPHXNode.html#LoadNode">LoadNode</a></b>(Stream: TStream);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxPersistency.TPHXNode.html#AddChild">AddChild</a></b>(const Name: AnsiString): <a  href="phxPersistency.TPHXNode.html">TPHXNode</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxPersistency.TPHXNode.html#FindChild">FindChild</a></b>(const Name: AnsiString): <a  href="phxPersistency.TPHXNode.html">TPHXNode</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxPersistency.TPHXNode.html#HasAttribute">HasAttribute</a></b>(const Name: AnsiString): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxPersistency.TPHXNode.html#ReadBinary">ReadBinary</a></b>(const Name: AnsiString; var Buffer: Pointer; const Size: Integer): PByte;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxPersistency.TPHXNode.html#ReadByte">ReadByte</a></b>(const Name: AnsiString; const Default: Byte = 0): Byte;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxPersistency.TPHXNode.html#ReadWord">ReadWord</a></b>(const Name: AnsiString; const Default: Word = 0): Word;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxPersistency.TPHXNode.html#ReadCardinal">ReadCardinal</a></b>(const Name: AnsiString; const Default: Cardinal = 0): Cardinal;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxPersistency.TPHXNode.html#ReadInteger">ReadInteger</a></b>(const Name: AnsiString; const Default: Integer = 0): Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxPersistency.TPHXNode.html#ReadSingle">ReadSingle</a></b>(const Name: AnsiString; const Default: Single = 0): Single;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxPersistency.TPHXNode.html#ReadDouble">ReadDouble</a></b>(const Name: AnsiString; const Default: Double = 0): Double;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxPersistency.TPHXNode.html#ReadBoolean">ReadBoolean</a></b>(const Name: AnsiString; const Default: Boolean = False): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxPersistency.TPHXNode.html#ReadString">ReadString</a></b>(const Name: AnsiString; const Default: String = ''): String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxPersistency.TPHXNode.html#WriteBinary">WriteBinary</a></b>(const Name: AnsiString; const Buffer: Pointer; const Size: Integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxPersistency.TPHXNode.html#WriteByte">WriteByte</a></b>(const Name: AnsiString; const Value: Byte);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxPersistency.TPHXNode.html#WriteWord">WriteWord</a></b>(const Name: AnsiString; const Value: Word);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxPersistency.TPHXNode.html#WriteCardinal">WriteCardinal</a></b>(const Name: AnsiString; const Value: Cardinal);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxPersistency.TPHXNode.html#WriteInteger">WriteInteger</a></b>(const Name: AnsiString; const Value: Integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxPersistency.TPHXNode.html#WriteSingle">WriteSingle</a></b>(const Name: AnsiString; const Value: Single);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxPersistency.TPHXNode.html#WriteDouble">WriteDouble</a></b>(const Name: AnsiString; const Value: Double);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxPersistency.TPHXNode.html#WriteBoolean">WriteBoolean</a></b>(const Name: AnsiString; const Value: Boolean);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxPersistency.TPHXNode.html#WriteString">WriteString</a></b>(const Name: AnsiString; const Value: String);</code></td>
+</tr>
+</table>
+<a name="PasDoc-Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxPersistency.TPHXNode.html#Name">Name</a></b>: AnsiString read FName write SetName;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxPersistency.TPHXNode.html#Hash">Hash</a></b>: Cardinal read FHash;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxPersistency.TPHXNode.html#Attributes">Attributes</a></b>: <a  href="phxPersistency.TPHXAttributes.html">TPHXAttributes</a> read FAttributes;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxPersistency.TPHXNode.html#Children">Children</a></b>: <a  href="phxPersistency.TPHXNodes.html">TPHXNodes</a> read FChildren;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Default constructor</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SaveNode"></a><code>procedure <b>SaveNode</b>(Stream: TStream);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Save the node to a stream</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LoadNode"></a><code>procedure <b>LoadNode</b>(Stream: TStream);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Load the node from a stream</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="AddChild"></a><code>function <b>AddChild</b>(const Name: AnsiString): <a  href="phxPersistency.TPHXNode.html">TPHXNode</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Add a child node tho this node</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FindChild"></a><code>function <b>FindChild</b>(const Name: AnsiString): <a  href="phxPersistency.TPHXNode.html">TPHXNode</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Find a child node tho this node</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HasAttribute"></a><code>function <b>HasAttribute</b>(const Name: AnsiString): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns true if the node contains a attribute by name</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ReadBinary"></a><code>function <b>ReadBinary</b>(const Name: AnsiString; var Buffer: Pointer; const Size: Integer): PByte;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Read binary data from the attributes</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ReadByte"></a><code>function <b>ReadByte</b>(const Name: AnsiString; const Default: Byte = 0): Byte;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Read a byte attribute</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ReadWord"></a><code>function <b>ReadWord</b>(const Name: AnsiString; const Default: Word = 0): Word;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Read a word attribute</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ReadCardinal"></a><code>function <b>ReadCardinal</b>(const Name: AnsiString; const Default: Cardinal = 0): Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Read a cardinal attribute</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ReadInteger"></a><code>function <b>ReadInteger</b>(const Name: AnsiString; const Default: Integer = 0): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Read a integer attribute</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ReadSingle"></a><code>function <b>ReadSingle</b>(const Name: AnsiString; const Default: Single = 0): Single;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Read a single precision float</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ReadDouble"></a><code>function <b>ReadDouble</b>(const Name: AnsiString; const Default: Double = 0): Double;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Read a double precision float</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ReadBoolean"></a><code>function <b>ReadBoolean</b>(const Name: AnsiString; const Default: Boolean = False): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Read a boolean</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ReadString"></a><code>function <b>ReadString</b>(const Name: AnsiString; const Default: String = ''): String;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Read a string from the attribute</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="WriteBinary"></a><code>procedure <b>WriteBinary</b>(const Name: AnsiString; const Buffer: Pointer; const Size: Integer);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Write binary data to the attribute</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="WriteByte"></a><code>procedure <b>WriteByte</b>(const Name: AnsiString; const Value: Byte);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Write a byte attribute</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="WriteWord"></a><code>procedure <b>WriteWord</b>(const Name: AnsiString; const Value: Word);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Write a word to the attribute</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="WriteCardinal"></a><code>procedure <b>WriteCardinal</b>(const Name: AnsiString; const Value: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Write a cardinal to the attribute</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="WriteInteger"></a><code>procedure <b>WriteInteger</b>(const Name: AnsiString; const Value: Integer);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Write a integer to the attribute</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="WriteSingle"></a><code>procedure <b>WriteSingle</b>(const Name: AnsiString; const Value: Single);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Write a single to the attribute</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="WriteDouble"></a><code>procedure <b>WriteDouble</b>(const Name: AnsiString; const Value: Double);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Write a double to the attribute</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="WriteBoolean"></a><code>procedure <b>WriteBoolean</b>(const Name: AnsiString; const Value: Boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Write a boolean to the attribute</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="WriteString"></a><code>procedure <b>WriteString</b>(const Name: AnsiString; const Value: String);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Write a string to the attribute</p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Name"></a><code>property <b>Name</b>: AnsiString read FName write SetName;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Name of the node</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Hash"></a><code>property <b>Hash</b>: Cardinal read FHash;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Hash code of the node name</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Attributes"></a><code>property <b>Attributes</b>: <a  href="phxPersistency.TPHXAttributes.html">TPHXAttributes</a> read FAttributes;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+List of attributes</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Children"></a><code>property <b>Children</b>: <a  href="phxPersistency.TPHXNodes.html">TPHXNodes</a> read FChildren;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+List of child nodes</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.13.0</a> on 2013-08-26 11:02:41</em>
+</span>
+</td></tr></table></body></html>

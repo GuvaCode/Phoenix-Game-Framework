@@ -1,0 +1,250 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Phoenix API Doc: phxSprite: Class TPHXSpriteFactory</title>
+<meta name="generator" content="PasDoc 0.13.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Phoenix API Doc</h2><p><a href="introduction.html" class="navigation">Introduction</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div></p></td><td class="content">
+<link rel="icon" type="image/ico" href="Phoenix_icon.png"></link>
+<link rel="shortcut icon" href="Phoenix_icon.png"></link>
+<a name="TPHXSpriteFactory"></a><h1 class="cio">Class TPHXSpriteFactory</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td><a class="section" href="#PasDoc-Properties">Properties</a></td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="phxSprite.html">phxSprite</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TPHXSpriteFactory = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<p>
+The factory is used to create sprites by name</p>
+<a name="PasDoc-Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TPHXSpriteFactory</li></ul><h2 class="overview">Overview</h2>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="phxSprite.TPHXSpriteFactory.html#Create">Create</a></b>(AEngine: <a  href="phxSprite.TPHXSpriteEngine.html">TPHXSpriteEngine</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a  href="phxSprite.TPHXSpriteFactory.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxSprite.TPHXSpriteFactory.html#Clear">Clear</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxSprite.TPHXSpriteFactory.html#Add">Add</a></b>(const Name: String; Sprite: <a  href="phxSprite.html#TPHXSpriteClass">TPHXSpriteClass</a>): <a  href="phxSprite.TPHXSpriteFactoryItem.html">TPHXSpriteFactoryItem</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxSprite.TPHXSpriteFactory.html#Add">Add</a></b>(const Name: String; Event: <a  href="phxSprite.html#TPHXSpriteConstructor">TPHXSpriteConstructor</a>): <a  href="phxSprite.TPHXSpriteFactoryItem.html">TPHXSpriteFactoryItem</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxSprite.TPHXSpriteFactory.html#Find">Find</a></b>(const Name: String): <a  href="phxSprite.TPHXSpriteFactoryItem.html">TPHXSpriteFactoryItem</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxSprite.TPHXSpriteFactory.html#Find">Find</a></b>(const Name: String; out Item: <a  href="phxSprite.TPHXSpriteFactoryItem.html">TPHXSpriteFactoryItem</a>): Boolean; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxSprite.TPHXSpriteFactory.html#New">New</a></b>(const Name: String): <a  href="phxSprite.TPHXSprite.html">TPHXSprite</a>;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSprite.TPHXSpriteFactory.html#Engine">Engine</a></b>: <a  href="phxSprite.TPHXSpriteEngine.html">TPHXSpriteEngine</a> read FEngine;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSprite.TPHXSpriteFactory.html#Count">Count</a></b>: Integer read GetCount;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSprite.TPHXSpriteFactory.html#List">List</a></b>: <a  href="phxSprite.html#PSpriteFactoryItemList">PSpriteFactoryItemList</a> read GetList;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSprite.TPHXSpriteFactory.html#Items">Items</a></b>[constIndex:Integer]: <a  href="phxSprite.TPHXSpriteFactoryItem.html">TPHXSpriteFactoryItem</a> read GetItem;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(AEngine: <a  href="phxSprite.TPHXSpriteEngine.html">TPHXSpriteEngine</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Create a new sprite factory </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AEngine</dt>
+<dd>The owning sprite engine</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Destroy this sprite factory</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Clear"></a><code>procedure <b>Clear</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Remove and free all items</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Add"></a><code>function <b>Add</b>(const Name: String; Sprite: <a  href="phxSprite.html#TPHXSpriteClass">TPHXSpriteClass</a>): <a  href="phxSprite.TPHXSpriteFactoryItem.html">TPHXSpriteFactoryItem</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Add a item to the list  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Name</dt>
+<dd>Name of factory the sprite</dd>
+<dt>Sprite</dt>
+<dd>The class of sprite to create</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Add"></a><code>function <b>Add</b>(const Name: String; Event: <a  href="phxSprite.html#TPHXSpriteConstructor">TPHXSpriteConstructor</a>): <a  href="phxSprite.TPHXSpriteFactoryItem.html">TPHXSpriteFactoryItem</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Add a item to the list  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Name</dt>
+<dd>Name of factory the sprite</dd>
+<dt>Event</dt>
+<dd>The function callback that will create the sprite</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Find"></a><code>function <b>Find</b>(const Name: String): <a  href="phxSprite.TPHXSpriteFactoryItem.html">TPHXSpriteFactoryItem</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Find a item by name  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Name</dt>
+<dd>Name of the sprite to create</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">The factory item for the sprite</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Find"></a><code>function <b>Find</b>(const Name: String; out Item: <a  href="phxSprite.TPHXSpriteFactoryItem.html">TPHXSpriteFactoryItem</a>): Boolean; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Find a item by name   </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Name</dt>
+<dd>Name of the sprite to create</dd>
+<dt>Item</dt>
+<dd>The found item</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">True if the item existed in the list</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="New"></a><code>function <b>New</b>(const Name: String): <a  href="phxSprite.TPHXSprite.html">TPHXSprite</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Create a new item using this factory  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Name</dt>
+<dd>Name of the sprite to create</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">The new sprite or null if the </p></td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Engine"></a><code>property <b>Engine</b>: <a  href="phxSprite.TPHXSpriteEngine.html">TPHXSpriteEngine</a> read FEngine;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The owning sprite engine</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Count"></a><code>property <b>Count</b>: Integer read GetCount;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Return the number of items in the list</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="List"></a><code>property <b>List</b>: <a  href="phxSprite.html#PSpriteFactoryItemList">PSpriteFactoryItemList</a> read GetList;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Return a pointer to the internal list</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Items"></a><code>property <b>Items</b>[constIndex:Integer]: <a  href="phxSprite.TPHXSpriteFactoryItem.html">TPHXSpriteFactoryItem</a> read GetItem;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Return a item in the list</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.13.0</a> on 2013-08-26 11:02:43</em>
+</span>
+</td></tr></table></body></html>

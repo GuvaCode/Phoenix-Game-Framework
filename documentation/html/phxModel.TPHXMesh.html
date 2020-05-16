@@ -1,0 +1,433 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Phoenix API Doc: phxModel: Class TPHXMesh</title>
+<meta name="generator" content="PasDoc 0.13.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Phoenix API Doc</h2><p><a href="introduction.html" class="navigation">Introduction</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div></p></td><td class="content">
+<link rel="icon" type="image/ico" href="Phoenix_icon.png"></link>
+<link rel="shortcut icon" href="Phoenix_icon.png"></link>
+<a name="TPHXMesh"></a><h1 class="cio">Class TPHXMesh</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td><a class="section" href="#PasDoc-Properties">Properties</a></td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="phxModel.html">phxModel</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TPHXMesh = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Basic mesh class</p>
+<a name="PasDoc-Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TPHXMesh</li></ul><h2 class="overview">Overview</h2>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxModel.TPHXMesh.html#LoadModel">LoadModel</a></b>(Reader: <a  href="phxClasses.TPHXReader.html">TPHXReader</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxModel.TPHXMesh.html#SaveModel">SaveModel</a></b>(Writer: <a  href="phxClasses.TPHXWriter.html">TPHXWriter</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="phxModel.TPHXMesh.html#Create">Create</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a  href="phxModel.TPHXMesh.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxModel.TPHXMesh.html#LoadFromFile">LoadFromFile</a></b>(const FileName: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxModel.TPHXMesh.html#LoadFromStream">LoadFromStream</a></b>(Stream: TStream);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxModel.TPHXMesh.html#SaveToFile">SaveToFile</a></b>(const FileName: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxModel.TPHXMesh.html#SaveToStream">SaveToStream</a></b>(Stream: TStream);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxModel.TPHXMesh.html#Render">Render</a></b>(Buffer: <a  href="phxClasses.TPHXBuffer.html">TPHXBuffer</a>; Effect: <a  href="phxEffect.TPHXEffect.html">TPHXEffect</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxModel.TPHXMesh.html#RenderGroup">RenderGroup</a></b>(Buffer: <a  href="phxClasses.TPHXBuffer.html">TPHXBuffer</a>; Effect: <a  href="phxEffect.TPHXEffect.html">TPHXEffect</a>; const Group: Integer); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxModel.TPHXMesh.html#RenderNormals">RenderNormals</a></b>(Buffer: <a  href="phxClasses.TPHXBuffer.html">TPHXBuffer</a>; Effect: <a  href="phxEffect.TPHXEffect.html">TPHXEffect</a>; const Length: Single; const Color: <a  href="phxTypes.TColor4f.html">TColor4f</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxModel.TPHXMesh.html#Upload">Upload</a></b>(Buffer: <a  href="phxClasses.TPHXBuffer.html">TPHXBuffer</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxModel.TPHXMesh.html#UploadGroup">UploadGroup</a></b>(Buffer: <a  href="phxClasses.TPHXBuffer.html">TPHXBuffer</a>; const Group: Integer); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxModel.TPHXMesh.html#UploadNormals">UploadNormals</a></b>(Buffer: <a  href="phxClasses.TPHXBuffer.html">TPHXBuffer</a>; const Length: Single; const Color: <a  href="phxTypes.TColor4f.html">TColor4f</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxModel.TPHXMesh.html#Upload">Upload</a></b>(const Buffer: Pointer; Declaration: <a  href="phxTypes.TPHXVertexDeclaration.html">TPHXVertexDeclaration</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxModel.TPHXMesh.html#Transform">Transform</a></b>(const Matrix: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxModel.TPHXMesh.html#CalculateBounds">CalculateBounds</a></b>: <a  href="phxTypes.TBoxf.html">TBoxf</a>;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxModel.TPHXMesh.html#Name">Name</a></b>: String read FName write FName;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxModel.TPHXMesh.html#Author">Author</a></b>: String read FAuthor write FAuthor;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxModel.TPHXMesh.html#Version">Version</a></b>: String read FVersion write FVersion;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxModel.TPHXMesh.html#Comment">Comment</a></b>: String read FComment write FComment;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxModel.TPHXMesh.html#Material">Material</a></b>: <a  href="phxModel.TPHXMeshMaterial.html">TPHXMeshMaterial</a> read FMaterial write FMaterial;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxModel.TPHXMesh.html#Bounds">Bounds</a></b>: <a  href="phxTypes.TBoxf.html">TBoxf</a> read FBounds write FBounds;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxModel.TPHXMesh.html#Vertices">Vertices</a></b>: <a  href="phxModel.TPHXMeshVertices.html">TPHXMeshVertices</a> read FVertices;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxModel.TPHXMesh.html#Triangles">Triangles</a></b>: <a  href="phxModel.TPHXMeshTriangles.html">TPHXMeshTriangles</a> read FTriangles;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxModel.TPHXMesh.html#Groups">Groups</a></b>: <a  href="phxModel.TPHXMeshGroups.html">TPHXMeshGroups</a>  read FGroups;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxModel.TPHXMesh.html#Joints">Joints</a></b>: <a  href="phxModel.TPHXMeshJoints.html">TPHXMeshJoints</a>  read FJoints;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxModel.TPHXMesh.html#Tags">Tags</a></b> : <a  href="phxModel.TPHXMeshTags.html">TPHXMeshTags</a>    read FTags;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="LoadModel"></a><code>procedure <b>LoadModel</b>(Reader: <a  href="phxClasses.TPHXReader.html">TPHXReader</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Load the model from a stream</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="SaveModel"></a><code>procedure <b>SaveModel</b>(Writer: <a  href="phxClasses.TPHXWriter.html">TPHXWriter</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Save the model to a stream</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Default constructor</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LoadFromFile"></a><code>procedure <b>LoadFromFile</b>(const FileName: String);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Load the mesh from a file</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LoadFromStream"></a><code>procedure <b>LoadFromStream</b>(Stream: TStream);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Load the mesh from a stream</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SaveToFile"></a><code>procedure <b>SaveToFile</b>(const FileName: String);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Save the mesh to a file</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SaveToStream"></a><code>procedure <b>SaveToStream</b>(Stream: TStream);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Save the mesh to a stream</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Render"></a><code>procedure <b>Render</b>(Buffer: <a  href="phxClasses.TPHXBuffer.html">TPHXBuffer</a>; Effect: <a  href="phxEffect.TPHXEffect.html">TPHXEffect</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Render the mesh</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RenderGroup"></a><code>procedure <b>RenderGroup</b>(Buffer: <a  href="phxClasses.TPHXBuffer.html">TPHXBuffer</a>; Effect: <a  href="phxEffect.TPHXEffect.html">TPHXEffect</a>; const Group: Integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Render a single group</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RenderNormals"></a><code>procedure <b>RenderNormals</b>(Buffer: <a  href="phxClasses.TPHXBuffer.html">TPHXBuffer</a>; Effect: <a  href="phxEffect.TPHXEffect.html">TPHXEffect</a>; const Length: Single; const Color: <a  href="phxTypes.TColor4f.html">TColor4f</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Render the normals of the mesh</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Upload"></a><code>procedure <b>Upload</b>(Buffer: <a  href="phxClasses.TPHXBuffer.html">TPHXBuffer</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Upload the mesh</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="UploadGroup"></a><code>procedure <b>UploadGroup</b>(Buffer: <a  href="phxClasses.TPHXBuffer.html">TPHXBuffer</a>; const Group: Integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Upload a single group</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="UploadNormals"></a><code>procedure <b>UploadNormals</b>(Buffer: <a  href="phxClasses.TPHXBuffer.html">TPHXBuffer</a>; const Length: Single; const Color: <a  href="phxTypes.TColor4f.html">TColor4f</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Upload the normals of the mesh</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Upload"></a><code>procedure <b>Upload</b>(const Buffer: Pointer; Declaration: <a  href="phxTypes.TPHXVertexDeclaration.html">TPHXVertexDeclaration</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Upload the mesh</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Transform"></a><code>procedure <b>Transform</b>(const Matrix: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Transform the model by an matrix</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CalculateBounds"></a><code>function <b>CalculateBounds</b>: <a  href="phxTypes.TBoxf.html">TBoxf</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Calculate the bounding box from the vertices in the mesh</p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Name"></a><code>property <b>Name</b>: String read FName write FName;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Name of the mesh</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Author"></a><code>property <b>Author</b>: String read FAuthor write FAuthor;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Author of the mesh</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Version"></a><code>property <b>Version</b>: String read FVersion write FVersion;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Version of the mesh</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Comment"></a><code>property <b>Comment</b>: String read FComment write FComment;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Comment of the mesh</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Material"></a><code>property <b>Material</b>: <a  href="phxModel.TPHXMeshMaterial.html">TPHXMeshMaterial</a> read FMaterial write FMaterial;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The material for the mesh</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Bounds"></a><code>property <b>Bounds</b>: <a  href="phxTypes.TBoxf.html">TBoxf</a> read FBounds write FBounds;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Bounding box of the mesh</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Vertices"></a><code>property <b>Vertices</b>: <a  href="phxModel.TPHXMeshVertices.html">TPHXMeshVertices</a> read FVertices;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+List of verticies in the mesh</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Triangles"></a><code>property <b>Triangles</b>: <a  href="phxModel.TPHXMeshTriangles.html">TPHXMeshTriangles</a> read FTriangles;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+List of triangles in the mesh</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Groups"></a><code>property <b>Groups</b>: <a  href="phxModel.TPHXMeshGroups.html">TPHXMeshGroups</a>  read FGroups;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+List of groups in the mesh</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Joints"></a><code>property <b>Joints</b>: <a  href="phxModel.TPHXMeshJoints.html">TPHXMeshJoints</a>  read FJoints;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+List of joints in the mesh</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Tags"></a><code>property <b>Tags</b> : <a  href="phxModel.TPHXMeshTags.html">TPHXMeshTags</a>    read FTags;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+List of tags in the mesh</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.13.0</a> on 2013-08-26 11:02:39</em>
+</span>
+</td></tr></table></body></html>

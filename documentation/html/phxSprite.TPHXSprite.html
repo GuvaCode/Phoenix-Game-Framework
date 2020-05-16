@@ -1,0 +1,1121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Phoenix API Doc: phxSprite: Class TPHXSprite</title>
+<meta name="generator" content="PasDoc 0.13.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Phoenix API Doc</h2><p><a href="introduction.html" class="navigation">Introduction</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div></p></td><td class="content">
+<link rel="icon" type="image/ico" href="Phoenix_icon.png"></link>
+<link rel="shortcut icon" href="Phoenix_icon.png"></link>
+<a name="TPHXSprite"></a><h1 class="cio">Class TPHXSprite</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td><a class="section" href="#PasDoc-Properties">Properties</a></td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="phxSprite.html">phxSprite</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TPHXSprite = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Basic sprite</p>
+<a name="PasDoc-Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TPHXSprite</li></ul><h2 class="overview">Overview</h2>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="phxSprite.TPHXSprite.html#Create">Create</a></b>(AEngine: <a  href="phxSprite.TPHXSpriteEngine.html">TPHXSpriteEngine</a>); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a  href="phxSprite.TPHXSprite.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxSprite.TPHXSprite.html#Initialize">Initialize</a></b>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxSprite.TPHXSprite.html#Transform">Transform</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxSprite.TPHXSprite.html#Update">Update</a></b>(const DeltaTime: Double); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxSprite.TPHXSprite.html#Render">Render</a></b>; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxSprite.TPHXSprite.html#Kill">Kill</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxSprite.TPHXSprite.html#RenderBounds">RenderBounds</a></b>(Canvas: <a  href="phxCanvas.TPHXCanvas.html">TPHXCanvas</a>; Color: <a  href="phxTypes.TColor4f.html">TColor4f</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxSprite.TPHXSprite.html#Clicked">Clicked</a></b>(const X,Y: Integer); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxSprite.TPHXSprite.html#Collided">Collided</a></b>(Sprite: <a  href="phxSprite.TPHXSprite.html">TPHXSprite</a>); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxSprite.TPHXSprite.html#Killed">Killed</a></b>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxSprite.TPHXSprite.html#PointInSprite">PointInSprite</a></b>(const Point: <a  href="phxTypes.TVector2f.html">TVector2f</a>): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxSprite.TPHXSprite.html#Collide">Collide</a></b>(const Displacement: <a  href="phxTypes.TVector2f.html">TVector2f</a>): Boolean; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxSprite.TPHXSprite.html#Collide">Collide</a></b>(const Displacement: <a  href="phxTypes.TVector2f.html">TVector2f</a>; const Group: <a  href="phxSprite.html#TPHXSpriteCollisionGroup">TPHXSpriteCollisionGroup</a>): Boolean; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxSprite.TPHXSprite.html#Collide">Collide</a></b>(const Displacement: <a  href="phxTypes.TVector2f.html">TVector2f</a>; const Filter: <a  href="phxSprite.html#TPHXSpriteCollisionFilter">TPHXSpriteCollisionFilter</a>): Boolean; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxSprite.TPHXSprite.html#SpriteToWorld">SpriteToWorld</a></b>(const Vector: <a  href="phxTypes.TVector3f.html">TVector3f</a>): <a  href="phxTypes.TVector3f.html">TVector3f</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxSprite.TPHXSprite.html#SpriteToWorld">SpriteToWorld</a></b>(const Vector: <a  href="phxTypes.TVector2f.html">TVector2f</a>): <a  href="phxTypes.TVector2f.html">TVector2f</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxSprite.TPHXSprite.html#WorldToSprite">WorldToSprite</a></b>(const Vector: <a  href="phxTypes.TVector3f.html">TVector3f</a>): <a  href="phxTypes.TVector3f.html">TVector3f</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxSprite.TPHXSprite.html#WorldToSprite">WorldToSprite</a></b>(const Vector: <a  href="phxTypes.TVector2f.html">TVector2f</a>): <a  href="phxTypes.TVector2f.html">TVector2f</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxSprite.TPHXSprite.html#MoveTo">MoveTo</a></b>(const Position: <a  href="phxTypes.TVector3f.html">TVector3f</a>; const Rotation: Single);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxSprite.TPHXSprite.html#Move">Move</a></b>(const DX, DY: Single);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxSprite.TPHXSprite.html#MoveLeft">MoveLeft</a></b>(const Distance: Single);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxSprite.TPHXSprite.html#MoveRight">MoveRight</a></b>(const Distance: Single);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxSprite.TPHXSprite.html#MoveUp">MoveUp</a></b>(const Distance: Single);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxSprite.TPHXSprite.html#MoveDown">MoveDown</a></b>(const Distance: Single);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxSprite.TPHXSprite.html#MoveForward">MoveForward</a></b>(const Distance: Single);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxSprite.TPHXSprite.html#MoveBackward">MoveBackward</a></b>(const Distance: Single);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxSprite.TPHXSprite.html#MoveTowards">MoveTowards</a></b>(const FrameTime: Double; const Target: <a  href="phxTypes.TVector2f.html">TVector2f</a>; const LinearVelocity, AngularVelocity: Single): Boolean; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxSprite.TPHXSprite.html#MoveTowards">MoveTowards</a></b>(const FrameTime: Double; const Target: <a  href="phxTypes.TVector3f.html">TVector3f</a>; const LinearVelocity, AngularVelocity: Single): Boolean; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxSprite.TPHXSprite.html#StrafeLeft">StrafeLeft</a></b>(const Distance: Single);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxSprite.TPHXSprite.html#StrafeRight">StrafeRight</a></b>(const Distance: Single);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxSprite.TPHXSprite.html#RotateLeft">RotateLeft</a></b>(const Degrees: Single);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxSprite.TPHXSprite.html#RotateRight">RotateRight</a></b>(const Degrees: Single);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxSprite.TPHXSprite.html#RotateTowards">RotateTowards</a></b>(const Point: <a  href="phxTypes.TVector2f.html">TVector2f</a>; const Delta: Single);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxSprite.TPHXSprite.html#AttatchTo">AttatchTo</a></b>(Sprite: <a  href="phxSprite.TPHXSprite.html">TPHXSprite</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxSprite.TPHXSprite.html#AttatchTo">AttatchTo</a></b>(Sprite: <a  href="phxSprite.TPHXSprite.html">TPHXSprite</a>; const Tag: String ); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxSprite.TPHXSprite.html#AttatchTo">AttatchTo</a></b>(Sprite: <a  href="phxSprite.TPHXSprite.html">TPHXSprite</a>; const Tag: <a  href="phxImage.TPHXTag.html">TPHXTag</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxSprite.TPHXSprite.html#CreateDefaultShape">CreateDefaultShape</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxSprite.TPHXSprite.html#BringToFront">BringToFront</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxSprite.TPHXSprite.html#SendToBack">SendToBack</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxSprite.TPHXSprite.html#Clone">Clone</a></b>: <a  href="phxSprite.TPHXSprite.html">TPHXSprite</a>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxSprite.TPHXSprite.html#Assign">Assign</a></b>(Sprite: <a  href="phxSprite.TPHXSprite.html">TPHXSprite</a>); virtual;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSprite.TPHXSprite.html#Engine">Engine</a></b>: <a  href="phxSprite.TPHXSpriteEngine.html">TPHXSpriteEngine</a> read FEngine;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSprite.TPHXSprite.html#Parent">Parent</a></b>: <a  href="phxSprite.TPHXSprite.html">TPHXSprite</a> read FParent write SetParent;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSprite.TPHXSprite.html#Sprites">Sprites</a></b>: <a  href="phxSprite.TPHXSpriteList.html">TPHXSpriteList</a> read FSprites;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSprite.TPHXSprite.html#Name">Name</a></b>: String read FName write FName;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSprite.TPHXSprite.html#Time">Time</a></b>: Double read FTime write FTime;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSprite.TPHXSprite.html#Visible">Visible</a></b>: Boolean read FVisible write FVisible;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSprite.TPHXSprite.html#Alive">Alive</a></b>: Boolean read FAlive;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSprite.TPHXSprite.html#Active">Active</a></b>: Boolean read FActive write FActive;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSprite.TPHXSprite.html#Position">Position</a></b>: <a  href="phxTypes.TVector3f.html">TVector3f</a> read FPosition write SetPosition;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSprite.TPHXSprite.html#X">X</a></b>: Single read FPosition.X write SetPositionX;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSprite.TPHXSprite.html#Y">Y</a></b>: Single read FPosition.Y write SetPositionY;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSprite.TPHXSprite.html#Layer">Layer</a></b>: Single read FPosition.Z write SetPositionZ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSprite.TPHXSprite.html#Rotation">Rotation</a></b>: Single read FRotation write SetRotation;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSprite.TPHXSprite.html#Bounds">Bounds</a></b>: <a  href="phxTypes.TRectf.html">TRectf</a> read FLocalBounds write SetBounds;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSprite.TPHXSprite.html#Image">Image</a></b>: String read FImage write SetImage;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSprite.TPHXSprite.html#Pattern">Pattern</a></b>: String read FPattern write SetPattern;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSprite.TPHXSprite.html#Shape">Shape</a></b>: String read FShape write SetShape;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSprite.TPHXSprite.html#Alpha">Alpha</a></b>: Single read FColor.Alpha write FColor.Alpha;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSprite.TPHXSprite.html#Color">Color</a></b>: <a  href="phxTypes.TColor4f.html">TColor4f</a> read FColor write FColor;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSprite.TPHXSprite.html#Collider">Collider</a></b>: Boolean read FCollider write SetCollider;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSprite.TPHXSprite.html#Mode">Mode</a></b>: <a  href="phxSprite.html#TPHXSpriteCollisionMode">TPHXSpriteCollisionMode</a> read FMode write FMode;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSprite.TPHXSprite.html#Group">Group</a></b>: <a  href="phxSprite.html#TPHXSpriteCollisionGroup">TPHXSpriteCollisionGroup</a> read FGroup write FGroup;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSprite.TPHXSprite.html#LocalTransform">LocalTransform</a></b>: <a  href="phxTypes.html#TMatrix4">TMatrix4</a> read FLocalTransform;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSprite.TPHXSprite.html#FinalTransform">FinalTransform</a></b>: <a  href="phxTypes.html#TMatrix4">TMatrix4</a> read FFinalTransform;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSprite.TPHXSprite.html#LocalBounds">LocalBounds</a></b>: <a  href="phxTypes.TRectf.html">TRectf</a> read FLocalBounds;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSprite.TPHXSprite.html#FinalBounds">FinalBounds</a></b>: <a  href="phxTypes.TRectf.html">TRectf</a> read FFinalBounds;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSprite.TPHXSprite.html#LocalShape">LocalShape</a></b>: <a  href="phxShape.TPHXShape.html">TPHXShape</a> read FLocalShape;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSprite.TPHXSprite.html#FinalShape">FinalShape</a></b>: <a  href="phxShape.TPHXShape.html">TPHXShape</a> read FFinalShape;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSprite.TPHXSprite.html#Width">Width</a></b>: Integer read GetWidth;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSprite.TPHXSprite.html#Height">Height</a></b>: Integer read GetHeight;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSprite.TPHXSprite.html#LinkedImage">LinkedImage</a></b>: <a  href="phxImage.TPHXImage.html">TPHXImage</a> read FLinkedImage write SetImageL;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSprite.TPHXSprite.html#LinkedPattern">LinkedPattern</a></b>: <a  href="phxImage.html#TPHXPatternIndex">TPHXPatternIndex</a> read FLinkedPattern write SetPatternL;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSprite.TPHXSprite.html#LinkedShape">LinkedShape</a></b>: <a  href="phxShape.TPHXShape.html">TPHXShape</a> read FLinkedShape write SetShapeL;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(AEngine: <a  href="phxSprite.TPHXSpriteEngine.html">TPHXSpriteEngine</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates a new sprite and adds it to the engine</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Destroy the sprite</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Initialize"></a><code>procedure <b>Initialize</b>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Initialize the sprite</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Transform"></a><code>procedure <b>Transform</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Transform the sprite</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Update"></a><code>procedure <b>Update</b>(const DeltaTime: Double); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Update the sprite</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Render"></a><code>procedure <b>Render</b>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Render the sprite</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Kill"></a><code>procedure <b>Kill</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Kill the sprite, the sprite is destroyed by the RemoveDead function in the engine</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RenderBounds"></a><code>procedure <b>RenderBounds</b>(Canvas: <a  href="phxCanvas.TPHXCanvas.html">TPHXCanvas</a>; Color: <a  href="phxTypes.TColor4f.html">TColor4f</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Render the bounding box for this sprite</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Clicked"></a><code>procedure <b>Clicked</b>(const X,Y: Integer); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Called when this sprite is clicked</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Collided"></a><code>procedure <b>Collided</b>(Sprite: <a  href="phxSprite.TPHXSprite.html">TPHXSprite</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Called when this sprite collides with another sprite</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Killed"></a><code>procedure <b>Killed</b>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Called when this sprite is killed</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="PointInSprite"></a><code>function <b>PointInSprite</b>(const Point: <a  href="phxTypes.TVector2f.html">TVector2f</a>): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns true if the mouse is inside the entity bounding box</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Collide"></a><code>function <b>Collide</b>(const Displacement: <a  href="phxTypes.TVector2f.html">TVector2f</a>): Boolean; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Test if this sprite collides in the future  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Displacement</dt>
+<dd>The distance in the future to test up to</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">True if the sprite will collide, else false</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Collide"></a><code>function <b>Collide</b>(const Displacement: <a  href="phxTypes.TVector2f.html">TVector2f</a>; const Group: <a  href="phxSprite.html#TPHXSpriteCollisionGroup">TPHXSpriteCollisionGroup</a>): Boolean; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Test if this sprite collides in the future   </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Displacement</dt>
+<dd>The distance in the future to test up to</dd>
+<dt>Group</dt>
+<dd>The collision groups to test collisions against</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">True if the sprite will collide, else false</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Collide"></a><code>function <b>Collide</b>(const Displacement: <a  href="phxTypes.TVector2f.html">TVector2f</a>; const Filter: <a  href="phxSprite.html#TPHXSpriteCollisionFilter">TPHXSpriteCollisionFilter</a>): Boolean; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Test if this sprite collides in the future   </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Displacement</dt>
+<dd>The distance in the future to test up to</dd>
+<dt>Filter</dt>
+<dd>The set of collision groups to test in</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">True if the sprite will collide, else false</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SpriteToWorld"></a><code>function <b>SpriteToWorld</b>(const Vector: <a  href="phxTypes.TVector3f.html">TVector3f</a>): <a  href="phxTypes.TVector3f.html">TVector3f</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Transform a vector using the entitys transformation matrix</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SpriteToWorld"></a><code>function <b>SpriteToWorld</b>(const Vector: <a  href="phxTypes.TVector2f.html">TVector2f</a>): <a  href="phxTypes.TVector2f.html">TVector2f</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Transform a vector using the entitys transformation matrix</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="WorldToSprite"></a><code>function <b>WorldToSprite</b>(const Vector: <a  href="phxTypes.TVector3f.html">TVector3f</a>): <a  href="phxTypes.TVector3f.html">TVector3f</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Transform a screen coordinate to a entity coordinate</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="WorldToSprite"></a><code>function <b>WorldToSprite</b>(const Vector: <a  href="phxTypes.TVector2f.html">TVector2f</a>): <a  href="phxTypes.TVector2f.html">TVector2f</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Transform a screen coordinate to a entity coordinate</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MoveTo"></a><code>procedure <b>MoveTo</b>(const Position: <a  href="phxTypes.TVector3f.html">TVector3f</a>; const Rotation: Single);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Move the sprite to a position</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Move"></a><code>procedure <b>Move</b>(const DX, DY: Single);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Move the sprite a distance</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MoveLeft"></a><code>procedure <b>MoveLeft</b>(const Distance: Single);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Move the sprite to the left</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MoveRight"></a><code>procedure <b>MoveRight</b>(const Distance: Single);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Move the sprite to the right</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MoveUp"></a><code>procedure <b>MoveUp</b>(const Distance: Single);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Move the sprite to the left</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MoveDown"></a><code>procedure <b>MoveDown</b>(const Distance: Single);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Move the sprite to the right</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MoveForward"></a><code>procedure <b>MoveForward</b>(const Distance: Single);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Move the sprite forward in the current direction</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MoveBackward"></a><code>procedure <b>MoveBackward</b>(const Distance: Single);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Move the sprite backwards in the current direction</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MoveTowards"></a><code>function <b>MoveTowards</b>(const FrameTime: Double; const Target: <a  href="phxTypes.TVector2f.html">TVector2f</a>; const LinearVelocity, AngularVelocity: Single): Boolean; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Move and rotates the sprite towards a point</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MoveTowards"></a><code>function <b>MoveTowards</b>(const FrameTime: Double; const Target: <a  href="phxTypes.TVector3f.html">TVector3f</a>; const LinearVelocity, AngularVelocity: Single): Boolean; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Move and rotates the sprite towards a point</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="StrafeLeft"></a><code>procedure <b>StrafeLeft</b>(const Distance: Single);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Strafe the entity left along the normal of the rotation vector</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="StrafeRight"></a><code>procedure <b>StrafeRight</b>(const Distance: Single);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Strafe the entity right along the normalof the rotation vector</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RotateLeft"></a><code>procedure <b>RotateLeft</b>(const Degrees: Single);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Rotate the sprite to the left</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RotateRight"></a><code>procedure <b>RotateRight</b>(const Degrees: Single);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Rotate the sprite to the right</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RotateTowards"></a><code>procedure <b>RotateTowards</b>(const Point: <a  href="phxTypes.TVector2f.html">TVector2f</a>; const Delta: Single);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Rotates the sprite towards a point</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="AttatchTo"></a><code>procedure <b>AttatchTo</b>(Sprite: <a  href="phxSprite.TPHXSprite.html">TPHXSprite</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Move a sprite to the center position of this sprite</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="AttatchTo"></a><code>procedure <b>AttatchTo</b>(Sprite: <a  href="phxSprite.TPHXSprite.html">TPHXSprite</a>; const Tag: String ); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Attatch another sprite to a tag in the image</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="AttatchTo"></a><code>procedure <b>AttatchTo</b>(Sprite: <a  href="phxSprite.TPHXSprite.html">TPHXSprite</a>; const Tag: <a  href="phxImage.TPHXTag.html">TPHXTag</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Attatch another sprite to a tag in the image</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CreateDefaultShape"></a><code>procedure <b>CreateDefaultShape</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates a box shape that fits this sprite</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BringToFront"></a><code>procedure <b>BringToFront</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Move the sprite to the front</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SendToBack"></a><code>procedure <b>SendToBack</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Send the sprite to the back</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Clone"></a><code>function <b>Clone</b>: <a  href="phxSprite.TPHXSprite.html">TPHXSprite</a>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Return a clone of this sprite</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Assign"></a><code>procedure <b>Assign</b>(Sprite: <a  href="phxSprite.TPHXSprite.html">TPHXSprite</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Copy all properties from another sprite to this sprite</p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Engine"></a><code>property <b>Engine</b>: <a  href="phxSprite.TPHXSpriteEngine.html">TPHXSpriteEngine</a> read FEngine;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The sprite engine</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Parent"></a><code>property <b>Parent</b>: <a  href="phxSprite.TPHXSprite.html">TPHXSprite</a> read FParent write SetParent;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The parent sprite</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Sprites"></a><code>property <b>Sprites</b>: <a  href="phxSprite.TPHXSpriteList.html">TPHXSpriteList</a> read FSprites;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Child sprites</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Name"></a><code>property <b>Name</b>: String read FName write FName;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The name of the sprite</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Time"></a><code>property <b>Time</b>: Double read FTime write FTime;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Elapsed time</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Visible"></a><code>property <b>Visible</b>: Boolean read FVisible write FVisible;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Toggles if the entity is visible</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Alive"></a><code>property <b>Alive</b>: Boolean read FAlive;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+If the sprite is alive.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Active"></a><code>property <b>Active</b>: Boolean read FActive write FActive;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+If the sprite is active</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Position"></a><code>property <b>Position</b>: <a  href="phxTypes.TVector3f.html">TVector3f</a> read FPosition write SetPosition;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Position of the sprite</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="X"></a><code>property <b>X</b>: Single read FPosition.X write SetPositionX;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Current X-position</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Y"></a><code>property <b>Y</b>: Single read FPosition.Y write SetPositionY;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Current Y-position</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Layer"></a><code>property <b>Layer</b>: Single read FPosition.Z write SetPositionZ;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Current Z-position</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Rotation"></a><code>property <b>Rotation</b>: Single read FRotation write SetRotation;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Current rotation</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Bounds"></a><code>property <b>Bounds</b>: <a  href="phxTypes.TRectf.html">TRectf</a> read FLocalBounds write SetBounds;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Bounding box of the sprite</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Image"></a><code>property <b>Image</b>: String read FImage write SetImage;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The imgage for the sprite</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Pattern"></a><code>property <b>Pattern</b>: String read FPattern write SetPattern;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The pattern index for the sprite</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Shape"></a><code>property <b>Shape</b>: String read FShape write SetShape;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+This is the shape to be used for collision testing</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Alpha"></a><code>property <b>Alpha</b>: Single read FColor.Alpha write FColor.Alpha;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The alpha value of the sprite</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Color"></a><code>property <b>Color</b>: <a  href="phxTypes.TColor4f.html">TColor4f</a> read FColor write FColor;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The color of the sprite</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Collider"></a><code>property <b>Collider</b>: Boolean read FCollider write SetCollider;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+If this sprite should be considered in the collision testing</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Mode"></a><code>property <b>Mode</b>: <a  href="phxSprite.html#TPHXSpriteCollisionMode">TPHXSpriteCollisionMode</a> read FMode write FMode;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The collision mode of the sprite</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Group"></a><code>property <b>Group</b>: <a  href="phxSprite.html#TPHXSpriteCollisionGroup">TPHXSpriteCollisionGroup</a> read FGroup write FGroup;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The collision mode of the sprite</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LocalTransform"></a><code>property <b>LocalTransform</b>: <a  href="phxTypes.html#TMatrix4">TMatrix4</a> read FLocalTransform;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+property CollisionEnabled: Boolean read FCollisionData write FCollisionData;
+
+<p>property CollisionGroup: TPHXSpriteCollisionMode read FCollisionGroup write FCollisionGroup;
+
+<p>property CollisionMode: TPHXSpriteCollisionGroup read FCollisionFilter write FCollisionFilter;
+
+<p>property CollisionData: Pointer read FCollisionData write FCollisionData; Relative transformation between the parent and this sprite</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FinalTransform"></a><code>property <b>FinalTransform</b>: <a  href="phxTypes.html#TMatrix4">TMatrix4</a> read FFinalTransform;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Absolute transformation in world coordinates</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LocalBounds"></a><code>property <b>LocalBounds</b>: <a  href="phxTypes.TRectf.html">TRectf</a> read FLocalBounds;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Bounding box in releative sprite coordinates</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FinalBounds"></a><code>property <b>FinalBounds</b>: <a  href="phxTypes.TRectf.html">TRectf</a> read FFinalBounds;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Bounding box in absolute world coordinates</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LocalShape"></a><code>property <b>LocalShape</b>: <a  href="phxShape.TPHXShape.html">TPHXShape</a> read FLocalShape;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Shape in releative sprite coordinates</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FinalShape"></a><code>property <b>FinalShape</b>: <a  href="phxShape.TPHXShape.html">TPHXShape</a> read FFinalShape;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Shape in absolute world coordinates</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Width"></a><code>property <b>Width</b>: Integer read GetWidth;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Width of the sprite</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Height"></a><code>property <b>Height</b>: Integer read GetHeight;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Height of the sprite</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LinkedImage"></a><code>property <b>LinkedImage</b>: <a  href="phxImage.TPHXImage.html">TPHXImage</a> read FLinkedImage write SetImageL;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The current image</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LinkedPattern"></a><code>property <b>LinkedPattern</b>: <a  href="phxImage.html#TPHXPatternIndex">TPHXPatternIndex</a> read FLinkedPattern write SetPatternL;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The current pattern</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LinkedShape"></a><code>property <b>LinkedShape</b>: <a  href="phxShape.TPHXShape.html">TPHXShape</a> read FLinkedShape write SetShapeL;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The current shape</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.13.0</a> on 2013-08-26 11:02:42</em>
+</span>
+</td></tr></table></body></html>

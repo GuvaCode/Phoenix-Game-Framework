@@ -1,0 +1,259 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Phoenix API Doc: phxTiles</title>
+<meta name="generator" content="PasDoc 0.13.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Phoenix API Doc</h2><p><a href="introduction.html" class="navigation">Introduction</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div></p></td><td class="content">
+<link rel="icon" type="image/ico" href="Phoenix_icon.png"></link>
+<link rel="shortcut icon" href="Phoenix_icon.png"></link>
+<h1 class="unit">Unit phxTiles</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td>Uses</td><td><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></td><td>Functions and Procedures</td><td><a class="section" href="#PasDoc-Types">Types</a></td><td><a class="section" href="#PasDoc-Constants">Constants</a></td><td>Variables</td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="description">Description</h2>
+<p>
+Classes and functions for tile map rendering</p>
+<a name="PasDoc-Uses"></a><h2 class="overview">Overview</h2>
+<a name="PasDoc-Classes"></a><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxTiles.TPHXTileLayer.html"><code>TPHXTileLayer</code></a></td>
+<td class="itemdesc">A single layer in a tile map</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxTiles.TPHXTileSet.html"><code>TPHXTileSet</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxTiles.TPHXTileMap.html"><code>TPHXTileMap</code></a></td>
+<td class="itemdesc"><a  href="http://old.cokeandcode.com/pathfinding">http://old.cokeandcode.com/pathfinding</a> Abstract tile map</td>
+</tr>
+<tr class="list2">
+<td class="itemname">record&nbsp;<a class="bold" href="phxTiles.TPHXTileNeighbour.html"><code>TPHXTileNeighbour</code></a></td>
+<td class="itemdesc">This descibes a neighbour to a tile</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxTiles.TPHXTilePath.html"><code>TPHXTilePath</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxTiles.TPHXPathNode.html"><code>TPHXPathNode</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxTiles.TPHXPathFinder.html"><code>TPHXPathFinder</code></a></td>
+<td class="itemdesc">Class for finding a path between two points on a tile map</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxTiles.TPHXRectangularMap.html"><code>TPHXRectangularMap</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxTiles.TPHXIsometricMap.html"><code>TPHXIsometricMap</code></a></td>
+<td class="itemdesc">Class for isometric tiles</td>
+</tr>
+</table>
+<a name="PasDoc-Types"></a><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTiles.html#TPHXTile">TPHXTile</a></b> = Word;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTiles.html#PTileList">PTileList</a></b> = &circ;<a  href="phxTiles.html#TTileList">TTileList</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTiles.html#TTileList">TTileList</a></b> = array[0..$00FFFFFF] of <a  href="phxTiles.html#TPHXTile">TPHXTile</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTiles.html#PPathNodeList">PPathNodeList</a></b> = &circ;<a  href="phxTiles.html#TPathNodeList">TPathNodeList</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTiles.html#TPathNodeList">TPathNodeList</a></b> = array[0..$00FFFFFF] of <a  href="phxTiles.TPHXPathNode.html">TPHXPathNode</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTiles.html#THexDirection">THexDirection</a></b> = (...);</code></td>
+</tr>
+</table>
+<a name="PasDoc-Constants"></a><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTiles.html#TileWidth">TileWidth</a></b>  = 64;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTiles.html#TileHeight">TileHeight</a></b> = 32;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTiles.html#MapWidth">MapWidth</a></b>  = 16;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTiles.html#MapHeight">MapHeight</a></b> = 16;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTiles.html#MapOffsetX">MapOffsetX</a></b> = 400;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTiles.html#MapOffsetY">MapOffsetY</a></b> = 100;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTiles.html#TILE_LAYERS">TILE_LAYERS</a></b> = 4;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTiles.html#NONE_TILE">NONE_TILE</a></b> = 65535;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTiles.html#Neighbours">Neighbours</a></b>: array[0..3] of <a  href="phxTiles.TPHXTileNeighbour.html">TPHXTileNeighbour</a> =
+(
+  (DX:   0; DY: - 1; Cost: 10), 
+  (DX: - 1; DY:   0; Cost: 10),
+  (DX: + 1; DY:   0; Cost: 10),
+  (DX:   0; DY: + 1; Cost: 10)
+);</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXTile"></a><code><b>TPHXTile</b> = Word;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PTileList"></a><code><b>PTileList</b> = &circ;<a  href="phxTiles.html#TTileList">TTileList</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TTileList"></a><code><b>TTileList</b> = array[0..$00FFFFFF] of <a  href="phxTiles.html#TPHXTile">TPHXTile</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PPathNodeList"></a><code><b>PPathNodeList</b> = &circ;<a  href="phxTiles.html#TPathNodeList">TPathNodeList</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPathNodeList"></a><code><b>TPathNodeList</b> = array[0..$00FFFFFF] of <a  href="phxTiles.TPHXPathNode.html">TPHXPathNode</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="THexDirection"></a><code><b>THexDirection</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+<a  href="http://jemgine.omnisu.com/?page_id=412">http://jemgine.omnisu.com/?page_id=412</a></p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+NorthEast: &nbsp;</li>
+<li>
+East: &nbsp;</li>
+<li>
+SouthEast: &nbsp;</li>
+<li>
+SouthWest: &nbsp;</li>
+<li>
+West: &nbsp;</li>
+<li>
+NorthWest: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TileWidth"></a><code><b>TileWidth</b>  = 64;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+TODO: Temporary</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TileHeight"></a><code><b>TileHeight</b> = 32;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="MapWidth"></a><code><b>MapWidth</b>  = 16;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="MapHeight"></a><code><b>MapHeight</b> = 16;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="MapOffsetX"></a><code><b>MapOffsetX</b> = 400;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="MapOffsetY"></a><code><b>MapOffsetY</b> = 100;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TILE_LAYERS"></a><code><b>TILE_LAYERS</b> = 4;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="NONE_TILE"></a><code><b>NONE_TILE</b> = 65535;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Neighbours"></a><code><b>Neighbours</b>: array[0..3] of <a  href="phxTiles.TPHXTileNeighbour.html">TPHXTileNeighbour</a> =
+(
+  (DX:   0; DY: - 1; Cost: 10), 
+  (DX: - 1; DY:   0; Cost: 10),
+  (DX: + 1; DY:   0; Cost: 10),
+  (DX:   0; DY: + 1; Cost: 10)
+);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.13.0</a> on 2013-08-26 11:02:43</em>
+</span>
+</td></tr></table></body></html>

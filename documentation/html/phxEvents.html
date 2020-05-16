@@ -1,0 +1,321 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Phoenix API Doc: phxEvents</title>
+<meta name="generator" content="PasDoc 0.13.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Phoenix API Doc</h2><p><a href="introduction.html" class="navigation">Introduction</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div></p></td><td class="content">
+<link rel="icon" type="image/ico" href="Phoenix_icon.png"></link>
+<link rel="shortcut icon" href="Phoenix_icon.png"></link>
+<h1 class="unit">Unit phxEvents</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td>Uses</td><td><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></td><td><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></td><td><a class="section" href="#PasDoc-Types">Types</a></td><td><a class="section" href="#PasDoc-Constants">Constants</a></td><td>Variables</td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="description">Description</h2>
+<p>
+Event management</p>
+<a name="PasDoc-Uses"></a><h2 class="overview">Overview</h2>
+<a name="PasDoc-Classes"></a><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold" href="phxEvents.TPHXMouseEvent.html"><code>TPHXMouseEvent</code></a></td>
+<td class="itemdesc">Event parameters for the mouse events (PHX_MOUSE_PRESSED, PHX_MOUSE_RELEASED or PHX_MOUSE_MOVED)</td>
+</tr>
+<tr class="list2">
+<td class="itemname">record&nbsp;<a class="bold" href="phxEvents.TPHXKeyboardEvent.html"><code>TPHXKeyboardEvent</code></a></td>
+<td class="itemdesc">Event parameters for the keyboard events (PHX_KEY_PRESSED, PHX_KEY_RELEASED or PHX_KEY_CHARACTER)</td>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold" href="phxEvents.TPHXJoystickEvent.html"><code>TPHXJoystickEvent</code></a></td>
+<td class="itemdesc">Event parameters for the joystick events (PHX_JOYSTICK_AXIS, PHX_JOYSTICK_PRESSED, PHX_JOYSTICK_RELEASED)</td>
+</tr>
+<tr class="list2">
+<td class="itemname">record&nbsp;<a class="bold" href="phxEvents.TPHXUserEvent.html"><code>TPHXUserEvent</code></a></td>
+<td class="itemdesc">Event parameters for the user event (PHX_EVENT_USER)</td>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold" href="phxEvents.TPHXDeviceEvent.html"><code>TPHXDeviceEvent</code></a></td>
+<td class="itemdesc">Event parameters for device events ( PHX_DEVICE_RESIZED, PHX_DEVICE_RESET, PHX_DEVICE_ACTIVATED, PHX_DEVICE_DEACTIVATED )</td>
+</tr>
+<tr class="list2">
+<td class="itemname">record&nbsp;<a class="bold" href="phxEvents.TPHXEvent.html"><code>TPHXEvent</code></a></td>
+<td class="itemdesc">Union event record</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxEvents.TPHXEventInstance.html"><code>TPHXEventInstance</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxEvents.TPHXEvents.html"><code>TPHXEvents</code></a></td>
+<td class="itemdesc">Singleton class for managing events</td>
+</tr>
+</table>
+<a name="PasDoc-FuncsProcs"></a><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxEvents.html#PHXEventToString">PHXEventToString</a></b>(const Event: <a  href="phxEvents.TPHXEvent.html">TPHXEvent</a>): String;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Types"></a><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxEvents.html#TPHXMouseButtonEvent">TPHXMouseButtonEvent</a></b> = procedure(X, Y: Integer; Button: Integer) of object;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxEvents.html#TPHXMouseMoveEvent">TPHXMouseMoveEvent</a></b> = procedure(X, Y: Integer) of object;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxEvents.html#TPHXKeyEvent">TPHXKeyEvent</a></b> = procedure(Key : Integer; Shift: <a  href="phxTypes.html#TPHXShiftStates">TPHXShiftStates</a>) of object;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxEvents.html#TPHXEventType">TPHXEventType</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxEvents.html#PPHXEvent">PPHXEvent</a></b> = &circ;<a  href="phxEvents.TPHXEvent.html">TPHXEvent</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxEvents.html#PMethod">PMethod</a></b> = &circ;TMethod;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxEvents.html#TPHXEventListener">TPHXEventListener</a></b> = procedure(Sender: TObject; const Event: <a  href="phxEvents.TPHXEvent.html">TPHXEvent</a>) of object;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Constants"></a><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxEvents.html#scNone">scNone</a></b>     = $0000;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxEvents.html#scShift">scShift</a></b>    = $0800;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxEvents.html#scCtrl">scCtrl</a></b>     = $1000;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxEvents.html#scAlt">scAlt</a></b>      = $2000;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxEvents.html#scMouse">scMouse</a></b>    = $4000;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxEvents.html#scJoystick">scJoystick</a></b> = $8000;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxEvents.html#ModShift">ModShift</a></b>    = $0800;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxEvents.html#ModCtrl">ModCtrl</a></b>     = $1000;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxEvents.html#ModAlt">ModAlt</a></b>      = $2000;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxEvents.html#ModMouse">ModMouse</a></b>    = $4000;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxEvents.html#ModJoystick">ModJoystick</a></b> = $8000;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PHXEventToString"></a><code>function <b>PHXEventToString</b>(const Event: <a  href="phxEvents.TPHXEvent.html">TPHXEvent</a>): String;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXMouseButtonEvent"></a><code><b>TPHXMouseButtonEvent</b> = procedure(X, Y: Integer; Button: Integer) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Event for mouse buttons</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXMouseMoveEvent"></a><code><b>TPHXMouseMoveEvent</b> = procedure(X, Y: Integer) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Event for mouse movement</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXKeyEvent"></a><code><b>TPHXKeyEvent</b> = procedure(Key : Integer; Shift: <a  href="phxTypes.html#TPHXShiftStates">TPHXShiftStates</a>) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Event for key press or release</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXEventType"></a><code><b>TPHXEventType</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Event types</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+PHX_EVENT_NONE: No event</li>
+<li>
+PHX_EVENT_QUIT: The user has requested to quit the application</li>
+<li>
+PHX_EVENT_USER: User generated event</li>
+<li>
+PHX_DEVICE_RESIZED: TPHXDeviceEvent The device window has been resized</li>
+<li>
+PHX_DEVICE_RESET: Occurs after a device is reset, allowing an application to re-create all resources.</li>
+<li>
+PHX_DEVICE_ACTIVATED: Occurs if the device is activated, ie gaining focus</li>
+<li>
+PHX_DEVICE_DEACTIVATED: Occurs if the device is deactivated, ie lost focus</li>
+<li>
+PHX_MOUSE_PRESSED: TPHXMouseButtonEvent A mouse button has been presssed</li>
+<li>
+PHX_MOUSE_RELEASED: A mouse button has been released</li>
+<li>
+PHX_MOUSE_MOVED: The mouse has been moved,</li>
+<li>
+PHX_MOUSE_WHEELUP: Mouse wheel up</li>
+<li>
+PHX_MOUSE_WHEELDOWN: Mouse wheel down</li>
+<li>
+PHX_KEY_PRESSED: TPHXKeyboardEvent A keyboard key has been pressed,</li>
+<li>
+PHX_KEY_RELEASED: A keyboard key has been released,</li>
+<li>
+PHX_KEY_CHARACTER: Event for keyboard text input</li>
+<li>
+PHX_JOYSTICK_INFO: ***** TPHXJoystickEvent *****</li>
+<li>
+PHX_JOYSTICK_AXIS: &nbsp;</li>
+<li>
+PHX_JOYSTICK_PRESSED: &nbsp;</li>
+<li>
+PHX_JOYSTICK_RELEASED: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PPHXEvent"></a><code><b>PPHXEvent</b> = &circ;<a  href="phxEvents.TPHXEvent.html">TPHXEvent</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Pointer to a phoenix event</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PMethod"></a><code><b>PMethod</b> = &circ;TMethod;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXEventListener"></a><code><b>TPHXEventListener</b> = procedure(Sender: TObject; const Event: <a  href="phxEvents.TPHXEvent.html">TPHXEvent</a>) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Event listener for adding to the event</p>
+</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="scNone"></a><code><b>scNone</b>     = $0000;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="scShift"></a><code><b>scShift</b>    = $0800;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="scCtrl"></a><code><b>scCtrl</b>     = $1000;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="scAlt"></a><code><b>scAlt</b>      = $2000;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="scMouse"></a><code><b>scMouse</b>    = $4000;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="scJoystick"></a><code><b>scJoystick</b> = $8000;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ModShift"></a><code><b>ModShift</b>    = $0800;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ModCtrl"></a><code><b>ModCtrl</b>     = $1000;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ModAlt"></a><code><b>ModAlt</b>      = $2000;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ModMouse"></a><code><b>ModMouse</b>    = $4000;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ModJoystick"></a><code><b>ModJoystick</b> = $8000;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.13.0</a> on 2013-08-26 11:02:37</em>
+</span>
+</td></tr></table></body></html>

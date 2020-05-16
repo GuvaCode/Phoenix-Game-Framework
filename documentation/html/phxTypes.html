@@ -1,0 +1,2254 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Phoenix API Doc: phxTypes</title>
+<meta name="generator" content="PasDoc 0.13.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Phoenix API Doc</h2><p><a href="introduction.html" class="navigation">Introduction</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div></p></td><td class="content">
+<link rel="icon" type="image/ico" href="Phoenix_icon.png"></link>
+<link rel="shortcut icon" href="Phoenix_icon.png"></link>
+<h1 class="unit">Unit phxTypes</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td>Uses</td><td><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></td><td><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></td><td><a class="section" href="#PasDoc-Types">Types</a></td><td><a class="section" href="#PasDoc-Constants">Constants</a></td><td>Variables</td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="description">Description</h2>
+<p>
+Common Phoenix types</p>
+<a name="PasDoc-Uses"></a><h2 class="overview">Overview</h2>
+<a name="PasDoc-Classes"></a><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold" href="phxTypes.TVector2i.html"><code>TVector2i</code></a></td>
+<td class="itemdesc">Two dimensional integer vector</td>
+</tr>
+<tr class="list2">
+<td class="itemname">record&nbsp;<a class="bold" href="phxTypes.TVector2f.html"><code>TVector2f</code></a></td>
+<td class="itemdesc">Two dimensional single precision float vector</td>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold" href="phxTypes.TVector2d.html"><code>TVector2d</code></a></td>
+<td class="itemdesc">Two dimensional double precision float vector</td>
+</tr>
+<tr class="list2">
+<td class="itemname">record&nbsp;<a class="bold" href="phxTypes.TVector3i.html"><code>TVector3i</code></a></td>
+<td class="itemdesc">Three diminsional integer vector</td>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold" href="phxTypes.TVector3f.html"><code>TVector3f</code></a></td>
+<td class="itemdesc">Three dimensional single precision vector</td>
+</tr>
+<tr class="list2">
+<td class="itemname">record&nbsp;<a class="bold" href="phxTypes.TVector4i.html"><code>TVector4i</code></a></td>
+<td class="itemdesc">Four diminsional integer vector</td>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold" href="phxTypes.TVector4f.html"><code>TVector4f</code></a></td>
+<td class="itemdesc">Four diminsional float vector</td>
+</tr>
+<tr class="list2">
+<td class="itemname">record&nbsp;<a class="bold" href="phxTypes.TRangef.html"><code>TRangef</code></a></td>
+<td class="itemdesc">Range describes a span between a minimum and maximum value</td>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold" href="phxTypes.TMatrix3.html"><code>TMatrix3</code></a></td>
+<td class="itemdesc">Three dimensional matrix</td>
+</tr>
+<tr class="list2">
+<td class="itemname">record&nbsp;<a class="bold" href="phxTypes.TMatrix4f.html"><code>TMatrix4f</code></a></td>
+<td class="itemdesc">Four dimensional matrix</td>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold" href="phxTypes.TColor3b.html"><code>TColor3b</code></a></td>
+<td class="itemdesc">RGB Color</td>
+</tr>
+<tr class="list2">
+<td class="itemname">record&nbsp;<a class="bold" href="phxTypes.TColor4b.html"><code>TColor4b</code></a></td>
+<td class="itemdesc">RGBA Color</td>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold" href="phxTypes.TColor3f.html"><code>TColor3f</code></a></td>
+<td class="itemdesc">Three channel floating point color (RGB)</td>
+</tr>
+<tr class="list2">
+<td class="itemname">record&nbsp;<a class="bold" href="phxTypes.TColor4f.html"><code>TColor4f</code></a></td>
+<td class="itemdesc">Four channel floating point color (RGBA)</td>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold" href="phxTypes.TBoxi.html"><code>TBoxi</code></a></td>
+<td class="itemdesc">Axis aligned bounding box with integer coordinates</td>
+</tr>
+<tr class="list2">
+<td class="itemname">record&nbsp;<a class="bold" href="phxTypes.TBoxf.html"><code>TBoxf</code></a></td>
+<td class="itemdesc">Axis aligned bounding box with float coordinates</td>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold" href="phxTypes.TRectI.html"><code>TRectI</code></a></td>
+<td class="itemdesc">Integer rectangle</td>
+</tr>
+<tr class="list2">
+<td class="itemname">record&nbsp;<a class="bold" href="phxTypes.TRectf.html"><code>TRectf</code></a></td>
+<td class="itemdesc">Floating point rectangle</td>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold" href="phxTypes.TViewport.html"><code>TViewport</code></a></td>
+<td class="itemdesc">Viewport struct</td>
+</tr>
+<tr class="list2">
+<td class="itemname">record&nbsp;<a class="bold" href="phxTypes.TSizei.html"><code>TSizei</code></a></td>
+<td class="itemdesc">Integer size struct</td>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold" href="phxTypes.TSizef.html"><code>TSizef</code></a></td>
+<td class="itemdesc">Floating size struct</td>
+</tr>
+<tr class="list2">
+<td class="itemname">record&nbsp;<a class="bold" href="phxTypes.TPHXVertexDeclaration.html"><code>TPHXVertexDeclaration</code></a></td>
+<td class="itemdesc"><a  href="http://openflipper.org/Documentation/latest/classACG_1_1VertexDeclaration.html">http://openflipper.org/Documentation/latest/classACG_1_1VertexDeclaration.html</a> <a  href="http://gamedev.stackexchange.com/questions/27394/what-is-a-better-abstraction-layer-for-d3d9-and-opengl-vertex-data-management">http://gamedev.stackexchange.com/questions/27394/what-is-a-better-abstraction-layer-for-d3d9-and-opengl-vertex-data-management</a> <a  href="http://www.gamedev.net/topic/381492-vertex-declarations-in-opengl-and-directx-/">http://www.gamedev.net/topic/381492-vertex-declarations-in-opengl-and-directx-/</a></td>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold" href="phxTypes.TPHXVertex.html"><code>TPHXVertex</code></a></td>
+<td class="itemdesc">Phoenix vertex format, comparable with the interleaved format: GL_T2F_C4F_N3F_V3F</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxTypes.TPHXVertexList.html"><code>TPHXVertexList</code></a></td>
+<td class="itemdesc">Container for verticies</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxTypes.TPHXIndexList.html"><code>TPHXIndexList</code></a></td>
+<td class="itemdesc">Container for vertex indicies</td>
+</tr>
+</table>
+<a name="PasDoc-FuncsProcs"></a><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxTypes.html#VirtualKeyToString">VirtualKeyToString</a></b>(const Key: <a  href="phxTypes.html#TPHXVirtualKey">TPHXVirtualKey</a>): String;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxTypes.html#MouseButtonToString">MouseButtonToString</a></b>(const Button: <a  href="phxTypes.html#TPHXMouseButton">TPHXMouseButton</a>): String;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxTypes.html#Vector2i">Vector2i</a></b>(const X, Y: Integer): <a  href="phxTypes.TVector2i.html">TVector2i</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxTypes.html#Vector2i">Vector2i</a></b>(const X, Y: Single): <a  href="phxTypes.TVector2i.html">TVector2i</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxTypes.html#Vector2f">Vector2f</a></b>(const X, Y: Single): <a  href="phxTypes.TVector2f.html">TVector2f</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxTypes.html#Vector2f">Vector2f</a></b>(const Value: <a  href="phxTypes.TVector3f.html">TVector3f</a>): <a  href="phxTypes.TVector2f.html">TVector2f</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxTypes.html#Vector3i">Vector3i</a></b>(const X, Y, Z: Integer): <a  href="phxTypes.TVector3i.html">TVector3i</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxTypes.html#Vector3i">Vector3i</a></b>(const X, Y, Z: Single): <a  href="phxTypes.TVector3i.html">TVector3i</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxTypes.html#Vector3f">Vector3f</a></b>(const X, Y, Z: Single): <a  href="phxTypes.TVector3f.html">TVector3f</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxTypes.html#Vector3f">Vector3f</a></b>(const Value: <a  href="phxTypes.TVector2f.html">TVector2f</a>): <a  href="phxTypes.TVector3f.html">TVector3f</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxTypes.html#Vector4i">Vector4i</a></b>(const X, Y, Z, W: Integer): <a  href="phxTypes.TVector4i.html">TVector4i</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxTypes.html#Vector4i">Vector4i</a></b>(const X, Y, Z, W: Single): <a  href="phxTypes.TVector4i.html">TVector4i</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxTypes.html#Vector4f">Vector4f</a></b>(const X, Y, Z, W: Single): <a  href="phxTypes.TVector4f.html">TVector4f</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxTypes.html#Rangef">Rangef</a></b>(const AMin, AMax: Single): <a  href="phxTypes.TRangef.html">TRangef</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxTypes.html#Color4f">Color4f</a></b>(const Red, Green, Blue, Alpha: Single ): <a  href="phxTypes.TColor4f.html">TColor4f</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxTypes.html#Color4f">Color4f</a></b>(const Color: <a  href="phxTypes.TColor4f.html">TColor4f</a>; Alpha: Single ): <a  href="phxTypes.TColor4f.html">TColor4f</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxTypes.html#Color4f">Color4f</a></b>(const Color: <a  href="phxTypes.html#TColor32">TColor32</a>): <a  href="phxTypes.TColor4f.html">TColor4f</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxTypes.html#Color4f">Color4f</a></b>(const Color: <a  href="phxTypes.html#TColor32">TColor32</a>; Alpha: Single): <a  href="phxTypes.TColor4f.html">TColor4f</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxTypes.html#ColorToRGBA">ColorToRGBA</a></b>(const Value: <a  href="phxTypes.TColor4f.html">TColor4f</a>): <a  href="phxTypes.html#TColor32">TColor32</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxTypes.html#ColorToRGB">ColorToRGB</a></b> (const Value: <a  href="phxTypes.TColor4f.html">TColor4f</a>): <a  href="phxTypes.html#TColor32">TColor32</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxTypes.html#ColorToHex">ColorToHex</a></b>(const Value: <a  href="phxTypes.TColor4f.html">TColor4f</a>): String;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxTypes.html#HexToColor">HexToColor</a></b>(const Value: String): <a  href="phxTypes.TColor4f.html">TColor4f</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Function <b><a  href="phxTypes.html#ColorToString">ColorToString</a></b>(const Value: <a  href="phxTypes.TColor4f.html">TColor4f</a>): String;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Function <b><a  href="phxTypes.html#StringToColor">StringToColor</a></b>(const Value: String ): <a  href="phxTypes.TColor4f.html">TColor4f</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxTypes.html#SameColor">SameColor</a></b>(const ColorA, ColorB: <a  href="phxTypes.TColor4f.html">TColor4f</a>): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxTypes.html#Recti">Recti</a></b>(const Left, Top, Right, Bottom: Integer): <a  href="phxTypes.TRectI.html">TRectI</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxTypes.html#Rectf">Rectf</a></b>(const Left, Top, Right, Bottom: Single): <a  href="phxTypes.TRectf.html">TRectf</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="phxTypes.html#StreamWriteString">StreamWriteString</a></b>(Stream: TStream; const Value: WideString ); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="phxTypes.html#StreamWriteString">StreamWriteString</a></b>(Stream: TStream; const Value: AnsiString ); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="phxTypes.html#StreamReadString">StreamReadString</a></b>(Stream: TStream; out Value: WideString ); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="phxTypes.html#StreamReadString">StreamReadString</a></b>(Stream: TStream; out Value: AnsiString ); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxTypes.html#GreatestCommonDivisior">GreatestCommonDivisior</a></b>(const A, B: Integer): Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="phxTypes.html#WriteString">WriteString</a></b>(Stream: TStream; const Value: AnsiString ); overload; deprecated;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="phxTypes.html#WriteString">WriteString</a></b>(Stream: TStream; const Value: WideString ); overload; deprecated;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxTypes.html#ReadString">ReadString</a></b>(Stream: TStream): String ; overload; deprecated;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="phxTypes.html#ReadString">ReadString</a></b>(Stream: TStream; out Value: String ); overload; deprecated;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxTypes.html#ReadAnsiString">ReadAnsiString</a></b> (Stream: TStream): AnsiString; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="phxTypes.html#ReadAnsiString">ReadAnsiString</a></b>(Stream: TStream; out Value: AnsiString ); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="phxTypes.html#WriteAnsiString">WriteAnsiString</a></b>(Stream: TStream; const Value: AnsiString ); overload;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Types"></a><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#TPHXShiftState">TPHXShiftState</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#TPHXShiftStates">TPHXShiftStates</a></b> = set of <a  href="phxTypes.html#TPHXShiftState">TPHXShiftState</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#TPHXVirtualKey">TPHXVirtualKey</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#TPHXMouseButton">TPHXMouseButton</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#TPHXJoystickIndex">TPHXJoystickIndex</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#TPHXJoystickAxis">TPHXJoystickAxis</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#TPHXJoystickButton">TPHXJoystickButton</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#PByteArray">PByteArray</a></b> = &circ;<a  href="phxTypes.html#TByteArray">TByteArray</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#TByteArray">TByteArray</a></b> = array[0..$00FFFFFF] of Byte;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#PIntegerList">PIntegerList</a></b> = &circ;<a  href="phxTypes.html#TIntegerList">TIntegerList</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#TIntegerList">TIntegerList</a></b> = array[0..$00FFFFFF] of Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#PSingleList">PSingleList</a></b> = &circ;<a  href="phxTypes.html#TSingleList">TSingleList</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#TSingleList">TSingleList</a></b> = array[0..$00FFFFFF] of Single;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#PVector2i">PVector2i</a></b> = &circ;<a  href="phxTypes.TVector2i.html">TVector2i</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#PVectorList2i">PVectorList2i</a></b> = &circ;<a  href="phxTypes.html#TVectorList2i">TVectorList2i</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#TVectorList2i">TVectorList2i</a></b> = array[0..$00FFFFFF] of <a  href="phxTypes.TVector2i.html">TVector2i</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#PVector2f">PVector2f</a></b> = &circ;<a  href="phxTypes.TVector2f.html">TVector2f</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#PVectorList2f">PVectorList2f</a></b> = &circ;<a  href="phxTypes.html#TVectorList2f">TVectorList2f</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#TVectorList2f">TVectorList2f</a></b> = array[0..$00FFFFFF] of <a  href="phxTypes.TVector2f.html">TVector2f</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#PVector2d">PVector2d</a></b> = &circ;<a  href="phxTypes.TVector2d.html">TVector2d</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#PVectorList2d">PVectorList2d</a></b> = &circ;<a  href="phxTypes.html#TVectorList2d">TVectorList2d</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#TVectorList2d">TVectorList2d</a></b> = array[0..$00FFFFFF] of <a  href="phxTypes.TVector2d.html">TVector2d</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#PVector3i">PVector3i</a></b> = &circ;<a  href="phxTypes.TVector3i.html">TVector3i</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#PVectorList3i">PVectorList3i</a></b> = &circ;<a  href="phxTypes.html#TVectorList2i">TVectorList2i</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#TVectorList3i">TVectorList3i</a></b> = array[0..$00FFFFFF] of <a  href="phxTypes.TVector3i.html">TVector3i</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#PVector3f">PVector3f</a></b> = &circ;<a  href="phxTypes.TVector3f.html">TVector3f</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#PVectorList3f">PVectorList3f</a></b> = &circ;<a  href="phxTypes.html#TVectorList3f">TVectorList3f</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#TVectorList3f">TVectorList3f</a></b> = array[0..$00FFFFFF] of <a  href="phxTypes.TVector3f.html">TVector3f</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#PVector4i">PVector4i</a></b> = &circ;<a  href="phxTypes.TVector4i.html">TVector4i</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#PVectorList4i">PVectorList4i</a></b> = &circ;<a  href="phxTypes.html#TVectorList4i">TVectorList4i</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#TVectorList4i">TVectorList4i</a></b> = array[0..$00FFFFFF] of <a  href="phxTypes.TVector4i.html">TVector4i</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#PVector4f">PVector4f</a></b> = &circ;<a  href="phxTypes.TVector4f.html">TVector4f</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#PVectorList4f">PVectorList4f</a></b> = &circ;<a  href="phxTypes.html#TVectorList3f">TVectorList3f</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#TVectorList4f">TVectorList4f</a></b> = array[0..$00FFFFFF] of <a  href="phxTypes.TVector4f.html">TVector4f</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#TMatrix3v">TMatrix3v</a></b> = array[0..8] of Single;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#TMatrix3m">TMatrix3m</a></b> = array[0..2, 0..2] of Single;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#PMatrix3">PMatrix3</a></b> = &circ;<a  href="phxTypes.TMatrix3.html">TMatrix3</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#TMatrix4fv">TMatrix4fv</a></b> = array[0..15] of Single;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#TMatrix4fm">TMatrix4fm</a></b> = array[0..3, 0..3] of Single;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#PMatrix4">PMatrix4</a></b> = &circ;<a  href="phxTypes.TMatrix4f.html">TMatrix4f</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#TMatrix4">TMatrix4</a></b> = <a  href="phxTypes.TMatrix4f.html">TMatrix4f</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#TColor32">TColor32</a></b> = Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#PColor3b">PColor3b</a></b> = &circ;<a  href="phxTypes.TColor3b.html">TColor3b</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#PColor4b">PColor4b</a></b> = &circ;<a  href="phxTypes.TColor4b.html">TColor4b</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#PColor3f">PColor3f</a></b> = &circ;<a  href="phxTypes.TColor3f.html">TColor3f</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#PColorList3f">PColorList3f</a></b> = &circ;<a  href="phxTypes.html#TColorList3f">TColorList3f</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#TColorList3f">TColorList3f</a></b> = array[0..$00FFFFFF] of <a  href="phxTypes.TColor3f.html">TColor3f</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#PColor4f">PColor4f</a></b> = &circ;<a  href="phxTypes.TColor4f.html">TColor4f</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#PColorList4f">PColorList4f</a></b> = &circ;<a  href="phxTypes.html#TColorList4f">TColorList4f</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#TColorList4f">TColorList4f</a></b> = array[0..$00FFFFFF] of <a  href="phxTypes.TColor4f.html">TColor4f</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#PBoxi">PBoxi</a></b> = &circ;<a  href="phxTypes.TBoxi.html">TBoxi</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#PBoxf">PBoxf</a></b> = &circ;<a  href="phxTypes.TBoxf.html">TBoxf</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#PRectI">PRectI</a></b> = &circ;<a  href="phxTypes.TRectI.html">TRectI</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#PRectf">PRectf</a></b> = &circ;<a  href="phxTypes.TRectf.html">TRectf</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#PViewport">PViewport</a></b> = &circ;<a  href="phxTypes.TViewport.html">TViewport</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#TPHXPrimitiveType">TPHXPrimitiveType</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#TPHXBlendMode">TPHXBlendMode</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#TPHXVertexComponent">TPHXVertexComponent</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#TVertexComponents">TVertexComponents</a></b> = set of <a  href="phxTypes.html#TPHXVertexComponent">TPHXVertexComponent</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#TPHXVertexOffsets">TPHXVertexOffsets</a></b> = array[<a  href="phxTypes.html#TPHXVertexComponent">TPHXVertexComponent</a>] of Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#TVertexKind">TVertexKind</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#PPHXVertex">PPHXVertex</a></b> = &circ;<a  href="phxTypes.TPHXVertex.html">TPHXVertex</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#PVertexList">PVertexList</a></b> = &circ;<a  href="phxTypes.html#TVertexList">TVertexList</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#TVertexList">TVertexList</a></b> = array[0..$00FFFFFF] of <a  href="phxTypes.TPHXVertex.html">TPHXVertex</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#PPHXIndex">PPHXIndex</a></b> = &circ;<a  href="phxTypes.html#TPHXIndex">TPHXIndex</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#TPHXIndex">TPHXIndex</a></b> = type Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#PIndexList">PIndexList</a></b> = &circ;<a  href="phxTypes.html#TIndexList">TIndexList</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#TIndexList">TIndexList</a></b> = Array[0..$00FFFFFF] of <a  href="phxTypes.html#TPHXIndex">TPHXIndex</a>;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Constants"></a><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#EPSILON">EPSILON</a></b> = 1.192092896e-7;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#mbLeft">mbLeft</a></b> = TPHXMouseButton.PHX_MOUSE_BUTTON_1;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#mbRight">mbRight</a></b> = TPHXMouseButton.PHX_MOUSE_BUTTON_2;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#mbMiddle">mbMiddle</a></b> = TPHXMouseButton.PHX_MOUSE_BUTTON_3;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#clrNone">clrNone</a></b>       : <a  href="phxTypes.TColor4f.html">TColor4f</a> = (Red: 000/255; Green: 000/255; Blue: 000/255; Alpha: 000/255);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#clrBlack">clrBlack</a></b>      : <a  href="phxTypes.TColor4f.html">TColor4f</a> = (Red: 000/255; Green: 000/255; Blue: 000/255; Alpha: 255/255);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#clrMaroon">clrMaroon</a></b>     : <a  href="phxTypes.TColor4f.html">TColor4f</a> = (Red: 128/255; Green: 000/255; Blue: 000/255; Alpha: 255/255);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#clrGreen">clrGreen</a></b>      : <a  href="phxTypes.TColor4f.html">TColor4f</a> = (Red: 000/255; Green: 128/255; Blue: 000/255; Alpha: 255/255);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#clrOlive">clrOlive</a></b>      : <a  href="phxTypes.TColor4f.html">TColor4f</a> = (Red: 128/255; Green: 128/255; Blue: 000/255; Alpha: 255/255);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#clrNavy">clrNavy</a></b>       : <a  href="phxTypes.TColor4f.html">TColor4f</a> = (Red: 000/255; Green: 000/255; Blue: 128/255; Alpha: 255/255);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#clrPurple">clrPurple</a></b>     : <a  href="phxTypes.TColor4f.html">TColor4f</a> = (Red: 128/255; Green: 000/255; Blue: 128/255; Alpha: 255/255);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#clrTeal">clrTeal</a></b>       : <a  href="phxTypes.TColor4f.html">TColor4f</a> = (Red: 000/255; Green: 128/255; Blue: 128/255; Alpha: 255/255);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#clrGray">clrGray</a></b>       : <a  href="phxTypes.TColor4f.html">TColor4f</a> = (Red: 128/255; Green: 128/255; Blue: 128/255; Alpha: 255/255);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#clrSilver">clrSilver</a></b>     : <a  href="phxTypes.TColor4f.html">TColor4f</a> = (Red: 192/255; Green: 192/255; Blue: 192/255; Alpha: 255/255);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#clrRed">clrRed</a></b>        : <a  href="phxTypes.TColor4f.html">TColor4f</a> = (Red: 255/255; Green: 000/255; Blue: 000/255; Alpha: 255/255);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#clrLime">clrLime</a></b>       : <a  href="phxTypes.TColor4f.html">TColor4f</a> = (Red: 000/255; Green: 255/255; Blue: 000/255; Alpha: 255/255);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#clrYellow">clrYellow</a></b>     : <a  href="phxTypes.TColor4f.html">TColor4f</a> = (Red: 255/255; Green: 255/255; Blue: 000/255; Alpha: 255/255);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#clrBlue">clrBlue</a></b>       : <a  href="phxTypes.TColor4f.html">TColor4f</a> = (Red: 000/255; Green: 000/255; Blue: 255/255; Alpha: 255/255);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#clrFuchsia">clrFuchsia</a></b>    : <a  href="phxTypes.TColor4f.html">TColor4f</a> = (Red: 255/255; Green: 000/255; Blue: 255/255; Alpha: 255/255);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#clrAqua">clrAqua</a></b>       : <a  href="phxTypes.TColor4f.html">TColor4f</a> = (Red: 000/255; Green: 255/255; Blue: 255/255; Alpha: 255/255);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#clrWhite">clrWhite</a></b>      : <a  href="phxTypes.TColor4f.html">TColor4f</a> = (Red: 255/255; Green: 255/255; Blue: 255/255; Alpha: 255/255);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#clrMoneyGreen">clrMoneyGreen</a></b> : <a  href="phxTypes.TColor4f.html">TColor4f</a> = (Red: 192/255; Green: 220/255; Blue: 192/255; Alpha: 255/255);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#clrSkyBlue">clrSkyBlue</a></b>    : <a  href="phxTypes.TColor4f.html">TColor4f</a> = (Red: 166/255; Green: 202/255; Blue: 240/255; Alpha: 255/255);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#clrCream">clrCream</a></b>      : <a  href="phxTypes.TColor4f.html">TColor4f</a> = (Red: 255/255; Green: 251/255; Blue: 240/255; Alpha: 255/255);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#clrMedGray">clrMedGray</a></b>    : <a  href="phxTypes.TColor4f.html">TColor4f</a> = (Red: 160/255; Green: 160/255; Blue: 164/255; Alpha: 255/255);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#clrCyan">clrCyan</a></b>       : <a  href="phxTypes.TColor4f.html">TColor4f</a> = (Red: 000/255; Green: 255/255; Blue: 255/255; Alpha: 255/255);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#clrMagenta">clrMagenta</a></b>    : <a  href="phxTypes.TColor4f.html">TColor4f</a> = (Red: 255/255; Green: 000/255; Blue: 255/255; Alpha: 255/255);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#fvfStandard">fvfStandard</a></b> = [vcPosition, vcNormal, vcColor, vcCoord1];</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#VertexOffsetTexCoord">VertexOffsetTexCoord</a></b>: Pointer = Pointer(0);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#VertexOffsetColor">VertexOffsetColor</a></b>: Pointer = Pointer(SizeOf(<a  href="phxTypes.TVector2f.html">TVector2f</a>));</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#VertexOffsetNormal">VertexOffsetNormal</a></b>: Pointer = Pointer(SizeOf(<a  href="phxTypes.TVector2f.html">TVector2f</a>) + SizeOf(<a  href="phxTypes.TColor4f.html">TColor4f</a>));</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#VertexOffsetPosition">VertexOffsetPosition</a></b>: Pointer = Pointer(SizeOf(<a  href="phxTypes.TVector2f.html">TVector2f</a>) + SizeOf(<a  href="phxTypes.TColor4f.html">TColor4f</a>) + SizeOf(<a  href="phxTypes.TVector3f.html">TVector3f</a>));</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#Vector2i_Zero">Vector2i_Zero</a></b>  : <a  href="phxTypes.TVector2i.html">TVector2i</a> = (X: 0; Y: 0);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#Vector2i_One">Vector2i_One</a></b>   : <a  href="phxTypes.TVector2i.html">TVector2i</a> = (X: 1; Y: 1);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#Vector2i_AxisX">Vector2i_AxisX</a></b> : <a  href="phxTypes.TVector2i.html">TVector2i</a> = (X: 1; Y: 0);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#Vector2i_AxisY">Vector2i_AxisY</a></b> : <a  href="phxTypes.TVector2i.html">TVector2i</a> = (X: 0; Y: 1);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#Vector2f_Zero">Vector2f_Zero</a></b>  : <a  href="phxTypes.TVector2f.html">TVector2f</a> = (X: 0.0; Y: 0.0);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#Vector2f_One">Vector2f_One</a></b>   : <a  href="phxTypes.TVector2f.html">TVector2f</a> = (X: 1.0; Y: 1.0);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#Vector2f_AxisX">Vector2f_AxisX</a></b> : <a  href="phxTypes.TVector2f.html">TVector2f</a> = (X: 1.0; Y: 0.0);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#Vector2f_AxisY">Vector2f_AxisY</a></b> : <a  href="phxTypes.TVector2f.html">TVector2f</a> = (X: 0.0; Y: 1.0);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#Vector3i_Zero">Vector3i_Zero</a></b>  : <a  href="phxTypes.TVector3i.html">TVector3i</a> = (X: 0; Y: 0; Z: 0);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#Vector3i_One">Vector3i_One</a></b>   : <a  href="phxTypes.TVector3i.html">TVector3i</a> = (X: 1; Y: 1; Z: 1);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#Vector3i_AxisX">Vector3i_AxisX</a></b> : <a  href="phxTypes.TVector3i.html">TVector3i</a> = (X: 1; Y: 0; Z: 0);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#Vector3i_AxisY">Vector3i_AxisY</a></b> : <a  href="phxTypes.TVector3i.html">TVector3i</a> = (X: 0; Y: 1; Z: 0);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#Vector3i_AxisZ">Vector3i_AxisZ</a></b> : <a  href="phxTypes.TVector3i.html">TVector3i</a> = (X: 0; Y: 0; Z: 1);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#Vector3f_Zero">Vector3f_Zero</a></b>  : <a  href="phxTypes.TVector3f.html">TVector3f</a> = (X: 0.0; Y: 0.0; Z: 0.0);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#Vector3f_One">Vector3f_One</a></b>   : <a  href="phxTypes.TVector3f.html">TVector3f</a> = (X: 1.0; Y: 1.0; Z: 1.0);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#Vector3f_AxisX">Vector3f_AxisX</a></b> : <a  href="phxTypes.TVector3f.html">TVector3f</a> = (X: 1.0; Y: 0.0; Z: 0.0);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#Vector3f_AxisY">Vector3f_AxisY</a></b> : <a  href="phxTypes.TVector3f.html">TVector3f</a> = (X: 0.0; Y: 1.0; Z: 0.0);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#Vector3f_AxisZ">Vector3f_AxisZ</a></b> : <a  href="phxTypes.TVector3f.html">TVector3f</a> = (X: 0.0; Y: 0.0; Z: 1.0);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#Matrix3_Zero">Matrix3_Zero</a></b>: <a  href="phxTypes.TMatrix3.html">TMatrix3</a> = (v:(
+  0, 0, 0,
+  0, 0, 0,
+  0, 0, 0
+));</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#Matrix3_Identity">Matrix3_Identity</a></b>: <a  href="phxTypes.TMatrix3.html">TMatrix3</a> = (v:(
+  1, 0, 0,
+  0, 1, 0,
+  0, 0, 1
+));</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.html#Matrix4_Zero">Matrix4_Zero</a></b>: <a  href="phxTypes.TMatrix4f.html">TMatrix4f</a> = (v:(
+  0, 0, 0, 0,
+  0, 0, 0, 0,
+  0, 0, 0, 0,
+  0, 0, 0, 0
+));</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.html#Matrix4_Identity">Matrix4_Identity</a></b> : <a  href="phxTypes.TMatrix4f.html">TMatrix4f</a> = (v:(
+  1, 0, 0, 0,
+  0, 1, 0, 0,
+  0, 0, 1, 0,
+  0, 0, 0, 1
+));</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VirtualKeyToString"></a><code>function <b>VirtualKeyToString</b>(const Key: <a  href="phxTypes.html#TPHXVirtualKey">TPHXVirtualKey</a>): String;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Converts a virtual key code to a string</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="MouseButtonToString"></a><code>function <b>MouseButtonToString</b>(const Button: <a  href="phxTypes.html#TPHXMouseButton">TPHXMouseButton</a>): String;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Converts a mouse button to a string</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Vector2i"></a><code>function <b>Vector2i</b>(const X, Y: Integer): <a  href="phxTypes.TVector2i.html">TVector2i</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Vector2i"></a><code>function <b>Vector2i</b>(const X, Y: Single): <a  href="phxTypes.TVector2i.html">TVector2i</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Vector2f"></a><code>function <b>Vector2f</b>(const X, Y: Single): <a  href="phxTypes.TVector2f.html">TVector2f</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Vector2f"></a><code>function <b>Vector2f</b>(const Value: <a  href="phxTypes.TVector3f.html">TVector3f</a>): <a  href="phxTypes.TVector2f.html">TVector2f</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Vector3i"></a><code>function <b>Vector3i</b>(const X, Y, Z: Integer): <a  href="phxTypes.TVector3i.html">TVector3i</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Vector3i"></a><code>function <b>Vector3i</b>(const X, Y, Z: Single): <a  href="phxTypes.TVector3i.html">TVector3i</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Vector3f"></a><code>function <b>Vector3f</b>(const X, Y, Z: Single): <a  href="phxTypes.TVector3f.html">TVector3f</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Vector3f"></a><code>function <b>Vector3f</b>(const Value: <a  href="phxTypes.TVector2f.html">TVector2f</a>): <a  href="phxTypes.TVector3f.html">TVector3f</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Vector4i"></a><code>function <b>Vector4i</b>(const X, Y, Z, W: Integer): <a  href="phxTypes.TVector4i.html">TVector4i</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Vector4i"></a><code>function <b>Vector4i</b>(const X, Y, Z, W: Single): <a  href="phxTypes.TVector4i.html">TVector4i</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Vector4f"></a><code>function <b>Vector4f</b>(const X, Y, Z, W: Single): <a  href="phxTypes.TVector4f.html">TVector4f</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Rangef"></a><code>function <b>Rangef</b>(const AMin, AMax: Single): <a  href="phxTypes.TRangef.html">TRangef</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Create a new range</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Color4f"></a><code>function <b>Color4f</b>(const Red, Green, Blue, Alpha: Single ): <a  href="phxTypes.TColor4f.html">TColor4f</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Color4f"></a><code>function <b>Color4f</b>(const Color: <a  href="phxTypes.TColor4f.html">TColor4f</a>; Alpha: Single ): <a  href="phxTypes.TColor4f.html">TColor4f</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Color4f"></a><code>function <b>Color4f</b>(const Color: <a  href="phxTypes.html#TColor32">TColor32</a>): <a  href="phxTypes.TColor4f.html">TColor4f</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Color4f"></a><code>function <b>Color4f</b>(const Color: <a  href="phxTypes.html#TColor32">TColor32</a>; Alpha: Single): <a  href="phxTypes.TColor4f.html">TColor4f</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ColorToRGBA"></a><code>function <b>ColorToRGBA</b>(const Value: <a  href="phxTypes.TColor4f.html">TColor4f</a>): <a  href="phxTypes.html#TColor32">TColor32</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Convert a color to a cardinal value</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ColorToRGB"></a><code>function <b>ColorToRGB</b> (const Value: <a  href="phxTypes.TColor4f.html">TColor4f</a>): <a  href="phxTypes.html#TColor32">TColor32</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Convert a color to a cardinal value</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ColorToHex"></a><code>function <b>ColorToHex</b>(const Value: <a  href="phxTypes.TColor4f.html">TColor4f</a>): String;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Convert a color to a hexadecimal string</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="HexToColor"></a><code>function <b>HexToColor</b>(const Value: String): <a  href="phxTypes.TColor4f.html">TColor4f</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Convert a hexadecimal string to a color</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ColorToString"></a><code>Function <b>ColorToString</b>(const Value: <a  href="phxTypes.TColor4f.html">TColor4f</a>): String;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Convert a color to and from a string</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StringToColor"></a><code>Function <b>StringToColor</b>(const Value: String ): <a  href="phxTypes.TColor4f.html">TColor4f</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Convert a color to and from a string</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="SameColor"></a><code>function <b>SameColor</b>(const ColorA, ColorB: <a  href="phxTypes.TColor4f.html">TColor4f</a>): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Recti"></a><code>function <b>Recti</b>(const Left, Top, Right, Bottom: Integer): <a  href="phxTypes.TRectI.html">TRectI</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Create a new rect</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Rectf"></a><code>function <b>Rectf</b>(const Left, Top, Right, Bottom: Single): <a  href="phxTypes.TRectf.html">TRectf</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Creates a new rect</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StreamWriteString"></a><code>procedure <b>StreamWriteString</b>(Stream: TStream; const Value: WideString ); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Writes a string to a stream</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StreamWriteString"></a><code>procedure <b>StreamWriteString</b>(Stream: TStream; const Value: AnsiString ); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Writes a string to a stream</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StreamReadString"></a><code>procedure <b>StreamReadString</b>(Stream: TStream; out Value: WideString ); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Read a string to a stream</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StreamReadString"></a><code>procedure <b>StreamReadString</b>(Stream: TStream; out Value: AnsiString ); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Read a string to a stream</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GreatestCommonDivisior"></a><code>function <b>GreatestCommonDivisior</b>(const A, B: Integer): Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="WriteString"></a><code>procedure <b>WriteString</b>(Stream: TStream; const Value: AnsiString ); overload; deprecated;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="hint_directive">Warning: this symbol is deprecated.</p><p>
+Writes a ansi string to a stream</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="WriteString"></a><code>procedure <b>WriteString</b>(Stream: TStream; const Value: WideString ); overload; deprecated;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="hint_directive">Warning: this symbol is deprecated.</p><p>
+Writes a wide string to a stream</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ReadString"></a><code>function <b>ReadString</b>(Stream: TStream): String ; overload; deprecated;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="hint_directive">Warning: this symbol is deprecated.</p>&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ReadString"></a><code>procedure <b>ReadString</b>(Stream: TStream; out Value: String ); overload; deprecated;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="hint_directive">Warning: this symbol is deprecated.</p>&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ReadAnsiString"></a><code>function <b>ReadAnsiString</b> (Stream: TStream): AnsiString; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Reads a string from a stream</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ReadAnsiString"></a><code>procedure <b>ReadAnsiString</b>(Stream: TStream; out Value: AnsiString ); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Reads a string from a stream</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="WriteAnsiString"></a><code>procedure <b>WriteAnsiString</b>(Stream: TStream; const Value: AnsiString ); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Writes a string to a stream</p>
+</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXShiftState"></a><code><b>TPHXShiftState</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+ssCtrl: The control key is pressed</li>
+<li>
+ssAlt: The alt key is pressed</li>
+<li>
+ssShift: The shift key is pressed</li>
+<li>
+ssCaps: The caps lock key is pressed</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXShiftStates"></a><code><b>TPHXShiftStates</b> = set of <a  href="phxTypes.html#TPHXShiftState">TPHXShiftState</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Set of shift states</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXVirtualKey"></a><code><b>TPHXVirtualKey</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Virtual key codes</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+VK_UNKNOWN = 0: &nbsp;</li>
+<li>
+VK_SPACE = 32: &nbsp;</li>
+<li>
+VK_TILDE = 96: &nbsp;</li>
+<li>
+VK_1 = 49: &nbsp;</li>
+<li>
+VK_2 = 50: &nbsp;</li>
+<li>
+VK_3 = 51: &nbsp;</li>
+<li>
+VK_4 = 52: &nbsp;</li>
+<li>
+VK_5 = 53: &nbsp;</li>
+<li>
+VK_6 = 54: &nbsp;</li>
+<li>
+VK_7 = 55: &nbsp;</li>
+<li>
+VK_8 = 56: &nbsp;</li>
+<li>
+VK_9 = 57: &nbsp;</li>
+<li>
+VK_0 = 58: &nbsp;</li>
+<li>
+VK_A = 97: &nbsp;</li>
+<li>
+VK_B = 98: &nbsp;</li>
+<li>
+VK_C = 99: &nbsp;</li>
+<li>
+VK_D = 100: &nbsp;</li>
+<li>
+VK_E = 101: &nbsp;</li>
+<li>
+VK_F = 102: &nbsp;</li>
+<li>
+VK_G = 103: &nbsp;</li>
+<li>
+VK_H = 104: &nbsp;</li>
+<li>
+VK_I = 105: &nbsp;</li>
+<li>
+VK_J = 106: &nbsp;</li>
+<li>
+VK_K = 107: &nbsp;</li>
+<li>
+VK_L = 108: &nbsp;</li>
+<li>
+VK_M = 109: &nbsp;</li>
+<li>
+VK_N = 110: &nbsp;</li>
+<li>
+VK_O = 111: &nbsp;</li>
+<li>
+VK_P = 112: &nbsp;</li>
+<li>
+VK_Q = 113: &nbsp;</li>
+<li>
+VK_R = 114: &nbsp;</li>
+<li>
+VK_S = 115: &nbsp;</li>
+<li>
+VK_T = 116: &nbsp;</li>
+<li>
+VK_U = 117: &nbsp;</li>
+<li>
+VK_V = 118: &nbsp;</li>
+<li>
+VK_W = 119: &nbsp;</li>
+<li>
+VK_X = 120: &nbsp;</li>
+<li>
+VK_Y = 121: &nbsp;</li>
+<li>
+VK_Z = 122: &nbsp;</li>
+<li>
+VK_SPECIAL = 256: &nbsp;</li>
+<li>
+VK_ESC = 256+1: &nbsp;</li>
+<li>
+VK_F1 = 256+2: &nbsp;</li>
+<li>
+VK_F2 = 256+3: &nbsp;</li>
+<li>
+VK_F3 = 256+4: &nbsp;</li>
+<li>
+VK_F4 = 256+5: &nbsp;</li>
+<li>
+VK_F5 = 256+6: &nbsp;</li>
+<li>
+VK_F6 = 256+7: &nbsp;</li>
+<li>
+VK_F7 = 256+8: &nbsp;</li>
+<li>
+VK_F8 = 256+9: &nbsp;</li>
+<li>
+VK_F9 = 256+10: &nbsp;</li>
+<li>
+VK_F10 = 256+11: &nbsp;</li>
+<li>
+VK_F11 = 256+12: &nbsp;</li>
+<li>
+VK_F12 = 256+13: &nbsp;</li>
+<li>
+VK_F13 = 256+14: &nbsp;</li>
+<li>
+VK_F14 = 256+15: &nbsp;</li>
+<li>
+VK_F15 = 256+16: &nbsp;</li>
+<li>
+VK_F16 = 256+17: &nbsp;</li>
+<li>
+VK_F17 = 256+18: &nbsp;</li>
+<li>
+VK_F18 = 256+19: &nbsp;</li>
+<li>
+VK_F19 = 256+20: &nbsp;</li>
+<li>
+VK_F20 = 256+21: &nbsp;</li>
+<li>
+VK_F21 = 256+22: &nbsp;</li>
+<li>
+VK_F22 = 256+23: &nbsp;</li>
+<li>
+VK_F23 = 256+24: &nbsp;</li>
+<li>
+VK_F24 = 256+25: &nbsp;</li>
+<li>
+VK_F25 = 256+26: &nbsp;</li>
+<li>
+VK_UP = 256+27: &nbsp;</li>
+<li>
+VK_DOWN = 256+28: &nbsp;</li>
+<li>
+VK_LEFT = 256+29: &nbsp;</li>
+<li>
+VK_RIGHT = 256+30: &nbsp;</li>
+<li>
+VK_LSHIFT = 256+31: &nbsp;</li>
+<li>
+VK_RSHIFT = 256+32: &nbsp;</li>
+<li>
+VK_LCTRL = 256+33: &nbsp;</li>
+<li>
+VK_RCTRL = 256+34: &nbsp;</li>
+<li>
+VK_LALT = 256+35: &nbsp;</li>
+<li>
+VK_RALT = 256+36: &nbsp;</li>
+<li>
+VK_TAB = 256+37: &nbsp;</li>
+<li>
+VK_RETURN = 256+38: &nbsp;</li>
+<li>
+VK_BACKSPACE = 256+39: &nbsp;</li>
+<li>
+VK_INSERT = 256+40: &nbsp;</li>
+<li>
+VK_DEL = 256+41: &nbsp;</li>
+<li>
+VK_PAGEUP = 256+42: &nbsp;</li>
+<li>
+VK_PAGEDOWN = 256+43: &nbsp;</li>
+<li>
+VK_HOME = 256+44: &nbsp;</li>
+<li>
+VK_END = 256+45: &nbsp;</li>
+<li>
+VK_NUM_0 = 256+46: &nbsp;</li>
+<li>
+VK_NUM_1 = 256+47: &nbsp;</li>
+<li>
+VK_NUM_2 = 256+48: &nbsp;</li>
+<li>
+VK_NUM_3 = 256+49: &nbsp;</li>
+<li>
+VK_NUM_4 = 256+50: &nbsp;</li>
+<li>
+VK_NUM_5 = 256+51: &nbsp;</li>
+<li>
+VK_NUM_6 = 256+52: &nbsp;</li>
+<li>
+VK_NUM_7 = 256+53: &nbsp;</li>
+<li>
+VK_NUM_8 = 256+54: &nbsp;</li>
+<li>
+VK_NUM_9 = 256+55: &nbsp;</li>
+<li>
+VK_NUM_DIVIDE = 256+56: &nbsp;</li>
+<li>
+VK_NUM_MULTIPLY = 256+57: &nbsp;</li>
+<li>
+VK_NUM_SUBTRACT = 256+58: &nbsp;</li>
+<li>
+VK_NUM_ADD = 256+59: &nbsp;</li>
+<li>
+VK_NUM_DECIMAL = 256+60: &nbsp;</li>
+<li>
+VK_NUM_EQUAL = 256+61: &nbsp;</li>
+<li>
+VK_NUM_ENTER = 256+62: &nbsp;</li>
+<li>
+VK_LAST = 256+63: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXMouseButton"></a><code><b>TPHXMouseButton</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Mouse button enumeration</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+mbNone = 0: &nbsp;</li>
+<li>
+PHX_MOUSE_BUTTON_1 = 1: &nbsp;</li>
+<li>
+PHX_MOUSE_BUTTON_2 = 2: &nbsp;</li>
+<li>
+PHX_MOUSE_BUTTON_3 = 3: &nbsp;</li>
+<li>
+PHX_MOUSE_BUTTON_4 = 4: &nbsp;</li>
+<li>
+PHX_MOUSE_BUTTON_5 = 5: &nbsp;</li>
+<li>
+PHX_MOUSE_BUTTON_6 = 6: &nbsp;</li>
+<li>
+PHX_MOUSE_BUTTON_7 = 7: &nbsp;</li>
+<li>
+PHX_MOUSE_BUTTON_8 = 8: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXJoystickIndex"></a><code><b>TPHXJoystickIndex</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Joystick index enumeration</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+PHX_JOYSTICK_1 = 0: &nbsp;</li>
+<li>
+PHX_JOYSTICK_2 = 1: &nbsp;</li>
+<li>
+PHX_JOYSTICK_3 = 2: &nbsp;</li>
+<li>
+PHX_JOYSTICK_4 = 3: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXJoystickAxis"></a><code><b>TPHXJoystickAxis</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Joystick axes enumeration</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+PHX_JOYSTICK_AXIS_1 = 0: &nbsp;</li>
+<li>
+PHX_JOYSTICK_AXIS_2 = 1: &nbsp;</li>
+<li>
+PHX_JOYSTICK_AXIS_3 = 2: &nbsp;</li>
+<li>
+PHX_JOYSTICK_AXIS_4 = 3: &nbsp;</li>
+<li>
+PHX_JOYSTICK_AXIS_5 = 4: &nbsp;</li>
+<li>
+PHX_JOYSTICK_AXIS_6 = 5: &nbsp;</li>
+<li>
+PHX_JOYSTICK_AXIS_7 = 6: &nbsp;</li>
+<li>
+PHX_JOYSTICK_AXIS_8 = 7: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXJoystickButton"></a><code><b>TPHXJoystickButton</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Joystick button enumeration</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+jbNone = 0: &nbsp;</li>
+<li>
+PHX_JOYSTICK_BUTTON_1: &nbsp;</li>
+<li>
+PHX_JOYSTICK_BUTTON_2: &nbsp;</li>
+<li>
+PHX_JOYSTICK_BUTTON_3: &nbsp;</li>
+<li>
+PHX_JOYSTICK_BUTTON_4: &nbsp;</li>
+<li>
+PHX_JOYSTICK_BUTTON_5: &nbsp;</li>
+<li>
+PHX_JOYSTICK_BUTTON_6: &nbsp;</li>
+<li>
+PHX_JOYSTICK_BUTTON_7: &nbsp;</li>
+<li>
+PHX_JOYSTICK_BUTTON_8: &nbsp;</li>
+<li>
+PHX_JOYSTICK_BUTTON_9: &nbsp;</li>
+<li>
+PHX_JOYSTICK_BUTTON_10: &nbsp;</li>
+<li>
+PHX_JOYSTICK_BUTTON_11: &nbsp;</li>
+<li>
+PHX_JOYSTICK_BUTTON_12: &nbsp;</li>
+<li>
+PHX_JOYSTICK_BUTTON_13: &nbsp;</li>
+<li>
+PHX_JOYSTICK_BUTTON_14: &nbsp;</li>
+<li>
+PHX_JOYSTICK_BUTTON_15: &nbsp;</li>
+<li>
+PHX_JOYSTICK_BUTTON_16: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PByteArray"></a><code><b>PByteArray</b> = &circ;<a  href="phxTypes.html#TByteArray">TByteArray</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TByteArray"></a><code><b>TByteArray</b> = array[0..$00FFFFFF] of Byte;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PIntegerList"></a><code><b>PIntegerList</b> = &circ;<a  href="phxTypes.html#TIntegerList">TIntegerList</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+List of integer values</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TIntegerList"></a><code><b>TIntegerList</b> = array[0..$00FFFFFF] of Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PSingleList"></a><code><b>PSingleList</b> = &circ;<a  href="phxTypes.html#TSingleList">TSingleList</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+List of single values</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TSingleList"></a><code><b>TSingleList</b> = array[0..$00FFFFFF] of Single;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PVector2i"></a><code><b>PVector2i</b> = &circ;<a  href="phxTypes.TVector2i.html">TVector2i</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PVectorList2i"></a><code><b>PVectorList2i</b> = &circ;<a  href="phxTypes.html#TVectorList2i">TVectorList2i</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TVectorList2i"></a><code><b>TVectorList2i</b> = array[0..$00FFFFFF] of <a  href="phxTypes.TVector2i.html">TVector2i</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PVector2f"></a><code><b>PVector2f</b> = &circ;<a  href="phxTypes.TVector2f.html">TVector2f</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PVectorList2f"></a><code><b>PVectorList2f</b> = &circ;<a  href="phxTypes.html#TVectorList2f">TVectorList2f</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TVectorList2f"></a><code><b>TVectorList2f</b> = array[0..$00FFFFFF] of <a  href="phxTypes.TVector2f.html">TVector2f</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PVector2d"></a><code><b>PVector2d</b> = &circ;<a  href="phxTypes.TVector2d.html">TVector2d</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PVectorList2d"></a><code><b>PVectorList2d</b> = &circ;<a  href="phxTypes.html#TVectorList2d">TVectorList2d</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TVectorList2d"></a><code><b>TVectorList2d</b> = array[0..$00FFFFFF] of <a  href="phxTypes.TVector2d.html">TVector2d</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PVector3i"></a><code><b>PVector3i</b> = &circ;<a  href="phxTypes.TVector3i.html">TVector3i</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PVectorList3i"></a><code><b>PVectorList3i</b> = &circ;<a  href="phxTypes.html#TVectorList2i">TVectorList2i</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TVectorList3i"></a><code><b>TVectorList3i</b> = array[0..$00FFFFFF] of <a  href="phxTypes.TVector3i.html">TVector3i</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PVector3f"></a><code><b>PVector3f</b> = &circ;<a  href="phxTypes.TVector3f.html">TVector3f</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PVectorList3f"></a><code><b>PVectorList3f</b> = &circ;<a  href="phxTypes.html#TVectorList3f">TVectorList3f</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TVectorList3f"></a><code><b>TVectorList3f</b> = array[0..$00FFFFFF] of <a  href="phxTypes.TVector3f.html">TVector3f</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PVector4i"></a><code><b>PVector4i</b> = &circ;<a  href="phxTypes.TVector4i.html">TVector4i</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PVectorList4i"></a><code><b>PVectorList4i</b> = &circ;<a  href="phxTypes.html#TVectorList4i">TVectorList4i</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TVectorList4i"></a><code><b>TVectorList4i</b> = array[0..$00FFFFFF] of <a  href="phxTypes.TVector4i.html">TVector4i</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PVector4f"></a><code><b>PVector4f</b> = &circ;<a  href="phxTypes.TVector4f.html">TVector4f</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PVectorList4f"></a><code><b>PVectorList4f</b> = &circ;<a  href="phxTypes.html#TVectorList3f">TVectorList3f</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TVectorList4f"></a><code><b>TVectorList4f</b> = array[0..$00FFFFFF] of <a  href="phxTypes.TVector4f.html">TVector4f</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TMatrix3v"></a><code><b>TMatrix3v</b> = array[0..8] of Single;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Elements for one dimension array access for a matrix</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TMatrix3m"></a><code><b>TMatrix3m</b> = array[0..2, 0..2] of Single;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Elements for two dimension array access for a matrix</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PMatrix3"></a><code><b>PMatrix3</b> = &circ;<a  href="phxTypes.TMatrix3.html">TMatrix3</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Pointer to a TMatrix3</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TMatrix4fv"></a><code><b>TMatrix4fv</b> = array[0..15] of Single;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Elements for one dimension array access for a matrix</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TMatrix4fm"></a><code><b>TMatrix4fm</b> = array[0..3, 0..3] of Single;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Elements for two dimension array access for a matrix</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PMatrix4"></a><code><b>PMatrix4</b> = &circ;<a  href="phxTypes.TMatrix4f.html">TMatrix4f</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Pointer to a TMatrix4f</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TMatrix4"></a><code><b>TMatrix4</b> = <a  href="phxTypes.TMatrix4f.html">TMatrix4f</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TColor32"></a><code><b>TColor32</b> = Cardinal;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+RGBA color</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PColor3b"></a><code><b>PColor3b</b> = &circ;<a  href="phxTypes.TColor3b.html">TColor3b</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PColor4b"></a><code><b>PColor4b</b> = &circ;<a  href="phxTypes.TColor4b.html">TColor4b</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PColor3f"></a><code><b>PColor3f</b> = &circ;<a  href="phxTypes.TColor3f.html">TColor3f</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PColorList3f"></a><code><b>PColorList3f</b> = &circ;<a  href="phxTypes.html#TColorList3f">TColorList3f</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TColorList3f"></a><code><b>TColorList3f</b> = array[0..$00FFFFFF] of <a  href="phxTypes.TColor3f.html">TColor3f</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PColor4f"></a><code><b>PColor4f</b> = &circ;<a  href="phxTypes.TColor4f.html">TColor4f</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Pointer to TColor4f</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PColorList4f"></a><code><b>PColorList4f</b> = &circ;<a  href="phxTypes.html#TColorList4f">TColorList4f</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TColorList4f"></a><code><b>TColorList4f</b> = array[0..$00FFFFFF] of <a  href="phxTypes.TColor4f.html">TColor4f</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PBoxi"></a><code><b>PBoxi</b> = &circ;<a  href="phxTypes.TBoxi.html">TBoxi</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PBoxf"></a><code><b>PBoxf</b> = &circ;<a  href="phxTypes.TBoxf.html">TBoxf</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PRectI"></a><code><b>PRectI</b> = &circ;<a  href="phxTypes.TRectI.html">TRectI</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PRectf"></a><code><b>PRectf</b> = &circ;<a  href="phxTypes.TRectf.html">TRectf</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PViewport"></a><code><b>PViewport</b> = &circ;<a  href="phxTypes.TViewport.html">TViewport</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXPrimitiveType"></a><code><b>TPHXPrimitiveType</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Defines the type of primitive to be rendered.</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+PHX_POINTS: Draw the verticies as points.</li>
+<li>
+PHX_LINES: Draw the verticies as lines</li>
+<li>
+PHX_TRIANGLES: Draw the verticeis as triangles</li>
+<li>
+PHX_TRIANGLE_STRIP: Draw the verticies as a triangle strip</li>
+<li>
+PHX_TRIANGLE_FAN: Draw the verticies as a triangle fan</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXBlendMode"></a><code><b>TPHXBlendMode</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Changes the current blend mode</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+bmNormal: No blendmode</li>
+<li>
+bmAlpha: Alpha blending</li>
+<li>
+bmAdditive: Additive blending</li>
+<li>
+bmMultiply: Multiplication blendinjg</li>
+<li>
+bmModulate: &nbsp;</li>
+<li>
+bmScreen: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXVertexComponent"></a><code><b>TPHXVertexComponent</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+<a  href="http://www.gamedev.net/topic/147325-mimicing-dxquotflexible-vertex-formatquot/#j_content">http://www.gamedev.net/topic/147325-mimicing-dxquotflexible-vertex-formatquot/#j_content</a> <a  href="http://www.gamedev.net/topic/367617-flexible-vertex-format-on-the-fly/">http://www.gamedev.net/topic/367617-flexible-vertex-format-on-the-fly/</a> <a  href="http://www.gamedev.net/topic/381492-vertex-declarations-in-opengl-and-directx-/">http://www.gamedev.net/topic/381492-vertex-declarations-in-opengl-and-directx-/</a> TPHXVertexUseage</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+vcPosition: &nbsp;</li>
+<li>
+vcNormal: &nbsp;</li>
+<li>
+vcColor: &nbsp;</li>
+<li>
+vcCoord1: Texture coordinate 1</li>
+<li>
+vcCoord2: Texture coordinate 2</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TVertexComponents"></a><code><b>TVertexComponents</b> = set of <a  href="phxTypes.html#TPHXVertexComponent">TPHXVertexComponent</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXVertexOffsets"></a><code><b>TPHXVertexOffsets</b> = array[<a  href="phxTypes.html#TPHXVertexComponent">TPHXVertexComponent</a>] of Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TVertexKind"></a><code><b>TVertexKind</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+vctFloat: Single</li>
+<li>
+vctDouble: &nbsp;</li>
+<li>
+vctFloat3: &nbsp;</li>
+<li>
+vctFloat4: &nbsp;</li>
+<li>
+vctColor: &nbsp;</li>
+<li>
+vctMatrix3: &nbsp;</li>
+<li>
+vctMatrix4: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PPHXVertex"></a><code><b>PPHXVertex</b> = &circ;<a  href="phxTypes.TPHXVertex.html">TPHXVertex</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Pointer to a vertex</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PVertexList"></a><code><b>PVertexList</b> = &circ;<a  href="phxTypes.html#TVertexList">TVertexList</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TVertexList"></a><code><b>TVertexList</b> = array[0..$00FFFFFF] of <a  href="phxTypes.TPHXVertex.html">TPHXVertex</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PPHXIndex"></a><code><b>PPHXIndex</b> = &circ;<a  href="phxTypes.html#TPHXIndex">TPHXIndex</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXIndex"></a><code><b>TPHXIndex</b> = type Cardinal;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PIndexList"></a><code><b>PIndexList</b> = &circ;<a  href="phxTypes.html#TIndexList">TIndexList</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TIndexList"></a><code><b>TIndexList</b> = Array[0..$00FFFFFF] of <a  href="phxTypes.html#TPHXIndex">TPHXIndex</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="EPSILON"></a><code><b>EPSILON</b> = 1.192092896e-7;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="mbLeft"></a><code><b>mbLeft</b> = TPHXMouseButton.PHX_MOUSE_BUTTON_1;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Left mouse button</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="mbRight"></a><code><b>mbRight</b> = TPHXMouseButton.PHX_MOUSE_BUTTON_2;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Right mouse button</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="mbMiddle"></a><code><b>mbMiddle</b> = TPHXMouseButton.PHX_MOUSE_BUTTON_3;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Middle mouse button</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="clrNone"></a><code><b>clrNone</b>       : <a  href="phxTypes.TColor4f.html">TColor4f</a> = (Red: 000/255; Green: 000/255; Blue: 000/255; Alpha: 000/255);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Constant colors</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="clrBlack"></a><code><b>clrBlack</b>      : <a  href="phxTypes.TColor4f.html">TColor4f</a> = (Red: 000/255; Green: 000/255; Blue: 000/255; Alpha: 255/255);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="clrMaroon"></a><code><b>clrMaroon</b>     : <a  href="phxTypes.TColor4f.html">TColor4f</a> = (Red: 128/255; Green: 000/255; Blue: 000/255; Alpha: 255/255);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="clrGreen"></a><code><b>clrGreen</b>      : <a  href="phxTypes.TColor4f.html">TColor4f</a> = (Red: 000/255; Green: 128/255; Blue: 000/255; Alpha: 255/255);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="clrOlive"></a><code><b>clrOlive</b>      : <a  href="phxTypes.TColor4f.html">TColor4f</a> = (Red: 128/255; Green: 128/255; Blue: 000/255; Alpha: 255/255);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="clrNavy"></a><code><b>clrNavy</b>       : <a  href="phxTypes.TColor4f.html">TColor4f</a> = (Red: 000/255; Green: 000/255; Blue: 128/255; Alpha: 255/255);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="clrPurple"></a><code><b>clrPurple</b>     : <a  href="phxTypes.TColor4f.html">TColor4f</a> = (Red: 128/255; Green: 000/255; Blue: 128/255; Alpha: 255/255);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="clrTeal"></a><code><b>clrTeal</b>       : <a  href="phxTypes.TColor4f.html">TColor4f</a> = (Red: 000/255; Green: 128/255; Blue: 128/255; Alpha: 255/255);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="clrGray"></a><code><b>clrGray</b>       : <a  href="phxTypes.TColor4f.html">TColor4f</a> = (Red: 128/255; Green: 128/255; Blue: 128/255; Alpha: 255/255);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="clrSilver"></a><code><b>clrSilver</b>     : <a  href="phxTypes.TColor4f.html">TColor4f</a> = (Red: 192/255; Green: 192/255; Blue: 192/255; Alpha: 255/255);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="clrRed"></a><code><b>clrRed</b>        : <a  href="phxTypes.TColor4f.html">TColor4f</a> = (Red: 255/255; Green: 000/255; Blue: 000/255; Alpha: 255/255);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="clrLime"></a><code><b>clrLime</b>       : <a  href="phxTypes.TColor4f.html">TColor4f</a> = (Red: 000/255; Green: 255/255; Blue: 000/255; Alpha: 255/255);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="clrYellow"></a><code><b>clrYellow</b>     : <a  href="phxTypes.TColor4f.html">TColor4f</a> = (Red: 255/255; Green: 255/255; Blue: 000/255; Alpha: 255/255);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="clrBlue"></a><code><b>clrBlue</b>       : <a  href="phxTypes.TColor4f.html">TColor4f</a> = (Red: 000/255; Green: 000/255; Blue: 255/255; Alpha: 255/255);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="clrFuchsia"></a><code><b>clrFuchsia</b>    : <a  href="phxTypes.TColor4f.html">TColor4f</a> = (Red: 255/255; Green: 000/255; Blue: 255/255; Alpha: 255/255);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="clrAqua"></a><code><b>clrAqua</b>       : <a  href="phxTypes.TColor4f.html">TColor4f</a> = (Red: 000/255; Green: 255/255; Blue: 255/255; Alpha: 255/255);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="clrWhite"></a><code><b>clrWhite</b>      : <a  href="phxTypes.TColor4f.html">TColor4f</a> = (Red: 255/255; Green: 255/255; Blue: 255/255; Alpha: 255/255);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="clrMoneyGreen"></a><code><b>clrMoneyGreen</b> : <a  href="phxTypes.TColor4f.html">TColor4f</a> = (Red: 192/255; Green: 220/255; Blue: 192/255; Alpha: 255/255);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="clrSkyBlue"></a><code><b>clrSkyBlue</b>    : <a  href="phxTypes.TColor4f.html">TColor4f</a> = (Red: 166/255; Green: 202/255; Blue: 240/255; Alpha: 255/255);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="clrCream"></a><code><b>clrCream</b>      : <a  href="phxTypes.TColor4f.html">TColor4f</a> = (Red: 255/255; Green: 251/255; Blue: 240/255; Alpha: 255/255);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="clrMedGray"></a><code><b>clrMedGray</b>    : <a  href="phxTypes.TColor4f.html">TColor4f</a> = (Red: 160/255; Green: 160/255; Blue: 164/255; Alpha: 255/255);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="clrCyan"></a><code><b>clrCyan</b>       : <a  href="phxTypes.TColor4f.html">TColor4f</a> = (Red: 000/255; Green: 255/255; Blue: 255/255; Alpha: 255/255);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="clrMagenta"></a><code><b>clrMagenta</b>    : <a  href="phxTypes.TColor4f.html">TColor4f</a> = (Red: 255/255; Green: 000/255; Blue: 255/255; Alpha: 255/255);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="fvfStandard"></a><code><b>fvfStandard</b> = [vcPosition, vcNormal, vcColor, vcCoord1];</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VertexOffsetTexCoord"></a><code><b>VertexOffsetTexCoord</b>: Pointer = Pointer(0);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Offset of texture cordinates in the vertex structure</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VertexOffsetColor"></a><code><b>VertexOffsetColor</b>: Pointer = Pointer(SizeOf(<a  href="phxTypes.TVector2f.html">TVector2f</a>));</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Offset of colors in the vertex structure</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VertexOffsetNormal"></a><code><b>VertexOffsetNormal</b>: Pointer = Pointer(SizeOf(<a  href="phxTypes.TVector2f.html">TVector2f</a>) + SizeOf(<a  href="phxTypes.TColor4f.html">TColor4f</a>));</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Offset of normals corrdinates in the vertex structure</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VertexOffsetPosition"></a><code><b>VertexOffsetPosition</b>: Pointer = Pointer(SizeOf(<a  href="phxTypes.TVector2f.html">TVector2f</a>) + SizeOf(<a  href="phxTypes.TColor4f.html">TColor4f</a>) + SizeOf(<a  href="phxTypes.TVector3f.html">TVector3f</a>));</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Offset of position in the vertex structure</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Vector2i_Zero"></a><code><b>Vector2i_Zero</b>  : <a  href="phxTypes.TVector2i.html">TVector2i</a> = (X: 0; Y: 0);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Vector2i_One"></a><code><b>Vector2i_One</b>   : <a  href="phxTypes.TVector2i.html">TVector2i</a> = (X: 1; Y: 1);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Vector2i_AxisX"></a><code><b>Vector2i_AxisX</b> : <a  href="phxTypes.TVector2i.html">TVector2i</a> = (X: 1; Y: 0);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Vector2i_AxisY"></a><code><b>Vector2i_AxisY</b> : <a  href="phxTypes.TVector2i.html">TVector2i</a> = (X: 0; Y: 1);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Vector2f_Zero"></a><code><b>Vector2f_Zero</b>  : <a  href="phxTypes.TVector2f.html">TVector2f</a> = (X: 0.0; Y: 0.0);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Vector2f_One"></a><code><b>Vector2f_One</b>   : <a  href="phxTypes.TVector2f.html">TVector2f</a> = (X: 1.0; Y: 1.0);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Vector2f_AxisX"></a><code><b>Vector2f_AxisX</b> : <a  href="phxTypes.TVector2f.html">TVector2f</a> = (X: 1.0; Y: 0.0);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Vector2f_AxisY"></a><code><b>Vector2f_AxisY</b> : <a  href="phxTypes.TVector2f.html">TVector2f</a> = (X: 0.0; Y: 1.0);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Vector3i_Zero"></a><code><b>Vector3i_Zero</b>  : <a  href="phxTypes.TVector3i.html">TVector3i</a> = (X: 0; Y: 0; Z: 0);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Vector3i_One"></a><code><b>Vector3i_One</b>   : <a  href="phxTypes.TVector3i.html">TVector3i</a> = (X: 1; Y: 1; Z: 1);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Vector3i_AxisX"></a><code><b>Vector3i_AxisX</b> : <a  href="phxTypes.TVector3i.html">TVector3i</a> = (X: 1; Y: 0; Z: 0);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Vector3i_AxisY"></a><code><b>Vector3i_AxisY</b> : <a  href="phxTypes.TVector3i.html">TVector3i</a> = (X: 0; Y: 1; Z: 0);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Vector3i_AxisZ"></a><code><b>Vector3i_AxisZ</b> : <a  href="phxTypes.TVector3i.html">TVector3i</a> = (X: 0; Y: 0; Z: 1);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Vector3f_Zero"></a><code><b>Vector3f_Zero</b>  : <a  href="phxTypes.TVector3f.html">TVector3f</a> = (X: 0.0; Y: 0.0; Z: 0.0);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Vector3f_One"></a><code><b>Vector3f_One</b>   : <a  href="phxTypes.TVector3f.html">TVector3f</a> = (X: 1.0; Y: 1.0; Z: 1.0);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Vector3f_AxisX"></a><code><b>Vector3f_AxisX</b> : <a  href="phxTypes.TVector3f.html">TVector3f</a> = (X: 1.0; Y: 0.0; Z: 0.0);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Vector3f_AxisY"></a><code><b>Vector3f_AxisY</b> : <a  href="phxTypes.TVector3f.html">TVector3f</a> = (X: 0.0; Y: 1.0; Z: 0.0);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Vector3f_AxisZ"></a><code><b>Vector3f_AxisZ</b> : <a  href="phxTypes.TVector3f.html">TVector3f</a> = (X: 0.0; Y: 0.0; Z: 1.0);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Matrix3_Zero"></a><code><b>Matrix3_Zero</b>: <a  href="phxTypes.TMatrix3.html">TMatrix3</a> = (v:(
+  0, 0, 0,
+  0, 0, 0,
+  0, 0, 0
+));</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Matrix3_Identity"></a><code><b>Matrix3_Identity</b>: <a  href="phxTypes.TMatrix3.html">TMatrix3</a> = (v:(
+  1, 0, 0,
+  0, 1, 0,
+  0, 0, 1
+));</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Matrix4_Zero"></a><code><b>Matrix4_Zero</b>: <a  href="phxTypes.TMatrix4f.html">TMatrix4f</a> = (v:(
+  0, 0, 0, 0,
+  0, 0, 0, 0,
+  0, 0, 0, 0,
+  0, 0, 0, 0
+));</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Matrix4_Identity"></a><code><b>Matrix4_Identity</b> : <a  href="phxTypes.TMatrix4f.html">TMatrix4f</a> = (v:(
+  1, 0, 0, 0,
+  0, 1, 0, 0,
+  0, 0, 1, 0,
+  0, 0, 0, 1
+));</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.13.0</a> on 2013-08-26 11:02:44</em>
+</span>
+</td></tr></table></body></html>

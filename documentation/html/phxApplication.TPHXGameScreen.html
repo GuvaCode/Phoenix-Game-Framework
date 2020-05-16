@@ -1,0 +1,291 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Phoenix API Doc: phxApplication: Class TPHXGameScreen</title>
+<meta name="generator" content="PasDoc 0.13.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Phoenix API Doc</h2><p><a href="introduction.html" class="navigation">Introduction</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div></p></td><td class="content">
+<link rel="icon" type="image/ico" href="Phoenix_icon.png"></link>
+<link rel="shortcut icon" href="Phoenix_icon.png"></link>
+<a name="TPHXGameScreen"></a><h1 class="cio">Class TPHXGameScreen</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td><a class="section" href="#PasDoc-Properties">Properties</a></td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="phxApplication.html">phxApplication</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TPHXGameScreen = class(TPersistent)</code></p>
+<h2 class="description">Description</h2>
+<p>
+A game screen is</p>
+<a name="PasDoc-Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TPersistent</li>
+<li class="thisitem">TPHXGameScreen</li></ul><h2 class="overview">Overview</h2>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxApplication.TPHXGameScreen.html#MousePressed">MousePressed</a></b>(X, Y: Integer; Shift: <a  href="phxTypes.html#TPHXShiftStates">TPHXShiftStates</a>; Button: <a  href="phxTypes.html#TPHXMouseButton">TPHXMouseButton</a>); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxApplication.TPHXGameScreen.html#MouseMoved">MouseMoved</a></b>(X, Y: Integer; Shift: <a  href="phxTypes.html#TPHXShiftStates">TPHXShiftStates</a>); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxApplication.TPHXGameScreen.html#MouseReleased">MouseReleased</a></b>(X, Y: Integer; Shift: <a  href="phxTypes.html#TPHXShiftStates">TPHXShiftStates</a>; Button: <a  href="phxTypes.html#TPHXMouseButton">TPHXMouseButton</a>); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxApplication.TPHXGameScreen.html#KeyPressed">KeyPressed</a></b>(Key: <a  href="phxTypes.html#TPHXVirtualKey">TPHXVirtualKey</a>; Shift: <a  href="phxTypes.html#TPHXShiftStates">TPHXShiftStates</a>); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxApplication.TPHXGameScreen.html#KeyReleased">KeyReleased</a></b>(Key: <a  href="phxTypes.html#TPHXVirtualKey">TPHXVirtualKey</a>; Shift: <a  href="phxTypes.html#TPHXShiftStates">TPHXShiftStates</a>); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxApplication.TPHXGameScreen.html#Opened">Opened</a></b>; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxApplication.TPHXGameScreen.html#Closed">Closed</a></b>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="phxApplication.TPHXGameScreen.html#Create">Create</a></b>(AOwner: <a  href="phxApplication.TPHXGameScreens.html">TPHXGameScreens</a>; AData: Pointer); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a  href="phxApplication.TPHXGameScreen.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxApplication.TPHXGameScreen.html#Update">Update</a></b>; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxApplication.TPHXGameScreen.html#Render">Render</a></b>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxApplication.TPHXGameScreen.html#Open">Open</a></b>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxApplication.TPHXGameScreen.html#Open">Open</a></b>(const Name: String); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxApplication.TPHXGameScreen.html#Close">Close</a></b>;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxApplication.TPHXGameScreen.html#Owner">Owner</a></b>: <a  href="phxApplication.TPHXGameScreens.html">TPHXGameScreens</a> read FOwner;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxApplication.TPHXGameScreen.html#Name">Name</a></b>: String read FName write FName;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxApplication.TPHXGameScreen.html#Data">Data</a></b>: Pointer read FData write FData;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxApplication.TPHXGameScreen.html#Transition">Transition</a></b>: <a  href="phxApplication.TPHXGameTransition.html">TPHXGameTransition</a> read FTransition;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="MousePressed"></a><code>procedure <b>MousePressed</b>(X, Y: Integer; Shift: <a  href="phxTypes.html#TPHXShiftStates">TPHXShiftStates</a>; Button: <a  href="phxTypes.html#TPHXMouseButton">TPHXMouseButton</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Event that is called when a mouse button is pressed</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="MouseMoved"></a><code>procedure <b>MouseMoved</b>(X, Y: Integer; Shift: <a  href="phxTypes.html#TPHXShiftStates">TPHXShiftStates</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Event that is called when the mouse is moved</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="MouseReleased"></a><code>procedure <b>MouseReleased</b>(X, Y: Integer; Shift: <a  href="phxTypes.html#TPHXShiftStates">TPHXShiftStates</a>; Button: <a  href="phxTypes.html#TPHXMouseButton">TPHXMouseButton</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Event that is called when a mouse button is released</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="KeyPressed"></a><code>procedure <b>KeyPressed</b>(Key: <a  href="phxTypes.html#TPHXVirtualKey">TPHXVirtualKey</a>; Shift: <a  href="phxTypes.html#TPHXShiftStates">TPHXShiftStates</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Event that is called when a key is pressed</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="KeyReleased"></a><code>procedure <b>KeyReleased</b>(Key: <a  href="phxTypes.html#TPHXVirtualKey">TPHXVirtualKey</a>; Shift: <a  href="phxTypes.html#TPHXShiftStates">TPHXShiftStates</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Event that is called when a key is released</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="Opened"></a><code>procedure <b>Opened</b>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Celled when the screen is opened</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="Closed"></a><code>procedure <b>Closed</b>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Celled when the screen is closed</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(AOwner: <a  href="phxApplication.TPHXGameScreens.html">TPHXGameScreens</a>; AData: Pointer); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Update"></a><code>procedure <b>Update</b>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Update the game screen</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Render"></a><code>procedure <b>Render</b>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Render the game screen</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Open"></a><code>procedure <b>Open</b>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Open this screen</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Open"></a><code>procedure <b>Open</b>(const Name: String); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Open another screen</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Close"></a><code>procedure <b>Close</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Close this screen</p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Owner"></a><code>property <b>Owner</b>: <a  href="phxApplication.TPHXGameScreens.html">TPHXGameScreens</a> read FOwner;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The owning screen manager</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Name"></a><code>property <b>Name</b>: String read FName write FName;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Name of the screen</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Data"></a><code>property <b>Data</b>: Pointer read FData write FData;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Custom data</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Transition"></a><code>property <b>Transition</b>: <a  href="phxApplication.TPHXGameTransition.html">TPHXGameTransition</a> read FTransition;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Screen transition</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.13.0</a> on 2013-08-26 11:02:34</em>
+</span>
+</td></tr></table></body></html>

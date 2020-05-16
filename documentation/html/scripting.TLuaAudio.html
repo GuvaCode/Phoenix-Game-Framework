@@ -1,0 +1,224 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Phoenix API Doc: scripting: Class TLuaAudio</title>
+<meta name="generator" content="PasDoc 0.13.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Phoenix API Doc</h2><p><a href="introduction.html" class="navigation">Introduction</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div></p></td><td class="content">
+<link rel="icon" type="image/ico" href="Phoenix_icon.png"></link>
+<link rel="shortcut icon" href="Phoenix_icon.png"></link>
+<a name="TLuaAudio"></a><h1 class="cio">Class TLuaAudio</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td>Properties</td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="scripting.html">scripting</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TLuaAudio = class(TLuaTable)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Scripting support for audio</p>
+<p>
+
+
+<p>This is a wrapper class for the <a class="normal" href="phxAudio.TPHXAudioEngine.html">TPHXAudioEngine</a> component.
+
+<p></p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="phxAudio.TPHXAudioEngine.html">TPHXAudioEngine</a></dt>
+  <dd>The audio engine is used to play audio using a audio provider</dd>
+</dl>
+<a name="PasDoc-Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TLuaTable</li>
+<li class="thisitem">TLuaAudio</li></ul><h2 class="overview">Overview</h2>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="scripting.TLuaAudio.html#load">load</a></b>(filename: string); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="scripting.TLuaAudio.html#load">load</a></b>(filename: string; name: string); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="scripting.TLuaAudio.html#play">play</a></b>(sample: string); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="scripting.TLuaAudio.html#play">play</a></b>(sample: string; volume: Single); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="scripting.TLuaAudio.html#stop">stop</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="scripting.TLuaAudio.html#pause">pause</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="scripting.TLuaAudio.html#resume">resume</a></b>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="load"></a><code>procedure <b>load</b>(filename: string); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Load a audio sample</p>
+<p>
+
+
+<p>
+
+<p></p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>filename</dt>
+<dd>Filename of the audio sample to load</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="phxAudio.TPHXAudioEngine.html#LoadSample">TPHXAudioEngine.LoadSample</a></dt>
+  <dd>Load a audio sample and rename it</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="load"></a><code>procedure <b>load</b>(filename: string; name: string); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Load and rename audio sample</p>
+<p>
+
+
+<p> 
+
+<p></p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>filename</dt>
+<dd>Filename of the audio sample to load</dd>
+<dt>Name</dt>
+<dd>The name to give the sample</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="phxAudio.TPHXAudioEngine.html#LoadSample">TPHXAudioEngine.LoadSample</a></dt>
+  <dd>Load a audio sample and rename it</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="play"></a><code>procedure <b>play</b>(sample: string); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Plays a audio sample</p>
+<p>
+
+
+<p>
+
+<p></p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>sample</dt>
+<dd>Name of the audio sample to play</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="phxAudio.TPHXAudioEngine.html#Play">TPHXAudioEngine.Play</a></dt>
+  <dd>Play a audio sample by name with a volume from 0.0 (silent) to 1.0 (full)</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="play"></a><code>procedure <b>play</b>(sample: string; volume: Single); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Play a audio sample by name with a volume</p>
+<p>
+
+
+<p>$param(sample Name of the audio sample to play) </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>volume</dt>
+<dd>The volume of the sample from 0.0 (silent) to 1.0 (full)</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="stop"></a><code>procedure <b>stop</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Stops all playing audio channels</p>
+<p>
+
+
+<p><code> audio.stop </code>
+
+<p></p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="phxAudio.TPHXAudioEngine.html#Stop">TPHXAudioEngine.Stop</a></dt>
+  <dd>Stops all channels</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="pause"></a><code>procedure <b>pause</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="phxAudio.TPHXAudioEngine.html#Pause">TPHXAudioEngine.Pause</a></dt>
+  <dd>Pause all channels</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="resume"></a><code>procedure <b>resume</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="phxAudio.TPHXAudioEngine.html#Resume">TPHXAudioEngine.Resume</a></dt>
+  <dd>Resume all active channels</dd>
+</dl>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.13.0</a> on 2013-08-26 11:02:44</em>
+</span>
+</td></tr></table></body></html>

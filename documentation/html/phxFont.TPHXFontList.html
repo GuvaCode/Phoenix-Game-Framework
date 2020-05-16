@@ -1,0 +1,281 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Phoenix API Doc: phxFont: Class TPHXFontList</title>
+<meta name="generator" content="PasDoc 0.13.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Phoenix API Doc</h2><p><a href="introduction.html" class="navigation">Introduction</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div></p></td><td class="content">
+<link rel="icon" type="image/ico" href="Phoenix_icon.png"></link>
+<link rel="shortcut icon" href="Phoenix_icon.png"></link>
+<a name="TPHXFontList"></a><h1 class="cio">Class TPHXFontList</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td><a class="section" href="#PasDoc-Properties">Properties</a></td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="phxFont.html">phxFont</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TPHXFontList = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Container for a list of fonts</p>
+<a name="PasDoc-Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TPHXFontList</li></ul><h2 class="overview">Overview</h2>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="phxFont.TPHXFontList.html#Create">Create</a></b>(ADevice: <a  href="phxDevice.TPHXDevice.html">TPHXDevice</a>; ACanvas: <a  href="phxCanvas.TPHXCanvas.html">TPHXCanvas</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a  href="phxFont.TPHXFontList.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxFont.TPHXFontList.html#Clear">Clear</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxFont.TPHXFontList.html#Add">Add</a></b>: <a  href="phxFont.TPHXFont.html">TPHXFont</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxFont.TPHXFontList.html#Add">Add</a></b>(const Name : String): <a  href="phxFont.TPHXFont.html">TPHXFont</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxFont.TPHXFontList.html#Add">Add</a></b>(const Font: <a  href="phxFont.TPHXFont.html">TPHXFont</a>): <a  href="phxFont.TPHXFont.html">TPHXFont</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxFont.TPHXFontList.html#LoadFont">LoadFont</a></b>(const Filename: String ): <a  href="phxFont.TPHXFont.html">TPHXFont</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxFont.TPHXFontList.html#LoadFont">LoadFont</a></b>(Stream: TStream): <a  href="phxFont.TPHXFont.html">TPHXFont</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxFont.TPHXFontList.html#IndexOf">IndexOf</a></b>(const Name: String): Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxFont.TPHXFontList.html#Find">Find</a></b>(const Name: String): <a  href="phxFont.TPHXFont.html">TPHXFont</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxFont.TPHXFontList.html#Find">Find</a></b>(const Name: String; const Size: Integer): <a  href="phxFont.TPHXFont.html">TPHXFont</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxFont.TPHXFontList.html#Find">Find</a></b>(const Name: String; const Size: Integer; const Style: <a  href="phxFont.html#TPHXFontStyles">TPHXFontStyles</a>): <a  href="phxFont.TPHXFont.html">TPHXFont</a>; overload;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxFont.TPHXFontList.html#Device">Device</a></b>  : <a  href="phxDevice.TPHXDevice.html">TPHXDevice</a> read FDevice;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxFont.TPHXFontList.html#Canvas">Canvas</a></b>  : <a  href="phxCanvas.TPHXCanvas.html">TPHXCanvas</a> read FCanvas;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxFont.TPHXFontList.html#Count">Count</a></b>: Integer read getCount;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxFont.TPHXFontList.html#List">List</a></b>: <a  href="phxFont.html#PFontList">PFontList</a> read GetList;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxFont.TPHXFontList.html#Fonts">Fonts</a></b>[Index:Integer]: <a  href="phxFont.TPHXFont.html">TPHXFont</a> read GetItem;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(ADevice: <a  href="phxDevice.TPHXDevice.html">TPHXDevice</a>; ACanvas: <a  href="phxCanvas.TPHXCanvas.html">TPHXCanvas</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Create a new font list</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Destroys the font list</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Clear"></a><code>procedure <b>Clear</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Clears all the fonts from the font list.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Add"></a><code>function <b>Add</b>: <a  href="phxFont.TPHXFont.html">TPHXFont</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Add a new font to the fontlist</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Add"></a><code>function <b>Add</b>(const Name : String): <a  href="phxFont.TPHXFont.html">TPHXFont</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Add a new font with a specific name to the fontlist</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Add"></a><code>function <b>Add</b>(const Font: <a  href="phxFont.TPHXFont.html">TPHXFont</a>): <a  href="phxFont.TPHXFont.html">TPHXFont</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Add an existing font to the fontlist</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LoadFont"></a><code>function <b>LoadFont</b>(const Filename: String ): <a  href="phxFont.TPHXFont.html">TPHXFont</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Loads a phoenix font into the fontlist.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LoadFont"></a><code>function <b>LoadFont</b>(Stream: TStream): <a  href="phxFont.TPHXFont.html">TPHXFont</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Loads a phoenix font into the fontlist.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="IndexOf"></a><code>function <b>IndexOf</b>(const Name: String): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns the index of the font with the specified name, -1 if none is found.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Find"></a><code>function <b>Find</b>(const Name: String): <a  href="phxFont.TPHXFont.html">TPHXFont</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns the font with the specified name, nil if not found</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Find"></a><code>function <b>Find</b>(const Name: String; const Size: Integer): <a  href="phxFont.TPHXFont.html">TPHXFont</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns the font with the specified name and size</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Find"></a><code>function <b>Find</b>(const Name: String; const Size: Integer; const Style: <a  href="phxFont.html#TPHXFontStyles">TPHXFontStyles</a>): <a  href="phxFont.TPHXFont.html">TPHXFont</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns the font with the specified name, size and style</p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Device"></a><code>property <b>Device</b>  : <a  href="phxDevice.TPHXDevice.html">TPHXDevice</a> read FDevice;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The owning device</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Canvas"></a><code>property <b>Canvas</b>  : <a  href="phxCanvas.TPHXCanvas.html">TPHXCanvas</a> read FCanvas;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The canvas to render to</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Count"></a><code>property <b>Count</b>: Integer read getCount;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The number of fonts in the font list.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="List"></a><code>property <b>List</b>: <a  href="phxFont.html#PFontList">PFontList</a> read GetList;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns the pointer to the internal list</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Fonts"></a><code>property <b>Fonts</b>[Index:Integer]: <a  href="phxFont.TPHXFont.html">TPHXFont</a> read GetItem;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The fonts in the list.</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.13.0</a> on 2013-08-26 11:02:37</em>
+</span>
+</td></tr></table></body></html>

@@ -1,0 +1,251 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Phoenix API Doc: phxTypes: record TVector3f</title>
+<meta name="generator" content="PasDoc 0.13.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Phoenix API Doc</h2><p><a href="introduction.html" class="navigation">Introduction</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div></p></td><td class="content">
+<link rel="icon" type="image/ico" href="Phoenix_icon.png"></link>
+<link rel="shortcut icon" href="Phoenix_icon.png"></link>
+<a name="TVector3f"></a><h1 class="cio">record TVector3f</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td>Hierarchy</td><td><a class="section" href="#PasDoc-Fields">Fields</a></td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td>Properties</td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="phxTypes.html">phxTypes</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TVector3f = record</code></p>
+<h2 class="description">Description</h2>
+<p>
+Three dimensional single precision vector</p>
+<h2 class="overview">Overview</h2>
+<a name="PasDoc-Fields"></a><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.TVector3f.html#X">X</a></b>: Single;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxTypes.TVector3f.html#Y">Y</a></b>: Single;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxTypes.TVector3f.html#Z">Z</a></b>: Single;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>class function <b><a  href="phxTypes.TVector3f.html#Create">Create</a></b>(const AX, AY, AZ: Single): <a  href="phxTypes.TVector3f.html">TVector3f</a>; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>class function <b><a  href="phxTypes.TVector3f.html#Zero">Zero</a></b>: <a  href="phxTypes.TVector3f.html">TVector3f</a>; static;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>class function <b><a  href="phxTypes.TVector3f.html#AxisX">AxisX</a></b>: <a  href="phxTypes.TVector3f.html">TVector3f</a>; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>class function <b><a  href="phxTypes.TVector3f.html#AxisY">AxisY</a></b>: <a  href="phxTypes.TVector3f.html">TVector3f</a>; static;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>class function <b><a  href="phxTypes.TVector3f.html#AxisZ">AxisZ</a></b>: <a  href="phxTypes.TVector3f.html">TVector3f</a>; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxTypes.TVector3f.html#Magnitude">Magnitude</a></b>: Single;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxTypes.TVector3f.html#MagnitudeSqr">MagnitudeSqr</a></b>: Single;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxTypes.TVector3f.html#Normalize">Normalize</a></b>: <a  href="phxTypes.TVector3f.html">TVector3f</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxTypes.TVector3f.html#Negate">Negate</a></b>: <a  href="phxTypes.TVector3f.html">TVector3f</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxTypes.TVector3f.html#Dot">Dot</a></b>(const Vector: <a  href="phxTypes.TVector3f.html">TVector3f</a>): Single;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxTypes.TVector3f.html#Cross">Cross</a></b>(const Vector: <a  href="phxTypes.TVector3f.html">TVector3f</a>): <a  href="phxTypes.TVector3f.html">TVector3f</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>class operator <b><a  href="phxTypes.TVector3f.html#Add">Add</a></b>(const A: <a  href="phxTypes.TVector3f.html">TVector3f</a>; const B: <a  href="phxTypes.TVector3f.html">TVector3f</a>): <a  href="phxTypes.TVector3f.html">TVector3f</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>class operator <b><a  href="phxTypes.TVector3f.html#Subtract">Subtract</a></b>(const A: <a  href="phxTypes.TVector3f.html">TVector3f</a>; const B: <a  href="phxTypes.TVector3f.html">TVector3f</a>): <a  href="phxTypes.TVector3f.html">TVector3f</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>class operator <b><a  href="phxTypes.TVector3f.html#Multiply">Multiply</a></b>(const A, B: <a  href="phxTypes.TVector3f.html">TVector3f</a>): Single;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>class operator <b><a  href="phxTypes.TVector3f.html#Multiply">Multiply</a></b>(const A: <a  href="phxTypes.TVector3f.html">TVector3f</a>; const B: Single): <a  href="phxTypes.TVector3f.html">TVector3f</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="X"></a><code><b>X</b>: Single;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Y"></a><code><b>Y</b>: Single;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Z"></a><code><b>Z</b>: Single;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Create"></a><code>class function <b>Create</b>(const AX, AY, AZ: Single): <a  href="phxTypes.TVector3f.html">TVector3f</a>; static;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Creates a new vector</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Zero"></a><code>class function <b>Zero</b>: <a  href="phxTypes.TVector3f.html">TVector3f</a>; static;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Creates a empty vector</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="AxisX"></a><code>class function <b>AxisX</b>: <a  href="phxTypes.TVector3f.html">TVector3f</a>; static;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Creates a vector in the X-Axis</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="AxisY"></a><code>class function <b>AxisY</b>: <a  href="phxTypes.TVector3f.html">TVector3f</a>; static;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Creates a vector in the Y-Axis</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="AxisZ"></a><code>class function <b>AxisZ</b>: <a  href="phxTypes.TVector3f.html">TVector3f</a>; static;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Creates a vector in the Z-Axis</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Magnitude"></a><code>function <b>Magnitude</b>: Single;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Returns the magnitude of this vector</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="MagnitudeSqr"></a><code>function <b>MagnitudeSqr</b>: Single;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Returns the squared magnitude of this vector</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Normalize"></a><code>function <b>Normalize</b>: <a  href="phxTypes.TVector3f.html">TVector3f</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Returns the normalised version of this vector</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Negate"></a><code>function <b>Negate</b>: <a  href="phxTypes.TVector3f.html">TVector3f</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Negate the vector</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Dot"></a><code>function <b>Dot</b>(const Vector: <a  href="phxTypes.TVector3f.html">TVector3f</a>): Single;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Returns the dot product of this and another vector</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Cross"></a><code>function <b>Cross</b>(const Vector: <a  href="phxTypes.TVector3f.html">TVector3f</a>): <a  href="phxTypes.TVector3f.html">TVector3f</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Returns the cross product of this and another vector</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Add"></a><code>class operator <b>Add</b>(const A: <a  href="phxTypes.TVector3f.html">TVector3f</a>; const B: <a  href="phxTypes.TVector3f.html">TVector3f</a>): <a  href="phxTypes.TVector3f.html">TVector3f</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Vector addition</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Subtract"></a><code>class operator <b>Subtract</b>(const A: <a  href="phxTypes.TVector3f.html">TVector3f</a>; const B: <a  href="phxTypes.TVector3f.html">TVector3f</a>): <a  href="phxTypes.TVector3f.html">TVector3f</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Vector subtraction</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Multiply"></a><code>class operator <b>Multiply</b>(const A, B: <a  href="phxTypes.TVector3f.html">TVector3f</a>): Single;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Multiply two vectors, returns the vector dot</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Multiply"></a><code>class operator <b>Multiply</b>(const A: <a  href="phxTypes.TVector3f.html">TVector3f</a>; const B: Single): <a  href="phxTypes.TVector3f.html">TVector3f</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Vector multiplication with a scalar</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.13.0</a> on 2013-08-26 11:02:44</em>
+</span>
+</td></tr></table></body></html>

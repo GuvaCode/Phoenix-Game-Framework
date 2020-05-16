@@ -1,0 +1,511 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Phoenix API Doc: phxGraphics: Class TPHXBitmap</title>
+<meta name="generator" content="PasDoc 0.13.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Phoenix API Doc</h2><p><a href="introduction.html" class="navigation">Introduction</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div></p></td><td class="content">
+<link rel="icon" type="image/ico" href="Phoenix_icon.png"></link>
+<link rel="shortcut icon" href="Phoenix_icon.png"></link>
+<a name="TPHXBitmap"></a><h1 class="cio">Class TPHXBitmap</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></td><td><a class="section" href="#PasDoc-Fields">Fields</a></td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td><a class="section" href="#PasDoc-Properties">Properties</a></td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="phxGraphics.html">phxGraphics</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TPHXBitmap = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<p>
+The bitmap is a class for manipulating the pixels of a graphic</p>
+<a name="PasDoc-Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TPHXBitmap</li></ul><h2 class="overview">Overview</h2>
+<a name="PasDoc-Fields"></a><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a  href="phxGraphics.TPHXBitmap.html#FPixelGet">FPixelGet</a></b>: <a  href="phxGraphics.html#TGetPixel">TGetPixel</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a  href="phxGraphics.TPHXBitmap.html#FPixelSet">FPixelSet</a></b>: <a  href="phxGraphics.html#TSetPixel">TSetPixel</a>;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="phxGraphics.TPHXBitmap.html#Create">Create</a></b>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="phxGraphics.TPHXBitmap.html#Create">Create</a></b>(AWidth, AHeight: Integer; AFormat: <a  href="phxGraphics.html#TPHXPixelFormat">TPHXPixelFormat</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="phxGraphics.TPHXBitmap.html#Create">Create</a></b>(const Graphic: <a  href="phxGraphics.TPHXGraphic.html">TPHXGraphic</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a  href="phxGraphics.TPHXBitmap.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxGraphics.TPHXBitmap.html#LoadBitmap">LoadBitmap</a></b>(const FileName: String); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxGraphics.TPHXBitmap.html#LoadBitmap">LoadBitmap</a></b>(const FileName: String; Stream: TStream); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxGraphics.TPHXBitmap.html#SaveBitmap">SaveBitmap</a></b>(const FileName: String); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxGraphics.TPHXBitmap.html#SaveBitmap">SaveBitmap</a></b>(const FileName: String; Stream: TStream); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxGraphics.TPHXBitmap.html#Resize">Resize</a></b>(AWidth, AHeight: Integer; AFormat: <a  href="phxGraphics.html#TPHXPixelFormat">TPHXPixelFormat</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxGraphics.TPHXBitmap.html#ResizeCanvas">ResizeCanvas</a></b>(const AWidth: Integer; const AHeight: Integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxGraphics.TPHXBitmap.html#ResizeCanvasPowerOfTwo">ResizeCanvasPowerOfTwo</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxGraphics.TPHXBitmap.html#Import">Import</a></b>(const Graphic: <a  href="phxGraphics.TPHXGraphic.html">TPHXGraphic</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxGraphics.TPHXBitmap.html#Import">Import</a></b>(AWidth, AHeight: Integer; AFormat: <a  href="phxGraphics.html#TPHXPixelFormat">TPHXPixelFormat</a>; Data: Pointer); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxGraphics.TPHXBitmap.html#Import">Import</a></b>(const Graphic: <a  href="phxGraphics.TPHXGraphic.html">TPHXGraphic</a>; const Channel: <a  href="phxGraphics.html#TPHXPixelChannel">TPHXPixelChannel</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxGraphics.TPHXBitmap.html#Fill">Fill</a></b>(const Red: Byte = 0; Green: Byte = 0; Blue: Byte = 0; Alpha: Byte = 0);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxGraphics.TPHXBitmap.html#Convert">Convert</a></b>(NewFormat: <a  href="phxGraphics.html#TPHXPixelFormat">TPHXPixelFormat</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxGraphics.TPHXBitmap.html#LoadAlphaFromBitmap">LoadAlphaFromBitmap</a></b>(Bitmap: <a  href="phxGraphics.TPHXBitmap.html">TPHXBitmap</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxGraphics.TPHXBitmap.html#CopyFrom">CopyFrom</a></b>(const Bitmap : <a  href="phxGraphics.TPHXBitmap.html">TPHXBitmap</a> ; const Source: <a  href="phxTypes.TRectI.html">TRecti</a>; const Dest: <a  href="phxTypes.TVector2i.html">TVector2i</a> ); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxGraphics.TPHXBitmap.html#CopyFrom">CopyFrom</a></b>(const Graphic: <a  href="phxGraphics.TPHXGraphic.html">TPHXGraphic</a>; const Source: <a  href="phxTypes.TRectI.html">TRecti</a>; const Dest: <a  href="phxTypes.TVector2i.html">TVector2i</a> ); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxGraphics.TPHXBitmap.html#CopyTo">CopyTo</a></b>(const Graphic: <a  href="phxGraphics.TPHXGraphic.html">TPHXGraphic</a>; const Source: <a  href="phxTypes.TRectI.html">TRecti</a>; const Dest: <a  href="phxTypes.TVector2i.html">TVector2i</a> ); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxGraphics.TPHXBitmap.html#BuildAlphaMatch">BuildAlphaMatch</a></b>(const Red, Green, Blue: Byte);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxGraphics.TPHXBitmap.html#ScanLine">ScanLine</a></b>(Row: Integer): pByte;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxGraphics.TPHXBitmap.html#Draw">Draw</a></b>(const Graphic: <a  href="phxGraphics.TPHXGraphic.html">TPHXGraphic</a>; const SrcRect, DstRect: <a  href="phxTypes.TRectI.html">TRecti</a>);</code></td>
+</tr>
+</table>
+<a name="PasDoc-Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxGraphics.TPHXBitmap.html#Name">Name</a></b>: String read FName write FName;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxGraphics.TPHXBitmap.html#Width">Width</a></b>: Integer read FWidth write SetWidth;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxGraphics.TPHXBitmap.html#Height">Height</a></b>: Integer read FHeight write SetHeight;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxGraphics.TPHXBitmap.html#Format">Format</a></b>: <a  href="phxGraphics.html#TPHXPixelFormat">TPHXPixelFormat</a> read FFormat write SetFormat;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxGraphics.TPHXBitmap.html#Size">Size</a></b>: Integer read FSize;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxGraphics.TPHXBitmap.html#Pixels">Pixels</a></b>: <a  href="phxTypes.html#PByteArray">PByteArray</a> read FPixels;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxGraphics.TPHXBitmap.html#Stride">Stride</a></b>: Integer read GetStride;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxGraphics.TPHXBitmap.html#Pixel">Pixel</a></b>[constX,Y:Integer]: <a  href="phxGraphics.TPHXPixel.html">TPHXPixel</a> read GetPixel write SetPixel;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxGraphics.TPHXBitmap.html#Graphic">Graphic</a></b>: <a  href="phxGraphics.TPHXGraphic.html">TPHXGraphic</a> read GetGraphic;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FPixelGet"></a><code><b>FPixelGet</b>: <a  href="phxGraphics.html#TGetPixel">TGetPixel</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FPixelSet"></a><code><b>FPixelSet</b>: <a  href="phxGraphics.html#TSetPixel">TSetPixel</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates a empty bitmap</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(AWidth, AHeight: Integer; AFormat: <a  href="phxGraphics.html#TPHXPixelFormat">TPHXPixelFormat</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Create a bitmap with a given size and format</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(const Graphic: <a  href="phxGraphics.TPHXGraphic.html">TPHXGraphic</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Create a bitmap from a graphic</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Defalt destructor</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LoadBitmap"></a><code>procedure <b>LoadBitmap</b>(const FileName: String); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Load the bitmap from a file</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LoadBitmap"></a><code>procedure <b>LoadBitmap</b>(const FileName: String; Stream: TStream); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Load the bitmap from a stream</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SaveBitmap"></a><code>procedure <b>SaveBitmap</b>(const FileName: String); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Save the bitmap to a file</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SaveBitmap"></a><code>procedure <b>SaveBitmap</b>(const FileName: String; Stream: TStream); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Save the bitmap to a stream</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Resize"></a><code>procedure <b>Resize</b>(AWidth, AHeight: Integer; AFormat: <a  href="phxGraphics.html#TPHXPixelFormat">TPHXPixelFormat</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Resize the bitmap</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ResizeCanvas"></a><code>procedure <b>ResizeCanvas</b>(const AWidth: Integer; const AHeight: Integer);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Resize the canvas without modifying or scaling the pixel data</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ResizeCanvasPowerOfTwo"></a><code>procedure <b>ResizeCanvasPowerOfTwo</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Resize the canvas to a power of two size without modifying or scaling the pixel data</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Import"></a><code>procedure <b>Import</b>(const Graphic: <a  href="phxGraphics.TPHXGraphic.html">TPHXGraphic</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Import the bitmap</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Import"></a><code>procedure <b>Import</b>(AWidth, AHeight: Integer; AFormat: <a  href="phxGraphics.html#TPHXPixelFormat">TPHXPixelFormat</a>; Data: Pointer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Import the bitmap</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Import"></a><code>procedure <b>Import</b>(const Graphic: <a  href="phxGraphics.TPHXGraphic.html">TPHXGraphic</a>; const Channel: <a  href="phxGraphics.html#TPHXPixelChannel">TPHXPixelChannel</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Import the bitmap</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Fill"></a><code>procedure <b>Fill</b>(const Red: Byte = 0; Green: Byte = 0; Blue: Byte = 0; Alpha: Byte = 0);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Fill with a color</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Convert"></a><code>procedure <b>Convert</b>(NewFormat: <a  href="phxGraphics.html#TPHXPixelFormat">TPHXPixelFormat</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LoadAlphaFromBitmap"></a><code>procedure <b>LoadAlphaFromBitmap</b>(Bitmap: <a  href="phxGraphics.TPHXBitmap.html">TPHXBitmap</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Load alpha from another bitmap</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CopyFrom"></a><code>procedure <b>CopyFrom</b>(const Bitmap : <a  href="phxGraphics.TPHXBitmap.html">TPHXBitmap</a> ; const Source: <a  href="phxTypes.TRectI.html">TRecti</a>; const Dest: <a  href="phxTypes.TVector2i.html">TVector2i</a> ); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Copy a portion of another bitmap to this bitmap</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CopyFrom"></a><code>procedure <b>CopyFrom</b>(const Graphic: <a  href="phxGraphics.TPHXGraphic.html">TPHXGraphic</a>; const Source: <a  href="phxTypes.TRectI.html">TRecti</a>; const Dest: <a  href="phxTypes.TVector2i.html">TVector2i</a> ); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Copy a portion of another graphic to this bitmap</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CopyTo"></a><code>procedure <b>CopyTo</b>(const Graphic: <a  href="phxGraphics.TPHXGraphic.html">TPHXGraphic</a>; const Source: <a  href="phxTypes.TRectI.html">TRecti</a>; const Dest: <a  href="phxTypes.TVector2i.html">TVector2i</a> ); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BuildAlphaMatch"></a><code>procedure <b>BuildAlphaMatch</b>(const Red, Green, Blue: Byte);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Build the alpha match</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ScanLine"></a><code>function <b>ScanLine</b>(Row: Integer): pByte;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns a pointer to the first pixel of a given row</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Draw"></a><code>procedure <b>Draw</b>(const Graphic: <a  href="phxGraphics.TPHXGraphic.html">TPHXGraphic</a>; const SrcRect, DstRect: <a  href="phxTypes.TRectI.html">TRecti</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a graphic onto this bitmap using alpha blending</p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Name"></a><code>property <b>Name</b>: String read FName write FName;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Name of the bitmap</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Width"></a><code>property <b>Width</b>: Integer read FWidth write SetWidth;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Width of the bitmap</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Height"></a><code>property <b>Height</b>: Integer read FHeight write SetHeight;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Height of the bitmap</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Format"></a><code>property <b>Format</b>: <a  href="phxGraphics.html#TPHXPixelFormat">TPHXPixelFormat</a> read FFormat write SetFormat;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Format of each pixel in the bitmap</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Size"></a><code>property <b>Size</b>: Integer read FSize;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Size of the bitmap in bytes</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Pixels"></a><code>property <b>Pixels</b>: <a  href="phxTypes.html#PByteArray">PByteArray</a> read FPixels;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Pointer to the internal bitmap data</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Stride"></a><code>property <b>Stride</b>: Integer read GetStride;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get the size of a row of the image in bytes</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Pixel"></a><code>property <b>Pixel</b>[constX,Y:Integer]: <a  href="phxGraphics.TPHXPixel.html">TPHXPixel</a> read GetPixel write SetPixel;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Graphic"></a><code>property <b>Graphic</b>: <a  href="phxGraphics.TPHXGraphic.html">TPHXGraphic</a> read GetGraphic;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.13.0</a> on 2013-08-26 11:02:38</em>
+</span>
+</td></tr></table></body></html>

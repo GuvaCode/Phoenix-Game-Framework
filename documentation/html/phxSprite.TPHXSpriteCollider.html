@@ -1,0 +1,253 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Phoenix API Doc: phxSprite: Class TPHXSpriteCollider</title>
+<meta name="generator" content="PasDoc 0.13.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Phoenix API Doc</h2><p><a href="introduction.html" class="navigation">Introduction</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div></p></td><td class="content">
+<link rel="icon" type="image/ico" href="Phoenix_icon.png"></link>
+<link rel="shortcut icon" href="Phoenix_icon.png"></link>
+<a name="TPHXSpriteCollider"></a><h1 class="cio">Class TPHXSpriteCollider</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td><a class="section" href="#PasDoc-Properties">Properties</a></td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="phxSprite.html">phxSprite</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TPHXSpriteCollider = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<p>
+The collider class is responsible for testing for collisions</p>
+<a name="PasDoc-Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TPHXSpriteCollider</li></ul><h2 class="overview">Overview</h2>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxSprite.TPHXSpriteCollider.html#PotentialColliders">PotentialColliders</a></b>(Sprite: <a  href="phxSprite.TPHXSprite.html">TPHXSprite</a>): TList; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="phxSprite.TPHXSpriteCollider.html#Create">Create</a></b>(AEngine: <a  href="phxSprite.TPHXSpriteEngine.html">TPHXSpriteEngine</a>); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a  href="phxSprite.TPHXSpriteCollider.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxSprite.TPHXSpriteCollider.html#Update">Update</a></b>; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxSprite.TPHXSpriteCollider.html#Collide">Collide</a></b>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxSprite.TPHXSpriteCollider.html#Add">Add</a></b>(Sprite: <a  href="phxSprite.TPHXSprite.html">TPHXSprite</a>); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxSprite.TPHXSpriteCollider.html#Remove">Remove</a></b>(Sprite: <a  href="phxSprite.TPHXSprite.html">TPHXSprite</a>); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxSprite.TPHXSpriteCollider.html#Move">Move</a></b>(Sprite: <a  href="phxSprite.TPHXSprite.html">TPHXSprite</a>); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxSprite.TPHXSpriteCollider.html#CollisionTest">CollisionTest</a></b>(const A, B: <a  href="phxSprite.TPHXSprite.html">TPHXSprite</a>): Boolean; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxSprite.TPHXSpriteCollider.html#CollisionTest">CollisionTest</a></b>(const A, B: <a  href="phxSprite.TPHXSprite.html">TPHXSprite</a>; const Displacement: <a  href="phxTypes.TVector2f.html">TVector2f</a>): Boolean; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxSprite.TPHXSpriteCollider.html#CollisionTest">CollisionTest</a></b>(const Sprite: <a  href="phxSprite.TPHXSprite.html">TPHXSprite</a>; const Filter: <a  href="phxSprite.html#TPHXSpriteCollisionFilter">TPHXSpriteCollisionFilter</a>; Collisions: <a  href="phxSprite.TPHXSpriteCollisionList.html">TPHXSpriteCollisionList</a>): Boolean; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxSprite.TPHXSpriteCollider.html#CollisionTest">CollisionTest</a></b>(const Sprite: <a  href="phxSprite.TPHXSprite.html">TPHXSprite</a>; const Displacement: <a  href="phxTypes.TVector2f.html">TVector2f</a>; const Filter: <a  href="phxSprite.html#TPHXSpriteCollisionFilter">TPHXSpriteCollisionFilter</a>; Collisions: <a  href="phxSprite.TPHXSpriteCollisionList.html">TPHXSpriteCollisionList</a>): Boolean; overload;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSprite.TPHXSpriteCollider.html#Engine">Engine</a></b>: <a  href="phxSprite.TPHXSpriteEngine.html">TPHXSpriteEngine</a> read FEngine;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSprite.TPHXSpriteCollider.html#Sprites">Sprites</a></b>: TList read FSprites;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSprite.TPHXSpriteCollider.html#Tests">Tests</a></b>: Integer read FTests;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="PotentialColliders"></a><code>function <b>PotentialColliders</b>(Sprite: <a  href="phxSprite.TPHXSprite.html">TPHXSprite</a>): TList; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Return the potential colliders for a sprite</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(AEngine: <a  href="phxSprite.TPHXSpriteEngine.html">TPHXSpriteEngine</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Create a new sprite collider</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Destroy the sprite collider</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Update"></a><code>procedure <b>Update</b>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Update the collider</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Collide"></a><code>procedure <b>Collide</b>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Collide all sprites</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Add"></a><code>procedure <b>Add</b>(Sprite: <a  href="phxSprite.TPHXSprite.html">TPHXSprite</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Add a sprite to the collider</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Remove"></a><code>procedure <b>Remove</b>(Sprite: <a  href="phxSprite.TPHXSprite.html">TPHXSprite</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Remove a sprite from the collider</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Move"></a><code>procedure <b>Move</b>(Sprite: <a  href="phxSprite.TPHXSprite.html">TPHXSprite</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Move a sprite</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CollisionTest"></a><code>function <b>CollisionTest</b>(const A, B: <a  href="phxSprite.TPHXSprite.html">TPHXSprite</a>): Boolean; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Tests two sprites for collisions</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CollisionTest"></a><code>function <b>CollisionTest</b>(const A, B: <a  href="phxSprite.TPHXSprite.html">TPHXSprite</a>; const Displacement: <a  href="phxTypes.TVector2f.html">TVector2f</a>): Boolean; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Tests two sprites for collisions</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CollisionTest"></a><code>function <b>CollisionTest</b>(const Sprite: <a  href="phxSprite.TPHXSprite.html">TPHXSprite</a>; const Filter: <a  href="phxSprite.html#TPHXSpriteCollisionFilter">TPHXSpriteCollisionFilter</a>; Collisions: <a  href="phxSprite.TPHXSpriteCollisionList.html">TPHXSpriteCollisionList</a>): Boolean; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Collide a sprite against other sprites and add all collisions to a collision list</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CollisionTest"></a><code>function <b>CollisionTest</b>(const Sprite: <a  href="phxSprite.TPHXSprite.html">TPHXSprite</a>; const Displacement: <a  href="phxTypes.TVector2f.html">TVector2f</a>; const Filter: <a  href="phxSprite.html#TPHXSpriteCollisionFilter">TPHXSpriteCollisionFilter</a>; Collisions: <a  href="phxSprite.TPHXSpriteCollisionList.html">TPHXSpriteCollisionList</a>): Boolean; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Collide a sprite against other sprites and add all collisions to a collision list</p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Engine"></a><code>property <b>Engine</b>: <a  href="phxSprite.TPHXSpriteEngine.html">TPHXSpriteEngine</a> read FEngine;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The owning engine</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Sprites"></a><code>property <b>Sprites</b>: TList read FSprites;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+All sprites that is marked for collisions</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Tests"></a><code>property <b>Tests</b>: Integer read FTests;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Number of collision tests performed</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.13.0</a> on 2013-08-26 11:02:43</em>
+</span>
+</td></tr></table></body></html>

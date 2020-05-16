@@ -1,0 +1,340 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Phoenix API Doc: phxSprite</title>
+<meta name="generator" content="PasDoc 0.13.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Phoenix API Doc</h2><p><a href="introduction.html" class="navigation">Introduction</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div></p></td><td class="content">
+<link rel="icon" type="image/ico" href="Phoenix_icon.png"></link>
+<link rel="shortcut icon" href="Phoenix_icon.png"></link>
+<h1 class="unit">Unit phxSprite</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td>Uses</td><td><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></td><td><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></td><td><a class="section" href="#PasDoc-Types">Types</a></td><td><a class="section" href="#PasDoc-Constants">Constants</a></td><td><a class="section" href="#PasDoc-Variables">Variables</a></td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="description">Description</h2>
+<p>
+Sprite engine</p>
+<a name="PasDoc-Uses"></a><h2 class="overview">Overview</h2>
+<a name="PasDoc-Classes"></a><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxSprite.EPHXSpriteError.html"><code>EPHXSpriteError</code></a></td>
+<td class="itemdesc">Exception class for sprites</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxSprite.TPHXSprite.html"><code>TPHXSprite</code></a></td>
+<td class="itemdesc">Basic sprite</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxSprite.TPHXSpriteList.html"><code>TPHXSpriteList</code></a></td>
+<td class="itemdesc">Container for a list of sprites</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxSprite.TPHXAnimatedSprite.html"><code>TPHXAnimatedSprite</code></a></td>
+<td class="itemdesc">A sprite with animation</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxSprite.TPHXBackgroundSprite.html"><code>TPHXBackgroundSprite</code></a></td>
+<td class="itemdesc">A tiled background sprite with support for parallax scrolling</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxSprite.TPHXSpriteFactoryItem.html"><code>TPHXSpriteFactoryItem</code></a></td>
+<td class="itemdesc">This class is used by the sprite factory to create sprites by name</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxSprite.TPHXSpriteFactory.html"><code>TPHXSpriteFactory</code></a></td>
+<td class="itemdesc">The factory is used to create sprites by name</td>
+</tr>
+<tr class="list2">
+<td class="itemname">record&nbsp;<a class="bold" href="phxSprite.TPHXSpriteCollision.html"><code>TPHXSpriteCollision</code></a></td>
+<td class="itemdesc">Contains a pair of sprites in a collision</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxSprite.TPHXSpriteCollisionList.html"><code>TPHXSpriteCollisionList</code></a></td>
+<td class="itemdesc">Contains a list of collision pairs</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxSprite.TPHXSpriteCollider.html"><code>TPHXSpriteCollider</code></a></td>
+<td class="itemdesc">The collider class is responsible for testing for collisions</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxSprite.TPHXSpriteCamera.html"><code>TPHXSpriteCamera</code></a></td>
+<td class="itemdesc">Sprite camera</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxSprite.TPHXSpriteEngine.html"><code>TPHXSpriteEngine</code></a></td>
+<td class="itemdesc">Sort sprites by the layer Call the collide function from the update Cull sprites that are outside the viewport Limit scrolling so it doesnt go outside the engine bounds Sprite engine</td>
+</tr>
+</table>
+<a name="PasDoc-FuncsProcs"></a><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="phxSprite.html#RegisterSprite">RegisterSprite</a></b>(const Sprite: <a  href="phxSprite.html#TPHXSpriteClass">TPHXSpriteClass</a>; const Name: AnsiString);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxSprite.html#CreateSprite">CreateSprite</a></b>(Engine: <a  href="phxSprite.TPHXSpriteEngine.html">TPHXSpriteEngine</a>; const Name: AnsiString): <a  href="phxSprite.TPHXSprite.html">TPHXSprite</a>;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Types"></a><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxSprite.html#TPHXSpriteCollisionGroup">TPHXSpriteCollisionGroup</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxSprite.html#TPHXSpriteCollisionFilter">TPHXSpriteCollisionFilter</a></b> = set of <a  href="phxSprite.html#TPHXSpriteCollisionGroup">TPHXSpriteCollisionGroup</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxSprite.html#TPHXSpriteCollisionMode">TPHXSpriteCollisionMode</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxSprite.html#PSpriteList">PSpriteList</a></b> = &circ;<a  href="phxSprite.html#TSpriteList">TSpriteList</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxSprite.html#TSpriteList">TSpriteList</a></b> = array[0..$00FFFFFF] of <a  href="phxSprite.TPHXSprite.html">TPHXSprite</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxSprite.html#TPHXSpriteClass">TPHXSpriteClass</a></b> = class of <a  href="phxSprite.TPHXSprite.html">TPHXSprite</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxSprite.html#TPHXSpriteConstructor">TPHXSpriteConstructor</a></b> = function(Engine: <a  href="phxSprite.TPHXSpriteEngine.html">TPHXSpriteEngine</a>; const Name: String): <a  href="phxSprite.TPHXSprite.html">TPHXSprite</a> of object;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxSprite.html#TSpriteFactoryItemList">TSpriteFactoryItemList</a></b> = array[0..$00FFFFFF] of <a  href="phxSprite.TPHXSpriteFactoryItem.html">TPHXSpriteFactoryItem</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxSprite.html#PSpriteFactoryItemList">PSpriteFactoryItemList</a></b> = &circ;<a  href="phxSprite.html#TSpriteFactoryItemList">TSpriteFactoryItemList</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxSprite.html#TSpriteCollisionList">TSpriteCollisionList</a></b> = array[0..$00FFFFFF] of <a  href="phxSprite.TPHXSpriteCollision.html">TPHXSpriteCollision</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxSprite.html#PSpriteCollisionList">PSpriteCollisionList</a></b> = &circ;<a  href="phxSprite.html#TSpriteCollisionList">TSpriteCollisionList</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxSprite.html#TPHXSpriteOptions">TPHXSpriteOptions</a></b> = set of (
+  
+  soSort,
+  
+  soCollide,
+  
+  soCulling,
+  
+  soLimitScroll
+);</code></td>
+</tr>
+</table>
+<a name="PasDoc-Constants"></a><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxSprite.html#cfFilterNone">cfFilterNone</a></b>: <a  href="phxSprite.html#TPHXSpriteCollisionFilter">TPHXSpriteCollisionFilter</a> = [];</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxSprite.html#cfFilterAll">cfFilterAll</a></b> : <a  href="phxSprite.html#TPHXSpriteCollisionFilter">TPHXSpriteCollisionFilter</a> = [cgGroup1, cgGroup2, cgGroup3, cgGroup4, cgGroup5, cgGroup6, cgGroup7, cgGroup8];</code></td>
+</tr>
+</table>
+<a name="PasDoc-Variables"></a><h3 class="summary">Variables</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxSprite.html#SpriteRef">SpriteRef</a></b>: Integer = 0;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="RegisterSprite"></a><code>procedure <b>RegisterSprite</b>(const Sprite: <a  href="phxSprite.html#TPHXSpriteClass">TPHXSpriteClass</a>; const Name: AnsiString);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Register a sprite class</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CreateSprite"></a><code>function <b>CreateSprite</b>(Engine: <a  href="phxSprite.TPHXSpriteEngine.html">TPHXSpriteEngine</a>; const Name: AnsiString): <a  href="phxSprite.TPHXSprite.html">TPHXSprite</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Create a instance of a previously registered sprite</p>
+</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXSpriteCollisionGroup"></a><code><b>TPHXSpriteCollisionGroup</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Collision groups for collision filtering</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+cgGroup1: The sprite belongs to collision group 1</li>
+<li>
+cgGroup2: The sprite belongs to collision group 2</li>
+<li>
+cgGroup3: The sprite belongs to collision group 3</li>
+<li>
+cgGroup4: The sprite belongs to collision group 4</li>
+<li>
+cgGroup5: The sprite belongs to collision group 5</li>
+<li>
+cgGroup6: The sprite belongs to collision group 6</li>
+<li>
+cgGroup7: The sprite belongs to collision group 7</li>
+<li>
+cgGroup8: The sprite belongs to collision group 8</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXSpriteCollisionFilter"></a><code><b>TPHXSpriteCollisionFilter</b> = set of <a  href="phxSprite.html#TPHXSpriteCollisionGroup">TPHXSpriteCollisionGroup</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Filter for masking collisions</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXSpriteCollisionMode"></a><code><b>TPHXSpriteCollisionMode</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+The collision mode for a sprite</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+cmStatic: The sprite is static, it will be tested for collisions but the collided function will never be called</li>
+<li>
+cmDynamic: The sprite is a dynamic sprite it both generates and recieves collisions</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PSpriteList"></a><code><b>PSpriteList</b> = &circ;<a  href="phxSprite.html#TSpriteList">TSpriteList</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+List of sprites</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TSpriteList"></a><code><b>TSpriteList</b> = array[0..$00FFFFFF] of <a  href="phxSprite.TPHXSprite.html">TPHXSprite</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXSpriteClass"></a><code><b>TPHXSpriteClass</b> = class of <a  href="phxSprite.TPHXSprite.html">TPHXSprite</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Class of sprites</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXSpriteConstructor"></a><code><b>TPHXSpriteConstructor</b> = function(Engine: <a  href="phxSprite.TPHXSpriteEngine.html">TPHXSpriteEngine</a>; const Name: String): <a  href="phxSprite.TPHXSprite.html">TPHXSprite</a> of object;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Event for creating a sprite</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TSpriteFactoryItemList"></a><code><b>TSpriteFactoryItemList</b> = array[0..$00FFFFFF] of <a  href="phxSprite.TPHXSpriteFactoryItem.html">TPHXSpriteFactoryItem</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PSpriteFactoryItemList"></a><code><b>PSpriteFactoryItemList</b> = &circ;<a  href="phxSprite.html#TSpriteFactoryItemList">TSpriteFactoryItemList</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TSpriteCollisionList"></a><code><b>TSpriteCollisionList</b> = array[0..$00FFFFFF] of <a  href="phxSprite.TPHXSpriteCollision.html">TPHXSpriteCollision</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Array of sprite collision par</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PSpriteCollisionList"></a><code><b>PSpriteCollisionList</b> = &circ;<a  href="phxSprite.html#TSpriteCollisionList">TSpriteCollisionList</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Pointer to a array of sprite collision par</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXSpriteOptions"></a><code><b>TPHXSpriteOptions</b> = set of (
+  
+  soSort,
+  
+  soCollide,
+  
+  soCulling,
+  
+  soLimitScroll
+);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Sprite options</p>
+</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cfFilterNone"></a><code><b>cfFilterNone</b>: <a  href="phxSprite.html#TPHXSpriteCollisionFilter">TPHXSpriteCollisionFilter</a> = [];</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Constant for no group</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cfFilterAll"></a><code><b>cfFilterAll</b> : <a  href="phxSprite.html#TPHXSpriteCollisionFilter">TPHXSpriteCollisionFilter</a> = [cgGroup1, cgGroup2, cgGroup3, cgGroup4, cgGroup5, cgGroup6, cgGroup7, cgGroup8];</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Constant for all groups</p>
+</td></tr>
+</table>
+<h3 class="detail">Variables</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="SpriteRef"></a><code><b>SpriteRef</b>: Integer = 0;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Reference counter for the sprites</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.13.0</a> on 2013-08-26 11:02:42</em>
+</span>
+</td></tr></table></body></html>

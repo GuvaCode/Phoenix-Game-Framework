@@ -1,0 +1,365 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Phoenix API Doc: phxConsole: Class TPHXConsole</title>
+<meta name="generator" content="PasDoc 0.13.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Phoenix API Doc</h2><p><a href="introduction.html" class="navigation">Introduction</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div></p></td><td class="content">
+<link rel="icon" type="image/ico" href="Phoenix_icon.png"></link>
+<link rel="shortcut icon" href="Phoenix_icon.png"></link>
+<a name="TPHXConsole"></a><h1 class="cio">Class TPHXConsole</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td><a class="section" href="#PasDoc-Properties">Properties</a></td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="phxConsole.html">phxConsole</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TPHXConsole = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<p>
+The console class</p>
+<a name="PasDoc-Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TPHXConsole</li></ul><h2 class="overview">Overview</h2>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxConsole.TPHXConsole.html#EventHandler">EventHandler</a></b>(Sender: TObject; const Event: <a  href="phxEvents.TPHXEvent.html">TPHXEvent</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxConsole.TPHXConsole.html#KeyPressed">KeyPressed</a></b>(Key: <a  href="phxTypes.html#TPHXVirtualKey">TPHXVirtualKey</a>; Shift: <a  href="phxTypes.html#TPHXShiftStates">TPHXShiftStates</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxConsole.TPHXConsole.html#KeyReleased">KeyReleased</a></b>(Key: <a  href="phxTypes.html#TPHXVirtualKey">TPHXVirtualKey</a>; Shift: <a  href="phxTypes.html#TPHXShiftStates">TPHXShiftStates</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxConsole.TPHXConsole.html#KeyCharacter">KeyCharacter</a></b>(Key: WideChar; Shift: <a  href="phxTypes.html#TPHXShiftStates">TPHXShiftStates</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="phxConsole.TPHXConsole.html#Create">Create</a></b>(ADevice: <a  href="phxDevice.TPHXDevice.html">TPHXDevice</a>; ACanvas: <a  href="phxCanvas.TPHXCanvas.html">TPHXCanvas</a>; AFont: <a  href="phxFont.TPHXFont.html">TPHXFont</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a  href="phxConsole.TPHXConsole.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxConsole.TPHXConsole.html#Show">Show</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxConsole.TPHXConsole.html#Hide">Hide</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxConsole.TPHXConsole.html#Update">Update</a></b>(FrameTime: Double);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxConsole.TPHXConsole.html#Render">Render</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxConsole.TPHXConsole.html#Add">Add</a></b>(const Text: String); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxConsole.TPHXConsole.html#Add">Add</a></b>(const Text: String; Args: Array of const); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxConsole.TPHXConsole.html#Execute">Execute</a></b>(const Command: String);</code></td>
+</tr>
+</table>
+<a name="PasDoc-Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxConsole.TPHXConsole.html#Device">Device</a></b>: <a  href="phxDevice.TPHXDevice.html">TPHXDevice</a> read FDevice;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxConsole.TPHXConsole.html#Canvas">Canvas</a></b>: <a  href="phxCanvas.TPHXCanvas.html">TPHXCanvas</a> read FCanvas;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxConsole.TPHXConsole.html#Font">Font</a></b>: <a  href="phxFont.TPHXFont.html">TPHXFont</a> read FFont write FFont;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxConsole.TPHXConsole.html#Shortcut">Shortcut</a></b>: <a  href="phxTypes.html#TPHXVirtualKey">TPHXVirtualKey</a> read FShortcut write FShortcut;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxConsole.TPHXConsole.html#Height">Height</a></b>: Integer read FHeight write SetHeight;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxConsole.TPHXConsole.html#Items">Items</a></b>: <a  href="phxConsole.TPHXConsoleItems.html">TPHXConsoleItems</a> read FItems;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxConsole.TPHXConsole.html#Text">Text</a></b>: String read FText write FText;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxConsole.TPHXConsole.html#Lines">Lines</a></b>: <a  href="phxConsole.TPHXConsoleLines.html">TPHXConsoleLines</a> read FLines;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxConsole.TPHXConsole.html#State">State</a></b> : <a  href="phxConsole.html#TPHXConsoleState">TPHXConsoleState</a> read FState;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxConsole.TPHXConsole.html#Visible">Visible</a></b>: Boolean read GetVisible;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="EventHandler"></a><code>procedure <b>EventHandler</b>(Sender: TObject; const Event: <a  href="phxEvents.TPHXEvent.html">TPHXEvent</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The phoenix event handler</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="KeyPressed"></a><code>procedure <b>KeyPressed</b>(Key: <a  href="phxTypes.html#TPHXVirtualKey">TPHXVirtualKey</a>; Shift: <a  href="phxTypes.html#TPHXShiftStates">TPHXShiftStates</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Event that is called when a key is pressed</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="KeyReleased"></a><code>procedure <b>KeyReleased</b>(Key: <a  href="phxTypes.html#TPHXVirtualKey">TPHXVirtualKey</a>; Shift: <a  href="phxTypes.html#TPHXShiftStates">TPHXShiftStates</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Event that is called when a key is released</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="KeyCharacter"></a><code>procedure <b>KeyCharacter</b>(Key: WideChar; Shift: <a  href="phxTypes.html#TPHXShiftStates">TPHXShiftStates</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Event for keyboard text input</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(ADevice: <a  href="phxDevice.TPHXDevice.html">TPHXDevice</a>; ACanvas: <a  href="phxCanvas.TPHXCanvas.html">TPHXCanvas</a>; AFont: <a  href="phxFont.TPHXFont.html">TPHXFont</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Create a new console</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Default destructor</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Show"></a><code>procedure <b>Show</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Show the console</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Hide"></a><code>procedure <b>Hide</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Hide the console</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Update"></a><code>procedure <b>Update</b>(FrameTime: Double);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Update the console</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Render"></a><code>procedure <b>Render</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Render the console</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Add"></a><code>procedure <b>Add</b>(const Text: String); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Add text to the console</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Add"></a><code>procedure <b>Add</b>(const Text: String; Args: Array of const); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Add text to the console</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Execute"></a><code>procedure <b>Execute</b>(const Command: String);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Execute a console command</p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Device"></a><code>property <b>Device</b>: <a  href="phxDevice.TPHXDevice.html">TPHXDevice</a> read FDevice;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The owning device</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Canvas"></a><code>property <b>Canvas</b>: <a  href="phxCanvas.TPHXCanvas.html">TPHXCanvas</a> read FCanvas;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The canvas the console is rendering to</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Font"></a><code>property <b>Font</b>: <a  href="phxFont.TPHXFont.html">TPHXFont</a> read FFont write FFont;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The font</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Shortcut"></a><code>property <b>Shortcut</b>: <a  href="phxTypes.html#TPHXVirtualKey">TPHXVirtualKey</a> read FShortcut write FShortcut;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The key that is used for showing the console</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Height"></a><code>property <b>Height</b>: Integer read FHeight write SetHeight;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Height of the console when opened</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Items"></a><code>property <b>Items</b>: <a  href="phxConsole.TPHXConsoleItems.html">TPHXConsoleItems</a> read FItems;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The items in the console</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Text"></a><code>property <b>Text</b>: String read FText write FText;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Current input text of the console</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Lines"></a><code>property <b>Lines</b>: <a  href="phxConsole.TPHXConsoleLines.html">TPHXConsoleLines</a> read FLines;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Lines of the console</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="State"></a><code>property <b>State</b> : <a  href="phxConsole.html#TPHXConsoleState">TPHXConsoleState</a> read FState;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Current State of the console</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Visible"></a><code>property <b>Visible</b>: Boolean read GetVisible;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns if the console is visible (expanded)</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.13.0</a> on 2013-08-26 11:02:36</em>
+</span>
+</td></tr></table></body></html>

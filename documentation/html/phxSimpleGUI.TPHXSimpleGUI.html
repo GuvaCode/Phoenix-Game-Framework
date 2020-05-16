@@ -1,0 +1,531 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Phoenix API Doc: phxSimpleGUI: Class TPHXSimpleGUI</title>
+<meta name="generator" content="PasDoc 0.13.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Phoenix API Doc</h2><p><a href="introduction.html" class="navigation">Introduction</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div></p></td><td class="content">
+<link rel="icon" type="image/ico" href="Phoenix_icon.png"></link>
+<link rel="shortcut icon" href="Phoenix_icon.png"></link>
+<a name="TPHXSimpleGUI"></a><h1 class="cio">Class TPHXSimpleGUI</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td><a class="section" href="#PasDoc-Properties">Properties</a></td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="phxSimpleGUI.html">phxSimpleGUI</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TPHXSimpleGUI = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<p>
+The simple gui class</p>
+<p>
+
+
+<p>This class is used to manage the gui</p>
+<a name="PasDoc-Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TPHXSimpleGUI</li></ul><h2 class="overview">Overview</h2>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="phxSimpleGUI.TPHXSimpleGUI.html#Create">Create</a></b>(ACanvas: <a  href="phxCanvas.TPHXCanvas.html">TPHXCanvas</a>; ASkin: <a  href="phxSkin.TPHXSkin.html">TPHXSkin</a>; AFont: <a  href="phxFont.TPHXFont.html">TPHXFont</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a  href="phxSimpleGUI.TPHXSimpleGUI.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxSimpleGUI.TPHXSimpleGUI.html#Update">Update</a></b>(const DeltaTime: Single);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxSimpleGUI.TPHXSimpleGUI.html#Prepare">Prepare</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxSimpleGUI.TPHXSimpleGUI.html#Finish">Finish</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxSimpleGUI.TPHXSimpleGUI.html#Window">Window</a></b>(const X, Y, Width, Height: Integer): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxSimpleGUI.TPHXSimpleGUI.html#Panel">Panel</a></b>(const X, Y, Width, Height: Integer): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxSimpleGUI.TPHXSimpleGUI.html#Text">Text</a></b>(const X, Y, Width, Height: Integer; const Text: String): Boolean; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxSimpleGUI.TPHXSimpleGUI.html#Text">Text</a></b>(const X, Y, Width, Height: Integer; const Text: String; const Font: <a  href="phxFont.TPHXFont.html">TPHXFont</a>): Boolean; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxSimpleGUI.TPHXSimpleGUI.html#Button">Button</a></b>(const X, Y, Width, Height: Integer; const Text: String): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxSimpleGUI.TPHXSimpleGUI.html#Edit">Edit</a></b>(const X, Y, Width, Height: Integer; var Text: String): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxSimpleGUI.TPHXSimpleGUI.html#CheckBox">CheckBox</a></b>(const X, Y, Width, Height: Integer; const Text: String; var Checked: Boolean): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxSimpleGUI.TPHXSimpleGUI.html#Slider">Slider</a></b>(const X, Y, Width, Height: Integer; const Min, Max: Single; var Value: Single): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxSimpleGUI.TPHXSimpleGUI.html#ProgressBar">ProgressBar</a></b>(const X, Y, Width, Height: Integer; const Progress: Single; const Direction: <a  href="phxSimpleGUI.html#TProgressDirection">TProgressDirection</a> = pdHorisontal): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxSimpleGUI.TPHXSimpleGUI.html#Selector">Selector</a></b>(const X, Y, Width, Height: Integer; const Values: TStrings; var Selected: Integer): Boolean;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSimpleGUI.TPHXSimpleGUI.html#Canvas">Canvas</a></b>: <a  href="phxCanvas.TPHXCanvas.html">TPHXCanvas</a> read FCanvas write FCanvas;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSimpleGUI.TPHXSimpleGUI.html#Skin">Skin</a></b>: <a  href="phxSkin.TPHXSkin.html">TPHXSkin</a> read FSkin write FSkin;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSimpleGUI.TPHXSimpleGUI.html#Font">Font</a></b>: <a  href="phxFont.TPHXFont.html">TPHXFont</a> read FFont write FFont;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSimpleGUI.TPHXSimpleGUI.html#Count">Count</a></b>: Integer read FCount;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSimpleGUI.TPHXSimpleGUI.html#Hover">Hover</a></b>: <a  href="phxSimpleGUI.html#TGUIIdent">TGUIIdent</a> read FHover;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSimpleGUI.TPHXSimpleGUI.html#Focused">Focused</a></b>: <a  href="phxSimpleGUI.html#TGUIIdent">TGUIIdent</a> read FFocused;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSimpleGUI.TPHXSimpleGUI.html#Pressed">Pressed</a></b>: <a  href="phxSimpleGUI.html#TGUIIdent">TGUIIdent</a> read FPressed;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxSimpleGUI.TPHXSimpleGUI.html#Position">Position</a></b>: <a  href="phxTypes.TVector2i.html">TVector2i</a> read FPosition write FPosition;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(ACanvas: <a  href="phxCanvas.TPHXCanvas.html">TPHXCanvas</a>; ASkin: <a  href="phxSkin.TPHXSkin.html">TPHXSkin</a>; AFont: <a  href="phxFont.TPHXFont.html">TPHXFont</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates a new gui   </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>ACanvas</dt>
+<dd>The canvas to render to</dd>
+<dt>ASkin</dt>
+<dd>The skin to use for the gui</dd>
+<dt>AFont</dt>
+<dd>the font to use for the gui</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Destroys the gui</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Update"></a><code>procedure <b>Update</b>(const DeltaTime: Single);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Update the gui </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>DeltaTime</dt>
+<dd>The elapsed time since the last update</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Prepare"></a><code>procedure <b>Prepare</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Call this before rendering any widgets</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Finish"></a><code>procedure <b>Finish</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Call this after the rendering is completed</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Window"></a><code>function <b>Window</b>(const X, Y, Width, Height: Integer): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Render a window widget     </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>X</dt>
+<dd>The horisontal position of the window</dd>
+<dt>Y</dt>
+<dd>The vertical position of the window</dd>
+<dt>Width</dt>
+<dd>The horisontal size of the window</dd>
+<dt>Height</dt>
+<dd>The vertical size of the window</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">True if the window is clicked</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Panel"></a><code>function <b>Panel</b>(const X, Y, Width, Height: Integer): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Render a panel widget     </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>X</dt>
+<dd>The horisontal position of the panel</dd>
+<dt>Y</dt>
+<dd>The vertical position of the panel</dd>
+<dt>Width</dt>
+<dd>The horisontal size of the panel</dd>
+<dt>Height</dt>
+<dd>The vertical size of the panel</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">True if the panel is clicked</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Text"></a><code>function <b>Text</b>(const X, Y, Width, Height: Integer; const Text: String): Boolean; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Render a text widget      </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>X</dt>
+<dd>The horisontal position of the text widet</dd>
+<dt>Y</dt>
+<dd>The vertical position of the text widet</dd>
+<dt>Width</dt>
+<dd>The horisontal size of the text widet</dd>
+<dt>Height</dt>
+<dd>The vertical size of the text widet</dd>
+<dt>Text</dt>
+<dd>The text to show</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">True if the text widget is clicked</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Text"></a><code>function <b>Text</b>(const X, Y, Width, Height: Integer; const Text: String; const Font: <a  href="phxFont.TPHXFont.html">TPHXFont</a>): Boolean; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Render a text widget with a custom font       </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>X</dt>
+<dd>The horisontal position of the text widet</dd>
+<dt>Y</dt>
+<dd>The vertical position of the text widet</dd>
+<dt>Width</dt>
+<dd>The horisontal size of the text widet</dd>
+<dt>Height</dt>
+<dd>The vertical size of the text widet</dd>
+<dt>Text</dt>
+<dd>The text to show</dd>
+<dt>Font</dt>
+<dd>The font for the widget</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">True if the text widget is clicked</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Button"></a><code>function <b>Button</b>(const X, Y, Width, Height: Integer; const Text: String): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Render a button widget      </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>X</dt>
+<dd>The horisontal position of the button</dd>
+<dt>Y</dt>
+<dd>The vertical position of the button</dd>
+<dt>Width</dt>
+<dd>The horisontal size of the button</dd>
+<dt>Height</dt>
+<dd>The vertical size of the button</dd>
+<dt>Text</dt>
+<dd>The text to show</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">If the panel is pressed</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Edit"></a><code>function <b>Edit</b>(const X, Y, Width, Height: Integer; var Text: String): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Render a edit widget      </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>X</dt>
+<dd>The horisontal position of the edit</dd>
+<dt>Y</dt>
+<dd>The vertical position of the edit</dd>
+<dt>Width</dt>
+<dd>The horisontal size of the edit</dd>
+<dt>Height</dt>
+<dd>The vertical size of the edit</dd>
+<dt>Text</dt>
+<dd>The text to show and edit</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">True when the text is changed</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CheckBox"></a><code>function <b>CheckBox</b>(const X, Y, Width, Height: Integer; const Text: String; var Checked: Boolean): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Render a checkbox widget       </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>X</dt>
+<dd>The horisontal position of the checkbox</dd>
+<dt>Y</dt>
+<dd>The vertical position of the checkbox</dd>
+<dt>Width</dt>
+<dd>The horisontal size of the checkbox</dd>
+<dt>Height</dt>
+<dd>The vertical size of the checkbox</dd>
+<dt>Text</dt>
+<dd>The text to render</dd>
+<dt>Checked</dt>
+<dd>The value to toggle</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">True when checked variable is changed</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Slider"></a><code>function <b>Slider</b>(const X, Y, Width, Height: Integer; const Min, Max: Single; var Value: Single): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Render a slider widget        </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>X</dt>
+<dd>The horisontal position of the slider</dd>
+<dt>Y</dt>
+<dd>The vertical position of the slider</dd>
+<dt>Width</dt>
+<dd>The horisontal size of the slider</dd>
+<dt>Height</dt>
+<dd>The vertical size of the slider</dd>
+<dt>Min</dt>
+<dd>The minimum value</dd>
+<dt>Max</dt>
+<dd>The maximum value</dd>
+<dt>Value</dt>
+<dd>The current value</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">true when the value is changed.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ProgressBar"></a><code>function <b>ProgressBar</b>(const X, Y, Width, Height: Integer; const Progress: Single; const Direction: <a  href="phxSimpleGUI.html#TProgressDirection">TProgressDirection</a> = pdHorisontal): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Render a progressbar widget       </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>X</dt>
+<dd>The horisontal position of the progressbar</dd>
+<dt>Y</dt>
+<dd>The vertical position of the progressbar</dd>
+<dt>Width</dt>
+<dd>The horisontal size of the progressbar</dd>
+<dt>Height</dt>
+<dd>The vertical size of the progressbar</dd>
+<dt>Progress</dt>
+<dd>The progress between 0.0 and 1.0</dd>
+<dt>Direction</dt>
+<dd>The direction of the progress bar</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">True if the progressbar is clicked</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Selector"></a><code>function <b>Selector</b>(const X, Y, Width, Height: Integer; const Values: TStrings; var Selected: Integer): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Render a selector widget       </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>X</dt>
+<dd>The horisontal position of the slider</dd>
+<dt>Y</dt>
+<dd>The vertical position of the slider</dd>
+<dt>Width</dt>
+<dd>The horisontal size of the slider</dd>
+<dt>Height</dt>
+<dd>The vertical size of the slider</dd>
+<dt>Values</dt>
+<dd>List of values to select from</dd>
+<dt>Selected</dt>
+<dd>Index of the selected item</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">True when the selected index was changed.</p></td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Canvas"></a><code>property <b>Canvas</b>: <a  href="phxCanvas.TPHXCanvas.html">TPHXCanvas</a> read FCanvas write FCanvas;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The canvas</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Skin"></a><code>property <b>Skin</b>: <a  href="phxSkin.TPHXSkin.html">TPHXSkin</a> read FSkin write FSkin;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The skin to use</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Font"></a><code>property <b>Font</b>: <a  href="phxFont.TPHXFont.html">TPHXFont</a> read FFont write FFont;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The font to use</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Count"></a><code>property <b>Count</b>: Integer read FCount;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns the number of rendered widgets</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Hover"></a><code>property <b>Hover</b>: <a  href="phxSimpleGUI.html#TGUIIdent">TGUIIdent</a> read FHover;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Return the ident of the hover control</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Focused"></a><code>property <b>Focused</b>: <a  href="phxSimpleGUI.html#TGUIIdent">TGUIIdent</a> read FFocused;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Return the ident of the focused control</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Pressed"></a><code>property <b>Pressed</b>: <a  href="phxSimpleGUI.html#TGUIIdent">TGUIIdent</a> read FPressed;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Return the ident of the pressed control</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Position"></a><code>property <b>Position</b>: <a  href="phxTypes.TVector2i.html">TVector2i</a> read FPosition write FPosition;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Changes the position of the gui on the screen</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.13.0</a> on 2013-08-26 11:02:42</em>
+</span>
+</td></tr></table></body></html>

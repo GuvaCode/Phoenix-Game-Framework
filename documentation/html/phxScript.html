@@ -1,0 +1,264 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Phoenix API Doc: phxScript</title>
+<meta name="generator" content="PasDoc 0.13.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Phoenix API Doc</h2><p><a href="introduction.html" class="navigation">Introduction</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div></p></td><td class="content">
+<link rel="icon" type="image/ico" href="Phoenix_icon.png"></link>
+<link rel="shortcut icon" href="Phoenix_icon.png"></link>
+<h1 class="unit">Unit phxScript</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td>Uses</td><td><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></td><td><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></td><td><a class="section" href="#PasDoc-Types">Types</a></td><td><a class="section" href="#PasDoc-Constants">Constants</a></td><td>Variables</td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="description">Description</h2>
+<p>
+Scripting support using Lua</p>
+<a name="PasDoc-Uses"></a><h2 class="overview">Overview</h2>
+<a name="PasDoc-Classes"></a><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxScript.EPHXScriptError.html"><code>EPHXScriptError</code></a></td>
+<td class="itemdesc">Exception for lua errors</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxScript.TPHXScriptParam.html"><code>TPHXScriptParam</code></a></td>
+<td class="itemdesc">Helper class for reading a value from the lua stack</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxScript.TPHXScriptParams.html"><code>TPHXScriptParams</code></a></td>
+<td class="itemdesc">Helper class for reading parameters to a scriptable function</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxScript.TPHXScriptResults.html"><code>TPHXScriptResults</code></a></td>
+<td class="itemdesc">Helper class for setting results from a scriptable function</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxScript.TPHXScript.html"><code>TPHXScript</code></a></td>
+<td class="itemdesc">Class for implement scripting support via lua</td>
+</tr>
+<tr class="list2">
+<td class="itemname">record&nbsp;<a class="bold" href="phxScript.TPHXScriptProp.html"><code>TPHXScriptProp</code></a></td>
+<td class="itemdesc">Property information about a lua object</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxScript.TPHXScriptFiler.html"><code>TPHXScriptFiler</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxScript.TPHXScriptReader.html"><code>TPHXScriptReader</code></a></td>
+<td class="itemdesc">Helper class for reading and writing properties to a script</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxScript.TPHXScriptWriter.html"><code>TPHXScriptWriter</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="phxScript.IPHXScriptObject.html"><code>IPHXScriptObject</code></a></td>
+<td class="itemdesc">Interface for marking a class as scriptable with a lua script</td>
+</tr>
+</table>
+<a name="PasDoc-FuncsProcs"></a><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="phxScript.html#lua_pushstring">lua_pushstring</a></b>(L: PLuaState; const Value: WideString); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="phxScript.html#lua_pushstring">lua_pushstring</a></b>(L: PLuaState; const Value: AnsiString); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="phxScript.html#lua_pushfunction">lua_pushfunction</a></b>(L: PLuaState; const Funct: <a  href="phxScript.html#TLuaFunction">TLuaFunction</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="phxScript.html#lua_pushobject">lua_pushobject</a></b>(L: PLuaState; Instance: TObject);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="phxScript.html#lua_pushStrings">lua_pushStrings</a></b>(L: PLua_State; Strings: TStrings);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxScript.html#lua_getErrorText">lua_getErrorText</a></b>(L: Plua_State; Status: Integer): String;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Types"></a><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxScript.html#TLuaState">TLuaState</a></b> = PLuaState;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxScript.html#TLuaFunction">TLuaFunction</a></b> = function(State: <a  href="phxScript.html#TLuaState">TLuaState</a>): Integer of object;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxScript.html#TLuaPushFunction">TLuaPushFunction</a></b> = procedure(State: <a  href="phxScript.html#TLuaState">TLuaState</a>; Instance: TObject);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxScript.html#TPHXScriptErrorEvent">TPHXScriptErrorEvent</a></b> = procedure(Engine: <a  href="phxScript.TPHXScript.html">TPHXScript</a>; const Error: String) of object;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxScript.html#TPHXScriptPrintEvent">TPHXScriptPrintEvent</a></b> = procedure(Engine: <a  href="phxScript.TPHXScript.html">TPHXScript</a>; const Text: String) of object;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxScript.html#TPHXScriptMethod">TPHXScriptMethod</a></b> = procedure(Params: <a  href="phxScript.TPHXScriptParams.html">TPHXScriptParams</a>; Results: <a  href="phxScript.TPHXScriptResults.html">TPHXScriptResults</a>) of object;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Constants"></a><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxScript.html#LIBRARY_TIMER">LIBRARY_TIMER</a></b> = 'timer';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxScript.html#LIBRARY_INPUT">LIBRARY_INPUT</a></b> = 'input';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxScript.html#LIBRARY_AUDIO">LIBRARY_AUDIO</a></b> = 'audio';</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="lua_pushstring"></a><code>procedure <b>lua_pushstring</b>(L: PLuaState; const Value: WideString); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Push a delphi string on the a lua stack</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="lua_pushstring"></a><code>procedure <b>lua_pushstring</b>(L: PLuaState; const Value: AnsiString); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Push a delphi string on the a lua stack</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="lua_pushfunction"></a><code>procedure <b>lua_pushfunction</b>(L: PLuaState; const Funct: <a  href="phxScript.html#TLuaFunction">TLuaFunction</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Push a delphi object function on the lua stack</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="lua_pushobject"></a><code>procedure <b>lua_pushobject</b>(L: PLuaState; Instance: TObject);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Push a object implementing the ILuaObject interface</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="lua_pushStrings"></a><code>procedure <b>lua_pushStrings</b>(L: PLua_State; Strings: TStrings);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Push a TStrings object on the lua stack</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="lua_getErrorText"></a><code>function <b>lua_getErrorText</b>(L: Plua_State; Status: Integer): String;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TLuaState"></a><code><b>TLuaState</b> = PLuaState;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Lua state</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TLuaFunction"></a><code><b>TLuaFunction</b> = function(State: <a  href="phxScript.html#TLuaState">TLuaState</a>): Integer of object;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Lua object function</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TLuaPushFunction"></a><code><b>TLuaPushFunction</b> = procedure(State: <a  href="phxScript.html#TLuaState">TLuaState</a>; Instance: TObject);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Function for pushing a object onto the lua stack</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXScriptErrorEvent"></a><code><b>TPHXScriptErrorEvent</b> = procedure(Engine: <a  href="phxScript.TPHXScript.html">TPHXScript</a>; const Error: String) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Event for script errors</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXScriptPrintEvent"></a><code><b>TPHXScriptPrintEvent</b> = procedure(Engine: <a  href="phxScript.TPHXScript.html">TPHXScript</a>; const Text: String) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Event that is called by lua print function</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXScriptMethod"></a><code><b>TPHXScriptMethod</b> = procedure(Params: <a  href="phxScript.TPHXScriptParams.html">TPHXScriptParams</a>; Results: <a  href="phxScript.TPHXScriptResults.html">TPHXScriptResults</a>) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+A function that can be registered with a script</p>
+</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="LIBRARY_TIMER"></a><code><b>LIBRARY_TIMER</b> = 'timer';</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Name for the timer namespace</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="LIBRARY_INPUT"></a><code><b>LIBRARY_INPUT</b> = 'input';</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Name for the input namespace</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="LIBRARY_AUDIO"></a><code><b>LIBRARY_AUDIO</b> = 'audio';</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Name for the audio namespace</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.13.0</a> on 2013-08-26 11:02:41</em>
+</span>
+</td></tr></table></body></html>

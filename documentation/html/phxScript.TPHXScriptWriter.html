@@ -1,0 +1,178 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Phoenix API Doc: phxScript: Class TPHXScriptWriter</title>
+<meta name="generator" content="PasDoc 0.13.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Phoenix API Doc</h2><p><a href="introduction.html" class="navigation">Introduction</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div></p></td><td class="content">
+<link rel="icon" type="image/ico" href="Phoenix_icon.png"></link>
+<link rel="shortcut icon" href="Phoenix_icon.png"></link>
+<a name="TPHXScriptWriter"></a><h1 class="cio">Class TPHXScriptWriter</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td>Properties</td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="phxScript.html">phxScript</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TPHXScriptWriter = class(<a class="normal" href="phxScript.TPHXScriptFiler.html">TPHXScriptFiler</a>)</code></p>
+<h2 class="description">Description</h2>
+<div class="nodescription">no description available, TPHXScriptFiler description follows</div><a name="PasDoc-Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="ancestor"><a class="normal" href="phxScript.TPHXScriptFiler.html">TPHXScriptFiler</a></li>
+<li class="thisitem">TPHXScriptWriter</li></ul><h2 class="overview">Overview</h2>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxScript.TPHXScriptWriter.html#WriteNull">WriteNull</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxScript.TPHXScriptWriter.html#WriteNumber">WriteNumber</a></b>(const Value: Double);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxScript.TPHXScriptWriter.html#WriteInteger">WriteInteger</a></b>(const Value: Integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxScript.TPHXScriptWriter.html#WriteString">WriteString</a></b>(const Value: String);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxScript.TPHXScriptWriter.html#WriteBoolean">WriteBoolean</a></b>(const Value: Boolean);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxScript.TPHXScriptWriter.html#WritePointer">WritePointer</a></b>(const Value: Pointer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxScript.TPHXScriptWriter.html#WriteMethod">WriteMethod</a></b>(const Value: <a  href="phxScript.html#TLuaFunction">TLuaFunction</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxScript.TPHXScriptWriter.html#WriteMethod">WriteMethod</a></b>(const Value: lua_CFunction); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxScript.TPHXScriptWriter.html#WriteColor">WriteColor</a></b>(const Value: <a  href="phxTypes.html#TColor32">TColor32</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxScript.TPHXScriptWriter.html#WriteStrings">WriteStrings</a></b>(const Value: TStrings);</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="WriteNull"></a><code>procedure <b>WriteNull</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Push a null value onto the stack</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="WriteNumber"></a><code>procedure <b>WriteNumber</b>(const Value: Double);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Push a double onto the stack</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="WriteInteger"></a><code>procedure <b>WriteInteger</b>(const Value: Integer);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Push a integer onto the stack</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="WriteString"></a><code>procedure <b>WriteString</b>(const Value: String);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Push a string onto the stack</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="WriteBoolean"></a><code>procedure <b>WriteBoolean</b>(const Value: Boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Push a boolean onto the stack</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="WritePointer"></a><code>procedure <b>WritePointer</b>(const Value: Pointer);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Push a pointer onto the stack</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="WriteMethod"></a><code>procedure <b>WriteMethod</b>(const Value: <a  href="phxScript.html#TLuaFunction">TLuaFunction</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Push a method callback onto the stack</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="WriteMethod"></a><code>procedure <b>WriteMethod</b>(const Value: lua_CFunction); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Push a method callback onto the stack</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="WriteColor"></a><code>procedure <b>WriteColor</b>(const Value: <a  href="phxTypes.html#TColor32">TColor32</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Push a color onto the stack</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="WriteStrings"></a><code>procedure <b>WriteStrings</b>(const Value: TStrings);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Push a TStrings object onto the stack</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.13.0</a> on 2013-08-26 11:02:41</em>
+</span>
+</td></tr></table></body></html>

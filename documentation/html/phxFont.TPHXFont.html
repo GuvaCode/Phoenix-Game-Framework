@@ -1,0 +1,827 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Phoenix API Doc: phxFont: Class TPHXFont</title>
+<meta name="generator" content="PasDoc 0.13.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Phoenix API Doc</h2><p><a href="introduction.html" class="navigation">Introduction</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div></p></td><td class="content">
+<link rel="icon" type="image/ico" href="Phoenix_icon.png"></link>
+<link rel="shortcut icon" href="Phoenix_icon.png"></link>
+<a name="TPHXFont"></a><h1 class="cio">Class TPHXFont</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></td><td><a class="section" href="#PasDoc-Fields">Fields</a></td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td><a class="section" href="#PasDoc-Properties">Properties</a></td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="phxFont.html">phxFont</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TPHXFont = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<p>
+TPHXFont</p>
+<a name="PasDoc-Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TPHXFont</li></ul><h2 class="overview">Overview</h2>
+<a name="PasDoc-Fields"></a><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a  href="phxFont.TPHXFont.html#CharacterMap">CharacterMap</a></b>: <a  href="phxFont.html#TPHXCharacterMap">TPHXCharacterMap</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a  href="phxFont.TPHXFont.html#CharacterBuffer">CharacterBuffer</a></b>: array of <a  href="phxFont.TPHXCharacterBuffer.html">TPHXCharacterBuffer</a>;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="phxFont.TPHXFont.html#Create">Create</a></b>(ADevice: <a  href="phxDevice.TPHXDevice.html">TPHXDevice</a>; ACanvas: <a  href="phxCanvas.TPHXCanvas.html">TPHXCanvas</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="phxFont.TPHXFont.html#CreateEx">CreateEx</a></b>(ATexture: <a  href="phxTexture.TPHXTexture.html">TPHXTexture</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a  href="phxFont.TPHXFont.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxFont.TPHXFont.html#LoadFromFile">LoadFromFile</a></b>(const FileName: String);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxFont.TPHXFont.html#LoadFromStream">LoadFromStream</a></b>(Stream: TStream);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxFont.TPHXFont.html#SaveToFile">SaveToFile</a></b>(const FileName: String);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxFont.TPHXFont.html#SaveToStream">SaveToStream</a></b>(Stream: TStream);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxFont.TPHXFont.html#Initialize">Initialize</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxFont.TPHXFont.html#CharWidth">CharWidth</a></b>(const Character: AnsiChar): Integer; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxFont.TPHXFont.html#CharWidth">CharWidth</a></b>(const Character: WideChar): Integer; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxFont.TPHXFont.html#TextExtent">TextExtent</a></b>(const Text: AnsiString): <a  href="phxTypes.TVector2i.html">TVector2i</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxFont.TPHXFont.html#TextExtent">TextExtent</a></b>(const Text: WideString): <a  href="phxTypes.TVector2i.html">TVector2i</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxFont.TPHXFont.html#TextWidth">TextWidth</a></b>(const Text: AnsiString): Integer; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxFont.TPHXFont.html#TextWidth">TextWidth</a></b>(const Text: WideString): Integer; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxFont.TPHXFont.html#TextHeight">TextHeight</a></b>(const Text: AnsiString): Integer; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxFont.TPHXFont.html#TextHeight">TextHeight</a></b>(const Text: WideString): Integer; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxFont.TPHXFont.html#TextOut">TextOut</a></b>(const X, Y: Single; const Text: WideString); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxFont.TPHXFont.html#TextOut">TextOut</a></b>(const X, Y: Single; const Text: WideString; const Color: <a  href="phxTypes.TColor4f.html">TColor4f</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxFont.TPHXFont.html#TextOut">TextOut</a></b>(const X, Y: Single; const Text: WideString; const ColorUp, ColorDown: <a  href="phxTypes.TColor4f.html">TColor4f</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxFont.TPHXFont.html#TextOut">TextOut</a></b>(const Position: <a  href="phxTypes.TVector3f.html">TVector3f</a>; const Text: WideString; const Color: <a  href="phxTypes.TColor4f.html">TColor4f</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxFont.TPHXFont.html#TextOut">TextOut</a></b>(const Position: <a  href="phxTypes.TVector3f.html">TVector3f</a>; const Text: WideString; const ColorA, ColorB: <a  href="phxTypes.TColor4f.html">TColor4f</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxFont.TPHXFont.html#TextOut">TextOut</a></b>(const Transform: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; const Text: WideString; const Color: <a  href="phxTypes.TColor4f.html">TColor4f</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxFont.TPHXFont.html#TextOut">TextOut</a></b>(const Transform: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; const Text: WideString; const ColorA, ColorB: <a  href="phxTypes.TColor4f.html">TColor4f</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxFont.TPHXFont.html#TextOut">TextOut</a></b>(const Rect: <a  href="phxTypes.TRectf.html">TRectf</a>; const Text: WideString; const Align: <a  href="phxFont.html#TPHXTextAlign">TPHXTextAlign</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxFont.TPHXFont.html#TextOut">TextOut</a></b>(const Rect: <a  href="phxTypes.TRectf.html">TRectf</a>; const Text: WideString; const Align: <a  href="phxFont.html#TPHXTextAlign">TPHXTextAlign</a>; const Color: <a  href="phxTypes.TColor4f.html">TColor4f</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxFont.TPHXFont.html#TextOut">TextOut</a></b>(const Rect: <a  href="phxTypes.TRectf.html">TRectf</a>; const Text: WideString; const Align: <a  href="phxFont.html#TPHXTextAlign">TPHXTextAlign</a>; const ColorT, ColorB: <a  href="phxTypes.TColor4f.html">TColor4f</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxFont.TPHXFont.html#TextOut">TextOut</a></b>(const Rect: <a  href="phxTypes.TRectI.html">TRecti</a>; const Text: WideString; const Align: <a  href="phxFont.html#TPHXTextAlign">TPHXTextAlign</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxFont.TPHXFont.html#TextOut">TextOut</a></b>(const Rect: <a  href="phxTypes.TRectI.html">TRecti</a>; const Text: WideString; const Align: <a  href="phxFont.html#TPHXTextAlign">TPHXTextAlign</a>; const Color: <a  href="phxTypes.TColor4f.html">TColor4f</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxFont.TPHXFont.html#TextOut">TextOut</a></b>(const Rect: <a  href="phxTypes.TRectI.html">TRecti</a>; const Text: WideString; const Align: <a  href="phxFont.html#TPHXTextAlign">TPHXTextAlign</a>; const ColorT, ColorB: <a  href="phxTypes.TColor4f.html">TColor4f</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxFont.TPHXFont.html#FormatText">FormatText</a></b>(const X, Y: Single; const Text: WideString; Args: array of const); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxFont.TPHXFont.html#WrapText">WrapText</a></b>(const Rect: <a  href="phxTypes.TRectf.html">TRectf</a>; const Text: WideString; const Alignment: <a  href="phxFont.html#TPHXAlignment">TPHXAlignment</a>): Boolean; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxFont.TPHXFont.html#WrapText">WrapText</a></b>(const Rect: <a  href="phxTypes.TRectf.html">TRectf</a>; const Text: WideString; const Alignment: <a  href="phxFont.html#TPHXAlignment">TPHXAlignment</a>; const Color: <a  href="phxTypes.TColor4f.html">TColor4f</a>): Boolean; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxFont.TPHXFont.html#WrapText">WrapText</a></b>(const Rect: <a  href="phxTypes.TRectf.html">TRectf</a>; const Text: WideString; const Alignment: <a  href="phxFont.html#TPHXAlignment">TPHXAlignment</a>; const ColorT, ColorB: <a  href="phxTypes.TColor4f.html">TColor4f</a>): Boolean; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxFont.TPHXFont.html#TextOut">TextOut</a></b>(const X, Y: Single; const Lines: TStrings); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxFont.TPHXFont.html#DrawSelection">DrawSelection</a></b>(const X,Y: Integer; const Text: WideString; const SelStart, SelLength: Integer); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxFont.TPHXFont.html#DrawSelection">DrawSelection</a></b>(const X,Y: Integer; const Text: WideString; const SelStart, SelLength: Integer; const Color: <a  href="phxTypes.TColor4f.html">TColor4f</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxFont.TPHXFont.html#DrawSelection">DrawSelection</a></b>(const X,Y: Integer; const Text: WideString; const SelStart, SelLength: Integer; const Color: <a  href="phxTypes.TColor4f.html">TColor4f</a>; const Texture: <a  href="phxTexture.TPHXTexture.html">TPHXTexture</a>); overload;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxFont.TPHXFont.html#Device">Device</a></b>: <a  href="phxDevice.TPHXDevice.html">TPHXDevice</a> read FDevice;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxFont.TPHXFont.html#Canvas">Canvas</a></b>: <a  href="phxCanvas.TPHXCanvas.html">TPHXCanvas</a> read FCanvas;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxFont.TPHXFont.html#Name">Name</a></b>: String read FName write FName;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxFont.TPHXFont.html#Size">Size</a></b>: Integer read FSize write FSize;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxFont.TPHXFont.html#Style">Style</a></b>: <a  href="phxFont.html#TPHXFontStyles">TPHXFontStyles</a> read FStyle write FStyle;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxFont.TPHXFont.html#Author">Author</a></b>: String read FAuthor write FAuthor;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxFont.TPHXFont.html#Version">Version</a></b>: String read FVersion write FVersion;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxFont.TPHXFont.html#Comment">Comment</a></b>: String read FComment write FComment;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxFont.TPHXFont.html#Metric">Metric</a></b>: <a  href="phxFont.TPHXTextMetric.html">TPHXTextMetric</a> read FMetric;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxFont.TPHXFont.html#Characters">Characters</a></b>: <a  href="phxFont.TPHXCharacterList.html">TPHXCharacterList</a> read FCharacters;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxFont.TPHXFont.html#Kernings">Kernings</a></b>: <a  href="phxFont.TPHXKerningList.html">TPHXKerningList</a> read FKernings;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxFont.TPHXFont.html#Texture">Texture</a></b>: <a  href="phxTexture.TPHXTexture.html">TPHXTexture</a> read FTexture;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxFont.TPHXFont.html#WrapMode">WrapMode</a></b>: <a  href="phxFont.html#TPHXFontWrap">TPHXFontWrap</a> read FWrapMode write FWrapMode;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxFont.TPHXFont.html#WrapChars">WrapChars</a></b>: WideString read FWrapChars write FWrapChars;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxFont.TPHXFont.html#WrapStart">WrapStart</a></b>: WideString read FWrapStart write FWrapStart;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxFont.TPHXFont.html#WrapEnd">WrapEnd</a></b>: WideString read FWrapEnd write FWrapEnd;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxFont.TPHXFont.html#Height">Height</a></b>: Integer read GetHeight;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="CharacterMap"></a><code><b>CharacterMap</b>: <a  href="phxFont.html#TPHXCharacterMap">TPHXCharacterMap</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="CharacterBuffer"></a><code><b>CharacterBuffer</b>: array of <a  href="phxFont.TPHXCharacterBuffer.html">TPHXCharacterBuffer</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(ADevice: <a  href="phxDevice.TPHXDevice.html">TPHXDevice</a>; ACanvas: <a  href="phxCanvas.TPHXCanvas.html">TPHXCanvas</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates a new font</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CreateEx"></a><code>constructor <b>CreateEx</b>(ATexture: <a  href="phxTexture.TPHXTexture.html">TPHXTexture</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates a new font for editing</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Destroys this font</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LoadFromFile"></a><code>procedure <b>LoadFromFile</b>(const FileName: String);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Load the font from file</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LoadFromStream"></a><code>procedure <b>LoadFromStream</b>(Stream: TStream);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Load the font from a stream</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SaveToFile"></a><code>procedure <b>SaveToFile</b>(const FileName: String);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Save the font to a file</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SaveToStream"></a><code>procedure <b>SaveToStream</b>(Stream: TStream);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Save the font to a stream</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Initialize"></a><code>procedure <b>Initialize</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Initializes the font, must be called before any rendering</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CharWidth"></a><code>function <b>CharWidth</b>(const Character: AnsiChar): Integer; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns the width of a specific character.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CharWidth"></a><code>function <b>CharWidth</b>(const Character: WideChar): Integer; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns the width of a specific character.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TextExtent"></a><code>function <b>TextExtent</b>(const Text: AnsiString): <a  href="phxTypes.TVector2i.html">TVector2i</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns the text size of a specific text.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TextExtent"></a><code>function <b>TextExtent</b>(const Text: WideString): <a  href="phxTypes.TVector2i.html">TVector2i</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns the text size of a specific text.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TextWidth"></a><code>function <b>TextWidth</b>(const Text: AnsiString): Integer; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns the width of a specific text.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TextWidth"></a><code>function <b>TextWidth</b>(const Text: WideString): Integer; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns the width of a specific text.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TextHeight"></a><code>function <b>TextHeight</b>(const Text: AnsiString): Integer; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns the height of a specific text.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TextHeight"></a><code>function <b>TextHeight</b>(const Text: WideString): Integer; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns the height of a specific text.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TextOut"></a><code>procedure <b>TextOut</b>(const X, Y: Single; const Text: WideString); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw text</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TextOut"></a><code>procedure <b>TextOut</b>(const X, Y: Single; const Text: WideString; const Color: <a  href="phxTypes.TColor4f.html">TColor4f</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw colored text</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TextOut"></a><code>procedure <b>TextOut</b>(const X, Y: Single; const Text: WideString; const ColorUp, ColorDown: <a  href="phxTypes.TColor4f.html">TColor4f</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw gradient text</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TextOut"></a><code>procedure <b>TextOut</b>(const Position: <a  href="phxTypes.TVector3f.html">TVector3f</a>; const Text: WideString; const Color: <a  href="phxTypes.TColor4f.html">TColor4f</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw text</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TextOut"></a><code>procedure <b>TextOut</b>(const Position: <a  href="phxTypes.TVector3f.html">TVector3f</a>; const Text: WideString; const ColorA, ColorB: <a  href="phxTypes.TColor4f.html">TColor4f</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw text</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TextOut"></a><code>procedure <b>TextOut</b>(const Transform: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; const Text: WideString; const Color: <a  href="phxTypes.TColor4f.html">TColor4f</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw transformed text with a color</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TextOut"></a><code>procedure <b>TextOut</b>(const Transform: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; const Text: WideString; const ColorA, ColorB: <a  href="phxTypes.TColor4f.html">TColor4f</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw transformed text with two colors</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TextOut"></a><code>procedure <b>TextOut</b>(const Rect: <a  href="phxTypes.TRectf.html">TRectf</a>; const Text: WideString; const Align: <a  href="phxFont.html#TPHXTextAlign">TPHXTextAlign</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw alignmed text in a rectangle</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TextOut"></a><code>procedure <b>TextOut</b>(const Rect: <a  href="phxTypes.TRectf.html">TRectf</a>; const Text: WideString; const Align: <a  href="phxFont.html#TPHXTextAlign">TPHXTextAlign</a>; const Color: <a  href="phxTypes.TColor4f.html">TColor4f</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw alignmed text in a rectangle with a single color</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TextOut"></a><code>procedure <b>TextOut</b>(const Rect: <a  href="phxTypes.TRectf.html">TRectf</a>; const Text: WideString; const Align: <a  href="phxFont.html#TPHXTextAlign">TPHXTextAlign</a>; const ColorT, ColorB: <a  href="phxTypes.TColor4f.html">TColor4f</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw alignmed text in a rectangle with gradient colors</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TextOut"></a><code>procedure <b>TextOut</b>(const Rect: <a  href="phxTypes.TRectI.html">TRecti</a>; const Text: WideString; const Align: <a  href="phxFont.html#TPHXTextAlign">TPHXTextAlign</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw alignmed text in a rectangle</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TextOut"></a><code>procedure <b>TextOut</b>(const Rect: <a  href="phxTypes.TRectI.html">TRecti</a>; const Text: WideString; const Align: <a  href="phxFont.html#TPHXTextAlign">TPHXTextAlign</a>; const Color: <a  href="phxTypes.TColor4f.html">TColor4f</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw alignmed text in a rectangle with a single color</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TextOut"></a><code>procedure <b>TextOut</b>(const Rect: <a  href="phxTypes.TRectI.html">TRecti</a>; const Text: WideString; const Align: <a  href="phxFont.html#TPHXTextAlign">TPHXTextAlign</a>; const ColorT, ColorB: <a  href="phxTypes.TColor4f.html">TColor4f</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw alignmed text in a rectangle with gradient colors</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FormatText"></a><code>procedure <b>FormatText</b>(const X, Y: Single; const Text: WideString; Args: array of const); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a formatted text</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="WrapText"></a><code>function <b>WrapText</b>(const Rect: <a  href="phxTypes.TRectf.html">TRectf</a>; const Text: WideString; const Alignment: <a  href="phxFont.html#TPHXAlignment">TPHXAlignment</a>): Boolean; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw wrapped text, returns true if all text fitted inside the rectangle</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="WrapText"></a><code>function <b>WrapText</b>(const Rect: <a  href="phxTypes.TRectf.html">TRectf</a>; const Text: WideString; const Alignment: <a  href="phxFont.html#TPHXAlignment">TPHXAlignment</a>; const Color: <a  href="phxTypes.TColor4f.html">TColor4f</a>): Boolean; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw wrapped text with a single color, returns true if all text fitted inside the rectangle</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="WrapText"></a><code>function <b>WrapText</b>(const Rect: <a  href="phxTypes.TRectf.html">TRectf</a>; const Text: WideString; const Alignment: <a  href="phxFont.html#TPHXAlignment">TPHXAlignment</a>; const ColorT, ColorB: <a  href="phxTypes.TColor4f.html">TColor4f</a>): Boolean; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw wrapped text with a gradient color, returns true if all text fitted inside the rectangle</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TextOut"></a><code>procedure <b>TextOut</b>(const X, Y: Single; const Lines: TStrings); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw all lines in a string list</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DrawSelection"></a><code>procedure <b>DrawSelection</b>(const X,Y: Integer; const Text: WideString; const SelStart, SelLength: Integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a selection rectangle for a text</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DrawSelection"></a><code>procedure <b>DrawSelection</b>(const X,Y: Integer; const Text: WideString; const SelStart, SelLength: Integer; const Color: <a  href="phxTypes.TColor4f.html">TColor4f</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a selection rectangle for a text with a given color</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DrawSelection"></a><code>procedure <b>DrawSelection</b>(const X,Y: Integer; const Text: WideString; const SelStart, SelLength: Integer; const Color: <a  href="phxTypes.TColor4f.html">TColor4f</a>; const Texture: <a  href="phxTexture.TPHXTexture.html">TPHXTexture</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a selection rectangle for a text with a given color and texture</p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Device"></a><code>property <b>Device</b>: <a  href="phxDevice.TPHXDevice.html">TPHXDevice</a> read FDevice;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The owning device</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Canvas"></a><code>property <b>Canvas</b>: <a  href="phxCanvas.TPHXCanvas.html">TPHXCanvas</a> read FCanvas;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The canvas to draw to</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Name"></a><code>property <b>Name</b>: String read FName write FName;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The name of the font.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Size"></a><code>property <b>Size</b>: Integer read FSize write FSize;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The size of the font.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Style"></a><code>property <b>Style</b>: <a  href="phxFont.html#TPHXFontStyles">TPHXFontStyles</a> read FStyle write FStyle;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The font style</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Author"></a><code>property <b>Author</b>: String read FAuthor write FAuthor;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Font author</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Version"></a><code>property <b>Version</b>: String read FVersion write FVersion;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Version of the fon</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Comment"></a><code>property <b>Comment</b>: String read FComment write FComment;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Comment of the font</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Metric"></a><code>property <b>Metric</b>: <a  href="phxFont.TPHXTextMetric.html">TPHXTextMetric</a> read FMetric;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Text metric</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Characters"></a><code>property <b>Characters</b>: <a  href="phxFont.TPHXCharacterList.html">TPHXCharacterList</a> read FCharacters;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+List of characters in the font</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Kernings"></a><code>property <b>Kernings</b>: <a  href="phxFont.TPHXKerningList.html">TPHXKerningList</a> read FKernings;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+List of kerning pairs in the font</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Texture"></a><code>property <b>Texture</b>: <a  href="phxTexture.TPHXTexture.html">TPHXTexture</a> read FTexture;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The font texture</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="WrapMode"></a><code>property <b>WrapMode</b>: <a  href="phxFont.html#TPHXFontWrap">TPHXFontWrap</a> read FWrapMode write FWrapMode;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Wrapping mode for the font</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="WrapChars"></a><code>property <b>WrapChars</b>: WideString read FWrapChars write FWrapChars;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Wrapping characters for word wrap</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="WrapStart"></a><code>property <b>WrapStart</b>: WideString read FWrapStart write FWrapStart;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The characters in this string may not start a line</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="WrapEnd"></a><code>property <b>WrapEnd</b>: WideString read FWrapEnd write FWrapEnd;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The characters in this string may not end a line</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Height"></a><code>property <b>Height</b>: Integer read GetHeight;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The vertical distance between two text lines.</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.13.0</a> on 2013-08-26 11:02:37</em>
+</span>
+</td></tr></table></body></html>

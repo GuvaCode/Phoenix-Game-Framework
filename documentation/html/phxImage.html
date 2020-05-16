@@ -1,0 +1,290 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Phoenix API Doc: phxImage</title>
+<meta name="generator" content="PasDoc 0.13.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Phoenix API Doc</h2><p><a href="introduction.html" class="navigation">Introduction</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div></p></td><td class="content">
+<link rel="icon" type="image/ico" href="Phoenix_icon.png"></link>
+<link rel="shortcut icon" href="Phoenix_icon.png"></link>
+<h1 class="unit">Unit phxImage</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td>Uses</td><td><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></td><td>Functions and Procedures</td><td><a class="section" href="#PasDoc-Types">Types</a></td><td><a class="section" href="#PasDoc-Constants">Constants</a></td><td>Variables</td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="description">Description</h2>
+<p>
+Classes for managing and rendering 2D images and animations</p>
+<a name="PasDoc-Uses"></a><h2 class="overview">Overview</h2>
+<a name="PasDoc-Classes"></a><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold" href="phxImage.TPHXPattern.html"><code>TPHXPattern</code></a></td>
+<td class="itemdesc">A single pattern in a image</td>
+</tr>
+<tr class="list2">
+<td class="itemname">record&nbsp;<a class="bold" href="phxImage.TPHXPatternBuffer.html"><code>TPHXPatternBuffer</code></a></td>
+<td class="itemdesc">Contains the information needed to render a pattern</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxImage.TPHXPatternList.html"><code>TPHXPatternList</code></a></td>
+<td class="itemdesc">List of patterns</td>
+</tr>
+<tr class="list2">
+<td class="itemname">record&nbsp;<a class="bold" href="phxImage.TPHXTag.html"><code>TPHXTag</code></a></td>
+<td class="itemdesc">A tag is used to mark an interesting position in the image, could be used to specify weapon hardpoints, sprite attatchments etc</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxImage.TPHXTagList.html"><code>TPHXTagList</code></a></td>
+<td class="itemdesc">List of tags</td>
+</tr>
+<tr class="list2">
+<td class="itemname">record&nbsp;<a class="bold" href="phxImage.TPHXImageHeader.html"><code>TPHXImageHeader</code></a></td>
+<td class="itemdesc">The image file header.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxImage.TPHXImage.html"><code>TPHXImage</code></a></td>
+<td class="itemdesc">The image is a container for a texture and supports patterns and tags</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxImage.TPHXImageList.html"><code>TPHXImageList</code></a></td>
+<td class="itemdesc">Contains a list of images</td>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold" href="phxImage.TPHXAnimationHeader.html"><code>TPHXAnimationHeader</code></a></td>
+<td class="itemdesc">The animation file header.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">record&nbsp;<a class="bold" href="phxImage.TPHXAnimationFrame.html"><code>TPHXAnimationFrame</code></a></td>
+<td class="itemdesc">A single frame in the animation</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxImage.TPHXAnimationFrames.html"><code>TPHXAnimationFrames</code></a></td>
+<td class="itemdesc">Container for a list of animation frames</td>
+</tr>
+<tr class="list2">
+<td class="itemname">record&nbsp;<a class="bold" href="phxImage.TPHXAnimationState.html"><code>TPHXAnimationState</code></a></td>
+<td class="itemdesc">Contains the state for a animation</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxImage.TPHXAnimation.html"><code>TPHXAnimation</code></a></td>
+<td class="itemdesc">A animation implement a sprite animation using a image</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxImage.TPHXAnimationList.html"><code>TPHXAnimationList</code></a></td>
+<td class="itemdesc">A container for a list of animations</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxImage.TPHXAnimationSet.html"><code>TPHXAnimationSet</code></a></td>
+<td class="itemdesc">The animation set handles a set of animations with support for queuing animations</td>
+</tr>
+</table>
+<a name="PasDoc-Types"></a><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxImage.html#TPHXPatternIndex">TPHXPatternIndex</a></b> = type Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxImage.html#PPHXPattern">PPHXPattern</a></b> = &circ;<a  href="phxImage.TPHXPattern.html">TPHXPattern</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxImage.html#TPHXPatternCompare">TPHXPatternCompare</a></b> = function(const A: <a  href="phxImage.TPHXPattern.html">TPHXPattern</a>; const B: <a  href="phxImage.TPHXPattern.html">TPHXPattern</a>): Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxImage.html#PPatternList">PPatternList</a></b> = &circ;<a  href="phxImage.html#TPatternList">TPatternList</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxImage.html#TPatternList">TPatternList</a></b> = array[0.. $000FFFFF] of <a  href="phxImage.TPHXPattern.html">TPHXPattern</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxImage.html#PTagList">PTagList</a></b> = &circ;<a  href="phxImage.html#TTagList">TTagList</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxImage.html#TTagList">TTagList</a></b> = array[0.. $000FFFFF] of <a  href="phxImage.TPHXTag.html">TPHXTag</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxImage.html#PAnimationFrameList">PAnimationFrameList</a></b> = &circ;<a  href="phxImage.html#TAnimationFrameList">TAnimationFrameList</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxImage.html#TAnimationFrameList">TAnimationFrameList</a></b> = array[0..$00AFFFFF] of <a  href="phxImage.TPHXAnimationFrame.html">TPHXAnimationFrame</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxImage.html#PAnimationList">PAnimationList</a></b> = &circ;<a  href="phxImage.html#TAnimationList">TAnimationList</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxImage.html#TAnimationList">TAnimationList</a></b> = array[0..$00FFFFFF] of <a  href="phxImage.TPHXAnimation.html">TPHXAnimation</a>;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Constants"></a><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxImage.html#PHXIMAGE_EXT">PHXIMAGE_EXT</a></b> = '.phximg';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxImage.html#PHXIMAGE_VERSION">PHXIMAGE_VERSION</a></b> = 20;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxImage.html#PHXANIMATION_EXT">PHXANIMATION_EXT</a></b>  = '.phxani';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxImage.html#PHXANIMATION_VERSION">PHXANIMATION_VERSION</a></b> = 20;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxImage.html#PHXPATTERN_NONE">PHXPATTERN_NONE</a></b> = -1;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXPatternIndex"></a><code><b>TPHXPatternIndex</b> = type Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Datatype for pattern indicies</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PPHXPattern"></a><code><b>PPHXPattern</b> = &circ;<a  href="phxImage.TPHXPattern.html">TPHXPattern</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Pattern pointer</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXPatternCompare"></a><code><b>TPHXPatternCompare</b> = function(const A: <a  href="phxImage.TPHXPattern.html">TPHXPattern</a>; const B: <a  href="phxImage.TPHXPattern.html">TPHXPattern</a>): Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Comparision function for patterns</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PPatternList"></a><code><b>PPatternList</b> = &circ;<a  href="phxImage.html#TPatternList">TPatternList</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Pointer to a array of patterns</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPatternList"></a><code><b>TPatternList</b> = array[0.. $000FFFFF] of <a  href="phxImage.TPHXPattern.html">TPHXPattern</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Array of patterns</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PTagList"></a><code><b>PTagList</b> = &circ;<a  href="phxImage.html#TTagList">TTagList</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TTagList"></a><code><b>TTagList</b> = array[0.. $000FFFFF] of <a  href="phxImage.TPHXTag.html">TPHXTag</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PAnimationFrameList"></a><code><b>PAnimationFrameList</b> = &circ;<a  href="phxImage.html#TAnimationFrameList">TAnimationFrameList</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Pointer to the array of animation frames</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TAnimationFrameList"></a><code><b>TAnimationFrameList</b> = array[0..$00AFFFFF] of <a  href="phxImage.TPHXAnimationFrame.html">TPHXAnimationFrame</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Array of animation frames</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PAnimationList"></a><code><b>PAnimationList</b> = &circ;<a  href="phxImage.html#TAnimationList">TAnimationList</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Pointer to a array of animations</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TAnimationList"></a><code><b>TAnimationList</b> = array[0..$00FFFFFF] of <a  href="phxImage.TPHXAnimation.html">TPHXAnimation</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Array of animations</p>
+</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PHXIMAGE_EXT"></a><code><b>PHXIMAGE_EXT</b> = '.phximg';</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Default file extension of images</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PHXIMAGE_VERSION"></a><code><b>PHXIMAGE_VERSION</b> = 20;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Version of the binary image files</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PHXANIMATION_EXT"></a><code><b>PHXANIMATION_EXT</b>  = '.phxani';</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Default file extension of animations</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PHXANIMATION_VERSION"></a><code><b>PHXANIMATION_VERSION</b> = 20;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Version of the binary animation files</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PHXPATTERN_NONE"></a><code><b>PHXPATTERN_NONE</b> = -1;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Constant for invalid pattern selection</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.13.0</a> on 2013-08-26 11:02:38</em>
+</span>
+</td></tr></table></body></html>

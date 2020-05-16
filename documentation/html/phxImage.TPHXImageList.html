@@ -1,0 +1,387 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Phoenix API Doc: phxImage: Class TPHXImageList</title>
+<meta name="generator" content="PasDoc 0.13.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Phoenix API Doc</h2><p><a href="introduction.html" class="navigation">Introduction</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div></p></td><td class="content">
+<link rel="icon" type="image/ico" href="Phoenix_icon.png"></link>
+<link rel="shortcut icon" href="Phoenix_icon.png"></link>
+<a name="TPHXImageList"></a><h1 class="cio">Class TPHXImageList</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td><a class="section" href="#PasDoc-Properties">Properties</a></td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="phxImage.html">phxImage</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TPHXImageList = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Contains a list of images</p>
+<a name="PasDoc-Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TPHXImageList</li></ul><h2 class="overview">Overview</h2>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImageList.html#LoadList">LoadList</a></b>(const Stream: TStream; const Count: Integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImageList.html#SaveList">SaveList</a></b>(const Stream: TStream; const Count: Integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxImage.TPHXImageList.html#GetCount">GetCount</a></b>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="phxImage.TPHXImageList.html#Create">Create</a></b>(ADevice: <a  href="phxDevice.TPHXDevice.html">TPHXDevice</a>; ACanvas: <a  href="phxCanvas.TPHXCanvas.html">TPHXCanvas</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="phxImage.TPHXImageList.html#CreateEx">CreateEx</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a  href="phxImage.TPHXImageList.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImageList.html#Clear">Clear</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxImage.TPHXImageList.html#Add">Add</a></b>: <a  href="phxImage.TPHXImage.html">TPHXImage</a>; overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxImage.TPHXImageList.html#Add">Add</a></b>(const Name : string): <a  href="phxImage.TPHXImage.html">TPHXImage</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxImage.TPHXImageList.html#Add">Add</a></b>(const Image: <a  href="phxImage.TPHXImage.html">TPHXImage</a>): <a  href="phxImage.TPHXImage.html">TPHXImage</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImageList.html#Delete">Delete</a></b>(const Index: Integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImageList.html#Remove">Remove</a></b>(const Image: <a  href="phxImage.TPHXImage.html">TPHXImage</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxImage.TPHXImageList.html#LoadImage">LoadImage</a></b>(const FileName: String): <a  href="phxImage.TPHXImage.html">TPHXImage</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxImage.TPHXImageList.html#LoadImage">LoadImage</a></b>(const FileName: String; const Name: string): <a  href="phxImage.TPHXImage.html">TPHXImage</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxImage.TPHXImageList.html#LoadImage">LoadImage</a></b>(const FileName: String; const Stream: TStream): <a  href="phxImage.TPHXImage.html">TPHXImage</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImageList.html#LoadImages">LoadImages</a></b>(const Path: String; const Filter: String = '*.phximg');</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxImage.TPHXImageList.html#IndexOf">IndexOf</a></b>(const Name: string): Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxImage.TPHXImageList.html#Find">Find</a></b>(const Name: string): <a  href="phxImage.TPHXImage.html">TPHXImage</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxImage.TPHXImageList.html#Find">Find</a></b>(const Name: string; out Image: <a  href="phxImage.TPHXImage.html">TPHXImage</a>): Boolean; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxImage.TPHXImageList.html#Find">Find</a></b>(const Image: String; const Pattern: String): Integer; overload;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxImage.TPHXImageList.html#Device">Device</a></b>: <a  href="phxDevice.TPHXDevice.html">TPHXDevice</a> read FDevice;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxImage.TPHXImageList.html#Canvas">Canvas</a></b>: <a  href="phxCanvas.TPHXCanvas.html">TPHXCanvas</a> read FCanvas;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxImage.TPHXImageList.html#Count">Count</a></b>: Integer read <a  href="phxImage.TPHXImageList.html#GetCount">GetCount</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxImage.TPHXImageList.html#List">List</a></b>: PPointerList read GetList;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxImage.TPHXImageList.html#Items">Items</a></b>[Index:Integer]: <a  href="phxImage.TPHXImage.html">TPHXImage</a> read GetItem;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="LoadList"></a><code>procedure <b>LoadList</b>(const Stream: TStream; const Count: Integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="SaveList"></a><code>procedure <b>SaveList</b>(const Stream: TStream; const Count: Integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="GetCount"></a><code>function <b>GetCount</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(ADevice: <a  href="phxDevice.TPHXDevice.html">TPHXDevice</a>; ACanvas: <a  href="phxCanvas.TPHXCanvas.html">TPHXCanvas</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates a new imagelist</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CreateEx"></a><code>constructor <b>CreateEx</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates a new imagelist without a device or canvas</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Default destructor</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Clear"></a><code>procedure <b>Clear</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Removes all images from the list.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Add"></a><code>function <b>Add</b>: <a  href="phxImage.TPHXImage.html">TPHXImage</a>; overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Add a new image to the imagelist</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Add"></a><code>function <b>Add</b>(const Name : string): <a  href="phxImage.TPHXImage.html">TPHXImage</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Add a new image to the imagelist with the name</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Add"></a><code>function <b>Add</b>(const Image: <a  href="phxImage.TPHXImage.html">TPHXImage</a>): <a  href="phxImage.TPHXImage.html">TPHXImage</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Add the supplied image to the imagelist</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Delete"></a><code>procedure <b>Delete</b>(const Index: Integer);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Delete and free a image at a index</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Remove"></a><code>procedure <b>Remove</b>(const Image: <a  href="phxImage.TPHXImage.html">TPHXImage</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Remove and free a image</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LoadImage"></a><code>function <b>LoadImage</b>(const FileName: String): <a  href="phxImage.TPHXImage.html">TPHXImage</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Add and load a image from a file .</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LoadImage"></a><code>function <b>LoadImage</b>(const FileName: String; const Name: string): <a  href="phxImage.TPHXImage.html">TPHXImage</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Add and load a image from a file .</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LoadImage"></a><code>function <b>LoadImage</b>(const FileName: String; const Stream: TStream): <a  href="phxImage.TPHXImage.html">TPHXImage</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Add and load a image from a stream</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LoadImages"></a><code>procedure <b>LoadImages</b>(const Path: String; const Filter: String = '*.phximg');</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Load all images in a folder</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="IndexOf"></a><code>function <b>IndexOf</b>(const Name: string): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns the index of a image or -1 if not found.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Find"></a><code>function <b>Find</b>(const Name: string): <a  href="phxImage.TPHXImage.html">TPHXImage</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns the image with the name if found else nil</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Find"></a><code>function <b>Find</b>(const Name: string; out Image: <a  href="phxImage.TPHXImage.html">TPHXImage</a>): Boolean; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Find a image in the list, returns true if the image was found.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Find"></a><code>function <b>Find</b>(const Image: String; const Pattern: String): Integer; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Find the index of a pattern in a image, returns -1 if not found</p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Device"></a><code>property <b>Device</b>: <a  href="phxDevice.TPHXDevice.html">TPHXDevice</a> read FDevice;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Owning device</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Canvas"></a><code>property <b>Canvas</b>: <a  href="phxCanvas.TPHXCanvas.html">TPHXCanvas</a> read FCanvas;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Owning canvas</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Count"></a><code>property <b>Count</b>: Integer read <a  href="phxImage.TPHXImageList.html#GetCount">GetCount</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Number of images in the imagelist.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="List"></a><code>property <b>List</b>: PPointerList read GetList;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns the pointer to the internal list</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Items"></a><code>property <b>Items</b>[Index:Integer]: <a  href="phxImage.TPHXImage.html">TPHXImage</a> read GetItem;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The images.</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.13.0</a> on 2013-08-26 11:02:38</em>
+</span>
+</td></tr></table></body></html>

@@ -1,0 +1,893 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Phoenix API Doc: phxParticle: Class TPHXParticleEffect</title>
+<meta name="generator" content="PasDoc 0.13.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Phoenix API Doc</h2><p><a href="introduction.html" class="navigation">Introduction</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div></p></td><td class="content">
+<link rel="icon" type="image/ico" href="Phoenix_icon.png"></link>
+<link rel="shortcut icon" href="Phoenix_icon.png"></link>
+<a name="TPHXParticleEffect"></a><h1 class="cio">Class TPHXParticleEffect</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td><a class="section" href="#PasDoc-Properties">Properties</a></td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="phxParticle.html">phxParticle</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TPHXParticleEffect = class(TPersistent)</code></p>
+<h2 class="description">Description</h2>
+<p>
+The particle efffect contains the parameters for a particle system</p>
+<a name="PasDoc-Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TPersistent</li>
+<li class="thisitem">TPHXParticleEffect</li></ul><h2 class="overview">Overview</h2>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxParticle.TPHXParticleEffect.html#LoadEffect">LoadEffect</a></b>(Reader: <a  href="phxClasses.TPHXReader.html">TPHXReader</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxParticle.TPHXParticleEffect.html#SaveEffect">SaveEffect</a></b>(Writer: <a  href="phxClasses.TPHXWriter.html">TPHXWriter</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="phxParticle.TPHXParticleEffect.html#Create">Create</a></b>(AManager: <a  href="phxParticle.TPHXParticleManager.html">TPHXParticleManager</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a  href="phxParticle.TPHXParticleEffect.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxParticle.TPHXParticleEffect.html#Initialize">Initialize</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxParticle.TPHXParticleEffect.html#LoadDefaults">LoadDefaults</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxParticle.TPHXParticleEffect.html#LoadFromFile">LoadFromFile</a></b>(const FileName: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxParticle.TPHXParticleEffect.html#LoadFromStream">LoadFromStream</a></b>(Stream: TStream);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxParticle.TPHXParticleEffect.html#SaveToFile">SaveToFile</a></b>(const FileName: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxParticle.TPHXParticleEffect.html#SaveToStream">SaveToStream</a></b>(Stream: TStream);</code></td>
+</tr>
+</table>
+<a name="PasDoc-Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#Manager">Manager</a></b>: <a  href="phxParticle.TPHXParticleManager.html">TPHXParticleManager</a> read FManager;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#Parent">Parent</a></b>: <a  href="phxParticle.TPHXParticleEffect.html">TPHXParticleEffect</a> read FParent write SetParent;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#Name">Name</a></b>: String read FName write FName;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#Author">Author</a></b>: String read FAuthor write FAuthor;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#Version">Version</a></b>: String read FVersion write FVersion;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#Comment">Comment</a></b>: String read FComment write FComment;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#Quota">Quota</a></b>: Integer read FQuota write FQuota;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#Duration">Duration</a></b>: Single read FDuration write FDuration;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#Delay">Delay</a></b>: Single read FDelay write FDelay;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#InitalUpdateCount">InitalUpdateCount</a></b>: Integer read FInitalUpdateCount write FInitalUpdateCount;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#InitalUpdateInterval">InitalUpdateInterval</a></b>: Single read FInitalUpdateInterval write FInitalUpdateInterval;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#LinkToSystem">LinkToSystem</a></b>: Boolean read FLinkToSystem write FLinkToSystem;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#IdleWhileParentActive">IdleWhileParentActive</a></b>: Boolean read FIdleWhileParentActive write FIdleWhileParentActive;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#Emittor">Emittor</a></b>: <a  href="phxParticle.TPHXParticleEmittor.html">TPHXParticleEmittor</a> read FEmittor;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#Life">Life</a></b>: <a  href="phxParticle.TPHXParticleParameter1f.html">TPHXParticleParameter1f</a> read FLife write SetLife;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#LifeValue">LifeValue</a></b>: Single read FLife.Value write SetLifeMin;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#LifeVariance">LifeVariance</a></b>: Single read FLife.Variance write SetLifeMax;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#Texture">Texture</a></b>: <a  href="phxTexture.TPHXTexture.html">TPHXTexture</a> read FTexture write SetTexture;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#TextureName">TextureName</a></b>: String read FTextureName write SetTextureName;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#Shape">Shape</a></b>: <a  href="phxParticle.html#TPHXParticleShape">TPHXParticleShape</a> read FShape write FShape;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#Blending">Blending</a></b>: <a  href="phxParticle.html#TPHXParticleBlending">TPHXParticleBlending</a> read FBlending write FBlending;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#PatternSize">PatternSize</a></b>: <a  href="phxParticle.html#TPHXParticlePatternSize">TPHXParticlePatternSize</a> read FPatternSize write FPatternSize ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#PatternIndex">PatternIndex</a></b>: Word read FPatternIndex write FPatternIndex;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#PatternVariance">PatternVariance</a></b>: Word read FPatternVariance write FPatternVariance;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#Color">Color</a></b>: <a  href="phxParticle.TPHXParticleParameterCf.html">TPHXParticleParameterCf</a> read FColor write FColor;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#ColorValue">ColorValue</a></b>: <a  href="phxTypes.TColor4f.html">TColor4f</a> read FColor.Value write FColor.Value;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#ColorVariance">ColorVariance</a></b>: <a  href="phxTypes.TColor4f.html">TColor4f</a> read FColor.Variance write FColor.Variance;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#Grayscale">Grayscale</a></b>: Boolean read FGrayscale write FGrayscale;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#Size">Size</a></b>: <a  href="phxParticle.TPHXParticleParameter1f.html">TPHXParticleParameter1f</a> read FSize write FSize;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#SizeMin">SizeMin</a></b>: Single read FSize.Value write FSize.Value;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#SizeMax">SizeMax</a></b>: Single read FSize.Variance write FSize.Variance;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#Growth">Growth</a></b>: <a  href="phxParticle.TPHXParticleParameter1f.html">TPHXParticleParameter1f</a> read FGrowth write FGrowth;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#GrowthMin">GrowthMin</a></b>: Single read FGrowth.Value write FGrowth.Value;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#GrowthMax">GrowthMax</a></b>: Single read FGrowth.Variance write FGrowth.Variance;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#Direction">Direction</a></b>: <a  href="phxTypes.TVector3f.html">TVector3f</a> read FDirection write SetDirection;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#DirectionX">DirectionX</a></b>: Single read FDirection.X write SetDirectionX;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#DirectionY">DirectionY</a></b>: Single read FDirection.Y write SetDirectionY;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#DirectionZ">DirectionZ</a></b>: Single read FDirection.Z write SetDirectionZ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#Spread">Spread</a></b>: Single read FSpread write FSpread;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#Velocity">Velocity</a></b>: <a  href="phxParticle.TPHXParticleParameter1f.html">TPHXParticleParameter1f</a> read FVelocity write FVelocity;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#VelocityMin">VelocityMin</a></b>: Single read FVelocity.Value write FVelocity.Value;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#VelocityMax">VelocityMax</a></b>: Single read FVelocity.Variance write FVelocity.Variance;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#Spin">Spin</a></b>: Single read FSpin.Value write FSpin.Value;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#SpinVariance">SpinVariance</a></b>: Single read FSpin.Variance write FSpin.Variance;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#Acceleration">Acceleration</a></b>: <a  href="phxTypes.TVector3f.html">TVector3f</a> read FAcceleration write FAcceleration;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#AccelerationX">AccelerationX</a></b>: Single read FAcceleration.X write FAcceleration.X;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#AccelerationY">AccelerationY</a></b>: Single read FAcceleration.Y write FAcceleration.Y;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#AccelerationZ">AccelerationZ</a></b>: Single read FAcceleration.Z write FAcceleration.Z;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#Graphs">Graphs</a></b>: <a  href="phxParticleGraphs.TPHXParticleGraphs.html">TPHXParticleGraphs</a> read FGraphs;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#Affectors">Affectors</a></b>: <a  href="phxParticle.TPHXParticleAffectors.html">TPHXParticleAffectors</a> read FAffectors;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxParticle.TPHXParticleEffect.html#Renderer">Renderer</a></b>: <a  href="phxParticle.html#TPHXParticleRenderer">TPHXParticleRenderer</a> read GetRenderer;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="LoadEffect"></a><code>procedure <b>LoadEffect</b>(Reader: <a  href="phxClasses.TPHXReader.html">TPHXReader</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Load the effect from a reader</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="SaveEffect"></a><code>procedure <b>SaveEffect</b>(Writer: <a  href="phxClasses.TPHXWriter.html">TPHXWriter</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Save the effect to a writer</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(AManager: <a  href="phxParticle.TPHXParticleManager.html">TPHXParticleManager</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Initialize"></a><code>procedure <b>Initialize</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Initialize the particle effect, call this before using the effect</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LoadDefaults"></a><code>procedure <b>LoadDefaults</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Load the default settings</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LoadFromFile"></a><code>procedure <b>LoadFromFile</b>(const FileName: String);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Load the effect from a file.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LoadFromStream"></a><code>procedure <b>LoadFromStream</b>(Stream: TStream);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Load the effect from a stream.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SaveToFile"></a><code>procedure <b>SaveToFile</b>(const FileName: String);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Save the effect to a file.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SaveToStream"></a><code>procedure <b>SaveToStream</b>(Stream: TStream);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Save the effect to a stream.</p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Manager"></a><code>property <b>Manager</b>: <a  href="phxParticle.TPHXParticleManager.html">TPHXParticleManager</a> read FManager;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The owning particle manager</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Parent"></a><code>property <b>Parent</b>: <a  href="phxParticle.TPHXParticleEffect.html">TPHXParticleEffect</a> read FParent write SetParent;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Parent particle effect</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Name"></a><code>property <b>Name</b>: String read FName write FName;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Name of the particle effect</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Author"></a><code>property <b>Author</b>: String read FAuthor write FAuthor;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Author of the effect</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Version"></a><code>property <b>Version</b>: String read FVersion write FVersion;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Version of the effect</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Comment"></a><code>property <b>Comment</b>: String read FComment write FComment;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Comment of the effect</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Quota"></a><code>property <b>Quota</b>: Integer read FQuota write FQuota;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Maximum number of particles</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Duration"></a><code>property <b>Duration</b>: Single read FDuration write FDuration;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Duration in seconds of the effect</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Delay"></a><code>property <b>Delay</b>: Single read FDelay write FDelay;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Delay in seconds before activating the effect</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="InitalUpdateCount"></a><code>property <b>InitalUpdateCount</b>: Integer read FInitalUpdateCount write FInitalUpdateCount;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Number of updates to perform when the effect is assigned to a system</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="InitalUpdateInterval"></a><code>property <b>InitalUpdateInterval</b>: Single read FInitalUpdateInterval write FInitalUpdateInterval;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Interval of of updates when the effect is assigned to a system</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LinkToSystem"></a><code>property <b>LinkToSystem</b>: Boolean read FLinkToSystem write FLinkToSystem;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+If the particles should be moved with the owning particle system</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="IdleWhileParentActive"></a><code>property <b>IdleWhileParentActive</b>: Boolean read FIdleWhileParentActive write FIdleWhileParentActive;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+If the particle system should be idle until the parent system is activated</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Emittor"></a><code>property <b>Emittor</b>: <a  href="phxParticle.TPHXParticleEmittor.html">TPHXParticleEmittor</a> read FEmittor;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+&mdash; Emission parameters</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Life"></a><code>property <b>Life</b>: <a  href="phxParticle.TPHXParticleParameter1f.html">TPHXParticleParameter1f</a> read FLife write SetLife;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Life interval for each particle, in seconds</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LifeValue"></a><code>property <b>LifeValue</b>: Single read FLife.Value write SetLifeMin;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Minimum lifetime for each particle</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LifeVariance"></a><code>property <b>LifeVariance</b>: Single read FLife.Variance write SetLifeMax;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Maximum lifetime for each particle</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Texture"></a><code>property <b>Texture</b>: <a  href="phxTexture.TPHXTexture.html">TPHXTexture</a> read FTexture write SetTexture;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+&mdash; Apperance parameters The texture of the particles</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TextureName"></a><code>property <b>TextureName</b>: String read FTextureName write SetTextureName;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Name of the texture, for saving</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Shape"></a><code>property <b>Shape</b>: <a  href="phxParticle.html#TPHXParticleShape">TPHXParticleShape</a> read FShape write FShape;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The shape of each particle</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Blending"></a><code>property <b>Blending</b>: <a  href="phxParticle.html#TPHXParticleBlending">TPHXParticleBlending</a> read FBlending write FBlending;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The blending of each particle</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="PatternSize"></a><code>property <b>PatternSize</b>: <a  href="phxParticle.html#TPHXParticlePatternSize">TPHXParticlePatternSize</a> read FPatternSize write FPatternSize ;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Size of the patterns in the texture (1x1, 2x2, 4x4 or 8x8)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="PatternIndex"></a><code>property <b>PatternIndex</b>: Word read FPatternIndex write FPatternIndex;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Min and max pattern index (0 &lt;= Value &lt;= GetParticlePatternCount(PatternSize) )</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="PatternVariance"></a><code>property <b>PatternVariance</b>: Word read FPatternVariance write FPatternVariance;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Random variance to add to the particle index</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Color"></a><code>property <b>Color</b>: <a  href="phxParticle.TPHXParticleParameterCf.html">TPHXParticleParameterCf</a> read FColor write FColor;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Start color of the particles</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ColorValue"></a><code>property <b>ColorValue</b>: <a  href="phxTypes.TColor4f.html">TColor4f</a> read FColor.Value write FColor.Value;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Minimum color</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ColorVariance"></a><code>property <b>ColorVariance</b>: <a  href="phxTypes.TColor4f.html">TColor4f</a> read FColor.Variance write FColor.Variance;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Maximum color</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Grayscale"></a><code>property <b>Grayscale</b>: Boolean read FGrayscale write FGrayscale;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The color is grayscale</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Size"></a><code>property <b>Size</b>: <a  href="phxParticle.TPHXParticleParameter1f.html">TPHXParticleParameter1f</a> read FSize write FSize;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Size interval for each particle</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SizeMin"></a><code>property <b>SizeMin</b>: Single read FSize.Value write FSize.Value;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Minimum size for each particle</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SizeMax"></a><code>property <b>SizeMax</b>: Single read FSize.Variance write FSize.Variance;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Maximum size for each particle</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Growth"></a><code>property <b>Growth</b>: <a  href="phxParticle.TPHXParticleParameter1f.html">TPHXParticleParameter1f</a> read FGrowth write FGrowth;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Growth interval for each particle</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GrowthMin"></a><code>property <b>GrowthMin</b>: Single read FGrowth.Value write FGrowth.Value;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Minimum growth for each particle</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GrowthMax"></a><code>property <b>GrowthMax</b>: Single read FGrowth.Variance write FGrowth.Variance;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Maximum growth for each particle</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Direction"></a><code>property <b>Direction</b>: <a  href="phxTypes.TVector3f.html">TVector3f</a> read FDirection write SetDirection;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+&mdash; Movement parameters Initial direction of the particle system</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DirectionX"></a><code>property <b>DirectionX</b>: Single read FDirection.X write SetDirectionX;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Initial direction along the X-Axis</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DirectionY"></a><code>property <b>DirectionY</b>: Single read FDirection.Y write SetDirectionY;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Initial direction along the Y-Axis</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DirectionZ"></a><code>property <b>DirectionZ</b>: Single read FDirection.Z write SetDirectionZ;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Initial direction along the Z-Axis</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Spread"></a><code>property <b>Spread</b>: Single read FSpread write FSpread;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Spread interval to add to the direction, in degrees.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Velocity"></a><code>property <b>Velocity</b>: <a  href="phxParticle.TPHXParticleParameter1f.html">TPHXParticleParameter1f</a> read FVelocity write FVelocity;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Velocity interval for each particle, units/second in the direction of the particle</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="VelocityMin"></a><code>property <b>VelocityMin</b>: Single read FVelocity.Value write FVelocity.Value;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Minimum velocity for each particle</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="VelocityMax"></a><code>property <b>VelocityMax</b>: Single read FVelocity.Variance write FVelocity.Variance;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Maximum velocity for each particle</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Spin"></a><code>property <b>Spin</b>: Single read FSpin.Value write FSpin.Value;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Spin interval for each particle in degrees per second</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SpinVariance"></a><code>property <b>SpinVariance</b>: Single read FSpin.Variance write FSpin.Variance;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Minimum spin for each Particle</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Acceleration"></a><code>property <b>Acceleration</b>: <a  href="phxTypes.TVector3f.html">TVector3f</a> read FAcceleration write FAcceleration;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Acceleration in world coordinates for each particle, in units/sec&circ;</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="AccelerationX"></a><code>property <b>AccelerationX</b>: Single read FAcceleration.X write FAcceleration.X;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Acceleration along the X-Axis</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="AccelerationY"></a><code>property <b>AccelerationY</b>: Single read FAcceleration.Y write FAcceleration.Y;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Acceleration along the Y-Axis</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="AccelerationZ"></a><code>property <b>AccelerationZ</b>: Single read FAcceleration.Z write FAcceleration.Z;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Acceleration along the Z-Axis</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Graphs"></a><code>property <b>Graphs</b>: <a  href="phxParticleGraphs.TPHXParticleGraphs.html">TPHXParticleGraphs</a> read FGraphs;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Graphs for the particle effect</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Affectors"></a><code>property <b>Affectors</b>: <a  href="phxParticle.TPHXParticleAffectors.html">TPHXParticleAffectors</a> read FAffectors;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Affectors for the particle effect</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Renderer"></a><code>property <b>Renderer</b>: <a  href="phxParticle.html#TPHXParticleRenderer">TPHXParticleRenderer</a> read GetRenderer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+&mdash; Runtime parameters Return the renderer for the current shape</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.13.0</a> on 2013-08-26 11:02:40</em>
+</span>
+</td></tr></table></body></html>

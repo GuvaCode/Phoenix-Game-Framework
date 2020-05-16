@@ -1,0 +1,337 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Phoenix API Doc: phxGraphics</title>
+<meta name="generator" content="PasDoc 0.13.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Phoenix API Doc</h2><p><a href="introduction.html" class="navigation">Introduction</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div></p></td><td class="content">
+<link rel="icon" type="image/ico" href="Phoenix_icon.png"></link>
+<link rel="shortcut icon" href="Phoenix_icon.png"></link>
+<h1 class="unit">Unit phxGraphics</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td>Uses</td><td><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></td><td><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></td><td><a class="section" href="#PasDoc-Types">Types</a></td><td><a class="section" href="#PasDoc-Constants">Constants</a></td><td>Variables</td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="description">Description</h2>
+<p>
+Classes for texture loading and rendering</p>
+<a name="PasDoc-Uses"></a><h2 class="overview">Overview</h2>
+<a name="PasDoc-Classes"></a><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold" href="phxGraphics.TPHXPixel.html"><code>TPHXPixel</code></a></td>
+<td class="itemdesc">A single pixel in a graphic image</td>
+</tr>
+<tr class="list2">
+<td class="itemname">record&nbsp;<a class="bold" href="phxGraphics.TPHXGraphicHeader.html"><code>TPHXGraphicHeader</code></a></td>
+<td class="itemdesc">The header for graphic files</td>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold" href="phxGraphics.TPHXGraphic.html"><code>TPHXGraphic</code></a></td>
+<td class="itemdesc">Container for a graphics image of a given size and format</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxGraphics.TPHXGraphicFiler.html"><code>TPHXGraphicFiler</code></a></td>
+<td class="itemdesc">Class for loading and saving graphics images</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxGraphics.TPHXGraphicReader.html"><code>TPHXGraphicReader</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxGraphics.TPHXGraphicWriter.html"><code>TPHXGraphicWriter</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold" href="phxGraphics.TPHXGraphicFormat.html"><code>TPHXGraphicFormat</code></a></td>
+<td class="itemdesc">A graphic format is a description of a file format and the graphic importer</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxGraphics.TPHXGraphicFormats.html"><code>TPHXGraphicFormats</code></a></td>
+<td class="itemdesc">Container for a list of graphic formats</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxGraphics.TPHXBitmap.html"><code>TPHXBitmap</code></a></td>
+<td class="itemdesc">The bitmap is a class for manipulating the pixels of a graphic</td>
+</tr>
+</table>
+<a name="PasDoc-FuncsProcs"></a><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxGraphics.html#GetPixelFormatSize">GetPixelFormatSize</a></b>(const Format: <a  href="phxGraphics.html#TPHXPixelFormat">TPHXPixelFormat</a>): Byte;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxGraphics.html#GetPixelFormatGetter">GetPixelFormatGetter</a></b>(const Format: <a  href="phxGraphics.html#TPHXPixelFormat">TPHXPixelFormat</a>): <a  href="phxGraphics.html#TGetPixel">TGetPixel</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxGraphics.html#GetPixelFormatSetter">GetPixelFormatSetter</a></b>(const Format: <a  href="phxGraphics.html#TPHXPixelFormat">TPHXPixelFormat</a>): <a  href="phxGraphics.html#TSetPixel">TSetPixel</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxGraphics.html#GraphicFormats">GraphicFormats</a></b>: <a  href="phxGraphics.TPHXGraphicFormats.html">TPHXGraphicFormats</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxGraphics.html#isPowerOfTwo">isPowerOfTwo</a></b>(Size: Integer): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxGraphics.html#nextPowerOfTwo">nextPowerOfTwo</a></b>(Size: Integer): Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxGraphics.html#SavePixels">SavePixels</a></b>(Stream: TStream; const APixels: <a  href="phxTypes.html#PByteArray">PByteArray</a>; const ASize: Integer): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxGraphics.html#LoadPixels">LoadPixels</a></b>(Stream: TStream; const APixels: <a  href="phxTypes.html#PByteArray">PByteArray</a>; const ASize: Integer): Boolean;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Types"></a><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxGraphics.html#TPHXPixelFormat">TPHXPixelFormat</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxGraphics.html#TPHXPixelChannel">TPHXPixelChannel</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxGraphics.html#PPHXPixel">PPHXPixel</a></b> = &circ;<a  href="phxGraphics.TPHXPixel.html">TPHXPixel</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxGraphics.html#PPHXPixelList">PPHXPixelList</a></b> = &circ;<a  href="phxGraphics.html#TPHXPixelList">TPHXPixelList</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxGraphics.html#TPHXPixelList">TPHXPixelList</a></b> = array[0..$00FFFFFF] of <a  href="phxGraphics.TPHXPixel.html">TPHXPixel</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxGraphics.html#TGetPixel">TGetPixel</a></b> = procedure(var Pixel: PByte; out Color: <a  href="phxGraphics.TPHXPixel.html">TPHXPixel</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxGraphics.html#TSetPixel">TSetPixel</a></b> = procedure(var Pixel: PByte; const Color: <a  href="phxGraphics.TPHXPixel.html">TPHXPixel</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxGraphics.html#TPHXGraphicCompression">TPHXGraphicCompression</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxGraphics.html#PGraphicFormatList">PGraphicFormatList</a></b> = &circ;<a  href="phxGraphics.html#TGraphicFormatList">TGraphicFormatList</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxGraphics.html#TGraphicFormatList">TGraphicFormatList</a></b> = array[0..$00FFFFFF] of <a  href="phxGraphics.TPHXGraphicFormat.html">TPHXGraphicFormat</a>;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Constants"></a><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxGraphics.html#PHXGRAPHIC_VERSION">PHXGRAPHIC_VERSION</a></b> = 1;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxGraphics.html#DefaultGraphicCompression">DefaultGraphicCompression</a></b>: <a  href="phxGraphics.html#TPHXGraphicCompression">TPHXGraphicCompression</a> = gcZLib;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetPixelFormatSize"></a><code>function <b>GetPixelFormatSize</b>(const Format: <a  href="phxGraphics.html#TPHXPixelFormat">TPHXPixelFormat</a>): Byte;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Returns the size of one pixel for a given pixel format</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetPixelFormatGetter"></a><code>function <b>GetPixelFormatGetter</b>(const Format: <a  href="phxGraphics.html#TPHXPixelFormat">TPHXPixelFormat</a>): <a  href="phxGraphics.html#TGetPixel">TGetPixel</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Return the get pixel function for a given format</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetPixelFormatSetter"></a><code>function <b>GetPixelFormatSetter</b>(const Format: <a  href="phxGraphics.html#TPHXPixelFormat">TPHXPixelFormat</a>): <a  href="phxGraphics.html#TSetPixel">TSetPixel</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Return the set pixel function for a given format</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GraphicFormats"></a><code>function <b>GraphicFormats</b>: <a  href="phxGraphics.TPHXGraphicFormats.html">TPHXGraphicFormats</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Save a graphic to a stream using this format procedure SaveGraphic(Stream: TStream; const Graphic: TPHXGraphic); Load a graphic from a stream using this format procedure LoadGraphic(Stream: TStream; var Graphic: TPHXGraphic); List of supported graphic formats for saving and loading textures</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="isPowerOfTwo"></a><code>function <b>isPowerOfTwo</b>(Size: Integer): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="nextPowerOfTwo"></a><code>function <b>nextPowerOfTwo</b>(Size: Integer): Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="SavePixels"></a><code>function <b>SavePixels</b>(Stream: TStream; const APixels: <a  href="phxTypes.html#PByteArray">PByteArray</a>; const ASize: Integer): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="LoadPixels"></a><code>function <b>LoadPixels</b>(Stream: TStream; const APixels: <a  href="phxTypes.html#PByteArray">PByteArray</a>; const ASize: Integer): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXPixelFormat"></a><code><b>TPHXPixelFormat</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Supported pixel formats</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+pfNone: Empty pixel format</li>
+<li>
+pfAlpha: 8 bit image containing grayscale values pfGray, 8 bit image containing alpha values</li>
+<li>
+pfRGB: 24 bit</li>
+<li>
+pfRGBA: 32 bit</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXPixelChannel"></a><code><b>TPHXPixelChannel</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+pcRed: Red channel</li>
+<li>
+pcGreen: Green channel</li>
+<li>
+pcBlue: Blue channel</li>
+<li>
+pcAlpha: Alpha channel</li>
+<li>
+pcRGB: Red, Green and Blue channels</li>
+<li>
+pcRGBA: Red, Green, Blue and Alpha channels</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PPHXPixel"></a><code><b>PPHXPixel</b> = &circ;<a  href="phxGraphics.TPHXPixel.html">TPHXPixel</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Pixel pointer</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PPHXPixelList"></a><code><b>PPHXPixelList</b> = &circ;<a  href="phxGraphics.html#TPHXPixelList">TPHXPixelList</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXPixelList"></a><code><b>TPHXPixelList</b> = array[0..$00FFFFFF] of <a  href="phxGraphics.TPHXPixel.html">TPHXPixel</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGetPixel"></a><code><b>TGetPixel</b> = procedure(var Pixel: PByte; out Color: <a  href="phxGraphics.TPHXPixel.html">TPHXPixel</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Function callback for getting one pixel in a image</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TSetPixel"></a><code><b>TSetPixel</b> = procedure(var Pixel: PByte; const Color: <a  href="phxGraphics.TPHXPixel.html">TPHXPixel</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Function callback for getting one pixel in a image</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXGraphicCompression"></a><code><b>TPHXGraphicCompression</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+gcUncompressed = 0: The graphic is stored as raw values</li>
+<li>
+gcZLib = 1: The graphic is stored using ZLib Compression</li>
+<li>
+gcDDS = 2: Save the graphic as a DDS image</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PGraphicFormatList"></a><code><b>PGraphicFormatList</b> = &circ;<a  href="phxGraphics.html#TGraphicFormatList">TGraphicFormatList</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGraphicFormatList"></a><code><b>TGraphicFormatList</b> = array[0..$00FFFFFF] of <a  href="phxGraphics.TPHXGraphicFormat.html">TPHXGraphicFormat</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PHXGRAPHIC_VERSION"></a><code><b>PHXGRAPHIC_VERSION</b> = 1;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Version of the graphic files</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DefaultGraphicCompression"></a><code><b>DefaultGraphicCompression</b>: <a  href="phxGraphics.html#TPHXGraphicCompression">TPHXGraphicCompression</a> = gcZLib;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+The compressor to use to compress the pixel data when saving the texture property GraphicFormat: TPHXGraphicFormat read FGraphicFormat write FGraphicFormat; Importer to use to load this format, nil if loading isnt supported property GraphicFiler: TPHXGraphicFiler read FGraphicFormat.Filer write FGraphicFormat.Filer; The default graphic compression to use</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.13.0</a> on 2013-08-26 11:02:37</em>
+</span>
+</td></tr></table></body></html>

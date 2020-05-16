@@ -1,0 +1,296 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Phoenix API Doc: phxFont</title>
+<meta name="generator" content="PasDoc 0.13.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Phoenix API Doc</h2><p><a href="introduction.html" class="navigation">Introduction</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div></p></td><td class="content">
+<link rel="icon" type="image/ico" href="Phoenix_icon.png"></link>
+<link rel="shortcut icon" href="Phoenix_icon.png"></link>
+<h1 class="unit">Unit phxFont</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td>Uses</td><td><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></td><td>Functions and Procedures</td><td><a class="section" href="#PasDoc-Types">Types</a></td><td><a class="section" href="#PasDoc-Constants">Constants</a></td><td>Variables</td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="description">Description</h2>
+<p>
+Text rendering Functions and bitmap fonts</p>
+<a name="PasDoc-Uses"></a><h2 class="overview">Overview</h2>
+<a name="PasDoc-Classes"></a><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold" href="phxFont.TPHXCharacter.html"><code>TPHXCharacter</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxFont.TPHXCharacterList.html"><code>TPHXCharacterList</code></a></td>
+<td class="itemdesc">List of characters</td>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold" href="phxFont.TPHXKerning.html"><code>TPHXKerning</code></a></td>
+<td class="itemdesc">Describes the kerning for two characters</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxFont.TPHXKerningList.html"><code>TPHXKerningList</code></a></td>
+<td class="itemdesc">List of kerning pairs</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxFont.TPHXTextMetric.html"><code>TPHXTextMetric</code></a></td>
+<td class="itemdesc">Contains basic information about a font</td>
+</tr>
+<tr class="list2">
+<td class="itemname">record&nbsp;<a class="bold" href="phxFont.TPHXFontHeader.html"><code>TPHXFontHeader</code></a></td>
+<td class="itemdesc">The font file header.</td>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold" href="phxFont.TPHXCharacterBuffer.html"><code>TPHXCharacterBuffer</code></a></td>
+<td class="itemdesc">The data required to render a single character</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxFont.TPHXFont.html"><code>TPHXFont</code></a></td>
+<td class="itemdesc">TPHXFont</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="phxFont.TPHXFontList.html"><code>TPHXFontList</code></a></td>
+<td class="itemdesc">Container for a list of fonts</td>
+</tr>
+</table>
+<a name="PasDoc-Types"></a><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxFont.html#TPHXTextAlign">TPHXTextAlign</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxFont.html#TPHXAlignment">TPHXAlignment</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxFont.html#TPHXFontStyle">TPHXFontStyle</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxFont.html#TPHXFontStyles">TPHXFontStyles</a></b> = set of <a  href="phxFont.html#TPHXFontStyle">TPHXFontStyle</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxFont.html#TPHXFontWrap">TPHXFontWrap</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxFont.html#PPHXCharacter">PPHXCharacter</a></b> = &circ;<a  href="phxFont.TPHXCharacter.html">TPHXCharacter</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxFont.html#PCharacterList">PCharacterList</a></b> = &circ;<a  href="phxFont.html#TCharacterList">TCharacterList</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxFont.html#TCharacterList">TCharacterList</a></b> = array[0.. $000FFFFF] of <a  href="phxFont.TPHXCharacter.html">TPHXCharacter</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxFont.html#TPHXCharacterMap">TPHXCharacterMap</a></b> = Array[Word] of Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxFont.html#PKerningList">PKerningList</a></b> = &circ;<a  href="phxFont.html#TKerningList">TKerningList</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxFont.html#TKerningList">TKerningList</a></b> = Array[0.. $000FFFFF] of <a  href="phxFont.TPHXKerning.html">TPHXKerning</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxFont.html#PFontList">PFontList</a></b> = &circ;<a  href="phxFont.html#TFontList">TFontList</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxFont.html#TFontList">TFontList</a></b> = array[0..$00FFFFFF] of <a  href="phxFont.TPHXFont.html">TPHXFont</a>;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Constants"></a><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxFont.html#PHXFONT_EXT">PHXFONT_EXT</a></b> = '.phxfnt';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxFont.html#PHXFONT_VERSION">PHXFONT_VERSION</a></b> = 11;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXTextAlign"></a><code><b>TPHXTextAlign</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Text alignment for rectangles</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+taTopLeft: Align to the top left of the rectangle</li>
+<li>
+taTop: Align to the top</li>
+<li>
+taTopRight: Align to the top right of the rectangle</li>
+<li>
+taLeft: Align to the left of the rectangle</li>
+<li>
+taCenter: Align to the center of the rectangle</li>
+<li>
+taRight: Align to the right of the rectangle</li>
+<li>
+taBottomLeft: Align to the bottom left of the rectangle</li>
+<li>
+taBottom: Align to the bottom of the rectangle</li>
+<li>
+taBottomRight: Align to the bottom right of the rectangle</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXAlignment"></a><code><b>TPHXAlignment</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Text alignment for a single line</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+alLeft: Align the text to the left</li>
+<li>
+alCenter: Align the text in the center</li>
+<li>
+alRight: Align the text to the right</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXFontStyle"></a><code><b>TPHXFontStyle</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Font style</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+fsBold: Bold</li>
+<li>
+fsItalic: Italic</li>
+<li>
+fsUnderline: Underline</li>
+<li>
+fsStrikeOut: Strikeout</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXFontStyles"></a><code><b>TPHXFontStyles</b> = set of <a  href="phxFont.html#TPHXFontStyle">TPHXFontStyle</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Set of font styles</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXFontWrap"></a><code><b>TPHXFontWrap</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Wrapping mode for fonts</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+wmWord: Word wrap for each word</li>
+<li>
+wmChar: Word wrap on a character for character basis</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PPHXCharacter"></a><code><b>PPHXCharacter</b> = &circ;<a  href="phxFont.TPHXCharacter.html">TPHXCharacter</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Font glyphs X | Width | Y &mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&ndash; | | | YOffset | ###### | ####### +&mdash;- | # # | # # | | # # | # # | Height | ######## | ###### | TPHXCharacterSet.Base | # # | # # | | # # | # # | | # # | ####### +&mdash;&mdash;&mdash;&ndash; | | | &mdash;+&mdash;-+&mdash;&mdash;&mdash;-+&mdash;+&mdash;&mdash;&mdash;-+ | | | |XOff| XAdvance |
+
+<p>Describes a single character. The total width of a character is the summation of the A, B, and C spaces.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PCharacterList"></a><code><b>PCharacterList</b> = &circ;<a  href="phxFont.html#TCharacterList">TCharacterList</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TCharacterList"></a><code><b>TCharacterList</b> = array[0.. $000FFFFF] of <a  href="phxFont.TPHXCharacter.html">TPHXCharacter</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPHXCharacterMap"></a><code><b>TPHXCharacterMap</b> = Array[Word] of Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Maps a character by the unicode number to a index in the character list</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PKerningList"></a><code><b>PKerningList</b> = &circ;<a  href="phxFont.html#TKerningList">TKerningList</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TKerningList"></a><code><b>TKerningList</b> = Array[0.. $000FFFFF] of <a  href="phxFont.TPHXKerning.html">TPHXKerning</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PFontList"></a><code><b>PFontList</b> = &circ;<a  href="phxFont.html#TFontList">TFontList</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TFontList"></a><code><b>TFontList</b> = array[0..$00FFFFFF] of <a  href="phxFont.TPHXFont.html">TPHXFont</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PHXFONT_EXT"></a><code><b>PHXFONT_EXT</b> = '.phxfnt';</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Font file extension</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PHXFONT_VERSION"></a><code><b>PHXFONT_VERSION</b> = 11;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Version</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.13.0</a> on 2013-08-26 11:02:37</em>
+</span>
+</td></tr></table></body></html>

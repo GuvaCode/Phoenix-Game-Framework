@@ -1,0 +1,783 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Phoenix API Doc: phxCanvas: Class TPHXCanvas</title>
+<meta name="generator" content="PasDoc 0.13.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Phoenix API Doc</h2><p><a href="introduction.html" class="navigation">Introduction</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div></p></td><td class="content">
+<link rel="icon" type="image/ico" href="Phoenix_icon.png"></link>
+<link rel="shortcut icon" href="Phoenix_icon.png"></link>
+<a name="TPHXCanvas"></a><h1 class="cio">Class TPHXCanvas</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></td><td><a class="section" href="#PasDoc-Fields">Fields</a></td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td><a class="section" href="#PasDoc-Properties">Properties</a></td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="phxCanvas.html">phxCanvas</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TPHXCanvas = class(TPHXCustomCanvas)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Canvas class for rendering 2D primitives</p>
+<a name="PasDoc-Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TPHXCustomCanvas</li>
+<li class="thisitem">TPHXCanvas</li></ul><h2 class="overview">Overview</h2>
+<a name="PasDoc-Fields"></a><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a  href="phxCanvas.TPHXCanvas.html#FDrawCalls">FDrawCalls</a></b>: Integer;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCanvas.TPHXCanvas.html#FlushCanvas">FlushCanvas</a></b>; virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCanvas.TPHXCanvas.html#SetPrimitive">SetPrimitive</a></b>(const Value: <a  href="phxTypes.html#TPHXPrimitiveType">TPHXPrimitiveType</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCanvas.TPHXCanvas.html#SetTexture">SetTexture</a></b>(const Value: <a  href="phxTexture.TPHXTexture.html">TPHXTexture</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCanvas.TPHXCanvas.html#SetBlending">SetBlending</a></b>(const Value: <a  href="phxTypes.html#TPHXBlendMode">TPHXBlendMode</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="phxCanvas.TPHXCanvas.html#Create">Create</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a  href="phxCanvas.TPHXCanvas.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxCanvas.TPHXCanvas.html#FlushRequired">FlushRequired</a></b>(const VertexCount, IndexCount: Integer): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCanvas.TPHXCanvas.html#Flush">Flush</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCanvas.TPHXCanvas.html#Draw">Draw</a></b>(const Primitive: <a  href="phxTypes.html#TPHXPrimitiveType">TPHXPrimitiveType</a>; Vertices: <a  href="phxTypes.html#PVertexList">PVertexList</a>; Indicies: <a  href="phxTypes.html#PIndexList">PIndexList</a>; VertexCount: Integer; IndexCount: Integer); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCanvas.TPHXCanvas.html#Draw">Draw</a></b>(const Primitive: <a  href="phxTypes.html#TPHXPrimitiveType">TPHXPrimitiveType</a>; Vertices: <a  href="phxTypes.html#PVertexList">PVertexList</a>; Indicies: <a  href="phxTypes.html#PIndexList">PIndexList</a>; VertexCount: Integer; IndexCount: Integer; Texture: <a  href="phxTexture.TPHXTexture.html">TPHXTexture</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCanvas.TPHXCanvas.html#Vertex">Vertex</a></b>(Index: Integer; Position: <a  href="phxTypes.TVector3f.html">TVector3f</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCanvas.TPHXCanvas.html#Vertex">Vertex</a></b>(Index: Integer; Position: <a  href="phxTypes.TVector3f.html">TVector3f</a>; TexCoord: <a  href="phxTypes.TVector2f.html">TVector2f</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCanvas.TPHXCanvas.html#Point">Point</a></b>(const X, Y: Integer; const Size: Integer = 1); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCanvas.TPHXCanvas.html#Point">Point</a></b>(const X, Y: Single; const Size: Integer = 1); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCanvas.TPHXCanvas.html#Point">Point</a></b>(const Position: <a  href="phxTypes.TVector2i.html">TVector2i</a>; const Size: Integer = 1); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCanvas.TPHXCanvas.html#Point">Point</a></b>(const Position: <a  href="phxTypes.TVector2f.html">TVector2f</a>; const Size: Integer = 1); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCanvas.TPHXCanvas.html#Line">Line</a></b>(const X1, Y1, X2, Y2: Integer); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCanvas.TPHXCanvas.html#Line">Line</a></b>(const X1, Y1, X2, Y2: Single); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCanvas.TPHXCanvas.html#Line">Line</a></b>(const P1, P2 : <a  href="phxTypes.TVector2i.html">TVector2i</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCanvas.TPHXCanvas.html#Line">Line</a></b>(const P1, P2 : <a  href="phxTypes.TVector2f.html">TVector2f</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCanvas.TPHXCanvas.html#Line">Line</a></b>(const P1, P2 : <a  href="phxTypes.TVector3i.html">TVector3i</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCanvas.TPHXCanvas.html#Line">Line</a></b>(const P1, P2 : <a  href="phxTypes.TVector3f.html">TVector3f</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCanvas.TPHXCanvas.html#Triangle">Triangle</a></b>(const P1, P2, P3: <a  href="phxTypes.TVector2i.html">TVector2i</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCanvas.TPHXCanvas.html#Triangle">Triangle</a></b>(const P1, P2, P3: <a  href="phxTypes.TVector2f.html">TVector2f</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCanvas.TPHXCanvas.html#Rectangle">Rectangle</a></b>(const X1, Y1, X2, Y2: Single); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCanvas.TPHXCanvas.html#Rectangle">Rectangle</a></b>(const Rect: <a  href="phxTypes.TRectf.html">TRectf</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCanvas.TPHXCanvas.html#Rectangle">Rectangle</a></b>(const Rect: <a  href="phxTypes.TRectf.html">TRectf</a>; const Coord: <a  href="phxTypes.TRectf.html">TRectf</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCanvas.TPHXCanvas.html#Circle">Circle</a></b>(const Center: <a  href="phxTypes.TVector2f.html">TVector2f</a>; const Radius: Single; const Quality: Integer = 64); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCanvas.TPHXCanvas.html#Circle">Circle</a></b>(const X,Y: Single; const Radius: Single; const Quality: Integer = 64); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCanvas.TPHXCanvas.html#Ellipse">Ellipse</a></b>(const X,Y: Single; const xRadius, yRadius: Single; const Quality: Integer = 64); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCanvas.TPHXCanvas.html#Ellipse">Ellipse</a></b>(const Center: <a  href="phxTypes.TVector2f.html">TVector2f</a>; const Radius: <a  href="phxTypes.TVector2f.html">TVector2f</a>; const Quality: Integer = 64); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCanvas.TPHXCanvas.html#Arc">Arc</a></b>(const Center: <a  href="phxTypes.TVector2f.html">TVector2f</a>; const Radius: <a  href="phxTypes.TVector2f.html">TVector2f</a>; const Angles: <a  href="phxTypes.TRangef.html">TRangef</a>; const Quality: Integer = 32);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCanvas.TPHXCanvas.html#Arrow">Arrow</a></b>(const StartPosition, EndPosition: <a  href="phxTypes.TVector2f.html">TVector2f</a>; const ArrowSize: Single);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCanvas.TPHXCanvas.html#FilledTriangle">FilledTriangle</a></b>(const P1, P2, P3: <a  href="phxTypes.TVector3f.html">TVector3f</a> ); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCanvas.TPHXCanvas.html#FilledTriangle">FilledTriangle</a></b>(const P1, P2, P3: <a  href="phxTypes.TVector2f.html">TVector2f</a> ); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCanvas.TPHXCanvas.html#FilledRectangle">FilledRectangle</a></b>(const X1, Y1, X2, Y2: Single); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCanvas.TPHXCanvas.html#FilledRectangle">FilledRectangle</a></b>(const Rect: <a  href="phxTypes.TRectf.html">TRectf</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCanvas.TPHXCanvas.html#FilledRectangle">FilledRectangle</a></b>(const Rect: <a  href="phxTypes.TRectf.html">TRectf</a>; const Coord: <a  href="phxTypes.TRectf.html">TRectf</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCanvas.TPHXCanvas.html#FilledEllipse">FilledEllipse</a></b>(const Center, Radius: <a  href="phxTypes.TVector2f.html">TVector2f</a>; const Quality: Integer = 32);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCanvas.TPHXCanvas.html#FilledArc">FilledArc</a></b>(const Center: <a  href="phxTypes.TVector2f.html">TVector2f</a>; const Radius: <a  href="phxTypes.TVector2f.html">TVector2f</a>; const Angles: <a  href="phxTypes.TRangef.html">TRangef</a>; const Quality: Integer = 32);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCanvas.TPHXCanvas.html#Background">Background</a></b>(const Width, Height: Integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCanvas.TPHXCanvas.html#Overlay">Overlay</a></b>(const Width, Height: Integer; const Color: <a  href="phxTypes.TColor4f.html">TColor4f</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCanvas.TPHXCanvas.html#SetClipEnabled">SetClipEnabled</a></b>(const Enabled: Boolean); virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCanvas.TPHXCanvas.html#SetClipRect">SetClipRect</a></b>(const Rect: <a  href="phxTypes.TRectI.html">TRecti</a>); overload; virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCanvas.TPHXCanvas.html#SetClipRect">SetClipRect</a></b>(const Rect: <a  href="phxTypes.TRectf.html">TRectf</a>); overload; virtual; abstract;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxCanvas.TPHXCanvas.html#Primitive">Primitive</a></b>: <a  href="phxTypes.html#TPHXPrimitiveType">TPHXPrimitiveType</a> read FPrimitive write <a  href="phxCanvas.TPHXCanvas.html#SetPrimitive">SetPrimitive</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxCanvas.TPHXCanvas.html#Texture">Texture</a></b>: <a  href="phxTexture.TPHXTexture.html">TPHXTexture</a> read FTexture write <a  href="phxCanvas.TPHXCanvas.html#SetTexture">SetTexture</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxCanvas.TPHXCanvas.html#Blending">Blending</a></b>: <a  href="phxTypes.html#TPHXBlendMode">TPHXBlendMode</a> read FBlending write <a  href="phxCanvas.TPHXCanvas.html#SetBlending">SetBlending</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxCanvas.TPHXCanvas.html#Color">Color</a></b>: <a  href="phxTypes.TColor4f.html">TColor4f</a> read FColor write FColor;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxCanvas.TPHXCanvas.html#Vertices">Vertices</a></b>: <a  href="phxTypes.TPHXVertexList.html">TPHXVertexList</a> read FVertices;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxCanvas.TPHXCanvas.html#Indices">Indices</a></b>: <a  href="phxTypes.TPHXIndexList.html">TPHXIndexList</a> read FIndices;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxCanvas.TPHXCanvas.html#DrawCalls">DrawCalls</a></b>: Integer read <a  href="phxCanvas.TPHXCanvas.html#FDrawCalls">FDrawCalls</a> write <a  href="phxCanvas.TPHXCanvas.html#FDrawCalls">FDrawCalls</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FDrawCalls"></a><code><b>FDrawCalls</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The number of drawcalls this canvas has produced</p>
+</td></tr>
+</table>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FlushCanvas"></a><code>procedure <b>FlushCanvas</b>; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Flush the canvas</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="SetPrimitive"></a><code>procedure <b>SetPrimitive</b>(const Value: <a  href="phxTypes.html#TPHXPrimitiveType">TPHXPrimitiveType</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="SetTexture"></a><code>procedure <b>SetTexture</b>(const Value: <a  href="phxTexture.TPHXTexture.html">TPHXTexture</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="SetBlending"></a><code>procedure <b>SetBlending</b>(const Value: <a  href="phxTypes.html#TPHXBlendMode">TPHXBlendMode</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Create a new canvas, use TPHXDevice.CreateCanvas instead</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Destroys this canvas</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FlushRequired"></a><code>function <b>FlushRequired</b>(const VertexCount, IndexCount: Integer): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns if the canvas needs flushing before adding a number of verticies and indicies</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Flush"></a><code>procedure <b>Flush</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Flush the canvas, this sends the content of the vertex and index buffers to the graphics cards</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Draw"></a><code>procedure <b>Draw</b>(const Primitive: <a  href="phxTypes.html#TPHXPrimitiveType">TPHXPrimitiveType</a>; Vertices: <a  href="phxTypes.html#PVertexList">PVertexList</a>; Indicies: <a  href="phxTypes.html#PIndexList">PIndexList</a>; VertexCount: Integer; IndexCount: Integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Low level rendering function for adding vertices and indicies to the canvas</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Draw"></a><code>procedure <b>Draw</b>(const Primitive: <a  href="phxTypes.html#TPHXPrimitiveType">TPHXPrimitiveType</a>; Vertices: <a  href="phxTypes.html#PVertexList">PVertexList</a>; Indicies: <a  href="phxTypes.html#PIndexList">PIndexList</a>; VertexCount: Integer; IndexCount: Integer; Texture: <a  href="phxTexture.TPHXTexture.html">TPHXTexture</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Low level rendering function for adding vertices and indicies to the canvas</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Vertex"></a><code>procedure <b>Vertex</b>(Index: Integer; Position: <a  href="phxTypes.TVector3f.html">TVector3f</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Change a vertex at a index in the vertex list</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Vertex"></a><code>procedure <b>Vertex</b>(Index: Integer; Position: <a  href="phxTypes.TVector3f.html">TVector3f</a>; TexCoord: <a  href="phxTypes.TVector2f.html">TVector2f</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Change a vertex at a index in the vertex list</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Point"></a><code>procedure <b>Point</b>(const X, Y: Integer; const Size: Integer = 1); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a point</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Point"></a><code>procedure <b>Point</b>(const X, Y: Single; const Size: Integer = 1); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a point</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Point"></a><code>procedure <b>Point</b>(const Position: <a  href="phxTypes.TVector2i.html">TVector2i</a>; const Size: Integer = 1); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a point</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Point"></a><code>procedure <b>Point</b>(const Position: <a  href="phxTypes.TVector2f.html">TVector2f</a>; const Size: Integer = 1); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a point</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Line"></a><code>procedure <b>Line</b>(const X1, Y1, X2, Y2: Integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a line between two points</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Line"></a><code>procedure <b>Line</b>(const X1, Y1, X2, Y2: Single); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a line between two points</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Line"></a><code>procedure <b>Line</b>(const P1, P2 : <a  href="phxTypes.TVector2i.html">TVector2i</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a line between two points</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Line"></a><code>procedure <b>Line</b>(const P1, P2 : <a  href="phxTypes.TVector2f.html">TVector2f</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a line between two points</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Line"></a><code>procedure <b>Line</b>(const P1, P2 : <a  href="phxTypes.TVector3i.html">TVector3i</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a line between two points</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Line"></a><code>procedure <b>Line</b>(const P1, P2 : <a  href="phxTypes.TVector3f.html">TVector3f</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a line between two points</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Triangle"></a><code>procedure <b>Triangle</b>(const P1, P2, P3: <a  href="phxTypes.TVector2i.html">TVector2i</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a triangle between three points</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Triangle"></a><code>procedure <b>Triangle</b>(const P1, P2, P3: <a  href="phxTypes.TVector2f.html">TVector2f</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a triangle between three points</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Rectangle"></a><code>procedure <b>Rectangle</b>(const X1, Y1, X2, Y2: Single); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a rectangle</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Rectangle"></a><code>procedure <b>Rectangle</b>(const Rect: <a  href="phxTypes.TRectf.html">TRectf</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a rectangle</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Rectangle"></a><code>procedure <b>Rectangle</b>(const Rect: <a  href="phxTypes.TRectf.html">TRectf</a>; const Coord: <a  href="phxTypes.TRectf.html">TRectf</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a filled rectangle with custom texture coordinates</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Circle"></a><code>procedure <b>Circle</b>(const Center: <a  href="phxTypes.TVector2f.html">TVector2f</a>; const Radius: Single; const Quality: Integer = 64); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a Circle</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Circle"></a><code>procedure <b>Circle</b>(const X,Y: Single; const Radius: Single; const Quality: Integer = 64); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a Circle</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Ellipse"></a><code>procedure <b>Ellipse</b>(const X,Y: Single; const xRadius, yRadius: Single; const Quality: Integer = 64); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a Ellipse</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Ellipse"></a><code>procedure <b>Ellipse</b>(const Center: <a  href="phxTypes.TVector2f.html">TVector2f</a>; const Radius: <a  href="phxTypes.TVector2f.html">TVector2f</a>; const Quality: Integer = 64); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a Ellipse</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Arc"></a><code>procedure <b>Arc</b>(const Center: <a  href="phxTypes.TVector2f.html">TVector2f</a>; const Radius: <a  href="phxTypes.TVector2f.html">TVector2f</a>; const Angles: <a  href="phxTypes.TRangef.html">TRangef</a>; const Quality: Integer = 32);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a arc</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Arrow"></a><code>procedure <b>Arrow</b>(const StartPosition, EndPosition: <a  href="phxTypes.TVector2f.html">TVector2f</a>; const ArrowSize: Single);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a arrow from a start position to a end position, arrow size determines the size of the arror</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FilledTriangle"></a><code>procedure <b>FilledTriangle</b>(const P1, P2, P3: <a  href="phxTypes.TVector3f.html">TVector3f</a> ); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a filled triangle between three points</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FilledTriangle"></a><code>procedure <b>FilledTriangle</b>(const P1, P2, P3: <a  href="phxTypes.TVector2f.html">TVector2f</a> ); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a filled triangle between three points</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FilledRectangle"></a><code>procedure <b>FilledRectangle</b>(const X1, Y1, X2, Y2: Single); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a filled rectangle</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FilledRectangle"></a><code>procedure <b>FilledRectangle</b>(const Rect: <a  href="phxTypes.TRectf.html">TRectf</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a filled rectangle</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FilledRectangle"></a><code>procedure <b>FilledRectangle</b>(const Rect: <a  href="phxTypes.TRectf.html">TRectf</a>; const Coord: <a  href="phxTypes.TRectf.html">TRectf</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a filled rectangle with custom texture coordinates</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FilledEllipse"></a><code>procedure <b>FilledEllipse</b>(const Center, Radius: <a  href="phxTypes.TVector2f.html">TVector2f</a>; const Quality: Integer = 32);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a filled ellipse</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FilledArc"></a><code>procedure <b>FilledArc</b>(const Center: <a  href="phxTypes.TVector2f.html">TVector2f</a>; const Radius: <a  href="phxTypes.TVector2f.html">TVector2f</a>; const Angles: <a  href="phxTypes.TRangef.html">TRangef</a>; const Quality: Integer = 32);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a filled arc</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Background"></a><code>procedure <b>Background</b>(const Width, Height: Integer);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a tiled background using the current texture</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Overlay"></a><code>procedure <b>Overlay</b>(const Width, Height: Integer; const Color: <a  href="phxTypes.TColor4f.html">TColor4f</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a overlay that can be used for fading the screen in and out</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetClipEnabled"></a><code>procedure <b>SetClipEnabled</b>(const Enabled: Boolean); virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Enable or disable clipping</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetClipRect"></a><code>procedure <b>SetClipRect</b>(const Rect: <a  href="phxTypes.TRectI.html">TRecti</a>); overload; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Set the clipping rectangle</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetClipRect"></a><code>procedure <b>SetClipRect</b>(const Rect: <a  href="phxTypes.TRectf.html">TRectf</a>); overload; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Set the clipping rectangle</p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Primitive"></a><code>property <b>Primitive</b>: <a  href="phxTypes.html#TPHXPrimitiveType">TPHXPrimitiveType</a> read FPrimitive write <a  href="phxCanvas.TPHXCanvas.html#SetPrimitive">SetPrimitive</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The primitive to render, changing this will flush the canvas</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Texture"></a><code>property <b>Texture</b>: <a  href="phxTexture.TPHXTexture.html">TPHXTexture</a> read FTexture write <a  href="phxCanvas.TPHXCanvas.html#SetTexture">SetTexture</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Changes the texture, changing this will flush the canvas</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Blending"></a><code>property <b>Blending</b>: <a  href="phxTypes.html#TPHXBlendMode">TPHXBlendMode</a> read FBlending write <a  href="phxCanvas.TPHXCanvas.html#SetBlending">SetBlending</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Changes the blendmode, changing this will flush the canvas</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Color"></a><code>property <b>Color</b>: <a  href="phxTypes.TColor4f.html">TColor4f</a> read FColor write FColor;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The color to add to the verticies</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Vertices"></a><code>property <b>Vertices</b>: <a  href="phxTypes.TPHXVertexList.html">TPHXVertexList</a> read FVertices;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The vertex list</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Indices"></a><code>property <b>Indices</b>: <a  href="phxTypes.TPHXIndexList.html">TPHXIndexList</a> read FIndices;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The index list</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DrawCalls"></a><code>property <b>DrawCalls</b>: Integer read <a  href="phxCanvas.TPHXCanvas.html#FDrawCalls">FDrawCalls</a> write <a  href="phxCanvas.TPHXCanvas.html#FDrawCalls">FDrawCalls</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The number of drawcalls</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.13.0</a> on 2013-08-26 11:02:35</em>
+</span>
+</td></tr></table></body></html>

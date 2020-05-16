@@ -1,0 +1,1232 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Phoenix API Doc: phxMath</title>
+<meta name="generator" content="PasDoc 0.13.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Phoenix API Doc</h2><p><a href="introduction.html" class="navigation">Introduction</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div></p></td><td class="content">
+<link rel="icon" type="image/ico" href="Phoenix_icon.png"></link>
+<link rel="shortcut icon" href="Phoenix_icon.png"></link>
+<h1 class="unit">Unit phxMath</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td>Uses</td><td><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></td><td><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></td><td>Types</td><td><a class="section" href="#PasDoc-Constants">Constants</a></td><td>Variables</td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="description">Description</h2>
+<p>
+Vector and matrix math</p>
+<a name="PasDoc-Uses"></a><h2 class="overview">Overview</h2>
+<a name="PasDoc-Classes"></a><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold" href="phxMath.TCollisionParameter.html"><code>TCollisionParameter</code></a></td>
+<td class="itemdesc">Generic collision parameter</td>
+</tr>
+</table>
+<a name="PasDoc-FuncsProcs"></a><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="phxMath.html#Swap">Swap</a></b>(var A: Single; var B: Single);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#Sin256">Sin256</a></b>(I: Integer): Single; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#Sin256">Sin256</a></b>(I: Single ): Single; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#Cos256">Cos256</a></b>(I: Integer): Single; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#Cos256">Cos256</a></b>(I: Single ): Single; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#VectorMagnitude">VectorMagnitude</a></b>(const Vector: <a  href="phxTypes.TVector2i.html">TVector2i</a> ): Single; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#VectorMagnitude">VectorMagnitude</a></b>(const Vector: <a  href="phxTypes.TVector2f.html">TVector2f</a> ): Single; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#VectorMagnitudeSqr">VectorMagnitudeSqr</a></b>(const Vector: <a  href="phxTypes.TVector2i.html">TVector2i</a>): Single; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#VectorMagnitudeSqr">VectorMagnitudeSqr</a></b>(const Vector: <a  href="phxTypes.TVector2f.html">TVector2f</a>): Single; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#VectorNormalize">VectorNormalize</a></b>(const Vector: <a  href="phxTypes.TVector2i.html">TVector2i</a> ): <a  href="phxTypes.TVector2i.html">TVector2i</a> ; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#VectorNormalize">VectorNormalize</a></b>(const Vector: <a  href="phxTypes.TVector2f.html">TVector2f</a> ): <a  href="phxTypes.TVector2f.html">TVector2f</a> ; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#VectorNegate">VectorNegate</a></b>(const Vector: <a  href="phxTypes.TVector2i.html">TVector2i</a> ): <a  href="phxTypes.TVector2i.html">TVector2i</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#VectorNegate">VectorNegate</a></b>(const Vector: <a  href="phxTypes.TVector2f.html">TVector2f</a> ): <a  href="phxTypes.TVector2f.html">TVector2f</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#VectorAdd">VectorAdd</a></b>(const V1, V2: <a  href="phxTypes.TVector2i.html">TVector2i</a> ): <a  href="phxTypes.TVector2i.html">TVector2i</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#VectorAdd">VectorAdd</a></b>(const V1, V2: <a  href="phxTypes.TVector2f.html">TVector2f</a> ): <a  href="phxTypes.TVector2f.html">TVector2f</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#VectorSub">VectorSub</a></b>(const V1, V2: <a  href="phxTypes.TVector2i.html">TVector2i</a> ): <a  href="phxTypes.TVector2i.html">TVector2i</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#VectorSub">VectorSub</a></b>(const V1, V2: <a  href="phxTypes.TVector2f.html">TVector2f</a> ): <a  href="phxTypes.TVector2f.html">TVector2f</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#VectorMul">VectorMul</a></b>(const V1: <a  href="phxTypes.TVector2i.html">TVector2i</a> ; Scalar: Single): <a  href="phxTypes.TVector2i.html">TVector2i</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#VectorMul">VectorMul</a></b>(const V1: <a  href="phxTypes.TVector2f.html">TVector2f</a> ; Scalar: Single): <a  href="phxTypes.TVector2f.html">TVector2f</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#VectorDiv">VectorDiv</a></b>(const V1: <a  href="phxTypes.TVector2i.html">TVector2i</a> ; Scalar: Single): <a  href="phxTypes.TVector2i.html">TVector2i</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#VectorDiv">VectorDiv</a></b>(const V1: <a  href="phxTypes.TVector2f.html">TVector2f</a> ; Scalar: Single): <a  href="phxTypes.TVector2f.html">TVector2f</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#VectorDot">VectorDot</a></b>(const V1, V2: <a  href="phxTypes.TVector2i.html">TVector2i</a> ): Single; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#VectorDot">VectorDot</a></b>(const V1, V2: <a  href="phxTypes.TVector2f.html">TVector2f</a> ): Single; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#VectorCross">VectorCross</a></b>(const V1, V2: <a  href="phxTypes.TVector2i.html">TVector2i</a> ): Single; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#VectorCross">VectorCross</a></b>(const V1, V2: <a  href="phxTypes.TVector2f.html">TVector2f</a> ): Single; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#VectorReflect">VectorReflect</a></b>(const V, N: <a  href="phxTypes.TVector2f.html">TVector2f</a> ): <a  href="phxTypes.TVector2f.html">TVector2f</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#VectorReflect">VectorReflect</a></b>(const V, N: <a  href="phxTypes.TVector2i.html">TVector2i</a> ): <a  href="phxTypes.TVector2i.html">TVector2i</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#VectorMagnitude">VectorMagnitude</a></b>(const Vector: <a  href="phxTypes.TVector3i.html">TVector3i</a> ): Single; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#VectorMagnitude">VectorMagnitude</a></b>(const Vector: <a  href="phxTypes.TVector3f.html">TVector3f</a> ): Single; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#VectorMagnitudeSqr">VectorMagnitudeSqr</a></b>(const Vector: <a  href="phxTypes.TVector3i.html">TVector3i</a>): Single; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#VectorMagnitudeSqr">VectorMagnitudeSqr</a></b>(const Vector: <a  href="phxTypes.TVector3f.html">TVector3f</a>): Single; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#VectorNormalize">VectorNormalize</a></b>(const Vector: <a  href="phxTypes.TVector3i.html">TVector3i</a> ): <a  href="phxTypes.TVector3i.html">TVector3i</a> ; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#VectorNormalize">VectorNormalize</a></b>(const Vector: <a  href="phxTypes.TVector3f.html">TVector3f</a> ): <a  href="phxTypes.TVector3f.html">TVector3f</a> ; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#VectorNegate">VectorNegate</a></b>(const Vector: <a  href="phxTypes.TVector3i.html">TVector3i</a> ): <a  href="phxTypes.TVector3i.html">TVector3i</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#VectorNegate">VectorNegate</a></b>(const Vector: <a  href="phxTypes.TVector3f.html">TVector3f</a> ): <a  href="phxTypes.TVector3f.html">TVector3f</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#VectorAdd">VectorAdd</a></b>(const V1, V2: <a  href="phxTypes.TVector3i.html">TVector3i</a> ): <a  href="phxTypes.TVector3i.html">TVector3i</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#VectorAdd">VectorAdd</a></b>(const V1, V2: <a  href="phxTypes.TVector3f.html">TVector3f</a> ): <a  href="phxTypes.TVector3f.html">TVector3f</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#VectorSub">VectorSub</a></b>(const V1, V2: <a  href="phxTypes.TVector3i.html">TVector3i</a> ): <a  href="phxTypes.TVector3i.html">TVector3i</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#VectorSub">VectorSub</a></b>(const V1, V2: <a  href="phxTypes.TVector3f.html">TVector3f</a> ): <a  href="phxTypes.TVector3f.html">TVector3f</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#VectorMul">VectorMul</a></b>(const V1: <a  href="phxTypes.TVector3i.html">TVector3i</a> ; Scalar: Single): <a  href="phxTypes.TVector3i.html">TVector3i</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#VectorMul">VectorMul</a></b>(const V1: <a  href="phxTypes.TVector3f.html">TVector3f</a> ; Scalar: Single): <a  href="phxTypes.TVector3f.html">TVector3f</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#VectorDiv">VectorDiv</a></b>(const V1: <a  href="phxTypes.TVector3i.html">TVector3i</a> ; Scalar: Single): <a  href="phxTypes.TVector3i.html">TVector3i</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#VectorDiv">VectorDiv</a></b>(const V1: <a  href="phxTypes.TVector3f.html">TVector3f</a> ; Scalar: Single): <a  href="phxTypes.TVector3f.html">TVector3f</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#VectorDot">VectorDot</a></b>(const V1, V2: <a  href="phxTypes.TVector3i.html">TVector3i</a> ): Single; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#VectorDot">VectorDot</a></b>(const V1, V2: <a  href="phxTypes.TVector3f.html">TVector3f</a> ): Single; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#VectorCross">VectorCross</a></b>(const V1, V2: <a  href="phxTypes.TVector3i.html">TVector3i</a> ): <a  href="phxTypes.TVector3i.html">TVector3i</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#VectorCross">VectorCross</a></b>(const V1, V2: <a  href="phxTypes.TVector3f.html">TVector3f</a> ): <a  href="phxTypes.TVector3f.html">TVector3f</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#VectorReflect">VectorReflect</a></b>(const V, N: <a  href="phxTypes.TVector3f.html">TVector3f</a> ): <a  href="phxTypes.TVector3f.html">TVector3f</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#VectorReflect">VectorReflect</a></b>(const V, N: <a  href="phxTypes.TVector3i.html">TVector3i</a> ): <a  href="phxTypes.TVector3i.html">TVector3i</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#Matrix_CreateFrustum">Matrix_CreateFrustum</a></b>(Left, Right, Bottom, Top, zNear, zFar: Single): <a  href="phxTypes.html#TMatrix4">TMatrix4</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#Matrix_CreateOrthographic">Matrix_CreateOrthographic</a></b>(Left, Right, Bottom, Top, zNear, zFar: Single): <a  href="phxTypes.html#TMatrix4">TMatrix4</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#Matrix_CreateOrthographicLH">Matrix_CreateOrthographicLH</a></b>(Width, Height, zNear, zFar: Single): <a  href="phxTypes.html#TMatrix4">TMatrix4</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#Matrix_CreatePerspective">Matrix_CreatePerspective</a></b>(Fov, Aspect, zNear, zFar: Single): <a  href="phxTypes.html#TMatrix4">TMatrix4</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#Matrix_CreateIdentity">Matrix_CreateIdentity</a></b>: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#Matrix_CreateTranslation">Matrix_CreateTranslation</a></b>(const X, Y, Z: Single): <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#Matrix_CreateTranslation">Matrix_CreateTranslation</a></b>(const Translation: <a  href="phxTypes.TVector3f.html">TVector3f</a>): <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#Matrix_CreateTranslation">Matrix_CreateTranslation</a></b>(const Translation: <a  href="phxTypes.TVector2f.html">TVector2f</a>): <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#Matrix_CreateRotation">Matrix_CreateRotation</a></b>(const Angles: <a  href="phxTypes.TVector3f.html">TVector3f</a>): <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#Matrix_CreateRotation">Matrix_CreateRotation</a></b>(const AngleX, AngleY, AngleZ: Single): <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#Matrix_CreateRotationX">Matrix_CreateRotationX</a></b>(const AngleX: Single): <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#Matrix_CreateRotationY">Matrix_CreateRotationY</a></b>(const AngleY: Single): <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#Matrix_CreateRotationZ">Matrix_CreateRotationZ</a></b>(const AngleZ: Single): <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#Matrix_CreateRotation">Matrix_CreateRotation</a></b>(const Angle: Single; const Axis : <a  href="phxTypes.TVector3f.html">TVector3f</a>): <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#Matrix_CreateScale">Matrix_CreateScale</a></b>(const X, Y, Z: Single): <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#Matrix_CreateScale">Matrix_CreateScale</a></b>(const Scale : <a  href="phxTypes.TVector3f.html">TVector3f</a>): <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#Matrix_CreateScale">Matrix_CreateScale</a></b>(const Scale : <a  href="phxTypes.TVector2f.html">TVector2f</a>): <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#Matrix_Multiply">Matrix_Multiply</a></b>(const M1, M2: <a  href="phxTypes.html#TMatrix4">TMatrix4</a> ): <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#Matrix_Multiply">Matrix_Multiply</a></b>(const M1, M2, M3: <a  href="phxTypes.html#TMatrix4">TMatrix4</a> ): <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#Matrix_Multiply">Matrix_Multiply</a></b>(const M1, M2, M3, M4: <a  href="phxTypes.html#TMatrix4">TMatrix4</a> ): <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#Matrix_Transform">Matrix_Transform</a></b>(const Matrix: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; const Vector: <a  href="phxTypes.TVector2f.html">TVector2f</a>): <a  href="phxTypes.TVector2f.html">TVector2f</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#Matrix_Transform">Matrix_Transform</a></b>(const Matrix: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; const Vector: <a  href="phxTypes.TVector2i.html">TVector2i</a>): <a  href="phxTypes.TVector2i.html">TVector2i</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#Matrix_Transform">Matrix_Transform</a></b>(const Matrix: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; const Vector: <a  href="phxTypes.TVector3f.html">TVector3f</a>): <a  href="phxTypes.TVector3f.html">TVector3f</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#Matrix_Transform">Matrix_Transform</a></b>(const Matrix: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; const Vector: <a  href="phxTypes.TVector4f.html">TVector4f</a>): <a  href="phxTypes.TVector4f.html">TVector4f</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#Matrix_Transform">Matrix_Transform</a></b>(const Matrix: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; const X,Y,Z: Single): <a  href="phxTypes.TVector3f.html">TVector3f</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#Matrix_TransformInv">Matrix_TransformInv</a></b>(const Matrix: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; const Vector: <a  href="phxTypes.TVector2f.html">TVector2f</a>): <a  href="phxTypes.TVector2f.html">TVector2f</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#Matrix_TransformInv">Matrix_TransformInv</a></b>(const Matrix: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; const Vector: <a  href="phxTypes.TVector2i.html">TVector2i</a>): <a  href="phxTypes.TVector2i.html">TVector2i</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#Matrix_TransformInv">Matrix_TransformInv</a></b>(const Matrix: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; const Vector: <a  href="phxTypes.TVector3f.html">TVector3f</a>): <a  href="phxTypes.TVector3f.html">TVector3f</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#Matrix_TransformInv">Matrix_TransformInv</a></b>(const Matrix: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; const Vector: <a  href="phxTypes.TVector4f.html">TVector4f</a>): <a  href="phxTypes.TVector4f.html">TVector4f</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#Matrix_Rotate">Matrix_Rotate</a></b> (const Matrix: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; const Vector: <a  href="phxTypes.TVector3f.html">TVector3f</a>): <a  href="phxTypes.TVector3f.html">TVector3f</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#Matrix_Rotate">Matrix_Rotate</a></b> (const Matrix: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; const Vector: <a  href="phxTypes.TVector2f.html">TVector2f</a>): <a  href="phxTypes.TVector2f.html">TVector2f</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#Matrix_RotateInv">Matrix_RotateInv</a></b>(const Matrix: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; const Vector: <a  href="phxTypes.TVector3f.html">TVector3f</a>): <a  href="phxTypes.TVector3f.html">TVector3f</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#Matrix_RotateInv">Matrix_RotateInv</a></b>(const Matrix: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; const Vector: <a  href="phxTypes.TVector2f.html">TVector2f</a>): <a  href="phxTypes.TVector2f.html">TVector2f</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#Matrix_GetForward">Matrix_GetForward</a></b> (const Matrix: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>): <a  href="phxTypes.TVector3f.html">TVector3f</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#Matrix_GetUp">Matrix_GetUp</a></b> (const Matrix: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>): <a  href="phxTypes.TVector3f.html">TVector3f</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#Matrix_GetRight">Matrix_GetRight</a></b> (const Matrix: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>): <a  href="phxTypes.TVector3f.html">TVector3f</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#Matrix_GetTranslation">Matrix_GetTranslation</a></b>(const Matrix: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>): <a  href="phxTypes.TVector3f.html">TVector3f</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#Matrix_GetRotationX">Matrix_GetRotationX</a></b>(const Matrix: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>): Single;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#Matrix_GetRotationY">Matrix_GetRotationY</a></b>(const Matrix: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>): Single;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#Matrix_GetRotationZ">Matrix_GetRotationZ</a></b>(const Matrix: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>): Single;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#Matrix3f">Matrix3f</a></b>(const Matrix: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>): <a  href="phxTypes.TMatrix3.html">TMatrix3</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#Matrix_Div">Matrix_Div</a></b>(const Matrix: <a  href="phxTypes.TMatrix3.html">TMatrix3</a>; const Scalar: Single): <a  href="phxTypes.TMatrix3.html">TMatrix3</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#Matrix_InverseTranspose">Matrix_InverseTranspose</a></b>(const Matrix: <a  href="phxTypes.TMatrix3.html">TMatrix3</a>): <a  href="phxTypes.TMatrix3.html">TMatrix3</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#PointInRect">PointInRect</a></b>(const P: <a  href="phxTypes.TVector2f.html">TVector2f</a>; const R: <a  href="phxTypes.TRectf.html">TRectf</a>): Boolean; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#PointInRect">PointInRect</a></b>(const P: <a  href="phxTypes.TVector2i.html">TVector2i</a>; const R: <a  href="phxTypes.TRectI.html">TRecti</a>): Boolean; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#PointInRect">PointInRect</a></b>(const X,Y: Single ; const R: <a  href="phxTypes.TRectf.html">TRectf</a>): Boolean; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#PointInRect">PointInRect</a></b>(const X,Y: Integer; const R: <a  href="phxTypes.TRectI.html">TRecti</a>): Boolean; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#RectInRect">RectInRect</a></b>(const A, B: <a  href="phxTypes.TRectf.html">TRectf</a>): Boolean; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#RectInRect">RectInRect</a></b>(const A, B: <a  href="phxTypes.TRectI.html">TRecti</a>): Boolean; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#OverlapRect">OverlapRect</a></b>(const A, B: <a  href="phxTypes.TRectf.html">TRectf</a>): Boolean; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#OverlapRect">OverlapRect</a></b>(const A, B: <a  href="phxTypes.TRectI.html">TRecti</a>): Boolean; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#ContainsRect">ContainsRect</a></b>(const A, B: <a  href="phxTypes.TRectf.html">TRectf</a>): Boolean; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#ContainsRect">ContainsRect</a></b>(const A, B: <a  href="phxTypes.TRectI.html">TRecti</a>): Boolean; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="phxMath.html#IntervalIntersect">IntervalIntersect</a></b>(const A, B: <a  href="phxTypes.TRangef.html">TRangef</a>; const Axis, Displacement: <a  href="phxTypes.TVector2f.html">TVector2f</a>; var First, Last, MTD: <a  href="phxMath.TCollisionParameter.html">TCollisionParameter</a>): Boolean; overload;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Constants"></a><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxMath.html#MinSingle">MinSingle</a></b>   =  -1.5e-45;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxMath.html#MaxSingle">MaxSingle</a></b>   =   3.4e+38;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxMath.html#DEG_TO_RAD">DEG_TO_RAD</a></b> = PI / 180;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="phxMath.html#RAD_TO_DEG">RAD_TO_DEG</a></b> = 180 / PI;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="phxMath.html#COLLISION_VELOCITY_THRESHOLD">COLLISION_VELOCITY_THRESHOLD</a></b> = 1.0E-7;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Swap"></a><code>procedure <b>Swap</b>(var A: Single; var B: Single);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Swap two values</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Sin256"></a><code>function <b>Sin256</b>(I: Integer): Single; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Fast, table lookup versions of sinus and cosinus</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Sin256"></a><code>function <b>Sin256</b>(I: Single ): Single; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Cos256"></a><code>function <b>Cos256</b>(I: Integer): Single; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Cos256"></a><code>function <b>Cos256</b>(I: Single ): Single; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VectorMagnitude"></a><code>function <b>VectorMagnitude</b>(const Vector: <a  href="phxTypes.TVector2i.html">TVector2i</a> ): Single; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+///////////////////////////////////////////////////////////////////////////// 2D Vector Math // ///////////////////////////////////////////////////////////////////////////// Get the magnitude (length) of a vector</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VectorMagnitude"></a><code>function <b>VectorMagnitude</b>(const Vector: <a  href="phxTypes.TVector2f.html">TVector2f</a> ): Single; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VectorMagnitudeSqr"></a><code>function <b>VectorMagnitudeSqr</b>(const Vector: <a  href="phxTypes.TVector2i.html">TVector2i</a>): Single; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+The squared magnitude</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VectorMagnitudeSqr"></a><code>function <b>VectorMagnitudeSqr</b>(const Vector: <a  href="phxTypes.TVector2f.html">TVector2f</a>): Single; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VectorNormalize"></a><code>function <b>VectorNormalize</b>(const Vector: <a  href="phxTypes.TVector2i.html">TVector2i</a> ): <a  href="phxTypes.TVector2i.html">TVector2i</a> ; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Normalize a vector</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VectorNormalize"></a><code>function <b>VectorNormalize</b>(const Vector: <a  href="phxTypes.TVector2f.html">TVector2f</a> ): <a  href="phxTypes.TVector2f.html">TVector2f</a> ; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VectorNegate"></a><code>function <b>VectorNegate</b>(const Vector: <a  href="phxTypes.TVector2i.html">TVector2i</a> ): <a  href="phxTypes.TVector2i.html">TVector2i</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Negate a vector</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VectorNegate"></a><code>function <b>VectorNegate</b>(const Vector: <a  href="phxTypes.TVector2f.html">TVector2f</a> ): <a  href="phxTypes.TVector2f.html">TVector2f</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VectorAdd"></a><code>function <b>VectorAdd</b>(const V1, V2: <a  href="phxTypes.TVector2i.html">TVector2i</a> ): <a  href="phxTypes.TVector2i.html">TVector2i</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Vector addition</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VectorAdd"></a><code>function <b>VectorAdd</b>(const V1, V2: <a  href="phxTypes.TVector2f.html">TVector2f</a> ): <a  href="phxTypes.TVector2f.html">TVector2f</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VectorSub"></a><code>function <b>VectorSub</b>(const V1, V2: <a  href="phxTypes.TVector2i.html">TVector2i</a> ): <a  href="phxTypes.TVector2i.html">TVector2i</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Vector subtracting</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VectorSub"></a><code>function <b>VectorSub</b>(const V1, V2: <a  href="phxTypes.TVector2f.html">TVector2f</a> ): <a  href="phxTypes.TVector2f.html">TVector2f</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VectorMul"></a><code>function <b>VectorMul</b>(const V1: <a  href="phxTypes.TVector2i.html">TVector2i</a> ; Scalar: Single): <a  href="phxTypes.TVector2i.html">TVector2i</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Multiplication</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VectorMul"></a><code>function <b>VectorMul</b>(const V1: <a  href="phxTypes.TVector2f.html">TVector2f</a> ; Scalar: Single): <a  href="phxTypes.TVector2f.html">TVector2f</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VectorDiv"></a><code>function <b>VectorDiv</b>(const V1: <a  href="phxTypes.TVector2i.html">TVector2i</a> ; Scalar: Single): <a  href="phxTypes.TVector2i.html">TVector2i</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Division</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VectorDiv"></a><code>function <b>VectorDiv</b>(const V1: <a  href="phxTypes.TVector2f.html">TVector2f</a> ; Scalar: Single): <a  href="phxTypes.TVector2f.html">TVector2f</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VectorDot"></a><code>function <b>VectorDot</b>(const V1, V2: <a  href="phxTypes.TVector2i.html">TVector2i</a> ): Single; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Dot product</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VectorDot"></a><code>function <b>VectorDot</b>(const V1, V2: <a  href="phxTypes.TVector2f.html">TVector2f</a> ): Single; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VectorCross"></a><code>function <b>VectorCross</b>(const V1, V2: <a  href="phxTypes.TVector2i.html">TVector2i</a> ): Single; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Cross product</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VectorCross"></a><code>function <b>VectorCross</b>(const V1, V2: <a  href="phxTypes.TVector2f.html">TVector2f</a> ): Single; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VectorReflect"></a><code>function <b>VectorReflect</b>(const V, N: <a  href="phxTypes.TVector2f.html">TVector2f</a> ): <a  href="phxTypes.TVector2f.html">TVector2f</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Vector reflection, V is the vector to reflect, N is the wall normal</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VectorReflect"></a><code>function <b>VectorReflect</b>(const V, N: <a  href="phxTypes.TVector2i.html">TVector2i</a> ): <a  href="phxTypes.TVector2i.html">TVector2i</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VectorMagnitude"></a><code>function <b>VectorMagnitude</b>(const Vector: <a  href="phxTypes.TVector3i.html">TVector3i</a> ): Single; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+///////////////////////////////////////////////////////////////////////////// 3D Vector Math // ///////////////////////////////////////////////////////////////////////////// Magnitude of a vector</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VectorMagnitude"></a><code>function <b>VectorMagnitude</b>(const Vector: <a  href="phxTypes.TVector3f.html">TVector3f</a> ): Single; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VectorMagnitudeSqr"></a><code>function <b>VectorMagnitudeSqr</b>(const Vector: <a  href="phxTypes.TVector3i.html">TVector3i</a>): Single; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+The squared magnitude</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VectorMagnitudeSqr"></a><code>function <b>VectorMagnitudeSqr</b>(const Vector: <a  href="phxTypes.TVector3f.html">TVector3f</a>): Single; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VectorNormalize"></a><code>function <b>VectorNormalize</b>(const Vector: <a  href="phxTypes.TVector3i.html">TVector3i</a> ): <a  href="phxTypes.TVector3i.html">TVector3i</a> ; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Normalize a vector</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VectorNormalize"></a><code>function <b>VectorNormalize</b>(const Vector: <a  href="phxTypes.TVector3f.html">TVector3f</a> ): <a  href="phxTypes.TVector3f.html">TVector3f</a> ; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VectorNegate"></a><code>function <b>VectorNegate</b>(const Vector: <a  href="phxTypes.TVector3i.html">TVector3i</a> ): <a  href="phxTypes.TVector3i.html">TVector3i</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Negate a vector</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VectorNegate"></a><code>function <b>VectorNegate</b>(const Vector: <a  href="phxTypes.TVector3f.html">TVector3f</a> ): <a  href="phxTypes.TVector3f.html">TVector3f</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VectorAdd"></a><code>function <b>VectorAdd</b>(const V1, V2: <a  href="phxTypes.TVector3i.html">TVector3i</a> ): <a  href="phxTypes.TVector3i.html">TVector3i</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Vector addition</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VectorAdd"></a><code>function <b>VectorAdd</b>(const V1, V2: <a  href="phxTypes.TVector3f.html">TVector3f</a> ): <a  href="phxTypes.TVector3f.html">TVector3f</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VectorSub"></a><code>function <b>VectorSub</b>(const V1, V2: <a  href="phxTypes.TVector3i.html">TVector3i</a> ): <a  href="phxTypes.TVector3i.html">TVector3i</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Vector subtracting</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VectorSub"></a><code>function <b>VectorSub</b>(const V1, V2: <a  href="phxTypes.TVector3f.html">TVector3f</a> ): <a  href="phxTypes.TVector3f.html">TVector3f</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VectorMul"></a><code>function <b>VectorMul</b>(const V1: <a  href="phxTypes.TVector3i.html">TVector3i</a> ; Scalar: Single): <a  href="phxTypes.TVector3i.html">TVector3i</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Multiplication</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VectorMul"></a><code>function <b>VectorMul</b>(const V1: <a  href="phxTypes.TVector3f.html">TVector3f</a> ; Scalar: Single): <a  href="phxTypes.TVector3f.html">TVector3f</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VectorDiv"></a><code>function <b>VectorDiv</b>(const V1: <a  href="phxTypes.TVector3i.html">TVector3i</a> ; Scalar: Single): <a  href="phxTypes.TVector3i.html">TVector3i</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Division</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VectorDiv"></a><code>function <b>VectorDiv</b>(const V1: <a  href="phxTypes.TVector3f.html">TVector3f</a> ; Scalar: Single): <a  href="phxTypes.TVector3f.html">TVector3f</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VectorDot"></a><code>function <b>VectorDot</b>(const V1, V2: <a  href="phxTypes.TVector3i.html">TVector3i</a> ): Single; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Dot product</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VectorDot"></a><code>function <b>VectorDot</b>(const V1, V2: <a  href="phxTypes.TVector3f.html">TVector3f</a> ): Single; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VectorCross"></a><code>function <b>VectorCross</b>(const V1, V2: <a  href="phxTypes.TVector3i.html">TVector3i</a> ): <a  href="phxTypes.TVector3i.html">TVector3i</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Cross product</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VectorCross"></a><code>function <b>VectorCross</b>(const V1, V2: <a  href="phxTypes.TVector3f.html">TVector3f</a> ): <a  href="phxTypes.TVector3f.html">TVector3f</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VectorReflect"></a><code>function <b>VectorReflect</b>(const V, N: <a  href="phxTypes.TVector3f.html">TVector3f</a> ): <a  href="phxTypes.TVector3f.html">TVector3f</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Vector reflection, V is the vector to reflect, N is the wall normal</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VectorReflect"></a><code>function <b>VectorReflect</b>(const V, N: <a  href="phxTypes.TVector3i.html">TVector3i</a> ): <a  href="phxTypes.TVector3i.html">TVector3i</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Matrix_CreateFrustum"></a><code>function <b>Matrix_CreateFrustum</b>(Left, Right, Bottom, Top, zNear, zFar: Single): <a  href="phxTypes.html#TMatrix4">TMatrix4</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+///////////////////////////////////////////////////////////////////////////// Matrix Math // /////////////////////////////////////////////////////////////////////////////</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Matrix_CreateOrthographic"></a><code>function <b>Matrix_CreateOrthographic</b>(Left, Right, Bottom, Top, zNear, zFar: Single): <a  href="phxTypes.html#TMatrix4">TMatrix4</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Should be totally same as glOrtho</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Matrix_CreateOrthographicLH"></a><code>function <b>Matrix_CreateOrthographicLH</b>(Width, Height, zNear, zFar: Single): <a  href="phxTypes.html#TMatrix4">TMatrix4</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Matrix_CreatePerspective"></a><code>function <b>Matrix_CreatePerspective</b>(Fov, Aspect, zNear, zFar: Single): <a  href="phxTypes.html#TMatrix4">TMatrix4</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Should be totally same as gluPerspective</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Matrix_CreateIdentity"></a><code>function <b>Matrix_CreateIdentity</b>: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Create a identity matrix</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Matrix_CreateTranslation"></a><code>function <b>Matrix_CreateTranslation</b>(const X, Y, Z: Single): <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Create an translation matrix</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Matrix_CreateTranslation"></a><code>function <b>Matrix_CreateTranslation</b>(const Translation: <a  href="phxTypes.TVector3f.html">TVector3f</a>): <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Create an translation matrix</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Matrix_CreateTranslation"></a><code>function <b>Matrix_CreateTranslation</b>(const Translation: <a  href="phxTypes.TVector2f.html">TVector2f</a>): <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Create an translation matrix</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Matrix_CreateRotation"></a><code>function <b>Matrix_CreateRotation</b>(const Angles: <a  href="phxTypes.TVector3f.html">TVector3f</a>): <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Creates a rotation matrix</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Matrix_CreateRotation"></a><code>function <b>Matrix_CreateRotation</b>(const AngleX, AngleY, AngleZ: Single): <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Creates a rotation matrix</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Matrix_CreateRotationX"></a><code>function <b>Matrix_CreateRotationX</b>(const AngleX: Single): <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Creates a matrix for rotation around the X-axis.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Matrix_CreateRotationY"></a><code>function <b>Matrix_CreateRotationY</b>(const AngleY: Single): <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Creates a matrix for rotation around the Y-axis.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Matrix_CreateRotationZ"></a><code>function <b>Matrix_CreateRotationZ</b>(const AngleZ: Single): <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Creates a matrix for rotation around the Z-axis.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Matrix_CreateRotation"></a><code>function <b>Matrix_CreateRotation</b>(const Angle: Single; const Axis : <a  href="phxTypes.TVector3f.html">TVector3f</a>): <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Creates a rotation matrix</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Matrix_CreateScale"></a><code>function <b>Matrix_CreateScale</b>(const X, Y, Z: Single): <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Create an scale matrix</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Matrix_CreateScale"></a><code>function <b>Matrix_CreateScale</b>(const Scale : <a  href="phxTypes.TVector3f.html">TVector3f</a>): <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Create an scale matrix</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Matrix_CreateScale"></a><code>function <b>Matrix_CreateScale</b>(const Scale : <a  href="phxTypes.TVector2f.html">TVector2f</a>): <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Create an scale matrix</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Matrix_Multiply"></a><code>function <b>Matrix_Multiply</b>(const M1, M2: <a  href="phxTypes.html#TMatrix4">TMatrix4</a> ): <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Multiply two matrices</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Matrix_Multiply"></a><code>function <b>Matrix_Multiply</b>(const M1, M2, M3: <a  href="phxTypes.html#TMatrix4">TMatrix4</a> ): <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Multiply three matrices</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Matrix_Multiply"></a><code>function <b>Matrix_Multiply</b>(const M1, M2, M3, M4: <a  href="phxTypes.html#TMatrix4">TMatrix4</a> ): <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Multiply four matrices</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Matrix_Transform"></a><code>function <b>Matrix_Transform</b>(const Matrix: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; const Vector: <a  href="phxTypes.TVector2f.html">TVector2f</a>): <a  href="phxTypes.TVector2f.html">TVector2f</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Transform a vector by a matrix</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Matrix_Transform"></a><code>function <b>Matrix_Transform</b>(const Matrix: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; const Vector: <a  href="phxTypes.TVector2i.html">TVector2i</a>): <a  href="phxTypes.TVector2i.html">TVector2i</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Matrix_Transform"></a><code>function <b>Matrix_Transform</b>(const Matrix: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; const Vector: <a  href="phxTypes.TVector3f.html">TVector3f</a>): <a  href="phxTypes.TVector3f.html">TVector3f</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Matrix_Transform"></a><code>function <b>Matrix_Transform</b>(const Matrix: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; const Vector: <a  href="phxTypes.TVector4f.html">TVector4f</a>): <a  href="phxTypes.TVector4f.html">TVector4f</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Matrix_Transform"></a><code>function <b>Matrix_Transform</b>(const Matrix: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; const X,Y,Z: Single): <a  href="phxTypes.TVector3f.html">TVector3f</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Matrix_TransformInv"></a><code>function <b>Matrix_TransformInv</b>(const Matrix: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; const Vector: <a  href="phxTypes.TVector2f.html">TVector2f</a>): <a  href="phxTypes.TVector2f.html">TVector2f</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Inverse transform a vector by a matrix</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Matrix_TransformInv"></a><code>function <b>Matrix_TransformInv</b>(const Matrix: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; const Vector: <a  href="phxTypes.TVector2i.html">TVector2i</a>): <a  href="phxTypes.TVector2i.html">TVector2i</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Matrix_TransformInv"></a><code>function <b>Matrix_TransformInv</b>(const Matrix: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; const Vector: <a  href="phxTypes.TVector3f.html">TVector3f</a>): <a  href="phxTypes.TVector3f.html">TVector3f</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Matrix_TransformInv"></a><code>function <b>Matrix_TransformInv</b>(const Matrix: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; const Vector: <a  href="phxTypes.TVector4f.html">TVector4f</a>): <a  href="phxTypes.TVector4f.html">TVector4f</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Matrix_Rotate"></a><code>function <b>Matrix_Rotate</b> (const Matrix: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; const Vector: <a  href="phxTypes.TVector3f.html">TVector3f</a>): <a  href="phxTypes.TVector3f.html">TVector3f</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Rotate a vector by a matrix</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Matrix_Rotate"></a><code>function <b>Matrix_Rotate</b> (const Matrix: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; const Vector: <a  href="phxTypes.TVector2f.html">TVector2f</a>): <a  href="phxTypes.TVector2f.html">TVector2f</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Matrix_RotateInv"></a><code>function <b>Matrix_RotateInv</b>(const Matrix: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; const Vector: <a  href="phxTypes.TVector3f.html">TVector3f</a>): <a  href="phxTypes.TVector3f.html">TVector3f</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Matrix_RotateInv"></a><code>function <b>Matrix_RotateInv</b>(const Matrix: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; const Vector: <a  href="phxTypes.TVector2f.html">TVector2f</a>): <a  href="phxTypes.TVector2f.html">TVector2f</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Matrix_GetForward"></a><code>function <b>Matrix_GetForward</b> (const Matrix: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>): <a  href="phxTypes.TVector3f.html">TVector3f</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Get elements from a matrix</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Matrix_GetUp"></a><code>function <b>Matrix_GetUp</b> (const Matrix: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>): <a  href="phxTypes.TVector3f.html">TVector3f</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Matrix_GetRight"></a><code>function <b>Matrix_GetRight</b> (const Matrix: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>): <a  href="phxTypes.TVector3f.html">TVector3f</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Matrix_GetTranslation"></a><code>function <b>Matrix_GetTranslation</b>(const Matrix: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>): <a  href="phxTypes.TVector3f.html">TVector3f</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Matrix_GetRotationX"></a><code>function <b>Matrix_GetRotationX</b>(const Matrix: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>): Single;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Matrix_GetRotationY"></a><code>function <b>Matrix_GetRotationY</b>(const Matrix: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>): Single;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Matrix_GetRotationZ"></a><code>function <b>Matrix_GetRotationZ</b>(const Matrix: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>): Single;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Matrix3f"></a><code>function <b>Matrix3f</b>(const Matrix: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>): <a  href="phxTypes.TMatrix3.html">TMatrix3</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Converts a 4x4 matrix to a 3x3 matrix</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Matrix_Div"></a><code>function <b>Matrix_Div</b>(const Matrix: <a  href="phxTypes.TMatrix3.html">TMatrix3</a>; const Scalar: Single): <a  href="phxTypes.TMatrix3.html">TMatrix3</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Divide a matrix with a scalar</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Matrix_InverseTranspose"></a><code>function <b>Matrix_InverseTranspose</b>(const Matrix: <a  href="phxTypes.TMatrix3.html">TMatrix3</a>): <a  href="phxTypes.TMatrix3.html">TMatrix3</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Calculates the inverse transpose of a matrix</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PointInRect"></a><code>function <b>PointInRect</b>(const P: <a  href="phxTypes.TVector2f.html">TVector2f</a>; const R: <a  href="phxTypes.TRectf.html">TRectf</a>): Boolean; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PointInRect"></a><code>function <b>PointInRect</b>(const P: <a  href="phxTypes.TVector2i.html">TVector2i</a>; const R: <a  href="phxTypes.TRectI.html">TRecti</a>): Boolean; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PointInRect"></a><code>function <b>PointInRect</b>(const X,Y: Single ; const R: <a  href="phxTypes.TRectf.html">TRectf</a>): Boolean; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PointInRect"></a><code>function <b>PointInRect</b>(const X,Y: Integer; const R: <a  href="phxTypes.TRectI.html">TRecti</a>): Boolean; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="RectInRect"></a><code>function <b>RectInRect</b>(const A, B: <a  href="phxTypes.TRectf.html">TRectf</a>): Boolean; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="RectInRect"></a><code>function <b>RectInRect</b>(const A, B: <a  href="phxTypes.TRectI.html">TRecti</a>): Boolean; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="OverlapRect"></a><code>function <b>OverlapRect</b>(const A, B: <a  href="phxTypes.TRectf.html">TRectf</a>): Boolean; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="OverlapRect"></a><code>function <b>OverlapRect</b>(const A, B: <a  href="phxTypes.TRectI.html">TRecti</a>): Boolean; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ContainsRect"></a><code>function <b>ContainsRect</b>(const A, B: <a  href="phxTypes.TRectf.html">TRectf</a>): Boolean; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Returns true if A is contained inside B</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ContainsRect"></a><code>function <b>ContainsRect</b>(const A, B: <a  href="phxTypes.TRectI.html">TRecti</a>): Boolean; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="IntervalIntersect"></a><code>function <b>IntervalIntersect</b>(const A, B: <a  href="phxTypes.TRangef.html">TRangef</a>; const Axis, Displacement: <a  href="phxTypes.TVector2f.html">TVector2f</a>; var First, Last, MTD: <a  href="phxMath.TCollisionParameter.html">TCollisionParameter</a>): Boolean; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="MinSingle"></a><code><b>MinSingle</b>   =  -1.5e-45;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="MaxSingle"></a><code><b>MaxSingle</b>   =   3.4e+38;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DEG_TO_RAD"></a><code><b>DEG_TO_RAD</b> = PI / 180;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+///////////////////////////////////////////////////////////////////////////// Trigometric // /////////////////////////////////////////////////////////////////////////////</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="RAD_TO_DEG"></a><code><b>RAD_TO_DEG</b> = 180 / PI;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="COLLISION_VELOCITY_THRESHOLD"></a><code><b>COLLISION_VELOCITY_THRESHOLD</b> = 1.0E-7;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+///////////////////////////////////////////////////////////////////////////// Collision testing // ///////////////////////////////////////////////////////////////////////////// Constant determing the threshold velocity when two objects are in standstill</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.13.0</a> on 2013-08-26 11:02:39</em>
+</span>
+</td></tr></table></body></html>

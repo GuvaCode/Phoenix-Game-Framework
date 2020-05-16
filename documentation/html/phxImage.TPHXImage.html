@@ -1,0 +1,859 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Phoenix API Doc: phxImage: Class TPHXImage</title>
+<meta name="generator" content="PasDoc 0.13.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Phoenix API Doc</h2><p><a href="introduction.html" class="navigation">Introduction</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div></p></td><td class="content">
+<link rel="icon" type="image/ico" href="Phoenix_icon.png"></link>
+<link rel="shortcut icon" href="Phoenix_icon.png"></link>
+<a name="TPHXImage"></a><h1 class="cio">Class TPHXImage</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></td><td><a class="section" href="#PasDoc-Fields">Fields</a></td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td><a class="section" href="#PasDoc-Properties">Properties</a></td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="phxImage.html">phxImage</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TPHXImage = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<p>
+The image is a container for a texture and supports patterns and tags</p>
+<a name="PasDoc-Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TPHXImage</li></ul><h2 class="overview">Overview</h2>
+<a name="PasDoc-Fields"></a><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a  href="phxImage.TPHXImage.html#PatternBuffer">PatternBuffer</a></b>: array of <a  href="phxImage.TPHXPatternBuffer.html">TPHXPatternBuffer</a>;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImage.html#DrawPattern">DrawPattern</a></b>(const Pattern: <a  href="phxImage.TPHXPatternBuffer.html">TPHXPatternBuffer</a>; const Position: <a  href="phxTypes.TVector3f.html">TVector3f</a>; const Color: <a  href="phxTypes.TColor4f.html">TColor4f</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImage.html#DrawPattern">DrawPattern</a></b>(const Pattern: <a  href="phxImage.TPHXPatternBuffer.html">TPHXPatternBuffer</a>; const Position: <a  href="phxTypes.TVector3f.html">TVector3f</a>; const Scale: <a  href="phxTypes.TVector2f.html">TVector2f</a>; const Color: <a  href="phxTypes.TColor4f.html">TColor4f</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImage.html#DrawPattern">DrawPattern</a></b>(const Pattern: <a  href="phxImage.TPHXPatternBuffer.html">TPHXPatternBuffer</a>; const Transform: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; const Color: <a  href="phxTypes.TColor4f.html">TColor4f</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="phxImage.TPHXImage.html#Create">Create</a></b>(ADevice: <a  href="phxDevice.TPHXDevice.html">TPHXDevice</a>; ACanvas: <a  href="phxCanvas.TPHXCanvas.html">TPHXCanvas</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="phxImage.TPHXImage.html#CreateEx">CreateEx</a></b>(ATexture: <a  href="phxTexture.TPHXTexture.html">TPHXTexture</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a  href="phxImage.TPHXImage.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImage.html#LoadImage">LoadImage</a></b>(const FileName: String); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImage.html#LoadImage">LoadImage</a></b>(const FileName: String; Stream: TStream); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImage.html#LoadFromFile">LoadFromFile</a></b>(const FileName: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImage.html#LoadFromStream">LoadFromStream</a></b>(Stream: TStream);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImage.html#SaveToFile">SaveToFile</a></b>(const FileName: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImage.html#SaveToStream">SaveToStream</a></b>(Stream: TStream);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImage.html#Initialize">Initialize</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImage.html#Draw">Draw</a></b>(const X, Y: Single); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImage.html#Draw">Draw</a></b>(const X, Y: Single; const PatternIndex: Integer); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImage.html#Draw">Draw</a></b>(const X, Y: Single; const PatternName: String); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImage.html#Draw">Draw</a></b>(const X, Y: Single; const Color : <a  href="phxTypes.TColor4f.html">TColor4f</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImage.html#Draw">Draw</a></b>(const X, Y: Single; const Color : <a  href="phxTypes.TColor4f.html">TColor4f</a>; const PatternIndex: Integer); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImage.html#Draw">Draw</a></b>(const X, Y: Single; const Color : <a  href="phxTypes.TColor4f.html">TColor4f</a>; const PatternName: String); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImage.html#DrawRotate">DrawRotate</a></b>(const X,Y : Single; const Angle: Single); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImage.html#DrawRotate">DrawRotate</a></b>(const X,Y : Single; const Angle: Single; const PatternIndex: Cardinal); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImage.html#DrawRotate">DrawRotate</a></b>(const X,Y : Single; const Angle: Single; const PatternName: String); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImage.html#DrawTransform">DrawTransform</a></b>(const Transform: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImage.html#DrawTransform">DrawTransform</a></b>(const Transform: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; const PatternIndex: Integer); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImage.html#DrawTransform">DrawTransform</a></b>(const Transform: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; const PatternName: String); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImage.html#DrawTransform">DrawTransform</a></b>(const Transform: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; const Color: <a  href="phxTypes.TColor4f.html">TColor4f</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImage.html#DrawTransform">DrawTransform</a></b>(const Transform: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; const Color: <a  href="phxTypes.TColor4f.html">TColor4f</a>; const PatternIndex: Integer); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImage.html#DrawTransform">DrawTransform</a></b>(const Transform: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; const Color: <a  href="phxTypes.TColor4f.html">TColor4f</a>; const PatternName: String); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImage.html#TileDraw">TileDraw</a></b>(const X, Y: Single; const NumX, NumY: Integer); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImage.html#TileDraw">TileDraw</a></b>(const X, Y: Single; const NumX, NumY: Integer; const PatternIndex: Integer); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImage.html#TileDraw">TileDraw</a></b>(const X, Y: Single; const NumX, NumY: Integer; const PatternName: String); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImage.html#StrechDraw">StrechDraw</a></b>(const X, Y: Single; const W, H: Integer); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImage.html#StrechDraw">StrechDraw</a></b>(const X, Y: Single; const W, H: Integer; const PatternIndex: Integer); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImage.html#StrechDraw">StrechDraw</a></b>(const X, Y: Single; const W, H: Integer; const PatternName: String); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImage.html#DrawAdd">DrawAdd</a></b>(const X, Y: Single; const Alpha: Single); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImage.html#DrawAdd">DrawAdd</a></b>(const X, Y: Single; const Alpha: Single; const PatternIndex: Integer); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImage.html#DrawAdd">DrawAdd</a></b>(const X, Y: Single; const Alpha: Single; const PatternName: String); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImage.html#DrawAlpha">DrawAlpha</a></b>(const X, Y: Single; const Alpha: Single); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImage.html#DrawAlpha">DrawAlpha</a></b>(const X, Y: Single; const Alpha: Single; const PatternIndex: Integer); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImage.html#DrawAlpha">DrawAlpha</a></b>(const X, Y: Single; const Alpha: Single; const PatternName: String); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImage.html#DrawBlend">DrawBlend</a></b>(const X, Y: Single; const Color: <a  href="phxTypes.TColor4f.html">TColor4f</a>; const Blend: <a  href="phxTypes.html#TPHXBlendMode">TPHXBlendMode</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImage.html#DrawBlend">DrawBlend</a></b>(const X, Y: Single; const Color: <a  href="phxTypes.TColor4f.html">TColor4f</a>; const Blend: <a  href="phxTypes.html#TPHXBlendMode">TPHXBlendMode</a>; const PatternIndex: Integer); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImage.html#DrawBlend">DrawBlend</a></b>(const X, Y: Single; const Color: <a  href="phxTypes.TColor4f.html">TColor4f</a>; const Blend: <a  href="phxTypes.html#TPHXBlendMode">TPHXBlendMode</a>; const PatternName: String); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImage.html#DrawArea">DrawArea</a></b>(const X, Y: Integer; const Area: <a  href="phxTypes.TRectI.html">TRecti</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImage.html#DrawArea">DrawArea</a></b>(const Rect: <a  href="phxTypes.TRectf.html">TRectf</a>; const Area: <a  href="phxTypes.TRectI.html">TRecti</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxImage.TPHXImage.html#ChangePivot">ChangePivot</a></b>(const PatternIndex: Integer; const Pivot: <a  href="phxTypes.TVector2i.html">TVector2i</a>);</code></td>
+</tr>
+</table>
+<a name="PasDoc-Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxImage.TPHXImage.html#Device">Device</a></b>: <a  href="phxDevice.TPHXDevice.html">TPHXDevice</a> read FDevice;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxImage.TPHXImage.html#Canvas">Canvas</a></b>: <a  href="phxCanvas.TPHXCanvas.html">TPHXCanvas</a> read FCanvas;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxImage.TPHXImage.html#Name">Name</a></b>: String read FName write FName;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxImage.TPHXImage.html#Author">Author</a></b>: String read FAuthor write FAuthor;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxImage.TPHXImage.html#Version">Version</a></b>: String read FVersion write FVersion;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxImage.TPHXImage.html#Comment">Comment</a></b>: String read FComment write FComment;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxImage.TPHXImage.html#Width">Width</a></b>  : Integer read FWidth write FWidth;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxImage.TPHXImage.html#Height">Height</a></b> : Integer read FHeight write FHeight;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxImage.TPHXImage.html#Patterns">Patterns</a></b>: <a  href="phxImage.TPHXPatternList.html">TPHXPatternList</a> read FPatterns;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxImage.TPHXImage.html#Tags">Tags</a></b>: <a  href="phxImage.TPHXTagList.html">TPHXTagList</a> read FTags;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxImage.TPHXImage.html#Texture">Texture</a></b>: <a  href="phxTexture.TPHXTexture.html">TPHXTexture</a> read FTexture;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="PatternBuffer"></a><code><b>PatternBuffer</b>: array of <a  href="phxImage.TPHXPatternBuffer.html">TPHXPatternBuffer</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Buffer for pattern texture coordinates and verticies</p>
+</td></tr>
+</table>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="DrawPattern"></a><code>procedure <b>DrawPattern</b>(const Pattern: <a  href="phxImage.TPHXPatternBuffer.html">TPHXPatternBuffer</a>; const Position: <a  href="phxTypes.TVector3f.html">TVector3f</a>; const Color: <a  href="phxTypes.TColor4f.html">TColor4f</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Helper functions for rendering patterns</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="DrawPattern"></a><code>procedure <b>DrawPattern</b>(const Pattern: <a  href="phxImage.TPHXPatternBuffer.html">TPHXPatternBuffer</a>; const Position: <a  href="phxTypes.TVector3f.html">TVector3f</a>; const Scale: <a  href="phxTypes.TVector2f.html">TVector2f</a>; const Color: <a  href="phxTypes.TColor4f.html">TColor4f</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Helper functions for rendering patterns</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="DrawPattern"></a><code>procedure <b>DrawPattern</b>(const Pattern: <a  href="phxImage.TPHXPatternBuffer.html">TPHXPatternBuffer</a>; const Transform: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; const Color: <a  href="phxTypes.TColor4f.html">TColor4f</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Helper functions for rendering patterns</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(ADevice: <a  href="phxDevice.TPHXDevice.html">TPHXDevice</a>; ACanvas: <a  href="phxCanvas.TPHXCanvas.html">TPHXCanvas</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates a new image for the specified device</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CreateEx"></a><code>constructor <b>CreateEx</b>(ATexture: <a  href="phxTexture.TPHXTexture.html">TPHXTexture</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates a new image with a predefined texture</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Destroys the image</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LoadImage"></a><code>procedure <b>LoadImage</b>(const FileName: String); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Load a image from a file.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LoadImage"></a><code>procedure <b>LoadImage</b>(const FileName: String; Stream: TStream); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Load the image from a stream.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LoadFromFile"></a><code>procedure <b>LoadFromFile</b>(const FileName: String);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Load the image froma file</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LoadFromStream"></a><code>procedure <b>LoadFromStream</b>(Stream: TStream);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Load the image from stream</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SaveToFile"></a><code>procedure <b>SaveToFile</b>(const FileName: String);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Save the image to a file</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SaveToStream"></a><code>procedure <b>SaveToStream</b>(Stream: TStream);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Save the image to a stream</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Initialize"></a><code>procedure <b>Initialize</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Initializes the image, must be called before any rendering</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Draw"></a><code>procedure <b>Draw</b>(const X, Y: Single); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw the image at a specified location.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Draw"></a><code>procedure <b>Draw</b>(const X, Y: Single; const PatternIndex: Integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a pattern at a specified location.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Draw"></a><code>procedure <b>Draw</b>(const X, Y: Single; const PatternName: String); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a pattern at a specified location.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Draw"></a><code>procedure <b>Draw</b>(const X, Y: Single; const Color : <a  href="phxTypes.TColor4f.html">TColor4f</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw the image at the specified location with the specified color.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Draw"></a><code>procedure <b>Draw</b>(const X, Y: Single; const Color : <a  href="phxTypes.TColor4f.html">TColor4f</a>; const PatternIndex: Integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a pattern at the specified location with the specified color.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Draw"></a><code>procedure <b>Draw</b>(const X, Y: Single; const Color : <a  href="phxTypes.TColor4f.html">TColor4f</a>; const PatternName: String); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a pattern at the specified location with the specified color.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DrawRotate"></a><code>procedure <b>DrawRotate</b>(const X,Y : Single; const Angle: Single); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw the image rotated.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DrawRotate"></a><code>procedure <b>DrawRotate</b>(const X,Y : Single; const Angle: Single; const PatternIndex: Cardinal); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a pattern rotated.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DrawRotate"></a><code>procedure <b>DrawRotate</b>(const X,Y : Single; const Angle: Single; const PatternName: String); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a pattern rotated.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DrawTransform"></a><code>procedure <b>DrawTransform</b>(const Transform: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw the image using a specifed transformation matrix</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DrawTransform"></a><code>procedure <b>DrawTransform</b>(const Transform: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; const PatternIndex: Integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a pattern using a specifed transformation matrix</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DrawTransform"></a><code>procedure <b>DrawTransform</b>(const Transform: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; const PatternName: String); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a pattern using a specifed transformation matrix</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DrawTransform"></a><code>procedure <b>DrawTransform</b>(const Transform: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; const Color: <a  href="phxTypes.TColor4f.html">TColor4f</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw the image using a specifed transformation matrix and color</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DrawTransform"></a><code>procedure <b>DrawTransform</b>(const Transform: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; const Color: <a  href="phxTypes.TColor4f.html">TColor4f</a>; const PatternIndex: Integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a pattern using a specifed transformation matrix and color</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DrawTransform"></a><code>procedure <b>DrawTransform</b>(const Transform: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; const Color: <a  href="phxTypes.TColor4f.html">TColor4f</a>; const PatternName: String); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a pattern using a specifed transformation matrix and color</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TileDraw"></a><code>procedure <b>TileDraw</b>(const X, Y: Single; const NumX, NumY: Integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draws the image tiled with NumX and NumY repeats.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TileDraw"></a><code>procedure <b>TileDraw</b>(const X, Y: Single; const NumX, NumY: Integer; const PatternIndex: Integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draws a pattern tiled with NumX and NumY repeats.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TileDraw"></a><code>procedure <b>TileDraw</b>(const X, Y: Single; const NumX, NumY: Integer; const PatternName: String); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draws a pattern tiled with NumX and NumY repeats.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="StrechDraw"></a><code>procedure <b>StrechDraw</b>(const X, Y: Single; const W, H: Integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draws the image streched to fill the supplied rectangle.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="StrechDraw"></a><code>procedure <b>StrechDraw</b>(const X, Y: Single; const W, H: Integer; const PatternIndex: Integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draws a pattern streched to fill the supplied rectangle.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="StrechDraw"></a><code>procedure <b>StrechDraw</b>(const X, Y: Single; const W, H: Integer; const PatternName: String); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draws a pattern streched to fill the supplied rectangle.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DrawAdd"></a><code>procedure <b>DrawAdd</b>(const X, Y: Single; const Alpha: Single); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw the image at the specified location with additive blending</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DrawAdd"></a><code>procedure <b>DrawAdd</b>(const X, Y: Single; const Alpha: Single; const PatternIndex: Integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a pattern at the specified location with additive blending</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DrawAdd"></a><code>procedure <b>DrawAdd</b>(const X, Y: Single; const Alpha: Single; const PatternName: String); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a pattern at the specified location with additive blending</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DrawAlpha"></a><code>procedure <b>DrawAlpha</b>(const X, Y: Single; const Alpha: Single); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw the image at the specified location with the specified alpha.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DrawAlpha"></a><code>procedure <b>DrawAlpha</b>(const X, Y: Single; const Alpha: Single; const PatternIndex: Integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a pattern at the specified location with the specified alpha.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DrawAlpha"></a><code>procedure <b>DrawAlpha</b>(const X, Y: Single; const Alpha: Single; const PatternName: String); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a pattern at the specified location with additive blending</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DrawBlend"></a><code>procedure <b>DrawBlend</b>(const X, Y: Single; const Color: <a  href="phxTypes.TColor4f.html">TColor4f</a>; const Blend: <a  href="phxTypes.html#TPHXBlendMode">TPHXBlendMode</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw the image at the specified location with custom blending</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DrawBlend"></a><code>procedure <b>DrawBlend</b>(const X, Y: Single; const Color: <a  href="phxTypes.TColor4f.html">TColor4f</a>; const Blend: <a  href="phxTypes.html#TPHXBlendMode">TPHXBlendMode</a>; const PatternIndex: Integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a pattern at the specified location with custom blending</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DrawBlend"></a><code>procedure <b>DrawBlend</b>(const X, Y: Single; const Color: <a  href="phxTypes.TColor4f.html">TColor4f</a>; const Blend: <a  href="phxTypes.html#TPHXBlendMode">TPHXBlendMode</a>; const PatternName: String); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a pattern at the specified location with custom blending</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DrawArea"></a><code>procedure <b>DrawArea</b>(const X, Y: Integer; const Area: <a  href="phxTypes.TRectI.html">TRecti</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draws a selected area of the image. The area is the texture coordinates in pixels to draw</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DrawArea"></a><code>procedure <b>DrawArea</b>(const Rect: <a  href="phxTypes.TRectf.html">TRectf</a>; const Area: <a  href="phxTypes.TRectI.html">TRecti</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draws a selected area of the image. The area is the texture coordinates in pixels to draw</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ChangePivot"></a><code>procedure <b>ChangePivot</b>(const PatternIndex: Integer; const Pivot: <a  href="phxTypes.TVector2i.html">TVector2i</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw the image using a wave function procedure DrawWaveHorz(const Rect: TRecti; const WaveFunct: TWaveFunc; const Time: Single; const Detail: Integer); overload; procedure DrawWaveHorz(const Rect: TRecti; const WaveFunct: TWaveFunc; const Time: Single; const Detail: Integer; const PatternIndex: Integer); overload; procedure DrawWaveVert(const Rect: TRecti; const WaveFunct: TWaveFunc; const Time: Single; const Detail: Integer); Change the pivot position of a pattern</p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Device"></a><code>property <b>Device</b>: <a  href="phxDevice.TPHXDevice.html">TPHXDevice</a> read FDevice;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The owning device</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Canvas"></a><code>property <b>Canvas</b>: <a  href="phxCanvas.TPHXCanvas.html">TPHXCanvas</a> read FCanvas;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The canvas that is rendered to</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Name"></a><code>property <b>Name</b>: String read FName write FName;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The name of the image, used to search for textures in the imagelist.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Author"></a><code>property <b>Author</b>: String read FAuthor write FAuthor;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Author of the image</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Version"></a><code>property <b>Version</b>: String read FVersion write FVersion;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Version of the image</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Comment"></a><code>property <b>Comment</b>: String read FComment write FComment;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Comment of the image</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Width"></a><code>property <b>Width</b>  : Integer read FWidth write FWidth;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The width of the image.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Height"></a><code>property <b>Height</b> : Integer read FHeight write FHeight;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The height of the image.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Patterns"></a><code>property <b>Patterns</b>: <a  href="phxImage.TPHXPatternList.html">TPHXPatternList</a> read FPatterns;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The patterns in the image</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Tags"></a><code>property <b>Tags</b>: <a  href="phxImage.TPHXTagList.html">TPHXTagList</a> read FTags;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The tags in the image</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Texture"></a><code>property <b>Texture</b>: <a  href="phxTexture.TPHXTexture.html">TPHXTexture</a> read FTexture;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The internal texture</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.13.0</a> on 2013-08-26 11:02:38</em>
+</span>
+</td></tr></table></body></html>

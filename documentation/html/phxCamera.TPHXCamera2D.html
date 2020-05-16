@@ -1,0 +1,302 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Phoenix API Doc: phxCamera: Class TPHXCamera2D</title>
+<meta name="generator" content="PasDoc 0.13.0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Phoenix API Doc</h2><p><a href="introduction.html" class="navigation">Introduction</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div></p></td><td class="content">
+<link rel="icon" type="image/ico" href="Phoenix_icon.png"></link>
+<link rel="shortcut icon" href="Phoenix_icon.png"></link>
+<a name="TPHXCamera2D"></a><h1 class="cio">Class TPHXCamera2D</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td><a class="section" href="#PasDoc-Properties">Properties</a></td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="phxCamera.html">phxCamera</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TPHXCamera2D = class(<a class="normal" href="phxCamera.TPHXCamera.html">TPHXCamera</a>)</code></p>
+<h2 class="description">Description</h2>
+<p>
+2D camera with a orthographic projection matrix</p>
+<a name="PasDoc-Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="ancestor"><a class="normal" href="phxCamera.TPHXCamera.html">TPHXCamera</a></li>
+<li class="thisitem">TPHXCamera2D</li></ul><h2 class="overview">Overview</h2>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxCamera.TPHXCamera2D.html#GetProjectionMatrix">GetProjectionMatrix</a></b>: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxCamera.TPHXCamera2D.html#GetViewMatrix">GetViewMatrix</a></b>: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="phxCamera.TPHXCamera2D.html#Create">Create</a></b>(ADevice: <a  href="phxDevice.TPHXDevice.html">TPHXDevice</a>); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a  href="phxCamera.TPHXCamera2D.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCamera.TPHXCamera2D.html#Update">Update</a></b>(FrameTime: Single); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCamera.TPHXCamera2D.html#Attatch">Attatch</a></b>(const Matrix: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; Width, Height: Integer); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCamera.TPHXCamera2D.html#Attatch">Attatch</a></b>(const Position: <a  href="phxTypes.TVector2f.html">TVector2f</a>; Width, Height: Integer); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCamera.TPHXCamera2D.html#MoveRight">MoveRight</a></b>(Distance: Single);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCamera.TPHXCamera2D.html#MoveLeft">MoveLeft</a></b>(Distance: Single);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCamera.TPHXCamera2D.html#MoveUp">MoveUp</a></b>(Distance: Single);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCamera.TPHXCamera2D.html#MoveDown">MoveDown</a></b>(Distance: Single);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCamera.TPHXCamera2D.html#RotateLeft">RotateLeft</a></b>(Distance: Single);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="phxCamera.TPHXCamera2D.html#RotateRight">RotateRight</a></b>(Distance: Single);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxCamera.TPHXCamera2D.html#ScreenToWorld">ScreenToWorld</a></b>(const Vector: <a  href="phxTypes.TVector3f.html">TVector3f</a>): <a  href="phxTypes.TVector3f.html">TVector3f</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxCamera.TPHXCamera2D.html#ScreenToWorld">ScreenToWorld</a></b>(const Vector: <a  href="phxTypes.TVector2i.html">TVector2i</a>): <a  href="phxTypes.TVector2f.html">TVector2f</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="phxCamera.TPHXCamera2D.html#ScreenToWorld">ScreenToWorld</a></b>(const Vector: <a  href="phxTypes.TVector2f.html">TVector2f</a>): <a  href="phxTypes.TVector2f.html">TVector2f</a>; overload;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxCamera.TPHXCamera2D.html#Position">Position</a></b>: <a  href="phxTypes.TVector2f.html">TVector2f</a> read FPosition write FPosition;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxCamera.TPHXCamera2D.html#Rotation">Rotation</a></b>: Single read FRotation write FRotation;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="phxCamera.TPHXCamera2D.html#Zoom">Zoom</a></b>: Single read FZoom write FZoom;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="GetProjectionMatrix"></a><code>function <b>GetProjectionMatrix</b>: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="GetViewMatrix"></a><code>function <b>GetViewMatrix</b>: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(ADevice: <a  href="phxDevice.TPHXDevice.html">TPHXDevice</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Update"></a><code>procedure <b>Update</b>(FrameTime: Single); override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Update the camera</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Attatch"></a><code>procedure <b>Attatch</b>(const Matrix: <a  href="phxTypes.html#TMatrix4">TMatrix4</a>; Width, Height: Integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Attach the camera to a matrix</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Attatch"></a><code>procedure <b>Attatch</b>(const Position: <a  href="phxTypes.TVector2f.html">TVector2f</a>; Width, Height: Integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Attach the camera to a position</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MoveRight"></a><code>procedure <b>MoveRight</b>(Distance: Single);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Move the camera right</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MoveLeft"></a><code>procedure <b>MoveLeft</b>(Distance: Single);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Move the camera left</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MoveUp"></a><code>procedure <b>MoveUp</b>(Distance: Single);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Move the camera up</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MoveDown"></a><code>procedure <b>MoveDown</b>(Distance: Single);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Move the camera down</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RotateLeft"></a><code>procedure <b>RotateLeft</b>(Distance: Single);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Rotate the camera to the left</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RotateRight"></a><code>procedure <b>RotateRight</b>(Distance: Single);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Rotate the camera to the right</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ScreenToWorld"></a><code>function <b>ScreenToWorld</b>(const Vector: <a  href="phxTypes.TVector3f.html">TVector3f</a>): <a  href="phxTypes.TVector3f.html">TVector3f</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Convert a screen coordinate to a world coordinate</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ScreenToWorld"></a><code>function <b>ScreenToWorld</b>(const Vector: <a  href="phxTypes.TVector2i.html">TVector2i</a>): <a  href="phxTypes.TVector2f.html">TVector2f</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Convert a screen coordinate to a world coordinate</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ScreenToWorld"></a><code>function <b>ScreenToWorld</b>(const Vector: <a  href="phxTypes.TVector2f.html">TVector2f</a>): <a  href="phxTypes.TVector2f.html">TVector2f</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Convert a screen coordinate to a world coordinate</p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Position"></a><code>property <b>Position</b>: <a  href="phxTypes.TVector2f.html">TVector2f</a> read FPosition write FPosition;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Current position of the camera</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Rotation"></a><code>property <b>Rotation</b>: Single read FRotation write FRotation;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Current rotation of the camera</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Zoom"></a><code>property <b>Zoom</b>: Single read FZoom write FZoom;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The zoom of the camrea</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.13.0</a> on 2013-08-26 11:02:35</em>
+</span>
+</td></tr></table></body></html>
