@@ -10,11 +10,11 @@ interface
 uses
   phxApplication, phxAudio, phxAudio_OpenAL, phxCamera, phxCanvas, phxClasses, 
   phxConsole, phxDevice, phxEffect, phxEvents, phxFont, phxGraphics, 
-  phxGraphics_DDS, phxGraphics_FreeImage, phxImage, phxInput, phxLogger, 
-  phxMath, phxModel, phxParticle, phxParticleAffectors, phxParticleGraphs, 
-  phxParticlePresets, phxParticleRenderers, phxPersistency, phxPrimitives, 
-  phxShape, phxSimpleGUI, phxSimpleXML, phxSkin, phxSprite, phxTexture, 
-  phxTiles, phxTimer, phxTranslation, phxTypes, LazarusPackageIntf;
+  phxGraphics_DDS, phxGraphics_FreeImage, phxGraphics_Vampyre, phxImage, 
+  phxInput, phxLogger, phxMath, phxModel, phxParticle, phxParticleAffectors, 
+  phxParticleGraphs, phxParticlePresets, phxParticleRenderers, phxPersistency, 
+  phxPrimitives, phxShape, phxSimpleGUI, phxSimpleXML, phxSkin, phxSprite, 
+  phxTexture, phxTiles, phxTimer, phxTranslation, phxTypes, LazarusPackageIntf;
 
 implementation
 

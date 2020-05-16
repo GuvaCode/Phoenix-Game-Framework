@@ -19,4 +19,9 @@
 // Enable lua scripting
 {$DEFINE PHX_LUA_SCRIPTING}
 
+// Enable test
+{.$DEFINE PHX_TEST}
+
+
+
 

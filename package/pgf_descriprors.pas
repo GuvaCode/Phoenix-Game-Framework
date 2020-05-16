@@ -1,7 +1,7 @@
 unit pgf_descriprors;
 
-{$mode objfpc}{$H+}
 
+ {$I phxConfig.inc}
 interface
 
 uses
@@ -68,6 +68,9 @@ begin
   ' phxApplication,'                                   +LineEnding+
   ' phxGraphics,'                                      +LineEnding+
   ' phxCanvas,'                                        +LineEnding+
+  {$IFDEF phx_test}
+  ' phxTESTFILE,'                                       +LineEnding+
+  {$ENDIF}
   ' phxTexture'                                        +LineEnding;
 end;
 

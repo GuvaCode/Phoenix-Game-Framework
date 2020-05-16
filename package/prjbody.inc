@@ -2,7 +2,7 @@
   NewSource:='program myGame;'+LineEnding
     +LE
     +'uses'+LE
-    +'sysutils // this includes the LCL widgetset'+LineEnding
+    +'SysUtils // this includes the LCL widgetset'+LineEnding
     +'  { you can add units after this };'+LE
     +LE
     +'var Game: TGame;'+LE
