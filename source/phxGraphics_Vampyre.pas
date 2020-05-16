@@ -16,28 +16,28 @@
 //    rights and limitations under the License.                               //
 //                                                                            //
 ////////////////////////////////////////////////////////////////////////////////
+{$I phxConfig.inc}
+
 unit phxGraphics_Vampyre;
 {<
   @abstract(Support for loading and saving textures using Vampyre Imaging Library)
-
   http://imaginglib.sourceforge.net/
-
   Download vampyre from http://prdownloads.sourceforge.net/imaginglib/imaginglib0264.zip?download
   and put it into the search path
 }
 
+
 interface
 
-{$I phxConfig.inc}
+
 
 uses Types, Classes, SysUtils,
+      phxGraphics {$IFDEF PHX_VAMPIRE} ,
+      ImagingTypes, Imaging, ImagingClasses, ImagingUtility  {$ENDIF} ;
 
-	phxGraphics,
 
-	ImagingTypes, Imaging, ImagingClasses, ImagingUtility;
-
+{$IFDEF PHX_VAMPIRE}
 type
-
 // The graphic filer for the Vampyre Imaging Library
 //------------------------------------------------------------------------------
 TPHXImagingFiler = class(TPHXGraphicFiler)
@@ -64,9 +64,9 @@ TPHXImagingFiler = class(TPHXGraphicFiler)
 
 // The global instance of the loader
 var Filer: TPHXImagingFiler;
-
+ {$ENDIF}
 implementation
-
+ {$IFDEF PHX_VAMPIRE}
 //------------------------------------------------------------------------------
 function GetPhoenixFormat(Format: TImageFormat): TPHXPixelFormat;
 begin
@@ -178,38 +178,22 @@ begin
     Img.Free;
   end;
 end;
-
-
-
 //------------------------------------------------------------------------------
 function TPHXImagingFiler.SupportsReading(const Filename: string): Boolean;
 begin
   Result:= True;
 end;
-
 //------------------------------------------------------------------------------
 function TPHXImagingFiler.SupportsWriting(const Filename: string): Boolean;
 begin
   Result:= True;
 end;
-
 {$ENDREGION}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 initialization
   Filer:= TPHXImagingFiler.Create;
 finalization
   Filer.Free;
+  {$ENDIF}
 end.
+
