@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<patterns>
+  <pattern name="Apple" x="0" y="0" width="30" height="27" pivot.x="15" pivot.y="13"/>
+  <pattern name="Banana" x="0" y="211" width="21" height="29" pivot.x="10" pivot.y="14"/>
+  <pattern name="Player L00" x="92" y="27" width="23" height="46" pivot.x="11" pivot.y="46"/>
+  <pattern name="Player L01" x="115" y="27" width="23" height="46" pivot.x="11" pivot.y="46"/>
+  <pattern name="Player L02" x="46" y="165" width="23" height="46" pivot.x="11" pivot.y="46"/>
+  <pattern name="Player L03" x="69" y="27" width="23" height="46" pivot.x="11" pivot.y="46"/>
+  <pattern name="Player L04" x="138" y="27" width="23" height="46" pivot.x="11" pivot.y="46"/>
+  <pattern name="Player L05" x="207" y="27" width="23" height="46" pivot.x="11" pivot.y="46"/>
+  <pattern name="Player L06" x="230" y="27" width="23" height="46" pivot.x="11" pivot.y="46"/>
+  <pattern name="Player L07" x="161" y="27" width="23" height="46" pivot.x="11" pivot.y="46"/>
+  <pattern name="Player L08" x="184" y="27" width="23" height="46" pivot.x="11" pivot.y="46"/>
+  <pattern name="Player L09" x="46" y="119" width="23" height="46" pivot.x="11" pivot.y="46"/>
+  <pattern name="Player R00" x="0" y="165" width="23" height="46" pivot.x="11" pivot.y="46"/>
+  <pattern name="Player R01" x="23" y="27" width="23" height="46" pivot.x="11" pivot.y="46"/>
+  <pattern name="Player R02" x="0" y="119" width="23" height="46" pivot.x="11" pivot.y="46"/>
+  <pattern name="Player R03" x="0" y="27" width="23" height="46" pivot.x="11" pivot.y="46"/>
+  <pattern name="Player R04" x="0" y="73" width="23" height="46" pivot.x="11" pivot.y="46"/>
+  <pattern name="Player R05" x="46" y="27" width="23" height="46" pivot.x="11" pivot.y="46"/>
+  <pattern name="Player R06" x="46" y="73" width="23" height="46" pivot.x="11" pivot.y="46"/>
+  <pattern name="Player R07" x="23" y="165" width="23" height="46" pivot.x="11" pivot.y="46"/>
+  <pattern name="Player R08" x="23" y="73" width="23" height="46" pivot.x="11" pivot.y="46"/>
+  <pattern name="Player R09" x="23" y="119" width="23" height="46" pivot.x="11" pivot.y="46"/>
+</patterns>

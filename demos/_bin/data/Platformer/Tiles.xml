@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<patterns>
+  <pattern name="Wall F" x="0" y="0" width="32" height="32" pivot.x="0" pivot.y="0"/>
+  <pattern name="Wall E" x="0" y="32" width="32" height="32" pivot.x="0" pivot.y="0"/>
+  <pattern name="Wall W" x="0" y="64" width="32" height="32" pivot.x="0" pivot.y="0"/>
+  <pattern name="Wall G" x="0" y="96" width="32" height="32" pivot.x="0" pivot.y="0"/>
+  <pattern name="Wall B" x="0" y="128" width="32" height="32" pivot.x="0" pivot.y="0"/>
+  <pattern name="Wall A" x="0" y="160" width="32" height="32" pivot.x="0" pivot.y="0"/>
+  <pattern name="Wall D" x="0" y="192" width="32" height="32" pivot.x="0" pivot.y="0"/>
+  <pattern name="Wall C" x="0" y="224" width="32" height="32" pivot.x="0" pivot.y="0"/>
+</patterns>

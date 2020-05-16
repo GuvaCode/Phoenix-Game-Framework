@@ -3,7 +3,7 @@
   <ProjectSession>
     <Version Value="11"/>
     <BuildModes Active="Default"/>
-    <Units Count="4">
+    <Units Count="5">
       <Unit0>
         <Filename Value="Demo_01Canvas.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -17,16 +17,15 @@
       <Unit1>
         <Filename Value="main.pas"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
         <TopLine Value="30"/>
-        <CursorPos X="21" Y="52"/>
+        <CursorPos X="45" Y="41"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit1>
       <Unit2>
         <Filename Value="../../../../Рабочий стол/Demos/01_Canvas/Main.pas"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="3"/>
         <TopLine Value="150"/>
         <CursorPos Y="169"/>
         <UsageCount Value="10"/>
@@ -35,12 +34,22 @@
       </Unit2>
       <Unit3>
         <Filename Value="../../source/phxDevice.pas"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="2"/>
         <TopLine Value="472"/>
         <CursorPos X="27" Y="484"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit3>
+      <Unit4>
+        <Filename Value="../../../../Рабочий стол/Demos/02_Images/Main.pas"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="116"/>
+        <CursorPos X="97" Y="137"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit4>
     </Units>
     <JumpHistory Count="4" HistoryIndex="3">
       <Position1>

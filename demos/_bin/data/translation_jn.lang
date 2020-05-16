@@ -1,0 +1,6 @@
+﻿-- Commented line
+Name = Japanese
+Code = ja -- comment at the end of a line
+
+
+welcome=ようこそ\nようこそ
