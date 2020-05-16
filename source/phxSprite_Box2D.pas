@@ -362,7 +362,7 @@ begin
   b2Impulse.x:= Impulse.X;
   b2Impulse.y:= Impulse.y;
 
-  FPhysicsBody.ApplyLinearImpulse(b2Impulse, FPhysicsBody.GetWorldCenter);
+  FPhysicsBody.ApplyLinearImpulse(b2Impulse, FPhysicsBody.GetWorldCenter,true);
 end;
 
 //------------------------------------------------------------------------------
@@ -378,7 +378,7 @@ begin
   b2Impulse.x:= Impulse.X;
   b2Impulse.y:= Impulse.y;
 
-  FPhysicsBody.ApplyLinearImpulse(b2Impulse, b2Point);
+  FPhysicsBody.ApplyLinearImpulse(b2Impulse, b2Point, true);
 end;
 
 
@@ -415,7 +415,7 @@ begin
     b2Impulse.x:= (b2Direction.X * Power) * b2Scale;
     b2Impulse.y:= (b2Direction.y * Power) * b2Scale;
 
-    FPhysicsBody.ApplyLinearImpulse(b2Impulse, FPhysicsBody.GetWorldCenter);
+    FPhysicsBody.ApplyLinearImpulse(b2Impulse, FPhysicsBody.GetWorldCenter,true);
   end;
 end;
 
@@ -584,12 +584,7 @@ begin
   end;
 end;
 
-       {
 
-            // Use this method to keep principle of momentum conservation
-            body1.ApplyLinearImpulse(lin_impulse, body1.GetWorldCenter);
-            {$IFDEF OP_OVERLOAD}
-          //  body2.ApplyLinearImpulse(-lin_impulse, body2.GetWorldCenter);
 
 
 end.
