@@ -20,7 +20,20 @@ Open and install pgfctrls.lpk
 
 ![](pictures/pgk_1.png) 
 
- 
+
+**Сreate the first game application**
+
+select> file> create ...
+
+![](pictures/pkg2.png)  
+
+and selected PGF Game Application ...
+
+![](pictures/pkg3.png) 
+
+compile and run first project ......
+
+
 
 **Compilation of PGF in different OS's**
 
