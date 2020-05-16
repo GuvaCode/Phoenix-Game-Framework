@@ -13,9 +13,11 @@ Phoenix is mainly developed and tested on Linux, but Windows or MacOS is support
 **Package installation**
 
 Open and compile pgf.lpk
+
 ![](pictures/pkg_0.png) 
 
 Open and install pgfctrls.lpk
+
 ![](pictures/pgk_1.png) 
 
  
