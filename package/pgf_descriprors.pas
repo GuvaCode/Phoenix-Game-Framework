@@ -31,8 +31,8 @@ type
     function GetInterfaceSource(const {%H-}aFilename, {%H-}aSourceName,{%H-}aResourceName: string): string; override;
 
     end;
-   const LE = #10;
-
+   const L_E = #10;
+   const LE ='+'+L_LE+'+';
    procedure Register;
 
 implementation
@@ -99,17 +99,17 @@ function TPGFFileUnit.GetInterfaceSource(const aFilename, aSourceName,
   aResourceName: string): string;
 var Source:String;
 begin
-Source:='type'                                      +LineEnding+LineEnding+
- 'TGame = class(TPHXApplication)'                   +LineEnding+
- '  private'                                        +LineEnding+
- '    Device : TPHXDevice;'                       +LineEnding+
- '    Canvas : TPHXCanvas;'                       +LineEnding+
- '  public'                                         +LineEnding+
- '    procedure Init; override;'                    +LineEnding+
- '    procedure Update; override;'                  +LineEnding+
- '    procedure Render; override;'                  +LineEnding+
- '    procedure Shutdown; override;'                +LineEnding+
- '  end;'                                           +LineEnding+LineEnding;
+Source:='type'                                      +LE+LE+
+ 'TGame = class(TPHXApplication)'                   +LE+
+ '  private'                                        +LE+
+ '    Device : TPHXDevice;'                         +LE+
+ '    Canvas : TPHXCanvas;'                         +LE+
+ '  public'                                         +LE+
+ '    procedure Init; override;'                    +LE+
+ '    procedure Update; override;'                  +LE+
+ '    procedure Render; override;'                  +LE+
+ '    procedure Shutdown; override;'                +LE+
+ '  end;'                                           +LE+LE;
   Result:=Source;
 end;
 
