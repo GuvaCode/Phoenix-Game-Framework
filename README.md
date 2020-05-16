@@ -19,7 +19,18 @@ Additionally for compilation in some distributives you will be needed to install
 
 **Debian, Ubuntu, Linux Mint** and any based on them: 
 
+dependencies for graphics provider 
+
 - libglfw3 or libglfw3-wayland (for X or Wayland)
-- libfreeimage-dev
- 
+- libsdl2-dev
+
+dependencies for graphics render
+
+- libfreeimage-dev 
+
+dependencies for audio provider
+
+- todo 
+- todo
+
  
