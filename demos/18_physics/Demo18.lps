@@ -3,7 +3,7 @@
   <ProjectSession>
     <Version Value="11"/>
     <BuildModes Active="Default"/>
-    <Units Count="11">
+    <Units Count="13">
       <Unit0>
         <Filename Value="Demo18.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -17,6 +17,7 @@
       <Unit1>
         <Filename Value="main.pas"/>
         <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
         <CursorPos X="100" Y="12"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
@@ -81,13 +82,24 @@
       </Unit9>
       <Unit10>
         <Filename Value="../../source/phxParticle.pas"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="233"/>
         <CursorPos X="26" Y="260"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
       </Unit10>
+      <Unit11>
+        <Filename Value="../../source/phxConfig.inc"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="2" Y="21"/>
+        <UsageCount Value="10"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="../../source/phxGraphics_Vampyre.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="22"/>
+        <CursorPos X="49" Y="35"/>
+        <UsageCount Value="10"/>
+      </Unit12>
     </Units>
     <JumpHistory Count="3" HistoryIndex="2">
       <Position1>

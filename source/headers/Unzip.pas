@@ -14,7 +14,7 @@ uses
   SysUtils, Classes
   {$IFDEF Win32}, Windows{$ENDIF}
   {$IFDEF Win64}, Windows{$ENDIF}
-  {$IFDEF Linux}, X, XLib, XUtil{$ENDIF}
+  {$IFDEF Linux}, X, XLib, XUtil, Ctypes{$ENDIF}
   ;
 
 { windll.h }
@@ -75,6 +75,8 @@ const
 
 
 type
+  ulong                 = culong;
+  uint                  = cuint;
   TCallbackPrint    = function(Buffer: PAnsiChar; Size: ULONG): Integer; stdcall;
   TCallbackSound    = procedure; stdcall;
   TCallbackPassword = function(P: PAnsiChar; N: Integer; M, Name: PAnsiChar): Integer; stdcall;

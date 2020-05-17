@@ -18,7 +18,7 @@
 {$DEFINE PHX_LUA_SCRIPTING}
 
 // Uses Vamire Imaging
-{.$DEFINE PHX_VAMPIRE}
+{$DEFINE PHX_VAMPIRE}
 
 
 
