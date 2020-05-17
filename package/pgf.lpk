@@ -11,7 +11,7 @@
         <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
       </SearchPaths>
     </CompilerOptions>
-    <Files Count="45">
+    <Files Count="46">
       <Item1>
         <Filename Value="../source/phxApplication.pas"/>
         <UnitName Value="phxApplication"/>
@@ -153,45 +153,49 @@
         <UnitName Value="phxSprite_Box2D"/>
       </Item35>
       <Item36>
-        <Filename Value="../source/phxTexture.pas"/>
-        <UnitName Value="phxTexture"/>
+        <Filename Value="../source/phxSpriteTerrain.pas"/>
+        <UnitName Value="phxSpriteTerrain"/>
       </Item36>
       <Item37>
-        <Filename Value="../source/phxTiles.pas"/>
-        <UnitName Value="phxTiles"/>
+        <Filename Value="../source/phxTexture.pas"/>
+        <UnitName Value="phxTexture"/>
       </Item37>
       <Item38>
-        <Filename Value="../source/phxTimer.pas"/>
-        <UnitName Value="phxTimer"/>
+        <Filename Value="../source/phxTiles.pas"/>
+        <UnitName Value="phxTiles"/>
       </Item38>
       <Item39>
-        <Filename Value="../source/phxTranslation.pas"/>
-        <UnitName Value="phxTranslation"/>
+        <Filename Value="../source/phxTimer.pas"/>
+        <UnitName Value="phxTimer"/>
       </Item39>
       <Item40>
-        <Filename Value="../source/phxTypes.pas"/>
-        <UnitName Value="phxTypes"/>
+        <Filename Value="../source/phxTranslation.pas"/>
+        <UnitName Value="phxTranslation"/>
       </Item40>
       <Item41>
-        <Filename Value="../source/providers/phxOpenGL.pas"/>
-        <UnitName Value="phxOpenGL"/>
+        <Filename Value="../source/phxTypes.pas"/>
+        <UnitName Value="phxTypes"/>
       </Item41>
       <Item42>
-        <Filename Value="../source/providers/phxOpenGL_Canvas.pas"/>
-        <UnitName Value="phxOpenGL_Canvas"/>
+        <Filename Value="../source/providers/phxOpenGL.pas"/>
+        <UnitName Value="phxOpenGL"/>
       </Item42>
       <Item43>
-        <Filename Value="../source/providers/phxOpenGL_Effect.pas"/>
-        <UnitName Value="phxOpenGL_Effect"/>
+        <Filename Value="../source/providers/phxOpenGL_Canvas.pas"/>
+        <UnitName Value="phxOpenGL_Canvas"/>
       </Item43>
       <Item44>
-        <Filename Value="../source/providers/phxOpenGL_GLFW3.pas"/>
-        <UnitName Value="phxOpenGL_GLFW3"/>
+        <Filename Value="../source/providers/phxOpenGL_Effect.pas"/>
+        <UnitName Value="phxOpenGL_Effect"/>
       </Item44>
       <Item45>
+        <Filename Value="../source/providers/phxOpenGL_GLFW3.pas"/>
+        <UnitName Value="phxOpenGL_GLFW3"/>
+      </Item45>
+      <Item46>
         <Filename Value="../source/providers/phxOpenGL_Shader.pas"/>
         <UnitName Value="phxOpenGL_Shader"/>
-      </Item45>
+      </Item46>
     </Files>
     <RequiredPkgs Count="4">
       <Item1>

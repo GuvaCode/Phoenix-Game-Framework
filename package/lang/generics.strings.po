@@ -1,0 +1,31 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: generics.strings.sargumentnilnode
+msgid "Node is nil"
+msgstr ""
+
+#: generics.strings.sargumentoutofrange
+msgid "Argument out of range"
+msgstr ""
+
+#: generics.strings.scollectionduplicate
+msgid "Collection does not allow duplicates"
+msgstr ""
+
+#: generics.strings.scollectioninconsistency
+msgid "Collection inconsistency"
+msgstr ""
+
+#: generics.strings.sdictionarykeydoesnotexist
+msgid "Dictionary key does not exist"
+msgstr ""
+
+#: generics.strings.sduplicatesnotallowed
+msgid "Duplicates not allowed in dictionary"
+msgstr ""
+
+#: generics.strings.sitemnotfound
+msgid "Item not found"
+msgstr ""
+
