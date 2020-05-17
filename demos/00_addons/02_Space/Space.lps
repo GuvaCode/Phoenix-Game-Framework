@@ -3,7 +3,7 @@
   <ProjectSession>
     <Version Value="11"/>
     <BuildModes Active="Default"/>
-    <Units Count="6">
+    <Units Count="7">
       <Unit0>
         <Filename Value="Space.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -17,9 +17,8 @@
       <Unit1>
         <Filename Value="main.pas"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
         <TopLine Value="82"/>
-        <CursorPos X="32" Y="101"/>
+        <CursorPos X="63" Y="98"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
@@ -34,19 +33,17 @@
       </Unit2>
       <Unit3>
         <Filename Value="../../../source/phxApplication.pas"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="49"/>
         <CursorPos X="28" Y="63"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
       </Unit3>
       <Unit4>
         <Filename Value="../../../source/phxSprite.pas"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="858"/>
         <CursorPos X="14" Y="872"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
       </Unit4>
       <Unit5>
         <Filename Value="../../../source/phxTypes.pas"/>
@@ -55,56 +52,46 @@
         <CursorPos X="13" Y="427"/>
         <UsageCount Value="10"/>
       </Unit5>
+      <Unit6>
+        <Filename Value="uBullet.pas"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="34"/>
+        <CursorPos X="25" Y="56"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit6>
     </Units>
-    <JumpHistory Count="12" HistoryIndex="11">
+    <JumpHistory Count="7" HistoryIndex="6">
       <Position1>
         <Filename Value="main.pas"/>
         <Caret Line="95" Column="30" TopLine="74"/>
       </Position1>
       <Position2>
-        <Filename Value="../../../source/phxApplication.pas"/>
-        <Caret Line="89" Column="14" TopLine="77"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="306" Column="27" TopLine="279"/>
       </Position2>
       <Position3>
         <Filename Value="main.pas"/>
-        <Caret Line="306" Column="27" TopLine="279"/>
+        <Caret Line="224" Column="55" TopLine="210"/>
       </Position3>
       <Position4>
         <Filename Value="main.pas"/>
-        <Caret Line="224" Column="55" TopLine="210"/>
+        <Caret Line="224" Column="6" TopLine="211"/>
       </Position4>
       <Position5>
-        <Filename Value="../../../source/phxSprite.pas"/>
-        <Caret Line="310" Column="14" TopLine="298"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="224" Column="6" TopLine="211"/>
       </Position5>
       <Position6>
         <Filename Value="main.pas"/>
-        <Caret Line="224" Column="6" TopLine="211"/>
+        <Caret Line="225" Column="56" TopLine="211"/>
       </Position6>
       <Position7>
-        <Filename Value="../../../source/phxSprite.pas"/>
-        <Caret Line="872" Column="14" TopLine="858"/>
-      </Position7>
-      <Position8>
-        <Filename Value="main.pas"/>
-        <Caret Line="224" Column="6" TopLine="211"/>
-      </Position8>
-      <Position9>
-        <Filename Value="../../../source/phxSprite.pas"/>
-        <Caret Line="312" Column="23" TopLine="296"/>
-      </Position9>
-      <Position10>
-        <Filename Value="../../../source/phxSprite.pas"/>
-        <Caret Line="115" Column="4" TopLine="102"/>
-      </Position10>
-      <Position11>
-        <Filename Value="main.pas"/>
-        <Caret Line="225" Column="56" TopLine="211"/>
-      </Position11>
-      <Position12>
         <Filename Value="main.pas"/>
         <Caret Line="226" Column="3" TopLine="211"/>
-      </Position12>
+      </Position7>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
