@@ -52,7 +52,7 @@ begin
   // Initialize the device
   Device.Initialize;
   // This loads a new icon for the window
-//  Device.Icon:= ContentPath + 'Phoenix.bmp';
+  Device.Icon:= 'data/Phoenix.bmp';
 
   // Create the timer
   Timer:= TPHXTimer.Create;
@@ -82,15 +82,13 @@ end;
 //------------------------------------------------------------------------------
 procedure TGame.Render;
 var Scale: TVector3f;
-w,h:integer;
+
 begin
-  // Scale all content to a virtual screen size of 1920x1080
+  // Scale all content to a virtual screen size of 1027 x 768
 
-   w:=Device.Width +random(100);
-   h:=Device.Height +random(100);
 
-  Scale.X:= Device.Width  / w;
-  Scale.Y:= Device.Height / h;
+  Scale.X:= Device.Width  / 1024;
+  Scale.Y:= Device.Height / 768;
 
   Canvas.Transform:= Matrix_CreateScale(Scale.X, Scale.Y, 1);
 

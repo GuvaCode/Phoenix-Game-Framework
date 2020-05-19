@@ -52,7 +52,7 @@ begin
   // Initialize the device
   Device.Initialize;
   // This loads a new icon for the window
-//  Device.Icon:= ContentPath + 'Phoenix.bmp';
+  Device.Icon:= ContentPath + 'Phoenix.bmp';
 
   // Create the timer
   Timer:= TPHXTimer.Create;
