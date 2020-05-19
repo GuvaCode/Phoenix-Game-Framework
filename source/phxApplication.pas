@@ -41,12 +41,8 @@ TPHXTimer = phxTimer.TPHXTimer;
 
 // Template class for the user application
 //------------------------------------------------------------------------------
-
-{ TPHXApplication }
-
 TPHXApplication = class(TObject)
   private
-
     Terminated: Boolean;
 
     // Handle a phoenix event
@@ -89,7 +85,7 @@ TPHXApplication = class(TObject)
     // Terminate the application
     procedure Terminate;
 
-   // Return the path containing the content for the application
+    // Return the path containing the content for the application
     property ContentPath: String read GetContentPath;
   end;
 
@@ -315,16 +311,19 @@ begin
   end;
 end;
 
+
 //------------------------------------------------------------------------------
 procedure TPHXApplication.MousePressed(X, Y: Integer; Shift: TPHXShiftStates; Button: TPHXMouseButton);
 begin
 
 end;
+
 //------------------------------------------------------------------------------
 procedure TPHXApplication.MouseMoved(X, Y: Integer; Shift: TPHXShiftStates);
 begin
 
 end;
+
 //------------------------------------------------------------------------------
 procedure TPHXApplication.MouseReleased(X, Y: Integer; Shift: TPHXShiftStates; Button: TPHXMouseButton);
 begin
@@ -369,7 +368,7 @@ begin
 end;
 
 //------------------------------------------------------------------------------
-procedure TPHXApplication.Run;
+Procedure TPHXApplication.Run;
 begin
   Terminated:= False;
 
@@ -394,7 +393,7 @@ begin
 end;
 
 //------------------------------------------------------------------------------
-procedure TPHXApplication.Terminate;
+procedure TPHXApplication.Terminate();
 begin
   TPHXEvents.NotifyQuit(Self);
 end;
@@ -404,9 +403,9 @@ function TPHXApplication.GetContentPath: String;
 begin
   // Keep the original path to /Contents/Resources in the .app - file
   {$IFDEF DARWIN}
-  Result = '../resources/';
+  Result = '../Resources/';
   {$ELSE}
-  Result:= ExtractFilePath( ParamStr(0) ) + 'resources' + PathDelim;
+  Result:= ExtractFilePath( ParamStr(0) ) + 'Content' + PathDelim;
   {$ENDIF}
 end;
 

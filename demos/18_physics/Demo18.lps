@@ -3,7 +3,7 @@
   <ProjectSession>
     <Version Value="11"/>
     <BuildModes Active="Default"/>
-    <Units Count="13">
+    <Units Count="14">
       <Unit0>
         <Filename Value="Demo18.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -17,7 +17,6 @@
       <Unit1>
         <Filename Value="main.pas"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
         <CursorPos X="100" Y="12"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
@@ -100,8 +99,17 @@
         <CursorPos X="49" Y="35"/>
         <UsageCount Value="10"/>
       </Unit12>
+      <Unit13>
+        <Filename Value="../../source/providers/phxOpenGL.pas"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="466"/>
+        <CursorPos X="20" Y="1236"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit13>
     </Units>
-    <JumpHistory Count="3" HistoryIndex="2">
+    <JumpHistory Count="4" HistoryIndex="3">
       <Position1>
         <Filename Value="main.pas"/>
         <Caret Line="56" Column="10" TopLine="39"/>
@@ -114,6 +122,10 @@
         <Filename Value="main.pas"/>
         <Caret Line="320" Column="23" TopLine="316"/>
       </Position3>
+      <Position4>
+        <Filename Value="main.pas"/>
+        <Caret Line="12" Column="100"/>
+      </Position4>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>

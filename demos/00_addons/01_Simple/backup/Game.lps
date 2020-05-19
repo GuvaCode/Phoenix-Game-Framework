@@ -3,7 +3,7 @@
   <ProjectSession>
     <Version Value="11"/>
     <BuildModes Active="Default"/>
-    <Units Count="5">
+    <Units Count="9">
       <Unit0>
         <Filename Value="Game.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -17,9 +17,8 @@
       <Unit1>
         <Filename Value="main.pas"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="133"/>
-        <CursorPos X="41" Y="147"/>
+        <TopLine Value="90"/>
+        <CursorPos X="27" Y="115"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
@@ -34,7 +33,8 @@
       </Unit2>
       <Unit3>
         <Filename Value="../../../source/phxSprite.pas"/>
-        <EditorIndex Value="1"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="3"/>
         <TopLine Value="834"/>
         <CursorPos X="15" Y="846"/>
         <UsageCount Value="10"/>
@@ -42,14 +42,42 @@
       </Unit3>
       <Unit4>
         <Filename Value="../../../source/phxTypes.pas"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="4"/>
         <TopLine Value="688"/>
         <CursorPos X="8" Y="704"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit4>
+      <Unit5>
+        <Filename Value="../../../source/providers/phxOpenGL.pas"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="77" Y="787"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="../../../../../Загрузки/123/phoenix_2013-10-15/Source/phxApplication.pas"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="../../../source/phxConfig.inc"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="3" Y="4"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="../../../source/headers/sdl2.pas"/>
+        <UnitName Value="SDL2"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="63"/>
+        <CursorPos X="51" Y="76"/>
+        <UsageCount Value="10"/>
+      </Unit8>
     </Units>
-    <JumpHistory Count="6" HistoryIndex="5">
+    <JumpHistory Count="10" HistoryIndex="9">
       <Position1>
         <Filename Value="main.pas"/>
         <Caret Line="204" Column="10" TopLine="177"/>
@@ -74,6 +102,22 @@
         <Filename Value="../../../source/phxSprite.pas"/>
         <Caret Line="846" Column="15" TopLine="834"/>
       </Position6>
+      <Position7>
+        <Filename Value="main.pas"/>
+        <Caret Line="115" Column="27" TopLine="90"/>
+      </Position7>
+      <Position8>
+        <Filename Value="../../../source/phxSprite.pas"/>
+        <Caret Line="846" Column="15" TopLine="834"/>
+      </Position8>
+      <Position9>
+        <Filename Value="../../../source/providers/phxOpenGL.pas"/>
+        <Caret Line="787" Column="77"/>
+      </Position9>
+      <Position10>
+        <Filename Value="../../../source/phxConfig.inc"/>
+        <Caret Line="4" Column="3"/>
+      </Position10>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>

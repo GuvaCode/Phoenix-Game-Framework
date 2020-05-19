@@ -3,7 +3,7 @@
   <ProjectSession>
     <Version Value="11"/>
     <BuildModes Active="Default"/>
-    <Units Count="8">
+    <Units Count="25">
       <Unit0>
         <Filename Value="Demo19.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -17,9 +17,8 @@
       <Unit1>
         <Filename Value="main.pas"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="52"/>
-        <CursorPos X="23" Y="55"/>
+        <TopLine Value="27"/>
+        <CursorPos X="4" Y="40"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
@@ -42,157 +41,293 @@
       </Unit3>
       <Unit4>
         <Filename Value="../../source/phxApplication.pas"/>
-        <EditorIndex Value="4"/>
-        <TopLine Value="54"/>
-        <CursorPos X="14" Y="67"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="399"/>
+        <CursorPos X="36" Y="418"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
       </Unit4>
       <Unit5>
         <Filename Value="../../source/phxDevice.pas"/>
-        <EditorIndex Value="1"/>
-        <TopLine Value="224"/>
-        <CursorPos X="57" Y="250"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="202"/>
+        <CursorPos X="3" Y="215"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit5>
       <Unit6>
         <Filename Value="../../source/headers/GLFW3.pas"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="321"/>
-        <CursorPos X="28" Y="334"/>
+        <TopLine Value="384"/>
+        <CursorPos X="35" Y="259"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit6>
       <Unit7>
         <Filename Value="../../source/providers/phxOpenGL_GLFW3.pas"/>
-        <EditorIndex Value="3"/>
-        <TopLine Value="378"/>
-        <CursorPos X="14" Y="402"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="324"/>
+        <CursorPos X="24" Y="346"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit7>
+      <Unit8>
+        <Filename Value="../../../../Загрузки/123/phoenix_2013-10-15/Source/Headers/sdl.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2084"/>
+        <CursorPos X="3" Y="2109"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="../../../../Загрузки/123/phoenix_2013-10-15/Source/Headers/sdl_image.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="187"/>
+        <CursorPos X="18" Y="200"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="../../../../Загрузки/123/phoenix_2013-10-15/Source/Providers/phxOpenGL_SDL.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="145"/>
+        <CursorPos X="28" Y="145"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="../../source/phxTypes.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="130"/>
+        <CursorPos X="3" Y="143"/>
+        <UsageCount Value="10"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="../../../../Рабочий стол/sdl2.pas"/>
+        <UnitName Value="Bare.Interop.SDL2"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="36" Y="7"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="../../source/headers/sdl2.pas"/>
+        <UnitName Value="SDL2"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="372"/>
+        <CursorPos X="57" Y="381"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="../../source/phxConfig.inc"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="12" Y="4"/>
+        <UsageCount Value="10"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="../../../../Загрузки/123/phoenix_2013-10-15/Source/Providers/phxDirect3D9_SDL.pas"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="../../source/providers/phxOpenGL_SDL.pas"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="685"/>
+        <CursorPos X="6" Y="700"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="../../../../.lazarus/onlinepackagemanager/packages/Bare.Game-master/source/bare.interop.opengl.pas"/>
+        <UnitName Value="Bare.Interop.OpenGL"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1586"/>
+        <CursorPos X="38" Y="110"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="../../../../.lazarus/onlinepackagemanager/packages/Bare.Game-master/source/bare.interop.windows.pas"/>
+        <UnitName Value="Bare.Interop.Windows"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="103"/>
+        <CursorPos X="59" Y="129"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="../../../../.lazarus/onlinepackagemanager/packages/Bare.Game-master/source/bare.interop.openvg.pas"/>
+        <UnitName Value="Bare.Interop.OpenVG"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="587"/>
+        <CursorPos X="63" Y="612"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="../../../../.lazarus/onlinepackagemanager/packages/Bare.Game-master/examples/blank/blank.lpr"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="26" Y="10"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="../../../../.lazarus/onlinepackagemanager/packages/Bare.Game-master/source/bare.game.pas"/>
+        <UnitName Value="Bare.Game"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="3582"/>
+        <CursorPos X="5" Y="3597"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="../../../../.lazarus/onlinepackagemanager/packages/Bare.Game-master/source/bare.interop.sdl2.pas"/>
+        <UnitName Value="Bare.Interop.SDL2"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="63"/>
+        <CursorPos X="10" Y="76"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="../../source/phxClasses.pas"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="818"/>
+        <CursorPos X="23" Y="842"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="../../source/providers/phxOpenGL.pas"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="773"/>
+        <CursorPos X="24" Y="788"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit24>
     </Units>
     <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
-        <Filename Value="../../source/phxDevice.pas"/>
-        <Caret Line="328" Column="48" TopLine="307"/>
+        <Filename Value="../../source/providers/phxOpenGL_SDL.pas"/>
+        <Caret Line="729" Column="3" TopLine="720"/>
       </Position1>
       <Position2>
-        <Filename Value="../../source/phxDevice.pas"/>
-        <Caret Line="329" Column="38" TopLine="308"/>
+        <Filename Value="../../source/headers/sdl2.pas"/>
+        <Caret Line="2258" Column="69" TopLine="2243"/>
       </Position2>
       <Position3>
-        <Filename Value="../../source/phxDevice.pas"/>
-        <Caret Line="396" Column="10" TopLine="374"/>
+        <Filename Value="../../source/headers/sdl2.pas"/>
+        <Caret Line="385" Column="20" TopLine="372"/>
       </Position3>
       <Position4>
-        <Filename Value="../../source/phxDevice.pas"/>
-        <Caret Line="410" Column="22" TopLine="388"/>
+        <Filename Value="../../source/providers/phxOpenGL_SDL.pas"/>
+        <Caret Line="349" Column="5" TopLine="339"/>
       </Position4>
       <Position5>
-        <Filename Value="../../source/phxDevice.pas"/>
-        <Caret Line="515" Column="50" TopLine="495"/>
+        <Filename Value="../../source/providers/phxOpenGL_SDL.pas"/>
+        <Caret Line="75" Column="28" TopLine="61"/>
       </Position5>
       <Position6>
-        <Filename Value="../../source/phxDevice.pas"/>
-        <Caret Line="516" Column="51" TopLine="496"/>
+        <Filename Value="../../source/providers/phxOpenGL_SDL.pas"/>
+        <Caret Line="346" Column="4" TopLine="333"/>
       </Position6>
       <Position7>
-        <Filename Value="../../source/phxDevice.pas"/>
-        <Caret Line="1269" Column="91" TopLine="1251"/>
+        <Filename Value="../../source/providers/phxOpenGL_SDL.pas"/>
+        <Caret Line="352" Column="5" TopLine="352"/>
       </Position7>
       <Position8>
-        <Filename Value="../../source/phxDevice.pas"/>
-        <Caret Line="392" Column="5" TopLine="379"/>
+        <Filename Value="../../source/providers/phxOpenGL_SDL.pas"/>
+        <Caret Line="77" Column="28" TopLine="65"/>
       </Position8>
       <Position9>
-        <Filename Value="../../source/providers/phxOpenGL_GLFW3.pas"/>
-        <Caret Line="38" Column="22" TopLine="27"/>
+        <Filename Value="../../source/providers/phxOpenGL_SDL.pas"/>
+        <Caret Line="374" Column="8" TopLine="349"/>
       </Position9>
       <Position10>
-        <Filename Value="../../source/providers/phxOpenGL_GLFW3.pas"/>
-        <Caret Line="396" Column="3" TopLine="381"/>
+        <Filename Value="../../source/headers/sdl2.pas"/>
+        <Caret Line="381" Column="57" TopLine="372"/>
       </Position10>
       <Position11>
-        <Filename Value="../../source/providers/phxOpenGL_GLFW3.pas"/>
-        <Caret Line="388" Column="50" TopLine="381"/>
+        <Filename Value="../../source/providers/phxOpenGL_SDL.pas"/>
+        <Caret Line="365" Column="5" TopLine="349"/>
       </Position11>
       <Position12>
-        <Filename Value="../../source/phxDevice.pas"/>
-        <Caret Line="329" Column="12" TopLine="316"/>
+        <Filename Value="../../source/providers/phxOpenGL_SDL.pas"/>
+        <Caret Line="378" Column="4" TopLine="363"/>
       </Position12>
       <Position13>
-        <Filename Value="../../source/providers/phxOpenGL_GLFW3.pas"/>
-        <Caret Line="400" Column="4" TopLine="381"/>
+        <Filename Value="../../source/providers/phxOpenGL_SDL.pas"/>
+        <Caret Line="430" Column="55" TopLine="420"/>
       </Position13>
       <Position14>
-        <Filename Value="../../source/providers/phxOpenGL_GLFW3.pas"/>
-        <Caret Line="325" Column="80" TopLine="314"/>
+        <Filename Value="../../source/providers/phxOpenGL_SDL.pas"/>
+        <Caret Line="683" Column="54" TopLine="661"/>
       </Position14>
       <Position15>
-        <Filename Value="../../source/headers/GLFW3.pas"/>
-        <Caret Line="334" Column="149" TopLine="324"/>
+        <Filename Value="../../source/providers/phxOpenGL_SDL.pas"/>
+        <Caret Line="697" Column="67" TopLine="675"/>
       </Position15>
       <Position16>
-        <Filename Value="../../source/headers/GLFW3.pas"/>
-        <Caret Line="308" Column="3" TopLine="295"/>
+        <Filename Value="../../source/providers/phxOpenGL_SDL.pas"/>
+        <Caret Line="73" Column="23" TopLine="60"/>
       </Position16>
       <Position17>
-        <Filename Value="../../source/providers/phxOpenGL_GLFW3.pas"/>
-        <Caret Line="32" Column="5" TopLine="18"/>
+        <Filename Value="../../source/providers/phxOpenGL_SDL.pas"/>
+        <Caret Line="77" Column="12" TopLine="60"/>
       </Position17>
       <Position18>
-        <Filename Value="../../source/providers/phxOpenGL_GLFW3.pas"/>
-        <Caret Line="326" Column="82" TopLine="325"/>
+        <Filename Value="../../source/providers/phxOpenGL_SDL.pas"/>
+        <Caret Line="348" Column="7" TopLine="329"/>
       </Position18>
       <Position19>
-        <Filename Value="../../source/headers/GLFW3.pas"/>
-        <Caret Line="310" Column="13" TopLine="295"/>
+        <Filename Value="../../source/providers/phxOpenGL_SDL.pas"/>
+        <Caret Line="349" Column="42" TopLine="336"/>
       </Position19>
       <Position20>
-        <Filename Value="../../source/headers/GLFW3.pas"/>
-        <Caret Line="334" Column="90" TopLine="312"/>
+        <Filename Value="../../source/providers/phxOpenGL_SDL.pas"/>
+        <Caret Line="454" Column="24" TopLine="441"/>
       </Position20>
       <Position21>
-        <Filename Value="../../source/headers/GLFW3.pas"/>
-        <Caret Line="372" Column="50" TopLine="350"/>
+        <Filename Value="../../source/providers/phxOpenGL_SDL.pas"/>
+        <Caret Line="463" Column="33" TopLine="450"/>
       </Position21>
       <Position22>
-        <Filename Value="../../source/headers/GLFW3.pas"/>
-        <Caret Line="303" Column="13" TopLine="290"/>
+        <Filename Value="../../source/providers/phxOpenGL_SDL.pas"/>
+        <Caret Line="481" Column="13" TopLine="462"/>
       </Position22>
       <Position23>
-        <Filename Value="../../source/headers/GLFW3.pas"/>
-        <Caret Line="308" Column="27" TopLine="290"/>
+        <Filename Value="../../source/providers/phxOpenGL_SDL.pas"/>
+        <Caret Line="522" Column="3" TopLine="509"/>
       </Position23>
       <Position24>
-        <Filename Value="../../source/headers/GLFW3.pas"/>
-        <Caret Line="309" Column="28" TopLine="290"/>
+        <Filename Value="../../source/providers/phxOpenGL_SDL.pas"/>
+        <Caret Line="565" Column="4" TopLine="544"/>
       </Position24>
       <Position25>
-        <Filename Value="../../source/headers/GLFW3.pas"/>
-        <Caret Line="334" Column="90" TopLine="312"/>
+        <Filename Value="../../source/providers/phxOpenGL_SDL.pas"/>
+        <Caret Line="609" Column="4" TopLine="590"/>
       </Position25>
       <Position26>
-        <Filename Value="../../source/providers/phxOpenGL_GLFW3.pas"/>
-        <Caret Line="326" Column="82" TopLine="321"/>
+        <Filename Value="../../source/providers/phxOpenGL_SDL.pas"/>
+        <Caret Line="628" Column="11" TopLine="612"/>
       </Position26>
       <Position27>
-        <Filename Value="../../source/headers/GLFW3.pas"/>
-        <Caret Line="372" Column="38" TopLine="350"/>
+        <Filename Value="../../source/providers/phxOpenGL_SDL.pas"/>
+        <Caret Line="658" Column="4" TopLine="645"/>
       </Position27>
       <Position28>
-        <Filename Value="../../source/providers/phxOpenGL_GLFW3.pas"/>
-        <Caret Line="40" Column="64" TopLine="18"/>
+        <Filename Value="../../source/providers/phxOpenGL_SDL.pas"/>
+        <Caret Line="674" Column="5" TopLine="658"/>
       </Position28>
       <Position29>
-        <Filename Value="main.pas"/>
-        <Caret Line="55" Column="21" TopLine="52"/>
+        <Filename Value="../../source/providers/phxOpenGL_SDL.pas"/>
+        <Caret Line="700" Column="6" TopLine="685"/>
       </Position29>
       <Position30>
-        <Filename Value="../../source/phxApplication.pas"/>
-        <Caret Line="93" Column="14" TopLine="82"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="40" Column="4" TopLine="27"/>
       </Position30>
     </JumpHistory>
     <RunParams>

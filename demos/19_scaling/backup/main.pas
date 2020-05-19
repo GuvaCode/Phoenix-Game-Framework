@@ -37,7 +37,8 @@ implementation
 
 uses
    phxOpenGL_GLFW3,
-  phxGraphics_FreeImage;
+   phxOpenGL_SDL,
+   phxGraphics_FreeImage;
 
 //------------------------------------------------------------------------------
 procedure TGame.Init;
@@ -52,7 +53,7 @@ begin
   // Initialize the device
   Device.Initialize;
   // This loads a new icon for the window
-  Device.Icon:= 'data/Phoenix.bmp';
+  Device.Icon:= ContentPath + 'Phoenix.bmp';
 
   // Create the timer
   Timer:= TPHXTimer.Create;
