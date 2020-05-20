@@ -35,6 +35,7 @@ type
     FHeight: Integer;
     FFullscreen: Boolean;
     FWindowFlags: TPHXWindowFlags;
+    procedure SDLEvent(SDLEvent: TSDL_Event);
   protected
     function GetWidth: Integer; override;
     function GetHeight: Integer; override;
@@ -80,6 +81,27 @@ end;
 
 { TPHXOpenGLRendererSDL2 }
 
+procedure TPHXOpenGLRendererSDL2.SDLEvent(SDLEvent: TSDL_Event);
+var Event: TPHXEvent;
+begin
+   FillChar(Event, SizeOf(TPHXEvent), #0);
+
+   case SDLEvent.type_ of
+     SDL_KEYDOWN:
+     begin
+
+     end;
+     SDL_QUIT_EVENT:
+     begin
+       Event.Event:= PHX_EVENT_QUIT;
+       TPHXEvents.Notify(Self, Event);
+     end;
+
+
+
+   end;
+end;
+
 function TPHXOpenGLRendererSDL2.GetWidth: Integer;
 begin
   Result:= FWidth;
@@ -97,7 +119,8 @@ end;
 
 procedure TPHXOpenGLRendererSDL2.SetTitle(const Title: String);
 begin
-
+  FTitle:= Title;
+  SDL_SetWindowTitle(FWindow,PChar(FTitle));
 end;
 
 procedure TPHXOpenGLRendererSDL2.SetFlags(const Flags: TPHXWindowFlags);
@@ -107,7 +130,7 @@ end;
 
 procedure TPHXOpenGLRendererSDL2.SetIcon(const Icon: String);
 begin
-
+ //SDL_SetWindowIcon
 end;
 
 constructor TPHXOpenGLRendererSDL2.Create;
@@ -139,20 +162,33 @@ begin
   FHeight := Parameters.Height;
   FFullscreen:= Parameters.Fullscreen;
 
-    if SDL_Init( SDL_INIT_VIDEO ) < 0 then raise Exception.Create('Failed to initialize SDL2.');
+  if SDL_Init( SDL_INIT_VIDEO ) < 0 then raise Exception.Create('Failed to initialize SDL2.');
+
+  {SDL_GL_SetAttribute( SDL_GL_RED_SIZE, 5 );
+  SDL_GL_SetAttribute( SDL_GL_GREEN_SIZE, 5 );
+  SDL_GL_SetAttribute( SDL_GL_BLUE_SIZE, 5 );
+  SDL_GL_SetAttribute( SDL_GL_DEPTH_SIZE, 16 );
+  SDL_GL_SetAttribute( SDL_GL_DOUBLEBUFFER, 1 );}
+
 
 
   FWindow := SDL_CreateWindow(PChar(FTitle),SDL_WINDOWPOS_UNDEFINED,
-   SDL_WINDOWPOS_UNDEFINED, FWidth, FHeight, SDL_WINDOW_SHOWN); //todo fscr
-
-   FSurface := SDL_GetWindowSurface(FWindow);
-
+  SDL_WINDOWPOS_UNDEFINED, FWidth, FHeight, SDL_WINDOW_SHOWN ); //todo fscr
+  FSurface := SDL_GetWindowSurface(FWindow);
 
 
-    if (dglOpenGL.InitOpenGL <> True) then raise Exception.Create('OpenGL Initialization failed.');
-     dglOpenGL.ReadExtensions;
-     InitializeOpenGL;
-     FInitialized := True;
+  //SDL_EnableKeyRepeat(SDL_DEFAULT_REPEAT_DELAY, SDL_DEFAULT_REPEAT_INTERVAL);
+  //SDL_EnableUNICODE( SDL_ENABLE );
+  SDL_JoystickEventState(SDL_ENABLE);
+  //InitJoysticks;
+
+  if (dglOpenGL.InitOpenGL <> True) then
+    begin
+      raise Exception.Create('OpenGL Initialization failed.');
+    end;
+    dglOpenGL.ReadExtensions;
+    InitializeOpenGL;
+    FInitialized:= True;
 end;
 
 procedure TPHXOpenGLRendererSDL2.Reinitialize(const Parameters: TPHXDeviceParameters);
@@ -166,8 +202,13 @@ begin
 end;
 
 procedure TPHXOpenGLRendererSDL2.Update;
+var Event: TSDL_Event;
 begin
-  inherited Update;
+    // Poll for events, and handle the ones we care about.
+  while SDL_PollEvent( Event ) > 0 do
+  begin
+    SDLEvent(Event);
+  end;
 end;
 
 procedure TPHXOpenGLRendererSDL2.Clear;
@@ -177,7 +218,7 @@ end;
 
 procedure TPHXOpenGLRendererSDL2.Flip;
 begin
-  inherited Flip;
+  SDL_GL_SwapWindow(FWindow);
 end;
 
 
