@@ -65,6 +65,7 @@ implementation
 // Use opengl for rendering and freeimage for texture loading
 uses
   phxOpenGL_GLFW3,
+ // phxOpenGL_SDL2,
   phxGraphics_Vampyre;
 
 //------------------------------------------------------------------------------
@@ -98,7 +99,7 @@ begin
 
   Images := TPHXImageList.Create(Device, Canvas);
   Images.LoadImage('content/Space/Stars.png');
-  Images.LoadImage('content/Sapce/Images.phximg');
+  Images.LoadImage('content/Space/Images.phximg');
 
   Fonts:= TPHXFontList.Create(Device, Canvas);
   Fonts.LoadFont('content/Calibri12.phxfnt');

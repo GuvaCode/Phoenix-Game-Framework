@@ -76,7 +76,8 @@ TPlayer = class(TPHXAnimatedSprite)
 implementation
 
 uses
-  phxOpenGL_GLFW3,
+//  phxOpenGL_GLFW3,
+  phxOpenGL_SDL2,
   phxGraphics_Vampyre;
 
 var Map: TMap;
@@ -90,8 +91,8 @@ begin
   // This loads a new icon for the window
 
   // Initialize the device
-  Device.Initialize('Phoenix Demo', 800, 600);
-
+//  Device.Initialize('Phoenix Demo', 1024, 768,true);
+  Device.Initialize('Phoenix Demo', 800, 600, true);
   // Create the timer
   Timer:= TPHXTimer.Create;
   // Create the input
@@ -101,8 +102,8 @@ begin
   Canvas:= Device.CreateCanvas;
 
   Fonts:= TPHXFontList.Create(Device, Canvas);
-  Fonts.LoadFont('data/Calibri12.phxfnt');
-  Fonts.LoadFont('data/Tahoma10_en.phxfnt');
+  Fonts.LoadFont('data/calibri12.phxfnt');
+  Fonts.LoadFont('data/tahoma10_en.phxfnt');
 
   Images:= TPHXImageList.Create(Device, Canvas);
   Images.LoadImage('data/platformer/Tiles.phximg'  , 'Tiles'  );
