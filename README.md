@@ -12,6 +12,11 @@ Phoenix is mainly developed and tested on Linux, but Windows or MacOS is support
 
 **Package installation**
 
+Install package dependencies. Open the Network package manager and install the Vampire Imaging Package, Box2d.
+
+![](pictures/install_0.png) 
+![](pictures/install_1.png) 
+
 Open and compile pgf.lpk
 
 ![](pictures/pkg_0.png) 
@@ -50,11 +55,8 @@ dependencies for graphics provider
 
 dependencies for graphics render
 
-- libfreeimage-dev 
+- libfreeimage-dev (not necessary. The default is Vampire imaging library.).
 
-dependencies for audio provider
-
-- todo 
-- todo
+dependencies for audio ( temporarily using the bass library).
 
  
