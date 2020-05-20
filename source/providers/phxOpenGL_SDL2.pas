@@ -1,5 +1,7 @@
 unit phxOpenGL_SDL2;
-
+// open gl provider for PGF
+// guvacode@gmail.com
+//
 interface
 
 {$I ../phxConfig.inc}
@@ -30,14 +32,13 @@ type
     FInitialized: Boolean;
     FWindow: PSDL_Window;
     FSurface: PSDL_Surface;
-    FRender:PSDL_Renderer;
     FTitle: String;
     FWidth: Integer;
     FHeight: Integer;
     FFullscreen: Boolean;
     FWindowFlags: TPHXWindowFlags;
     ShiftStates : TPHXShiftStates;
-    FFlags: TPHXWindowFlags;
+
     procedure SDLEvent(SDLEvent: TSDL_Event);
   protected
     function GetWidth: Integer; override;
@@ -301,15 +302,15 @@ end;
 
 procedure TPHXOpenGLRendererSDL2.SetFlags(const Flags: TPHXWindowFlags);
 begin
-  FWindowFlags := Flags;
+    FWindowFlags := Flags;
    if not FInitialized then Exit;
 
    if wfVerticalSync in Flags then
   begin
-  //  SDL_GL_SetAttribute(SDL_GL_SWAP_CONTROL, 1);
+  SDL_GL_SetSwapInterval(1);
   end else
   begin
-  //  SDL_GL_SetAttribute(SDL_GL_SWAP_CONTROL, 0);
+  SDL_GL_SetSwapInterval(0);
   end;
 
    if wfCursor in Flags then
@@ -339,6 +340,7 @@ begin
   FWidth := 800;
   FHeight := 600;
   FFullscreen := False;
+  FWindowFlags := DefaultWindowFlags;
   ExitProc := @SDL_Quit;
 end;
 
@@ -354,7 +356,6 @@ end;
 
 procedure TPHXOpenGLRendererSDL2.Initialize(const Parameters: TPHXDeviceParameters);
 var Flags: Cardinal;
-   // Display: TSDL_DisplayMode;
 begin
   FTitle := Parameters.Title;
   FWidth := Parameters.Width;
@@ -363,45 +364,29 @@ begin
 
   if SDL_Init( SDL_INIT_VIDEO ) < 0 then raise Exception.Create('Failed to initialize SDL2.');
 
-
-  SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
+        SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
 	SDL_GL_SetAttribute(SDL_GL_RED_SIZE, 5);
 	SDL_GL_SetAttribute(SDL_GL_GREEN_SIZE, 6);
 	SDL_GL_SetAttribute(SDL_GL_BLUE_SIZE, 5);
 
+
   Flags:= SDL_WINDOW_SHOWN;
-  if wfResizable in FFlags then
+
+  if wfResizable in FWindowFlags then
   begin
     Flags:= Flags or SDL_WINDOW_RESIZABLE;
   end;
+
   if FFullscreen then
   begin
     Flags:= Flags or SDL_WINDOW_FULLSCREEN or SDL_WINDOW_BORDERLESS;
   end;
 
-  if wfVerticalSync in FFlags then
-  begin    // SDL_GL_SwapWindow
-    SDL_GL_SetSwapInterval(0);
-   // SDL_GL_SetAttribute(SDL_GL_SWAP_CONTROL, 1);
-  end else
-  begin
-   SDL_GL_SetSwapInterval(0)
-  //  SDL_GL_SetAttribute(SDL_GL_SWAP_CONTROL, 0);
-  end;
-
-
   FWindow := SDL_CreateWindow(PChar(FTitle),SDL_WINDOWPOS_CENTERED,
-  SDL_WINDOWPOS_CENTERED, FWidth, FHeight, Flags ); //todo fscr
+  SDL_WINDOWPOS_CENTERED, FWidth, FHeight, Flags );
 
   FSurface := SDL_GetWindowSurface(FWindow);
 
-  SDL_CreateRenderer(FWindow,-1,SDL_RENDERER_ACCELERATED or SDL_RENDERER_PRESENTVSYNC);
-  SDL_GL_SetSwapInterval(60);
-
-
-
-  //SDL_EnableKeyRepeat(SDL_DEFAULT_REPEAT_DELAY, SDL_DEFAULT_REPEAT_INTERVAL);
-  //SDL_EnableUNICODE( SDL_ENABLE );
   SDL_JoystickEventState(SDL_ENABLE);
   //InitJoysticks;
 
@@ -449,7 +434,6 @@ end;
 procedure TPHXOpenGLRendererSDL2.Flip;
 begin
   SDL_GL_SwapWindow(FWindow);
-//  SDL_GL_SwapWindow(FWindow);
 end;
 
 

@@ -64,8 +64,8 @@ implementation
 
 // Use opengl for rendering and freeimage for texture loading
 uses
-  phxOpenGL_GLFW3,
- // phxOpenGL_SDL2,
+ // phxOpenGL_GLFW3,
+  phxOpenGL_SDL2,
   phxGraphics_Vampyre;
 
 //------------------------------------------------------------------------------
@@ -79,9 +79,9 @@ procedure TGame.Init;
 var Sprite: TPHXSprite;
 begin
   Device:= TPHXDevice.Create;
-//  Device.Initialize('Phoenix Demo', 800, 600);;
-  Device.Initialize('Phoenix Demo', 1024,768);
-
+  Device.Initialize('Phoenix Demo', 800, 600);;
+ // Device.Initialize('Phoenix Demo', 1024,768);
+  Device.Flags:=[wfCursor, wfVerticalSync, wfResizable];
 
 
   Timer:= TPHXTimer.Create;
