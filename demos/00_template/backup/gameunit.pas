@@ -33,6 +33,7 @@ TGame = class(TPHXApplication)
 
 uses
   phxOpenGL_GLFW3,
+  phxOpenGL_SDL2,
   phxGraphics_FreeImage;
 
 constructor TGame.Create;
@@ -62,7 +63,6 @@ end;
 procedure TGame.Render;
 begin
   Device.Clear;
-
   // Change the color to white
   Canvas.Color:= clrWhite;
   // Draw a rectangle
@@ -71,10 +71,9 @@ begin
   Canvas.Color:= clrRed;
   // Draw a rectangle
   Canvas.Rectangle(300, 100, 400, 200);
-
   // Flush the canvas
   Canvas.Flush;
-
+  // Flip
   Device.Flip;
 end;
 

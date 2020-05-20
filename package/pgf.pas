@@ -16,8 +16,8 @@ uses
   phxParticleRenderers, phxPersistency, phxPrimitives, phxShape, phxSimpleGUI, 
   phxSimpleXML, phxSkin, phxSprite, phxSprite_Box2D, phxSpriteTerrain, 
   phxTexture, phxTiles, phxTimer, phxTranslation, phxTypes, phxOpenGL, 
-  phxOpenGL_Canvas, phxOpenGL_Effect, phxOpenGL_GLFW3, phxOpenGL_Shader, 
-  LazarusPackageIntf;
+  phxOpenGL_Canvas, phxOpenGL_Effect, phxOpenGL_GLFW3, phxOpenGL_SDL2, 
+  phxOpenGL_Shader, LazarusPackageIntf;
 
 implementation
 

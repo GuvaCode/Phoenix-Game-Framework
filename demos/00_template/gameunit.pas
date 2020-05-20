@@ -32,7 +32,8 @@ TGame = class(TPHXApplication)
   end; implementation
 
 uses
-  phxOpenGL_GLFW3,
+  //phxOpenGL_GLFW3,
+  phxOpenGL_SDL2,
   phxGraphics_FreeImage;
 
 constructor TGame.Create;

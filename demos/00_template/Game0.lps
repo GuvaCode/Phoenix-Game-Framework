@@ -3,7 +3,7 @@
   <ProjectSession>
     <Version Value="11"/>
     <BuildModes Active="Default"/>
-    <Units Count="3">
+    <Units Count="11">
       <Unit0>
         <Filename Value="Game0.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -11,29 +11,153 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="22"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit0>
       <Unit1>
         <Filename Value="gameunit.pas"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
-        <CursorPos X="6" Y="20"/>
-        <UsageCount Value="20"/>
+        <TopLine Value="31"/>
+        <CursorPos X="5" Y="35"/>
+        <UsageCount Value="22"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit1>
       <Unit2>
         <Filename Value="../../../../Рабочий стол/Demos/00_Template/Main.pas"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="99"/>
         <CursorPos Y="108"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit2>
+      <Unit3>
+        <Filename Value="../../source/providers/phxOpenGL_SDL2.pas"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="130"/>
+        <CursorPos X="2" Y="148"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="../../source/phxConfig.inc"/>
+        <EditorIndex Value="6"/>
+        <CursorPos X="13" Y="5"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="../../source/providers/phxOpenGL_GLFW3.pas"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="377"/>
+        <CursorPos X="26" Y="388"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="../../source/phxDevice.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="133"/>
+        <CursorPos X="13" Y="146"/>
+        <UsageCount Value="10"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="../../source/headers/GLFW3.pas"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="298"/>
+        <CursorPos X="10" Y="312"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="../../source/headers/sdl2.pas"/>
+        <UnitName Value="SDL2"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="394"/>
+        <CursorPos X="3" Y="407"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="/usr/share/fpcsrc/3.0.4/rtl/inc/systemh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1399"/>
+        <CursorPos X="11" Y="1412"/>
+        <UsageCount Value="10"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="../../../../Загрузки/123/phoenix_2013-10-15/Source/Providers/phxOpenGL_SDL.pas"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="774"/>
+        <CursorPos X="59" Y="799"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit10>
     </Units>
-    <JumpHistory HistoryIndex="-1"/>
+    <JumpHistory Count="15" HistoryIndex="14">
+      <Position1>
+        <Filename Value="gameunit.pas"/>
+        <Caret Line="12" Column="60"/>
+      </Position1>
+      <Position2>
+        <Filename Value="gameunit.pas"/>
+        <Caret Line="36" Column="3" TopLine="31"/>
+      </Position2>
+      <Position3>
+        <Filename Value="../../source/providers/phxOpenGL_SDL2.pas"/>
+        <Caret Line="51" Column="35" TopLine="30"/>
+      </Position3>
+      <Position4>
+        <Filename Value="../../source/providers/phxOpenGL_SDL2.pas"/>
+        <Caret Line="24" Column="10" TopLine="19"/>
+      </Position4>
+      <Position5>
+        <Filename Value="../../source/providers/phxOpenGL_GLFW3.pas"/>
+        <Caret Line="274" Column="23" TopLine="260"/>
+      </Position5>
+      <Position6>
+        <Filename Value="../../source/providers/phxOpenGL_SDL2.pas"/>
+        <Caret Line="114" TopLine="106"/>
+      </Position6>
+      <Position7>
+        <Filename Value="../../source/providers/phxOpenGL_GLFW3.pas"/>
+        <Caret Line="299" Column="9" TopLine="279"/>
+      </Position7>
+      <Position8>
+        <Filename Value="../../source/providers/phxOpenGL_GLFW3.pas"/>
+        <Caret Line="26" Column="5" TopLine="13"/>
+      </Position8>
+      <Position9>
+        <Filename Value="../../source/providers/phxOpenGL_GLFW3.pas"/>
+        <Caret Line="338" Column="13" TopLine="313"/>
+      </Position9>
+      <Position10>
+        <Filename Value="../../source/providers/phxOpenGL_SDL2.pas"/>
+        <Caret Line="8" Column="35" TopLine="122"/>
+      </Position10>
+      <Position11>
+        <Filename Value="../../source/providers/phxOpenGL_SDL2.pas"/>
+        <Caret Line="141" Column="23" TopLine="131"/>
+      </Position11>
+      <Position12>
+        <Filename Value="../../source/providers/phxOpenGL_SDL2.pas"/>
+        <Caret Line="148" Column="4" TopLine="131"/>
+      </Position12>
+      <Position13>
+        <Filename Value="../../source/providers/phxOpenGL_SDL2.pas"/>
+        <Caret Line="147" Column="15" TopLine="104"/>
+      </Position13>
+      <Position14>
+        <Filename Value="../../../../Загрузки/123/phoenix_2013-10-15/Source/Providers/phxOpenGL_SDL.pas"/>
+        <Caret Line="390" Column="22" TopLine="380"/>
+      </Position14>
+      <Position15>
+        <Filename Value="../../source/providers/phxOpenGL_SDL2.pas"/>
+        <Caret Line="192" Column="58" TopLine="168"/>
+      </Position15>
+    </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
       <Modes Count="0" ActiveMode=""/>

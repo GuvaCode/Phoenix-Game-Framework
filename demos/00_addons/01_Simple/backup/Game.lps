@@ -3,7 +3,7 @@
   <ProjectSession>
     <Version Value="11"/>
     <BuildModes Active="Default"/>
-    <Units Count="9">
+    <Units Count="10">
       <Unit0>
         <Filename Value="Game.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -33,7 +33,6 @@
       </Unit2>
       <Unit3>
         <Filename Value="../../../source/phxSprite.pas"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="3"/>
         <TopLine Value="834"/>
         <CursorPos X="15" Y="846"/>
@@ -42,7 +41,7 @@
       </Unit3>
       <Unit4>
         <Filename Value="../../../source/phxTypes.pas"/>
-        <EditorIndex Value="4"/>
+        <EditorIndex Value="5"/>
         <TopLine Value="688"/>
         <CursorPos X="8" Y="704"/>
         <UsageCount Value="10"/>
@@ -76,8 +75,17 @@
         <CursorPos X="51" Y="76"/>
         <UsageCount Value="10"/>
       </Unit8>
+      <Unit9>
+        <Filename Value="../../../package/pgf.pas"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="4"/>
+        <CursorPos X="3" Y="20"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit9>
     </Units>
-    <JumpHistory Count="10" HistoryIndex="9">
+    <JumpHistory Count="11" HistoryIndex="10">
       <Position1>
         <Filename Value="main.pas"/>
         <Caret Line="204" Column="10" TopLine="177"/>
@@ -118,6 +126,10 @@
         <Filename Value="../../../source/phxConfig.inc"/>
         <Caret Line="4" Column="3"/>
       </Position10>
+      <Position11>
+        <Filename Value="../../../source/phxSprite.pas"/>
+        <Caret Line="846" Column="15" TopLine="834"/>
+      </Position11>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>

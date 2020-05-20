@@ -41,7 +41,7 @@
   <CompilerOptions>
     <Version Value="11"/>
     <Target>
-      <Filename Value="../_bin/GamePrj0_$(TargetCPU)-$(TargetOS)"/>
+      <Filename Value="../_bin/Demo_00_$(TargetCPU)-$(TargetOS)"/>
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>

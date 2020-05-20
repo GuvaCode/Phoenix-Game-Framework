@@ -312,16 +312,20 @@ begin
   FTitle := Parameters.Title;
   FWidth := Parameters.Width;
   FHeight := Parameters.Height;
-  if glfwInit() <> 1 then
-    raise Exception.Create('Failed to initialize GLFW.');
+
+  if glfwInit() <> 1 then raise Exception.Create('Failed to initialize GLFW.');
+
   glfwGetVersion(@major, @minor, @rev);
   glfwWindowHint(GLFW_RESIZABLE, 0);
+
   FWindow := glfwCreateWindow(FWidth, FHeight, PAnsiChar(FTitle), nil, nil);
+
   if FWindow = nil then
   begin
     glfwTerminate;
     raise Exception.Create('Failed to initialize GLFW.');
   end;
+
   glfwSetWindowSizeCallback(FWindow, @WindowSizeEvent);
   glfwSetWindowCloseCallback(FWindow, @WindowCloseEvent);
   glfwSetKeyCallback(FWindow, @KeyCallback);

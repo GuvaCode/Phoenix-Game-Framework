@@ -1,26 +1,13 @@
 {$IFDEF FPC}
 {$mode delphi}{$H+}
 //{$z4}
-//{$macro on}
+
 {$ENDIF}
 
 
 
 
-{$ifdef windows}
-	{$define apicall := stdcall}
-{$else}
-	{$define apicall := cdecl}
-{$endif}
 
-{$ifdef linux}
-  {$ifdef i386}
-    {$define linux-i386}
-	{$endif}
-	{$ifdef cpux86_64}
-    {$define linux-x86_64}
-  {$endif}
-{$endif}
 
 
 

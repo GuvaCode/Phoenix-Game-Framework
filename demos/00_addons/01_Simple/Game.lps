@@ -11,7 +11,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="22"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit0>
       <Unit1>
@@ -19,7 +19,7 @@
         <IsPartOfProject Value="True"/>
         <TopLine Value="90"/>
         <CursorPos X="27" Y="115"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="22"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit1>
@@ -33,25 +33,25 @@
       </Unit2>
       <Unit3>
         <Filename Value="../../../source/phxSprite.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="3"/>
-        <TopLine Value="834"/>
-        <CursorPos X="15" Y="846"/>
-        <UsageCount Value="10"/>
+        <TopLine Value="232"/>
+        <CursorPos X="131" Y="234"/>
+        <UsageCount Value="11"/>
         <Loaded Value="True"/>
       </Unit3>
       <Unit4>
         <Filename Value="../../../source/phxTypes.pas"/>
-        <EditorIndex Value="5"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="688"/>
         <CursorPos X="8" Y="704"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
       </Unit4>
       <Unit5>
         <Filename Value="../../../source/providers/phxOpenGL.pas"/>
         <EditorIndex Value="1"/>
         <CursorPos X="77" Y="787"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="11"/>
         <Loaded Value="True"/>
       </Unit5>
       <Unit6>
@@ -64,7 +64,7 @@
         <Filename Value="../../../source/phxConfig.inc"/>
         <EditorIndex Value="2"/>
         <CursorPos X="3" Y="4"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="11"/>
         <Loaded Value="True"/>
       </Unit7>
       <Unit8>
@@ -77,12 +77,10 @@
       </Unit8>
       <Unit9>
         <Filename Value="../../../package/pgf.pas"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="4"/>
-        <TopLine Value="4"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2"/>
         <CursorPos X="3" Y="20"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
       </Unit9>
     </Units>
     <JumpHistory Count="11" HistoryIndex="10">
