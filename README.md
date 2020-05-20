@@ -51,7 +51,7 @@ Additionally for compilation in some distributives you will be needed to install
 dependencies for graphics provider 
 
 - libglfw3 or libglfw3-wayland (for X or Wayland)
-- ~~libsdl2-dev~~ not yet implemented
+- libsdl2-dev 
 
 dependencies for graphics render
 

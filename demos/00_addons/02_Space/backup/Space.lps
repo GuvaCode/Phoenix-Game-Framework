@@ -20,7 +20,7 @@
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
         <TopLine Value="76"/>
-        <CursorPos X="44" Y="84"/>
+        <CursorPos X="27" Y="84"/>
         <UsageCount Value="22"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
@@ -99,7 +99,7 @@
         <EditorIndex Value="2"/>
         <TopLine Value="261"/>
         <CursorPos X="37" Y="283"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="11"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit11>
