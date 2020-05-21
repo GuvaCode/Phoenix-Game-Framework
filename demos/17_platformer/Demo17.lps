@@ -17,8 +17,9 @@
       <Unit1>
         <Filename Value="main.pas"/>
         <IsPartOfProject Value="True"/>
-        <TopLine Value="80"/>
-        <CursorPos X="45" Y="95"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="86"/>
+        <CursorPos X="51" Y="95"/>
         <UsageCount Value="23"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
@@ -41,10 +42,9 @@
       </Unit3>
       <Unit4>
         <Filename Value="../../source/providers/phxOpenGL_SDL2.pas"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
         <TopLine Value="385"/>
-        <CursorPos X="60" Y="398"/>
+        <CursorPos X="22" Y="393"/>
         <UsageCount Value="11"/>
         <Loaded Value="True"/>
       </Unit4>

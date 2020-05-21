@@ -92,7 +92,7 @@ begin
 
   // Initialize the device
 //  Device.Initialize('Phoenix Demo', 1024, 768,true);
-  Device.Initialize('Phoenix Demo', 800, 600);
+  Device.Initialize('Phoenix Demo', 1024, 768,true);
   // Create the timer
   Timer:= TPHXTimer.Create;
   // Create the input

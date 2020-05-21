@@ -157,12 +157,14 @@ end;
 
 procedure TPHXOpenGLRendererSDL2.SDLEvent(SDLEvent: TSDL_Event);
 var Event: TPHXEvent;
+Check:integer;
 begin
    FillChar(Event, SizeOf(TPHXEvent), #0);
 
    case SDLEvent.type_ of
      SDL_KEYDOWN:
      begin
+      if SDLEvent.key.keysym.scancode = 0 then exit;
       if( SDLEvent.key.keysym.modifiers and KMOD_CAPS > 0 ) then
       begin
         Include(ShiftStates, ssCaps)
@@ -382,8 +384,8 @@ begin
     Flags:= Flags or SDL_WINDOW_FULLSCREEN or SDL_WINDOW_BORDERLESS;
   end;
 
-  FWindow := SDL_CreateWindow(PChar(FTitle),SDL_WINDOWPOS_CENTERED,
-  SDL_WINDOWPOS_CENTERED, FWidth, FHeight, Flags );
+  FWindow := SDL_CreateWindow(PChar(FTitle),SDL_WINDOWPOS_UNDEFINED,
+  SDL_WINDOWPOS_UNDEFINED, FWidth, FHeight, Flags or SDL_WINDOW_RESIZABLE );
 
   FSurface := SDL_GetWindowSurface(FWindow);
 

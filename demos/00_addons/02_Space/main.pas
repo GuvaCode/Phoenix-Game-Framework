@@ -79,9 +79,9 @@ procedure TGame.Init;
 var Sprite: TPHXSprite;
 begin
   Device:= TPHXDevice.Create;
-  Device.Initialize('Phoenix Demo', 800, 600);;
+  Device.Initialize('Phoenix Demo', 800, 600);
  // Device.Initialize('Phoenix Demo', 1024,768);
- Device.Flags:=[wfCursor];
+// Device.Flags:=[wfCursor];
 
 //Device.Flags:=[wfCursor, wfVerticalSync, wfResizable];
 
