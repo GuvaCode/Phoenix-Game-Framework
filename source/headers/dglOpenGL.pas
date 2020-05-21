@@ -407,7 +407,7 @@
  to keep it up to date
 ============================================================================== }
 
-//{$define DGL_DEPRECATED}
+///{$define DGL_DEPRECATED}
 {
   This define defines if the header should use deprecated ARB stuff or not.
   per Default the Header use deprecated Stuff.

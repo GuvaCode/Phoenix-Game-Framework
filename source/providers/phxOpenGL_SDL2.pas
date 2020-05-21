@@ -227,9 +227,8 @@ begin
       TPHXEvents.Notify(Self, Event);
     end;
      SDL_WINDOWEVENT_RESIZED:
-    begin
-      FWidth := SDLEvent.window.data1;
-      FHeight:= SDLEvent.window.data2;
+    begin    //SDL_GetWindowSize
+      SDL_GetWindowSize(FWindow,FWidth,FHeight);
       Event.Device.Event := PHX_DEVICE_RESIZED;
       Event.Device.Width := FWidth;
       Event.Device.Height:= FHeight;
@@ -276,8 +275,6 @@ begin
       Event.Joystick.Shift       := ShiftStates;
       TPHXEvents.Notify(Self, Event);
     end;
-
-
    end;
 end;
 
@@ -307,7 +304,7 @@ begin
     FWindowFlags := Flags;
    if not FInitialized then Exit;
 
-   if wfVerticalSync in Flags then
+   if wfVerticalSync in FWindowFlags then
   begin
   SDL_GL_SetSwapInterval(1);
   end else
@@ -315,7 +312,9 @@ begin
   SDL_GL_SetSwapInterval(0);
   end;
 
-   if wfCursor in Flags then
+
+
+   if wfCursor in FWindowFlags then
   begin
     SDL_ShowCursor(SDL_ENABLE);
   end else
@@ -324,9 +323,6 @@ begin
   end;
 
 end;
-
-
-
 
 procedure TPHXOpenGLRendererSDL2.SetIcon(const Icon: String);
 begin
@@ -357,7 +353,7 @@ begin
 end;
 
 procedure TPHXOpenGLRendererSDL2.Initialize(const Parameters: TPHXDeviceParameters);
-var Flags: Cardinal;
+var Flags_: Cardinal;
 begin
   FTitle := Parameters.Title;
   FWidth := Parameters.Width;
@@ -365,33 +361,34 @@ begin
   FFullscreen:= Parameters.Fullscreen;
 
   if SDL_Init( SDL_INIT_VIDEO ) < 0 then raise Exception.Create('Failed to initialize SDL2.');
+  SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
 
-        SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
-	SDL_GL_SetAttribute(SDL_GL_RED_SIZE, 5);
-	SDL_GL_SetAttribute(SDL_GL_GREEN_SIZE, 6);
-	SDL_GL_SetAttribute(SDL_GL_BLUE_SIZE, 5);
-
-
-  Flags:= SDL_WINDOW_SHOWN;
-
+  Flags_:= SDL_WINDOW_SHOWN;
   if wfResizable in FWindowFlags then
   begin
-    Flags:= Flags or SDL_WINDOW_RESIZABLE;
+    Flags_:= SDL_WINDOW_SHOWN or SDL_WINDOW_RESIZABLE;
   end;
 
   if FFullscreen then
   begin
-    Flags:= Flags or SDL_WINDOW_FULLSCREEN or SDL_WINDOW_BORDERLESS;
+    Flags_:= Flags_ or SDL_WINDOW_FULLSCREEN or SDL_WINDOW_BORDERLESS;
   end;
 
   FWindow := SDL_CreateWindow(PChar(FTitle),SDL_WINDOWPOS_UNDEFINED,
-  SDL_WINDOWPOS_UNDEFINED, FWidth, FHeight, Flags or SDL_WINDOW_RESIZABLE );
+  SDL_WINDOWPOS_UNDEFINED, FWidth, FHeight, SDL_WINDOW_SHOWN or SDL_WINDOW_RESIZABLE  );
 
   FSurface := SDL_GetWindowSurface(FWindow);
 
+  if wfVerticalSync in FWindowFlags then
+  begin
+  SDL_GL_SetSwapInterval(1);
+  end else
+  begin
+  SDL_GL_SetSwapInterval(0);
+  end;
+
   SDL_JoystickEventState(SDL_ENABLE);
   //InitJoysticks;
-
   if (dglOpenGL.InitOpenGL <> True) then
     begin
       raise Exception.Create('OpenGL Initialization failed.');
