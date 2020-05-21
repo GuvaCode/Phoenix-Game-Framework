@@ -487,6 +487,7 @@ begin
   {$IFDEF FPC}
   Load_BASSDLL(BASS_name);
   {$ENDIF}
+
   FileProcs.close := {$IFDEF FPC}@{$ENDIF}Bass_CloseProc;
   FileProcs.length:= {$IFDEF FPC}@{$ENDIF}Bass_SizeProc;
   FileProcs.read  := {$IFDEF FPC}@{$ENDIF}Bass_ReadProc;
@@ -497,6 +498,7 @@ end;
 destructor TPHXBassDevice.Destroy;
 begin
   BASS_Free();
+
   inherited;
 end;
 
@@ -506,11 +508,14 @@ var Device : BASS_DEVICEINFO;
 var Index: DWORD;
 begin
   List.Clear;
+
   FillChar(Device, SizeOf(Device), 0);
+
   Index:=0 ;
   while BASS_GetDeviceInfo(Index, Device) do
   begin
     List.Add(Index, String(Device.Name));
+
     Inc(Index);
   end;
 end;

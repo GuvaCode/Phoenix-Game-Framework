@@ -16,7 +16,7 @@ uses
 
   phxAudio,
   phxAudio_Bass;
- // phxAudio_OpenAL;
+//  phxAudio_OpenAL;
 
 type
 TGame = class(TPHXApplication)
@@ -47,7 +47,7 @@ uses
 
 constructor TGame.Create;
 begin
-  inherited;
+ // inherited;
 
 end;
 

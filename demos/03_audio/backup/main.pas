@@ -15,8 +15,9 @@ uses
   phxFont,
 
   phxAudio,
-  phxAudio_Bass;
- // phxAudio_OpenAL;
+  phxAudio_Uos;
+ // phxAudio_Bass;
+//  phxAudio_OpenAL;
 
 type
 TGame = class(TPHXApplication)
@@ -47,7 +48,7 @@ uses
 
 constructor TGame.Create;
 begin
-  inherited;
+ // inherited;
 
 end;
 
@@ -71,7 +72,7 @@ begin
 
   Music:= Audio.LoadStream('data/music.wav');
   Music.Looped:= True;
- // Music.Play;
+  Music.Play;
 end;
 
 procedure TGame.Update;

@@ -7,4 +7,5 @@ tutorials/_Compiled
 demos/_tmp
 demos/00_addons/lib
 demos/_bin/*
+demos/00_addons/_bin/*
 

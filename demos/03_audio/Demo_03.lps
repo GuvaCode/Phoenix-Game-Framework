@@ -3,42 +3,148 @@
   <ProjectSession>
     <Version Value="11"/>
     <BuildModes Active="Default"/>
-    <Units Count="3">
+    <Units Count="12">
       <Unit0>
         <Filename Value="Demo_03.lpr"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <WindowIndex Value="-1"/>
-        <TopLine Value="-1"/>
-        <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="22"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit0>
       <Unit1>
         <Filename Value="main.pas"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="61"/>
-        <CursorPos X="2" Y="74"/>
-        <UsageCount Value="20"/>
+        <TopLine Value="9"/>
+        <CursorPos X="2" Y="18"/>
+        <UsageCount Value="22"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit1>
       <Unit2>
         <Filename Value="../../../../Рабочий стол/Demos/04_Audio/Main.pas"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="100"/>
         <CursorPos X="20" Y="107"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit2>
+      <Unit3>
+        <Filename Value="../../source/providers/audio/phxAudio_OpenAL.pas"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="11"/>
+        <CursorPos Y="27"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="../../source/providers/audio/phxAudio_Bass.pas"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="457"/>
+        <CursorPos Y="457"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="../../../../Загрузки/123/000/uos-master/src/uos.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="314"/>
+        <CursorPos X="54" Y="340"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="../../../../Загрузки/123/000/uos-master/src/define.inc"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="../../source/providers/audio/phxaudio_uos.pas"/>
+        <UnitName Value="phxAudio_Uos"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="36" Y="2"/>
+        <UsageCount Value="21"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="../../source/providers/graphics/phxOpenGL.pas"/>
+        <EditorIndex Value="4"/>
+        <CursorPos X="15" Y="19"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="../../source/providers/audio/phxAudio.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="125"/>
+        <CursorPos X="13" Y="136"/>
+        <UsageCount Value="10"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="../../source/phxFont.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="433"/>
+        <CursorPos X="15" Y="437"/>
+        <UsageCount Value="10"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="../../source/providers/audio/phxAudio_Uos.pas"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="124"/>
+        <CursorPos X="3" Y="150"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit11>
     </Units>
-    <JumpHistory Count="1">
+    <JumpHistory Count="12" HistoryIndex="11">
       <Position1>
         <Filename Value="main.pas"/>
         <Caret Line="115" Column="8" TopLine="93"/>
       </Position1>
+      <Position2>
+        <Filename Value="main.pas"/>
+        <Caret Line="18" Column="17" TopLine="2"/>
+      </Position2>
+      <Position3>
+        <Filename Value="main.pas"/>
+        <Caret Line="112" TopLine="86"/>
+      </Position3>
+      <Position4>
+        <Filename Value="main.pas"/>
+        <Caret Line="44" Column="10" TopLine="18"/>
+      </Position4>
+      <Position5>
+        <Filename Value="main.pas"/>
+        <Caret Line="31" Column="27" TopLine="18"/>
+      </Position5>
+      <Position6>
+        <Filename Value="main.pas"/>
+        <Caret Line="17" Column="8" TopLine="17"/>
+      </Position6>
+      <Position7>
+        <Filename Value="main.pas"/>
+        <Caret Line="19" Column="4" TopLine="9"/>
+      </Position7>
+      <Position8>
+        <Filename Value="../../source/providers/audio/phxAudio_Uos.pas"/>
+        <Caret Line="27" Column="8" TopLine="3"/>
+      </Position8>
+      <Position9>
+        <Filename Value="../../source/providers/audio/phxAudio_Bass.pas"/>
+        <Caret Line="225" Column="20" TopLine="210"/>
+      </Position9>
+      <Position10>
+        <Filename Value="../../source/providers/audio/phxAudio_Uos.pas"/>
+        <Caret Line="62" Column="8" TopLine="38"/>
+      </Position10>
+      <Position11>
+        <Filename Value="../../source/providers/audio/phxAudio_Uos.pas"/>
+        <Caret Line="81" Column="8" TopLine="66"/>
+      </Position11>
+      <Position12>
+        <Filename Value="../../source/providers/audio/phxAudio_Uos.pas"/>
+        <Caret Line="54" Column="8" TopLine="42"/>
+      </Position12>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
