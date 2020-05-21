@@ -7,7 +7,7 @@
       <Version Value="11"/>
       <SearchPaths>
         <IncludeFiles Value="../source;../source/providers"/>
-        <OtherUnitFiles Value="../source;../source/headers;../source/providers"/>
+        <OtherUnitFiles Value="../source;../source/headers;../source/providers/graphics;../source/providers/audio"/>
         <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
       </SearchPaths>
     </CompilerOptions>
@@ -17,188 +17,188 @@
         <UnitName Value="phxApplication"/>
       </Item1>
       <Item2>
-        <Filename Value="../source/phxAudio.pas"/>
-        <UnitName Value="phxAudio"/>
-      </Item2>
-      <Item3>
-        <Filename Value="../source/phxAudio_Bass.pas"/>
-        <UnitName Value="phxAudio_Bass"/>
-      </Item3>
-      <Item4>
-        <Filename Value="../source/phxAudio_OpenAL.pas"/>
-        <UnitName Value="phxAudio_OpenAL"/>
-      </Item4>
-      <Item5>
         <Filename Value="../source/phxCamera.pas"/>
         <UnitName Value="phxCamera"/>
-      </Item5>
-      <Item6>
+      </Item2>
+      <Item3>
         <Filename Value="../source/phxCanvas.pas"/>
         <UnitName Value="phxCanvas"/>
-      </Item6>
-      <Item7>
+      </Item3>
+      <Item4>
         <Filename Value="../source/phxClasses.pas"/>
         <UnitName Value="phxClasses"/>
-      </Item7>
-      <Item8>
+      </Item4>
+      <Item5>
         <Filename Value="../source/phxConfig.inc"/>
         <Type Value="Include"/>
-      </Item8>
-      <Item9>
+      </Item5>
+      <Item6>
         <Filename Value="../source/phxConsole.pas"/>
         <UnitName Value="phxConsole"/>
-      </Item9>
-      <Item10>
+      </Item6>
+      <Item7>
         <Filename Value="../source/phxDevice.pas"/>
         <UnitName Value="phxDevice"/>
-      </Item10>
-      <Item11>
+      </Item7>
+      <Item8>
         <Filename Value="../source/phxEffect.pas"/>
         <UnitName Value="phxEffect"/>
-      </Item11>
-      <Item12>
+      </Item8>
+      <Item9>
         <Filename Value="../source/phxEvents.pas"/>
         <UnitName Value="phxEvents"/>
-      </Item12>
-      <Item13>
+      </Item9>
+      <Item10>
         <Filename Value="../source/phxFont.pas"/>
         <UnitName Value="phxFont"/>
-      </Item13>
-      <Item14>
+      </Item10>
+      <Item11>
         <Filename Value="../source/phxGraphics.pas"/>
         <UnitName Value="phxGraphics"/>
-      </Item14>
-      <Item15>
+      </Item11>
+      <Item12>
         <Filename Value="../source/phxGraphics_DDS.pas"/>
         <UnitName Value="phxGraphics_DDS"/>
-      </Item15>
-      <Item16>
+      </Item12>
+      <Item13>
         <Filename Value="../source/phxGraphics_FreeImage.pas"/>
         <UnitName Value="phxGraphics_FreeImage"/>
-      </Item16>
-      <Item17>
+      </Item13>
+      <Item14>
         <Filename Value="../source/phxGraphics_Vampyre.pas"/>
         <UnitName Value="phxGraphics_Vampyre"/>
-      </Item17>
-      <Item18>
+      </Item14>
+      <Item15>
         <Filename Value="../source/phxImage.pas"/>
         <UnitName Value="phxImage"/>
-      </Item18>
-      <Item19>
+      </Item15>
+      <Item16>
         <Filename Value="../source/phxInput.pas"/>
         <UnitName Value="phxInput"/>
-      </Item19>
-      <Item20>
+      </Item16>
+      <Item17>
         <Filename Value="../source/phxLogger.pas"/>
         <UnitName Value="phxLogger"/>
-      </Item20>
-      <Item21>
+      </Item17>
+      <Item18>
         <Filename Value="../source/phxMath.pas"/>
         <UnitName Value="phxMath"/>
-      </Item21>
-      <Item22>
+      </Item18>
+      <Item19>
         <Filename Value="../source/phxModel.pas"/>
         <UnitName Value="phxModel"/>
-      </Item22>
-      <Item23>
+      </Item19>
+      <Item20>
         <Filename Value="../source/phxParticle.pas"/>
         <UnitName Value="phxParticle"/>
-      </Item23>
-      <Item24>
+      </Item20>
+      <Item21>
         <Filename Value="../source/phxParticleAffectors.pas"/>
         <UnitName Value="phxParticleAffectors"/>
-      </Item24>
-      <Item25>
+      </Item21>
+      <Item22>
         <Filename Value="../source/phxParticleGraphs.pas"/>
         <UnitName Value="phxParticleGraphs"/>
-      </Item25>
-      <Item26>
+      </Item22>
+      <Item23>
         <Filename Value="../source/phxParticlePresets.pas"/>
         <UnitName Value="phxParticlePresets"/>
-      </Item26>
-      <Item27>
+      </Item23>
+      <Item24>
         <Filename Value="../source/phxParticleRenderers.pas"/>
         <UnitName Value="phxParticleRenderers"/>
-      </Item27>
-      <Item28>
+      </Item24>
+      <Item25>
         <Filename Value="../source/phxPersistency.pas"/>
         <UnitName Value="phxPersistency"/>
-      </Item28>
-      <Item29>
+      </Item25>
+      <Item26>
         <Filename Value="../source/phxPrimitives.pas"/>
         <UnitName Value="phxPrimitives"/>
-      </Item29>
-      <Item30>
+      </Item26>
+      <Item27>
         <Filename Value="../source/phxShape.pas"/>
         <UnitName Value="phxShape"/>
-      </Item30>
-      <Item31>
+      </Item27>
+      <Item28>
         <Filename Value="../source/phxSimpleGUI.pas"/>
         <UnitName Value="phxSimpleGUI"/>
-      </Item31>
-      <Item32>
+      </Item28>
+      <Item29>
         <Filename Value="../source/phxSimpleXML.pas"/>
         <UnitName Value="phxSimpleXML"/>
-      </Item32>
-      <Item33>
+      </Item29>
+      <Item30>
         <Filename Value="../source/phxSkin.pas"/>
         <UnitName Value="phxSkin"/>
-      </Item33>
-      <Item34>
+      </Item30>
+      <Item31>
         <Filename Value="../source/phxSprite.pas"/>
         <UnitName Value="phxSprite"/>
-      </Item34>
-      <Item35>
+      </Item31>
+      <Item32>
         <Filename Value="../source/phxSprite_Box2D.pas"/>
         <UnitName Value="phxSprite_Box2D"/>
-      </Item35>
-      <Item36>
+      </Item32>
+      <Item33>
         <Filename Value="../source/phxSpriteTerrain.pas"/>
         <UnitName Value="phxSpriteTerrain"/>
-      </Item36>
-      <Item37>
+      </Item33>
+      <Item34>
         <Filename Value="../source/phxTexture.pas"/>
         <UnitName Value="phxTexture"/>
-      </Item37>
-      <Item38>
+      </Item34>
+      <Item35>
         <Filename Value="../source/phxTiles.pas"/>
         <UnitName Value="phxTiles"/>
-      </Item38>
-      <Item39>
+      </Item35>
+      <Item36>
         <Filename Value="../source/phxTimer.pas"/>
         <UnitName Value="phxTimer"/>
-      </Item39>
-      <Item40>
+      </Item36>
+      <Item37>
         <Filename Value="../source/phxTranslation.pas"/>
         <UnitName Value="phxTranslation"/>
-      </Item40>
-      <Item41>
+      </Item37>
+      <Item38>
         <Filename Value="../source/phxTypes.pas"/>
         <UnitName Value="phxTypes"/>
+      </Item38>
+      <Item39>
+        <Filename Value="../source/providers/graphics/phxOpenGL.pas"/>
+        <UnitName Value="phxOpenGL"/>
+      </Item39>
+      <Item40>
+        <Filename Value="../source/providers/graphics/phxOpenGL_Shader.pas"/>
+        <UnitName Value="phxOpenGL_Shader"/>
+      </Item40>
+      <Item41>
+        <Filename Value="../source/providers/graphics/phxOpenGL_SDL2.pas"/>
+        <UnitName Value="phxOpenGL_SDL2"/>
       </Item41>
       <Item42>
-        <Filename Value="../source/providers/phxOpenGL.pas"/>
-        <UnitName Value="phxOpenGL"/>
+        <Filename Value="../source/providers/graphics/phxOpenGL_GLFW3.pas"/>
+        <UnitName Value="phxOpenGL_GLFW3"/>
       </Item42>
       <Item43>
-        <Filename Value="../source/providers/phxOpenGL_Canvas.pas"/>
-        <UnitName Value="phxOpenGL_Canvas"/>
+        <Filename Value="../source/providers/graphics/phxOpenGL_Effect.pas"/>
+        <UnitName Value="phxOpenGL_Effect"/>
       </Item43>
       <Item44>
-        <Filename Value="../source/providers/phxOpenGL_Effect.pas"/>
-        <UnitName Value="phxOpenGL_Effect"/>
+        <Filename Value="../source/providers/graphics/phxOpenGL_Canvas.pas"/>
+        <UnitName Value="phxOpenGL_Canvas"/>
       </Item44>
       <Item45>
-        <Filename Value="../source/providers/phxOpenGL_GLFW3.pas"/>
-        <UnitName Value="phxOpenGL_GLFW3"/>
+        <Filename Value="../source/providers/audio/phxAudio.pas"/>
+        <UnitName Value="phxAudio"/>
       </Item45>
       <Item46>
-        <Filename Value="../source/providers/phxOpenGL_SDL2.pas"/>
-        <UnitName Value="phxOpenGL_SDL2"/>
+        <Filename Value="../source/providers/audio/phxAudio_OpenAL.pas"/>
+        <UnitName Value="phxAudio_OpenAL"/>
       </Item46>
       <Item47>
-        <Filename Value="../source/providers/phxOpenGL_Shader.pas"/>
-        <UnitName Value="phxOpenGL_Shader"/>
+        <Filename Value="../source/providers/audio/phxAudio_Bass.pas"/>
+        <UnitName Value="phxAudio_Bass"/>
       </Item47>
     </Files>
     <RequiredPkgs Count="4">

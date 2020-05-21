@@ -8,16 +8,16 @@ unit pgf;
 interface
 
 uses
-  phxApplication, phxAudio, phxAudio_Bass, phxAudio_OpenAL, phxCamera, 
-  phxCanvas, phxClasses, phxConsole, phxDevice, phxEffect, phxEvents, phxFont, 
-  phxGraphics, phxGraphics_DDS, phxGraphics_FreeImage, phxGraphics_Vampyre, 
-  phxImage, phxInput, phxLogger, phxMath, phxModel, phxParticle, 
-  phxParticleAffectors, phxParticleGraphs, phxParticlePresets, 
-  phxParticleRenderers, phxPersistency, phxPrimitives, phxShape, phxSimpleGUI, 
-  phxSimpleXML, phxSkin, phxSprite, phxSprite_Box2D, phxSpriteTerrain, 
-  phxTexture, phxTiles, phxTimer, phxTranslation, phxTypes, phxOpenGL, 
-  phxOpenGL_Canvas, phxOpenGL_Effect, phxOpenGL_GLFW3, phxOpenGL_SDL2, 
-  phxOpenGL_Shader, LazarusPackageIntf;
+  phxApplication, phxCamera, phxCanvas, phxClasses, phxConsole, phxDevice, 
+  phxEffect, phxEvents, phxFont, phxGraphics, phxGraphics_DDS, 
+  phxGraphics_FreeImage, phxGraphics_Vampyre, phxImage, phxInput, phxLogger, 
+  phxMath, phxModel, phxParticle, phxParticleAffectors, phxParticleGraphs, 
+  phxParticlePresets, phxParticleRenderers, phxPersistency, phxPrimitives, 
+  phxShape, phxSimpleGUI, phxSimpleXML, phxSkin, phxSprite, phxSprite_Box2D, 
+  phxSpriteTerrain, phxTexture, phxTiles, phxTimer, phxTranslation, phxTypes, 
+  phxOpenGL, phxOpenGL_Shader, phxOpenGL_SDL2, phxOpenGL_GLFW3, 
+  phxOpenGL_Effect, phxOpenGL_Canvas, phxAudio, phxAudio_OpenAL, 
+  phxAudio_Bass, LazarusPackageIntf;
 
 implementation
 

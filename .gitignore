@@ -6,4 +6,5 @@ source/providers/backup
 tutorials/_Compiled
 demos/_tmp
 demos/00_addons/lib
+demos/_bin/*
 
