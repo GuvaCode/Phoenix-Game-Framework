@@ -44,6 +44,7 @@ TGame = class(TPHXApplication)
 
 uses
   phxOpenGL_GLFW3,
+ // phxOpenGL_SDL2,
   phxGraphics_FreeImage;
 
 constructor TGame.Create;
@@ -57,6 +58,7 @@ begin
   // Create the device using the default provider
    Device:= TPHXDevice.Create;
    // Initialize the device
+   //Device.Flags:=[wfCursor];
    Device.Initialize;
 
    // Create the timer

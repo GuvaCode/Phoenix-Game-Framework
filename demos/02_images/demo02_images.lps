@@ -17,7 +17,8 @@
       <Unit1>
         <Filename Value="main.pas"/>
         <IsPartOfProject Value="True"/>
-        <TopLine Value="99"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="102"/>
         <CursorPos X="75" Y="111"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
@@ -32,11 +33,9 @@
       </Unit2>
       <Unit3>
         <Filename Value="../../../../Рабочий стол/Demos/03_Fonts/Main.pas"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="-1"/>
         <CursorPos X="101" Y="21"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit3>
     </Units>

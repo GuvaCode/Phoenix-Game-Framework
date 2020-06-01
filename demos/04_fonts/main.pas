@@ -58,7 +58,7 @@ begin
    Device:= TPHXDevice.Create;
    // Initialize the device
    Device.Initialize;
-
+   Device.Flags:=[wfCursor];
    // Create the timer
    Timer:= TPHXTimer.Create;
 

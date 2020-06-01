@@ -32,8 +32,8 @@ TGame = class(TPHXApplication)
   end; implementation
 
 uses
-  //phxOpenGL_GLFW3,
-  phxOpenGL_SDL2,
+  phxOpenGL_GLFW3,
+ // phxOpenGL_SDL2,
   phxGraphics_FreeImage;
 
 constructor TGame.Create;
@@ -48,6 +48,7 @@ begin
   Device:= TPHXDevice.Create;
   // Initialize the device
   Device.Initialize('Phoenix Demo', 800, 600);
+  Device.Flags:=[wfResizable,wfCursor];
   // Create the canvas
   Canvas:= Device.CreateCanvas;
   // Create the timer

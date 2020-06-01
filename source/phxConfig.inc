@@ -1,7 +1,6 @@
 {$IFDEF FPC}
 {$mode delphi}{$H+}
 //{$z4}
-
 {$ENDIF}
 
 

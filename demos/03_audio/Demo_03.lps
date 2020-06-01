@@ -3,7 +3,7 @@
   <ProjectSession>
     <Version Value="11"/>
     <BuildModes Active="Default"/>
-    <Units Count="12">
+    <Units Count="13">
       <Unit0>
         <Filename Value="Demo_03.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -14,7 +14,6 @@
       <Unit1>
         <Filename Value="main.pas"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
         <TopLine Value="9"/>
         <CursorPos X="2" Y="18"/>
         <UsageCount Value="22"/>
@@ -89,12 +88,20 @@
       </Unit10>
       <Unit11>
         <Filename Value="../../source/providers/audio/phxAudio_Uos.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
         <TopLine Value="124"/>
         <CursorPos X="3" Y="150"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit11>
+      <Unit12>
+        <Filename Value="../../../../Загрузки/123/000/uos-master/examples/uos_flat.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="56" Y="18"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit12>
     </Units>
     <JumpHistory Count="12" HistoryIndex="11">
       <Position1>

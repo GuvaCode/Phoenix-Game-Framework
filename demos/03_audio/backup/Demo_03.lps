@@ -14,8 +14,9 @@
       <Unit1>
         <Filename Value="main.pas"/>
         <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
         <TopLine Value="9"/>
-        <CursorPos X="4" Y="19"/>
+        <CursorPos X="2" Y="18"/>
         <UsageCount Value="22"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
@@ -38,7 +39,6 @@
       </Unit3>
       <Unit4>
         <Filename Value="../../source/providers/audio/phxAudio_Bass.pas"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
         <TopLine Value="457"/>
         <CursorPos Y="457"/>

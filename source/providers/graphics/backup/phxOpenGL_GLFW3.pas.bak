@@ -342,6 +342,7 @@ begin
     glfwSetWindowPos(FWindow, IX div 2, IY div 2);
     glfwSetWindowSize(FWindow, FWidth, FHeight);
   end;
+  //glfwSwapInterval(1);
 
   if wfVerticalSync in FWindowFlags then
   begin
