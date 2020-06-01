@@ -1,0 +1,19 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: phxsprite.smissinganimation
+msgid "The animation \"%s\" was not found in the sprite engine."
+msgstr "Анимация \"%s\" не была найдена в спрайтовом движке."
+
+#: phxsprite.smissingimage
+msgid "The image \"%s\" was not found in the sprite engine."
+msgstr "Изображение \"%s\" не была найдена в спрайтовом движке."
+
+#: phxsprite.smissingpattern
+msgid "The pattern \"%s\" was not found in the sprite engine."
+msgstr "Шаблон \"%s\" не была найдена в спрайтовом движке."
+
+#: phxsprite.snotinitialized
+msgid "You must initialize the sprite engine first"
+msgstr "Сначала вы должны инициализировать движок"
+

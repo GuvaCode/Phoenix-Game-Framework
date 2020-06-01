@@ -29,6 +29,7 @@ type
     FHeight: Integer;
     FFullscreen: Boolean;
     FWindowFlags: TPHXWindowFlags;
+    FModes:TPHXDisplayModes;
   protected
     function GetWidth: Integer; override;
     function GetHeight: Integer; override;
@@ -302,7 +303,27 @@ begin
 end;
 
 procedure TPHXOpenGLRendererGLFW3.EnumDisplayModes(const Modes: TPHXDisplayModes);
+var i, mCount:Integer;
+   vid:PGLFWvidmode;
 begin
+ //Modes:=   FModes;
+ //glfwGetPrimaryMonitor
+  if glfwInit() <> 1 then raise Exception.Create('Failed to initialize GLFW.');
+  glfwGetVideoModes(glfwGetPrimaryMonitor,mCount);
+  //FTitle:=Inttostr(mCount);
+
+    Modes.Desktop:= TPHXDisplayMode.Create('Desktop', FWidth, FHeight);
+    Modes.Clear;
+     vid:= glfwGetVideoModes(glfwGetPrimaryMonitor,20);
+  //  for i:=0 to mCount do
+  //  begin
+    //  Modes.Add(SDLMode.w, SDLMode.h);
+
+
+
+   // end;
+      Modes.Sort
+
 end;
 
 procedure TPHXOpenGLRendererGLFW3.Initialize(const Parameters: TPHXDeviceParameters);
@@ -342,7 +363,6 @@ begin
     glfwSetWindowPos(FWindow, IX div 2, IY div 2);
     glfwSetWindowSize(FWindow, FWidth, FHeight);
   end;
-  //glfwSwapInterval(1);
 
   if wfVerticalSync in FWindowFlags then
   begin

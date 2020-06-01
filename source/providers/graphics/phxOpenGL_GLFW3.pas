@@ -303,6 +303,7 @@ end;
 
 procedure TPHXOpenGLRendererGLFW3.EnumDisplayModes(const Modes: TPHXDisplayModes);
 begin
+
 end;
 
 procedure TPHXOpenGLRendererGLFW3.Initialize(const Parameters: TPHXDeviceParameters);
