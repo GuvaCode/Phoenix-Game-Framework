@@ -57,13 +57,12 @@ interface
 uses
   Classes
   , SysUtils
-  {$IFDEF Win32},Windows{$ENDIF}
-  ;
+  {$IFDEF Windows},Windows{$ENDIF} ;
 
 { $ DEFINE ALUT} //define ALUT to use alut.dll
 
 const
-{$IFDEF Win32}
+{$IFDEF Windows}
   callibname='OpenAL32.dll';
   calutlibname='Alut.dll';
 {$ENDIF}

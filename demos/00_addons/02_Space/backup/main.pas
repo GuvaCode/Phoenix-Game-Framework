@@ -192,7 +192,7 @@ end;
 procedure TGame.Render;
 begin
   Device.Clear;
-  RenderBackground;
+//  RenderBackground;
 
  // Canvas.Color  := clrSilver;
  // Canvas.FilledRectangle(200, 200, 200+256, 200+256);

@@ -10,14 +10,14 @@ interface
 uses
   phxApplication, phxCamera, phxCanvas, phxClasses, phxConsole, phxDevice, 
   phxEffect, phxEvents, phxFont, phxGraphics, phxGraphics_DDS, 
-  phxGraphics_FreeImage, phxGraphics_Vampyre, phxImage, phxInput, phxLogger, 
-  phxMath, phxModel, phxParticle, phxParticleAffectors, phxParticleGraphs, 
-  phxParticlePresets, phxParticleRenderers, phxPersistency, phxPrimitives, 
-  phxShape, phxSimpleGUI, phxSimpleXML, phxSkin, phxSprite, phxSprite_Box2D, 
-  phxSpriteTerrain, phxTexture, phxTiles, phxTimer, phxTranslation, phxTypes, 
-  phxOpenGL, phxOpenGL_Shader, phxOpenGL_SDL2, phxOpenGL_GLFW3, 
-  phxOpenGL_Effect, phxOpenGL_Canvas, phxAudio, phxAudio_OpenAL, 
-  phxAudio_Bass, LazarusPackageIntf;
+  phxGraphics_Vampyre, phxImage, phxInput, phxLogger, phxMath, phxModel, 
+  phxParticle, phxParticleAffectors, phxParticleGraphs, phxParticlePresets, 
+  phxParticleRenderers, phxPersistency, phxPrimitives, phxShape, phxSimpleGUI, 
+  phxSimpleXML, phxSkin, phxSprite, phxSprite_Box2D, phxSpriteTerrain, 
+  phxTexture, phxTiles, phxTimer, phxTranslation, phxTypes, phxOpenGL, 
+  phxOpenGL_Shader, phxOpenGL_SDL2, phxOpenGL_GLFW3, phxOpenGL_Effect, 
+  phxOpenGL_Canvas, phxAudio, phxAudio_Bass, phxGraphics_FreeImage, 
+  LazarusPackageIntf;
 
 implementation
 

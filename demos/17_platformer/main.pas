@@ -76,10 +76,10 @@ TPlayer = class(TPHXAnimatedSprite)
 implementation
 
 uses
-//  phxOpenGL_GLFW3,
-  phxOpenGL_SDL2,
-  phxGraphics_Vampyre;
-
+  phxOpenGL_GLFW3,
+//  phxOpenGL_SDL2,
+//  phxGraphics_Vampyre;
+ phxGraphics_FreeImage;
 var Map: TMap;
 
 //------------------------------------------------------------------------------

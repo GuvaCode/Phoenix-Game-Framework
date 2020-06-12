@@ -1409,11 +1409,11 @@ begin
   RotationDirection:= (DirectionPoint.X * DirectionEntity.Y) - (DirectionPoint.Y * DirectionEntity.X) ;
   // Determine the direction to rotate with the cross product of the target
   // direction and current direction
-  {$IFDEF Windows}
-  RotationRemaining:= ArcCos( VectorDot(DirectionEntity, DirectionPoint) ) * RAD_TO_DEG;
-  {$ELSE}
+//  {$IFDEF Windows}
+//  RotationRemaining:= ArcCos( VectorDot(DirectionEntity, DirectionPoint) ) * RAD_TO_DEG;
+//  {$ELSE}
   RotationRemaining:= ArcCos( VectorCross(DirectionEntity, DirectionPoint) ) * RAD_TO_DEG;
-  {$ENDIF}
+ // {$ENDIF}
   // If there is less distance remaining to move then the distance we will move
   // this frame just snap the rotation to the target rotation
   if RotationRemaining < Delta  then
