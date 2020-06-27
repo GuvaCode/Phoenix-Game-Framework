@@ -61,8 +61,7 @@ const
 implementation
 
 uses
-  phxOpenGL_GLFW3,
-  phxGraphics_FreeImage;
+  phxOpenGL_GLFW3;
 
 constructor TGame.Create;
 begin

@@ -17,6 +17,7 @@
       <Unit1>
         <Filename Value="main.pas"/>
         <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
         <TopLine Value="290"/>
         <CursorPos X="22" Y="306"/>
         <UsageCount Value="27"/>
@@ -40,7 +41,6 @@
       </Unit3>
       <Unit4>
         <Filename Value="../../../source/phxSprite.pas"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
         <TopLine Value="1403"/>
         <CursorPos X="4" Y="1416"/>
@@ -115,7 +115,7 @@
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit13>
     </Units>
-    <JumpHistory Count="13" HistoryIndex="12">
+    <JumpHistory Count="12" HistoryIndex="11">
       <Position1>
         <Filename Value="main.pas"/>
         <Caret Line="82" Column="45" TopLine="77"/>
@@ -145,29 +145,25 @@
         <Caret Line="183" Column="33" TopLine="171"/>
       </Position7>
       <Position8>
-        <Filename Value="uPlayer.pas"/>
-        <Caret TopLine="184"/>
+        <Filename Value="../../../source/phxSprite.pas"/>
+        <Caret Line="274" Column="15" TopLine="265"/>
       </Position8>
       <Position9>
         <Filename Value="../../../source/phxSprite.pas"/>
-        <Caret Line="274" Column="15" TopLine="265"/>
+        <Caret Line="272" Column="24" TopLine="265"/>
       </Position9>
       <Position10>
         <Filename Value="../../../source/phxSprite.pas"/>
-        <Caret Line="272" Column="24" TopLine="265"/>
+        <Caret Line="274" Column="24" TopLine="265"/>
       </Position10>
       <Position11>
         <Filename Value="../../../source/phxSprite.pas"/>
-        <Caret Line="274" Column="24" TopLine="265"/>
+        <Caret Line="276" Column="24" TopLine="265"/>
       </Position11>
       <Position12>
         <Filename Value="../../../source/phxSprite.pas"/>
-        <Caret Line="276" Column="24" TopLine="265"/>
-      </Position12>
-      <Position13>
-        <Filename Value="../../../source/phxSprite.pas"/>
         <Caret Line="1667" Column="31" TopLine="1646"/>
-      </Position13>
+      </Position12>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>

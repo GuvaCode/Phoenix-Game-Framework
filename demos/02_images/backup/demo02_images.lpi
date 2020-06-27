@@ -41,7 +41,7 @@
   <CompilerOptions>
     <Version Value="11"/>
     <Target>
-      <Filename Value="../_bin/demo02_images_$(TargetCPU)-$(TargetOS)"/>
+      <Filename Value="../_bin/demo_02_images_$(TargetCPU)-$(TargetOS)"/>
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>

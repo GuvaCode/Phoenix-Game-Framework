@@ -102,7 +102,6 @@ procedure TGame.Render;
     Images.Find('Shooter').DrawTransform(Transform, 'Player');
 
     Canvas.Flush;
-
     Device.Flip;
 end;
 

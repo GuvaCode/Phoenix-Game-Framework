@@ -3,7 +3,7 @@
   <ProjectSession>
     <Version Value="11"/>
     <BuildModes Active="Default"/>
-    <Units Count="4">
+    <Units Count="6">
       <Unit0>
         <Filename Value="demo02_images.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -17,9 +17,8 @@
       <Unit1>
         <Filename Value="main.pas"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="102"/>
-        <CursorPos X="75" Y="111"/>
+        <TopLine Value="105"/>
+        <CursorPos X="93" Y="116"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
@@ -38,8 +37,25 @@
         <UsageCount Value="10"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit3>
+      <Unit4>
+        <Filename Value="../../source/phxTexture.pas"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="53"/>
+        <CursorPos X="29" Y="457"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="../../package/pgf_reglist.pas"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="21"/>
+        <CursorPos X="23" Y="55"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit5>
     </Units>
-    <JumpHistory Count="2" HistoryIndex="1">
+    <JumpHistory Count="4" HistoryIndex="3">
       <Position1>
         <Filename Value="main.pas"/>
         <Caret Line="62" Column="34" TopLine="47"/>
@@ -48,6 +64,14 @@
         <Filename Value="main.pas"/>
         <Caret Line="113" TopLine="100"/>
       </Position2>
+      <Position3>
+        <Filename Value="main.pas"/>
+        <Caret Line="111" Column="75" TopLine="102"/>
+      </Position3>
+      <Position4>
+        <Filename Value="main.pas"/>
+        <Caret Line="36" Column="18" TopLine="26"/>
+      </Position4>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>

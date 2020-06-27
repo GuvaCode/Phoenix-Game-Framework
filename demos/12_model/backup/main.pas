@@ -158,7 +158,7 @@ begin
   Decl:= TPHXVertex.Declaration;
 
   Decl:= TPHXVertexDeclaration.Create([vcPosition, vcNormal, vcCoord1]);
-  Decl.Offsets[vcPosition]:= Cardinal(@V.Position) - Cardinal(@V);
+  Decl.Offsets[vcPosition]:= Integer(@V.Position) - Integer(@V);
   Decl.Offsets[vcNormal  ]:= Integer(@V.Normal  ) - Integer(@V);
   Decl.Offsets[vcCoord1  ]:= Integer(@V.Texture ) - Integer(@V);
 
