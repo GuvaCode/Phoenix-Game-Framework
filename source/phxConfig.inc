@@ -1,4 +1,4 @@
-{ Phoenix config file }
+{ -= Phoenix config file =-}
 
 {$IFDEF FPC}
 {$mode delphi}{$H+}
