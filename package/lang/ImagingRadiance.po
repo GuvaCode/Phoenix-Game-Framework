@@ -1,0 +1,15 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: imagingradiance.serrorbadheader
+msgid "Bad HDR/RGBE header format."
+msgstr ""
+
+#: imagingradiance.swrongscanlinewidth
+msgid "Wrong scanline width."
+msgstr ""
+
+#: imagingradiance.sxyznotsupported
+msgid "XYZ color space not supported."
+msgstr ""
+

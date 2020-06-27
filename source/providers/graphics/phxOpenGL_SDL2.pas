@@ -2,10 +2,10 @@ unit phxOpenGL_SDL2;
 // open gl provider for PGF
 // guvacode@gmail.com
 //
+
 interface
 
 {$I ../phxConfig.inc}
-
 uses
   SysUtils, Classes, dglOpenGL, SDL2, phxLogger, phxTypes, phxClasses, phxEvents, phxDevice, phxGraphics, phxOpenGL;
 
@@ -58,6 +58,8 @@ type
     procedure Clear; override;
     procedure Flip; override;
   end;
+
+
 
 implementation
 
@@ -438,5 +440,7 @@ end;
 
 initialization
   RegisterProvider(ProviderName, TPHXOpenGL_Provider_SDL2);
+
+
 end.
 

@@ -1380,7 +1380,7 @@ begin
 
     Stream.ReadBuffer(Data[1], 2 * Len);
 
-    Value:= String(Data);
+    Value:= WideString(Data);
   end else
   begin
     Value:= '';

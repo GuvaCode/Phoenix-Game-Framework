@@ -1,0 +1,183 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: imaging.sallfilter
+msgid "All Images"
+msgstr ""
+
+#: imaging.serrorbadimage
+msgid "Bad image detected."
+msgstr ""
+
+#: imaging.serrorcloneimage
+msgid "Error while cloning image. %s"
+msgstr ""
+
+#: imaging.serrorconvertimage
+msgid "Error while converting image to format \"%s\". %s"
+msgstr ""
+
+#: imaging.serrorcopypalette
+msgid "Error while copying %d entries from palette @%p to @%p"
+msgstr ""
+
+#: imaging.serrorcopyrect
+msgid "Error while copying rect from image %s to image %s."
+msgstr ""
+
+#: imaging.serrorcustompalette
+msgid "Error while filling custom palette @%p with %d entries."
+msgstr ""
+
+#: imaging.serroremptystream
+msgid "Input stream has no data. Check Position property."
+msgstr ""
+
+#: imaging.serrorfillrect
+msgid "Error while filling rectangle X:%d Y:%d W:%d H:%d in image %s"
+msgstr ""
+
+#: imaging.serrorfindcolor
+msgid "Error while finding color in palette @%p with %d entries."
+msgstr ""
+
+#: imaging.serrorflipimage
+msgid "Error while flipping image. %s"
+msgstr ""
+
+#: imaging.serrorfreeimage
+msgid "Error while freeing image. %s"
+msgstr ""
+
+#: imaging.serrorfreepalette
+msgid "Error while freeing palette @%p"
+msgstr ""
+
+#: imaging.serrorgeneratemipmaps
+msgid "Error while generating %d mipmap levels for image %s"
+msgstr ""
+
+#: imaging.serrorgrayscalepalette
+msgid "Error while filling grayscale palette @%p with %d entries."
+msgstr ""
+
+#: imaging.serrorinvalidinputimage
+msgid "Invalid input image."
+msgstr ""
+
+#: imaging.serrorloadingfile
+msgid "Error while loading images from file \"%s\" (file format: %s)."
+msgstr ""
+
+#: imaging.serrorloadingmemory
+msgid "Error while loading images from memory %p (%d Bytes) (file format: %s)."
+msgstr ""
+
+#: imaging.serrorloadingstream
+msgid "Error while loading images from stream %p (file format: %s)."
+msgstr ""
+
+#: imaging.serrormakepaletteforimages
+msgid "Error while making %d color palette for %d images."
+msgstr ""
+
+#: imaging.serrormapimage
+msgid "Error while mapping image %s to palette."
+msgstr ""
+
+#: imaging.serrormirrorimage
+msgid "Error while mirroring image. %s"
+msgstr ""
+
+#: imaging.serrornewimage
+msgid "Error while creating image data with params: Width=%d Height=%d Format=%s."
+msgstr ""
+
+#: imaging.serrornewpalette
+msgid "Error while creating new palette with %d entries"
+msgstr ""
+
+#: imaging.serrorreducecolors
+msgid "Error while reducing number of colors of image to %d. %s"
+msgstr ""
+
+#: imaging.serrorreplacecolor
+msgid "Error while replacing colors in rectangle X:%d Y:%d W:%d H:%d of image %s"
+msgstr ""
+
+#: imaging.serrorresizeimage
+msgid "Error while resizing image.  %s"
+msgstr ""
+
+#: imaging.serrorrotateimage
+msgid "Error while rotating image %s by %.2n degrees"
+msgstr ""
+
+#: imaging.serrorsavingfile
+msgid "Error while saving images to file \"%s\" (file format: %s)."
+msgstr ""
+
+#: imaging.serrorsavingmemory
+msgid "Error while saving images to memory %p (%d Bytes) (file format: %s)."
+msgstr ""
+
+#: imaging.serrorsavingstream
+msgid "Error while saving images to stream %p (file format: %s)."
+msgstr ""
+
+#: imaging.serrorsplitimage
+msgid "Error while splitting image %s to %dx%d sized chunks."
+msgstr ""
+
+#: imaging.serrorstretchrect
+msgid "Error while stretching rect from image %s to image %s."
+msgstr ""
+
+#: imaging.serrorswapimage
+msgid "Error while swapping channels of image. %s"
+msgstr ""
+
+#: imaging.serrorswappalette
+msgid "Error while swapping channels of palette @%p with %d entries."
+msgstr ""
+
+#: imaging.sexceptmsg
+msgid "Exception Message"
+msgstr ""
+
+#: imaging.sfileformatcannotload
+msgid "Image Format \"%s\" does not support loading images."
+msgstr ""
+
+#: imaging.sfileformatcannotsave
+msgid "Image Format \"%s\" does not support saving images."
+msgstr ""
+
+#: imaging.sfilenotvalid
+msgid "File \"%s\" is not valid image in \"%s\" format."
+msgstr ""
+
+#: imaging.simageinfo
+msgid "Image @%p info: Width = %dpx, Height = %dpx, Format = %s, Size = %.0n %s, Bits @%p, Palette @%p."
+msgstr ""
+
+#: imaging.simageinfoinvalid
+msgid "Access violation encountered when getting info on image at address %p."
+msgstr ""
+
+#: imaging.simagesnotvalid
+msgid "One or more images are not valid."
+msgstr ""
+
+#: imaging.smemorynotvalid
+msgid "Memory %p (%d Bytes) does not contain valid image in \"%s\" format."
+msgstr ""
+
+#: imaging.sstreamnotvalid
+msgid "Stream %p does not contain valid image in \"%s\" format."
+msgstr ""
+
+#: imaging.sunknownformat
+msgid "Unknown and unsupported format"
+msgstr ""
+

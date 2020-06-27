@@ -1,0 +1,15 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: imagingcanvases.sconstructorinvalidimage
+msgid "Invalid image data passed to TImagingCanvas constructor (%s)."
+msgstr ""
+
+#: imagingcanvases.sconstructorinvalidpointer
+msgid "Invalid pointer (%p) to TImageData passed to TImagingCanvas constructor."
+msgstr ""
+
+#: imagingcanvases.sconstructorunsupportedformat
+msgid "Image passed to TImagingCanvas constructor is in unsupported format (%s)"
+msgstr ""
+

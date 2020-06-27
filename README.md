@@ -12,19 +12,9 @@ Phoenix is mainly developed and tested on Linux, but Windows or MacOS is support
 
 **Package installation**
 
-Install package dependencies. Open the Network package manager and install the Vampire Imaging Package, Box2d.
-
-![](pictures/install_0.png) 
-![](pictures/install_1.png) 
-
-Open and compile pgf.lpk
+Open and install pgf.lpk
 
 ![](pictures/pkg_0.png) 
-
-Open and install pgfctrls.lpk
-
-![](pictures/pgk_1.png) 
-
 
 **Сreate the first game application**
 
@@ -37,8 +27,6 @@ and selected PGF Game Application ...
 ![](pictures/pkg3.png) 
 
 compile and run first project ......
-
-
 
 **Compilation of PGF in different OS's**
 

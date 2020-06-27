@@ -17,11 +17,11 @@
 //                                                                            //
 ////////////////////////////////////////////////////////////////////////////////
 unit phxOpenGL;
-//< OpenGL classes
+
 
 interface
 
-{$I ../phxConfig.inc}
+{$I ../../phxConfig.inc}
 
 uses
   SysUtils, Classes,

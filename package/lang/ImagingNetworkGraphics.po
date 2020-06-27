@@ -1,0 +1,7 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: imagingnetworkgraphics.serrorloadingchunk
+msgid "Error when reading %s chunk data. File may be corrupted."
+msgstr ""
+

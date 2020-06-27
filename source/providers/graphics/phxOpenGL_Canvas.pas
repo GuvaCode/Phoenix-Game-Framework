@@ -21,7 +21,7 @@ unit phxOpenGL_Canvas;
 
 interface
 
-{$I ../phxConfig.inc}
+{$I ../../phxConfig.inc}
 
 uses
   SysUtils, Classes,

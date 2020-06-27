@@ -57,7 +57,7 @@ interface
 
 {$MINENUMSIZE 4} // Make sure enums are stored as an integer to be compatible with C/C++
 
-{$I 'Version.inc'}
+{$I 'freeimage.inc'}
 
 {$IFDEF MSWINDOWS}
 uses Windows;

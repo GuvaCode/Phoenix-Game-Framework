@@ -157,7 +157,7 @@ begin
 '    procedure Update; override;'+LE+
 '    procedure Render; override;'+LE+
 '    procedure Shutdown; override;'+LE+
-'  end;'
+'  end;'+LE+LE
 end;
 
 { TPGFApplicationDescriptor }
