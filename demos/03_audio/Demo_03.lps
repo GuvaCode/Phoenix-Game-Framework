@@ -3,7 +3,7 @@
   <ProjectSession>
     <Version Value="11"/>
     <BuildModes Active="Default"/>
-    <Units Count="26">
+    <Units Count="29">
       <Unit0>
         <Filename Value="Demo_03.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -174,7 +174,6 @@
       </Unit22>
       <Unit23>
         <Filename Value="../17_platformer/main.pas"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
         <TopLine Value="68"/>
         <CursorPos X="28" Y="81"/>
@@ -198,8 +197,39 @@
         <UsageCount Value="10"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit25>
+      <Unit26>
+        <Filename Value="../../package/pgf_descriprors.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="205"/>
+        <CursorPos X="4" Y="217"/>
+        <UsageCount Value="10"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="/usr/share/lazarus/2.0.8/components/ideintf/projpackintf.pas"/>
+        <UnitName Value="ProjPackIntf"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="53"/>
+        <CursorPos X="14" Y="64"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit27>
+      <Unit28>
+        <Filename Value="/usr/share/lazarus/2.0.8/components/ideintf/compoptsintf.pas"/>
+        <UnitName Value="CompOptsIntf"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="197"/>
+        <CursorPos X="33" Y="212"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit28>
     </Units>
-    <JumpHistory HistoryIndex="-1"/>
+    <JumpHistory Count="1">
+      <Position1>
+        <Filename Value="/usr/share/lazarus/2.0.8/components/ideintf/projpackintf.pas"/>
+        <Caret Line="64" Column="14" TopLine="53"/>
+      </Position1>
+    </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
       <Modes Count="0" ActiveMode=""/>

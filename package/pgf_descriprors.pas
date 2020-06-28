@@ -24,7 +24,7 @@ type
     constructor Create; override;
     function GetInterfaceUsesSection: string; override;
     function GetUnitDirectives: string; override;
-    function GetImplementationSource(const Filename, SourceName, ResourceName: string): string; override;
+    function GetImplementationSource(const {%H-}Filename, {%H-}SourceName, {%H-}ResourceName: string): string; override;
     function GetInterfaceSource(const {%H-}aFilename, {%H-}aSourceName,{%H-}aResourceName: string): string; override;
     end;
 
@@ -216,6 +216,8 @@ begin
   AProject.AddPackageDependency('PGF');
   AProject.LazCompilerOptions.UnitOutputDirectory:='lib'+PathDelim+'$(TargetCPU)-$(TargetOS)';
   AProject.LazCompilerOptions.TargetFilename:='Game';
+  AProject.LazCompilerOptions.Win32GraphicApp:=True;
+  AProject.LazCompilerOptions.GenerateDebugInfo:=False;
 
 end;
 
