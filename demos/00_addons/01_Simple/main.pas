@@ -61,7 +61,7 @@ implementation
 
 // Use opengl for rendering and freeimage for texture loading
 uses
-        phxOpenGL_GLFW3,
+  phxOpenGL_GLFW3,
   phxGraphics_Vampyre;
 
 //------------------------------------------------------------------------------

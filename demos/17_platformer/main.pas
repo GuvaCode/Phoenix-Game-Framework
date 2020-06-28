@@ -77,9 +77,8 @@ implementation
 
 uses
   phxOpenGL_GLFW3,
-//  phxOpenGL_SDL2,
-//  phxGraphics_Vampyre;
- phxGraphics_FreeImage;
+  phxGraphics_Vampyre;
+
 var Map: TMap;
 
 //------------------------------------------------------------------------------

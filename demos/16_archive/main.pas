@@ -70,13 +70,9 @@ TGameContent = class(TPHXContentLoader)
 implementation
 
 uses
-  // Use OpenGL with SDL
-  phxOpenGL_SDL,
-  // Use OpenGL with GLFW
-  //phxProvider_OpenGL_GLFW,
 
-  // Use freeimage for graphics loading
-  phxGraphics_FreeImage;
+  phxProvider_OpenGL_GLFW,
+  phxGraphics_Vampyre;
 
 //------------------------------------------------------------------------------
 constructor TGame.Create;

@@ -33,7 +33,12 @@ TGame = class(TPHXApplication)
   end; implementation
 
 uses
+<<<<<<< Updated upstream
   phxOpenGL_GLFW3;
+=======
+  phxOpenGL_GLFW3,
+  phxGraphics_Vampyre;
+>>>>>>> Stashed changes
 
 constructor TGame.Create;
 begin

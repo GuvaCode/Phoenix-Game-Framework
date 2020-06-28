@@ -17,6 +17,7 @@
       <Unit1>
         <Filename Value="main.pas"/>
         <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
         <TopLine Value="119"/>
         <CursorPos X="26" Y="131"/>
         <UsageCount Value="20"/>
@@ -33,7 +34,7 @@
       </Unit2>
       <Unit3>
         <Filename Value="../../../source/phxTypes.pas"/>
-        <EditorIndex Value="4"/>
+        <EditorIndex Value="2"/>
         <TopLine Value="166"/>
         <CursorPos Y="179"/>
         <UsageCount Value="10"/>
@@ -41,7 +42,7 @@
       </Unit3>
       <Unit4>
         <Filename Value="../../../source/phxInput.pas"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="1"/>
         <TopLine Value="247"/>
         <CursorPos X="15" Y="259"/>
         <UsageCount Value="10"/>
@@ -49,21 +50,18 @@
       </Unit4>
       <Unit5>
         <Filename Value="../../../../../Загрузки/123/phoenix_2013-10-15/Addons/01_Sprites/06_Broadphase/uMain.pas"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="19"/>
         <CursorPos X="20" Y="43"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit5>
       <Unit6>
         <Filename Value="../../../../../Загрузки/123/phoenix_2013-10-15/Addons/01_Sprites/phxSpriteCollider.pas"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="603"/>
         <CursorPos X="4" Y="603"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit6>
     </Units>

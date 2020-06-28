@@ -3,7 +3,7 @@
   <ProjectSession>
     <Version Value="11"/>
     <BuildModes Active="Default"/>
-    <Units Count="12">
+    <Units Count="13">
       <Unit0>
         <Filename Value="Demo_03.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -15,8 +15,8 @@
         <Filename Value="main.pas"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="9"/>
-        <CursorPos X="2" Y="18"/>
+        <TopLine Value="34"/>
+        <CursorPos X="22" Y="46"/>
         <UsageCount Value="22"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
@@ -31,7 +31,7 @@
       </Unit2>
       <Unit3>
         <Filename Value="../../source/providers/audio/phxAudio_OpenAL.pas"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="2"/>
         <TopLine Value="11"/>
         <CursorPos Y="27"/>
         <UsageCount Value="11"/>
@@ -39,7 +39,7 @@
       </Unit3>
       <Unit4>
         <Filename Value="../../source/providers/audio/phxAudio_Bass.pas"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="1"/>
         <TopLine Value="457"/>
         <CursorPos Y="457"/>
         <UsageCount Value="11"/>
@@ -68,7 +68,7 @@
       </Unit7>
       <Unit8>
         <Filename Value="../../source/providers/graphics/phxOpenGL.pas"/>
-        <EditorIndex Value="4"/>
+        <EditorIndex Value="3"/>
         <CursorPos X="15" Y="19"/>
         <UsageCount Value="11"/>
         <Loaded Value="True"/>
@@ -89,14 +89,20 @@
       </Unit10>
       <Unit11>
         <Filename Value="../../source/providers/audio/phxAudio_Uos.pas"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="124"/>
         <CursorPos X="3" Y="150"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
       </Unit11>
+      <Unit12>
+        <Filename Value="../../../../Загрузки/123/000/uos-master/examples/uos_flat.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="56" Y="18"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit12>
     </Units>
-    <JumpHistory Count="12" HistoryIndex="11">
+    <JumpHistory Count="8" HistoryIndex="7">
       <Position1>
         <Filename Value="main.pas"/>
         <Caret Line="115" Column="8" TopLine="93"/>
@@ -126,25 +132,9 @@
         <Caret Line="19" Column="4" TopLine="9"/>
       </Position7>
       <Position8>
-        <Filename Value="../../source/providers/audio/phxAudio_Uos.pas"/>
-        <Caret Line="27" Column="8" TopLine="3"/>
-      </Position8>
-      <Position9>
         <Filename Value="../../source/providers/audio/phxAudio_Bass.pas"/>
         <Caret Line="225" Column="20" TopLine="210"/>
-      </Position9>
-      <Position10>
-        <Filename Value="../../source/providers/audio/phxAudio_Uos.pas"/>
-        <Caret Line="62" Column="8" TopLine="38"/>
-      </Position10>
-      <Position11>
-        <Filename Value="../../source/providers/audio/phxAudio_Uos.pas"/>
-        <Caret Line="81" Column="8" TopLine="66"/>
-      </Position11>
-      <Position12>
-        <Filename Value="../../source/providers/audio/phxAudio_Uos.pas"/>
-        <Caret Line="54" Column="8" TopLine="42"/>
-      </Position12>
+      </Position8>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>

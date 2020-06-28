@@ -60,7 +60,7 @@ implementation
 
 uses
   phxOpenGL_GLFW3,
-  phxGraphics_FreeImage;
+  phxGraphics_Vampyre;
 
 constructor TGame.Create;
 begin

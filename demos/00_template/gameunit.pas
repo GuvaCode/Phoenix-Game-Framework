@@ -29,12 +29,13 @@ TGame = class(TPHXApplication)
     procedure Update; override;
     procedure Render; override;
     procedure Shutdown; override;
-  end; implementation
+  end;
+
+implementation
 
 uses
   phxOpenGL_GLFW3,
- // phxOpenGL_SDL2,
-  phxGraphics_FreeImage;
+  phxGraphics_Vampyre;
 
 constructor TGame.Create;
 begin

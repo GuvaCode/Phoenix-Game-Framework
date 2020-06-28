@@ -37,8 +37,7 @@ implementation
 
 uses
    phxOpenGL_GLFW3,
- //  phxOpenGL_SDL,
-   phxGraphics_FreeImage;
+   phxGraphics_Vampyre;
 
 //------------------------------------------------------------------------------
 procedure TGame.Init;
