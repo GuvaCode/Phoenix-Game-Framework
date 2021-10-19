@@ -1,0 +1,7 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: imaginggif.sgifdecodingerror
+msgid "Error when decoding GIF LZW data"
+msgstr ""
+

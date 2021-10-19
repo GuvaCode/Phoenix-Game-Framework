@@ -306,6 +306,9 @@ TPHXParticleAffectorClass = class of TPHXParticleAffector;
 // The affector is a plugin for a particle emittor that adds new functionality
 // to the particle effect
 //------------------------------------------------------------------------------
+
+{ TPHXParticleAffector }
+
 TPHXParticleAffector = class(TPersistent)
   private
     FEffect: TPHXParticleEffect;
@@ -313,9 +316,9 @@ TPHXParticleAffector = class(TPersistent)
     function GetName: string; virtual;
 
     // Overrride this to load the affector to a stream
-    procedure LoadAffector(Reader: TPHXReader); virtual; abstract;
+    procedure LoadAffector(Reader: TPHXReader); virtual; //abstract;
     // Overrride this to save the affector to a stream
-    procedure SaveAffector(Writer: TPHXWriter); virtual; abstract;
+    procedure SaveAffector(Writer: TPHXWriter); virtual; //abstract;
   public
     // Default constructor
     constructor Create(AEffect: TPHXParticleEffect); virtual;
@@ -333,7 +336,7 @@ TPHXParticleAffector = class(TPersistent)
     // Iniitalize the affector called when it is assigned to a particle system
     procedure Initialize; virtual;
     // Affect all the particles in the particle system
-    procedure Update(System: TPHXParticleSystem; DeltaTime: Double); virtual; abstract;
+    procedure Update(System: TPHXParticleSystem; DeltaTime: Double); virtual;// abstract;
 
     // The owning particle effect
     property Effect: TPHXParticleEffect read FEffect;
@@ -1393,6 +1396,16 @@ begin
   Result:= ClassName;
 end;
 
+procedure TPHXParticleAffector.LoadAffector(Reader: TPHXReader);
+begin
+
+end;
+
+procedure TPHXParticleAffector.SaveAffector(Writer: TPHXWriter);
+begin
+
+end;
+
 //------------------------------------------------------------------------------
 procedure TPHXParticleAffector.LoadFromFile(const FileName: String);
 var Stream: TFileStream;
@@ -1443,6 +1456,12 @@ end;
 
 //------------------------------------------------------------------------------
 procedure TPHXParticleAffector.Initialize;
+begin
+
+end;
+
+procedure TPHXParticleAffector.Update(System: TPHXParticleSystem;
+  DeltaTime: Double);
 begin
 
 end;

@@ -1,0 +1,221 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: imaging.sallfilter
+msgid "All Images"
+msgstr ""
+
+#: imaging.serrorbadimage
+msgid "Bad image detected."
+msgstr ""
+
+#: imaging.serrorcloneimage
+#, object-pascal-format
+msgid "Error while cloning image. %s"
+msgstr ""
+
+#: imaging.serrorconvertimage
+#, object-pascal-format
+msgid "Error while converting image to format \"%s\". %s"
+msgstr ""
+
+#: imaging.serrorcopypalette
+#, object-pascal-format
+msgid "Error while copying %d entries from palette @%p to @%p"
+msgstr ""
+
+#: imaging.serrorcopyrect
+#, object-pascal-format
+msgid "Error while copying rect from image %s to image %s."
+msgstr ""
+
+#: imaging.serrorcustompalette
+#, object-pascal-format
+msgid "Error while filling custom palette @%p with %d entries."
+msgstr ""
+
+#: imaging.serroremptystream
+msgid "Input stream has no data. Check Position property."
+msgstr ""
+
+#: imaging.serrorfillrect
+#, object-pascal-format
+msgid "Error while filling rectangle X:%d Y:%d W:%d H:%d in image %s"
+msgstr ""
+
+#: imaging.serrorfindcolor
+#, object-pascal-format
+msgid "Error while finding color in palette @%p with %d entries."
+msgstr ""
+
+#: imaging.serrorflipimage
+#, object-pascal-format
+msgid "Error while flipping image. %s"
+msgstr ""
+
+#: imaging.serrorfreeimage
+#, object-pascal-format
+msgid "Error while freeing image. %s"
+msgstr ""
+
+#: imaging.serrorfreepalette
+#, object-pascal-format
+msgid "Error while freeing palette @%p"
+msgstr ""
+
+#: imaging.serrorgeneratemipmaps
+#, object-pascal-format
+msgid "Error while generating %d mipmap levels for image %s"
+msgstr ""
+
+#: imaging.serrorgrayscalepalette
+#, object-pascal-format
+msgid "Error while filling grayscale palette @%p with %d entries."
+msgstr ""
+
+#: imaging.serrorinvalidinputimage
+msgid "Invalid input image."
+msgstr ""
+
+#: imaging.serrorloadingfile
+#, object-pascal-format
+msgid "Error while loading images from file \"%s\" (file format: %s)."
+msgstr ""
+
+#: imaging.serrorloadingmemory
+#, object-pascal-format
+msgid "Error while loading images from memory %p (%d Bytes) (file format: %s)."
+msgstr ""
+
+#: imaging.serrorloadingstream
+#, object-pascal-format
+msgid "Error while loading images from stream %p (file format: %s)."
+msgstr ""
+
+#: imaging.serrormakepaletteforimages
+#, object-pascal-format
+msgid "Error while making %d color palette for %d images."
+msgstr ""
+
+#: imaging.serrormapimage
+#, object-pascal-format
+msgid "Error while mapping image %s to palette."
+msgstr ""
+
+#: imaging.serrormirrorimage
+#, object-pascal-format
+msgid "Error while mirroring image. %s"
+msgstr ""
+
+#: imaging.serrornewimage
+#, object-pascal-format
+msgid "Error while creating image data with params: Width=%d Height=%d Format=%s."
+msgstr ""
+
+#: imaging.serrornewpalette
+#, object-pascal-format
+msgid "Error while creating new palette with %d entries"
+msgstr ""
+
+#: imaging.serrorreducecolors
+#, object-pascal-format
+msgid "Error while reducing number of colors of image to %d. %s"
+msgstr ""
+
+#: imaging.serrorreplacecolor
+#, object-pascal-format
+msgid "Error while replacing colors in rectangle X:%d Y:%d W:%d H:%d of image %s"
+msgstr ""
+
+#: imaging.serrorresizeimage
+#, object-pascal-format
+msgid "Error while resizing image.  %s"
+msgstr ""
+
+#: imaging.serrorrotateimage
+#, object-pascal-format
+msgid "Error while rotating image %s by %.2n degrees"
+msgstr ""
+
+#: imaging.serrorsavingfile
+#, object-pascal-format
+msgid "Error while saving images to file \"%s\" (file format: %s)."
+msgstr ""
+
+#: imaging.serrorsavingmemory
+#, object-pascal-format
+msgid "Error while saving images to memory %p (%d Bytes) (file format: %s)."
+msgstr ""
+
+#: imaging.serrorsavingstream
+#, object-pascal-format
+msgid "Error while saving images to stream %p (file format: %s)."
+msgstr ""
+
+#: imaging.serrorsplitimage
+#, object-pascal-format
+msgid "Error while splitting image %s to %dx%d sized chunks."
+msgstr ""
+
+#: imaging.serrorstretchrect
+#, object-pascal-format
+msgid "Error while stretching rect from image %s to image %s."
+msgstr ""
+
+#: imaging.serrorswapimage
+#, object-pascal-format
+msgid "Error while swapping channels of image. %s"
+msgstr ""
+
+#: imaging.serrorswappalette
+#, object-pascal-format
+msgid "Error while swapping channels of palette @%p with %d entries."
+msgstr ""
+
+#: imaging.sexceptmsg
+msgid "Exception Message"
+msgstr ""
+
+#: imaging.sfileformatcannotload
+#, object-pascal-format
+msgid "Image Format \"%s\" does not support loading images."
+msgstr ""
+
+#: imaging.sfileformatcannotsave
+#, object-pascal-format
+msgid "Image Format \"%s\" does not support saving images."
+msgstr ""
+
+#: imaging.sfilenotvalid
+#, object-pascal-format
+msgid "File \"%s\" is not valid image in \"%s\" format."
+msgstr ""
+
+#: imaging.simageinfo
+#, object-pascal-format
+msgid "Image @%p info: Width = %dpx, Height = %dpx, Format = %s, Size = %.0n %s, Bits @%p, Palette @%p."
+msgstr ""
+
+#: imaging.simageinfoinvalid
+#, object-pascal-format
+msgid "Access violation encountered when getting info on image at address %p."
+msgstr ""
+
+#: imaging.simagesnotvalid
+msgid "One or more images are not valid."
+msgstr ""
+
+#: imaging.smemorynotvalid
+#, object-pascal-format
+msgid "Memory %p (%d Bytes) does not contain valid image in \"%s\" format."
+msgstr ""
+
+#: imaging.sstreamnotvalid
+#, object-pascal-format
+msgid "Stream %p does not contain valid image in \"%s\" format."
+msgstr ""
+
+#: imaging.sunknownformat
+msgid "Unknown and unsupported format"
+msgstr ""
+

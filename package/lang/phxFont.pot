@@ -1,0 +1,12 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: phxfont.sformaterror
+msgid "Not a valid Phoenix font."
+msgstr ""
+
+#: phxfont.sversionerror
+#, object-pascal-format
+msgid "Font version missmatch: File: %d,  Code: %d."
+msgstr ""
+

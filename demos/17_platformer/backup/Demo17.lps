@@ -17,9 +17,8 @@
       <Unit1>
         <Filename Value="main.pas"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="84"/>
-        <CursorPos X="45" Y="94"/>
+        <TopLine Value="69"/>
+        <CursorPos X="58" Y="76"/>
         <UsageCount Value="23"/>
         <Loaded Value="True"/>
       </Unit1>
@@ -33,10 +32,11 @@
       </Unit2>
       <Unit3>
         <Filename Value="../../source/phxDevice.pas"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="198"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="196"/>
         <CursorPos X="11" Y="219"/>
         <UsageCount Value="11"/>
+        <Loaded Value="True"/>
       </Unit3>
       <Unit4>
         <Filename Value="../../source/providers/phxOpenGL_SDL2.pas"/>
@@ -56,10 +56,11 @@
       <Unit6>
         <Filename Value="../../source/headers/sdl2.pas"/>
         <UnitName Value="SDL2"/>
-        <EditorIndex Value="-1"/>
+        <EditorIndex Value="3"/>
         <TopLine Value="625"/>
         <CursorPos X="16" Y="638"/>
         <UsageCount Value="11"/>
+        <Loaded Value="True"/>
       </Unit6>
       <Unit7>
         <Filename Value="../../source/phxInput.pas"/>
@@ -70,28 +71,57 @@
       </Unit7>
       <Unit8>
         <Filename Value="../../source/phxEvents.pas"/>
-        <EditorIndex Value="-1"/>
+        <EditorIndex Value="2"/>
         <TopLine Value="59"/>
         <CursorPos X="25" Y="74"/>
         <UsageCount Value="10"/>
+        <Loaded Value="True"/>
       </Unit8>
       <Unit9>
         <Filename Value="../../source/phxGraphics_Vampyre.pas"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="37"/>
-        <CursorPos X="58" Y="12"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
         <UsageCount Value="10"/>
+        <Loaded Value="True"/>
       </Unit9>
     </Units>
-    <JumpHistory Count="2" HistoryIndex="1">
+    <JumpHistory Count="9" HistoryIndex="8">
       <Position1>
-        <Filename Value="main.pas"/>
-        <Caret Line="81" Column="2" TopLine="69"/>
+        <Filename Value="../../source/headers/sdl2.pas"/>
+        <Caret Line="416" Column="32" TopLine="396"/>
       </Position1>
       <Position2>
+        <Filename Value="../../source/headers/sdl2.pas"/>
+        <Caret Line="508" Column="26" TopLine="487"/>
+      </Position2>
+      <Position3>
+        <Filename Value="../../source/headers/sdl2.pas"/>
+        <Caret Line="527" Column="28" TopLine="501"/>
+      </Position3>
+      <Position4>
+        <Filename Value="../../source/headers/sdl2.pas"/>
+        <Caret Line="505" Column="114" TopLine="489"/>
+      </Position4>
+      <Position5>
+        <Filename Value="../../source/headers/sdl2.pas"/>
+        <Caret Line="508" Column="10" TopLine="495"/>
+      </Position5>
+      <Position6>
+        <Filename Value="../../source/headers/sdl2.pas"/>
+        <Caret Line="35" TopLine="22"/>
+      </Position6>
+      <Position7>
+        <Filename Value="../../source/headers/sdl2.pas"/>
+        <Caret Line="360" Column="3" TopLine="347"/>
+      </Position7>
+      <Position8>
+        <Filename Value="main.pas"/>
+        <Caret Line="81" Column="2" TopLine="69"/>
+      </Position8>
+      <Position9>
         <Filename Value="main.pas"/>
         <Caret Line="76" Column="58" TopLine="69"/>
-      </Position2>
+      </Position9>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
