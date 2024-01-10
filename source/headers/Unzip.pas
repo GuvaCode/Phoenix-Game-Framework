@@ -14,7 +14,7 @@ uses
   SysUtils, Classes
   {$IFDEF Win32}, Windows{$ENDIF}
   {$IFDEF Win64}, Windows{$ENDIF}
-  {$IFDEF Linux}, X, XLib, XUtil, Ctypes{$ENDIF}
+  {$IFDEF Linux}, X, XLib, XUtil, Ctypes, dynlibs{$ENDIF}
   ;
 
 { windll.h }
@@ -304,13 +304,6 @@ procedure CallbackMessage(UnCompSize : Cardinal;
 begin
 end;
 
-
-
-
-
-
-
-
 //------------------------------------------------------------------------------
 function LoadLibrary(Name: PChar): Pointer;
 begin
@@ -320,9 +313,9 @@ begin
   {$IFDEF Win64}
   Result := Pointer(Windows.LoadLibrary(Name));
   {$ENDIF}
-
   {$IFDEF LINUX}
-  Result := dlopen(Name, RTLD_LAZY);
+  Result := LoadLibrary(Name);
+  //Result := dlopen(Name, RTLD_LAZY);
   {$ENDIF}
 end;
 
@@ -338,7 +331,8 @@ begin
     {$ENDIF}
 
     {$IFDEF LINUX}
-    Result := dlclose(LibHandle) = 0;
+    Result := FreeLibrary(LibHandle);
+    //Result := dlclose(LibHandle) = 0;
     {$ENDIF}
   end;
 end;
@@ -450,12 +444,12 @@ initialization
 
   with DefaultUserFunctions do
   begin
-    print := CallbackPrint;
+    print := @CallbackPrint;
     sound := nil;
     replace := CallbackReplace;
     password := CallbackPassword;
-    SendApplicationMessage := CallbackMessage;
-    ServCallBk := CallbackService;
+    SendApplicationMessage := @CallbackMessage;
+    ServCallBk := @CallbackService;
   end;
 
 finalization
