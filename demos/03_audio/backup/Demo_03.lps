@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CONFIG>
   <ProjectSession>
-    <Version Value="11"/>
+    <Version Value="12"/>
     <BuildModes Active="Default"/>
-    <Units Count="26">
+    <Units Count="30">
       <Unit0>
         <Filename Value="Demo_03.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -14,10 +14,12 @@
       <Unit1>
         <Filename Value="main.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="34"/>
-        <CursorPos X="22" Y="46"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="100"/>
+        <CursorPos X="17" Y="117"/>
         <UsageCount Value="22"/>
+        <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit1>
       <Unit2>
@@ -79,8 +81,8 @@
       <Unit10>
         <Filename Value="../../source/phxFont.pas"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="433"/>
-        <CursorPos X="15" Y="437"/>
+        <TopLine Value="421"/>
+        <CursorPos X="49" Y="421"/>
         <UsageCount Value="10"/>
       </Unit10>
       <Unit11>
@@ -136,10 +138,10 @@
       </Unit17>
       <Unit18>
         <Filename Value="../11_console/main.pas"/>
-        <TopLine Value="38"/>
+        <TopLine Value="82"/>
+        <CursorPos X="24" Y="119"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit18>
       <Unit19>
         <Filename Value="../12_model/main.pas"/>
@@ -174,13 +176,10 @@
       </Unit22>
       <Unit23>
         <Filename Value="../17_platformer/main.pas"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="68"/>
         <CursorPos X="28" Y="81"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit23>
       <Unit24>
         <Filename Value="../18_physics/main.pas"/>
@@ -198,11 +197,50 @@
         <UsageCount Value="10"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit25>
+      <Unit26>
+        <Filename Value="../../package/pgf_descriprors.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="205"/>
+        <CursorPos X="4" Y="217"/>
+        <UsageCount Value="10"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="/usr/share/lazarus/2.0.8/components/ideintf/projpackintf.pas"/>
+        <UnitName Value="ProjPackIntf"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="53"/>
+        <CursorPos X="14" Y="64"/>
+        <UsageCount Value="10"/>
+      </Unit27>
+      <Unit28>
+        <Filename Value="/usr/share/lazarus/2.0.8/components/ideintf/compoptsintf.pas"/>
+        <UnitName Value="CompOptsIntf"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="197"/>
+        <CursorPos X="33" Y="212"/>
+        <UsageCount Value="10"/>
+      </Unit28>
+      <Unit29>
+        <Filename Value="../04_fonts/main.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="79"/>
+        <CursorPos X="17" Y="86"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit29>
     </Units>
-    <JumpHistory HistoryIndex="-1"/>
+    <JumpHistory Count="2" HistoryIndex="1">
+      <Position1>
+        <Filename Value="../11_console/main.pas"/>
+      </Position1>
+      <Position2>
+        <Filename Value="../11_console/main.pas"/>
+        <Caret Line="39" Column="81" TopLine="18"/>
+      </Position2>
+    </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
-      <Modes Count="0" ActiveMode=""/>
+      <Modes ActiveMode=""/>
     </RunParams>
   </ProjectSession>
 </CONFIG>

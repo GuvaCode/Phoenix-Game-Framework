@@ -18,6 +18,9 @@ uses SysUtils,
 type
 
 //------------------------------------------------------------------------------
+
+{ TGame }
+
 TGame = class(TPHXApplication)
   private
     Device : TPHXDevice;
@@ -32,6 +35,8 @@ TGame = class(TPHXApplication)
     ServerAddress: String;
 
     procedure ConsoleConnect(Console: TPHXConsole; Parameters: TPHXConsoleParameters);
+  protected
+    procedure KeyPressed(Key: TPHXVirtualKey; Shift: TPHXShiftStates); override;
   public
     constructor Create; override;
 
@@ -97,7 +102,7 @@ begin
   Timer.Update;
 
   Device.Update;
-
+  Input.Update;
   Console.Update(Timer.FrameTime);
 end;
 
@@ -146,6 +151,17 @@ begin
   begin
     Console.Add('Please specify host name');
   end;
+end;
+
+procedure TGame.KeyPressed(Key: TPHXVirtualKey; Shift: TPHXShiftStates);
+begin
+  inherited KeyPressed(Key, Shift);
+  // Terminate the application with esc
+  if Key = VK_ESC then
+  begin
+    Terminate;
+  end;
+
 end;
 
 

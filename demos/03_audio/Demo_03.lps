@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CONFIG>
   <ProjectSession>
-    <Version Value="11"/>
+    <Version Value="12"/>
     <BuildModes Active="Default"/>
-    <Units Count="29">
+    <Units Count="30">
       <Unit0>
         <Filename Value="Demo_03.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -15,8 +15,8 @@
         <Filename Value="main.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="34"/>
-        <CursorPos X="22" Y="46"/>
+        <TopLine Value="7"/>
+        <CursorPos X="3" Y="19"/>
         <UsageCount Value="22"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit1>
@@ -38,8 +38,7 @@
       <Unit4>
         <Filename Value="../../source/providers/audio/phxAudio_Bass.pas"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="457"/>
-        <CursorPos Y="457"/>
+        <TopLine Value="244"/>
         <UsageCount Value="11"/>
       </Unit4>
       <Unit5>
@@ -72,15 +71,14 @@
       <Unit9>
         <Filename Value="../../source/providers/audio/phxAudio.pas"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="125"/>
-        <CursorPos X="13" Y="136"/>
+        <TopLine Value="457"/>
         <UsageCount Value="10"/>
       </Unit9>
       <Unit10>
         <Filename Value="../../source/phxFont.pas"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="433"/>
-        <CursorPos X="15" Y="437"/>
+        <TopLine Value="421"/>
+        <CursorPos X="49" Y="421"/>
         <UsageCount Value="10"/>
       </Unit10>
       <Unit11>
@@ -136,10 +134,11 @@
       </Unit17>
       <Unit18>
         <Filename Value="../11_console/main.pas"/>
-        <TopLine Value="38"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="133"/>
+        <CursorPos X="24" Y="119"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit18>
       <Unit19>
         <Filename Value="../12_model/main.pas"/>
@@ -174,12 +173,10 @@
       </Unit22>
       <Unit23>
         <Filename Value="../17_platformer/main.pas"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="68"/>
         <CursorPos X="28" Y="81"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit23>
       <Unit24>
         <Filename Value="../18_physics/main.pas"/>
@@ -207,32 +204,40 @@
       <Unit27>
         <Filename Value="/usr/share/lazarus/2.0.8/components/ideintf/projpackintf.pas"/>
         <UnitName Value="ProjPackIntf"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="53"/>
         <CursorPos X="14" Y="64"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
       </Unit27>
       <Unit28>
         <Filename Value="/usr/share/lazarus/2.0.8/components/ideintf/compoptsintf.pas"/>
         <UnitName Value="CompOptsIntf"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="197"/>
         <CursorPos X="33" Y="212"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
       </Unit28>
+      <Unit29>
+        <Filename Value="../04_fonts/main.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="79"/>
+        <CursorPos X="17" Y="86"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit29>
     </Units>
-    <JumpHistory Count="1">
+    <JumpHistory Count="2" HistoryIndex="1">
       <Position1>
-        <Filename Value="/usr/share/lazarus/2.0.8/components/ideintf/projpackintf.pas"/>
-        <Caret Line="64" Column="14" TopLine="53"/>
+        <Filename Value="../11_console/main.pas"/>
       </Position1>
+      <Position2>
+        <Filename Value="../11_console/main.pas"/>
+        <Caret Line="39" Column="81" TopLine="18"/>
+      </Position2>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
-      <Modes Count="0" ActiveMode=""/>
+      <Modes ActiveMode=""/>
     </RunParams>
   </ProjectSession>
 </CONFIG>

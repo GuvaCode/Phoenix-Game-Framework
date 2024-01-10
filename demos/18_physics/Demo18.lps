@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CONFIG>
   <ProjectSession>
-    <Version Value="11"/>
+    <Version Value="12"/>
     <BuildModes Active="Default"/>
     <Units Count="14">
       <Unit0>
@@ -17,10 +17,11 @@
       <Unit1>
         <Filename Value="main.pas"/>
         <IsPartOfProject Value="True"/>
-        <CursorPos X="100" Y="12"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="169"/>
+        <CursorPos X="15" Y="65"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit1>
       <Unit2>
         <Filename Value="../../../../Рабочий стол/Demos/18_Physics/Main.pas"/>
@@ -101,12 +102,10 @@
       </Unit12>
       <Unit13>
         <Filename Value="../../source/providers/phxOpenGL.pas"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="466"/>
         <CursorPos X="20" Y="1236"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
       </Unit13>
     </Units>
     <JumpHistory Count="4" HistoryIndex="3">
@@ -129,7 +128,7 @@
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
-      <Modes Count="0" ActiveMode=""/>
+      <Modes ActiveMode=""/>
     </RunParams>
   </ProjectSession>
 </CONFIG>

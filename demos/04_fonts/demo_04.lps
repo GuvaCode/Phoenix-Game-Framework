@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CONFIG>
   <ProjectSession>
-    <Version Value="11"/>
+    <Version Value="12"/>
     <BuildModes Active="Default"/>
-    <Units Count="5">
+    <Units Count="6">
       <Unit0>
         <Filename Value="demo_04.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -17,12 +17,12 @@
       <Unit1>
         <Filename Value="main.pas"/>
         <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="43"/>
-        <CursorPos X="60" Y="55"/>
+        <TopLine Value="34"/>
+        <CursorPos X="22" Y="47"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit1>
       <Unit2>
         <Filename Value="../../../../Рабочий стол/Demos/03_Fonts/Main.pas"/>
@@ -41,15 +41,22 @@
       </Unit3>
       <Unit4>
         <Filename Value="../../source/providers/graphics/phxOpenGL_GLFW3.pas"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
         <TopLine Value="330"/>
         <CursorPos X="98" Y="342"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit4>
+      <Unit5>
+        <Filename Value="../05_input/main.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="34"/>
+        <CursorPos X="22" Y="40"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit5>
     </Units>
-    <JumpHistory Count="5" HistoryIndex="4">
+    <JumpHistory Count="6" HistoryIndex="5">
       <Position1>
         <Filename Value="main.pas"/>
         <Caret Line="76" Column="36" TopLine="67"/>
@@ -70,10 +77,14 @@
         <Filename Value="main.pas"/>
         <Caret Line="55" Column="60" TopLine="43"/>
       </Position5>
+      <Position6>
+        <Filename Value="../../source/providers/graphics/phxOpenGL_GLFW3.pas"/>
+        <Caret Line="342" Column="98" TopLine="330"/>
+      </Position6>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
-      <Modes Count="0" ActiveMode=""/>
+      <Modes ActiveMode=""/>
     </RunParams>
   </ProjectSession>
 </CONFIG>

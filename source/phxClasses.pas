@@ -25,7 +25,7 @@ interface
 
 uses
   Classes, SysUtils,
-
+  Unzip,
   phxLogger,
   phxTypes,
   phxMath;

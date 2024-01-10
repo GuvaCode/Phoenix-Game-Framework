@@ -9,3 +9,30 @@ demos/00_addons/lib
 demos/_bin/*
 demos/00_addons/_bin/*
 
+temp/*.o
+temp/*.ppu
+temp/*.a
+temp/*.compiled
+temp/
+
+binary/*
+!binary/resources/
+
+!libs/x86_64-linux/
+!libs/x86_64-windows/
+!libs/x86_32-windows/
+!libs/x86_32-linux/
+
+# macos
+.DS_Store
+#*.dylib
+
+# laz
+backup/
+#examples/
+lib/
+templates/standard_game/
+*.lps
+
+# GNU+Linux
+# *.so
