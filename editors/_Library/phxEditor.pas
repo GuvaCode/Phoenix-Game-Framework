@@ -1,15 +1,15 @@
 unit phxEditor;
-
+{$mode Delphi}
 interface
 
 uses
-  SysUtils, Classes, Controls,  Windows, Graphics, Types, Messages, Math,
+  SysUtils, Classes, Controls,  LCLType, LCLIntf, Graphics, Types, Messages, LMessages, Math,
 
   ComCtrls,  StdCtrls,  ExtCtrls,  Forms, ClipBrd,
 
   Generics.Collections,
 
-  XMLIntf,
+  {XMLIntf,}
 
   phxTypes,
   phxGraphics,
@@ -62,8 +62,8 @@ TPHXEditorGrid = class(TPersistent)
 
     procedure Draw(Canvas: TCanvas   ; const Rect: TRect); overload;
 
-    procedure SaveToXML(Node: IXMLNode);
-    procedure LoadFromXml(Node: IXMLNode);
+  //  procedure SaveToXML(Node: IXMLNode);
+  //  procedure LoadFromXml(Node: IXMLNode);
 
     procedure Snap(var Position: TVector2i); overload;
     procedure Snap(var Position: TVector2f); overload;
@@ -224,12 +224,12 @@ TPHXEditor = class(TCustomControl)
     // Notify the editor that the document is changef
     procedure DocumentChanged;
 
-    procedure WMMouseWheel(var Message: TWMMouseWheel); message WM_MOUSEWHEEL;
+    procedure WMMouseWheel(var Message: {TWMMouseWheel} TCMMouseWheel); message LM_MOUSEWHEEL;
 
     Procedure WMGetDlgCode(var Message: TWMGetDlgCode ); message WM_GETDLGCODE;
-    procedure WMDropFiles(var Message: TWMDropFiles); message WM_DROPFILES;
+    /// todo procedure WMDropFiles(var Message: TWMDropFiles); message WM_DROPFILES;
 
-    procedure WMRButtonDown(var Message: TWMRButtonDown); message WM_RBUTTONDOWN;
+    procedure WMRButtonDown(var Message: TLMRButtonDown); message LM_RBUTTONDOWN;
     procedure WMMouseMove  (var Message: TWMMouseMove  ); message WM_MOUSEMOVE;
     procedure CMMouseLeave  (var Message: TMessage); message CM_MOUSELEAVE;
 
@@ -417,14 +417,14 @@ TPHXEditorTools = class(TPersistent)
     property OnHint: TPHXEditorHintEvent read FOnHint write FOnHint;
   end;
 
-procedure CopyStreamToClipboard(fmt: Cardinal; S: TStream);
-procedure CopyStreamFromClipboard(fmt: Cardinal; S: TStream);
+//procedure CopyStreamToClipboard(fmt: Cardinal; S: TStream);
+//procedure CopyStreamFromClipboard(fmt: Cardinal; S: TStream);
 
 procedure Register;
 
 implementation
-
-uses ShellAPI;
+uses cmem;
+//uses ShellAPI;
 
 //------------------------------------------------------------------------------
 procedure Register;
@@ -437,6 +437,7 @@ begin
 end;
 
 //------------------------------------------------------------------------------
+{
 procedure CopyStreamToClipboard(fmt: Cardinal; S: TStream);
 var
   hMem: THandle;
@@ -444,6 +445,7 @@ var
 begin
   Assert(Assigned(S));
   S.Position := 0;
+  hMem       := GlobalAlloc(GHND or GMEM_DDESHARE, S.Size);
   hMem       := GlobalAlloc(GHND or GMEM_DDESHARE, S.Size);
   if hMem <> 0 then
   begin
@@ -462,18 +464,19 @@ begin
       finally
         Clipboard.Close;
       end;
-    end { If }
+    end
     else
     begin
       GlobalFree(hMem);
       OutOfMemoryError;
     end;
-  end { If }
+  end
   else
     OutOfMemoryError;
-end; { CopyStreamToClipboard }
+end;} { CopyStreamToClipboard }
 
 //------------------------------------------------------------------------------
+{
 procedure CopyStreamFromClipboard(fmt: Cardinal; S: TStream);
 var
   hMem: THandle;
@@ -492,12 +495,12 @@ begin
       finally
         GlobalUnlock(hMem);
       end;
-    end { If }
+    end
     else
       raise Exception.Create('CopyStreamFromClipboard: could not lock global handle ' +
         'obtained from clipboard!');
-  end; { If }
-end; { CopyStreamFromClipboard }
+  end;
+end; }{ CopyStreamFromClipboard }
 
 
 
@@ -542,7 +545,7 @@ begin
 end;
 
 //------------------------------------------------------------------------------
-procedure TPHXEditorGrid.SaveToXML(Node: IXMLNode);
+{procedure TPHXEditorGrid.SaveToXML(Node: IXMLNode);
 begin
   Node.Attributes['Visible']:= Visible;
   Node.Attributes['Enabled']:= Enabled;
@@ -550,11 +553,11 @@ begin
   Node.Attributes['Height' ]:= Height;
   Node.Attributes['Color'  ]:= Graphics.ColorToString(Color);
   Node.Attributes['Style'  ]:= GridStyleToString(Style);
-end;
+end;}
 
 
 //------------------------------------------------------------------------------
-procedure TPHXEditorGrid.LoadFromXml(Node: IXMLNode);
+{procedure TPHXEditorGrid.LoadFromXml(Node: IXMLNode);
 begin
   FVisible:=                            Node.Attributes['Visible'];
   FEnabled:=                            Node.Attributes['Enabled'];
@@ -564,7 +567,7 @@ begin
   FStyle  :=          StringToGridStyle(Node.Attributes['Style'  ]);
 
   Changed;
-end;
+end;}
 
 //------------------------------------------------------------------------------
 procedure TPHXEditorGrid.DrawLine(Canvas: TCanvas; const Rect: TRect);
@@ -1176,10 +1179,10 @@ begin
 end;
 
 //------------------------------------------------------------------------------
-procedure TPHXEditor.WMMouseWheel(var Message: TWMMouseWheel);
+procedure TPHXEditor.WMMouseWheel(var Message: TCMMouseWheel);
 var Delta: Integer;
 begin
-  Delta:= (Message.WheelDelta div WHEEL_DELTA);
+  Delta:= (Message.WheelDelta {div WHEEL_DELTA});
 
   if Delta > 0 then
   begin
@@ -1227,10 +1230,10 @@ begin
 
   if Size.Y > 0 then
   begin
-    EnableScrollBar(Handle, SB_VERT, ESB_ENABLE_BOTH);
+    EnableScrollBar(Handle, SB_VERT, SB_BOTH);
   end else
   begin
-    EnableScrollBar(Handle, SB_VERT, ESB_DISABLE_BOTH);
+    EnableScrollBar(Handle, SB_VERT, SB_BOTH);
   end;
 
   ScrollInfo.fMask    := SIF_ALL;
@@ -1244,10 +1247,10 @@ begin
 
   if Size.X > 0 then
   begin
-    EnableScrollBar(Handle, SB_HORZ, ESB_ENABLE_BOTH);
+    EnableScrollBar(Handle, SB_HORZ, SB_BOTH);
   end else
   begin
-    EnableScrollBar(Handle, SB_HORZ, ESB_DISABLE_BOTH);
+    EnableScrollBar(Handle, SB_HORZ, SB_BOTH);
   end;
 end;
 
@@ -1580,7 +1583,7 @@ begin
 
   if (ComponentState = []) and (doAcceptFiles in Options) then
   begin
-    DragAcceptFiles(Handle, true) ;
+   // TODO DragAcceptFiles(Handle, true) ;
   end;
 end;
 
@@ -1593,7 +1596,7 @@ begin
 end;
 
 //------------------------------------------------------------------------------
-procedure TPHXEditor.WMDropFiles(var Message: TWMDropFiles);
+{procedure TPHXEditor.WMDropFiles(var Message: TWMDropFiles);
 var Count : longInt;
 var Index : Integer;
 var Buffer: array[0..MAX_PATH] of Char;
@@ -1610,10 +1613,11 @@ begin
      if Assigned(FOnFileDropped) then FOnFileDropped(Self, FileName);
    end;
    //  TFileEvent
-end;
+end; }
 
 //------------------------------------------------------------------------------
-procedure TPHXEditor.WMRButtonDown(var Message: TWMRButtonDown);
+//procedure WMRButtonDown(var Message: TLMRButtonDown); message LM_RBUTTONDOWN;
+procedure TPHXEditor.WMRButtonDown(var Message: TLMRButtonDown);
 begin
   inherited;
 
@@ -1721,7 +1725,7 @@ begin
   begin
     FBorderStyle := Value;
     //UpdateHeight;
-    RecreateWnd;
+    RecreateWnd(sELF);
   end;
 end;
 

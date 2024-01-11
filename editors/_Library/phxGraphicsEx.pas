@@ -1,8 +1,8 @@
 unit phxGraphicsEx;
-
+ {$mode Delphi}
 interface
 
-uses Windows, Graphics, Types, Classes, SysUtils, Controls, ImgList,
+uses Graphics, Types, LCLType, LCLIntf, Classes, SysUtils, Controls, ImgList,
 
   phxGraphics,
   phxTexture,

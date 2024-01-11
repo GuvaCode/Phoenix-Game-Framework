@@ -1,0 +1,33 @@
+{ This is an automatically generated lazarus resource file }
+
+LazarusResources.Add('TFrmTextureDialog','FORMDATA',[
+  'TPF0'#17'TFrmTextureDialog'#16'FrmTextureDialog'#4'Left'#3#18#1#6'Height'#3
+  +'K'#1#3'Top'#3#201#0#5'Width'#3'H'#2#7'Caption'#6#14'Select texture'#12'Clie'
+  +'ntHeight'#3'K'#1#11'ClientWidth'#3'H'#2#5'Color'#7#9'clBtnFace'#10'Font.Col'
+  +'or'#7#12'clWindowText'#11'Font.Height'#2#245#9'Font.Name'#6#6'Tahoma'#8'OnR'
+  +'esize'#7#10'FormResize'#8'Position'#7#17'poOwnerFormCenter'#10'LCLVersion'#6
+  +#7'3.0.0.3'#0#9'TPaintBox'#9'PaintBox1'#4'Left'#2#0#6'Height'#3'('#1#3'Top'#2
+  +#0#5'Width'#3';'#2#5'Align'#7#8'alClient'#10'OnDblClick'#7#17'PaintBox1DblCl'
+  +'ick'#9'OnMouseUp'#7#16'PaintBox1MouseUp'#7'OnPaint'#7#14'PaintBox1Paint'#0#0
+  +#10'TScrollBar'#10'ScrollBar1'#4'Left'#3';'#2#6'Height'#3'('#1#3'Top'#2#0#5
+  +'Width'#2#13#5'Align'#7#7'alRight'#4'Kind'#7#10'sbVertical'#8'PageSize'#2#0#8
+  +'TabOrder'#2#0#8'OnChange'#7#16'ScrollBar1Change'#0#0#6'TPanel'#6'Panel1'#4
+  +'Left'#2#0#6'Height'#2'#'#3'Top'#3'('#1#5'Width'#3'H'#2#5'Align'#7#8'alBotto'
+  +'m'#10'BevelOuter'#7#6'bvNone'#12'ClientHeight'#2'#'#11'ClientWidth'#3'H'#2
+  +#16'ParentBackground'#8#8'TabOrder'#2#1#0#6'TLabel'#6'Label1'#6'Cursor'#7#11
+  +'crHandPoint'#4'Left'#2#8#6'Height'#2#14#3'Top'#2#12#5'Width'#2'U'#7'Caption'
+  +#6#17'Load &textures...'#10'Font.Color'#7#6'clBlue'#11'Font.Height'#2#245#9
+  +'Font.Name'#6#6'Tahoma'#10'Font.Style'#11#11'fsUnderline'#0#10'ParentFont'#8
+  +#7'OnClick'#7#11'Label1Click'#0#0#7'TButton'#7'btnOkey'#4'Left'#3#164#1#6'He'
+  +'ight'#2#25#3'Top'#2#6#5'Width'#2'K'#7'Anchors'#11#5'akTop'#7'akRight'#0#7'C'
+  +'aption'#6#4'Okey'#7'Default'#9#11'ModalResult'#2#1#8'TabOrder'#2#0#0#0#7'TB'
+  +'utton'#9'btnCancel'#4'Left'#3#245#1#6'Height'#2#25#3'Top'#2#6#5'Width'#2'K'
+  +#7'Anchors'#11#5'akTop'#7'akRight'#0#6'Cancel'#9#7'Caption'#6#6'Cancel'#11'M'
+  +'odalResult'#2#2#8'TabOrder'#2#1#0#0#9'TCheckBox'#13'cbTransparent'#4'Left'#3
+  +#1#1#6'Height'#2#23#3'Top'#2#10#5'Width'#3#160#0#7'Anchors'#11#5'akTop'#7'ak'
+  +'Right'#0#7'Caption'#6#22'Transparent background'#7'Checked'#9#5'State'#7#9
+  +'cbChecked'#8'TabOrder'#2#2#7'OnClick'#7#18'cbTransparentClick'#0#0#0#11'TOp'
+  +'enDialog'#15'OpenImageDialog'#7'Options'#11#14'ofHideReadOnly'#18'ofAllowMu'
+  +'ltiSelect'#15'ofFileMustExist'#14'ofEnableSizing'#0#4'Left'#3#12#1#3'Top'#3
+  +#172#0#0#0#0
+]);

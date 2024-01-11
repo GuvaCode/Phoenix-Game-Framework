@@ -1,10 +1,10 @@
 unit phxImageDialog;
-
+{$mode Delphi}
 interface
 
 uses
-  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs,StdCtrls, ComCtrls, ExtCtrls,
+  Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs,StdCtrls, ComCtrls, ExtCtrls,  LCLType, LCLIntf,
 
   Generics.Collections,
 
@@ -21,8 +21,8 @@ TLoadImageEvent = procedure(const FileName: String; out Image: TPHXImage) of obj
 //------------------------------------------------------------------------------
 TPHXImageDialog = class(TComponent)
   private
-    FImages  : TList<TPHXImage>;
-
+      //: TList<>;
+    FImages   : TList<TPHXImage>;
     FImage  : TPHXImage;
     FPattern: TPHXPatternIndex;
 

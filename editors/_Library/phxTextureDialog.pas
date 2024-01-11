@@ -1,10 +1,10 @@
 unit phxTextureDialog;
-
+{$mode Delphi}
 interface
 
 uses
-  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs,  ExtCtrls, StdCtrls,
+  Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs,  ExtCtrls, StdCtrls,  LCLType, LCLIntf,
 
   Generics.Collections,
 
@@ -135,6 +135,13 @@ begin
   begin
     Filter:=Filter + Format('%s|*.%s|', [List.Items[Index].Extension, List.Items[Index].Extension]);
   end;
+
+
+  //FDevice  : TPHXDevice;
+  //FTexture : TPHXTexture;
+  //FTextures := TPHXTextureList.Create(FDevice);
+ // FTextures: TPHXTextureList;
+
 
   OpenImageDialog.Filter:= Filter;
 
@@ -287,7 +294,7 @@ begin
     Brush.Style:= bsClear;
 
     Font.Style:= [fsBold];
-
+    if FTextures = nil then Exit;
     for Index := 0 to Textures.Count - 1 do
     begin
       Texture:=FTextures[Index];

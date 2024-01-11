@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Package Version="5">
+    <Name Value="phxEditorLibrary"/>
+    <Type Value="RunAndDesignTime"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <SearchPaths>
+        <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+      </SearchPaths>
+    </CompilerOptions>
+    <Files>
+      <Item>
+        <Filename Value="phxColorEditor.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="phxColorEditor"/>
+      </Item>
+      <Item>
+        <Filename Value="phxFontEx.pas"/>
+        <UnitName Value="phxFontEx"/>
+      </Item>
+      <Item>
+        <Filename Value="phxGraphicsEx.pas"/>
+        <UnitName Value="phxGraphicsEx"/>
+      </Item>
+      <Item>
+        <Filename Value="phxTextureDialog.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="phxTextureDialog"/>
+      </Item>
+      <Item>
+        <Filename Value="phxImageDialog.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="phxImageDialog"/>
+      </Item>
+      <Item>
+        <Filename Value="phxEditor.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="phxEditor"/>
+      </Item>
+    </Files>
+    <RequiredPkgs>
+      <Item>
+        <PackageName Value="pgf"/>
+      </Item>
+      <Item>
+        <PackageName Value="LCL"/>
+      </Item>
+      <Item>
+        <PackageName Value="FCL"/>
+      </Item>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+      <UseFileFilters Value="True"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>

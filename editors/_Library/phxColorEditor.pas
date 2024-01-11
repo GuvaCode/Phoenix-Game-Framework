@@ -1,14 +1,11 @@
 unit phxColorEditor;
-
+{$mode Delphi}
 interface
 
 uses
-  Windows, Messages, SysUtils, Variants, Classes, VCL.Graphics, VCL.Controls, VCL.Forms,
-  Vcl.ExtCtrls, Vcl.StdCtrls,
-
-  Generics.Collections,
-
-  phxTypes;
+  Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  ExtCtrls, StdCtrls, ColorBox, LCLIntf, lcltype,
+  Generics.Collections, phxTypes;
 
 
 type
@@ -62,6 +59,8 @@ TPHXColorEditor = class(TGraphicControl)
 
 THLSColorPanel = class;
 
+
+{ TfrmColorDialog }
 
 TfrmColorDialog = class(TForm)
     GroupBox1: TGroupBox;
@@ -300,10 +299,10 @@ var
 begin
  if ThemeServices.ThemesEnabled then
   begin
-    Details := ThemeServices.GetElementDetails(tbCheckBoxCheckedNormal);
+    Details := ThemeServices.GetElementDetails({tbCheckBoxCheckedNormal}tbPushButtonNormal);
     Details := ThemeServices.GetElementDetails(teEditRoot);
 
-    ThemeServices.DrawElement(Canvas.Handle, Details,   ClientRect);
+    ThemeServices.DrawElement(Canvas.Handle,  Details,   ClientRect);
 
     if Enabled then
     begin
@@ -326,7 +325,6 @@ begin
     end;
 
     R := Bounds(Width - Height+1, 1, Height-2, Height-2);
-
     ThemeServices.DrawElement(Canvas.Handle, Details,   R);
   end else
   begin
@@ -576,7 +574,7 @@ var Color: TColor;
 begin
   for Color in SelectedColors do
   begin
-    Items.InsertObject(0, Vcl.Graphics.ColorToString(Color and $00FFFFFF), TObject(Color and $00FFFFFF));
+    Items.InsertObject(0, Graphics.ColorToString(Color and $00FFFFFF), TObject(Color and $00FFFFFF));
   end;
 end;
 
@@ -630,8 +628,8 @@ begin
   cbStandardColors.Selected:= Color;
 
   edScriptColor.Text:= '0x' + IntToHex(Color, 8);
-
-  //  JvFullColorPanel1.FullColor:=  JvFullColorPanel1.ColorSpace.ConvertFromColor( Color );
+ // Panel1.Color:=RGB(R,G,B);
+  //Panel1.Color:=  Panel1.ColorSpace.ConvertFromColor( Color );
 
 //  JvFullColorPanel1.v
 
@@ -659,7 +657,11 @@ begin
   B:= Trunc(Value.Blue  * 255);
   A:= Trunc(Value.Alpha * 255);
 
-  SetColor(R,G,B,A);{
+  SetColor(R,G,B,A);
+
+
+ // /BindInputEvents(True);
+  {
 
   BindInputEvents(False);
 
@@ -857,12 +859,6 @@ begin
 
   Result :=  JoinColorParts(RoundColor(Red), RoundColor(Green), RoundColor(Blue))  and $00FFFFFF;
 end;
-
-
-
-
-
-
 
 
 // THLSColorPanel

@@ -1,43 +1,37 @@
 object FrmIconSelector: TFrmIconSelector
-  Left = 582
-  Top = 378
+  Left = 357
+  Height = 562
+  Top = 219
+  Width = 784
   Caption = 'Select Image'
   ClientHeight = 562
   ClientWidth = 784
   Color = clBtnFace
-  Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
   Font.Name = 'MS Sans Serif'
-  Font.Style = []
-  Padding.Left = 4
-  Padding.Top = 4
-  Padding.Right = 4
-  OldCreateOrder = False
-  Position = poMainFormCenter
   OnCreate = FormCreate
   OnDestroy = FormDestroy
-  PixelsPerInch = 96
-  TextHeight = 13
+  Position = poMainFormCenter
+  LCLVersion = '3.0.0.3'
   object Panel1: TPanel
-    Left = 4
-    Top = 527
-    Width = 776
+    Left = 0
     Height = 35
+    Top = 527
+    Width = 784
     Align = alBottom
     BevelOuter = bvNone
+    ClientHeight = 35
+    ClientWidth = 784
+    ParentBackground = False
     TabOrder = 0
-    DesignSize = (
-      776
-      35)
     object lblLoadImage: TLabel
-      Left = 8
-      Top = 12
-      Width = 66
-      Height = 13
       Cursor = crHandPoint
+      Left = 8
+      Height = 14
+      Top = 12
+      Width = 74
       Caption = 'Load &image...'
-      Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlue
       Font.Height = -11
       Font.Name = 'Tahoma'
@@ -46,10 +40,10 @@ object FrmIconSelector: TFrmIconSelector
       OnClick = lblLoadImageClick
     end
     object btnOkey: TButton
-      Left = 612
+      Left = 620
+      Height = 25
       Top = 6
       Width = 75
-      Height = 25
       Anchors = [akTop, akRight]
       Caption = 'OK'
       Default = True
@@ -57,10 +51,10 @@ object FrmIconSelector: TFrmIconSelector
       TabOrder = 0
     end
     object btnCancel: TButton
-      Left = 693
+      Left = 701
+      Height = 25
       Top = 6
       Width = 75
-      Height = 25
       Anchors = [akTop, akRight]
       Cancel = True
       Caption = 'Cancel'
@@ -68,10 +62,10 @@ object FrmIconSelector: TFrmIconSelector
       TabOrder = 1
     end
     object cbTransparent: TCheckBox
-      Left = 386
+      Left = 370
+      Height = 23
       Top = 10
-      Width = 136
-      Height = 17
+      Width = 160
       Anchors = [akTop, akRight]
       Caption = 'Transparent background'
       Checked = True
@@ -80,10 +74,10 @@ object FrmIconSelector: TFrmIconSelector
       OnClick = cbTransparentClick
     end
     object btnNone: TButton
-      Left = 531
+      Left = 539
+      Height = 25
       Top = 6
       Width = 75
-      Height = 25
       Anchors = [akTop, akRight]
       Caption = 'Select none'
       ModalResult = 1
@@ -92,35 +86,32 @@ object FrmIconSelector: TFrmIconSelector
     end
   end
   object TabControl1: TTabControl
-    Left = 189
-    Top = 4
-    Width = 591
-    Height = 523
-    Align = alClient
-    TabOrder = 1
+    Left = 185
+    Height = 527
+    Top = 0
+    Width = 599
+    OnChange = TabControl1Change
+    TabIndex = 0
     Tabs.Strings = (
       'Patterns'
-      'Image')
-    TabIndex = 0
-    OnChange = TabControl1Change
+      'Image'
+    )
+    Align = alClient
+    TabOrder = 1
     object PaintBox1: TPaintBox
-      Left = 4
-      Top = 24
-      Width = 566
-      Height = 495
+      Left = 2
+      Height = 497
+      Top = 28
+      Width = 582
       Align = alClient
       OnMouseUp = PaintBox1MouseUp
       OnPaint = PaintBox1Paint
-      ExplicitLeft = 6
-      ExplicitTop = 25
-      ExplicitWidth = 390
-      ExplicitHeight = 290
     end
     object ScrollBar1: TScrollBar
-      Left = 570
-      Top = 24
-      Width = 17
-      Height = 495
+      Left = 584
+      Height = 497
+      Top = 28
+      Width = 13
       Align = alRight
       Kind = sbVertical
       PageSize = 0
@@ -128,24 +119,25 @@ object FrmIconSelector: TFrmIconSelector
     end
   end
   object GroupBox1: TGroupBox
-    Left = 4
-    Top = 4
+    Left = 0
+    Height = 527
+    Top = 0
     Width = 185
-    Height = 523
     Align = alLeft
     Caption = 'Images'
-    Padding.Left = 4
-    Padding.Right = 4
-    Padding.Bottom = 4
+    ClientHeight = 512
+    ClientWidth = 183
+    ParentBackground = False
     TabOrder = 2
     object lwImages: TListBox
-      Left = 6
-      Top = 15
-      Width = 173
-      Height = 502
+      Left = 0
+      Height = 512
+      Top = 0
+      Width = 183
       Align = alClient
-      ItemHeight = 13
+      ItemHeight = 0
       TabOrder = 0
+      TopIndex = -1
       OnClick = lwImagesClick
       OnDblClick = lwImagesDblClick
     end

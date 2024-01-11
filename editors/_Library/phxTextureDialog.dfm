@@ -1,39 +1,33 @@
 object FrmTextureDialog: TFrmTextureDialog
-  Left = 0
-  Top = 0
+  Left = 274
+  Height = 331
+  Top = 201
+  Width = 584
   Caption = 'Select texture'
   ClientHeight = 331
   ClientWidth = 584
   Color = clBtnFace
-  Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
   Font.Name = 'Tahoma'
-  Font.Style = []
-  OldCreateOrder = False
-  Position = poOwnerFormCenter
   OnResize = FormResize
-  PixelsPerInch = 96
-  TextHeight = 13
+  Position = poOwnerFormCenter
+  LCLVersion = '3.0.0.3'
   object PaintBox1: TPaintBox
     Left = 0
-    Top = 0
-    Width = 567
     Height = 296
+    Top = 0
+    Width = 571
     Align = alClient
     OnDblClick = PaintBox1DblClick
     OnMouseUp = PaintBox1MouseUp
     OnPaint = PaintBox1Paint
-    ExplicitLeft = 194
-    ExplicitTop = 90
-    ExplicitWidth = 345
-    ExplicitHeight = 233
   end
   object ScrollBar1: TScrollBar
-    Left = 567
-    Top = 0
-    Width = 17
+    Left = 571
     Height = 296
+    Top = 0
+    Width = 13
     Align = alRight
     Kind = sbVertical
     PageSize = 0
@@ -42,23 +36,22 @@ object FrmTextureDialog: TFrmTextureDialog
   end
   object Panel1: TPanel
     Left = 0
+    Height = 35
     Top = 296
     Width = 584
-    Height = 35
     Align = alBottom
     BevelOuter = bvNone
+    ClientHeight = 35
+    ClientWidth = 584
+    ParentBackground = False
     TabOrder = 1
-    DesignSize = (
-      584
-      35)
     object Label1: TLabel
-      Left = 8
-      Top = 12
-      Width = 79
-      Height = 13
       Cursor = crHandPoint
+      Left = 8
+      Height = 14
+      Top = 12
+      Width = 85
       Caption = 'Load &textures...'
-      Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlue
       Font.Height = -11
       Font.Name = 'Tahoma'
@@ -68,9 +61,9 @@ object FrmTextureDialog: TFrmTextureDialog
     end
     object btnOkey: TButton
       Left = 420
+      Height = 25
       Top = 6
       Width = 75
-      Height = 25
       Anchors = [akTop, akRight]
       Caption = 'Okey'
       Default = True
@@ -79,9 +72,9 @@ object FrmTextureDialog: TFrmTextureDialog
     end
     object btnCancel: TButton
       Left = 501
+      Height = 25
       Top = 6
       Width = 75
-      Height = 25
       Anchors = [akTop, akRight]
       Cancel = True
       Caption = 'Cancel'
@@ -89,10 +82,10 @@ object FrmTextureDialog: TFrmTextureDialog
       TabOrder = 1
     end
     object cbTransparent: TCheckBox
-      Left = 281
+      Left = 257
+      Height = 23
       Top = 10
-      Width = 136
-      Height = 17
+      Width = 160
       Anchors = [akTop, akRight]
       Caption = 'Transparent background'
       Checked = True
