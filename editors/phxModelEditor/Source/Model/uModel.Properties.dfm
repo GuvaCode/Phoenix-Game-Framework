@@ -125,7 +125,7 @@ object FrmModelProperties: TFrmModelProperties
       Height = 13
       Caption = '&Z:'
     end
-    object edMinX: TJvSpinEdit
+    object edMinX: TSpinEdit
       Left = 39
       Top = 18
       Width = 95
@@ -134,7 +134,7 @@ object FrmModelProperties: TFrmModelProperties
       ValueType = vtFloat
       TabOrder = 0
     end
-    object edMaxX: TJvSpinEdit
+    object edMaxX: TSpinEdit
       Left = 140
       Top = 18
       Width = 95
@@ -144,7 +144,7 @@ object FrmModelProperties: TFrmModelProperties
       Anchors = [akLeft, akTop, akRight]
       TabOrder = 1
     end
-    object edMinY: TJvSpinEdit
+    object edMinY: TSpinEdit
       Left = 39
       Top = 45
       Width = 95
@@ -153,7 +153,7 @@ object FrmModelProperties: TFrmModelProperties
       ValueType = vtFloat
       TabOrder = 2
     end
-    object edMaxY: TJvSpinEdit
+    object edMaxY: TSpinEdit
       Left = 140
       Top = 45
       Width = 95
@@ -163,7 +163,7 @@ object FrmModelProperties: TFrmModelProperties
       Anchors = [akLeft, akTop, akRight]
       TabOrder = 3
     end
-    object edMinZ: TJvSpinEdit
+    object edMinZ: TSpinEdit
       Left = 39
       Top = 72
       Width = 95
@@ -172,7 +172,7 @@ object FrmModelProperties: TFrmModelProperties
       ValueType = vtFloat
       TabOrder = 4
     end
-    object edMaxZ: TJvSpinEdit
+    object edMaxZ: TSpinEdit
       Left = 140
       Top = 72
       Width = 95

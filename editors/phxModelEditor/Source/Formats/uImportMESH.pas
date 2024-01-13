@@ -3,8 +3,8 @@ unit uImportMESH;
 interface
 
 uses
-  Windows, Messages, SysUtils, Classes,
-
+  Messages, SysUtils, Classes,
+  LCLIntf, lcltype,
   StrUtils,
 
   uImport,
@@ -244,7 +244,7 @@ procedure TImporterMesh.LoadPoint(Mesh: TPHXMesh; Lines: TStrings; var Index: In
 var Line : String;
 var Tag : TPHXMeshTag;
 var V1, V2, V3: TVector3f;
-var Matrix: TMatrix4;
+var Matrix: TMatrix4f;
 begin
   Inc(Index);
 
@@ -279,7 +279,7 @@ begin
       Inc(Index);
       V3:= ReadVector(Lines[Index]);
 
-      Matrix:= TMatrix4.Identity;
+      Matrix:= TMatrix4f.Identity;
       Matrix.M11:= V1.X;
       Matrix.M12:= V1.Y;
       Matrix.M13:= V1.Z;

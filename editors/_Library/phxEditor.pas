@@ -223,13 +223,13 @@ TPHXEditor = class(TCustomControl)
 
     // Notify the editor that the document is changef
     procedure DocumentChanged;
-
-    procedure WMMouseWheel(var Message: {TWMMouseWheel} TCMMouseWheel); message LM_MOUSEWHEEL;
+    {
+   // procedure WMMouseWheel(var Message: {TWMMouseWheel} //TCMMouseWheel); message LM_MOUSEWHEEL;
 
     Procedure WMGetDlgCode(var Message: TWMGetDlgCode ); message WM_GETDLGCODE;
     /// todo procedure WMDropFiles(var Message: TWMDropFiles); message WM_DROPFILES;
 
-    procedure WMRButtonDown(var Message: TLMRButtonDown); message LM_RBUTTONDOWN;
+   // procedure WMRButtonDown(var Message: TLMRButtonDown); message LM_RBUTTONDOWN;
     procedure WMMouseMove  (var Message: TWMMouseMove  ); message WM_MOUSEMOVE;
     procedure CMMouseLeave  (var Message: TMessage); message CM_MOUSELEAVE;
 
@@ -423,16 +423,16 @@ TPHXEditorTools = class(TPersistent)
 procedure Register;
 
 implementation
-uses cmem;
+//uses cmem;
 //uses ShellAPI;
 
 //------------------------------------------------------------------------------
 procedure Register;
 begin
-//  RegisterComponents('Phoenix', [TPHXEditor]);
+ // RegisterComponents('Phoenix', [TPHXEditor]);
 
-//  RegisterComponents('Phoenix', [TPHXTool]);
-//  RegisterComponents('Phoenix', [TPHXToolManager]);
+  //RegisterComponents('Phoenix', [TPHXTool]);
+  //RegisterComponents('Phoenix', [TPHXToolManager]);
 
 end;
 
@@ -1179,10 +1179,10 @@ begin
 end;
 
 //------------------------------------------------------------------------------
-procedure TPHXEditor.WMMouseWheel(var Message: TCMMouseWheel);
+{procedure TPHXEditor.WMMouseWheel(var Message: TCMMouseWheel);
 var Delta: Integer;
 begin
-  Delta:= (Message.WheelDelta {div WHEEL_DELTA});
+ // Delta:= (Message.WheelDelta div WHEEL_DELTA);
 
   if Delta > 0 then
   begin
@@ -1192,7 +1192,7 @@ begin
   begin
     FViewport.ZoomOut;
   end;
-end;
+end;}
 
 //    FScrollVert: Integer;
 //    FScrollHorz: Integer;
@@ -1617,14 +1617,14 @@ end; }
 
 //------------------------------------------------------------------------------
 //procedure WMRButtonDown(var Message: TLMRButtonDown); message LM_RBUTTONDOWN;
-procedure TPHXEditor.WMRButtonDown(var Message: TLMRButtonDown);
+{procedure TPHXEditor.WMRButtonDown(var Message: TLMRButtonDown);
 begin
   inherited;
 
   MousePos.X:= Message.XPos;
   MousePos.Y:= Message.YPos;
 end;
-
+ }
 //------------------------------------------------------------------------------
 procedure TPHXEditor.WMMouseMove(var Message: TWMMouseMove);
 var Shift: TShiftState;

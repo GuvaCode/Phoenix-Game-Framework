@@ -3,7 +3,7 @@ unit uImportOBJ;
 interface
 
 uses
-  Windows, Messages, SysUtils, Classes,
+  Messages, SysUtils, Classes,
 
   uImport,
 
@@ -63,8 +63,8 @@ TModel = Record
   TexCoords : Integer;
   Groups    : Integer;
   Materials : Integer;
-  Vertex    : Array of TCoord;
-  Normal    : Array of TCoord;
+  Vertex    : Array of TVector2i;
+  Normal    : Array of TVector2i;
   TexCoord  : Array of TTexCoord;
   Group     : Array of TGroup;
   Material  : Array of TMaterial;

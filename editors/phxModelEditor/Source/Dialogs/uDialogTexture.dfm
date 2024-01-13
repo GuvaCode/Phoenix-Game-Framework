@@ -74,7 +74,7 @@ object FrmDialogTexture: TFrmDialogTexture
       'Displacement')
     ExplicitWidth = 207
   end
-  object edTextureName: TJvComboEdit
+  object edTextureName: TEdit
     Left = 45
     Top = 35
     Width = 276

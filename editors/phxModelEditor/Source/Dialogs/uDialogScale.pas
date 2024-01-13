@@ -3,8 +3,8 @@ unit uDialogScale;
 interface
 
 uses
-  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, StdCtrls, Mask, JvExMask, JvSpin,
+  Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, Spin,
 
   phxTypes;
 
@@ -14,11 +14,11 @@ type
     btnOk: TButton;
     GroupBox1: TGroupBox;
     Label1: TLabel;
-    edScaleX: TJvSpinEdit;
+    edScaleX: TSpinEdit;
     Label2: TLabel;
-    edScaleY: TJvSpinEdit;
+    edScaleY: TSpinEdit;
     Label3: TLabel;
-    edScaleZ: TJvSpinEdit;
+    edScaleZ: TSpinEdit;
     Label4: TLabel;
     Label5: TLabel;
     Label6: TLabel;

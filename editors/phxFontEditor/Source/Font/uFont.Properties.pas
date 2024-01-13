@@ -4,26 +4,26 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms, 
-  Dialogs, StdCtrls, Mask, JvExMask, JvSpin, ExtCtrls, TypInfo,
+  Dialogs, StdCtrls, Mask, ExtCtrls, TypInfo,
 
 
   phxGraphics,
   phxFont,
-  phxFontEx, JvToolEdit;
+  phxFontEx;
 
 type
   TFrmFontProperties = class(TFrame)
     GroupBox1: TGroupBox;
     edName: TEdit;
-    edSize: TJvSpinEdit;
+    edSize: TSpinEdit;
     Label2: TLabel;
     GroupBox2: TGroupBox;
     Label4: TLabel;
-    edHeight: TJvSpinEdit;
+    edHeight: TSpinEdit;
     Label5: TLabel;
-    edAscent: TJvSpinEdit;
+    edAscent: TSpinEdit;
     Label6: TLabel;
-    edDescent: TJvSpinEdit;
+    edDescent: TSpinEdit;
     Label1: TLabel;
     GroupBox4: TGroupBox;
     edTextureWidth: TEdit;
@@ -38,7 +38,7 @@ type
     Label3: TLabel;
     btnTexture: TButton;
     Label7: TLabel;
-    edOffset: TJvSpinEdit;
+    edOffset: TSpinEdit;
     Label8: TLabel;
     Panel1: TPanel;
     Image1: TImage;
@@ -48,9 +48,9 @@ type
     edWrapMode: TComboBox;
     Label9: TLabel;
     Label15: TLabel;
-    edWrapChars: TJvComboEdit;
-    edWrapStart: TJvComboEdit;
-    edWrapEnd: TJvComboEdit;
+    edWrapChars: TEdit;
+    edWrapStart: TEdit;
+    edWrapEnd: TEdit;
     procedure edFontChange(Sender: TObject);
     procedure btnTextureClick(Sender: TObject);
     procedure edHeightChange(Sender: TObject);

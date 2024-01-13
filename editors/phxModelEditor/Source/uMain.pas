@@ -3,7 +3,7 @@ unit uMain;
 interface
 
 uses
-  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, ComCtrls, ToolWin, ImgList, Menus, StdCtrls, Types,
 
   uActions, ExtCtrls,
@@ -11,7 +11,7 @@ uses
   dglOpenGL,
 
   phxCamera,
-
+  phxMath,
   phxTypes,
   phxClasses,
   phxApplication,
@@ -129,7 +129,7 @@ implementation
 
 {$R *.dfm}
 
-Uses phxGraphics_FreeImage;
+Uses phxGraphics_Vampyre;
 // Uses  phxFreeImage,  phxMilkshape3D;
 
 
@@ -261,9 +261,9 @@ var MouseX, MouseY: Integer;
 
 
 var
-  LightAmbient: array [0..3] of Single = ( 0.5, 0.5, 0.5, 1.0 );       // Okolní svìtlo
-  LightDiffuse: array [0..3] of Single = ( 1.0, 1.0, 1.0, 1.0 );       // Pøímé svìtlo
-  LightPosition: array [0..3] of Single = ( 0.0, 0.0, 2.0, 1.0 );      // Pozice svìtla
+  LightAmbient: array [0..3] of Single = ( 0.5, 0.5, 0.5, 1.0 );       // OkolnÃ­ svÃ¬tlo
+  LightDiffuse: array [0..3] of Single = ( 1.0, 1.0, 1.0, 1.0 );       // PÃ¸Ã­mÃ© svÃ¬tlo
+  LightPosition: array [0..3] of Single = ( 0.0, 0.0, 2.0, 1.0 );      // Pozice svÃ¬tla
 
 //var Ray: TRay;
 
@@ -341,9 +341,9 @@ begin
 
   //  glEnable(GL_LIGHTING);
  // glEnable(GL_LIGHT0);
- // glLightfv(GL_LIGHT0, GL_AMBIENT, @LightAmbient);  // Nastavení okolního svìtla
-//	glLightfv(GL_LIGHT0, GL_DIFFUSE, @LightDiffuse);  // Nastavení pøímého svìtla
-//	glLightfv(GL_LIGHT0, GL_POSITION,@LightPosition); // Nastavení pozice svìtla
+ // glLightfv(GL_LIGHT0, GL_AMBIENT, @LightAmbient);  // NastavenÃ­ okolnÃ­ho svÃ¬tla
+//	glLightfv(GL_LIGHT0, GL_DIFFUSE, @LightDiffuse);  // NastavenÃ­ pÃ¸Ã­mÃ©ho svÃ¬tla
+//	glLightfv(GL_LIGHT0, GL_POSITION,@LightPosition); // NastavenÃ­ pozice svÃ¬tla
 
 
  // PHXDraw1.Device.SetViewMatrix(Camera.ModelViewMatrix);

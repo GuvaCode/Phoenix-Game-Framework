@@ -3,13 +3,13 @@ unit uGenerator;
 interface
 
 uses
-  Types, Classes, Windows, Graphics, Math,
+  Types, Classes, Graphics, Math, LCLType, SysUtils,
 //  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
 //  Dialogs, ComCtrls, StdCtrls, ExtCtrls, Buttons, Mask, JvExMask, JvSpin , Math,
 
   Generics.Collections,
 
-  xmldom, XMLIntf, msxmldom, XMLDoc,
+  laz2_DOM, laz2_XMLRead, laz2_XMLWrite, laz2_XMLCfg,
 
 //  phxGraphics,
   phxGraphicsEx,
@@ -18,7 +18,37 @@ uses
   phxFontEx;
 
 type
+tagPOINT = record
+  x: integer;
+  y: integer;
+end;
+      TGLYPHMETRICS = record
+          gmBlackBoxX : UINT;
+          gmBlackBoxY : UINT;
+          gmptGlyphOrigin : tagpoint;
+          gmCellIncX : Short;
+          gmCellIncY : Short;
+       end;
+  
 
+type FIXED = record
+
+  fract: Word;
+
+  value: SHORT;
+
+end;
+type TMAT2 = record
+
+  eM11: FIXED;
+
+  eM12: FIXED;
+
+  eM21: FIXED;
+
+  eM22: FIXED;
+
+end;
 //------------------------------------------------------------------------------
 TGeneratorLayout = (
   laPacked,
@@ -54,8 +84,8 @@ TGeneratorSettings = class
   public
     constructor Create;
 
-    procedure SaveToXML(Node: IXMLNode);
-    procedure LoadFromXML(Node: IXMLNode);
+    procedure SaveToXML(Node: TDOMNode);
+    procedure LoadFromXML(Node: TDOMNode);
 
     // The name of the font
     property Font: String read FFont write FFont;
@@ -124,7 +154,7 @@ TPHXFontGenerator = class
   private
     FSettings: TGeneratorSettings;
     //FFont      : TFont;
-    TextMetric  : TTextMetric;
+    TextMetric  : TLCLTextMetric;
 
     // List of generated glyphs
     FGlyphs    : TList<TGlyph>;
@@ -138,9 +168,9 @@ TPHXFontGenerator = class
     procedure DrawOutline(Handle: HDC; X, Y: Integer; Character: String);
 
     // Generates a glyph font bitmap for a character
-    function GenerateGlyphFont(Character: String; GlyphMetrics: GlyphMetrics; X,Y, Width,Height: Integer): TBitmap; overload;
+    function GenerateGlyphFont(Character: String; GlyphMetrics_: TGlyphMetrics; X,Y, Width,Height: Integer): TBitmap; overload;
     // Generates a glyph mask bitmap for a character
-    function GenerateGlyphMask(Character: String; GlyphMetrics: GlyphMetrics; X,Y, Width,Height: Integer): TBitmap; overload;
+    function GenerateGlyphMask(Character: String; GlyphMetrics_: TGlyphMetrics; X,Y, Width,Height: Integer): TBitmap; overload;
 
 
     // Generate the textures
@@ -237,14 +267,14 @@ begin
 end;
 
 //------------------------------------------------------------------------------
-procedure TGeneratorSettings.LoadFromXML(Node: IXMLNode);
+procedure TGeneratorSettings.LoadFromXML(Node: TDOMNode);
 begin
 end;
 
 //------------------------------------------------------------------------------
-procedure TGeneratorSettings.SaveToXML(Node: IXMLNode);
+procedure TGeneratorSettings.SaveToXML(Node: TDOMNode);
 begin
-  Node.Attributes['Font']:= Font;
+ // Node.Attributes['Font']:= Font;
 end;
 
 
@@ -254,7 +284,10 @@ end;
 
 const
  mat2: TMat2 = (eM11: (Fract: 0; Value: 1); eM12: (fract: 0; Value: 0); eM21: (Fract: 0; Value: 0); eM22: (fract: 0; Value: 1));
- IdentityMat: TMat2 = (eM11: (Fract: 0; Value: 1); eM12: (fract: 0; Value: 0); eM21: (Fract: 0; Value: 0); eM22: (fract: 0; Value: 1));
+ IdentityMat: TMat2 = (eM11: (Fract: 0; Value: 1);
+                       eM12: (fract: 0; Value: 0);
+                       eM21: (Fract: 0; Value: 0);
+                       eM22: (fract: 0; Value: 1));
 
 // TPHXFontGenerator
 //------------------------------------------------------------------------------

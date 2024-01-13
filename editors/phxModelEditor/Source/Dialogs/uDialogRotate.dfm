@@ -11,13 +11,8 @@ object FrmDialogRotate: TFrmDialogRotate
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
-  OldCreateOrder = False
   Position = poMainFormCenter
-  DesignSize = (
-    219
-    155)
   PixelsPerInch = 96
-  TextHeight = 13
   object btnCancel: TButton
     Left = 136
     Top = 122
@@ -90,28 +85,25 @@ object FrmDialogRotate: TFrmDialogRotate
       Height = 13
       Caption = 'deg'
     end
-    object edRotationX: TJvSpinEdit
+    object edRotationX: TSpinEdit
       Left = 40
       Top = 16
       Width = 121
       Height = 21
-      ValueType = vtFloat
       TabOrder = 0
     end
-    object edRotationY: TJvSpinEdit
+    object edRotationY: TSpinEdit
       Left = 40
       Top = 43
       Width = 121
       Height = 21
-      ValueType = vtFloat
       TabOrder = 1
     end
-    object edRotationZ: TJvSpinEdit
+    object edRotationZ: TSpinEdit
       Left = 40
       Top = 70
       Width = 121
       Height = 21
-      ValueType = vtFloat
       TabOrder = 2
     end
   end

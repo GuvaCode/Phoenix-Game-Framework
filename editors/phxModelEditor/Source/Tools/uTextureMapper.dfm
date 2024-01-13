@@ -1,24 +1,22 @@
 object FrmTextureMapper: TFrmTextureMapper
   Left = 0
+  Height = 616
   Top = 0
+  Width = 673
   Caption = 'FrmTextureMapper'
   ClientHeight = 616
   ClientWidth = 673
   Color = clBtnFace
-  Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
   Font.Name = 'Tahoma'
-  Font.Style = []
-  OldCreateOrder = False
   Position = poMainFormCenter
-  PixelsPerInch = 96
-  TextHeight = 13
+  LCLVersion = '3.0.0.3'
   object PaintBox1: TPaintBox
     Left = 32
+    Height = 561
     Top = 8
     Width = 585
-    Height = 561
     OnPaint = PaintBox1Paint
   end
 end

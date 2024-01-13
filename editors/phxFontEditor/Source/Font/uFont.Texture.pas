@@ -4,7 +4,7 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, StdCtrls, ExtCtrls, Vcl.ImgList, Vcl.ComCtrls, Vcl.ToolWin,
+  Dialogs, StdCtrls, ExtCtrls, ImgList, ComCtrls, ToolWin,
 
   phxGraphics,
   phxGraphicsEx,

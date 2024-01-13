@@ -3,12 +3,12 @@ unit uGenerator.Dialog;
 interface
 
 uses
-  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, ComCtrls, StdCtrls, ExtCtrls, Buttons, Mask, JvExMask, JvSpin , Math,
+  Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, ComCtrls, StdCtrls, ExtCtrls, Buttons , Math,
 
   Generics.Collections,
 
-  xmldom, XMLIntf, msxmldom, XMLDoc,
+//  xmldom, XMLIntf, msxmldom, XMLDoc,
 
 //  phxGraphics,
   phxGraphicsEx,

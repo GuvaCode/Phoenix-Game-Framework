@@ -3,7 +3,7 @@ unit uImport;
 interface
 
 uses
-  Windows, Messages, SysUtils, Classes,
+  Messages, SysUtils, Classes,
 
   Generics.Collections,
 

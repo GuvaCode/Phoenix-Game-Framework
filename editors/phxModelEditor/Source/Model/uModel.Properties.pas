@@ -3,8 +3,8 @@ unit uModel.Properties;
 interface
 
 uses
-  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms, 
-  Dialogs, StdCtrls, Mask, JvExMask, JvSpin,
+  Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, Mask,
 
   phxModel;
 
@@ -25,12 +25,12 @@ TFrmModelProperties = class(TFrame)
     Label5: TLabel;
     Label6: TLabel;
     Label7: TLabel;
-    edMinX: TJvSpinEdit;
-    edMaxX: TJvSpinEdit;
-    edMinY: TJvSpinEdit;
-    edMaxY: TJvSpinEdit;
-    edMinZ: TJvSpinEdit;
-    edMaxZ: TJvSpinEdit;
+    edMinX: TSpinEdit;
+    edMaxX: TSpinEdit;
+    edMinY: TSpinEdit;
+    edMaxY: TSpinEdit;
+    edMinZ: TSpinEdit;
+    edMaxZ: TSpinEdit;
     GroupBox3: TGroupBox;
     Label8: TLabel;
     Label9: TLabel;

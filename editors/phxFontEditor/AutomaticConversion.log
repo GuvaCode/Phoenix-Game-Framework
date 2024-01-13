@@ -1,0 +1,6 @@
+phxFontEditor.lpi Note: К параметрам пользователя добавлены определения -dBorland -dVer150 -dDelphi7 -dCompiler6_Up -dPUREPASCAL
+ Progress: Найдены все файлы модулей
+phxFontEditor.lpr(1,23) Note: После имени модуля добавлена директива MODE Delphi.
+ : 
+ : *** Преобразование файлов модулей, принадлежащих проекту/пакету ***
+ Fatal: Преобразование прервано.

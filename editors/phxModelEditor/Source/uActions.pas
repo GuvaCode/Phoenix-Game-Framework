@@ -3,12 +3,12 @@ unit uActions;
 interface
 
 uses
-  Windows, SysUtils, Classes, Dialogs, ImgList, Controls, Menus, Forms, ActnList,
+  SysUtils, Classes, Dialogs, ImgList, Controls, Menus, Forms, ActnList,
   Graphics,
 
   Generics.Collections,
 
-  xmldom, XMLIntf, msxmldom, XMLDoc,
+ // xmldom, XMLIntf, msxmldom, XMLDoc,
 
   phxTypes,
   phxmath,
@@ -50,8 +50,8 @@ TRecent = class
     constructor Create;
     destructor Destroy; override;
 
-    procedure LoadFromXML(Node : IXMLNode);
-    procedure SaveToXML(Node : IXMLNode);
+  //  procedure LoadFromXML(Node : IXMLNode);
+  //  procedure SaveToXML(Node : IXMLNode);
 
     procedure Add(const FileName: String);
 
@@ -293,7 +293,8 @@ var UserName    : String;
 var UserNameLen : Cardinal;
 Begin
   UserNameLen := 255;
-
+  Result := 'Unknown';
+  {
   SetLength(userName, UserNameLen) ;
 
   If GetUserName(PChar(UserName), UserNameLen) then
@@ -302,7 +303,7 @@ Begin
   end else
   begin
      Result := 'Unknown';
-  end;
+  end; }
 end;
 
 
@@ -451,7 +452,7 @@ begin
 end;
 
 //------------------------------------------------------------------------------
-procedure TRecent.LoadFromXML(Node: IXMLNode);
+{procedure TRecent.LoadFromXML(Node: IXMLNode);
 var Index: Integer;
 begin
   Items.BeginUpdate;
@@ -473,7 +474,7 @@ begin
   begin
     Node.AddChild('item').Attributes['filename']:= Items[Index];
   end;
-end;
+end; }
 
 //------------------------------------------------------------------------------
 procedure TRecent.SetMenu(const Value: TMenuItem);
@@ -511,11 +512,11 @@ end;
 
 //------------------------------------------------------------------------------
 procedure TSettings.LoadFromFile(const FileName: String);
-var XMLDocument    : IXMLDocument;
-var XMLRoot     : IXMLNode;
-var XMLNode    : IXMLNode;
+//var XMLDocument    : IXMLDocument;
+//var XMLRoot     : IXMLNode;
+//var XMLNode    : IXMLNode;
 begin
-  XMLDocument:= LoadXMLDocument(FileName);
+ { XMLDocument:= LoadXMLDocument(FileName);
 
   XMLRoot:= XMLDocument.DocumentElement;
 
@@ -532,16 +533,16 @@ begin
   begin
     FNormalColor := Graphics.StringToColor(XMLNode.Attributes['NormalColor']);
     FNormalLength:= Graphics.StringToColor(XMLNode.Attributes['NormalLength']);
-  end;
+  end;}
 end;
 
 //------------------------------------------------------------------------------
 procedure TSettings.SaveToFile(const FileName: String);
-var XMLDocument : IXMLDocument;
-var XMLRoot     : IXMLNode;
-var XMLNode   : IXMLNode;
+//var XMLDocument : IXMLDocument;
+//var XMLRoot     : IXMLNode;
+//var XMLNode   : IXMLNode;
 begin
-
+  {
   XMLDocument:= NewXMLDocument();
 
   XMLRoot:= XMLDocument.AddChild('phxModelEditor');
@@ -557,7 +558,7 @@ begin
     XMLNode.Attributes['NormalLength']:=                        FNormalLength;
   end;
 
-  XMLDocument.SaveToFile(FileName);
+  XMLDocument.SaveToFile(FileName);   }
 end;
 
 
@@ -1105,7 +1106,7 @@ procedure TModActions.actEditRotateExecute(Sender: TObject);
 var Dialog: TFrmDialogRotate;
 var Mesh : TPHXMesh;
 var Rotation: TVector3f;
-var Matrix  : TMatrix4;
+var Matrix  : TMatrix4f;
 begin
   Mesh:= Document.Mesh;
 

@@ -9,7 +9,7 @@ interface
 
 uses
   phxColorEditor, phxFontEx, phxGraphicsEx, phxTextureDialog, phxImageDialog, 
-  phxEditor, LazarusPackageIntf;
+  phxEditor, phxDraw, LazarusPackageIntf;
 
 implementation
 
@@ -18,7 +18,7 @@ begin
   RegisterUnit('phxColorEditor', @phxColorEditor.Register);
   RegisterUnit('phxTextureDialog', @phxTextureDialog.Register);
   RegisterUnit('phxImageDialog', @phxImageDialog.Register);
-  RegisterUnit('phxEditor', @phxEditor.Register);
+  RegisterUnit('phxDraw', @phxDraw.Register);
 end;
 
 initialization

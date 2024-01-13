@@ -64,7 +64,7 @@ object FrmCharacter: TFrmCharacter
       Height = 13
       Caption = '&Height:'
     end
-    object edWidth: TJvSpinEdit
+    object edWidth: TSpinEdit
       Left = 84
       Top = 74
       Width = 156
@@ -72,7 +72,7 @@ object FrmCharacter: TFrmCharacter
       Anchors = [akLeft, akTop, akRight]
       TabOrder = 0
     end
-    object edY: TJvSpinEdit
+    object edY: TSpinEdit
       Left = 84
       Top = 47
       Width = 156
@@ -80,7 +80,7 @@ object FrmCharacter: TFrmCharacter
       Anchors = [akLeft, akTop, akRight]
       TabOrder = 1
     end
-    object edX: TJvSpinEdit
+    object edX: TSpinEdit
       Left = 84
       Top = 20
       Width = 156
@@ -88,7 +88,7 @@ object FrmCharacter: TFrmCharacter
       Anchors = [akLeft, akTop, akRight]
       TabOrder = 2
     end
-    object edHeight: TJvSpinEdit
+    object edHeight: TSpinEdit
       Left = 84
       Top = 101
       Width = 156
@@ -147,7 +147,7 @@ object FrmCharacter: TFrmCharacter
       Font.Style = []
       ParentFont = False
     end
-    object edXOffset: TJvSpinEdit
+    object edXOffset: TSpinEdit
       Left = 84
       Top = 19
       Width = 156
@@ -155,7 +155,7 @@ object FrmCharacter: TFrmCharacter
       Anchors = [akLeft, akTop, akRight]
       TabOrder = 0
     end
-    object edYOffset: TJvSpinEdit
+    object edYOffset: TSpinEdit
       Left = 84
       Top = 73
       Width = 156
@@ -163,7 +163,7 @@ object FrmCharacter: TFrmCharacter
       Anchors = [akLeft, akTop, akRight]
       TabOrder = 1
     end
-    object edXAdvance: TJvSpinEdit
+    object edXAdvance: TSpinEdit
       Left = 84
       Top = 46
       Width = 156
@@ -198,7 +198,7 @@ object FrmCharacter: TFrmCharacter
       Height = 13
       Caption = '&Text:'
     end
-    object edIdent: TJvSpinEdit
+    object edIdent: TSpinEdit
       Left = 84
       Top = 20
       Width = 160

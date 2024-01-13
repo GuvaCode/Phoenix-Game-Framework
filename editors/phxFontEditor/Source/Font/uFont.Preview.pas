@@ -3,7 +3,7 @@ unit uFont.Preview;
 interface
 
 uses
-  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms, 
+  Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, ExtCtrls, StdCtrls,
 
   phxTypes,
@@ -12,7 +12,7 @@ uses
   phxGraphicsEx,
 
   phxFont,
-  phxFontEx, Vcl.Menus;
+  phxFontEx, Menus;
 
 type
   TFrmFontPreview = class(TFrame)

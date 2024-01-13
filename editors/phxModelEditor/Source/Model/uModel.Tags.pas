@@ -3,8 +3,8 @@ unit uModel.Tags;
 interface
 
 uses
-  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, StdCtrls, ComCtrls, Mask, JvExMask, JvSpin,
+  Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ComCtrls, Mask,
 
   uActions,
 
@@ -22,16 +22,16 @@ type
     Label2: TLabel;
     edName: TEdit;
     GroupBox3: TGroupBox;
-    edRotationX: TJvSpinEdit;
-    edRotationY: TJvSpinEdit;
-    edRotationZ: TJvSpinEdit;
+    edRotationX: TSpinEdit;
+    edRotationY: TSpinEdit;
+    edRotationZ: TSpinEdit;
     Label6: TLabel;
     Label7: TLabel;
     Label8: TLabel;
     edJoint: TComboBox;
-    edPositionX: TJvSpinEdit;
-    edPositionY: TJvSpinEdit;
-    edPositionZ: TJvSpinEdit;
+    edPositionX: TSpinEdit;
+    edPositionY: TSpinEdit;
+    edPositionZ: TSpinEdit;
     procedure lwTagsKeyUp(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure lwTagsClick(Sender: TObject);
 

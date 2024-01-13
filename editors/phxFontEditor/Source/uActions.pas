@@ -3,11 +3,11 @@ unit uActions;
 interface
 
 uses
-  SysUtils, Classes, Dialogs, ImgList, Controls, Menus, Forms, ActnList, Windows,
+  SysUtils, Classes, Dialogs, ImgList, Controls, Menus, Forms, ActnList,
 
   Generics.Collections,
 
-  xmldom, XMLIntf, msxmldom, XMLDoc,
+  laz2_DOM, laz2_XMLRead, laz2_XMLWrite, laz2_XMLCfg,
 
 
   phxFont,
@@ -43,8 +43,8 @@ TRecent = class
     constructor Create;
     destructor Destroy; override;
 
-    procedure LoadFromXML(Node : IXMLNode);
-    procedure SaveToXML(Node : IXMLNode);
+    procedure LoadFromXML(Node : TDOMNode);
+    procedure SaveToXML(Node : TDOMNode);
 
     procedure Add(const FileName: String);
 
@@ -291,10 +291,10 @@ begin
 end;
 
 //------------------------------------------------------------------------------
-procedure TRecent.LoadFromXML(Node: IXMLNode);
+procedure TRecent.LoadFromXML(Node: TDOMNode);
 var Index: Integer;
 begin
-  Items.BeginUpdate;
+ { Items.BeginUpdate;
   Items.Clear;
   for Index := 0 to Node.ChildNodes.Count - 1 do
   begin
@@ -302,17 +302,17 @@ begin
   end;
   Items.EndUpdate;
 
-  MenuUpdate;
+  MenuUpdate; }
 end;
 
 //------------------------------------------------------------------------------
-procedure TRecent.SaveToXML(Node: IXMLNode);
+procedure TRecent.SaveToXML(Node: TDOMNode);
 var Index: Integer;
 begin
-  for Index := 0 to Items.Count - 1 do
+ { for Index := 0 to Items.Count - 1 do
   begin
     Node.AddChild('item').Attributes['filename']:= Items[Index];
-  end;
+  end; }
 end;
 
 //------------------------------------------------------------------------------

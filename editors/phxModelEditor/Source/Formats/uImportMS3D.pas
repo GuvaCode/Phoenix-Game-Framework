@@ -3,7 +3,7 @@ unit uImportMS3D;
 interface
 
 uses
-  Windows, Messages, SysUtils, Classes,
+  Messages, SysUtils, Classes,
 
   uImport,
 
@@ -112,8 +112,8 @@ TImporterMS3D = class(TImporter)
     theMaterials: TMaterials;
     theJoints   : TJoints;
 
-    JointAbsoluteMatrix: array of TMatrix4;
-    JointRelativeMatrix: array of TMatrix4;
+    JointAbsoluteMatrix: array of TMatrix4f;
+    JointRelativeMatrix: array of TMatrix4f;
 
     procedure SetupJointMatrices;
 
@@ -318,8 +318,8 @@ end;
 procedure TImporterMS3D.SetupJointMatrices();
 var Index   : Integer;
 var Joint   : TMS3D_JOINT;
-var MatAbsolute: TMatrix4;
-var MatRelative: TMatrix4;
+var MatAbsolute: TMatrix4f;
+var MatRelative: TMatrix4f;
 begin
   SetLength(JointAbsoluteMatrix, numJoints);
   SetLength(JointRelativeMatrix, numJoints);

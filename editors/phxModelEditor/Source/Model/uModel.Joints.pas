@@ -4,7 +4,7 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms, 
-  Dialogs, StdCtrls, ComCtrls, Mask, JvExMask, JvSpin,
+  Dialogs, StdCtrls, ComCtrls, Mask,
 
   phxModel;
 
@@ -20,16 +20,16 @@ type
     Label6: TLabel;
     Label7: TLabel;
     Label8: TLabel;
-    edRotationX: TJvSpinEdit;
-    edRotationY: TJvSpinEdit;
-    edRotationZ: TJvSpinEdit;
+    edRotationX: TSpinEdit;
+    edRotationY: TSpinEdit;
+    edRotationZ: TSpinEdit;
     GroupBox2: TGroupBox;
     Label3: TLabel;
     Label4: TLabel;
     Label5: TLabel;
-    edPositionX: TJvSpinEdit;
-    edPositionY: TJvSpinEdit;
-    edPositionZ: TJvSpinEdit;
+    edPositionX: TSpinEdit;
+    edPositionY: TSpinEdit;
+    edPositionZ: TSpinEdit;
     procedure lwJointsClick(Sender: TObject);
     procedure lwJointsKeyUp(Sender: TObject; var Key: Word; Shift: TShiftState);
   private

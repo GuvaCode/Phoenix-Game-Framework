@@ -52,7 +52,7 @@ ViewportMinDepth = -0.1;
 ViewportMaxDepth = 1000.0;
 
 type
-
+IPHXRenderer   = interface;
 IPHXDevice = interface;
 TPHXProvider = class;
 TPHXDevice   = class;
@@ -526,6 +526,7 @@ TPHXDevice = class(TPHXCustomDevice)
   end;
 
 {$ENDREGION}
+
 
 
 const

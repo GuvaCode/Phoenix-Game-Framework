@@ -3,8 +3,8 @@ unit uGenerator;
 interface
 
 uses      Partitions,
-  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, ComCtrls, StdCtrls, ExtCtrls, Buttons, Mask, JvExMask, JvSpin , Math,
+ Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, ComCtrls, StdCtrls, ExtCtrls, Buttons, Mask , Math,
 
   Generics.Collections,
 
@@ -157,23 +157,23 @@ TFrmGenerator = class(TForm)
     Label2: TLabel;
     btnGenerate: TButton;
     Image1: TImage;
-    edSize: TJvSpinEdit;
+    edSize: TSpinEdit;
     Label4: TLabel;
     Image2: TImage;
     btnOk: TButton;
     btnCancel: TButton;
     GroupBox1: TGroupBox;
     Image3: TImage;
-    edPadding: TJvSpinEdit;
+    edPadding: TSpinEdit;
     SpeedButton1: TSpeedButton;
-    edWidth: TJvSpinEdit;
-    edHeight: TJvSpinEdit;
+    edWidth: TSpinEdit;
+    edHeight: TSpinEdit;
     edUnderline: TCheckBox;
     ComboBox1: TComboBox;
     Image4: TImage;
     edBlurEnable: TCheckBox;
     edDropshadow: TCheckBox;
-    edShadowSize: TJvSpinEdit;
+    edShadowSize: TSpinEdit;
     procedure SelectColor(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Integer);
     procedure SpeedButton1Click(Sender: TObject);

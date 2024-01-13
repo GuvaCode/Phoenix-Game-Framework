@@ -1,28 +1,23 @@
 object FrmDialogCenter: TFrmDialogCenter
-  Left = 0
-  Top = 0
+  Left = 848
+  Height = 155
+  Top = 416
+  Width = 219
   BorderStyle = bsToolWindow
   Caption = 'Center model'
   ClientHeight = 155
   ClientWidth = 219
   Color = clBtnFace
-  Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
   Font.Name = 'Tahoma'
-  Font.Style = []
-  OldCreateOrder = False
   Position = poMainFormCenter
-  DesignSize = (
-    219
-    155)
-  PixelsPerInch = 96
-  TextHeight = 13
+  LCLVersion = '3.0.0.3'
   object btnCancel: TButton
     Left = 136
+    Height = 25
     Top = 122
     Width = 75
-    Height = 25
     Anchors = [akRight, akBottom]
     Cancel = True
     Caption = 'Cancel'
@@ -31,9 +26,9 @@ object FrmDialogCenter: TFrmDialogCenter
   end
   object btnOk: TButton
     Left = 55
+    Height = 25
     Top = 122
     Width = 75
-    Height = 25
     Anchors = [akRight, akBottom]
     Caption = 'Ok'
     Default = True
@@ -42,17 +37,20 @@ object FrmDialogCenter: TFrmDialogCenter
   end
   object GroupBox1: TGroupBox
     Left = 8
+    Height = 105
     Top = 8
     Width = 203
-    Height = 105
-    Anchors = [akLeft, akTop, akRight]
+    Anchors = [akTop, akLeft, akRight]
     Caption = 'Center along axes'
+    ClientHeight = 90
+    ClientWidth = 201
+    ParentBackground = False
     TabOrder = 2
     object edCenterY: TCheckBox
       Left = 16
+      Height = 23
       Top = 48
-      Width = 97
-      Height = 17
+      Width = 33
       Caption = 'Y'
       Checked = True
       State = cbChecked
@@ -60,9 +58,9 @@ object FrmDialogCenter: TFrmDialogCenter
     end
     object edCenterX: TCheckBox
       Left = 16
+      Height = 23
       Top = 25
-      Width = 97
-      Height = 17
+      Width = 34
       Caption = 'X'
       Checked = True
       State = cbChecked
@@ -71,9 +69,9 @@ object FrmDialogCenter: TFrmDialogCenter
   end
   object edCenterZ: TCheckBox
     Left = 24
+    Height = 23
     Top = 79
-    Width = 97
-    Height = 17
+    Width = 34
     Caption = 'Z'
     Checked = True
     State = cbChecked

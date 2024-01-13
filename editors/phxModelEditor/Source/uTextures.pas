@@ -3,10 +3,10 @@ unit uTextures;
 interface
 
 uses
-  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms, 
+  Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, ComCtrls, ExtCtrls, StdCtrls, Menus,
 
-  System.Generics.Collections,
+  Generics.Collections,
 
   phxDevice,
   phxTexture,

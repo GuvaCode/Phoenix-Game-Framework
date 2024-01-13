@@ -35,11 +35,18 @@
       </Item>
       <Item>
         <Filename Value="phxEditor.pas"/>
-        <HasRegisterProc Value="True"/>
         <UnitName Value="phxEditor"/>
+      </Item>
+      <Item>
+        <Filename Value="phxDraw.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="phxDraw"/>
       </Item>
     </Files>
     <RequiredPkgs>
+      <Item>
+        <PackageName Value="lazopenglcontext"/>
+      </Item>
       <Item>
         <PackageName Value="pgf"/>
       </Item>

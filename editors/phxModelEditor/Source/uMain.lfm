@@ -1,0 +1,340 @@
+object FrmMain: TFrmMain
+  Left = 189
+  Height = 686
+  Top = 68
+  Width = 1008
+  Caption = 'phxModelEditor'
+  ClientHeight = 686
+  ClientWidth = 1008
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '3.0.0.3'
+  object Splitter1: TSplitter
+    Left = 265
+    Height = 642
+    Top = 26
+    Width = 5
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 18
+    Top = 668
+    Width = 1008
+    Panels = <    
+      item
+        Width = 160
+      end    
+      item
+        Width = 75
+      end    
+      item
+        Width = 160
+      end    
+      item
+        Width = 160
+      end    
+      item
+        Width = 200
+      end    
+      item
+        Width = 200
+      end    
+      item
+        Width = 200
+      end>
+  end
+  object pnlClient: TPanel
+    Left = 270
+    Height = 642
+    Top = 26
+    Width = 738
+    Align = alClient
+    BevelOuter = bvNone
+    ClientHeight = 642
+    ClientWidth = 738
+    ParentBackground = False
+    TabOrder = 1
+    object PanelDraw: TPanel
+      Left = 0
+      Height = 642
+      Top = 0
+      Width = 738
+      Align = alClient
+      BevelOuter = bvLowered
+      ParentBackground = False
+      TabOrder = 0
+    end
+  end
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 642
+    Top = 26
+    Width = 265
+    ActivePage = TabTags
+    Align = alLeft
+    TabIndex = 4
+    TabOrder = 2
+    OnChange = PageControl1Change
+    object TabModel: TTabSheet
+      Caption = 'Model'
+    end
+    object TabMaterial: TTabSheet
+      Caption = 'Material'
+      ImageIndex = 5
+    end
+    object TabGroups: TTabSheet
+      Caption = 'Groups'
+      ImageIndex = 1
+    end
+    object TabJoints: TTabSheet
+      Caption = 'Joints'
+      ImageIndex = 2
+    end
+    object TabTags: TTabSheet
+      Caption = 'Tags'
+      ImageIndex = 3
+    end
+  end
+  object ControlBar2: TControlBar
+    Left = 0
+    Height = 26
+    Top = 0
+    Width = 1008
+    Align = alTop
+    DrawingStyle = dsGradient
+    TabOrder = 3
+    object ToolBarStandard: TToolBar
+      Left = 13
+      Height = 22
+      Top = 4
+      Width = 214
+      Align = alNone
+      Caption = 'Standard'
+      DragKind = dkDock
+      Images = ModActions.ActionImages
+      TabOrder = 0
+      object ToolButton11: TToolButton
+        Left = 1
+        Top = 2
+        Action = ModActions.actFileNew
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object ToolButton12: TToolButton
+        Left = 24
+        Top = 2
+        Action = ModActions.actFileOpen
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object ToolButton13: TToolButton
+        Left = 47
+        Top = 2
+        Action = ModActions.actFileSave
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object ToolButton14: TToolButton
+        Left = 70
+        Height = 22
+        Top = 2
+        Caption = 'ToolButton6'
+        ImageIndex = 17
+        Style = tbsSeparator
+      end
+      object ToolButton15: TToolButton
+        Left = 78
+        Height = 22
+        Top = 2
+        Caption = 'ToolButton4'
+        ImageIndex = 3
+        Style = tbsSeparator
+      end
+      object ToolButton16: TToolButton
+        Left = 86
+        Top = 2
+        Action = ModActions.actShowGrid
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object ToolButton17: TToolButton
+        Left = 109
+        Top = 2
+        Action = ModActions.actShowWireframe
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object ToolButton18: TToolButton
+        Left = 132
+        Top = 2
+        Action = ModActions.actShowBounds
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object ToolButton1: TToolButton
+        Left = 155
+        Top = 2
+        Action = ModActions.actShowNormals
+      end
+      object ToolButton2: TToolButton
+        Left = 178
+        Height = 22
+        Top = 2
+        Caption = 'ToolButton2'
+        ImageIndex = 15
+        Style = tbsSeparator
+      end
+      object btnViewMode: TToolButton
+        Left = 186
+        Top = 2
+        Caption = 'btnViewMode'
+        DropdownMenu = PopupMenu1
+        ImageIndex = 16
+        Indeterminate = True
+        OnClick = btnViewModeClick
+      end
+    end
+  end
+  object MainMenu1: TMainMenu
+    Left = 76
+    Top = 121
+    object File1: TMenuItem
+      Caption = '&File'
+      object Open1: TMenuItem
+        Action = ModActions.actFileNew
+      end
+      object Open2: TMenuItem
+        Action = ModActions.actFileOpen
+      end
+      object menuRecent: TMenuItem
+        Caption = '&Reopen'
+      end
+      object Save1: TMenuItem
+        Action = ModActions.actFileSave
+      end
+      object Save2: TMenuItem
+        Action = ModActions.actFileSaveAs
+      end
+      object N31: TMenuItem
+        Caption = '-'
+      end
+      object MenuImport: TMenuItem
+        Caption = 'Import'
+      end
+      object N2: TMenuItem
+        Caption = '-'
+      end
+      object Exit1: TMenuItem
+        Action = ModActions.actFileExit
+      end
+    end
+    object Edit1: TMenuItem
+      Caption = '&Edit'
+      object btnditCenter: TMenuItem
+        Action = ModActions.actEditCenter
+      end
+      object btnEditScale: TMenuItem
+        Action = ModActions.actEditScale
+      end
+      object btnEditRotate: TMenuItem
+        Action = ModActions.actEditRotate
+      end
+      object N5: TMenuItem
+        Caption = '-'
+      end
+    end
+    object View1: TMenuItem
+      Caption = '&View'
+      object btnShowGrid: TMenuItem
+        Action = ModActions.actShowGrid
+      end
+      object btnShowWireframe: TMenuItem
+        Action = ModActions.actShowWireframe
+      end
+      object btnShowNormals: TMenuItem
+        Action = ModActions.actShowNormals
+      end
+      object btnShowBounds: TMenuItem
+        Action = ModActions.actShowBounds
+      end
+      object N4: TMenuItem
+        Caption = '-'
+      end
+      object Shader1: TMenuItem
+        Caption = '&Shader'
+        object btnShaderTextured: TMenuItem
+          Caption = '&Textured'
+        end
+      end
+      object btnViewTextures: TMenuItem
+        Action = ModActions.actToolsTextureList
+      end
+    end
+    object ools1: TMenuItem
+      Caption = '&Tools'
+      object extureMapper1: TMenuItem
+        Action = ModActions.actToolTextureMapper
+      end
+      object N3: TMenuItem
+        Caption = '-'
+      end
+      object btnLoadTexture: TMenuItem
+        Action = ModActions.actToolTextureLoad
+      end
+    end
+    object About1: TMenuItem
+      Caption = '&About'
+      object PhoenixImageEditor1: TMenuItem
+        Caption = 'Phoenix Model Editor'
+        Enabled = False
+      end
+      object N6: TMenuItem
+        Caption = '-'
+      end
+      object lblVersion: TMenuItem
+        Caption = 'lblVersion'
+        Enabled = False
+      end
+    end
+  end
+  object ImageList1: TImageList
+    Height = 32
+    Width = 32
+    Left = 384
+    Top = 288
+    Bitmap = {
+      4C7A0100000020000000200000002E0000000000000078DAEDCD310100200C03
+      B0E945459D1717702C47EECC69872679CAEFF7FBFD7EBFDFEFF7FBFD7FFEAD2E
+      33B7E6F8
+    }
+  end
+  object PopupMenu1: TPopupMenu
+    Images = ModActions.ActionImages
+    Left = 168
+    Top = 128
+    object actViewPerspective1: TMenuItem
+      Action = ModActions.actViewPerspective
+    end
+    object N1: TMenuItem
+      Caption = '-'
+    end
+    object actViewOrthoX1: TMenuItem
+      Action = ModActions.actViewOrthoTop
+    end
+    object actViewOrthoBottom1: TMenuItem
+      Action = ModActions.actViewOrthoBottom
+    end
+    object actViewOrthoY1: TMenuItem
+      Action = ModActions.actViewOrthoY
+    end
+    object actViewOrthoZ1: TMenuItem
+      Action = ModActions.actViewOrthoZ
+    end
+  end
+end

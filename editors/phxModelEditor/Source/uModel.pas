@@ -4,7 +4,7 @@ interface
 
 uses SysUtils, Classes,
 
-  Xml.XmlDoc, Xml.XmlIntf,
+ // Xml.XmlDoc, Xml.XmlIntf,
 
   phxClasses,
   phxModel;

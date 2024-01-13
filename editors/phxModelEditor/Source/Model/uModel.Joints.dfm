@@ -101,7 +101,7 @@ object FrmModelJoints: TFrmModelJoints
       Height = 13
       Caption = 'Z:'
     end
-    object edRotationX: TJvSpinEdit
+    object edRotationX: TSpinEdit
       Left = 68
       Top = 18
       Width = 167
@@ -110,7 +110,7 @@ object FrmModelJoints: TFrmModelJoints
       Anchors = [akLeft, akTop, akRight]
       TabOrder = 0
     end
-    object edRotationY: TJvSpinEdit
+    object edRotationY: TSpinEdit
       Left = 68
       Top = 45
       Width = 167
@@ -119,7 +119,7 @@ object FrmModelJoints: TFrmModelJoints
       Anchors = [akLeft, akTop, akRight]
       TabOrder = 1
     end
-    object edRotationZ: TJvSpinEdit
+    object edRotationZ: TSpinEdit
       Left = 68
       Top = 72
       Width = 167
@@ -161,7 +161,7 @@ object FrmModelJoints: TFrmModelJoints
       Height = 13
       Caption = 'Z:'
     end
-    object edPositionX: TJvSpinEdit
+    object edPositionX: TSpinEdit
       Left = 68
       Top = 18
       Width = 167
@@ -170,7 +170,7 @@ object FrmModelJoints: TFrmModelJoints
       Anchors = [akLeft, akTop, akRight]
       TabOrder = 0
     end
-    object edPositionY: TJvSpinEdit
+    object edPositionY: TSpinEdit
       Left = 68
       Top = 45
       Width = 167
@@ -179,7 +179,7 @@ object FrmModelJoints: TFrmModelJoints
       Anchors = [akLeft, akTop, akRight]
       TabOrder = 1
     end
-    object edPositionZ: TJvSpinEdit
+    object edPositionZ: TSpinEdit
       Left = 68
       Top = 72
       Width = 167

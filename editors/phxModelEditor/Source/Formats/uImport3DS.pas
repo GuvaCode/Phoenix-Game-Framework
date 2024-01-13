@@ -3,7 +3,7 @@ unit uImport3DS;
 interface
 
 uses
-  Windows, Messages, SysUtils, Classes,
+  Messages, SysUtils, Classes,
 
   uImport,
 

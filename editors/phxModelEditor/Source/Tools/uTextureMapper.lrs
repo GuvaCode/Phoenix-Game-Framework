@@ -1,0 +1,11 @@
+{ This is an automatically generated lazarus resource file }
+
+LazarusResources.Add('TFrmTextureMapper','FORMDATA',[
+  'TPF0'#17'TFrmTextureMapper'#16'FrmTextureMapper'#4'Left'#2#0#6'Height'#3'h'#2
+  +#3'Top'#2#0#5'Width'#3#161#2#7'Caption'#6#16'FrmTextureMapper'#12'ClientHeig'
+  +'ht'#3'h'#2#11'ClientWidth'#3#161#2#5'Color'#7#9'clBtnFace'#10'Font.Color'#7
+  +#12'clWindowText'#11'Font.Height'#2#245#9'Font.Name'#6#6'Tahoma'#8'Position'
+  +#7#16'poMainFormCenter'#10'LCLVersion'#6#7'3.0.0.3'#0#9'TPaintBox'#9'PaintBo'
+  +'x1'#4'Left'#2' '#6'Height'#3'1'#2#3'Top'#2#8#5'Width'#3'I'#2#7'OnPaint'#7#14
+  +'PaintBox1Paint'#0#0#0
+]);

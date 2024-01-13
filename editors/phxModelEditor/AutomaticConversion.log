@@ -1,0 +1,7 @@
+phxModelEditor.lpi Note: К параметрам пользователя добавлены определения -dBorland -dVer150 -dDelphi7 -dCompiler6_Up -dPUREPASCAL
+ Progress: Найдены все файлы модулей
+phxModelEditor.lpr(1,24) Note: После имени модуля добавлена директива MODE Delphi.
+ : 
+ : *** Преобразование файлов модулей, принадлежащих проекту/пакету ***
+uMain.pas Note: Кодировка изменена с ISO-8859-1 на UTF-8
+ Fatal: Преобразование прервано.

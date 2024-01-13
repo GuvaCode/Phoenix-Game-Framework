@@ -3,8 +3,8 @@ unit uDialogRotate;
 interface
 
 uses
-  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, StdCtrls, Mask, JvExMask, JvSpin,
+  Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, Spin,
 
   phxTypes;
 
@@ -14,11 +14,11 @@ type
     btnOk: TButton;
     GroupBox1: TGroupBox;
     Label1: TLabel;
-    edRotationX: TJvSpinEdit;
+    edRotationX: TSpinEdit;
     Label2: TLabel;
-    edRotationY: TJvSpinEdit;
+    edRotationY: TSpinEdit;
     Label3: TLabel;
-    edRotationZ: TJvSpinEdit;
+    edRotationZ: TSpinEdit;
     Label4: TLabel;
     Label5: TLabel;
     Label6: TLabel;

@@ -58,7 +58,7 @@ object FrmFontProperties: TFrmFontProperties
       TabOrder = 0
       OnChange = edFontChange
     end
-    object edSize: TJvSpinEdit
+    object edSize: TSpinEdit
       Left = 64
       Top = 72
       Width = 122
@@ -130,7 +130,7 @@ object FrmFontProperties: TFrmFontProperties
       Height = 13
       Caption = '&Offset:'
     end
-    object edHeight: TJvSpinEdit
+    object edHeight: TSpinEdit
       Left = 64
       Top = 18
       Width = 121
@@ -139,7 +139,7 @@ object FrmFontProperties: TFrmFontProperties
       TabOrder = 0
       OnChange = edHeightChange
     end
-    object edAscent: TJvSpinEdit
+    object edAscent: TSpinEdit
       Left = 64
       Top = 72
       Width = 121
@@ -148,7 +148,7 @@ object FrmFontProperties: TFrmFontProperties
       TabOrder = 1
       OnChange = edAscentChange
     end
-    object edDescent: TJvSpinEdit
+    object edDescent: TSpinEdit
       Left = 64
       Top = 99
       Width = 121
@@ -156,7 +156,7 @@ object FrmFontProperties: TFrmFontProperties
       TabOrder = 2
       OnChange = edDescentChange
     end
-    object edOffset: TJvSpinEdit
+    object edOffset: TSpinEdit
       Left = 64
       Top = 45
       Width = 121
@@ -1642,7 +1642,7 @@ object FrmFontProperties: TFrmFontProperties
         'Word'
         'Char')
     end
-    object edWrapChars: TJvComboEdit
+    object edWrapChars: TComboEdit
       Left = 75
       Top = 49
       Width = 218
@@ -1655,7 +1655,7 @@ object FrmFontProperties: TFrmFontProperties
       OnButtonClick = edWrapCharsBrowse
       OnChange = edWrapCharsChange
     end
-    object edWrapStart: TJvComboEdit
+    object edWrapStart: TComboEdit
       Left = 75
       Top = 76
       Width = 218
@@ -1668,7 +1668,7 @@ object FrmFontProperties: TFrmFontProperties
       OnButtonClick = edWrapStartBrowse
       OnChange = edWrapStartChange
     end
-    object edWrapEnd: TJvComboEdit
+    object edWrapEnd: TComboEdit
       Left = 75
       Top = 103
       Width = 218

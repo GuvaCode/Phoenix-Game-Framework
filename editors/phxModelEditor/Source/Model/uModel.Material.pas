@@ -3,13 +3,13 @@ unit uModel.Material;
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes,
-  Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ComCtrls, Vcl.ExtCtrls,
+  Messages, SysUtils, Variants, Classes,
+  Graphics, Controls, Forms, Dialogs, StdCtrls, ComCtrls, ExtCtrls,
 
   uActions,
 
   phxTypes,
-  phxModel, Vcl.ImgList, Vcl.ActnList, Vcl.ToolWin;
+  phxModel, ImgList, ActnList, ToolWin;
 
 type
 

@@ -3,8 +3,8 @@ unit uFont.CharacterDetail;
 interface
 
 uses
-  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms, 
-  Dialogs, StdCtrls, Spin, ExtCtrls, Mask, JvExMask, JvSpin,
+  Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms, 
+  Dialogs, StdCtrls, Spin, ExtCtrls, Mask, 
 
   phxGraphics,
   phxGraphicsEx,
@@ -23,19 +23,19 @@ type
     Label5: TLabel;
     GroupBox3: TGroupBox;
     Label6: TLabel;
-    edXOffset: TJvSpinEdit;
-    edYOffset: TJvSpinEdit;
+    edXOffset: TSpinEdit;
+    edYOffset: TSpinEdit;
     Label7: TLabel;
     Label8: TLabel;
-    edXAdvance: TJvSpinEdit;
-    edWidth: TJvSpinEdit;
-    edY: TJvSpinEdit;
-    edX: TJvSpinEdit;
-    edHeight: TJvSpinEdit;
+    edXAdvance: TSpinEdit;
+    edWidth: TSpinEdit;
+    edY: TSpinEdit;
+    edX: TSpinEdit;
+    edHeight: TSpinEdit;
     GroupBox4: TGroupBox;
     Label10: TLabel;
     Label11: TLabel;
-    JvSpinEdit1: TJvSpinEdit;
+    JvSpinEdit1: TSpinEdit;
     Edit1: TEdit;
     edFlagWrap: TCheckBox;
     edFlagNotStart: TCheckBox;
