@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CONFIG>
-  <Package Version="4">
+  <Package Version="5">
     <Name Value="pgf"/>
     <Type Value="RunAndDesignTime"/>
     <CompilerOptions>
       <Version Value="11"/>
       <SearchPaths>
-        <IncludeFiles Value="../source;../source/providers/graphics;../source/providers/audio"/>
         <OtherUnitFiles Value="../source;../source/headers;../source/headers/vampire;../source/headers/vampire/ZLib;../source/headers/vampire/JpegLib;../source/headers/Box2d;../source/providers/graphics;../source/providers/audio"/>
         <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
       </SearchPaths>
@@ -26,6 +25,7 @@
         <UnitName Value="pgf_descriprors"/>
       </Item3>
     </Files>
+    <CompatibilityMode Value="True"/>
     <i18n>
       <EnableI18N Value="True"/>
       <OutDir Value="lang"/>
@@ -42,6 +42,7 @@
       </Item3>
     </RequiredPkgs>
     <UsageOptions>
+      <LibraryPath Value="../libs/$(TargetCPU)-$(TargetOS)"/>
       <UnitPath Value="$(PkgOutDir)"/>
     </UsageOptions>
     <PublishOptions>

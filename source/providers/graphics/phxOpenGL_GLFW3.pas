@@ -2,10 +2,10 @@ unit phxOpenGL_GLFW3;
 
 interface
 
-{$I phxConfig.inc}
+{$I ../source/phxConfig.inc}
 
 uses
-  SysUtils, Classes, dglOpenGL, GLFW3, phxLogger, phxTypes, phxClasses, phxEvents, phxDevice, phxGraphics, phxOpenGL;
+  GLFW3, SysUtils, Classes, dglOpenGL, phxLogger, phxTypes, phxClasses, phxEvents, phxDevice, phxGraphics, phxOpenGL;
 
 const
   ProviderName = 'OpenGL.GLFW3';

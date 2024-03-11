@@ -22,7 +22,7 @@ unit phxAudio_Bass;
 
 interface
 
-{$I phxConfig.inc}
+{$I ../source/phxConfig.inc}
 
 uses
   SysUtils, Classes,

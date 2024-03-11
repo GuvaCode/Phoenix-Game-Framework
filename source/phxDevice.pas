@@ -27,7 +27,7 @@ uses
   SysUtils, Classes,
 
   {$IFDEF WIN32}
-  Windows, // For loadlibrary
+  Windows,
   {$ENDIF}
 
   phxLogger,
@@ -52,7 +52,7 @@ ViewportMinDepth = -0.1;
 ViewportMaxDepth = 1000.0;
 
 type
-IPHXRenderer   = interface;
+//IPHXRenderer   = interface;
 IPHXDevice = interface;
 TPHXProvider = class;
 TPHXDevice   = class;
@@ -218,7 +218,6 @@ TPHXWindowFlags = set of (
   // Show the cursor
   wfCursor
 );
-
 
 // Parameters that are sent to the initialize function of the device
 //------------------------------------------------------------------------------

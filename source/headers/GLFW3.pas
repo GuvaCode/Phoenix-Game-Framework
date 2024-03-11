@@ -1,29 +1,53 @@
 unit GLFW3;
 
 {$mode ObjFPC}
+{.$DEFINE VK_VERSION_1_0}
+{$DEFINE GLFW3_LASTEST}
 
 interface
-
+uses CTypes{$IFDEF VK_VERSION_1_0}, Vulkan{$ENDIF};
+ {$DEFINE GLFW3_STATIC}
 const
 {$IFDEF WINDOWS}
-  GLFW3_LIB = 'glfw3.dll';
-  {$ELSE}
-    {$IFDEF DARWIN}
-  GLFW3_LIB = 'libglfw3.dylib';
-    {$ELSE}
-  GLFW3_LIB = 'libglfw.so.3';
-    {$ENDIF}
+  cDllName = 'glfw3.dll';
 {$ENDIF}
-  _PU = '';
+{$IFDEF DARWIN}
+  cDllName = 'libglfw3.dylib';
+  {$ENDIF}
+{$IFDEF LINUX}
+  {$IFDEF GLFW3_STATIC}
+  {$LINKLIB libglfw}
+  {$ELSE}
+  cDllName = 'libglfw.so.3';
+  {$ENDIF}
+{$ENDIF}
+
   GLFW_VERSION_MAJOR = 3;
-  GLFW_VERSION_MINOR = 2;
-  GLFW_VERSION_REVISION = 1;
+  {$IFDEF GLFW3_LASTEST}
+  GLFW_VERSION_MINOR = 3;
+  GLFW_VERSION_REVISION = 7;
+  {$ELSE}
+  GLFW_VERSION_MINOR = 4;
+  GLFW_VERSION_REVISION = 0;
+  {$ENDIF}
   GLFW_TRUE = 1;
   GLFW_FALSE = 0;
   GLFW_RELEASE = 0;
   GLFW_PRESS = 1;
   GLFW_REPEAT = 2;
+
+  GLFW_HAT_CENTERED = 0;
+  GLFW_HAT_UP = 1;
+  GLFW_HAT_RIGHT = 2;
+  GLFW_HAT_DOWN = 4;
+  GLFW_HAT_LEFT = 8;
+  GLFW_HAT_RIGHT_UP = (GLFW_HAT_RIGHT or GLFW_HAT_UP);
+  GLFW_HAT_RIGHT_DOWN = (GLFW_HAT_RIGHT or GLFW_HAT_DOWN);
+  GLFW_HAT_LEFT_UP = (GLFW_HAT_LEFT or GLFW_HAT_UP);
+  GLFW_HAT_LEFT_DOWN = (GLFW_HAT_LEFT or GLFW_HAT_DOWN);
+
   GLFW_KEY_UNKNOWN = -1;
+
   GLFW_KEY_SPACE = 32;
   GLFW_KEY_APOSTROPHE = 39;
   GLFW_KEY_COMMA = 44;
@@ -74,6 +98,7 @@ const
   GLFW_KEY_GRAVE_ACCENT = 96;
   GLFW_KEY_WORLD_1 = 161;
   GLFW_KEY_WORLD_2 = 162;
+
   GLFW_KEY_ESCAPE = 256;
   GLFW_KEY_ENTER = 257;
   GLFW_KEY_TAB = 258;
@@ -130,7 +155,7 @@ const
   GLFW_KEY_KP_9 = 329;
   GLFW_KEY_KP_DECIMAL = 330;
   GLFW_KEY_KP_DIVIDE = 331;
-  GLFW_KEY_KP_MULTIPLY = 332;
+  GLFW_KEY_KP_MULTIPLY= 332;
   GLFW_KEY_KP_SUBTRACT = 333;
   GLFW_KEY_KP_ADD = 334;
   GLFW_KEY_KP_ENTER = 335;
@@ -144,11 +169,15 @@ const
   GLFW_KEY_RIGHT_ALT = 346;
   GLFW_KEY_RIGHT_SUPER = 347;
   GLFW_KEY_MENU = 348;
+
   GLFW_KEY_LAST = GLFW_KEY_MENU;
+  
   GLFW_MOD_SHIFT = $0001;
   GLFW_MOD_CONTROL = $0002;
   GLFW_MOD_ALT = $0004;
-  GLFW_MOD_SUPER = $0008;
+  GLFW_MOD_CAPS_LOCK = $0010;
+  GLFW_MOD_NUM_LOCK = $0020;
+
   GLFW_MOUSE_BUTTON_1 = 0;
   GLFW_MOUSE_BUTTON_2 = 1;
   GLFW_MOUSE_BUTTON_3 = 2;
@@ -161,6 +190,7 @@ const
   GLFW_MOUSE_BUTTON_LEFT = GLFW_MOUSE_BUTTON_1;
   GLFW_MOUSE_BUTTON_RIGHT = GLFW_MOUSE_BUTTON_2;
   GLFW_MOUSE_BUTTON_MIDDLE = GLFW_MOUSE_BUTTON_3;
+
   GLFW_JOYSTICK_1 = 0;
   GLFW_JOYSTICK_2 = 1;
   GLFW_JOYSTICK_3 = 2;
@@ -178,6 +208,38 @@ const
   GLFW_JOYSTICK_15 = 14;
   GLFW_JOYSTICK_16 = 15;
   GLFW_JOYSTICK_LAST = GLFW_JOYSTICK_16;
+
+  GLFW_GAMEPAD_BUTTON_A = 0;
+  GLFW_GAMEPAD_BUTTON_B = 1;
+  GLFW_GAMEPAD_BUTTON_X = 2;
+  GLFW_GAMEPAD_BUTTON_Y = 3;
+  GLFW_GAMEPAD_BUTTON_LEFT_BUMPER = 4;
+  GLFW_GAMEPAD_BUTTON_RIGHT_BUMPER = 5;
+  GLFW_GAMEPAD_BUTTON_BACK = 6;
+  GLFW_GAMEPAD_BUTTON_START = 7;
+  GLFW_GAMEPAD_BUTTON_GUIDE = 8;
+  GLFW_GAMEPAD_BUTTON_LEFT_THUMB = 9;
+  GLFW_GAMEPAD_BUTTON_RIGHT_THUMB = 10;
+  GLFW_GAMEPAD_BUTTON_DPAD_UP = 11;
+  GLFW_GAMEPAD_BUTTON_DPAD_RIGHT = 12;
+  GLFW_GAMEPAD_BUTTON_DPAD_DOWN = 13;
+  GLFW_GAMEPAD_BUTTON_DPAD_LEFT = 14;
+  GLFW_GAMEPAD_BUTTON_LAST = GLFW_GAMEPAD_BUTTON_DPAD_LEFT;
+
+  GLFW_GAMEPAD_BUTTON_CROSS = GLFW_GAMEPAD_BUTTON_A;
+  GLFW_GAMEPAD_BUTTON_CIRCLE = GLFW_GAMEPAD_BUTTON_B;
+  GLFW_GAMEPAD_BUTTON_SQUARE = GLFW_GAMEPAD_BUTTON_X;
+  GLFW_GAMEPAD_BUTTON_TRIANGLE = GLFW_GAMEPAD_BUTTON_Y;
+
+  GLFW_GAMEPAD_AXIS_LEFT_X = 0;
+  GLFW_GAMEPAD_AXIS_LEFT_Y = 1;
+  GLFW_GAMEPAD_AXIS_RIGHT_X = 2;
+  GLFW_GAMEPAD_AXIS_RIGHT_Y = 3;
+  GLFW_GAMEPAD_AXIS_LEFT_TRIGGER = 4;
+  GLFW_GAMEPAD_AXIS_RIGHT_TRIGGER = 5;
+  GLFW_GAMEPAD_AXIS_LAST = GLFW_GAMEPAD_AXIS_RIGHT_TRIGGER;
+
+  GLFW_NO_ERROR = 0;
   GLFW_NOT_INITIALIZED = $00010001;
   GLFW_NO_CURRENT_CONTEXT = $00010002;
   GLFW_INVALID_ENUM = $00010003;
@@ -188,14 +250,27 @@ const
   GLFW_PLATFORM_ERROR = $00010008;
   GLFW_FORMAT_UNAVAILABLE = $00010009;
   GLFW_NO_WINDOW_CONTEXT = $0001000A;
+  GLFW_CURSOR_UNAVAILABLE = $0001000B;
+  GLFW_FEATURE_UNAVAILABLE = $0001000C;
+  GLFW_FEATURE_UNIMPLEMENTED = $0001000D;
+  GLFW_PLATFORM_UNAVAILABLE = $0001000E;
   GLFW_FOCUSED = $00020001;
+
   GLFW_ICONIFIED = $00020002;
   GLFW_RESIZABLE = $00020003;
   GLFW_VISIBLE = $00020004;
   GLFW_DECORATED = $00020005;
+
   GLFW_AUTO_ICONIFY = $00020006;
   GLFW_FLOATING = $00020007;
   GLFW_MAXIMIZED = $00020008;
+  GLFW_CENTER_CURSOR = $00020009;
+  GLFW_TRANSPARENT_FRAMEBUFFER  = $0002000A;
+  GLFW_HOVERED = $0002000B;
+  GLFW_FOCUS_ON_SHOW = $0002000C;
+  GLFW_MOUSE_PASSTHROUGH = $0002000D;
+  GLFW_POSITION_X = $0002000E;
+  GLFW_POSITION_Y = $0002000F;
   GLFW_RED_BITS = $00021001;
   GLFW_GREEN_BITS = $00021002;
   GLFW_BLUE_BITS = $00021003;
@@ -218,57 +293,127 @@ const
   GLFW_CONTEXT_REVISION = $00022004;
   GLFW_CONTEXT_ROBUSTNESS = $00022005;
   GLFW_OPENGL_FORWARD_COMPAT = $00022006;
-  GLFW_OPENGL_DEBUG_CONTEXT = $00022007;
+  GLFW_CONTEXT_DEBUG = $00022007;
+
+  GLFW_OPENGL_DEBUG_CONTEXT = GLFW_CONTEXT_DEBUG;
   GLFW_OPENGL_PROFILE = $00022008;
   GLFW_CONTEXT_RELEASE_BEHAVIOR = $00022009;
   GLFW_CONTEXT_NO_ERROR = $0002200A;
   GLFW_CONTEXT_CREATION_API = $0002200B;
+  GLFW_SCALE_TO_MONITOR = $0002200C;
+  GLFW_SCALE_FRAMEBUFFER = $0002200D;
+  GLFW_COCOA_RETINA_FRAMEBUFFER = $00023001;
+  GLFW_COCOA_FRAME_NAME = $00023002;
+  GLFW_COCOA_GRAPHICS_SWITCHING  = $00023003;
+  GLFW_X11_CLASS_NAME = $00024001;
+  GLFW_X11_INSTANCE_NAME = $00024002;
+  GLFW_WIN32_KEYBOARD_MENU = $00025001;
+  GLFW_WIN32_SHOWDEFAULT = $00025002;
+  GLFW_WAYLAND_APP_ID = $00026001;
   GLFW_NO_API = 0;
   GLFW_OPENGL_API = $00030001;
   GLFW_OPENGL_ES_API = $00030002;
+
   GLFW_NO_ROBUSTNESS = 0;
-  GLFW_NO_RESET_NOTIFICATION = $00031001;
-  GLFW_LOSE_CONTEXT_ON_RESET = $00031002;
+  GLFW_NO_RESET_NOTIFICATION  = $00031001;
+  GLFW_LOSE_CONTEXT_ON_RESET  = $00031002;
+
   GLFW_OPENGL_ANY_PROFILE = 0;
   GLFW_OPENGL_CORE_PROFILE = $00032001;
   GLFW_OPENGL_COMPAT_PROFILE = $00032002;
+
   GLFW_CURSOR = $00033001;
   GLFW_STICKY_KEYS = $00033002;
   GLFW_STICKY_MOUSE_BUTTONS = $00033003;
+  GLFW_LOCK_KEY_MODS = $00033004;
+  GLFW_RAW_MOUSE_MOTION = $00033005;
+
   GLFW_CURSOR_NORMAL = $00034001;
   GLFW_CURSOR_HIDDEN = $00034002;
   GLFW_CURSOR_DISABLED = $00034003;
+  GLFW_CURSOR_CAPTURED = $00034004;
+
   GLFW_ANY_RELEASE_BEHAVIOR = 0;
   GLFW_RELEASE_BEHAVIOR_FLUSH = $00035001;
   GLFW_RELEASE_BEHAVIOR_NONE = $00035002;
+
   GLFW_NATIVE_CONTEXT_API = $00036001;
   GLFW_EGL_CONTEXT_API = $00036002;
+  GLFW_OSMESA_CONTEXT_API = $00036003;
+
+  GLFW_ANGLE_PLATFORM_TYPE_NONE = $00037001;
+  GLFW_ANGLE_PLATFORM_TYPE_OPENGL = $00037002;
+  GLFW_ANGLE_PLATFORM_TYPE_OPENGLES = $00037003;
+  GLFW_ANGLE_PLATFORM_TYPE_D3D9 = $00037004;
+  GLFW_ANGLE_PLATFORM_TYPE_D3D11 = $00037005;
+  GLFW_ANGLE_PLATFORM_TYPE_VULKAN = $00037007;
+  GLFW_ANGLE_PLATFORM_TYPE_METAL = $00037008;
+
+  GLFW_WAYLAND_PREFER_LIBDECOR = $00038001;
+  GLFW_WAYLAND_DISABLE_LIBDECOR = $00038002;
+
+  GLFW_ANY_POSITION = $80000000;
+
   GLFW_ARROW_CURSOR = $00036001;
   GLFW_IBEAM_CURSOR = $00036002;
   GLFW_CROSSHAIR_CURSOR = $00036003;
-  GLFW_HAND_CURSOR = $00036004;
-  GLFW_HRESIZE_CURSOR = $00036005;
-  GLFW_VRESIZE_CURSOR = $00036006;
+  GLFW_POINTING_HAND_CURSOR = $00036004;
+  GLFW_RESIZE_EW_CURSOR = $00036005;
+  GLFW_RESIZE_NS_CURSOR = $00036006;
+  GLFW_RESIZE_NWSE_CURSOR = $00036007;
+  GLFW_RESIZE_NESW_CURSOR = $00036008;
+  GLFW_RESIZE_ALL_CURSOR = $00036009;
+  GLFW_NOT_ALLOWED_CURSOR = $0003600A;
+  GLFW_HRESIZE_CURSOR = GLFW_RESIZE_EW_CURSOR;
+  GLFW_VRESIZE_CURSOR = GLFW_RESIZE_NS_CURSOR;
+  GLFW_HAND_CURSOR = GLFW_POINTING_HAND_CURSOR;
   GLFW_CONNECTED = $00040001;
   GLFW_DISCONNECTED = $00040002;
+  GLFW_JOYSTICK_HAT_BUTTONS = $00050001;
+  GLFW_ANGLE_PLATFORM_TYPE = $00050002;
+  GLFW_PLATFORM = $00050003;
+  GLFW_COCOA_CHDIR_RESOURCES = $00051001;
+  GLFW_COCOA_MENUBAR = $00051002;
+  GLFW_X11_XCB_VULKAN_SURFACE = $00052001;
+  GLFW_WAYLAND_LIBDECOR = $00053001;
+  GLFW_ANY_PLATFORM = $00060000;
+  GLFW_PLATFORM_WIN32 = $00060001;
+  GLFW_PLATFORM_COCOA = $00060002;
+  GLFW_PLATFORM_WAYLAND = $00060003;
+  GLFW_PLATFORM_X11 = $00060004;
+  GLFW_PLATFORM_NULL = $00060005;
+
   GLFW_DONT_CARE = -1;
 
 type
   TGLFWglproc = procedure(); cdecl;
+  TGLFWvkproc = procedure(); cdecl;
+
   PGLFWmonitor = Pointer;
   PPGLFWmonitor = ^PGLFWmonitor;
+
   PGLFWwindow = Pointer;
   PPGLFWwindow = ^PGLFWwindow;
+
   PGLFWcursor = Pointer;
   PPGLFWcursor = ^PGLFWcursor;
-  TGLFWerrorfun = procedure(error: Integer; const description: PAnsiChar); cdecl;
+
+ {$IFDEF GLFW3_LASTEST}
+  TGLFWallocatefun = procedure(size: cSize_t; user: Pointer); cdecl;
+  TGLFWreallocatefun = procedure (block: Pointer; size: cSize_t; user: Pointer); cdecl;
+  TGLFWdeallocatefun = procedure(block: Pointer; size: cSize_t; user: Pointer); cdecl;
+ {$ENDIF}
+
+  TGLFWerrorfun = procedure(error_code: Integer; const description: PChar); cdecl;
   TGLFWwindowposfun = procedure(window: PGLFWwindow; xpos, ypos: Integer); cdecl;
-  TGLFWwindowsizefun = procedure(window: PGLFWwindow; Width, Height: Integer); cdecl;
+  TGLFWwindowsizefun = procedure(window: PGLFWwindow; width, height: Integer); cdecl;
   TGLFWwindowclosefun = procedure(window: PGLFWwindow); cdecl;
   TGLFWwindowrefreshfun = procedure(window: PGLFWwindow); cdecl;
   TGLFWwindowfocusfun = procedure(window: PGLFWwindow; focused: Integer); cdecl;
   TGLFWwindowiconifyfun = procedure(window: PGLFWwindow; iconified: Integer); cdecl;
-  TGLFWframebuffersizefun = procedure(window: PGLFWwindow; Width, Height: Integer); cdecl;
+  TGLFWwindowmaximizefun = procedure(window: PGLFWwindow; maximized: Integer); cdecl;
+  TGLFWframebuffersizefun = procedure(window: PGLFWwindow; width, height: Integer); cdecl;
+  TGLFWwindowcontentscalefun = procedure(window: PGLFWwindow; xscale, yscale: single); cdecl;
   TGLFWmousebuttonfun = procedure(window: PGLFWwindow; button, action, mods: Integer); cdecl;
   TGLFWcursorposfun = procedure(window: PGLFWwindow; xpos, ypos: Double); cdecl;
   TGLFWcursorenterfun = procedure(window: PGLFWwindow; entered: Integer); cdecl;
@@ -276,13 +421,13 @@ type
   TGLFWkeyfun = procedure(window: PGLFWwindow; key, scancode, action, mods: Integer); cdecl;
   TGLFWcharfun = procedure(window: PGLFWwindow; codepoint: Cardinal); cdecl;
   TGLFWcharmodsfun = procedure(window: PGLFWwindow; codepoint: Cardinal; mods: Integer); cdecl;
-  TGLFWdropfun = procedure(window: PGLFWwindow; Count: Integer; const paths: PPAnsiChar); cdecl;
+  TGLFWdropfun = procedure(window: PGLFWwindow; path_count: Integer; const paths: PPChar); cdecl;
   TGLFWmonitorfun = procedure(monitor: PGLFWmonitor; event: Integer); cdecl;
   TGLFWjoystickfun = procedure(joy, event: Integer); cdecl;
 
   TGLFWvidmode = record
-    Width: Integer;
-    Height: Integer;
+    width: Integer;
+    height: Integer;
     redBits: Integer;
     greenBits: Integer;
     blueBits: Integer;
@@ -301,109 +446,164 @@ type
   PPGLFWgammaramp = ^PGLFWgammaramp;
 
   TGLFWimage = record
-    Width: Integer;
-    Height: Integer;
+    width: Integer;
+    height: Integer;
     pixels: PByte;
   end;
   PGLFWimage = ^TGLFWimage;
   PPGLFWimage = ^PGLFWimage;
 
-function glfwInit(): Integer; cdecl external GLFW3_LIB Name _PU + 'glfwInit';
-procedure glfwTerminate(); cdecl external GLFW3_LIB Name _PU + 'glfwTerminate';
-procedure glfwGetVersion(major, minor, rev: PInteger); cdecl external GLFW3_LIB Name _PU + 'glfwGetVersion';
-function glfwGetVersionString(): PAnsiChar; cdecl external GLFW3_LIB Name _PU + 'glfwGetVersionString';
-function glfwSetErrorCallback(cbfun: TGLFWerrorfun): TGLFWerrorfun; cdecl external GLFW3_LIB Name _PU + 'glfwSetErrorCallback';
-function glfwGetMonitors(out Count: Integer): PPGLFWmonitor; cdecl external GLFW3_LIB Name _PU + 'glfwGetMonitors';
-function glfwGetPrimaryMonitor(): PGLFWmonitor; cdecl external GLFW3_LIB Name _PU + 'glfwGetPrimaryMonitor';
-procedure glfwGetMonitorPos(monitor: PGLFWmonitor; xpos, ypos: PInteger); cdecl external GLFW3_LIB Name _PU + 'glfwGetMonitorPos';
-procedure glfwGetMonitorPhysicalSize(monitor: PGLFWmonitor; widthMM, heightMM: PInteger); cdecl external GLFW3_LIB Name _PU + 'glfwGetMonitorPhysicalSize';
-function glfwGetMonitorName(monitor: PGLFWmonitor): PAnsiChar; cdecl external GLFW3_LIB Name _PU + 'glfwGetMonitorName';
-function glfwSetMonitorCallback(cbfun: TGLFWmonitorfun): TGLFWmonitorfun; cdecl external GLFW3_LIB Name _PU + 'glfwSetMonitorCallback';
-function glfwGetVideoModes(monitor: PGLFWmonitor; out Count: Integer): PGLFWvidmode; cdecl external GLFW3_LIB Name _PU + 'glfwGetVideoModes';
-function glfwGetVideoMode(monitor: PGLFWmonitor): PGLFWvidmode; cdecl external GLFW3_LIB Name _PU + 'glfwGetVideoMode';
-procedure glfwSetGamma(monitor: PGLFWmonitor; gamma: Single); cdecl external GLFW3_LIB Name _PU + 'glfwSetGamma';
-function glfwGetGammaRamp(monitor: PGLFWmonitor): PGLFWgammaramp; cdecl external GLFW3_LIB Name _PU + 'glfwGetGammaRamp';
-procedure glfwSetGammaRamp(monitor: PGLFWmonitor; const ramp: PGLFWgammaramp); cdecl external GLFW3_LIB Name _PU + 'glfwSetGammaRamp';
-procedure glfwDefaultWindowHints(); cdecl external GLFW3_LIB Name _PU + 'glfwDefaultWindowHints';
-procedure glfwWindowHint(hint: Integer; Value: Integer); cdecl external GLFW3_LIB Name _PU + 'glfwWindowHint';
-function glfwCreateWindow(Width: Integer; Height: Integer; const title: PAnsiChar; monitor: PGLFWmonitor; share: PGLFWwindow): PGLFWwindow; cdecl external GLFW3_LIB Name _PU + 'glfwCreateWindow';
-procedure glfwDestroyWindow(window: PGLFWwindow); cdecl external GLFW3_LIB Name _PU + 'glfwDestroyWindow';
-function glfwWindowShouldClose(window: PGLFWwindow): Integer; cdecl external GLFW3_LIB Name _PU + 'glfwWindowShouldClose';
-procedure glfwSetWindowShouldClose(window: PGLFWwindow; Value: Integer); cdecl external GLFW3_LIB Name _PU + 'glfwSetWindowShouldClose';
-procedure glfwSetWindowTitle(window: PGLFWwindow; const title: PAnsiChar); cdecl external GLFW3_LIB Name _PU + 'glfwSetWindowTitle';
-procedure glfwSetWindowIcon(window: PGLFWwindow; Count: Integer; const images: PGLFWimage); cdecl external GLFW3_LIB Name _PU + 'glfwSetWindowIcon';
-procedure glfwGetWindowPos(window: PGLFWwindow; xpos, ypos: PInteger); cdecl external GLFW3_LIB Name _PU + 'glfwGetWindowPos';
-procedure glfwSetWindowPos(window: PGLFWwindow; xpos, ypos: Integer); cdecl external GLFW3_LIB Name _PU + 'glfwSetWindowPos';
-procedure glfwGetWindowSize(window: PGLFWwindow; Width, Height: PInteger); cdecl external GLFW3_LIB Name _PU + 'glfwGetWindowSize';
-procedure glfwSetWindowSizeLimits(window: PGLFWwindow; minwidth, minheight, maxwidth, maxheight: Integer); cdecl external GLFW3_LIB Name _PU + 'glfwSetWindowSizeLimits';
-procedure glfwSetWindowAspectRatio(window: PGLFWwindow; numer, denom: Integer); cdecl external GLFW3_LIB Name _PU + 'glfwSetWindowAspectRatio';
-procedure glfwSetWindowSize(window: PGLFWwindow; Width, Height: Integer); cdecl external GLFW3_LIB Name _PU + 'glfwSetWindowSize';
-procedure glfwGetFramebufferSize(window: PGLFWwindow; Width, Height: PInteger); cdecl external GLFW3_LIB Name _PU + 'glfwGetFramebufferSize';
-procedure glfwGetWindowFrameSize(window: PGLFWwindow; left, top, right, bottom: PInteger); cdecl external GLFW3_LIB Name _PU + 'glfwGetWindowFrameSize';
-procedure glfwIconifyWindow(window: PGLFWwindow); cdecl external GLFW3_LIB Name _PU + 'glfwIconifyWindow';
-procedure glfwRestoreWindow(window: PGLFWwindow); cdecl external GLFW3_LIB Name _PU + 'glfwRestoreWindow';
-procedure glfwMaximizeWindow(window: PGLFWwindow); cdecl external GLFW3_LIB Name _PU + 'glfwMaximizeWindow';
-procedure glfwShowWindow(window: PGLFWwindow); cdecl external GLFW3_LIB Name _PU + 'glfwShowWindow';
-procedure glfwHideWindow(window: PGLFWwindow); cdecl external GLFW3_LIB Name _PU + 'glfwHideWindow';
-procedure glfwFocusWindow(window: PGLFWwindow); cdecl external GLFW3_LIB Name _PU + 'glfwFocusWindow';
-function glfwGetWindowMonitor(window: PGLFWwindow): PGLFWmonitor; cdecl external GLFW3_LIB Name _PU + 'glfwGetWindowMonitor';
-procedure glfwSetWindowMonitor(window: PGLFWwindow; monitor: PGLFWmonitor; xpos, ypos, Width, Height, refreshRate: Integer); cdecl external GLFW3_LIB Name _PU + 'glfwSetWindowMonitor';
-function glfwGetWindowAttrib(window: PGLFWwindow; attrib: Integer): Integer; cdecl external GLFW3_LIB Name _PU + 'glfwGetWindowAttrib';
-procedure glfwSetWindowUserPointer(window: PGLFWwindow; pointer: Pointer); cdecl external GLFW3_LIB Name _PU + 'glfwSetWindowUserPointer';
-function glfwGetWindowUserPointer(window: PGLFWwindow): Pointer; cdecl external GLFW3_LIB Name _PU + 'glfwGetWindowUserPointer';
-function glfwSetWindowPosCallback(window: PGLFWwindow; cbfun: TGLFWwindowposfun): TGLFWwindowposfun; cdecl external GLFW3_LIB Name _PU + 'glfwSetWindowPosCallback';
-function glfwSetWindowSizeCallback(window: PGLFWwindow; cbfun: TGLFWwindowsizefun): TGLFWwindowsizefun; cdecl external GLFW3_LIB Name _PU + 'glfwSetWindowSizeCallback';
-function glfwSetWindowCloseCallback(window: PGLFWwindow; cbfun: TGLFWwindowclosefun): TGLFWwindowclosefun; cdecl external GLFW3_LIB Name _PU + 'glfwSetWindowCloseCallback';
-function glfwSetWindowRefreshCallback(window: PGLFWwindow; cbfun: TGLFWwindowrefreshfun): TGLFWwindowrefreshfun; cdecl external GLFW3_LIB Name _PU + 'glfwSetWindowRefreshCallback';
-function glfwSetWindowFocusCallback(window: PGLFWwindow; cbfun: TGLFWwindowfocusfun): TGLFWwindowfocusfun; cdecl external GLFW3_LIB Name _PU + 'glfwSetWindowFocusCallback';
-function glfwSetWindowIconifyCallback(window: PGLFWwindow; cbfun: TGLFWwindowiconifyfun): TGLFWwindowiconifyfun; cdecl external GLFW3_LIB Name _PU + 'glfwSetWindowIconifyCallback';
-function glfwSetFramebufferSizeCallback(window: PGLFWwindow; cbfun: TGLFWframebuffersizefun): TGLFWframebuffersizefun; cdecl external GLFW3_LIB Name _PU + 'glfwSetFramebufferSizeCallback';
-procedure glfwPollEvents(); cdecl external GLFW3_LIB Name _PU + 'glfwPollEvents';
-procedure glfwWaitEvents(); cdecl external GLFW3_LIB Name _PU + 'glfwWaitEvents';
-procedure glfwWaitEventsTimeout(timeout: Double); cdecl external GLFW3_LIB Name _PU + 'glfwWaitEventsTimeout';
-procedure glfwPostEmptyEvent(); cdecl external GLFW3_LIB Name _PU + 'glfwPostEmptyEvent';
-function glfwGetInputMode(window: PGLFWwindow; mode: Integer): Integer; cdecl external GLFW3_LIB Name _PU + 'glfwGetInputMode';
-procedure glfwSetInputMode(window: PGLFWwindow; mode, Value: Integer); cdecl external GLFW3_LIB Name _PU + 'glfwSetInputMode';
-function glfwGetKeyName(key: Integer; scancode: Integer): PAnsiChar; cdecl external GLFW3_LIB Name _PU + 'glfwGetKeyName';
-function glfwGetKey(window: PGLFWwindow; key: Integer): Integer; cdecl external GLFW3_LIB Name _PU + 'glfwGetKey';
-function glfwGetMouseButton(window: PGLFWwindow; button: Integer): Integer; cdecl external GLFW3_LIB Name _PU + 'glfwGetMouseButton';
-procedure glfwGetCursorPos(window: PGLFWwindow; xpos, ypos: PDouble); cdecl external GLFW3_LIB Name _PU + 'glfwGetCursorPos';
-procedure glfwSetCursorPos(window: PGLFWwindow; xpos, ypos: Double); cdecl external GLFW3_LIB Name _PU + 'glfwSetCursorPos';
-function glfwCreateCursor(const image: PGLFWimage; xhot: Integer; yhot: Integer): PGLFWcursor; cdecl external GLFW3_LIB Name _PU + 'glfwCreateCursor';
-function glfwCreateStandardCursor(shape: Integer): PGLFWcursor; cdecl external GLFW3_LIB Name _PU + 'glfwCreateStandardCursor';
-procedure glfwDestroyCursor(cursor: PGLFWcursor); cdecl external GLFW3_LIB Name _PU + 'glfwDestroyCursor';
-procedure glfwSetCursor(window: PGLFWwindow; cursor: PGLFWcursor); cdecl external GLFW3_LIB Name _PU + 'glfwSetCursor';
-function glfwSetKeyCallback(window: PGLFWwindow; cbfun: TGLFWkeyfun): TGLFWkeyfun; cdecl external GLFW3_LIB Name _PU + 'glfwSetKeyCallback';
-function glfwSetCharCallback(window: PGLFWwindow; cbfun: TGLFWcharfun): TGLFWcharfun; cdecl external GLFW3_LIB Name _PU + 'glfwSetCharCallback';
-function glfwSetCharModsCallback(window: PGLFWwindow; cbfun: TGLFWcharmodsfun): TGLFWcharmodsfun; cdecl external GLFW3_LIB Name _PU + 'glfwSetCharModsCallback';
-function glfwSetMouseButtonCallback(window: PGLFWwindow; cbfun: TGLFWmousebuttonfun): TGLFWmousebuttonfun; cdecl external GLFW3_LIB Name _PU + 'glfwSetMouseButtonCallback';
-function glfwSetCursorPosCallback(window: PGLFWwindow; cbfun: TGLFWcursorposfun): TGLFWcursorposfun; cdecl external GLFW3_LIB Name _PU + 'glfwSetCursorPosCallback';
-function glfwSetCursorEnterCallback(window: PGLFWwindow; cbfun: TGLFWcursorenterfun): TGLFWcursorenterfun; cdecl external GLFW3_LIB Name _PU + 'glfwSetCursorEnterCallback';
-function glfwSetScrollCallback(window: PGLFWwindow; cbfun: TGLFWscrollfun): TGLFWscrollfun; cdecl external GLFW3_LIB Name _PU + 'glfwSetScrollCallback';
-function glfwSetDropCallback(window: PGLFWwindow; cbfun: TGLFWdropfun): TGLFWdropfun; cdecl external GLFW3_LIB Name _PU + 'glfwSetDropCallback';
-function glfwJoystickPresent(joy: Integer): Integer; cdecl external GLFW3_LIB Name _PU + 'glfwJoystickPresent';
-function glfwGetJoystickAxes(joy: Integer; out Count: Integer): PSingle; cdecl external GLFW3_LIB Name _PU + 'glfwGetJoystickAxes';
-function glfwGetJoystickButtons(joy: Integer; out Count: Integer): PByte; cdecl external GLFW3_LIB Name _PU + 'glfwGetJoystickButtons';
-function glfwGetJoystickName(joy: Integer): PAnsiChar; cdecl external GLFW3_LIB Name _PU + 'glfwGetJoystickName';
-function glfwSetJoystickCallback(cbfun: TGLFWjoystickfun): TGLFWjoystickfun; cdecl external GLFW3_LIB Name _PU + 'glfwSetJoystickCallback';
-procedure glfwSetClipboardString(window: PGLFWwindow; const Text: PAnsiChar); cdecl external GLFW3_LIB Name _PU + 'glfwSetClipboardString';
-function glfwGetClipboardString(window: PGLFWwindow): PAnsiChar; cdecl external GLFW3_LIB Name _PU + 'glfwGetClipboardString';
-function glfwGetTime(): Double; cdecl external GLFW3_LIB Name _PU + 'glfwGetTime';
-procedure glfwSetTime(time: Double); cdecl external GLFW3_LIB Name _PU + 'glfwSetTime';
-function glfwGetTimerValue(): UInt64; cdecl external GLFW3_LIB Name _PU + 'glfwGetTimerValue';
-function glfwGetTimerFrequency(): UInt64; cdecl external GLFW3_LIB Name _PU + 'glfwGetTimerFrequency';
-procedure glfwMakeContextCurrent(window: PGLFWwindow); cdecl external GLFW3_LIB Name _PU + 'glfwMakeContextCurrent';
-function glfwGetCurrentContext(): PGLFWwindow; cdecl external GLFW3_LIB Name _PU + 'glfwGetCurrentContext';
-procedure glfwSwapBuffers(window: PGLFWwindow); cdecl external GLFW3_LIB Name _PU + 'glfwSwapBuffers';
-procedure glfwSwapInterval(interval: Integer); cdecl external GLFW3_LIB Name _PU + 'glfwSwapInterval';
-function glfwExtensionSupported(const extension: PAnsiChar): Integer; cdecl external GLFW3_LIB Name _PU + 'glfwExtensionSupported';
-function glfwGetProcAddress(const procname: PAnsiChar): TGLFWglproc; cdecl external GLFW3_LIB Name _PU + 'glfwGetProcAddress';
-function glfwVulkanSupported(): Integer; cdecl external GLFW3_LIB Name _PU + 'glfwVulkanSupported';
-function glfwGetRequiredInstanceExtensions(out Count: UInt32): PPAnsiChar; cdecl external GLFW3_LIB Name _PU + 'glfwGetRequiredInstanceExtensions';
-function glfwGetWin32Adapter(monitor: PGLFWmonitor): PAnsiChar; cdecl external GLFW3_LIB Name _PU + 'glfwGetWin32Adapter';
-function glfwGetWin32Monitor(monitor: PGLFWmonitor): PAnsiChar; cdecl external GLFW3_LIB Name _PU + 'glfwGetWin32Monitor';
-function glfwGetWin32Window(window: PGLFWwindow): QWord; cdecl external GLFW3_LIB Name _PU + 'glfwGetWin32Window';
-function glfwGetWGLContext(window: PGLFWwindow): QWord; cdecl external GLFW3_LIB Name _PU + 'glfwGetWGLContext';
+  TGLFWgamepadstate = record
+  buttons: array[0..14] of Byte;
+  axes: array[0..5] of Single;
+  end;
+  PGLFWgamepadstate = ^TGLFWgamepadstate;
+  PPGLFWgamepadstate = ^PGLFWgamepadstate;
+
+  {$IFDEF GLFW3_LASTEST}
+  TGLFWallocator = record
+    allocate: TGLFWallocatefun;
+    reallocate: TGLFWreallocatefun;
+    deallocate: TGLFWdeallocatefun;
+    user: Pointer;
+  end;
+  PGLFWallocator = ^TGLFWallocator;
+  PPGLFWallocator = PGLFWallocator;
+  {$ENDIF}
+
+function glfwInit(): Integer; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwInit';
+procedure glfwTerminate(); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwTerminate';
+procedure glfwInitHint(hint, value: Integer); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwInitHint';
+{$IFDEF GLFW3_LASTEST}
+procedure glfwInitAllocator(allocator: PGLFWallocator);  cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwInitAllocator';
+{$IFDEF VK_VERSION_1_0}
+procedure glfwInitVulkanLoader(loader: TGLFWvkproc); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwInitVulkanLoader';
+{$ENDIF} {$ENDIF}
+procedure glfwGetVersion(major, minor, rev: PInteger); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwGetVersion';
+function glfwGetVersionString(): PChar; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwGetVersionString';
+function glfwError(const description: PPChar): integer; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwError';
+function glfwSetErrorCallback(cbfun: TGLFWerrorfun): TGLFWerrorfun; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwSetErrorCallback';
+{$IFDEF GLFW3_LASTEST}
+function glfwGetPlatform(): Integer; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwGetPlatform';
+function glfwPlatformSupported(platform: Integer): Integer; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwPlatformSupported';
+{$ENDIF}
+function glfwGetMonitors(out count: Integer): PPGLFWmonitor; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwGetMonitors';
+function glfwGetPrimaryMonitor(): PGLFWmonitor; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwGetPrimaryMonitor';
+procedure glfwGetMonitorPos(monitor: PGLFWmonitor; xpos, ypos: PInteger); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwGetMonitorPos';
+procedure glfwGetMonitorWorkarea(monitor: PGLFWmonitor; xpos, ypos, width, height: PInteger); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwGetMonitorWorkarea';
+procedure glfwGetMonitorPhysicalSize(monitor: PGLFWmonitor; widthMM, heightMM: PInteger); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwGetMonitorPhysicalSize';
+procedure glfwGetMonitorContentScale(monitor: PGLFWmonitor; xscale, yscale: PSingle); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwGetMonitorContentScale';
+function glfwGetMonitorName(monitor: PGLFWmonitor): PChar; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwGetMonitorName';
+procedure glfwSetMonitorUserPointer(monitor: PGLFWmonitor; user: Pointer); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwSetMonitorUserPointer';
+procedure glfwGetMonitorUserPointer(monitor: PGLFWmonitor); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwGetMonitorUserPointer';
+function glfwSetMonitorCallback(cbfun: TGLFWmonitorfun): TGLFWmonitorfun; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwSetMonitorCallback';
+function glfwGetVideoModes(monitor: PGLFWmonitor; out count: PInteger): PGLFWvidmode; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwGetVideoModes';
+function glfwGetVideoMode(monitor: PGLFWmonitor): PGLFWvidmode; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwGetVideoMode';
+procedure glfwSetGamma(monitor: PGLFWmonitor; gamma: Single); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwSetGamma';
+function glfwGetGammaRamp(monitor: PGLFWmonitor): PGLFWgammaramp; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwGetGammaRamp';
+procedure glfwSetGammaRamp(monitor: PGLFWmonitor; const ramp: PGLFWgammaramp); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwSetGammaRamp';
+procedure glfwDefaultWindowHints(); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwDefaultWindowHints';
+procedure glfwWindowHint(hint, value: Integer); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwWindowHint';
+procedure glfwWindowHintString(hint: Integer; value: PChar); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwWindowHintString';
+function glfwCreateWindow(width, height: Integer; const title: PChar; monitor: PGLFWmonitor; share: PGLFWwindow): PGLFWwindow; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwCreateWindow';
+procedure glfwDestroyWindow(window: PGLFWwindow); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwDestroyWindow';
+function glfwWindowShouldClose(window: PGLFWwindow): Integer; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwWindowShouldClose';
+procedure glfwSetWindowShouldClose(window: PGLFWwindow; value: Integer); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwSetWindowShouldClose';
+{$IFDEF GLFW3_LASTEST}
+function glfwGetWindowTitle(window: PGLFWwindow): PChar; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwGetWindowTitle';
+{$ENDIF}
+procedure glfwSetWindowTitle(window: PGLFWwindow; const title: PChar); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwSetWindowTitle';
+procedure glfwSetWindowIcon(window: PGLFWwindow; count: Integer; const images: PGLFWimage); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwSetWindowIcon';
+procedure glfwGetWindowPos(window: PGLFWwindow; xpos, ypos: PInteger); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwGetWindowPos';
+procedure glfwSetWindowPos(window: PGLFWwindow; xpos, ypos: Integer); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwSetWindowPos';
+procedure glfwGetWindowSize(window: PGLFWwindow; width, height: PInteger); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwGetWindowSize';
+procedure glfwSetWindowSizeLimits(window: PGLFWwindow; minwidth, minheight, maxwidth, maxheight: Integer); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwSetWindowSizeLimits';
+procedure glfwSetWindowAspectRatio(window: PGLFWwindow; numer, denom: Integer); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwSetWindowAspectRatio';
+procedure glfwSetWindowSize(window: PGLFWwindow; width, height: Integer); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwSetWindowSize';
+procedure glfwGetFramebufferSize(window: PGLFWwindow; width, height: PInteger); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwGetFramebufferSize';
+procedure glfwGetWindowFrameSize(window: PGLFWwindow; left, top, right, bottom: PInteger); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwGetWindowFrameSize';
+procedure glfwGetWindowContentScale(window: PGLFWwindow; xscale, yscale: PSingle); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwGetWindowContentScale';
+function glfwGetWindowOpacity(window: PGLFWwindow): Single; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwGetWindowOpacity';
+procedure glfwSetWindowOpacity(window: PGLFWwindow; opacity: Single); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwSetWindowOpacity';
+procedure glfwIconifyWindow(window: PGLFWwindow); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwIconifyWindow';
+procedure glfwRestoreWindow(window: PGLFWwindow); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwRestoreWindow';
+procedure glfwMaximizeWindow(window: PGLFWwindow); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwMaximizeWindow';
+procedure glfwShowWindow(window: PGLFWwindow); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwShowWindow';
+procedure glfwHideWindow(window: PGLFWwindow); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwHideWindow';
+procedure glfwFocusWindow(window: PGLFWwindow); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwFocusWindow';
+procedure glfwRequestWindowAttention(window: PGLFWwindow); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwRequestWindowAttention';
+function glfwGetWindowMonitor(window: PGLFWwindow): PGLFWmonitor; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwGetWindowMonitor';
+procedure glfwSetWindowMonitor(window: PGLFWwindow; monitor: PGLFWmonitor; xpos, ypos, width, height, refreshRate: Integer); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwSetWindowMonitor';
+function glfwGetWindowAttrib(window: PGLFWwindow; attrib: Integer): Integer; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwGetWindowAttrib';
+procedure glfwSetWindowAttrib(window: PGLFWwindow; attrib, value: Integer); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwSetWindowAttrib';
+procedure glfwSetWindowUserPointer(window: PGLFWwindow; userpointer: Pointer); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwSetWindowUserPointer';
+function glfwGetWindowUserPointer(window: PGLFWwindow): Pointer; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwGetWindowUserPointer';
+function glfwSetWindowPosCallback(window: PGLFWwindow; callback: TGLFWwindowposfun): TGLFWwindowposfun; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwSetWindowPosCallback';
+function glfwSetWindowSizeCallback(window: PGLFWwindow; callback: TGLFWwindowsizefun): TGLFWwindowsizefun; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwSetWindowSizeCallback';
+function glfwSetWindowCloseCallback(window: PGLFWwindow; callback: TGLFWwindowclosefun): TGLFWwindowclosefun; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwSetWindowCloseCallback';
+function glfwSetWindowRefreshCallback(window: PGLFWwindow; callback: TGLFWwindowrefreshfun): TGLFWwindowrefreshfun; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwSetWindowRefreshCallback';
+function glfwSetWindowFocusCallback(window: PGLFWwindow; callback: TGLFWwindowfocusfun): TGLFWwindowfocusfun; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwSetWindowFocusCallback';
+function glfwSetWindowIconifyCallback(window: PGLFWwindow; callback: TGLFWwindowiconifyfun): TGLFWwindowiconifyfun; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwSetWindowIconifyCallback';
+function glfwSetWindowMaximizeCallback(window: PGLFWwindow; callback: TGLFWwindowmaximizefun): TGLFWwindowmaximizefun; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwSetWindowMaximizeCallback';
+function glfwSetFramebufferSizeCallback(window: PGLFWwindow; callback: TGLFWframebuffersizefun): TGLFWframebuffersizefun; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwSetFramebufferSizeCallback';
+function glfwSetWindowContentScaleCallback(window: PGLFWwindow; callback: TGLFWwindowcontentscalefun): TGLFWwindowcontentscalefun; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwSetWindowContentScaleCallback';
+procedure glfwPollEvents(); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwPollEvents';
+procedure glfwWaitEvents(); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwWaitEvents';
+procedure glfwWaitEventsTimeout(timeout: Double); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwWaitEventsTimeout';
+procedure glfwPostEmptyEvent(); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwPostEmptyEvent';
+function glfwGetInputMode(window: PGLFWwindow; mode: Integer): Integer; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwGetInputMode';
+procedure glfwSetInputMode(window: PGLFWwindow; mode, value: Integer); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwSetInputMode';
+function glfwRawMouseMotionSupported(): Integer; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwRawMouseMotionSupported';
+function glfwGetKeyName(key, scancode: Integer): PChar; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwGetKeyName';
+function glfwGetKeyScancode(key: Integer): Integer; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwGetKeyScancode';
+function glfwGetKey(window: PGLFWwindow; key: Integer): Integer; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwGetKey';
+function glfwGetMouseButton(window: PGLFWwindow; button: Integer): Integer; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwGetMouseButton';
+procedure glfwGetCursorPos(window: PGLFWwindow; xpos, ypos: PDouble); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwGetCursorPos';
+procedure glfwSetCursorPos(window: PGLFWwindow; xpos, ypos: Double); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwSetCursorPos';
+function glfwCreateCursor(const image: PGLFWimage; xhot, yhot: Integer): PGLFWcursor; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwCreateCursor';
+function glfwCreateStandardCursor(shape: Integer): PGLFWcursor; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwCreateStandardCursor';
+procedure glfwDestroyCursor(cursor: PGLFWcursor); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwDestroyCursor';
+procedure glfwSetCursor(window: PGLFWwindow; cursor: PGLFWcursor); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwSetCursor';
+function glfwSetKeyCallback(window: PGLFWwindow; callback: TGLFWkeyfun): TGLFWkeyfun; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwSetKeyCallback';
+function glfwSetCharCallback(window: PGLFWwindow; callback: TGLFWcharfun): TGLFWcharfun; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwSetCharCallback';
+function glfwSetCharModsCallback(window: PGLFWwindow; callback: TGLFWcharmodsfun): TGLFWcharmodsfun; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwSetCharModsCallback';
+function glfwSetMouseButtonCallback(window: PGLFWwindow; callback: TGLFWmousebuttonfun): TGLFWmousebuttonfun; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwSetMouseButtonCallback';
+function glfwSetCursorPosCallback(window: PGLFWwindow; callback: TGLFWcursorposfun): TGLFWcursorposfun; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwSetCursorPosCallback';
+function glfwSetCursorEnterCallback(window: PGLFWwindow; callback: TGLFWcursorenterfun): TGLFWcursorenterfun; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwSetCursorEnterCallback';
+function glfwSetScrollCallback(window: PGLFWwindow; callback: TGLFWscrollfun): TGLFWscrollfun; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwSetScrollCallback';
+function glfwSetDropCallback(window: PGLFWwindow; callback: TGLFWdropfun): TGLFWdropfun; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwSetDropCallback';
+function glfwJoystickPresent(jId: Integer): Integer; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwJoystickPresent';
+function glfwGetJoystickAxes(jId: Integer; count: PInteger): PSingle; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwGetJoystickAxes';
+function glfwGetJoystickButtons(jId: Integer; count: PInteger): PByte; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwGetJoystickButtons';
+function glfwGetJoystickHats(jId: Integer; count: PInteger): PByte; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwGetJoystickHats';
+function glfwGetJoystickName(jId: Integer): PChar; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwGetJoystickName';
+function glfwGetJoystickGUID(jId: Integer): PChar; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwGetJoystickGUID';
+procedure glfwSetJoystickUserPointer(jId: Integer; userPointer: Pointer); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwSetJoystickUserPointer';
+function glfwGetJoystickUserPointer(jId: Integer): Pointer; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwGetJoystickUserPointer';
+function glfwJoystickIsGamepad(jId: Integer): Integer; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwJoystickIsGamepad';
+function glfwSetJoystickCallback(callback: TGLFWjoystickfun): TGLFWjoystickfun; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwSetJoystickCallback';
+function glfwUpdateGamepadMappings(const string_: PChar): Integer; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwUpdateGamepadMappings';
+function glfwGetGamepadName(jId: Integer): PChar; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwGetGamepadName';
+function glfwGetGamepadState(jId: Integer; state: PGLFWgamepadstate): Integer; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwGetGamepadState';
+procedure glfwSetClipboardString(window: PGLFWwindow; const text: PChar); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwSetClipboardString';
+function glfwGetClipboardString(window: PGLFWwindow): PChar; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwGetClipboardString';
+function glfwGetTime(): Double; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwGetTime';
+procedure glfwSetTime(time: Double); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwSetTime';
+function glfwGetTimerValue(): UInt64; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwGetTimerValue';
+function glfwGetTimerFrequency(): UInt64; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwGetTimerFrequency';
+procedure glfwMakeContextCurrent(window: PGLFWwindow); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwMakeContextCurrent';
+function glfwGetCurrentContext(): PGLFWwindow; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwGetCurrentContext';
+procedure glfwSwapBuffers(window: PGLFWwindow); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwSwapBuffers';
+procedure glfwSwapInterval(interval: Integer); cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwSwapInterval';
+function glfwExtensionSupported(const extension: PChar): Integer; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwExtensionSupported';
+function glfwGetProcAddress(const procname: PChar): TGLFWglproc; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwGetProcAddress';
+function glfwVulkanSupported(): Integer; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwVulkanSupported';
+function glfwGetRequiredInstanceExtensions(out Count: UInt32): PPChar; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwGetRequiredInstanceExtensions';
+{$IFDEF VK_VERSION_1_0}
+function glfwGetInstanceProcAddress(instance: VkInstance; const procname: PChar): TGLFWvkproc; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwGetInstanceProcAddress';
+function glfwGetPhysicalDevicePresentationSupport(instance: VkInstance; device: VkPhysicalDevice; queuefamily: Cardinal): Integer;  cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwGetPhysicalDevicePresentationSupport';
+function glfwCreateWindowSurface(instance: VkInstance; window: PGLFWwindow; const allocator: PVkAllocationCallbacks; surface: PVkSurfaceKHR): TVkResult; cdecl; external {$IFNDEF GLFW3_STATIC}cDllName{$ENDIF} name 'glfwCreateWindowSurface';
+{$ENDIF}
 
 implementation
 

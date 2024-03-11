@@ -1,7 +1,7 @@
 unit pgf_reglist;
 
 interface
-{$I phxConfig.inc}
+{$I ../source/phxConfig.inc}
 
 uses
 

@@ -91,7 +91,7 @@ begin
 
   // Initialize the device
 //  Device.Initialize('Phoenix Demo', 1024, 768,true);
-  Device.Initialize('Phoenix Demo', 1024, 768,true);
+  Device.Initialize('Phoenix Demo', 800, 600,false);
   // Create the timer
   Timer:= TPHXTimer.Create;
   // Create the input
@@ -367,7 +367,7 @@ begin
   // Jump
   if (isUp in Input.States) and OnPlatform then
   begin
-    FVelocity:= -400 * FSpeed;
+    FVelocity:= -240 * FSpeed;
   end;
 end;
 

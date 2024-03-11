@@ -61,12 +61,9 @@ const
 implementation
 
 uses
-<<<<<<< Updated upstream
-  phxOpenGL_GLFW3;
-=======
   phxOpenGL_GLFW3,
   phxGraphics_Vampyre;
->>>>>>> Stashed changes
+
 
 constructor TGame.Create;
 begin
@@ -79,10 +76,11 @@ begin
   Test;
 
    Device:= TPHXDevice.Create;
+   Device.Flags:= Device.Flags - [wfVerticalSync];
    Device.Initialize('Phoenix Demo', 1024, 768);;
 
    Timer:= TPHXTimer.Create;
-
+   Timer.Interval:=0;
    // Create our canvas for 2D rendering
    Canvas:= Device.CreateCanvas;
 
@@ -123,15 +121,12 @@ begin
   Effect.World     := Matrix_CreateRotationY(Timer.ElapsedTime * 45);
   Effect.Projection:= Camera.Projection;
   Effect.Texture   := Texture;
+
   Effect.Render(Buffer);
 
   Effect.RenderEx(Buffer, TPHXVertex.Declaration);
 
- // Effect.View      := Camera.View;
- // Effect.World     := Matrix_CreateTranslation(20, 0 , 0) * Matrix_CreateRotationY(Timer.ElapsedTime * 45);
- // Effect.Projection:= Camera.Projection;
- // Effect.Texture   := Texture;
- // Effect.Render(Buffer);
+
 
   Device.SetDepthTest(False);
 
@@ -147,7 +142,7 @@ end;
 
 procedure TGame.Shutdown;
 begin
-   Timer.Free;
+  Timer.Free;
   Texture.Free;
   Canvas.Free;
   Device.Free;
@@ -161,10 +156,10 @@ var V: TVertex;
 begin
   Decl:= TPHXVertex.Declaration;
 
-  Decl:= TPHXVertexDeclaration.Create([vcPosition, vcNormal, vcCoord1]);
-  Decl.Offsets[vcPosition]:= Integer(@V.Position) - Integer(@V);
-  Decl.Offsets[vcNormal  ]:= Integer(@V.Normal  ) - Integer(@V);
-  Decl.Offsets[vcCoord1  ]:= Integer(@V.Texture ) - Integer(@V);
+ // Decl:= TPHXVertexDeclaration.Create([vcPosition, vcNormal, vcCoord1]);
+ // Decl.Offsets[vcPosition]:= Integer(@V.Position) - Integer(@V);
+  //Decl.Offsets[vcNormal  ]:= Integer(@V.Normal  ) - Integer(@V);
+  //Decl.Offsets[vcCoord1  ]:= Integer(@V.Texture ) - Integer(@V);
 
   if Decl.Size <> SizeOf(TVertex) then
   begin
@@ -174,7 +169,7 @@ begin
 
   if vcPosition in Decl.Components then
   begin
-   // glVertexAttribPointer(FAttrib_Position, 3, GL_FLOAT, false, Declaration.Size, Declaration.Offset[vcPosition]);
+    // glVertexAttribPointer(FAttrib_Position, 3, GL_FLOAT, false, Declaration.Size, Declaration.Offset[vcPosition]);
   end;
 
 end;
@@ -193,7 +188,7 @@ procedure TGame.MousePressed(X: Integer; Y: Integer; Shift: TPHXShiftStates;
   Button: TPHXMouseButton);
 begin
   inherited;
-    Effect.LightingEnabled:= not Effect.LightingEnabled;
+  Effect.LightingEnabled:= not Effect.LightingEnabled;
   Effect.LightPosition:= Vector3f(1, 0, 0);
 end;
 

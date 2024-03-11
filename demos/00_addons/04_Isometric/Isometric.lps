@@ -17,8 +17,9 @@
       <Unit1>
         <Filename Value="main.pas"/>
         <IsPartOfProject Value="True"/>
-        <TopLine Value="131"/>
-        <CursorPos X="26" Y="131"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="434"/>
+        <CursorPos X="27" Y="451"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit1>
@@ -85,9 +86,7 @@
       </Unit9>
       <Unit10>
         <Filename Value="../../../source/headers/Unzip.pas"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="10"/>
         <CursorPos X="52" Y="17"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
@@ -101,7 +100,7 @@
         <Loaded Value="True"/>
       </Unit11>
     </Units>
-    <JumpHistory Count="10" HistoryIndex="9">
+    <JumpHistory Count="9" HistoryIndex="8">
       <Position1>
         <Filename Value="main.pas"/>
         <Caret Line="484" Column="16" TopLine="457"/>
@@ -132,16 +131,12 @@
       </Position7>
       <Position8>
         <Filename Value="../../../source/headers/Unzip.pas"/>
-        <Caret Line="354" Column="21" TopLine="443"/>
+        <Caret Line="325" Column="35" TopLine="313"/>
       </Position8>
       <Position9>
-        <Filename Value="../../../source/headers/Unzip.pas"/>
-        <Caret Line="325" Column="35" TopLine="313"/>
-      </Position9>
-      <Position10>
         <Filename Value="../../../source/headers/dglOpenGL.pas"/>
         <Caret Line="14824" Column="26" TopLine="14814"/>
-      </Position10>
+      </Position9>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>

@@ -1,7 +1,7 @@
 unit pgf_descriprors;
 
 
- {$I phxConfig.inc}
+ {$I ../source/phxConfig.inc}
 interface
 
 uses

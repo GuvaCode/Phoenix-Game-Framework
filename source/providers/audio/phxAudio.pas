@@ -21,7 +21,7 @@ unit phxAudio;
 
 interface
 
-{$I phxConfig.inc}
+{$I ../source/phxConfig.inc}
 
 uses
   Classes, SysUtils,

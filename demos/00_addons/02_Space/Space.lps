@@ -18,8 +18,8 @@
         <Filename Value="main.pas"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="270"/>
-        <CursorPos X="22" Y="306"/>
+        <TopLine Value="195"/>
+        <CursorPos X="61" Y="205"/>
         <UsageCount Value="27"/>
         <Loaded Value="True"/>
       </Unit1>
@@ -113,7 +113,7 @@
         <Loaded Value="True"/>
       </Unit13>
     </Units>
-    <JumpHistory Count="12" HistoryIndex="11">
+    <JumpHistory Count="13" HistoryIndex="12">
       <Position1>
         <Filename Value="main.pas"/>
         <Caret Line="82" Column="45" TopLine="77"/>
@@ -162,6 +162,10 @@
         <Filename Value="../../../source/phxSprite.pas"/>
         <Caret Line="1667" Column="31" TopLine="1646"/>
       </Position12>
+      <Position13>
+        <Filename Value="main.pas"/>
+        <Caret Line="306" Column="22" TopLine="284"/>
+      </Position13>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
