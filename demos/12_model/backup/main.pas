@@ -108,7 +108,7 @@ procedure TGame.Update;
 begin
   Timer.Update;
   Device.Update;
-  Camera.RotateLeft(45 * Timer.FrameTime);
+ // Camera.RotateLeft(45 * Timer.FrameTime);
 end;
 
 procedure TGame.Render;
@@ -118,13 +118,14 @@ begin
   Device.SetDepthTest(True);
 
   Effect.View      := Camera.View;
-  Effect.World     := Matrix_CreateRotationY(Timer.ElapsedTime * 45);
-  Effect.Projection:= Camera.Projection;
+  Effect.World     := Matrix_CreateRotationX(Timer.ElapsedTime * 45);
+  Effect.World     := Matrix_CreateRotationX(50);
+  Effect.Projection:=  Camera.Projection;
   Effect.Texture   := Texture;
 
   Effect.Render(Buffer);
 
-  Effect.RenderEx(Buffer, TPHXVertex.Declaration);
+ // Effect.RenderEx(Buffer, TPHXVertex.Declaration);
 
 
 
@@ -156,10 +157,10 @@ var V: TVertex;
 begin
   Decl:= TPHXVertex.Declaration;
 
- // Decl:= TPHXVertexDeclaration.Create([vcPosition, vcNormal, vcCoord1]);
- // Decl.Offsets[vcPosition]:= Integer(@V.Position) - Integer(@V);
-  //Decl.Offsets[vcNormal  ]:= Integer(@V.Normal  ) - Integer(@V);
-  //Decl.Offsets[vcCoord1  ]:= Integer(@V.Texture ) - Integer(@V);
+  Decl:= TPHXVertexDeclaration.Create([vcPosition, vcNormal, vcCoord1]);
+  Decl.Offsets[vcPosition]:= Integer(@V.Position) - Integer(@V);
+  Decl.Offsets[vcNormal  ]:= Integer(@V.Normal  ) - Integer(@V);
+  Decl.Offsets[vcCoord1  ]:= Integer(@V.Texture ) - Integer(@V);
 
   if Decl.Size <> SizeOf(TVertex) then
   begin

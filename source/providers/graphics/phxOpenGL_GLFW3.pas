@@ -2,7 +2,7 @@ unit phxOpenGL_GLFW3;
 
 interface
 
-{$I ../source/phxConfig.inc}
+//{$I ./phxConfig.inc}
 
 uses
   GLFW3, SysUtils, Classes, dglOpenGL, phxLogger, phxTypes, phxClasses, phxEvents, phxDevice, phxGraphics, phxOpenGL;

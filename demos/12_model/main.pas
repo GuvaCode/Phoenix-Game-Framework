@@ -101,14 +101,14 @@ begin
    Mesh.Upload(Buffer);
 
    Camera := TPHXEditorCamera.Create(Device);
-   Camera.Distance:= 50;
+   Camera.Distance:= 100;
 end;
 
 procedure TGame.Update;
 begin
   Timer.Update;
   Device.Update;
-  Camera.RotateLeft(45 * Timer.FrameTime);
+ // Camera.RotateLeft(45 * Timer.FrameTime);
 end;
 
 procedure TGame.Render;
@@ -118,13 +118,14 @@ begin
   Device.SetDepthTest(True);
 
   Effect.View      := Camera.View;
-  Effect.World     := Matrix_CreateRotationY(Timer.ElapsedTime * 45);
-  Effect.Projection:= Camera.Projection;
+  Effect.World     := Matrix_CreateRotationX(Timer.ElapsedTime * 45);
+  Effect.World     := Matrix_CreateRotationX(50);
+  Effect.Projection:=  Camera.Projection;
   Effect.Texture   := Texture;
 
   Effect.Render(Buffer);
 
-  Effect.RenderEx(Buffer, TPHXVertex.Declaration);
+ // Effect.RenderEx(Buffer, TPHXVertex.Declaration);
 
 
 

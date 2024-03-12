@@ -79,10 +79,12 @@ procedure TGame.Init;
 var Sprite: TPHXSprite;
 begin
   Device:= TPHXDevice.Create;
+  Device.Flags:= Device.Flags - [wfVerticalSync];
   Device.Initialize('Phoenix Demo', 800,600,false);
 
   // Device.Initialize('Phoenix Demo', 1024,768);
- Device.Flags:=[wfCursor, wfResizable];
+ Device.Flags:=[wfCursor, wfResizable] ;
+
 
 
 
@@ -192,7 +194,7 @@ end;
 procedure TGame.Render;
 begin
   Device.Clear;
-//  RenderBackground;
+ RenderBackground;
 
  // Canvas.Color  := clrSilver;
  // Canvas.FilledRectangle(200, 200, 200+256, 200+256);
