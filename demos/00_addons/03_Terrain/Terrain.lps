@@ -3,7 +3,7 @@
   <ProjectSession>
     <Version Value="12"/>
     <BuildModes Active="Default"/>
-    <Units Count="9">
+    <Units Count="11">
       <Unit0>
         <Filename Value="Terrain.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -17,8 +17,9 @@
       <Unit1>
         <Filename Value="main.pas"/>
         <IsPartOfProject Value="True"/>
-        <TopLine Value="417"/>
-        <CursorPos X="27" Y="321"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="281"/>
+        <CursorPos X="45" Y="414"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit1>
@@ -48,10 +49,9 @@
       </Unit4>
       <Unit5>
         <Filename Value="../../../source/phxSprite_Box2D.pas"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="503"/>
-        <CursorPos X="21" Y="19"/>
+        <TopLine Value="463"/>
+        <CursorPos X="12" Y="547"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit5>
@@ -77,8 +77,24 @@
         <UsageCount Value="10"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit8>
+      <Unit9>
+        <Filename Value="../../../source/phxShape.pas"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="46"/>
+        <CursorPos X="26" Y="66"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="../../../editors/phxAnimationEditor/Source/uActions.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="854"/>
+        <CursorPos X="18" Y="904"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit10>
     </Units>
-    <JumpHistory Count="12" HistoryIndex="11">
+    <JumpHistory Count="13" HistoryIndex="12">
       <Position1>
         <Filename Value="main.pas"/>
         <Caret Line="440" Column="8" TopLine="413"/>
@@ -127,6 +143,10 @@
         <Filename Value="main.pas"/>
         <Caret Line="92" Column="30" TopLine="69"/>
       </Position12>
+      <Position13>
+        <Filename Value="../../../source/phxShape.pas"/>
+        <Caret Line="539" Column="41" TopLine="528"/>
+      </Position13>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>

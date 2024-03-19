@@ -54,7 +54,13 @@ begin
     MoveTowards(Delta, Target.Position, 200, 90);
   end else
   begin
-    MoveForward(200 * Delta);
+    try
+     MoveForward(200 * Delta);
+    except
+      writeln(200 * Delta);
+    end;
+
+
   end;
 
 

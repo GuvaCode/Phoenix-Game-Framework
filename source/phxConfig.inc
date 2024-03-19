@@ -1,5 +1,10 @@
 { -= Phoenix config file =-}
 
+{$WARN 4104 off : Implicit string type conversion from "$1" to "$2"}
+{$WARN 4105 off : Implicit string type conversion with potential data loss from "$1" to "$2"}
+{$WARN 4056 off : Conversion between ordinals and pointers is not portable}
+{$WARN 4082 off : Converting pointers to signed integers may result in wrong comparison results and range errors, use an unsigned type instead.}
+
 {$IFDEF FPC}
 {$mode delphi}{$H+}
 {$ENDIF}

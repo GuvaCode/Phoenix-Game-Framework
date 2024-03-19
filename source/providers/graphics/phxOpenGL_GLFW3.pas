@@ -165,6 +165,7 @@ end;
 
 procedure WindowSizeEvent(window: PGLFWwindow; Width, Height: Integer); cdecl;
 begin
+  glViewport(0, 0, width, height);
   TPHXEvents.NotifyDeviceResized(nil, Width, Height);
 end;
 
@@ -336,6 +337,8 @@ begin
   glfwSetCursorPosCallback(FWindow, @MousePosCallback);
   glfwMakeContextCurrent(FWindow);
   glfwGetMonitorPhysicalSize(glfwGetPrimaryMonitor, @IX, @IY);
+
+
   if Parameters.FullScreen then
     glfwSetWindowMonitor(FWindow, glfwGetPrimaryMonitor, IX div 2, IY div 2, FWidth, FHeight, 0)
   else
@@ -352,10 +355,28 @@ begin
   glfwSwapInterval(0);
   end;
 
+  if wfCursor in FWindowFlags then
+  begin
+    glfwSetInputMode(Fwindow, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
+  end else
+  begin
+    glfwSetInputMode(Fwindow, GLFW_CURSOR, GLFW_CURSOR_HIDDEN);
+  end;
+
+  if wfResizable in FWindowFlags then
+  begin
+    glfwSetWindowAttrib(Fwindow, GLFW_RESIZABLE, GLFW_TRUE);
+  end else
+  begin
+    glfwSetWindowAttrib(Fwindow, GLFW_RESIZABLE, GLFW_FALSE);
+  end;
+
   glfwSetInputMode(FWindow, GLFW_STICKY_MOUSE_BUTTONS, 1);
+
   if (dglOpenGL.InitOpenGL <> True) then
     raise Exception.Create('OpenGL Initialization failed.');
   dglOpenGL.ReadExtensions;
+
   InitializeOpenGL;
   FInitialized := True;
 end;
@@ -381,6 +402,8 @@ end;
 procedure TPHXOpenGLRendererGLFW3.Flip;
 begin
   glfwSwapBuffers(FWindow);
+  glfwGetWindowSize(FWindow, @Fwidth, @Fheight);
+  glViewport(0, 0, Fwidth, Fheight);
 end;
 
 function TPHXOpenGLRendererGLFW3.GetWidth: Integer;

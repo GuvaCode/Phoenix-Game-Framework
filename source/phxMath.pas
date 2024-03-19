@@ -42,6 +42,9 @@ procedure Swap(var A: Single; var B: Single);
 
 const DEG_TO_RAD = PI / 180;
 const RAD_TO_DEG = 180 / PI;
+const PIDiv180  =  0.017453292519943295769236907684886;
+const _180DivPI = 57.295779513082320876798154814105000;
+
 
 // Fast, table lookup versions of sinus and cosinus
 function Sin256(I: Integer): Single; overload;
@@ -232,15 +235,6 @@ function Matrix3f(const Matrix: TMatrix4f): TMatrix3f;
 function Matrix_Div(const Matrix: TMatrix3f; const Scalar: Single): TMatrix3f;
 // Calculates the inverse transpose of a matrix
 function Matrix_InverseTranspose(const Matrix: TMatrix3f): TMatrix3f;
-
-
-
-
-
-
-
-
-
 
 function PointInRect(const P: TVector2f; const R: TRectf): Boolean; overload;
 function PointInRect(const P: TVector2i; const R: TRecti): Boolean; overload;
@@ -1696,4 +1690,5 @@ end;
 
 initialization
   InitSinCosTable();
+  SetExceptionMask([exInvalidOp, exDenormalized, exZeroDivide, exOverflow, exUnderflow, exPrecision]);
 end.

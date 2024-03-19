@@ -79,11 +79,12 @@ procedure TGame.Init;
 var Sprite: TPHXSprite;
 begin
   Device:= TPHXDevice.Create;
-  Device.Flags:= Device.Flags - [wfVerticalSync];
-  Device.Initialize('Phoenix Demo', 800,600,false);
+  //Device.Flags:= Device.Flags - [wfVerticalSync];
+  Device.Flags:=[wfCursor, wfResizable] ;
+  Device.Initialize('Phoenix Demo', 1024,768,false);
 
   // Device.Initialize('Phoenix Demo', 1024,768);
- Device.Flags:=[wfCursor, wfResizable] ;
+
 
 
 
@@ -94,7 +95,7 @@ begin
   Input:= TPHXInput.Create;
 
   Background:= Device.CreateTexture;
-  Background.LoadTexture('content/Space/Nebula_top3.png');
+  Background.LoadTexture('content/Space/goldSpace.png');
 
   Stars:= Device.CreateTexture;
   Stars.LoadTexture('content/Space/Stars.png');
@@ -182,8 +183,11 @@ begin
   Device.Update;
   Player.Update(Timer.FrameTime, Input);
 
-  Sprites.Camera.ScrollX:= Round(Device.Width  / 2 - Player.X);
-  Sprites.Camera.ScrollY:= Round(Device.Height / 2 - Player.Y);
+  Sprites.Camera.ScrollX:= Device.Width div 2 - Player.Position.x ;
+  Sprites.Camera.ScrollY:= Device.Height div 2 - Player.Position.Y;
+
+
+   //WorldToScreenPlayer.Position;
 
   Sprites.Update(Timer.FrameTime);
 

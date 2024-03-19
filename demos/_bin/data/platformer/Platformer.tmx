@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" width="100" height="18" tilewidth="32" tileheight="32">
- <tileset firstgid="1" name="Tiles" tilewidth="32" tileheight="32">
+<map version="1.8" tiledversion="1.8.0" orientation="orthogonal" renderorder="right-down" width="100" height="18" tilewidth="32" tileheight="32" infinite="0" nextlayerid="3" nextobjectid="28">
+ <tileset firstgid="1" name="Tiles" tilewidth="32" tileheight="32" tilecount="64" columns="8">
   <image source="Tiles.png" width="256" height="256"/>
   <tile id="0">
    <properties>
@@ -8,7 +8,7 @@
    </properties>
   </tile>
  </tileset>
- <layer name="Tiles" width="100" height="18">
+ <layer id="1" name="Tiles" width="100" height="18">
   <data encoding="csv">
 41,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,41,
 33,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,
@@ -30,33 +30,33 @@
 33,57,49,41,9,9,41,57,57,33,57,41,57,9,49,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,49,49,49,41,33,57,49,41,49,49,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,41,33,33,49,57,49,33,33,41,57,49,57,9,57,57,41,49,49,41,9,41,49,33,57,41,17,17,17,17,17,17,17,17,17,17,17,17,17,17,57
 </data>
  </layer>
- <objectgroup name="Pickups" width="100" height="18">
-  <object name="Banana1" type="Banana" x="112" y="464"/>
-  <object name="Banana2" type="Banana" x="784" y="528"/>
-  <object name="Banana3" type="Banana" x="80" y="144"/>
-  <object name="Apple1" type="Apple" x="175" y="464"/>
-  <object type="Apple" x="847" y="529"/>
-  <object type="Apple" x="1136" y="463"/>
-  <object type="Apple" x="1422" y="528"/>
-  <object type="Banana" x="1617" y="527"/>
-  <object type="Apple" x="562" y="79"/>
-  <object type="Banana" x="943" y="80"/>
-  <object type="Apple" x="2031" y="465"/>
-  <object type="Apple" x="2894" y="527"/>
-  <object type="Banana" x="2989" y="528"/>
-  <object type="Apple" x="3087" y="239"/>
-  <object type="Banana" x="2959" y="238"/>
-  <object type="Apple" x="2194" y="465"/>
-  <object type="Banana" x="1871" y="305"/>
-  <object type="Apple" x="1423" y="240"/>
-  <object type="Banana" x="881" y="243"/>
-  <object type="Banana" x="495" y="367"/>
-  <object type="Banana" x="526" y="368"/>
-  <object type="Apple" x="1742" y="82"/>
-  <object type="Apple" x="1774" y="81"/>
-  <object type="Apple" x="1803" y="82"/>
-  <object type="Banana" x="2415" y="81"/>
-  <object type="Banana" x="2542" y="81"/>
-  <object type="Powerup" x="1151" y="224"/>
+ <objectgroup id="2" name="Pickups">
+  <object id="1" name="Banana1" type="Banana" x="112" y="464"/>
+  <object id="2" name="Banana2" type="Banana" x="784" y="528"/>
+  <object id="3" name="Banana3" type="Banana" x="80" y="144"/>
+  <object id="4" name="Apple1" type="Apple" x="175" y="464"/>
+  <object id="5" type="Apple" x="847" y="529"/>
+  <object id="6" type="Apple" x="1136" y="463"/>
+  <object id="7" type="Apple" x="1422" y="528"/>
+  <object id="8" type="Banana" x="1617" y="527"/>
+  <object id="9" type="Apple" x="562" y="79"/>
+  <object id="10" type="Banana" x="943" y="80"/>
+  <object id="11" type="Apple" x="2031" y="465"/>
+  <object id="12" type="Apple" x="2894" y="527"/>
+  <object id="13" type="Banana" x="2989" y="528"/>
+  <object id="14" type="Apple" x="3087" y="239"/>
+  <object id="15" type="Banana" x="2959" y="238"/>
+  <object id="16" type="Apple" x="2194" y="465"/>
+  <object id="17" type="Banana" x="1871" y="305"/>
+  <object id="18" type="Apple" x="1423" y="240"/>
+  <object id="19" type="Banana" x="881" y="243"/>
+  <object id="20" type="Banana" x="495" y="367"/>
+  <object id="21" type="Banana" x="526" y="368"/>
+  <object id="22" type="Apple" x="1742" y="82"/>
+  <object id="23" type="Apple" x="1774" y="81"/>
+  <object id="24" type="Apple" x="1803" y="82"/>
+  <object id="25" type="Banana" x="2415" y="81"/>
+  <object id="26" type="Banana" x="2542" y="81"/>
+  <object id="27" type="Powerup" x="1151" y="224"/>
  </objectgroup>
 </map>

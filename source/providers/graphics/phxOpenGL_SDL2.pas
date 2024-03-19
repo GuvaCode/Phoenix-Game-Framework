@@ -5,7 +5,6 @@ unit phxOpenGL_SDL2;
 
 interface
 
-{$I ../phxConfig.inc}
 uses
   SysUtils, Classes, dglOpenGL, SDL2, phxLogger, phxTypes, phxClasses, phxEvents, phxDevice, phxGraphics, phxOpenGL;
 

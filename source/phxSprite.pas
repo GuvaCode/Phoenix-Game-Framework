@@ -1389,11 +1389,8 @@ end;
 function TPHXSprite.MoveTowards(const FrameTime: Double; const Target: TVector2f; const LinearVelocity, AngularVelocity: Single): Boolean;
 var DirectionEntity: TVector2f;
 var DirectionPoint: TVector2f;
-
 //var Position: TVector3f;
-
 var Delta: Single;
-
 var RotationDirection: Single;
 var RotationRemaining: Single;
 begin
@@ -1412,8 +1409,13 @@ begin
 //  {$IFDEF Windows}
 //  RotationRemaining:= ArcCos( VectorDot(DirectionEntity, DirectionPoint) ) * RAD_TO_DEG;
 //  {$ELSE}
-  RotationRemaining:= ArcCos( VectorCross(DirectionEntity, DirectionPoint) ) * RAD_TO_DEG;
- // {$ENDIF}
+
+ RotationRemaining:= ArcCos( VectorCross(DirectionEntity, DirectionPoint)  ) * _180DivPI;
+
+
+
+
+  // {$ENDIF}
   // If there is less distance remaining to move then the distance we will move
   // this frame just snap the rotation to the target rotation
   if RotationRemaining < Delta  then
@@ -3629,7 +3631,8 @@ end;
 
 {$ENDREGION}
 
-
+ initialization
+  SetExceptionMask([exInvalidOp, exDenormalized, exZeroDivide, exOverflow, exUnderflow, exPrecision]);
 
 
 

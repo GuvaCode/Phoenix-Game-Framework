@@ -1215,6 +1215,9 @@ var Filter: String;
 var Name  : String;
 var Ext   : String;
 begin
+
+  Filter := Default(String);
+
   if Count = 0 then
   begin
     Result:= '';
