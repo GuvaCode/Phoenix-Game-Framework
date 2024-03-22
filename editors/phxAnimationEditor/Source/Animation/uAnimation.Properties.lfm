@@ -83,7 +83,7 @@ object FrmAnimationProperties: TFrmAnimationProperties
       TabOrder = 1
       OnChange = edAnimationImageChange
     end
-    object edAnimationFrameRate: TSpinEdit
+    object edAnimationFrameRate: TFloatSpinEdit
       Left = 75
       Height = 28
       Top = 221

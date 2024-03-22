@@ -95,6 +95,11 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Frame"/>
       </Unit>
+      <Unit>
+        <Filename Value="../_Library/phxanimationex.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="PHXAnimationEX"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

@@ -1,7 +1,7 @@
 object FrmMain: TFrmMain
-  Left = 458
+  Left = 627
   Height = 404
-  Top = 500
+  Top = 389
   Width = 800
   Caption = 'phxAnimationEditor'
   ClientHeight = 404

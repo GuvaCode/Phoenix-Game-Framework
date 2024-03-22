@@ -55,6 +55,9 @@ TPHXImageEx = class helper for TPHXImage
   end;
 
 //------------------------------------------------------------------------------
+
+{ TPHXAnimationEx }
+
 TPHXAnimationEx = class helper for TPHXAnimation
   private
     procedure LoadFrames(Parent: TDOMNode);
@@ -64,6 +67,14 @@ TPHXAnimationEx = class helper for TPHXAnimation
     procedure LoadFromXML(const FileName: String);
     // Load the animation from a xml file
     procedure SaveToXML(const FileName: String);
+     // Reset a animation state to the default value
+    procedure Reset(var State: TPHXAnimationState );
+    // Update a animation state
+    procedure Update(var State: TPHXAnimationState; FrameTime: Single);
+    // Draw the animation at a coordinate
+    procedure Draw(const State: TPHXAnimationState; const X, Y: Integer); overload;
+    // Draw the animation using a transformation matrix
+    procedure Draw(const State: TPHXAnimationState; const Transform: TMatrix4f); overload;
   end;
 
 
@@ -723,6 +734,75 @@ begin
   end;
   Document.Appendchild(Root);
   //Document.SaveToFile(FileName);
+end;
+
+procedure TPHXAnimationEx.Reset(var State: TPHXAnimationState);
+begin
+  State.Finished:= False;
+  State.Active  := True;
+  State.Time    := 0;
+  State.Frame   := 0;
+
+  if Frames.Count > 0 then
+  begin
+    State.Pattern:= Frames.List^[0].Pattern;
+  end else
+  begin
+    State.Pattern:= -1;
+  end;
+end;
+
+procedure TPHXAnimationEx.Update(var State: TPHXAnimationState;
+  FrameTime: Single);
+begin
+  //  Only update if active
+  if (State.Active) and (Frames.Count > 0) then
+  begin
+    // Add the time to the state
+    State.Time := State.Time + FrameTime;
+
+    // test if we shall change to the next frame
+    if( State.Time > Frames[State.Frame].Time ) then
+    begin
+      State.Time:= State.Time - Frames[State.Frame].Time;
+
+      Inc(State.Frame);
+
+      // Test if we reached the end of the animation
+      if( State.Frame >= Frames.Count) then
+      begin
+
+        // Check if looped
+        if Looped then
+        begin
+          State.Time    := 0;
+          State.Frame   := 0;
+        end else
+        begin
+          State.Frame   := Frames.Count-1;
+          State.Active  := False;
+          State.Finished:= True;
+        end;
+      end;
+
+      // Update the pattern index
+      State.Pattern := Frames.List^[State.Frame].Pattern;
+    end;
+  end;
+end;
+
+procedure TPHXAnimationEx.Draw(const State: TPHXAnimationState; const X,
+  Y: Integer);
+begin
+  Assert( Assigned(Image ) );
+  Image.Draw(X, Y, Frames[State.Frame].Pattern);
+end;
+
+procedure TPHXAnimationEx.Draw(const State: TPHXAnimationState;
+  const Transform: TMatrix4f);
+begin
+  Assert( Assigned(Image ) );
+  Image.DrawTransform(Transform, Frames[State.Frame].Pattern);
 end;
 
 //------------------------------------------------------------------------------

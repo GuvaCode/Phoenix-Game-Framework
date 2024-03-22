@@ -6,8 +6,8 @@ object FrmAnimationPreview: TFrmAnimationPreview
   ClientHeight = 335
   ClientWidth = 316
   TabOrder = 0
-  DesignLeft = 731
-  DesignTop = 231
+  DesignLeft = 680
+  DesignTop = 452
   object GroupBox1: TGroupBox
     Left = 0
     Height = 335

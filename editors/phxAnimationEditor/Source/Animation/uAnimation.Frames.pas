@@ -396,9 +396,9 @@ begin
   if Assigned(Image) then
   begin
     //Image.Draw(FBuffer, FBackground);//Graphics.ColorToRGB(clWindow));
-    FAnimation.Image.Draw(FBuffer, Graphics.ColorToRGB(clWindow) );
+    //FAnimation.Image.Draw(FBuffer, Graphics.ColorToRGB(clWindow) );
 
-  //  FAnimation.Image.Draw(FBuffer, FBackground);
+    FAnimation.Image.Draw(FBuffer, FBackground);
   end else
   begin
     FBuffer.Width := 0;

@@ -4,8 +4,7 @@ interface
 
 uses
   Messages, SysUtils, Variants, Classes,
-  Graphics, Controls, Forms, Dialogs,StdCtrls,Spin,
-
+  Graphics, Controls, Forms, Dialogs,StdCtrls, Spin,
   phxImage, Menus;
 
 type
@@ -14,7 +13,7 @@ type
     Label1: TLabel;
     edAnimationName: TEdit;
     edAnimationImage: TComboBox;
-    edAnimationFrameRate: TSpinEdit;
+    edAnimationFrameRate: TFloatSpinEdit;
     edAnimationLooped: TCheckBox;
     Label4: TLabel;
     Label2: TLabel;
@@ -33,17 +32,12 @@ type
     procedure edAnimationCommentChange(Sender: TObject);
   private
     FAnimation: TPHXAnimation;
-
     procedure EnableEditors(Enabled: Boolean);
-
     procedure edAnimationImageUpdate(Sender: TObject);
-
     procedure SetAnimation(const Value: TPHXAnimation);
   public
     constructor Create(AOwner: TComponent); override;
     destructor Destroy; override;
-
-
     property Animation: TPHXAnimation read FAnimation write SetAnimation;
   end;
 
@@ -58,17 +52,13 @@ uses uActions;
 constructor TFrmAnimationProperties.Create(AOwner: TComponent);
 begin
   inherited;
-
   EnableEditors(False);
 end;
 //------------------------------------------------------------------------------
 destructor TFrmAnimationProperties.Destroy;
 begin
-
   inherited;
 end;
-
-
 
 //------------------------------------------------------------------------------
 procedure TFrmAnimationProperties.SetAnimation(const Value: TPHXAnimation);

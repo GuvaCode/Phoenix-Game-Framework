@@ -3,15 +3,16 @@ unit uAnimation.Preview;
 interface
 
 uses
-  Messages, SysUtils, Variants, Classes,
+  SysUtils, Variants, Classes,
   Graphics, Controls, Forms, Dialogs, ExtCtrls,
-  ActnList, ImgList, ComCtrls, ToolWin, StdCtrls,
+  ActnList, ImgList, ComCtrls, StdCtrls,
 
   phxTypes,
   phxGraphicsEx,
 
   phxImage,
-  phxImageEx;
+  phxImageEx,
+  EpikTimer;
 
 type
 
@@ -31,6 +32,7 @@ type
     actPause: TAction;
     actStop: TAction;
     Timer1: TTimer;
+    FEpik: TEpikTimer;
     Panel2: TPanel;
     PaintBox1: TPaintBox;
     procedure PaintBox1Paint(Sender: TObject);
@@ -47,8 +49,8 @@ type
     FBuffer    : TBitmap;
     FBackground: TBitmap;
 
-    FTimerFrequency: Int64;
-    FTimerTicks    : Int64;
+  //  FTimerFrequency: Int64;
+   // FTimerTicks    : Int64;
 
     AnimationState  : TPHXAnimationState;
 
@@ -83,6 +85,10 @@ begin
   QueryPerformanceFrequency(FTimerFrequency);
   QueryPerformanceCounter(FTimerTicks);
  }
+  // FTimerTicks := SystemTicks;
+   FEPik:= TEPIKTIMER.Create(AOwner);
+   FEPik.Clear;
+   FEPik.Start;
 end;
 
 
@@ -95,8 +101,10 @@ begin
     FAnimation := Value;
     if Assigned(FAnimation) then
     begin
-     { #todo : Fix ME } // Animation.Reset(AnimationState);
-    end else
+     { #todo : Fix ME } //
+      Animation.Reset(AnimationState);
+    end
+      else
     begin
       AnimationState.Active := False;
       AnimationState.Time   := 0;
@@ -148,22 +156,23 @@ end;
 //------------------------------------------------------------------------------
 procedure TFrmAnimationPreview.actPlayExecute(Sender: TObject);
 begin
- { #todo : Fix ME } // Animation.Reset(AnimationState);
+ { #todo : Fix ME } //
+ Animation.Reset(AnimationState);
+  AnimationState.Active:=True;
 end;
 
 //------------------------------------------------------------------------------
 procedure TFrmAnimationPreview.actPauseExecute(Sender: TObject);
 begin
   AnimationState.Active:= not AnimationState.Active;
-
   btnPause.Down:= AnimationState.Active;
 end;
 
 //------------------------------------------------------------------------------
 procedure TFrmAnimationPreview.actStopExecute(Sender: TObject);
 begin
- { #todo : Fix ME } // Animation.Reset(AnimationState);
-
+ { #todo : Fix ME } //
+   Animation.Reset(AnimationState);
   AnimationState.Active := False;
 
   TrackBar1.Position:= 0;
@@ -184,11 +193,13 @@ begin
     // Running
     if AnimationState.Active then
     begin
-    { #todo : Fix ME } //  Animation.Update(AnimationState, Delta);
+    { #todo : Fix ME } //
+      //AnimationState.Update(0.3);
+
+      Animation.Update(AnimationState, Delta);
 
       if Index <> AnimationState.Frame then
       begin
-
         TrackBar1.Min      := 0;
         TrackBar1.Max      := Animation.Frames.Count - 1;
         TrackBar1.Position := AnimationState.Frame;
@@ -282,23 +293,13 @@ begin
 
   end;
 end;
-
-
-
-
-
 //------------------------------------------------------------------------------
 function TFrmAnimationPreview.GetDeltaTime: Single;
-var Ticks: Int64;
 begin
-  { #todo : Fix ME }
-  {
-  QueryPerformanceCounter(Ticks);
-
-  Result := (Ticks - FTimerTicks) / FTimerFrequency;
-
-  FTimerTicks:= Ticks;
-  }
+  FEpik.Stop;
+  Result := FEpik.Elapsed;
+  FEpik.Clear;
+  FEpik.Start;
 end;
 
 
