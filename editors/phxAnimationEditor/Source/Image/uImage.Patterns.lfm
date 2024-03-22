@@ -6,6 +6,8 @@ object FrmPatterns: TFrmPatterns
   ClientHeight = 240
   ClientWidth = 320
   TabOrder = 0
+  DesignLeft = 527
+  DesignTop = 204
   object ScrollBox1: TScrollBox
     Left = 0
     Height = 240

@@ -1,96 +1,98 @@
 object FrmAnimationPreview: TFrmAnimationPreview
   Left = 0
-  Height = 203
+  Height = 335
   Top = 0
   Width = 316
-  ClientHeight = 203
+  ClientHeight = 335
   ClientWidth = 316
   TabOrder = 0
   DesignLeft = 731
-  DesignTop = 348
+  DesignTop = 231
   object GroupBox1: TGroupBox
     Left = 0
-    Height = 203
+    Height = 335
     Top = 0
     Width = 316
     Align = alClient
     Caption = 'Animation preview'
-    ClientHeight = 186
+    ClientHeight = 318
     ClientWidth = 314
     TabOrder = 0
     object Panel1: TPanel
       Left = 0
-      Height = 24
-      Top = 162
+      Height = 38
+      Top = 280
       Width = 314
       Align = alBottom
       BevelOuter = bvNone
-      ClientHeight = 24
+      ClientHeight = 38
       ClientWidth = 314
       TabOrder = 0
       object ToolBar1: TToolBar
         Left = 0
-        Height = 24
+        Height = 38
         Top = 0
-        Width = 81
+        Width = 80
         Align = alLeft
+        ButtonHeight = 30
+        ButtonWidth = 23
         Caption = 'ToolBar2'
+        EdgeInner = esNone
+        EdgeOuter = esNone
         Images = ImageList1
         TabOrder = 0
         object btnPlay: TToolButton
           Left = 1
-          Top = 2
+          Top = 0
           Action = actPlay
+          AutoSize = True
           ParentShowHint = False
           ShowHint = True
         end
         object btnPause: TToolButton
           Left = 24
-          Top = 2
+          Top = 0
           Action = actPause
+          AutoSize = True
           ParentShowHint = False
           ShowHint = True
         end
         object btnStop: TToolButton
           Left = 47
-          Top = 2
+          Top = 0
           Action = actStop
+          AutoSize = True
           ParentShowHint = False
           ShowHint = True
         end
-        object ToolButton1: TToolButton
-          Left = 70
-          Top = 2
-          Width = 23
-          Caption = 'ToolButton1'
-          ImageIndex = 4
-          Style = tbsSeparator
-        end
       end
       object TrackBar1: TTrackBar
-        Left = 81
-        Height = 37
+        Left = 80
+        Height = 38
         Top = 0
-        Width = 233
+        Width = 234
+        AutoSize = True
+        OnChange = TrackBar1Change
         PageSize = 1
         Position = 0
+        ScalePos = trLeft
         Align = alClient
         TabOrder = 1
       end
     end
     object Panel2: TPanel
       Left = 0
-      Height = 162
+      Height = 280
       Top = 0
       Width = 314
       Align = alClient
       BevelOuter = bvNone
-      ClientHeight = 162
+      ClientHeight = 280
       ClientWidth = 314
       TabOrder = 1
       object PaintBox1: TPaintBox
         Left = 0
-        Height = 162
+        Height = 280
         Top = 0
         Width = 314
         Align = alClient

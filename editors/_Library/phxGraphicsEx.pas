@@ -114,7 +114,6 @@ Function ScanLine(Texture: TPHXTexture; Line: Integer): PByte;
 var PixelSize: Integer;
 begin
   PixelSize:= GetPixelFormatSize(Texture.Format);
-
   Result:= @Texture.Pixels^[Line * Texture.Width * PixelSize];
 end;
 
@@ -123,7 +122,6 @@ Function ScanLine(Bitmap: TPHXBitmap; Line: Integer): PByte;
 var PixelSize: Integer;
 begin
   PixelSize:= GetPixelFormatSize(Bitmap.Format);
-
   Result:= @Bitmap.Pixels^[Line * Bitmap.Width * PixelSize];
 end;
 
@@ -139,7 +137,12 @@ var GetPixel: TGetPixel;
 begin
   GetPixel:= GetPixelFormatGetter(Texture.Format);
 
+  {$IFDEF LINUX}
+  Dest.PixelFormat := pf24bit;
+  {$ELSE}
   Dest.PixelFormat := pf32bit;
+  {$ENDIF}
+
   Dest.Width       := Texture.Width;
   Dest.Height      := Texture.Height;
 
@@ -157,7 +160,12 @@ begin
 
       PRGBTriple(DstPixel)^:= DstColor;
 
+      {$IFDEF LINUX}
+      Inc(DstPixel, 3);//  pf24bit
+      {$ELSE}
       Inc(DstPixel, 4);//  pf32bit
+      {$ENDIF}
+
     end;
   end;
 end;
@@ -175,7 +183,11 @@ var GetPixel: TGetPixel;
 begin
   GetPixel:= GetPixelFormatGetter(Texture.Format);
 
+  {$IFDEF LINUX}
+  Dest.PixelFormat := pf24bit;
+  {$ELSE}
   Dest.PixelFormat := pf32bit;
+  {$ENDIF}
   Dest.Width       := Texture.Width;
   Dest.Height      := Texture.Height;
 
@@ -212,7 +224,11 @@ begin
 
       PRGBTriple(DstPixel)^:= DstColor;
 
+      {$IFDEF LINUX}
+      Inc(DstPixel, 3);//  pf24bit
+      {$ELSE}
       Inc(DstPixel, 4);//  pf32bit
+      {$ENDIF}
     end;
   end;
 end;
@@ -230,7 +246,11 @@ var GetPixel: TGetPixel;
 begin
   GetPixel:= GetPixelFormatGetter(Texture.Format);
 
+  {$IFDEF LINUX}
+  Dest.PixelFormat := pf24bit;
+  {$ELSE}
   Dest.PixelFormat := pf32bit;
+  {$ENDIF}
   Dest.Width       := Texture.Width;
   Dest.Height      := Texture.Height;
 
@@ -251,7 +271,11 @@ begin
 
       PRGBQuad(DstPixel)^:= DstColor;
 
+      {$IFDEF LINUX}
+      Inc(DstPixel, 3);//  pf24bit
+      {$ELSE}
       Inc(DstPixel, 4);//  pf32bit
+      {$ENDIF}
     end;
   end;
 end;
@@ -268,7 +292,11 @@ var GetPixel: TGetPixel;
 begin
   GetPixel:= GetPixelFormatGetter(Texture.Format);
 
+  {$IFDEF LINUX}
+  Dest.PixelFormat := pf24bit;
+  {$ELSE}
   Dest.PixelFormat := pf32bit;
+  {$ENDIF}
   Dest.Width       := Rect.Right  - Rect.Left;
   Dest.Height      := Rect.Bottom - Rect.Top;
 
@@ -289,7 +317,11 @@ begin
 
       PRGBTriple(DstPixel)^:= DstColor;
 
+      {$IFDEF LINUX}
+      Inc(DstPixel, 3);//  pf24bit
+      {$ELSE}
       Inc(DstPixel, 4);//  pf32bit
+      {$ENDIF}
     end;
   end;
 end;
@@ -306,7 +338,11 @@ var GetPixel: TGetPixel;
 begin
   GetPixel:= GetPixelFormatGetter(Texture.Format);
 
+  {$IFDEF LINUX}
+  Dest.PixelFormat := pf24bit;
+  {$ELSE}
   Dest.PixelFormat := pf32bit;
+  {$ENDIF}
   Dest.Width       := Rect.Right  - Rect.Left;
   Dest.Height      := Rect.Bottom - Rect.Top;
 
@@ -346,7 +382,11 @@ begin
 
       PRGBTriple(DstPixel)^:= DstColor;
 
+      {$IFDEF LINUX}
+      Inc(DstPixel, 3);//  pf24bit
+      {$ELSE}
       Inc(DstPixel, 4);//  pf32bit
+      {$ENDIF}
     end;
   end;
 end;
@@ -363,7 +403,11 @@ var GetPixel: TGetPixel;
 begin
   GetPixel:= GetPixelFormatGetter(Texture.Format);
 
+  {$IFDEF LINUX}
+  Dest.PixelFormat := pf24bit;
+  {$ELSE}
   Dest.PixelFormat := pf32bit;
+  {$ENDIF}
   Dest.Width       := Rect.Right  - Rect.Left;
   Dest.Height      := Rect.Bottom - Rect.Top;
 
@@ -386,7 +430,11 @@ begin
 
       PRGBTriple(DstPixel)^:= DstColor;
 
+      {$IFDEF LINUX}
+      Inc(DstPixel, 3);//  pf24bit
+      {$ELSE}
       Inc(DstPixel, 4);//  pf32bit
+      {$ENDIF}
     end;
   end;
 end;
@@ -448,7 +496,11 @@ var GetPixel: TGetPixel;
 begin
   GetPixel:= GetPixelFormatGetter(Bitmap.Format);
 
+  {$IFDEF LINUX}
+  Dest.PixelFormat := pf24bit;
+  {$ELSE}
   Dest.PixelFormat := pf32bit;
+  {$ENDIF}
   Dest.Width       := Bitmap.Width;
   Dest.Height      := Bitmap.Height;
 
@@ -466,7 +518,11 @@ begin
 
       PRGBTriple(DstPixel)^:= DstColor;
 
+      {$IFDEF LINUX}
+      Inc(DstPixel, 3);//  pf24bit
+      {$ELSE}
       Inc(DstPixel, 4);//  pf32bit
+      {$ENDIF}
     end;
   end;
 end;
@@ -484,7 +540,11 @@ var GetPixel: TGetPixel;
 begin
   GetPixel:= GetPixelFormatGetter(Bitmap.Format);
 
+  {$IFDEF LINUX}
+  Dest.PixelFormat := pf24bit;
+  {$ELSE}
   Dest.PixelFormat := pf32bit;
+  {$ENDIF}
   Dest.Width       := Bitmap.Width;
   Dest.Height      := Bitmap.Height;
 
@@ -520,7 +580,11 @@ begin
 
       PRGBTriple(DstPixel)^:= DstColor;
 
+      {$IFDEF LINUX}
+      Inc(DstPixel, 3);//  pf24bit
+      {$ELSE}
       Inc(DstPixel, 4);//  pf32bit
+      {$ENDIF}
     end;
   end;
 end;
@@ -570,8 +634,7 @@ begin
   Result:= TBitmap.Create;
   Result.Width      := Size * 2;
   Result.Height     := Size * 2;
-  Result.PixelFormat:= pf32bit;
-
+  Result.PixelFormat:= pf24bit;
   DrawTransparent(Result.Canvas, Result.Canvas.ClipRect, Size);
 end;
 
@@ -594,7 +657,11 @@ var GetPixel: TGetPixel;
 begin
   GetPixel:= GetPixelFormatGetter(Format);
 
+  {$IFDEF LINUX}
+  Dest.PixelFormat := pf24bit;
+  {$ELSE}
   Dest.PixelFormat := pf32bit;
+  {$ENDIF}
   Dest.Width       := Width;
   Dest.Height      := Height;
 
@@ -630,7 +697,11 @@ var GetPixel: TGetPixel;
 begin
   GetPixel:= GetPixelFormatGetter(Format);
 
+  {$IFDEF LINUX}
+  Dest.PixelFormat := pf24bit;
+  {$ELSE}
   Dest.PixelFormat := pf32bit;
+  {$ENDIF}
   Dest.Width       := Width;
   Dest.Height      := Height;
 
@@ -668,7 +739,11 @@ begin
 
       PRGBTriple(DstPixel)^:= DstColor;
 
+      {$IFDEF LINUX}
+      Inc(DstPixel, 3);//  pf24bit
+      {$ELSE}
       Inc(DstPixel, 4);//  pf32bit
+      {$ENDIF}
     end;
   end;
 end;
@@ -686,7 +761,11 @@ var GetPixel: TGetPixel;
 begin
   GetPixel:= GetPixelFormatGetter(Format);
 
+  {$IFDEF LINUX}
+  Dest.PixelFormat := pf24bit;
+  {$ELSE}
   Dest.PixelFormat := pf32bit;
+  {$ENDIF}
   Dest.Width       := Width;
   Dest.Height      := Height;
 
@@ -707,7 +786,11 @@ begin
 
       PRGBQuad(DstPixel)^:= DstColor;
 
+      {$IFDEF LINUX}
+      Inc(DstPixel, 3);//  pf24bit
+      {$ELSE}
       Inc(DstPixel, 4);//  pf32bit
+      {$ENDIF}
     end;
   end;
 end;
@@ -722,8 +805,11 @@ var SrcPixel: PByte;
 var GetPixel: TGetPixel;
 begin
   GetPixel:= GetPixelFormatGetter(Format);
-
+  {$IFDEF LINUX}
+  Dest.PixelFormat := pf24bit;
+  {$ELSE}
   Dest.PixelFormat := pf32bit;
+  {$ENDIF}
   Dest.Width       := Width;
   Dest.Height      := Height;
 
@@ -774,7 +860,11 @@ begin
       end;
       PRGBQuad(DstPixel)^:= DstColor;
 
+      {$IFDEF LINUX}
+      Inc(DstPixel, 3);//  pf24bit
+      {$ELSE}
       Inc(DstPixel, 4);//  pf32bit
+      {$ENDIF}
     end;
   end;
 end;
@@ -843,7 +933,7 @@ begin
 
       SetPixel(DstPixel, DstColor);
 
-      Inc(SrcColor, 3);//  pf24bit
+      Inc(SrcColor, 3);//  pf24bit  ???//???
     end;
   end;
 end;
@@ -855,7 +945,7 @@ var Bitmap: TBitmap;
 begin
   Bitmap:= TBitmap.Create;
   try
-    Bitmap.PixelFormat:= pf24bit;
+    Bitmap.PixelFormat:= pf24bit; //??????????????
 
     ImageList.GetBitmap(Index, Bitmap);
 
@@ -867,90 +957,6 @@ begin
   Build;
 end;
 
-
-
-                        {
-//------------------------------------------------------------------------------
-procedure TPHXTextureEx.LoadVersion1(const FileName: String);
-var Stream: TStream;
-begin
-  Stream:=TFileStream.Create(FileName, fmOpenRead or fmShareDenyNone);
-  try
-    LoadVersion1(Stream);
-  finally
-    Stream.Free;
-  end;
-end;
-
-//------------------------------------------------------------------------------
-procedure TPHXTextureEx.LoadVersion1(Stream: TStream);
-var Header: TPHXTextureHeader;
-var FileExt: AnsiString;
-var Graphic: TPHXGraphic;
-var Importer: TPHXGraphicImporter;
-
-var AWidth : Integer;
-var AHeight: Integer;
-var AFormat: TPHXPixelFormat;
-var ASize   : Integer;
-var APixels: PByteArray;
-begin
-  Header.Ident := #0#0#0#0#0#0;
-  Header.Version:= 0;
-
-  Stream.Read(Header.Ident  , SizeOf(Header.Ident));
-  Stream.Read(Header.Version, SizeOf(Header.Version));
-
-  If (Header.Ident <> 'PHXTEX') then
-  begin
-    raise Exception.Create('Not a valid Phoenix texture.');
-  end;
-
-  If (Header.Version <> PHXTEXTURE_VERSION) then
-  begin
-    raise Exception.CreateFmt('Texture version missmatch [File: %d Code: %d].', [Header.Version, PHXTEXTURE_VERSION]);
-  end;
-  Name:= ReadStr(Stream);
-
-  Stream.Read(AWidth      , SizeOf(Integer));
-  Stream.Read(AHeight     , SizeOf(Integer));
-  Stream.Read(AFormat     , SizeOf(TPHXPixelFormat));
-  Stream.Read(ASize       , SizeOf(Integer));
-
-//  SetSize(AWidth, AHeight, AFormat);
-
-  Settings.LoadFromStream(Stream);
-
-  ReadStr(Stream, FileExt);
-
-  if GraphicFormats.FindImporter(FileExt, Importer) then
-  begin
- //   ReAllocMem(Pixels, 0);
-
-    Importer.LoadGraphic(Stream, FileExt, Graphic);
-
-   // FWidth := Graphic.Width;
-   // FHeight:= Graphic.Height;
-   // //FFormat:= Graphic.Format;
-  //  FSize  := Graphic.Size;
-   // FPixels:= Graphic.Pixels;
-
-    Import(Graphic);
-  end else
-  begin
-    ReAllocMem(APixels, ASize);
-
-    Stream.Read(APixels^, ASize);
-
-    Import(AWidth, AHeight, AFormat, APixels);
-  end;
-
-  Compressor:= GraphicFormats.FindExporter(FileExt);
-
-  Build;
-end;
-
-                }
 
 
 
@@ -968,7 +974,11 @@ var GetPixel: TGetPixel;
 begin
   GetPixel:= GetPixelFormatGetter(Format);
 
+  {$IFDEF LINUX}
+  Dest.PixelFormat := pf24bit;
+  {$ELSE}
   Dest.PixelFormat := pf32bit;
+  {$ENDIF}
   Dest.Width       := Width;
   Dest.Height      := Height;
 
@@ -986,7 +996,11 @@ begin
 
       PRGBTriple(DstPixel)^:= DstColor;
 
+            {$IFDEF LINUX}
+      Inc(DstPixel, 3);//  pf24bit
+      {$ELSE}
       Inc(DstPixel, 4);//  pf32bit
+      {$ENDIF}
     end;
   end;
 end;
@@ -1004,7 +1018,11 @@ var GetPixel: TGetPixel;
 begin
   GetPixel:= GetPixelFormatGetter(Format);
 
+    {$IFDEF LINUX}
+  Dest.PixelFormat := pf24bit;
+  {$ELSE}
   Dest.PixelFormat := pf32bit;
+  {$ENDIF}
   Dest.Width       := Width;
   Dest.Height      := Height;
 
@@ -1042,7 +1060,11 @@ begin
 
       PRGBTriple(DstPixel)^:= DstColor;
 
+      {$IFDEF LINUX}
+      Inc(DstPixel, 3);//  pf24bit
+      {$ELSE}
       Inc(DstPixel, 4);//  pf32bit
+      {$ENDIF}
     end;
   end;
 end;
@@ -1060,7 +1082,11 @@ var GetPixel: TGetPixel;
 begin
   GetPixel:= GetPixelFormatGetter(Format);
 
+    {$IFDEF LINUX}
+  Dest.PixelFormat := pf24bit;
+  {$ELSE}
   Dest.PixelFormat := pf32bit;
+  {$ENDIF}
   Dest.Width       := Width;
   Dest.Height      := Height;
 
@@ -1081,7 +1107,11 @@ begin
 
       PRGBQuad(DstPixel)^:= DstColor;
 
+      {$IFDEF LINUX}
+      Inc(DstPixel, 3);//  pf24bit
+      {$ELSE}
       Inc(DstPixel, 4);//  pf32bit
+      {$ENDIF}
     end;
   end;
 end;
@@ -1097,7 +1127,11 @@ var GetPixel: TGetPixel;
 begin
   GetPixel:= GetPixelFormatGetter(Format);
 
+    {$IFDEF LINUX}
+  Dest.PixelFormat := pf24bit;
+  {$ELSE}
   Dest.PixelFormat := pf32bit;
+  {$ENDIF}
   Dest.Width       := Width;
   Dest.Height      := Height;
 
@@ -1148,7 +1182,11 @@ begin
       end;
       PRGBQuad(DstPixel)^:= DstColor;
 
+      {$IFDEF LINUX}
+      Inc(DstPixel, 3);//  pf24bit
+      {$ELSE}
       Inc(DstPixel, 4);//  pf32bit
+      {$ENDIF}
     end;
   end;
 end;
@@ -1173,84 +1211,6 @@ begin
   Result:= CreateTransparentImage(Size);
 end;
 
-
-       {
-// TPHXImageEx
-//------------------------------------------------------------------------------
-procedure TPHXImageEx.Draw(Dest: TBitmap);
-begin
-  DrawTexture(Self.Texture, Dest);
-end;
-
-//------------------------------------------------------------------------------
-procedure TPHXImageEx.Draw(Dest, Background: TBitmap);
-begin
-  DrawTexture(Self.Texture, Dest, Background);
-end;
-
-//------------------------------------------------------------------------------
-procedure TPHXImageEx.Draw(Dest: TBitmap; Background: TColor);
-begin
-  DrawTexture(Self.Texture, Dest, Background);
-end;
-
-//------------------------------------------------------------------------------
-procedure TPHXImageEx.DrawPattern(Dest: TCanvas; Buffer: TBitmap; X,Y: Integer; PatternIndex: Integer);
-var SrcRect: TRect;
-var DstRect: TRect;
-begin
-  if (PatternIndex < 0) or (PatternIndex >= Patterns.Count) then Exit;
-
-  SrcRect.Left  := Patterns[PatternIndex].X;
-  SrcRect.Top   := Patterns[PatternIndex].Y;
-  SrcRect.Right := Patterns[PatternIndex].X + Patterns[PatternIndex].Width;
-  SrcRect.Bottom:= Patterns[PatternIndex].Y + Patterns[PatternIndex].Height;
-
-  DstRect.Left  :=  X;
-  DstRect.Top    := Y;
-  DstRect.Right  := X + Patterns[PatternIndex].Width;
-  DstRect.Bottom := Y + Patterns[PatternIndex].Height;
-
-  Dest.CopyRect(DstRect, Buffer.Canvas, SrcRect);
-end;
-
-//------------------------------------------------------------------------------
-procedure TPHXImageEx.DrawPattern(Dest: TCanvas; Buffer: TBitmap; X, Y, PatternIndex: Integer; Zoom: Single);
-var SrcRect: TRect;
-var DstRect: TRect;
-begin
-  if (PatternIndex < 0) or (PatternIndex >= Patterns.Count) then Exit;
-
-  SrcRect.Left  := Patterns[PatternIndex].X;
-  SrcRect.Top   := Patterns[PatternIndex].Y;
-  SrcRect.Right := Patterns[PatternIndex].X + Patterns[PatternIndex].Width;
-  SrcRect.Bottom:= Patterns[PatternIndex].Y + Patterns[PatternIndex].Height;
-
-  DstRect.Left  :=  X;
-  DstRect.Top    := Y;
-  DstRect.Right  := X + Round(Patterns[PatternIndex].Width  * Zoom);
-  DstRect.Bottom := Y + Round(Patterns[PatternIndex].Height * Zoom);
-
-  Dest.CopyRect(DstRect, Buffer.Canvas, SrcRect);
-end;
-
-//------------------------------------------------------------------------------
-procedure TPHXImageEx.DrawPattern(Dest: TCanvas; Buffer: TBitmap; const Rect: TRect; const PatternIndex: Integer);
-var Pattern: TPHXPattern;
-var X,Y: Integer;
-begin
-  if( PatternIndex >= 0) and (PatternIndex < Patterns.Count) then
-  begin
-    Pattern:= Patterns.List^[PatternIndex];
-
-    X:= Rect.Left + ((Rect.Right  - Rect.Left) - Pattern.Width ) div 2;
-    Y:= Rect.Top  + ((Rect.Bottom - Rect.Top ) - Pattern.Height) div 2;
-
-    DrawPattern(Dest, Buffer, X,Y, PatternIndex);
-  end;
-end;
-
-      }
 
 
 

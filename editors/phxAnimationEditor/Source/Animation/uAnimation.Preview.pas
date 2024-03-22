@@ -14,6 +14,9 @@ uses
   phxImageEx;
 
 type
+
+  { TFrmAnimationPreview }
+
   TFrmAnimationPreview = class(TFrame)
     GroupBox1: TGroupBox;
     Panel1: TPanel;
@@ -21,7 +24,6 @@ type
     btnPlay: TToolButton;
     btnPause: TToolButton;
     btnStop: TToolButton;
-    ToolButton1: TToolButton;
     TrackBar1: TTrackBar;
     ImageList1: TImageList;
     ActionList1: TActionList;
@@ -38,6 +40,7 @@ type
     procedure actPauseExecute(Sender: TObject);
     procedure actStopExecute(Sender: TObject);
     procedure actAnimationUpdate(Sender: TObject);
+    procedure TrackBar1Change(Sender: TObject);
   private
     FAnimation: TPHXAnimation;
     FImage    : TPHXImage;
@@ -116,6 +119,8 @@ begin
 
   if Assigned(Image) then
   begin
+   //////////
+    /////
     Image.Draw(FBuffer, Graphics.ColorToRGB(clWindow));
   end else
   begin
@@ -133,6 +138,11 @@ begin
   actPlay .Enabled:= Assigned(Animation) and (AnimationState.Active = False);
   actStop .Enabled:= Assigned(Animation) and (AnimationState.Active = True);
   actPause.Enabled:= Assigned(Animation) and (AnimationState.Active = True);
+end;
+
+procedure TFrmAnimationPreview.TrackBar1Change(Sender: TObject);
+begin
+
 end;
 
 //------------------------------------------------------------------------------
@@ -215,6 +225,7 @@ begin
     X:= Rect.Left + ((Rect.Right  - Rect.Left) - Pattern.Width ) div 2;
     Y:= Rect.Top  + ((Rect.Bottom - Rect.Top ) - Pattern.Height) div 2;
 
+    //////////
     Animation.Image.DrawPattern(PaintBox1.Canvas, FBuffer, X,Y, PatternIndex);
   end;
 end;

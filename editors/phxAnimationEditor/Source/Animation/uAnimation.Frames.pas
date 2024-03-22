@@ -249,6 +249,7 @@ begin
     X:= Rect.Left + ((Rect.Right  - Rect.Left) - Pattern.Width ) div 2;
     Y:= Rect.Top  + ((Rect.Bottom - Rect.Top ) - Pattern.Height) div 2;
 
+   // Animation.Image.DrawPattern(PaintBox1.Canvas, FBuffer, X,Y, PatternIndex);
     Animation.Image.DrawPattern(PaintBox1.Canvas, FBuffer, X,Y, PatternIndex);
   end;
 end;
@@ -394,7 +395,10 @@ begin
 
   if Assigned(Image) then
   begin
-    FAnimation.Image.Draw(FBuffer, FBackground);
+    //Image.Draw(FBuffer, FBackground);//Graphics.ColorToRGB(clWindow));
+    FAnimation.Image.Draw(FBuffer, Graphics.ColorToRGB(clWindow) );
+
+  //  FAnimation.Image.Draw(FBuffer, FBackground);
   end else
   begin
     FBuffer.Width := 0;

@@ -3,14 +3,12 @@ unit uMain;
 interface
 
 uses
-  Messages, SysUtils, Variants, Classes, Graphics,
-  Controls, Forms, Dialogs, ComCtrls, ToolWin, ExtCtrls, ImgList, StdCtrls,
+  SysUtils, Variants, Classes, Graphics,
+  Controls, Forms, Dialogs, ComCtrls, ExtCtrls, ImgList, StdCtrls,
   Menus,
 
   phxImage,
-
   uActions,
-
   uImage.List,
   uImage.Patterns,
 
@@ -21,8 +19,10 @@ uses
 
 type
 
+{ TFrmMain }
+
 TFrmMain = class(TForm)
-    ControlBar1: TControlBar;
+    TabPreview: TTabSheet;
     ToolBarStandard: TToolBar;
     ToolButton3: TToolButton;
     ToolButton4: TToolButton;
@@ -92,12 +92,9 @@ constructor TFrmMain.Create(AOwner: TComponent);
 var Index: Integer;
 begin
   inherited;
-
   ModActions:= TModActions.Create(Self);
   ModActions.DocumentChanged.Add(SetDocument);
   ModActions.Settings.Recent.Menu:= menuRecent;
-
-
 
   FrmImageList:= TFrmImageList.Create(Self);
   FrmImageList.Parent:= TabImages;
@@ -108,7 +105,7 @@ begin
   FrmPatterns.Align := alClient;
 
   FrmAnimationPreview:= TFrmAnimationPreview.Create(Self);
-  FrmAnimationPreview.Parent:= TabProperties;
+  FrmAnimationPreview.Parent:= TabPreview;
   FrmAnimationPreview.Align := alClient;
 
   FrmAnimationProperties:= TFrmAnimationProperties.Create(Self);
@@ -159,12 +156,12 @@ begin
     begin
       Caption:= 'phxAnimationEditor - ' + Document.Name + '*';
 
-      StatusBar1.Panels[1].Text:= 'Modified';
+      StatusBar1.SimpleText:= 'Modified';
     end else
     begin
       Caption:= 'phxAnimationEditor - ' + Document.Name;
 
-      StatusBar1.Panels[1].Text:= '';
+      StatusBar1.SimpleText:= '';
     end;
 
     FrmPatterns.Image:= Document.Animation.Image;
@@ -184,7 +181,7 @@ begin
     FrmAnimationFrames    .Animation:= nil;
     FrmAnimationFrame     .Animation:= nil;
 
-    StatusBar1.Panels[1].Text:= '';
+    StatusBar1.SimpleText:= '';
   end;
 
   FrmImageList.UpdateImages;
@@ -198,8 +195,6 @@ begin
     Action:= caNone;
   end;
 end;
-
-
 //------------------------------------------------------------------------------
 procedure TFrmMain.FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
 begin

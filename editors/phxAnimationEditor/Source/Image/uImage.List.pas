@@ -14,6 +14,7 @@ type
   { TFrmImageList }
 
   TFrmImageList = class(TFrame)
+    GroupBox1: TGroupBox;
     ListBox1: TListBox;
     Panel1: TPanel;
     Button1: TButton;

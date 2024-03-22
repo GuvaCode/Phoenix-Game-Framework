@@ -81,7 +81,7 @@ TFrmPatterns = class(TFrame)
   end;
 
 implementation
-
+uses LCLIntf, LCLType;
 {$R *.lfm}
 
 //TFrmPatterns
@@ -156,70 +156,25 @@ begin
     H:= Pattern.Height + PaintBox1.Canvas.TextHeight( String(Pattern.Name) );
 
     // Move to the next line
-    { #todo : Fix me }
-    {
     if (X + W + GetSystemMetrics(SM_CXVSCROLL) > ScrollBox1.ClientWidth) then
     begin
       X:= PATTERN_HSPACE div 2;
-
       Y:= Y + Row + PATTERN_VSPACE;
-
       Row:= 0;
     end;
-    }
+
     Rect.Left  := X;
     Rect.Top   := Y;
     Rect.Right := X + W;
     Rect.Bottom:= Y + H;
 
     FPatternRects.Add(Rect);
-
     Row:= Max(Row, H);
-
     X:= X + W + PATTERN_VSPACE;
   end;
   PaintBox1.Height:= Y + Row + PATTERN_VSPACE;
-
   PaintBox1.Invalidate;
 end;
-
-
-  {
-
-//------------------------------------------------------------------------------
-procedure TFrmPatterns.CalculateGridSize;
-var Index  : Integer;
-var Pattern: TPHXPattern;
-var W,H    : Integer;
-begin
-  FGridSize.Width := 0;
-  FGridSize.Height:= 0;
-
-  PaintBox1.Canvas.Font.Style := [fsBold];
-  PaintBox1.Canvas.Brush.Style:= bsClear;
-  for Index := 0 to Image.Patterns.Count - 1 do
-  begin
-    Pattern:= Image.Patterns.List^[Index];
-
-    // Calculate the width of the column
-    if PaintBox1.Canvas.TextWidth( String(Pattern.Name) ) > Pattern.Width then
-    begin
-      W:= PaintBox1.Canvas.TextWidth( String(Pattern.Name) );
-    end else
-    begin
-      W:= Pattern.Width;
-    end;
-
-    H:= Pattern.Height + PaintBox1.Canvas.TextHeight( String(Pattern.Name) );
-
-    if W > FGridSize.Width  then FGridSize.Width := W;
-    if H > FGridSize.Height then FGridSize.Height:= H;
-  end;
-
-  PaintBox1.Height:= GetRowCount * FGridSize.Height;
-end;    }
-
-
 
 //------------------------------------------------------------------------------
 procedure TFrmPatterns.SetImage(const Value: TPHXImage);
@@ -229,7 +184,7 @@ begin
   if Assigned(FImage) then
   begin
     Image.Draw(FBuffer, FBackground);
-
+    // Image.Draw(FBuffer, Graphics.ColorToRGB(clWindow));
     //CalculateGridSize;
 
     PlacePatterns;

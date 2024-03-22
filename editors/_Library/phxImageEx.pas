@@ -338,7 +338,7 @@ begin
 
       PRGBTriple(DstPixel)^:= DstColor;
 
-      Inc(DstPixel, 3);//  pf32bit
+      Inc(DstPixel, 4);//  pf32bit
     end;
   end;
 end;
@@ -361,19 +361,23 @@ begin
 
   if (Background.Width > 0) and (Background.Height > 0) then
   begin
+
     Y:=0;
     while Y < Height do
     begin
       X:=0;
       while X < Width do
       begin
+
         Dest.Canvas.Draw(X,Y, Background);
         Inc(X, Background.Width);
+
       end;
       Inc(Y, Background.Height);
    end;
-  end;
 
+  end;
+  Dest.BeginUpdate();
   for y := 0 to Height - 1 do
   begin
     DstPixel:= Dest.Scanline[y];
@@ -381,19 +385,16 @@ begin
     for x := 0 to Width - 1 do
     begin
       GetPixel(SrcPixel, SrcColor);
-
       Alpha:= SrcColor.Alpha / 255;
-
       DstColor          :=  PRGBTriple(DstPixel)^;
       DstColor.rgbtRed  := Trunc(DstColor.rgbtRed   * (1- Alpha) + SrcColor.Red   * (Alpha));
       DstColor.rgbtGreen:= Trunc(DstColor.rgbtGreen * (1- Alpha) + SrcColor.Green * (Alpha));
       DstColor.rgbtBlue := Trunc(DstColor.rgbtBlue  * (1- Alpha) + SrcColor.Blue  * (Alpha));
-
       PRGBTriple(DstPixel)^:= DstColor;
-
-      Inc(DstPixel, 3);//  pf32bit
+      Inc(DstPixel, 4);//  pf24bit
     end;
   end;
+  Dest.EndUpdate();
 end;
 
 //------------------------------------------------------------------------------
@@ -428,7 +429,7 @@ begin
 
       PRGBTriple(DstPixel)^:= DstColor;
 
-      Inc(DstPixel, 3);
+      Inc(DstPixel, 4);
     end;
   end;
 end;
@@ -516,7 +517,7 @@ begin
       Inc(Y, Background.Height);
    end;
   end;
-
+  Dest.BeginUpdate();
   for y := 0 to Height - 1 do
   begin
     DstPixel:= Dest.Scanline[y];
@@ -534,9 +535,10 @@ begin
 
       PRGBTriple(DstPixel)^:= DstColor;
 
-      Inc(DstPixel, 3);//  pf32bit
+      Inc(DstPixel, 4);//  pf32bit
     end;
   end;
+  Dest.EndUpdate();
 end;
 
 //------------------------------------------------------------------------------

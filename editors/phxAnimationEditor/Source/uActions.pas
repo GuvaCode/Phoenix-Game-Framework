@@ -16,7 +16,7 @@ uses
   phxTypes,
   phxTexture,
   phxImage,
-  phxImageEx,
+  //phxImageEx,
 
   phxGraphics,
   phxDevice;
@@ -196,7 +196,7 @@ implementation
 
 {$R *.lfm}
 
-uses LCLIntf, LCLType, LMessages;
+uses LCLIntf, LCLType;
 
 resourcestring
   SRenameText = 'The animation name "%s" doesnt match the filename.'#13'Do you want to rename the animation to "%s" before saving?';
@@ -206,23 +206,9 @@ resourcestring
 
 
 //------------------------------------------------------------------------------
-function GetUserFromWindows: string;
-//var UserName    : String;
-//var UserNameLen : Cardinal;
+function GetUser: string;
 Begin
-  {UserNameLen := 255;
-
-  SetLength(userName, UserNameLen) ;
-
-  If GetUserName(PChar(UserName), UserNameLen) then
-  begin
-    Result := Copy(UserName,1,UserNameLen - 1)
-  end else
-  begin
-     Result := 'Unknown';
-  end; }
-
- Result := GetEnvironmentVariable('USERNAME');
+ Result := String(GetEnvironmentVariable('USER'));
 end;
 
 {$REGION 'TRecent'}
@@ -444,7 +430,7 @@ begin
 
   if SameText(FileExt, '.xml') then
   begin
-    Animation.LoadFromXml(Name);
+   { #todo : Fix ME }// Animation.LoadFromXml(Name);
   end else
   begin
     Animation.LoadFromFile(Name);
@@ -459,7 +445,7 @@ begin
 
   if SameText(FileExt, '.xml') then
   begin
-    Animation.SaveToXml(Name);
+    { #todo : Fix ME }//  Animation.SaveToXml(Name);
   end else
   begin
     FAnimation.SaveToFile(Name);
@@ -576,10 +562,10 @@ begin
   Result.State:= [dsNew];
 
   Result.Animation.Name       := Name;
-  Result.Animation.Author     := GetUserFromWindows;
+  Result.Animation.Author     := GetUser;
   Result.Animation.Version    := DateToStr(Now);
   Result.Animation.Comment    := '';
-     {
+  {
   if FImages.Count > 0 then
   begin
     Result.Animation.Image:= FImages.First;
@@ -587,7 +573,7 @@ begin
     Result.Animation.Frames.Add('Frame 1', 0.5, 1);
     Result.Animation.Frames.Add('Frame 1', 0.5, 2);
   end;
-         }
+  }
   SetDocument(Result);
 
   Inc(DocumentCounter);
@@ -911,7 +897,7 @@ end;
 //------------------------------------------------------------------------------
 procedure TModActions.actToolImageEditorExecute(Sender: TObject);
 var App: String;
-begin
+begin  { #todo : Fix me }
   App:= ExtractFilePath(Application.ExeName) + 'phxImageEditor.exe';
 
    OpenDocument(PChar(App)); { *Преобразовано из ShellExecute* }
