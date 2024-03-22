@@ -1,110 +1,104 @@
 object FrmAnimationFrame: TFrmAnimationFrame
   Left = 0
+  Height = 482
   Top = 0
   Width = 322
-  Height = 482
-  Padding.Left = 4
-  Padding.Top = 4
-  Padding.Right = 4
-  Padding.Bottom = 4
+  ClientHeight = 482
+  ClientWidth = 322
   TabOrder = 0
+  DesignLeft = 875
+  DesignTop = 264
   object GroupBox1: TGroupBox
-    Left = 4
-    Top = 4
-    Width = 314
+    Left = 0
     Height = 189
+    Top = 0
+    Width = 322
     Align = alTop
     Caption = 'Frame properties'
+    ClientHeight = 172
+    ClientWidth = 320
     TabOrder = 0
-    DesignSize = (
-      314
-      189)
     object Label5: TLabel
       Left = 8
+      Height = 14
       Top = 21
-      Width = 29
-      Height = 13
+      Width = 35
       Caption = '&Index:'
-      Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -11
       Font.Name = 'MS Sans Serif'
-      Font.Style = []
       ParentFont = False
     end
     object Label6: TLabel
       Left = 8
+      Height = 16
       Top = 102
-      Width = 36
-      Height = 13
+      Width = 45
       Caption = '&Pattern'
     end
     object Label7: TLabel
       Left = 8
+      Height = 16
       Top = 75
-      Width = 22
-      Height = 13
+      Width = 29
       Caption = '&Time'
     end
     object Label1: TLabel
       Left = 8
+      Height = 14
       Top = 48
-      Width = 31
-      Height = 13
+      Width = 37
       Caption = '&Name:'
-      Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -11
       Font.Name = 'MS Sans Serif'
-      Font.Style = []
       ParentFont = False
     end
     object edFrameIndex: TEdit
       Left = 64
+      Height = 28
       Top = 18
-      Width = 232
-      Height = 21
-      Anchors = [akLeft, akTop, akRight]
+      Width = 240
+      Anchors = [akTop, akLeft, akRight]
       Color = clBtnFace
       ReadOnly = True
       TabOrder = 0
     end
-    object edFrameTime: TJvSpinEdit
+    object edFrameTime: TSpinEdit
       Left = 64
+      Height = 28
       Top = 72
-      Width = 232
-      Height = 21
-      Value = -1.000000000000000000
-      Anchors = [akLeft, akTop, akRight]
-      TabOrder = 1
+      Width = 240
+      Anchors = [akTop, akLeft, akRight]
       OnChange = edFrameTimeChange
+      TabOrder = 1
     end
-    object edFramePatternName: TJvComboBox
+    object edFramePatternName: TComboBox
       Left = 64
+      Height = 28
       Top = 136
-      Width = 232
-      Height = 21
-      Anchors = [akLeft, akTop, akRight]
+      Width = 240
+      Anchors = [akTop, akLeft, akRight]
+      ItemHeight = 0
       TabOrder = 2
     end
     object edFrameName: TEdit
       Left = 64
+      Height = 28
       Top = 45
-      Width = 232
-      Height = 21
-      Anchors = [akLeft, akTop, akRight]
+      Width = 240
+      Anchors = [akTop, akLeft, akRight]
       TabOrder = 3
       OnChange = edFrameNameChange
     end
-    object edFramePattern: TJvSpinEdit
+    object edFramePattern: TSpinEdit
       Left = 64
+      Height = 28
       Top = 99
-      Width = 232
-      Height = 21
-      Value = -1.000000000000000000
-      Anchors = [akLeft, akTop, akRight]
-      TabOrder = 4
+      Width = 240
+      Anchors = [akTop, akLeft, akRight]
       OnChange = edFramePatternChange
+      TabOrder = 4
     end
   end
 end

@@ -3,9 +3,9 @@ unit uAnimation.Preview;
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes,
-  Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls,
-  Vcl.ActnList, Vcl.ImgList, Vcl.ComCtrls, Vcl.ToolWin, Vcl.StdCtrls,
+  Messages, SysUtils, Variants, Classes,
+  Graphics, Controls, Forms, Dialogs, ExtCtrls,
+  ActnList, ImgList, ComCtrls, ToolWin, StdCtrls,
 
   phxTypes,
   phxGraphicsEx,
@@ -63,7 +63,7 @@ type
 
 implementation
 
-{$R *.dfm}
+{$R *.lfm}
 
 // TFrmAnimationPreview
 //==============================================================================
@@ -75,8 +75,11 @@ begin
 
   Panel2.DoubleBuffered:= True;
 
+  { #todo : Fix Me EpikTmier? }
+  {
   QueryPerformanceFrequency(FTimerFrequency);
   QueryPerformanceCounter(FTimerTicks);
+ }
 end;
 
 
@@ -89,7 +92,7 @@ begin
     FAnimation := Value;
     if Assigned(FAnimation) then
     begin
-      Animation.Reset(AnimationState);
+     { #todo : Fix ME } // Animation.Reset(AnimationState);
     end else
     begin
       AnimationState.Active := False;
@@ -113,7 +116,7 @@ begin
 
   if Assigned(Image) then
   begin
-    Image.Draw(FBuffer, Vcl.Graphics.ColorToRGB(clWindow));
+    Image.Draw(FBuffer, Graphics.ColorToRGB(clWindow));
   end else
   begin
     FBuffer.Width := 0;
@@ -135,7 +138,7 @@ end;
 //------------------------------------------------------------------------------
 procedure TFrmAnimationPreview.actPlayExecute(Sender: TObject);
 begin
-  Animation.Reset(AnimationState);
+ { #todo : Fix ME } // Animation.Reset(AnimationState);
 end;
 
 //------------------------------------------------------------------------------
@@ -149,7 +152,7 @@ end;
 //------------------------------------------------------------------------------
 procedure TFrmAnimationPreview.actStopExecute(Sender: TObject);
 begin
-  Animation.Reset(AnimationState);
+ { #todo : Fix ME } // Animation.Reset(AnimationState);
 
   AnimationState.Active := False;
 
@@ -171,7 +174,7 @@ begin
     // Running
     if AnimationState.Active then
     begin
-      Animation.Update(AnimationState, Delta);
+    { #todo : Fix ME } //  Animation.Update(AnimationState, Delta);
 
       if Index <> AnimationState.Frame then
       begin
@@ -277,11 +280,14 @@ end;
 function TFrmAnimationPreview.GetDeltaTime: Single;
 var Ticks: Int64;
 begin
+  { #todo : Fix ME }
+  {
   QueryPerformanceCounter(Ticks);
 
   Result := (Ticks - FTimerTicks) / FTimerFrequency;
 
   FTimerTicks:= Ticks;
+  }
 end;
 
 

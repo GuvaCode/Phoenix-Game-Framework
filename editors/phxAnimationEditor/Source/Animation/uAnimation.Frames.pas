@@ -3,9 +3,9 @@ unit uAnimation.Frames;
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes,
-  Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls,
-  Vcl.ComCtrls, Vcl.ToolWin, Vcl.ImgList, Vcl.ActnList,
+  Messages, SysUtils, Variants, Classes, LCLType, Types,
+  Graphics, Controls, Forms, Dialogs, ExtCtrls, StdCtrls,
+  ComCtrls, ToolWin, ImgList, ActnList,
 
   Generics.Collections,
 
@@ -92,7 +92,7 @@ TFrmAnimationFrames = class(TFrame)
 
 implementation
 
-{$R *.dfm}
+{$R *.lfm}
 
 // TFrmAnimationFrames
 //==============================================================================
@@ -181,11 +181,11 @@ begin
 
   if Assigned(Animation) then
   begin
-    if Key = VK_LEFT then
+    if Key = LCLType.VK_LEFT then
     begin
       SetSelected( Max(0, FSelected - 1));
     end;
-    if Key = VK_RIGHT then
+    if Key = LCLType.VK_RIGHT then
     begin
       SetSelected( Min(FSelected + 1, Animation.Frames.Count - 1));
     end;
@@ -221,7 +221,7 @@ begin
 
   SetFocus;
 
-  if Button = mbLeft then
+  if Button = TMouseButton.mbLeft then
   begin
     for Index := 0 to FrameRects.Count - 1 do
     begin
@@ -256,7 +256,7 @@ end;
 //------------------------------------------------------------------------------
 procedure TFrmAnimationFrames.PaintBox1Paint(Sender: TObject);
 var Index: Integer;
-var Frame: TPHXAnimationFrame;
+var Frame_: TPHXAnimationFrame;
 var Rect : TRect;
 var R    : TRect;
 begin
@@ -279,21 +279,21 @@ begin
 
       for Index := 0 to Animation.Frames.Count - 1 do
       begin
-        Frame:= Animation.Frames[Index];
+        Frame_:= Animation.Frames[Index];
         Rect := FrameRects[Index];
 
-        TextOut(Rect.Left + 2, Rect.Top + 4, String(Frame.Name));
+        TextOut(Rect.Left + 2, Rect.Top + 4, String(Frame_.Name));
 
        // Rect.Top:= Rect.Top + TextHeight(String(Frame.Name)) + 8;
 
-        if Assigned(Animation.Image) and (Frame.Pattern >= 0) and (Frame.Pattern < Animation.Image.Patterns.Count) then
+        if Assigned(Animation.Image) and (Frame_.Pattern >= 0) and (Frame_.Pattern < Animation.Image.Patterns.Count) then
         begin
           R.Left  := Rect.Left + 2;
-          R.Top   := Rect.Top  + TextHeight(String(Frame.Name)) + 2;
+          R.Top   := Rect.Top  + TextHeight(String(Frame_.Name)) + 2;
           R.Right := Rect.Right + 2;
           R.Bottom:= Rect.Bottom + 2;
 
-          DrawPattern(R , Frame.Pattern);
+          DrawPattern(R , Frame_.Pattern);
         end;
 
         if Index = FSelected then

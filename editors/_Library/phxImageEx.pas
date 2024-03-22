@@ -1,30 +1,29 @@
 unit phxImageEx;
 
+{$MODE Delphi}
+
 interface
 
-uses Classes, Types, SysUtils, Windows, Graphics, Dialogs,
-
-  xmldom, XMLIntf, msxmldom, XMLDoc,
-
-  phxTypes,
-  phxMath,
-
-  phxGraphics,
-  phxGraphicsEx,
-
-  phxImage;
+uses Classes, Types, SysUtils, Graphics, Dialogs,
+     Laz2_DOM, Laz2_XMLRead, Laz2_XMLWrite,
+     LCLIntf, LCLType,
+     phxTypes,
+     phxMath,
+     phxGraphics,
+     phxGraphicsEx,
+     phxImage;
 
 type
 
 //------------------------------------------------------------------------------
 TPHXImageEx = class helper for TPHXImage
   private
-    procedure SavePatterns(Parent: IXMLNode);
-    procedure SaveTags(Parent: IXMLNode);
+    procedure SavePatterns(Document: TXMLDocument; Parent: TDOMNode);
+    procedure SaveTags(Document: TXMLDocument; Parent: TDOMNode);
     procedure SaveTexture(const FileName: String) ;
 
-    procedure LoadPatterns(Parent: IXMLNode);
-    procedure LoadTags(Parent: IXMLNode);
+    procedure LoadPatterns(Parent: TDOMNode);
+    procedure LoadTags(Parent: TDOMNode);
     procedure LoadTexture(const FileName: String);
   public
     // Load the image from a xml file
@@ -58,8 +57,8 @@ TPHXImageEx = class helper for TPHXImage
 //------------------------------------------------------------------------------
 TPHXAnimationEx = class helper for TPHXAnimation
   private
-    procedure LoadFrames(Parent: IXMLNode);
-    procedure SaveFrames(Parent: IXMLNode);
+    procedure LoadFrames(Parent: TDOMNode);
+    procedure SaveFrames(Document: TXMLDocument; Parent: TDOMNode);
   public
     // Load the animation from a xml file
     procedure LoadFromXML(const FileName: String);
@@ -75,46 +74,50 @@ implementation
 
 //------------------------------------------------------------------------------
 procedure TPHXImageEx.SaveToXML(const FileName: String);
-var Document: IXMLDocument;
-var Root    : IXMLNode;
-var Node    : IXMLNode;
+var Document: TXMLDocument;
+var Root    : TDOMNode;
+var Node    : TDOMNode;
+
 begin
-  Document:= NewXMLDocument;
-  Document.Options:= Document.Options + [doNodeAutoIndent];
+  Document := TXMLDocument.Create;
+  // создаем корневой узел
+  Root := Document.CreateElement('phxImage');
+  TDOMElement(Root).SetAttribute('Version', IntToStr(PHXIMAGE_VERSION));
+  Document.Appendchild(Root);
+  Root:= Document.DocumentElement;
 
-  Root:= Document.AddChild('phxImage');
-  Root.Attributes['Version']:= PHXIMAGE_VERSION;
+  Node:= Document.CreateElement('Image');
+  TDOMElement(Node).SetAttribute('Name', Name);
+  TDOMElement(Node).SetAttribute('Author', Author);
+  TDOMElement(Node).SetAttribute('Version', Version);
+  TDOMElement(Node).SetAttribute('Width', IntToStr(Width));
+  TDOMElement(Node).SetAttribute('Height', IntToStr(Height));
+  Document.Appendchild(Root);
 
-  Node:= Root.AddChild('Image');
+  Node:= Document.CreateElement('Patterns');
   begin
-    Node.Attributes['Name'   ]:= Name;
-    Node.Attributes['Author' ]:= Author;
-    Node.Attributes['Version']:= Version;
-    Node.Attributes['Comment']:= Comment;
-    Node.Attributes['Width'  ]:= Width;
-    Node.Attributes['Height' ]:= Height;
+    SavePatterns(Document, Node);
   end;
-  Node:= Root.AddChild('Patterns');
-  begin
-    SavePatterns(Node);
-  end;
-  Node:= Root.AddChild('Tags');
-  begin
-    SaveTags(Node);
-  end;
+  Document.Appendchild(Root);
 
-  Document.SaveToFile(FileName);
+  Node:= Document.CreateElement('Patterns');
+  begin
+    SaveTags(Document, Node);
+  end;
+  Document.Appendchild(Root);
+
+  WriteXMLFile(Document, Filename);
 
   SaveTexture(ChangeFileExt(FileName, '.png'));
 end;
 
 //------------------------------------------------------------------------------
 procedure TPHXImageEx.LoadFromXML(const FileName: String);
-var Document: IXMLDocument;
-var Root    : IXMLNode;
-var Node    : IXMLNode;
+var Document: TXMLDocument;
+var Root    : TDOMNode;
+var Node    : TDOMNode;
 begin
-  Document:= LoadXMLDocument(FileName);
+ { Document:= LoadXMLDocument(FileName);
 
   Root:= Document.DocumentElement;
 
@@ -153,6 +156,7 @@ begin
   begin
     MessageDlg( Format('Could not load the texture "%s".', [ChangeFileExt(FileName, '.png')]), mtError, [mbOK], 0);
   end;
+  }
 end;
 
 //------------------------------------------------------------------------------
@@ -170,43 +174,43 @@ begin
 end;
 
 //------------------------------------------------------------------------------
-procedure TPHXImageEx.SavePatterns(Parent: IXMLNode);
+procedure TPHXImageEx.SavePatterns(Document: TXMLDocument; Parent: TDOMNode);
 var Index  : Integer;
 var Pattern: TPHXPattern;
-var Node   : IXMLNode;
+var Node   : TDOMNode;
 begin
   for Index:= 0 to Patterns.Count - 1 do
   begin
     Pattern:= Patterns[Index];
-
-    Node:= Parent.AddChild('Pattern');
-    Node.Attributes['Name'   ]:=Pattern.Name;
-    Node.Attributes['X'      ]:=Pattern.X;
-    Node.Attributes['Y'      ]:=Pattern.Y;
-    Node.Attributes['Width'  ]:=Pattern.Width;
-    Node.Attributes['Height' ]:=Pattern.Height;
-    Node.Attributes['Pivot.X']:=Pattern.Pivot.X;
-    Node.Attributes['Pivot.Y']:=Pattern.Pivot.Y;
+    Node:= Document.CreateElement('Pattern');
+    TDOMElement(Node).SetAttribute('Name', Pattern.Name);
+    TDOMElement(Node).SetAttribute('X', IntToStr(Pattern.X));
+    TDOMElement(Node).SetAttribute('Y', IntToStr(Pattern.Y));
+    TDOMElement(Node).SetAttribute('Width', IntToStr(Pattern.Width));
+    TDOMElement(Node).SetAttribute('Height', IntToStr(Pattern.Height));
+    TDOMElement(Node).SetAttribute('Pivot.X', IntToStr(Pattern.Pivot.X));
+    TDOMElement(Node).SetAttribute('Pivot.Y', IntToStr(Pattern.Pivot.Y));
+    Document.Appendchild(Node);
   end;
 end;
 
 //------------------------------------------------------------------------------
-procedure TPHXImageEx.SaveTags(Parent: IXMLNode);
+procedure TPHXImageEx.SaveTags(Document: TXMLDocument; Parent: TDOMNode);
 var Index  : Integer;
 var Tag    : TPHXTag;
-var Node   : IXMLNode;
+var Node   : TDOMNode;
 begin
   for Index:= 0 to Tags.Count - 1 do
   begin
     Tag:= Tags[Index];
-
-    Node:= Parent.AddChild('Tag');
-    Node.Attributes['Name'    ]:= Tag.Name;
-    Node.Attributes['Pattern' ]:= Tag.Pattern;
-    Node.Attributes['X'       ]:= Tag.X;
-    Node.Attributes['Y'       ]:= Tag.Y;
-    Node.Attributes['Rotation']:= Tag.Rotation;
-  end;
+    Node:= Document.CreateElement('Pattern');
+    TDOMElement(Node).SetAttribute('Name', Tag.Name);
+    TDOMElement(Node).SetAttribute('Pattern', FloatToStr(Tag.Pattern));
+    TDOMElement(Node).SetAttribute('X', FloatToStr(Tag.X));
+    TDOMElement(Node).SetAttribute('Y', FloatToStr(Tag.Y));
+    TDOMElement(Node).SetAttribute('Rotation', FloatToStr(Tag.Rotation));
+    Document.Appendchild(Node);
+    end;
 end;
 
 //------------------------------------------------------------------------------
@@ -216,18 +220,40 @@ begin
 end;
 
 //------------------------------------------------------------------------------
-procedure TPHXImageEx.LoadPatterns(Parent: IXMLNode);
+procedure TPHXImageEx.LoadPatterns(Parent: TDOMNode);
 var Index  : Integer;
 var Pattern: TPHXPattern;
-var Node   : IXMLNode;
+var Node   : TDOMNode;
 begin
   Patterns.Clear;
 
   for Index := 0 to Parent.ChildNodes.Count - 1 do
   begin
-    Node:= Parent.ChildNodes[Index];
-
+    Node := Parent.ChildNodes[Index];
     if Node.NodeName <> 'Pattern' then Continue;
+
+    if TDOMElement(Node).hasAttribute('Name') then
+    Pattern.Name := Node.Attributes.GetNamedItem('Name').NodeValue;
+
+    if TDOMElement(Node).hasAttribute('X') then
+    Pattern.X := StrToInt(Node.Attributes.GetNamedItem('X').NodeValue);
+
+    if TDOMElement(Node).hasAttribute('Y') then
+    Pattern.Y := StrToInt(Node.Attributes.GetNamedItem('Y').NodeValue);
+
+    if TDOMElement(Node).hasAttribute('Width') then
+    Pattern.Width := StrToInt(Node.Attributes.GetNamedItem('Width').NodeValue);
+
+    if TDOMElement(Node).hasAttribute('Height') then
+    Pattern.Height := StrToInt(Node.Attributes.GetNamedItem('Height').NodeValue);
+
+    if TDOMElement(Node).hasAttribute('Pivot.X') then
+    Pattern.Pivot.X := StrToInt(Node.Attributes.GetNamedItem('Pivot.X').NodeValue);
+
+    if TDOMElement(Node).hasAttribute('Pivot.Y') then
+    Pattern.Pivot.Y := StrToInt(Node.Attributes.GetNamedItem('Pivot.Y').NodeValue);
+
+    {
 
     if Node.HasAttribute('Name')    then Pattern.Name    := ShortString(Node.Attributes['Name']);
     if Node.HasAttribute('X')       then Pattern.X       :=             Node.Attributes['X'];
@@ -236,16 +262,16 @@ begin
     if Node.HasAttribute('Height')  then Pattern.Height  :=             Node.Attributes['Height'];
     if Node.HasAttribute('Pivot.X') then Pattern.Pivot.X :=             Node.Attributes['Pivot.X'];
     if Node.HasAttribute('Pivot.Y') then Pattern.Pivot.Y :=             Node.Attributes['Pivot.Y'];
-
+      }
     Patterns.Add(Pattern);
   end;
 end;
 
 //------------------------------------------------------------------------------
-procedure TPHXImageEx.LoadTags(Parent: IXMLNode);
+procedure TPHXImageEx.LoadTags(Parent: TDOMNODE);
 var Index  : Integer;
 var Tag    : TPHXTag;
-var Node   : IXMLNode;
+var Node   : TDOMNode;
 begin
   Tags.Clear;
   for Index := 0 to Parent.ChildNodes.Count - 1 do
@@ -254,12 +280,29 @@ begin
 
     if Node.NodeName <> 'Tag' then Continue;
 
+    if TDOMElement(Node).hasAttribute('Name') then
+    Tag.Name := Node.Attributes.GetNamedItem('Name').NodeValue;
+
+    if TDOMElement(Node).hasAttribute('Pattern') then
+    Tag.Pattern := StrToInt(Node.Attributes.GetNamedItem('Pattern').NodeValue);
+
+    if TDOMElement(Node).hasAttribute('X') then
+    Tag.X := StrToFloat(Node.Attributes.GetNamedItem('X').NodeValue);
+
+    if TDOMElement(Node).hasAttribute('Y') then
+    Tag.Y := StrToFloat(Node.Attributes.GetNamedItem('Y').NodeValue);
+
+    if TDOMElement(Node).hasAttribute('Rotation') then
+    Tag.Y := StrToFloat(Node.Attributes.GetNamedItem('Rotation').NodeValue);
+
+
+    {
     if Node.HasAttribute('Name')     then Tag.Name    := ShortString(Node.Attributes['Name']);
     if Node.HasAttribute('Pattern')  then Tag.Pattern :=             Node.Attributes['Pattern'];
     if Node.HasAttribute('X')        then Tag.X       :=             Node.Attributes['X'];
     if Node.HasAttribute('Y')        then Tag.Y       :=             Node.Attributes['Y'];
     if Node.HasAttribute('Rotation') then Tag.Rotation:=             Node.Attributes['Rotation'];
-
+    }
     Tags.Add(Tag);
   end;
 end;
@@ -625,119 +668,68 @@ begin
 
   Result:= Header.Version;
 end;
-                         (*
-//------------------------------------------------------------------------------
-procedure TPHXImageTools.LoadVersion4(const FileName: String);
-var Stream: TStream;
-begin
-  Stream:=TFileStream.Create(FileName, fmOpenRead or fmShareDenyNone);
-  try
-    LoadVersion4(Stream);
-  finally
-    Stream.Free;
-  end;
-end;
-
-
-//------------------------------------------------------------------------------
-procedure TPHXImageTools.LoadVersion4(const Stream  : TStream);
-var Header     : TPHXImageHeader;
-var AName    : String;
-var AWidth   : Integer;
-var AHeight  : Integer;
-begin
-  Header.Ident  := #0#0#0#0#0#0;
-  Header.Version:= 0;
-
-  Stream.Read(Header.Ident  , SizeOf(Header.Ident));
-  Stream.Read(Header.Version, SizeOf(Header.Version));
-
-  If (Header.Ident <> 'PHXIMG') then
-  begin
-    {$IFDEF LOG_ENABLED}
-    TPHXLogger.getInstance.Log(logSevere, 'TPHXImage.LoadFromStream', 'Not a valid Phoenix image.');
-    {$ELSE}
-    raise Exception.Create('Not a valid Phoenix image.');
-    {$ENDIF}
-    Exit;
-  end;
-
-  If (Header.Version <> 4) then
-  begin
-    {$IFDEF LOG_ENABLED}
-    TPHXLogger.getInstance.Log(logSevere, 'TPHXImage.LoadFromStream', 'Image version missmatch [File: %d Code: %d].', [Header.Version, PHXIMAGE_VERSION]);
-    {$ELSE}
-    raise Exception.CreateFmt('Image version missmatch [File: %d Code: %d].', [Header.Version, PHXIMAGE_VERSION]);
-    {$ENDIF}
-    Exit;
-  end;
-
-  // The name of the image.
-  AName:= String( ReadStr(Stream) );
-  // The width of the image
-  Stream.Read(AWidth, SizeOf(AWidth));
-  // The height of the image
-  Stream.Read(AHeight, SizeOf(AHeight));
-
-  Name:= AName;
-  Width:= AWidth;
-  Height:= AHeight;
-
-  // Load the patterns
-  Patterns.LoadFromStream(Stream);
-
- // Tags.LoadFromStream(Stream);
-
-  // Load the texture
-  Texture.LoadFromStream(Stream);
-
-
-  Initialize;
-end;
-*)
-
-{$ENDREGION}
-
 
 {$REGION 'TPHXAnimationEx'}
 
 //------------------------------------------------------------------------------
 procedure TPHXAnimationEx.SaveToXML(const FileName: String);
-var Document: IXMLDocument;
-var Root    : IXMLNode;
-var Node    : IXMLNode;
+var Document: TXMLDocument;
+var Root    : TDOMNode;
+var Node    : TDOMNode;
 begin
-  Document:= NewXMLDocument;
-  Document.Options:= Document.Options + [doNodeAutoIndent];
+  {
+    Document := TXMLDocument.Create;
+  // создаем корневой узел
+  Root := Document.CreateElement('phxImage');
+  TDOMElement(Root).SetAttribute('Version', IntToStr(PHXIMAGE_VERSION));
+  Document.Appendchild(Root);
+  Root:= Document.DocumentElement;
 
-  Root:= Document.AddChild('phxAnimation');
-  Root.Attributes['Version']:= PHXANIMATION_VERSION;
+  Node:= Document.CreateElement('Image');
+  TDOMElement(Node).SetAttribute('Name', Name);
+  TDOMElement(Node).SetAttribute('Author', Author);
+  TDOMElement(Node).SetAttribute('Version', Version);
+  TDOMElement(Node).SetAttribute('Width', IntToStr(Width));
+  TDOMElement(Node).SetAttribute('Height', IntToStr(Height));
+  Document.Appendchild(Root);
 
-  Node:= Root.AddChild('Animation');
+  Node:= Document.CreateElement('Patterns');
   begin
-    Node.Attributes['Name'     ]:= Name;
-    Node.Attributes['Author'   ]:= Author;
-    Node.Attributes['Version'  ]:= Version;
-    Node.Attributes['Comment'  ]:= Comment;
-    Node.Attributes['Image'    ]:= ImageName;
-    Node.Attributes['Looped'   ]:= Looped;
-    Node.Attributes['FrameRate']:= FrameRate;
+    SavePatterns(Document, Node);
   end;
+  Document.Appendchild(Root);     }
 
-  Node:= Root.AddChild('Frames');
+  Document := TXMLDocument.Create;
+  Root := Document.CreateElement('phxAnimation');
+  TDOMElement(Root).SetAttribute('Version', IntToStr(PHXANIMATION_VERSION));
+  Document.Appendchild(Root);
+  Root:= Document.DocumentElement;
+
+  Node:= Document.CreateElement('Animation');
+  TDOMElement(Node).SetAttribute('Name', Name);
+  TDOMElement(Node).SetAttribute('Author', Author);
+  TDOMElement(Node).SetAttribute('Version', Version);
+  TDOMElement(Node).SetAttribute('Comment', Comment);
+  TDOMElement(Node).SetAttribute('Looped', BoolToStr(Looped));
+  TDOMElement(Node).SetAttribute('FrameRate', IntToStr(FrameRate));
+  Document.Appendchild(Root);
+
+
+  Node:= Document.CreateElement('Frames');
   begin
-    SaveFrames(Node);
+    SaveFrames(Document, Node);
   end;
-
-  Document.SaveToFile(FileName);
+  Document.Appendchild(Root);
+  //Document.SaveToFile(FileName);
 end;
 
 //------------------------------------------------------------------------------
 procedure TPHXAnimationEx.LoadFromXML(const FileName: String);
-var Document: IXMLDocument;
-var Root    : IXMLNode;
-var Node    : IXMLNode;
+var Document: TXMLDocument;
+var Root    : TDOMNode;
+var Node    : TDOMNode;
 begin
+  {
   Document:= LoadXMLDocument(FileName);
 
   Root:= Document.DocumentElement;
@@ -765,31 +757,43 @@ begin
   if Assigned(Node) then
   begin
     LoadFrames(Node);
-  end;
+  end; }
 end;
 
 //------------------------------------------------------------------------------
-procedure TPHXAnimationEx.SaveFrames(Parent: IXMLNode);
+procedure TPHXAnimationEx.SaveFrames(Document: TXMLDocument;  Parent: TDOMNode);
 var Index: Integer;
 var Frame: TPHXAnimationFrame;
-var Node : IXMLNode;
+var Node : TDOMNode;
 begin
+  {
+   Pattern:= Patterns[Index];
+    Node:= Document.CreateElement('Pattern');
+    TDOMElement(Node).SetAttribute('Name', Pattern.Name);
+    TDOMElement(Node).SetAttribute('X', IntToStr(Pattern.X));
+    TDOMElement(Node).SetAttribute('Y', IntToStr(Pattern.Y));
+    TDOMElement(Node).SetAttribute('Width', IntToStr(Pattern.Width));
+    TDOMElement(Node).SetAttribute('Height', IntToStr(Pattern.Height));
+    TDOMElement(Node).SetAttribute('Pivot.X', IntToStr(Pattern.Pivot.X));
+    TDOMElement(Node).SetAttribute('Pivot.Y', IntToStr(Pattern.Pivot.Y));
+    Document.Appendchild(Node);
+    }
   for Index:= 0 to Frames.Count - 1 do
   begin
     Frame:= Frames[Index];
-
-    Node:= Parent.AddChild('Frame');
-    Node.Attributes['Name'    ]:= Frame.Name;
-    Node.Attributes['Time'    ]:= Frame.Time;
-    Node.Attributes['Pattern' ]:= Frame.Pattern;
+    Node:= Document.CreateElement('Pattern');
+    TDOMElement(Node).SetAttribute('Name', Frame.Name);
+    TDOMElement(Node).SetAttribute('Time', FloatToStr(Frame.Time));
+    TDOMElement(Node).SetAttribute('Pattern', IntToStr(Frame.Pattern));
+    Document.Appendchild(Node);
   end;
 end;
 
 //------------------------------------------------------------------------------
-procedure TPHXAnimationEx.LoadFrames(Parent: IXMLNode);
+procedure TPHXAnimationEx.LoadFrames(Parent: TDOMNode);
 var Index: Integer;
 var Frame: TPHXAnimationFrame;
-var Node : IXMLNode;
+var Node : TDOMNode;
 begin
   Frames.Clear;
   for Index := 0 to Parent.ChildNodes.Count - 1 do
@@ -798,10 +802,23 @@ begin
 
     if Node.NodeName <> 'Frame' then Continue;
 
+    
+    if TDOMElement(Node).hasAttribute('Name') then
+    Frame.Name := Node.Attributes.GetNamedItem('Name').NodeValue;
+
+
+    if TDOMElement(Node).hasAttribute('Time') then
+    Frame.Time := StrTOFloat(Node.Attributes.GetNamedItem('Time').NodeValue);
+
+    if TDOMElement(Node).hasAttribute('Pattern') then
+    Frame.Pattern := StrToInt(Node.Attributes.GetNamedItem('Pattern').NodeValue);
+
+
+{
     if Node.HasAttribute('Name')    then Frame.Name    := ShortString(Node.Attributes['Name']);
     if Node.HasAttribute('Time')    then Frame.Time   :=              Node.Attributes['Time'];
     if Node.HasAttribute('Pattern') then Frame.Pattern :=             Node.Attributes['Pattern'];
-
+ }
     Frames.Add(Frame);
   end;
 end;

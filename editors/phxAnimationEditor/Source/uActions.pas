@@ -1,12 +1,15 @@
 unit uActions;
 
+{$MODE Delphi}
+
 interface
 
 uses
-  System.SysUtils, System.Classes, Vcl.ImgList, Vcl.Controls, Vcl.ActnList, Vcl.Menus,
-  Vcl.Dialogs, Vcl.Forms,
+  SysUtils, Classes, ImgList, Controls, ActnList, Menus,
+  Dialogs, Forms,
+  Laz2_DOM, Laz2_XMLRead, Laz2_XMLWrite,
 
-  xmldom, XMLIntf, msxmldom, XMLDoc,
+  //xmldom, XMLIntf, msxmldom, XMLDoc,
 
   Generics.Collections,
 
@@ -38,8 +41,8 @@ TRecent = class
     constructor Create;
     destructor Destroy; override;
 
-    procedure LoadFromXML(Node : IXMLNode);
-    procedure SaveToXML(Node : IXMLNode);
+    procedure LoadFromXML(Node : TDOMNode);
+    procedure SaveToXML(Node : TDOMNode);
 
     procedure Add(const FileName: String);
 
@@ -191,9 +194,9 @@ implementation
 
 {%CLASSGROUP 'Vcl.Controls.TControl'}
 
-{$R *.dfm}
+{$R *.lfm}
 
-uses Windows, ShellAPI;
+uses LCLIntf, LCLType, LMessages;
 
 resourcestring
   SRenameText = 'The animation name "%s" doesnt match the filename.'#13'Do you want to rename the animation to "%s" before saving?';
@@ -204,10 +207,10 @@ resourcestring
 
 //------------------------------------------------------------------------------
 function GetUserFromWindows: string;
-var UserName    : String;
-var UserNameLen : Cardinal;
+//var UserName    : String;
+//var UserNameLen : Cardinal;
 Begin
-  UserNameLen := 255;
+  {UserNameLen := 255;
 
   SetLength(userName, UserNameLen) ;
 
@@ -217,7 +220,9 @@ Begin
   end else
   begin
      Result := 'Unknown';
-  end;
+  end; }
+
+ Result := GetEnvironmentVariable('USERNAME');
 end;
 
 {$REGION 'TRecent'}
@@ -298,14 +303,14 @@ begin
 end;
 
 //------------------------------------------------------------------------------
-procedure TRecent.LoadFromXML(Node: IXMLNode);
+procedure TRecent.LoadFromXML(Node: TDOMNode);
 var Index: Integer;
 begin
   Items.BeginUpdate;
   Items.Clear;
   for Index := 0 to Node.ChildNodes.Count - 1 do
   begin
-    Items.Add( Node.ChildNodes[Index].Attributes['filename'] )
+    { #todo : Fix Me } //Items.Add( Node.ChildNodes[Index].Attributes['filename'] )
   end;
   Items.EndUpdate;
 
@@ -313,12 +318,12 @@ begin
 end;
 
 //------------------------------------------------------------------------------
-procedure TRecent.SaveToXML(Node: IXMLNode);
+procedure TRecent.SaveToXML(Node: TDOMNode);
 var Index: Integer;
 begin
   for Index := 0 to Items.Count - 1 do
   begin
-    Node.AddChild('item').Attributes['filename']:= Items[Index];
+  { #todo : Fix Me } // Node.AddChild('item').Attributes['filename']:= Items[Index];
   end;
 end;
 
@@ -356,10 +361,12 @@ end;
 
 //------------------------------------------------------------------------------
 procedure TSettings.LoadSettings;
-var XMLDocument    : IXMLDocument;
-var XMLRoot     : IXMLNode;
-var XMLNode    : IXMLNode;
+var XMLDocument    : TXMLDocument;
+var XMLRoot     : TDOMNode;
+var XMLNode    : TDOMNode;
 begin
+  { #todo : Fix Me }
+  {
   if not FileExists(FileName) then Exit;
   XMLDocument:= LoadXMLDocument(FileName);
 
@@ -379,15 +386,17 @@ begin
    // if XMLNode.HasAttribute('CenterPivots') then CenterPivots:= XMLNode.Attributes['CenterPivots'];
     //FNormalLength:= Graphics.StringToColor(XMLNode.Attributes['NormalLength']);
   end;
+  }
 end;
 
 //------------------------------------------------------------------------------
 procedure TSettings.SaveSettings;
-var XMLDocument : IXMLDocument;
-var XMLRoot     : IXMLNode;
-var XMLNode   : IXMLNode;
+var XMLDocument : TXMLDocument;
+var XMLRoot     : TDOMNode;
+var XMLNode   : TDOMNode;
 begin
-
+  { #todo : Fix Me }
+ {
   XMLDocument:= NewXMLDocument();
 
   XMLRoot:= XMLDocument.AddChild('phxAnimationEditor');
@@ -405,6 +414,7 @@ begin
   end;
 
   XMLDocument.SaveToFile(FileName);
+  }
 end;
 
 {$ENDREGION}
@@ -754,11 +764,13 @@ end;
 
 //------------------------------------------------------------------------------
 procedure TModActions.actExportXMLExecute(Sender: TObject);
-var Document: IXMLDocument;
-var Node    : IXMLNode;
+var Document: TXMLDocument;
+var Node    : TDOMNode;
 var Index   : Integer;
 var Frame   : TPHXAnimationFrame;
 begin
+  { #todo : Fix Me }
+  {
   SaveXMLDialog.FileName:= ChangeFileExt(ExtractFileName(FDocument.Name), '.xml');
 
   if SaveXMLDialog.Execute then
@@ -778,15 +790,18 @@ begin
     end;
     Document.SaveToFile(SaveXMLDialog.FileName);
   end;
+  }
 end;
 
 //------------------------------------------------------------------------------
 procedure TModActions.actImportXMLExecute(Sender: TObject);
-var Document: IXMLDocument;
-var Node    : IXMLNode;
+var Document: TXMLDocument;
+var Node    : TDOMNode;
 var Index   : Integer;
 var Frame   : TPHXAnimationFrame;
 begin
+  { #todo : Fix Me }
+  {
   if OpenXMLDialog.Execute then
   begin
     Document:= LoadXMLDocument(OpenXMLDialog.FileName);
@@ -812,6 +827,7 @@ begin
     end;
     FDocument.Changed
   end;
+  }
 end;
 
 
@@ -898,7 +914,7 @@ var App: String;
 begin
   App:= ExtractFilePath(Application.ExeName) + 'phxImageEditor.exe';
 
-  ShellExecute(Application.Handle, 'open', PChar(App), nil,nil, SW_SHOWNORMAL) ;
+   OpenDocument(PChar(App)); { *Преобразовано из ShellExecute* }
 end;
 
 {$ENDREGION}

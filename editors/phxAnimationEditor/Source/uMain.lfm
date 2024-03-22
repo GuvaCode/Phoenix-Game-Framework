@@ -1,0 +1,287 @@
+object FrmMain: TFrmMain
+  Left = 377
+  Height = 452
+  Top = 247
+  Width = 800
+  Caption = 'phxAnimationEditor'
+  ClientHeight = 452
+  ClientWidth = 800
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  KeyPreview = True
+  Menu = MainMenu1
+  OnClose = FormClose
+  OnKeyDown = FormKeyDown
+  Position = poScreenCenter
+  LCLVersion = '3.2.0.0'
+  object Splitter1: TSplitter
+    Left = 201
+    Height = 408
+    Top = 26
+    Width = 4
+  end
+  object ControlBar1: TControlBar
+    Left = 0
+    Height = 26
+    Top = 0
+    Width = 800
+    Align = alTop
+    TabOrder = 0
+    object ToolBarStandard: TToolBar
+      Left = 13
+      Height = 24
+      Top = 3
+      Width = 101
+      Align = alNone
+      AutoSize = True
+      Caption = 'Standard'
+      Images = ModActions.ActionImages
+      TabOrder = 0
+      object ToolButton3: TToolButton
+        Left = 1
+        Top = 2
+        Action = ModActions.actFileNew
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object ToolButton4: TToolButton
+        Left = 24
+        Top = 2
+        Action = ModActions.actFileOpen
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object ToolButton5: TToolButton
+        Left = 47
+        Top = 2
+        Action = ModActions.actFileSave
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object ToolButton1: TToolButton
+        Left = 70
+        Height = 22
+        Top = 2
+        Caption = 'ToolButton1'
+        ImageIndex = 3
+        Style = tbsSeparator
+      end
+      object ToolButton2: TToolButton
+        Left = 78
+        Top = 2
+        Action = ModActions.actLoadImage
+      end
+    end
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 18
+    Top = 434
+    Width = 800
+    Panels = <    
+      item
+        Width = 120
+      end    
+      item
+        Width = 100
+      end    
+      item
+        Width = 50
+      end>
+  end
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 408
+    Top = 26
+    Width = 201
+    ActivePage = TabProperties
+    Align = alLeft
+    TabIndex = 0
+    TabOrder = 2
+    object TabProperties: TTabSheet
+      Caption = '&Animation'
+    end
+    object TabFrames: TTabSheet
+      Caption = '&Frames'
+      ImageIndex = 1
+    end
+    object TabImages: TTabSheet
+      Caption = '&Images'
+      ImageIndex = 2
+    end
+  end
+  object Panel1: TPanel
+    Left = 205
+    Height = 408
+    Top = 26
+    Width = 595
+    Align = alClient
+    Caption = 'pnlClient'
+    ClientHeight = 408
+    ClientWidth = 595
+    ParentBackground = False
+    TabOrder = 3
+    object Splitter2: TSplitter
+      Cursor = crVSplit
+      Left = 1
+      Height = 4
+      Top = 177
+      Width = 593
+      Align = alTop
+      ResizeAnchor = akTop
+    end
+    object gbFrames: TGroupBox
+      Left = 1
+      Height = 176
+      Top = 1
+      Width = 593
+      Align = alTop
+      Caption = 'Animation frames'
+      ParentBackground = False
+      TabOrder = 0
+    end
+    object gbPatterns: TGroupBox
+      Left = 1
+      Height = 226
+      Top = 181
+      Width = 593
+      Align = alClient
+      Caption = 'Image patterns'
+      ParentBackground = False
+      TabOrder = 1
+    end
+  end
+  object MainMenu1: TMainMenu
+    Left = 284
+    Top = 89
+    object File1: TMenuItem
+      Caption = '&File'
+      object Open1: TMenuItem
+        Action = ModActions.actFileNew
+      end
+      object Open2: TMenuItem
+        Action = ModActions.actFileOpen
+      end
+      object menuRecent: TMenuItem
+        Caption = '&Reopen'
+      end
+      object Save1: TMenuItem
+        Action = ModActions.actFileSave
+      end
+      object Save2: TMenuItem
+        Action = ModActions.actFileSaveAs
+      end
+      object N2: TMenuItem
+        Caption = '-'
+      end
+      object Exit1: TMenuItem
+        Action = ModActions.actFileExit
+      end
+    end
+    object ools1: TMenuItem
+      Caption = '&Tools'
+      object Export1: TMenuItem
+        Caption = 'Export'
+        object FramestoXML1: TMenuItem
+          Action = ModActions.actExportXML
+        end
+      end
+      object Import1: TMenuItem
+        Caption = 'Import'
+        object FramesfromXML1: TMenuItem
+          Action = ModActions.actImportXML
+        end
+      end
+      object N3: TMenuItem
+        Caption = '-'
+      end
+      object Setanimationduration1: TMenuItem
+        Action = ModActions.actToolDuration
+      end
+      object N1: TMenuItem
+        Caption = '-'
+      end
+      object ImageEditor1: TMenuItem
+        Action = ModActions.actToolImageEditor
+      end
+    end
+    object About1: TMenuItem
+      Caption = '&About'
+      object PhoenixImageEditor1: TMenuItem
+        Caption = 'Phoenix Animation Editor'
+        Enabled = False
+      end
+      object N6: TMenuItem
+        Caption = '-'
+      end
+      object lblVersion: TMenuItem
+        Caption = 'lblVersion'
+        Enabled = False
+      end
+    end
+  end
+  object ImageList1: TImageList
+    Left = 36
+    Top = 256
+    Bitmap = {
+      4C7A090000001000000010000000DE0600000000000078DAED985B8C135518C7
+      796CCA6DB908E5F6D0C7BE59F5A5429414BCA42AC455111AD140458542347491
+      6845500B24D2C468368A49B9454A146910B0806005828E68B0C4072B08568125
+      E55EB9EC766126F9FB9D339D76667AA633B04B080927F967777BE677BEFB69BB
+      7DFAF4DECA455C10294B72CA8B5636ECE2EA095F29E66CCF68C6A352E667645A
+      ADCFD0F3F9980B5255D9D6EAEBDA1921F119590BFBCC664DA1BAF4ACC79356FD
+      D42DAF37CD8C02E5122AA502D996502964B9D23ADEE54AC1E5CD83FDD4167FCD
+      23F19FBC86D51A544A797E4E03EF2BA962BFF3BF8BAAD89914B7AA922AF2251D
+      34FA6F38A3195B2E921A79E3192AABF9ACCF1D63995242FB45A3B87DA35D5579
+      A402E6F8EB8C9ACF423DA72616A53ACFEAC6F35C65998F2CB7B59A7872F0B424
+      79BC4C8CD364B04F12E643F0FAAD5A77E7BF67F3EF8A52DD75BA91F9D7F87825
+      CD55E7EDE7DFCCB796129C37D4D062FECD3EEB79432C16F3AFF75953A818AFFD
+      1E2CC4AABC78FEF536434CC432318EC99F0B73DE6AFE45FE6B360DFE37997F73
+      FE8C3E179BCEBF99D7FBCC72ACCD7DB3F9B7EA1F2733170D04E054563CEF31AD
+      BE2C56AA2F8B11D4EB28668142A6395FA9F2658D67399254BE60CFF7C4FFDBBD
+      9CFA6E554F27F9676C6B292E3CC32EFF2A1BA3D92215A30D67D8F9CCD9A2CA06
+      0B1104F26147BD5967A3A448956D2585E097824DCF30CF41B010AEB1E63D5734
+      65231767FD92D82E7BA648E9CB937294C20C29454A522AE324F6BCC6FA720121
+      5F20562265894B93DA894B9062355E65BD59BF90B7F3BFD9BDD01BBC5DFCACF7
+      5A2DFAC749FCFAFEB919FF83BC7FD41E70DA7BA2FE6175747AC7AA1CF5AC8E65
+      35F4E5FC54475F8DB59B1FADDFB5FAEB5927F3CF9ED5588F89757AFF32C693F1
+      59DE1F3DB9BFEE94FBF7EEFB5FF395F0FB91F0F9906D6FBF293B31970BA55C8A
+      CEF022190A2197CDE246793A803E6E652025A2887B5A908EC52049129CF215AA
+      55259FE22AE7924885028E63E23CD5A92225894D90E25C85F608125E8F6D4C2A
+      9F4659AAB2D9184A99484DB96800F116EB9838CFFDD6B1E9304AA95614DB835C
+      F9B80F495F0B58AD447C596A17B021141201FA0EE0A57CB420E97535E193C446
+      0D76F3713F711E6E37C6FC8F462DFD67792BA5239C2D2483F4BDD187F600E35C
+      8EF2C77D27568A05B8CDB8877CF57A1DD78FD9CE84BDB6BE5AF199B0CF91AFB7
+      627E6EF762F19BE564CF3CBF4CAC7FCCBCD55EC3FC530FE7A95F45BC68CFFC0C
+      EB612B5EB4D7F00CF5B0252FD8EB753E1BB7E6057B8DCFC49AF0315B9ECDBF15
+      2FDAEB7D3ED2848FD8F3D45F96BC60CF787FA8FB22DE6AAFB7E6E74E5FA2189B
+      49FCFE99B215EB01477CBEBDAA249F7BED7D594A84ECF97CCAC8EA3E0FD8F23A
+      BB159D5DED7D5D8A071DF06296CD4F2E16B0E12DD86C54E5A3CD7973BC9A5D55
+      1164A3FEE67C4E6C57FB4CC23E1334E7C576F967121B9E3DC7EAC34579CEC582
+      3C5EE633E334399DDF1BE9DF3B751D5A3E064CF9656370F083D138F8FE68FCBA
+      64140E2C1A05E9ED91F871E108EC6F1B817DF38763CFEBC31BE23E449CA22836
+      92A1C8DDF87ECEB0063EBFD48697197B0DCAF50ABE7BE59E069EF96BCD5FAFB2
+      5D50BAAF60FBCCA10DFC2F8BEBFC813637A4F96EEC7FC38D7D73DDD833DB8DDC
+      2C37B197111D3B16DB5E1CD2C0FFFCCE48B1CFD7BBA15CEB844CAC52B9C87926
+      33FFD35B234CAC1A2B63958ACACA5D67387B6EE36B0D67EC5F50E7F7CE217F5F
+      7563F7CBEE9A3DBD4AEB67A02335C570C65EAAAB2257ED5ED3EC5EE2CF5CDAB1
+      08E52D6D38F7F51C9A3D62573D8FE32B9F42F1E309B5337E9837BCEE73F755C8
+      C42A5DE7F97E79EB029CDF14C5E90D33D1B17A2A4EAC9C44EC441CFD702C0E2F
+      F5F36776CF1E566377BCE4C6B72FB8B165AAEAFFF94DF3888DE0D49A6938F9F9
+      64FCF3C92338B6621CB1F7D5ECEF9C358CD756A1EFDFCCAED2598272B94318FF
+      B1E4381C5976BF21FEEC8CA19C95BBCE41BECAD89390FF2B422EFF05F9C21F90
+      CFFD0EF9CC6F9C39B2FC8186FC6F9D3E049BA70D4666CA606C7A6610364E6EC1
+      979306221D1A80F58FF7C7BA89FDB136D8CFB2FE8EFFCFD103F6EE7D7063F701
+      CBB5DD7DC07A46741F6875B6BB0FE4AEB3F8263C1866F6CAAEF78CBCC57D205F
+      39453D37087AF6F2AE25286F5B28ECFD9D33DCD83EDD8D6DD3DCC476509F9FC0
+      A6A75B5063772E26F64D3E7367D8CCAD0DE3049FB947557F68B6E4CE3350AE76
+      40BE741C4AF918BE9A3C102AFB2E2E6E6D23762E9FF553FA595FA1DA973B4FAB
+      762FFD4BB3759466EB4F6C786240CD3EBB634E57EF98139FB13B2648F7C48338
+      9CB897F39B9F7593BF6E9A2FCAFF85029FCB2F1EEB6F88BF63D57338FEE993C2
+      F8995D85665A63E5B379AC9BD0AF21FF7F7F345EF5D7E63E904B07B07A7C5FCB
+      FADBDD076B1EEE87550FF5454F67FD7F0DBAC876
+    }
+  end
+end

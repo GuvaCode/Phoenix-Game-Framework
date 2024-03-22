@@ -1,0 +1,39 @@
+object FrmImageList: TFrmImageList
+  Left = 0
+  Height = 418
+  Top = 0
+  Width = 294
+  ClientHeight = 418
+  ClientWidth = 294
+  TabOrder = 0
+  object ListBox1: TListBox
+    Left = 0
+    Height = 387
+    Top = 0
+    Width = 294
+    Align = alClient
+    ItemHeight = 0
+    TabOrder = 0
+    TopIndex = -1
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 31
+    Top = 387
+    Width = 294
+    Align = alBottom
+    BevelOuter = bvNone
+    ClientHeight = 31
+    ClientWidth = 294
+    TabOrder = 1
+    object Button1: TButton
+      Left = 0
+      Height = 25
+      Top = 6
+      Width = 294
+      Action = ModActions.actLoadImage
+      Align = alBottom
+      TabOrder = 0
+    end
+  end
+end

@@ -1,0 +1,155 @@
+object FrmAnimationPreview: TFrmAnimationPreview
+  Left = 0
+  Height = 203
+  Top = 0
+  Width = 316
+  ClientHeight = 203
+  ClientWidth = 316
+  TabOrder = 0
+  DesignLeft = 731
+  DesignTop = 348
+  object GroupBox1: TGroupBox
+    Left = 0
+    Height = 203
+    Top = 0
+    Width = 316
+    Align = alClient
+    Caption = 'Animation preview'
+    ClientHeight = 186
+    ClientWidth = 314
+    TabOrder = 0
+    object Panel1: TPanel
+      Left = 0
+      Height = 24
+      Top = 162
+      Width = 314
+      Align = alBottom
+      BevelOuter = bvNone
+      ClientHeight = 24
+      ClientWidth = 314
+      TabOrder = 0
+      object ToolBar1: TToolBar
+        Left = 0
+        Height = 24
+        Top = 0
+        Width = 81
+        Align = alLeft
+        Caption = 'ToolBar2'
+        Images = ImageList1
+        TabOrder = 0
+        object btnPlay: TToolButton
+          Left = 1
+          Top = 2
+          Action = actPlay
+          ParentShowHint = False
+          ShowHint = True
+        end
+        object btnPause: TToolButton
+          Left = 24
+          Top = 2
+          Action = actPause
+          ParentShowHint = False
+          ShowHint = True
+        end
+        object btnStop: TToolButton
+          Left = 47
+          Top = 2
+          Action = actStop
+          ParentShowHint = False
+          ShowHint = True
+        end
+        object ToolButton1: TToolButton
+          Left = 70
+          Top = 2
+          Width = 23
+          Caption = 'ToolButton1'
+          ImageIndex = 4
+          Style = tbsSeparator
+        end
+      end
+      object TrackBar1: TTrackBar
+        Left = 81
+        Height = 37
+        Top = 0
+        Width = 233
+        PageSize = 1
+        Position = 0
+        Align = alClient
+        TabOrder = 1
+      end
+    end
+    object Panel2: TPanel
+      Left = 0
+      Height = 162
+      Top = 0
+      Width = 314
+      Align = alClient
+      BevelOuter = bvNone
+      ClientHeight = 162
+      ClientWidth = 314
+      TabOrder = 1
+      object PaintBox1: TPaintBox
+        Left = 0
+        Height = 162
+        Top = 0
+        Width = 314
+        Align = alClient
+        OnPaint = PaintBox1Paint
+      end
+    end
+  end
+  object ImageList1: TImageList
+    Left = 148
+    Top = 40
+    Bitmap = {
+      4C7A030000001000000010000000C20100000000000078DAD596219483300C86
+      2791482C1289C422912767919595B54824128B4456D6562291B3C84964AE29E3
+      1E632DEDEE716FEFFADEAFD28F246D4273B99CB3AA34852A4980370DFC86A741
+      009368D53762A88B0204E7F02EAF3E00F3AD0759116051081DA520A5045F7EBE
+      71988756EB2E6A688BCC3B27CD8F3DCCB2566CA5C4B4C6A6842A8E9C392D7C07
+      77F9603985A92F7F2448062CB4E7A4791DF786EDAE30B55F706B72AD81255027
+      21E05D99F8BB6C0C6C016395812863751E21D47170C0D78A254F7E07962A2ED2
+      7E29C64F88357E3CB7A92B353BD639F0328126432EF03A3F1DBB6225CDB44F16
+      A958E3D8FBFED0777F8D9DB1DAF8FE9A78C5FA17FDF3E985F9EFE563DBF72F0A
+      EB67CFDB6C2FFDAF6A7850F56AE24DB6FD1EAC611B6FB2BDEC51356CE50DB6D3
+      79CEECBCC1F6BA871EF0D4C963FFDB7893ED7CBE3CE04B37AFEACBCA1B6CCFFF
+      8FC56EE26DB6B3FAE7BF2F538E4732BF9FAD5358035EFCD03C54EBBE5FDF6559
+      156E7E689FD9CD3CE0E4377EE78DDFF55D972CF7E0CD2CF68FA09983B7B09C2C
+      3C39E6F7F9AE7E1795C0497ACC0BB3DF7526C199E09837FBD5338983C77D783F
+      5AEA9C05CD75BE183372AB7CFBF79DFAFDD4FA06CE72D732
+    }
+  end
+  object ActionList1: TActionList
+    Images = ImageList1
+    Left = 80
+    Top = 40
+    object actPlay: TAction
+      Caption = 'act'
+      Hint = 'Play the animation'
+      ImageIndex = 0
+      OnExecute = actPlayExecute
+      OnUpdate = actAnimationUpdate
+    end
+    object actPause: TAction
+      Caption = 'actPause'
+      Hint = 'Pause the animation'
+      ImageIndex = 1
+      OnExecute = actPauseExecute
+      OnUpdate = actAnimationUpdate
+    end
+    object actStop: TAction
+      Caption = 'actStop'
+      Hint = 'Stop the animation'
+      ImageIndex = 2
+      OnExecute = actStopExecute
+      OnUpdate = actAnimationUpdate
+    end
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 16
+    OnTimer = Timer1Timer
+    Left = 28
+    Top = 40
+  end
+end

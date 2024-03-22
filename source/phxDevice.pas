@@ -583,6 +583,7 @@ begin
   begin
     DefaultProvider:= ProviderClass;
   end;
+
 end;
 
 // Enumerate all provides

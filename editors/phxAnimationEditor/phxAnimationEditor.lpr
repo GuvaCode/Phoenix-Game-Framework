@@ -1,7 +1,9 @@
 program phxAnimationEditor;
 
+{$MODE Delphi}
+
 uses
-  Vcl.Forms,
+  Forms, Interfaces, PGF, 
   uMain in 'Source\uMain.pas' {FrmMain},
   uActions in 'Source\uActions.pas' {ModActions: TDataModule},
   phxGraphicsEx in '..\_Library\phxGraphicsEx.pas',

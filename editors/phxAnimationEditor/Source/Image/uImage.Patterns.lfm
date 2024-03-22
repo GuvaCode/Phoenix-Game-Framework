@@ -1,29 +1,33 @@
 object FrmPatterns: TFrmPatterns
   Left = 0
+  Height = 240
   Top = 0
   Width = 320
-  Height = 240
+  ClientHeight = 240
+  ClientWidth = 320
   TabOrder = 0
   object ScrollBox1: TScrollBox
     Left = 0
+    Height = 240
     Top = 0
     Width = 320
-    Height = 240
+    HorzScrollBar.Page = 105
+    VertScrollBar.Page = 189
     Align = alClient
     BorderStyle = bsNone
+    ClientHeight = 240
+    ClientWidth = 320
     TabOrder = 0
     OnResize = ScrollBox1Resize
     object PaintBox1: TPaintBox
       Left = 0
+      Height = 189
       Top = 0
       Width = 320
-      Height = 189
       Align = alTop
       OnMouseDown = PaintBox1MouseDown
       OnMouseMove = PaintBox1MouseMove
       OnPaint = PaintBox1Paint
-      ExplicitLeft = 127
-      ExplicitWidth = 236
     end
   end
 end

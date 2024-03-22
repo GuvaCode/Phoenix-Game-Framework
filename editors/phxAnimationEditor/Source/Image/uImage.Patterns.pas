@@ -1,10 +1,12 @@
 unit uImage.Patterns;
 
+{$MODE Delphi}
+
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes,
-  Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Math,
+  Messages, SysUtils, Variants, Classes, Types,
+  Graphics, Controls, Forms, Dialogs, ExtCtrls, Math,
 
   Generics.Collections,
 
@@ -80,7 +82,7 @@ TFrmPatterns = class(TFrame)
 
 implementation
 
-{$R *.dfm}
+{$R *.lfm}
 
 //TFrmPatterns
 //------------------------------------------------------------------------------
@@ -154,6 +156,8 @@ begin
     H:= Pattern.Height + PaintBox1.Canvas.TextHeight( String(Pattern.Name) );
 
     // Move to the next line
+    { #todo : Fix me }
+    {
     if (X + W + GetSystemMetrics(SM_CXVSCROLL) > ScrollBox1.ClientWidth) then
     begin
       X:= PATTERN_HSPACE div 2;
@@ -162,7 +166,7 @@ begin
 
       Row:= 0;
     end;
-
+    }
     Rect.Left  := X;
     Rect.Top   := Y;
     Rect.Right := X + W;
@@ -264,7 +268,7 @@ var Index: Integer;
 begin
   inherited;
 
-  if Button = mbLeft then
+  if Button = TMouseButton.mbLeft then
   begin
     for Index := 0 to FPatternRects.Count - 1 do
     begin

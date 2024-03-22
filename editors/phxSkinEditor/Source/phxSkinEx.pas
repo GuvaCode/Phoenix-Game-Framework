@@ -4,7 +4,7 @@ interface
 
 uses Classes, Types, SysUtils, Windows, Graphics, Dialogs,
 
-  Generics.Collections,
+  Generics.Collections,  LCLType,
 
   xmldom, XMLIntf, msxmldom, XMLDoc,
 

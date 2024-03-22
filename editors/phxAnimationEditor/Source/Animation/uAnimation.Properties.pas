@@ -3,11 +3,10 @@ unit uAnimation.Properties;
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes,
-  Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Mask,
-  JvExMask, JvSpin,
+  Messages, SysUtils, Variants, Classes,
+  Graphics, Controls, Forms, Dialogs,StdCtrls,Spin,
 
-  phxImage, Vcl.Menus;
+  phxImage, Menus;
 
 type
   TFrmAnimationProperties = class(TFrame)
@@ -15,7 +14,7 @@ type
     Label1: TLabel;
     edAnimationName: TEdit;
     edAnimationImage: TComboBox;
-    edAnimationFrameRate: TJvSpinEdit;
+    edAnimationFrameRate: TSpinEdit;
     edAnimationLooped: TCheckBox;
     Label4: TLabel;
     Label2: TLabel;
@@ -50,7 +49,7 @@ type
 
 implementation
 
-{$R *.dfm}
+{$R *.lfm}
 
 uses uActions;
 

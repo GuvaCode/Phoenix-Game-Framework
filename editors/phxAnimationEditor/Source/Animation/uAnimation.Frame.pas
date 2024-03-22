@@ -3,10 +3,9 @@ unit uAnimation.Frame;
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes,
-  Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, Vcl.StdCtrls,
-  Vcl.Mask, JvExMask, JvSpin, JvExStdCtrls, JvCombobox,
-
+  Messages, SysUtils, Variants, Classes,
+  Graphics, Controls, Forms, Dialogs, Menus, StdCtrls,
+  {Vcl.Mask, JvExMask, } Spin,{ JvExStdCtrls, JvCombobox,}
   phxImage;
 
 type
@@ -18,11 +17,11 @@ TFrmAnimationFrame = class(TFrame)
     Label6: TLabel;
     Label7: TLabel;
     edFrameIndex: TEdit;
-    edFrameTime: TJvSpinEdit;
-    edFramePatternName: TJvComboBox;
+    edFrameTime: TSpinEdit;
+    edFramePatternName: TComboBox;
     edFrameName: TEdit;
     Label1: TLabel;
-    edFramePattern: TJvSpinEdit;
+    edFramePattern: TSpinEdit;
     procedure edFramePatternChange(Sender: TObject);
     procedure edFrameTimeChange(Sender: TObject);
     procedure edFrameNameChange(Sender: TObject);
@@ -47,7 +46,7 @@ TFrmAnimationFrame = class(TFrame)
 
 implementation
 
-{$R *.dfm}
+{$R *.lfm}
 
 uses uActions;
 
