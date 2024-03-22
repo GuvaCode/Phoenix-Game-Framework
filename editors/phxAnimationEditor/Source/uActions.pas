@@ -16,8 +16,7 @@ uses
   phxTypes,
   phxTexture,
   phxImage,
-  //phxImageEx,
-
+  phxImageEx,
   phxGraphics,
   phxDevice;
 
@@ -25,9 +24,7 @@ type
 
 
 {$REGION 'TRecent'}
-
 TRecentEvent = procedure(Sender: TObject; const Filename: String) of object;
-
 //------------------------------------------------------------------------------
 TRecent = class
   private
@@ -40,13 +37,9 @@ TRecent = class
   public
     constructor Create;
     destructor Destroy; override;
-
     procedure LoadFromXML(Node : TDOMNode);
     procedure SaveToXML(Node : TDOMNode);
-
     procedure Add(const FileName: String);
-
-
     property Items: TStrings read FItems write FItems;
     property Menu: TMenuItem read FMenu write SetMenu;
     property OnClick: TRecentEvent read FOnClick write FOnClick;
@@ -60,19 +53,15 @@ TRecent = class
 TSettings = class
   private
     FRecent: TRecent;
-
     function GetFileName: String;
   public
     constructor Create;
     destructor Destroy; override;
-
     procedure LoadSettings;
     procedure SaveSettings;
-
     property FileName: String read GetFileName;
     // List of recent documents
     property Recent: TRecent read FRecent;
-
   end;
 
 {$ENDREGION}
@@ -82,13 +71,8 @@ TSettings = class
 TDocument = class;
 
 //------------------------------------------------------------------------------
-TDocumentState = set of (
-  dsNew,
-  dsChanged
-  );
-
+TDocumentState = set of (dsNew, dsChanged);
 TDocumentEvent = procedure(Document: TDocument) of object;
-
 //------------------------------------------------------------------------------
 TDocument = class
   public
@@ -98,14 +82,11 @@ TDocument = class
   public
     constructor Create; overload;
     destructor Destroy; override;
-
     // Load the document from a file.
     Procedure LoadDocument;
     // Save the document to a file.
     Procedure SaveDocument;
-
     procedure Changed;
-
     // The filename
     property Name: String read FName write FName;
     // State of the doccument
@@ -151,38 +132,28 @@ TModActions = class(TDataModule)
     procedure actToolImageEditorExecute(Sender: TObject);
   private
     FSettings: TSettings;
-
     FDocument       : TDocument;
     FDocumentChanged: TList<TDocumentEvent>;
-
     FImages       : TObjectList<TPHXImage>;
-
     procedure CheckFrames(Animation: TPHXAnimation);
-
     procedure RecentClicked(Sender: TObject; const Filename: String);
-
     procedure SetDocument(const Value: TDocument);
   public
     constructor Create(AOwner: TComponent); override;
     destructor Destroy; override;
-
     // Create a new document
     function New: TDocument;
     // Open a existing document
     function Open(const FileName: String): TDocument;
     // Close the current document
     function Close(SaveQuery: Boolean = False): Integer;
-
-
     function FindImage(const Name: String): TPHXImage;
-
     // Editor settings
     property Settings: TSettings read FSettings;
     // The current document
     property Document: TDocument read FDocument write SetDocument;
     // Document listeners
     property DocumentChanged: TList<TDocumentEvent> read FDocumentChanged;
-
     // List of opened images
     property Images: TObjectList<TPHXImage> read FImages;
   end;
@@ -231,13 +202,11 @@ procedure TRecent.Add(const FileName: String);
 var Index: Integer;
 begin
   Index:= Items.IndexOf(FileName);
-
   if Index >= 0 then
   begin
     Items.Delete(Index);
   end;
   Items.Insert(0, FileName);
-
   UpdateMenu;
 end;
 
@@ -247,20 +216,16 @@ var Index: Integer;
 var Item : TMenuItem;
 begin
   if FMenu = nil then Exit;
-
   FMenu.Clear;
   FMenu.Visible:= Items.Count > 0;
-
   for Index := 0 to Items.Count - 1 do
   begin
     Item:= TMenuItem.Create(FMenu);
     Item.Caption:= Format('&%d %s', [Index, Items[Index]]);
     Item.OnClick:= MenuClicked;
     Item.Tag    := Index;
-
     FMenu.Add(Item);
   end;
-
 end;
 
 //------------------------------------------------------------------------------
@@ -269,7 +234,6 @@ var Index   : Integer;
 var FileName: String;
 begin
   Index:= TMenuItem(Sender).Tag;
-
   if (Index >= 0) and (Index < Items.Count) then
   begin
     FileName:= Items[Index];
@@ -280,9 +244,7 @@ begin
     end else
     begin
       Items.Delete(Index);
-
       UpdateMenu;
-
       MessageDlg( Format('The file %s could no longer be found.', [FileName]), mtError, [mbOK], 0);
     end;
   end;
@@ -430,7 +392,8 @@ begin
 
   if SameText(FileExt, '.xml') then
   begin
-   { #todo : Fix ME }// Animation.LoadFromXml(Name);
+   { #todo : Fix ME }//
+    Animation.LoadFromXml(Name);
   end else
   begin
     Animation.LoadFromFile(Name);
@@ -445,7 +408,8 @@ begin
 
   if SameText(FileExt, '.xml') then
   begin
-    { #todo : Fix ME }//Animation.SaveToXml(Name);
+    { #todo : Fix ME }//
+    Animation.SaveToXml(Name);
   end else
   begin
     FAnimation.SaveToFile(Name);
@@ -456,26 +420,17 @@ end;
 procedure TDocument.Changed;
 begin
   Include(FState, dsChanged);
-
   ModActions.SetDocument(Self);
 end;
 
-
 {$ENDREGION}
-
-
-
 // TDataModule1
-
 //------------------------------------------------------------------------------
 constructor TModActions.Create(AOwner: TComponent);
 begin
   inherited;
-
   FImages       := TObjectList<TPHXImage>.Create;
-
   FDocumentChanged:= TList<TDocumentEvent>.Create;
-
   FSettings:= TSettings.Create;
   FSettings.Recent.OnClick:= RecentClicked;
   FSettings.LoadSettings;
@@ -486,11 +441,8 @@ destructor TModActions.Destroy;
 begin
   FSettings.SaveSettings;
   FSettings.Free;
-
   FImages.Free;
-
   FDocumentChanged.Free;
-
   inherited;
 end;
 
@@ -499,7 +451,6 @@ procedure TModActions.SetDocument(const Value: TDocument);
 var Event: TDocumentEvent;
 begin
   FDocument := Value;
-
   for Event in DocumentChanged do
   begin
     Event(FDocument);
@@ -539,10 +490,7 @@ begin
   end;
 end;
 
-
-
 {$REGION 'Document Functions'}
-
 //------------------------------------------------------------------------------
 procedure TModActions.RecentClicked(Sender: TObject; const Filename: String);
 begin
@@ -556,11 +504,9 @@ function TModActions.New: TDocument;
 var Name: String;
 begin
   Name:= Format('Animation%d', [DocumentCounter] );
-
   Result:= TDocument.Create;
   Result.Name := Name + PHXANIMATION_EXT;
   Result.State:= [dsNew];
-
   Result.Animation.Name       := Name;
   Result.Animation.Author     := GetUser;
   Result.Animation.Version    := DateToStr(Now);
@@ -583,7 +529,6 @@ end;
 function TModActions.Open(const FileName: String): TDocument;
 begin
   Result:= nil;
-
   if FileExists(FileName) then
   begin
     Screen.Cursor:= crHourGlass;
@@ -591,11 +536,8 @@ begin
       Result:= TDocument.Create;
       Result.Name := FileName;
       Result.State:= [];
-
       Result.LoadDocument;
-
       Result.Animation.Image:= FindImage(Result.Animation.ImageName);
-
       if Result.Animation.Image = nil then
       begin
         if MessageDlg( Format(SImageMissing, [Result.Animation.ImageName]), mtConfirmation, [mbYes, mbOK], 0) = mrYes then
@@ -604,11 +546,8 @@ begin
           Result.Animation.Image:= FindImage(Result.Animation.ImageName);
        end;
       end;
-
       CheckFrames(Result.Animation);
-
       Settings.Recent.Add(Filename);
-
       SetDocument(Result);
     finally
       Screen.Cursor:= crDefault;
@@ -621,15 +560,12 @@ function TModActions.Close(SaveQuery: Boolean = False): Integer;
 var ADocument: TDocument;
 begin
   Result:= mrYes;
-
   if Assigned(Document) then
   begin
     ADocument:= Document;
-
     if SaveQuery and (dsChanged in Document.State) then
     begin
       Result:= MessageDlg(Format(SSaveText, [Document.Name]), mtConfirmation,  mbYesNoCancel, 0);
-
       case Result of
         mrNo:
         begin
@@ -646,11 +582,9 @@ begin
       end;
     end;
     SetDocument(nil);
-
     ADocument.Free;
   end;
 end;
-
 {$ENDREGION}
 
 //------------------------------------------------------------------------------
@@ -667,23 +601,18 @@ begin
   Result:= nil;
 end;
 
-
 {$REGION 'File actions '}
-
 //------------------------------------------------------------------------------
 procedure TModActions.actFileUpdate(Sender: TObject);
 begin
   actFileSave  .Enabled:= Assigned(Document);
   actFileSaveAs.Enabled:= Assigned(Document);
 end;
-
-
 //------------------------------------------------------------------------------
 procedure TModActions.actFileNewExecute(Sender: TObject);
 begin
   New;
 end;
-
 //------------------------------------------------------------------------------
 procedure TModActions.actFileOpenExecute(Sender: TObject);
 begin
@@ -692,7 +621,6 @@ begin
     Open(OpenDocumentDialog.FileName);
   end;
 end;
-
 //------------------------------------------------------------------------------
 procedure TModActions.actFileSaveExecute(Sender: TObject);
 begin
@@ -816,10 +744,7 @@ begin
   }
 end;
 
-
-
 {$REGION 'File actions '}
-
 //------------------------------------------------------------------------------
 procedure TModActions.actLoadImageExecute(Sender: TObject);
 var Image: TPHXImage;
@@ -835,12 +760,9 @@ begin
       if FindImage(Image.Name) <> nil then
       begin
         MessageDlg( Format(SImageExisting, [Image.Name]), mtError, [mbOK], 0);
-
         Image.Free;
-
         Continue;
       end;
-
       Images.Add(Image);
     end;
 
@@ -848,7 +770,6 @@ begin
     begin
       FDocument.Animation.Image:= FindImage(FDocument.Animation.ImageName);
     end;
-
     SetDocument(FDocument);
   end;
 end;
@@ -862,7 +783,6 @@ end;
 procedure TModActions.actToolUpdate(Sender: TObject);
 begin
   actToolDuration.Enabled:= Assigned(Document);
-
   actToolImageEditor.Enabled:= FileExists(ExtractFilePath(Application.ExeName) + 'phxImageEditor.exe');
 end;
 
@@ -874,33 +794,27 @@ var Index   : Integer;
 var Frame   : TPHXAnimationFrame;
 begin
   Value:= FloatToStr(FDocument.Animation.Duration);
-
   if InputQuery('Set animation duration', 'Duration (sec):', Value) then
   begin
     Duration:= StrToFloatDef(Value, FDocument.Animation.Duration);
-
     for Index := 0 to FDocument.Animation.Frames.Count - 1 do
     begin
       Frame:= FDocument.Animation.Frames[Index];
       Frame.Time:= Duration / FDocument.Animation.Frames.Count;
-
       FDocument.Animation.Frames[Index]:= Frame;
     end;
-
     FDocument.Animation.FrameRate:= Round(FDocument.Animation.Frames.Count / Duration);
-
     Document.Changed;
   end;
 end;
-
-
 //------------------------------------------------------------------------------
 procedure TModActions.actToolImageEditorExecute(Sender: TObject);
 var App: String;
 begin  { #todo : Fix me }
-  App:= ExtractFilePath(Application.ExeName) + 'phxImageEditor.exe';
 
-   OpenDocument(PChar(App)); { *Преобразовано из ShellExecute* }
+  App := ExtractFilePath(Application.ExeName) + 'phxImageEditor.exe';
+
+  OpenDocument(PChar(App)); { *Преобразовано из ShellExecute* }
 end;
 
 {$ENDREGION}

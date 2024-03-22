@@ -72,7 +72,7 @@ object FrmAnimationPreview: TFrmAnimationPreview
         Top = 0
         Width = 234
         AutoSize = True
-        OnChange = TrackBar1Change
+        OnChange = actAnimationUpdate
         PageSize = 1
         Position = 0
         ScalePos = trLeft
