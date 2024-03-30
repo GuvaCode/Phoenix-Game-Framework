@@ -3,10 +3,9 @@ unit uAnimation.Frame;
 interface
 
 uses
-  Messages, SysUtils, Variants, Classes,
+  SysUtils, Variants, Classes,
   Graphics, Controls, Forms, Dialogs, Menus, StdCtrls,
-  {Vcl.Mask, JvExMask, } Spin,{ JvExStdCtrls, JvCombobox,}
-  phxImage;
+  Spin, phxImage;
 
 type
 

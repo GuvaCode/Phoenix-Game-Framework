@@ -328,6 +328,7 @@ var FrameCounter: Integer = 1;
 procedure TFrmAnimationFrames.actFrameAddExecute(Sender: TObject);
 var Time: Single;
 begin
+  if not Assigned(Animation) then Exit;
 
   if Animation.FrameRate = 0 then
   begin

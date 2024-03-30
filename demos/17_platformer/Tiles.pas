@@ -51,8 +51,8 @@ TMap = class
     FTileWidth : Integer;
     FTileHeight: Integer;
 
-   // FApples : TList;
-   .. FBananas: TList;
+    FApples : TList;
+   FBananas: TList;
 
 
     function IsCollider(Tile: Integer): Boolean;

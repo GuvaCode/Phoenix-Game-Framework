@@ -389,10 +389,8 @@ procedure TDocument.LoadDocument;
 var FileExt: String;
 begin
   FileExt:= ExtractFileExt(Name);
-
   if SameText(FileExt, '.xml') then
   begin
-   { #todo : Fix ME }//
     Animation.LoadFromXml(Name);
   end else
   begin
@@ -405,10 +403,8 @@ procedure TDocument.SaveDocument;
 var FileExt: String;
 begin
   FileExt:= ExtractFileExt(Name);
-
   if SameText(FileExt, '.xml') then
   begin
-    { #todo : Fix ME }//
     Animation.SaveToXml(Name);
   end else
   begin
@@ -511,17 +507,8 @@ begin
   Result.Animation.Author     := GetUser;
   Result.Animation.Version    := DateToStr(Now);
   Result.Animation.Comment    := '';
-  {
-  if FImages.Count > 0 then
-  begin
-    Result.Animation.Image:= FImages.First;
-    Result.Animation.Frames.Add('Frame 1', 0.5, 0);
-    Result.Animation.Frames.Add('Frame 1', 0.5, 1);
-    Result.Animation.Frames.Add('Frame 1', 0.5, 2);
-  end;
-  }
-  SetDocument(Result);
 
+  SetDocument(Result);
   Inc(DocumentCounter);
 end;
 

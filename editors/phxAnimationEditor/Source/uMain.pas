@@ -114,13 +114,17 @@ begin
 
   FrmAnimationFrame:= TFrmAnimationFrame.Create(Self);
   FrmAnimationFrame.Parent:= TabFrames;
-  FrmAnimationFrame.Align := alClient;
+  FrmAnimationFrame.Align := alTop;
 
   FrmAnimationFrames:= TFrmAnimationFrames.Create(Self);
   FrmAnimationFrames.Parent:= gbFrames;
   FrmAnimationFrames.Align := alClient;
   FrmAnimationFrames.Patterns:= FrmPatterns;
   FrmAnimationFrames.Editor  := FrmAnimationFrame;
+
+
+
+
 
   PageControl1.ActivePageIndex:= 0;
 
@@ -151,7 +155,6 @@ procedure TFrmMain.SetDocument(Document: TDocument);
 begin
   if Assigned(Document) then
   begin
-
     if dsChanged in Document.State then
     begin
       Caption:= 'phxAnimationEditor - ' + Document.Name + '*';

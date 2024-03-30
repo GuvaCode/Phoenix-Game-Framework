@@ -1,129 +1,126 @@
 object FrmAnimationProperties: TFrmAnimationProperties
   Left = 0
-  Height = 292
+  Height = 312
   Top = 0
   Width = 298
-  ClientHeight = 292
+  BorderSpacing.Around = 4
+  ClientHeight = 312
   ClientWidth = 298
   TabOrder = 0
-  DesignLeft = 299
-  DesignTop = 353
+  DesignLeft = 443
+  DesignTop = 255
   object GroupBox1: TGroupBox
     Left = 0
-    Height = 292
+    Height = 312
     Top = 0
     Width = 298
     Align = alClient
     Caption = 'Animation properties'
-    ClientHeight = 275
+    ClientHeight = 295
     ClientWidth = 296
     TabOrder = 0
     object Label1: TLabel
       Left = 8
-      Height = 14
-      Top = 21
-      Width = 37
+      Height = 16
+      Top = 8
+      Width = 38
       Caption = '&Name:'
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'MS Sans Serif'
-      ParentFont = False
     end
     object Label4: TLabel
-      Left = 8
+      Left = 9
       Height = 16
-      Top = 224
+      Top = 232
       Width = 64
       Caption = '&Frame rate'
     end
     object Label2: TLabel
-      Left = 8
+      Left = 9
       Height = 16
-      Top = 197
+      Top = 200
       Width = 37
       Caption = '&Image'
     end
     object Label6: TLabel
       Left = 8
       Height = 16
-      Top = 102
+      Top = 104
       Width = 61
       Caption = '&Comment:'
     end
     object Label3: TLabel
-      Left = 8
+      Left = 9
       Height = 16
-      Top = 75
+      Top = 72
       Width = 48
       Caption = '&Version:'
     end
     object Label5: TLabel
       Left = 8
       Height = 16
-      Top = 48
+      Top = 40
       Width = 46
       Caption = '&Author:'
     end
     object edAnimationName: TEdit
-      Left = 75
+      Left = 80
       Height = 28
-      Top = 18
-      Width = 216
+      Top = 8
+      Width = 211
       Anchors = [akTop, akLeft, akRight]
       TabOrder = 0
       OnChange = edAnimationNameChange
     end
     object edAnimationImage: TComboBox
-      Left = 75
+      Left = 80
       Height = 28
-      Top = 194
-      Width = 216
+      Top = 200
+      Width = 211
       Anchors = [akTop, akLeft, akRight]
       ItemHeight = 0
       TabOrder = 1
       OnChange = edAnimationImageChange
     end
     object edAnimationFrameRate: TFloatSpinEdit
-      Left = 75
+      Left = 80
       Height = 28
-      Top = 221
-      Width = 216
+      Top = 232
+      Width = 211
       Anchors = [akTop, akLeft, akRight]
       OnChange = edAnimationFrameRateChange
       TabOrder = 2
     end
     object edAnimationLooped: TCheckBox
-      Left = 75
+      Left = 80
       Height = 23
-      Top = 248
+      Top = 264
       Width = 72
       Caption = 'Looped'
       TabOrder = 3
       OnClick = edAnimationLoopedClick
     end
     object edAnimationAuthor: TEdit
-      Left = 75
+      Left = 80
       Height = 28
-      Top = 45
-      Width = 216
+      Top = 40
+      Width = 211
       Anchors = [akTop, akLeft, akRight]
       TabOrder = 4
       OnChange = edAnimationAuthorChange
     end
     object edAnimationVersion: TEdit
-      Left = 75
+      Left = 80
       Height = 28
       Top = 72
-      Width = 216
+      Width = 211
       Anchors = [akTop, akLeft, akRight]
       TabOrder = 5
       OnChange = edAnimationVersionChange
     end
     object edAnimationComment: TMemo
-      Left = 75
+      Left = 80
       Height = 89
-      Top = 99
-      Width = 216
+      Top = 104
+      Width = 211
       Anchors = [akTop, akLeft, akRight]
       TabOrder = 6
       OnChange = edAnimationCommentChange

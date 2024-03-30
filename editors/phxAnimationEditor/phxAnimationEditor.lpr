@@ -3,7 +3,7 @@ program phxAnimationEditor;
 {$MODE Delphi}
 
 uses
-  Forms, Interfaces, PGF, 
+  Forms, runtimetypeinfocontrols, Interfaces, PGF, 
   uMain in 'Source\uMain.pas' {FrmMain},
   uActions in 'Source\uActions.pas' {ModActions: TDataModule},
   phxGraphicsEx in '..\_Library\phxGraphicsEx.pas',
@@ -19,7 +19,7 @@ uses
 
 begin
   Application.Initialize;
-  Application.MainFormOnTaskbar := True;
+ // Application.MainFormOnTaskbar := True;
   Application.CreateForm(TFrmMain, FrmMain);
   Application.Run;
 end.

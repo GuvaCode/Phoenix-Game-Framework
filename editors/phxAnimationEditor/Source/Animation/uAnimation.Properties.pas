@@ -3,7 +3,7 @@ unit uAnimation.Properties;
 interface
 
 uses
-  Messages, SysUtils, Variants, Classes,
+  SysUtils, Variants, Classes,
   Graphics, Controls, Forms, Dialogs,StdCtrls, Spin,
   phxImage, Menus;
 
@@ -64,7 +64,6 @@ end;
 procedure TFrmAnimationProperties.SetAnimation(const Value: TPHXAnimation);
 begin
   FAnimation := Value;
-
   edAnimationImageUpdate(Self);
 
   edAnimationName     .OnChange:= nil;
@@ -102,7 +101,6 @@ begin
     edAnimationComment  .Text   := '';
     edAnimationImage    .Text   := '';
     edAnimationFrameRate.Value  := 0;
-
     EnableEditors(False);
   end;
 end;
@@ -136,13 +134,11 @@ var Image: TPHXImage;
 begin
   edAnimationImage.Items.BeginUpdate;
   edAnimationImage.Items.Clear;
-
   edAnimationImage.AddItem('', nil);
   for Image in ModActions.Images do
   begin
     edAnimationImage.AddItem(Image.Name, Image);
   end;
-
   edAnimationImage.Items.EndUpdate;
 end;
 
@@ -151,11 +147,9 @@ procedure TFrmAnimationProperties.edAnimationNameChange(Sender: TObject);
 var Value: String;
 begin
   Value:= edAnimationName.Text;
-
   if Value <> FAnimation.Name then
   begin
     FAnimation.Name:= Value;
-
     ModActions.Document.Changed;
   end;
 end;
@@ -165,11 +159,9 @@ procedure TFrmAnimationProperties.edAnimationVersionChange(Sender: TObject);
 var Value: String;
 begin
   Value:= edAnimationVersion.Text;
-
   if Value <> FAnimation.Version then
   begin
     FAnimation.Version:= Value;
-
     ModActions.Document.Changed;
   end;
 end;
@@ -179,11 +171,9 @@ procedure TFrmAnimationProperties.edAnimationAuthorChange(Sender: TObject);
 var Value: String;
 begin
   Value:= edAnimationAuthor.Text;
-
   if Value <> FAnimation.Author then
   begin
     FAnimation.Author:= Value;
-
     ModActions.Document.Changed;
   end;
 end;
@@ -193,11 +183,9 @@ procedure TFrmAnimationProperties.edAnimationCommentChange(Sender: TObject);
 var Value: String;
 begin
   Value:= edAnimationComment.Text;
-
   if Value <> FAnimation.Comment then
   begin
     FAnimation.Comment:= Value;
-
     ModActions.Document.Changed;
   end;
 end;
@@ -217,7 +205,6 @@ begin
   if Value <> FAnimation.Image then
   begin
     FAnimation.Image:= Value;
-
     ModActions.Document.Changed;
   end;
 end;
@@ -227,11 +214,9 @@ procedure TFrmAnimationProperties.edAnimationFrameRateChange(Sender: TObject);
 var Value: Integer;
 begin
   Value:= Round(edAnimationFrameRate.Value);
-
   if Value <> FAnimation.FrameRate then
   begin
     FAnimation.FrameRate:= Value;
-
     ModActions.Document.Changed;
   end;
 end;
@@ -241,16 +226,11 @@ procedure TFrmAnimationProperties.edAnimationLoopedClick(Sender: TObject);
 var Value: Boolean;
 begin
   Value:= edAnimationLooped.Checked;
-
   if Value <> FAnimation.Looped then
   begin
     FAnimation.Looped:= Value;
-
     ModActions.Document.Changed;
   end;
 end;
-
-
-
 
 end.

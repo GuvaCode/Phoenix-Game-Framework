@@ -1,104 +1,105 @@
 object FrmAnimationFrame: TFrmAnimationFrame
   Left = 0
-  Height = 482
+  Height = 247
   Top = 0
-  Width = 322
-  ClientHeight = 482
-  ClientWidth = 322
+  Width = 379
+  AutoSize = True
+  BorderSpacing.Around = 4
+  ClientHeight = 247
+  ClientWidth = 379
   TabOrder = 0
-  DesignLeft = 875
-  DesignTop = 264
+  DesignLeft = 548
+  DesignTop = 215
   object GroupBox1: TGroupBox
     Left = 0
-    Height = 189
+    Height = 216
     Top = 0
-    Width = 322
+    Width = 379
     Align = alTop
     Caption = 'Frame properties'
-    ClientHeight = 172
-    ClientWidth = 320
+    ClientHeight = 199
+    ClientWidth = 377
     TabOrder = 0
     object Label5: TLabel
       Left = 8
-      Height = 14
-      Top = 21
-      Width = 35
+      Height = 16
+      Top = 8
+      Width = 37
+      AutoSize = False
       Caption = '&Index:'
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'MS Sans Serif'
       ParentFont = False
     end
     object Label6: TLabel
-      Left = 8
+      Left = 7
       Height = 16
-      Top = 102
+      Top = 104
       Width = 45
+      AutoSize = False
       Caption = '&Pattern'
     end
     object Label7: TLabel
-      Left = 8
+      Left = 7
       Height = 16
-      Top = 75
+      Top = 72
       Width = 29
+      AutoSize = False
       Caption = '&Time'
     end
     object Label1: TLabel
-      Left = 8
-      Height = 14
-      Top = 48
-      Width = 37
+      Left = 7
+      Height = 16
+      Top = 40
+      Width = 38
+      AutoSize = False
       Caption = '&Name:'
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'MS Sans Serif'
       ParentFont = False
     end
     object edFrameIndex: TEdit
-      Left = 64
+      Left = 73
       Height = 28
-      Top = 18
-      Width = 240
+      Top = 8
+      Width = 297
       Anchors = [akTop, akLeft, akRight]
       Color = clBtnFace
       ReadOnly = True
       TabOrder = 0
     end
     object edFrameTime: TSpinEdit
-      Left = 64
+      Left = 72
       Height = 28
       Top = 72
-      Width = 240
+      Width = 297
       Anchors = [akTop, akLeft, akRight]
       OnChange = edFrameTimeChange
       TabOrder = 1
     end
     object edFramePatternName: TComboBox
-      Left = 64
+      Left = 72
       Height = 28
       Top = 136
-      Width = 240
+      Width = 297
       Anchors = [akTop, akLeft, akRight]
       ItemHeight = 0
       TabOrder = 2
     end
     object edFrameName: TEdit
-      Left = 64
+      Left = 72
       Height = 28
-      Top = 45
-      Width = 240
+      Top = 40
+      Width = 297
       Anchors = [akTop, akLeft, akRight]
       TabOrder = 3
       OnChange = edFrameNameChange
     end
     object edFramePattern: TSpinEdit
-      Left = 64
+      Left = 72
       Height = 28
-      Top = 99
-      Width = 240
+      Top = 104
+      Width = 297
       Anchors = [akTop, akLeft, akRight]
       OnChange = edFramePatternChange
       TabOrder = 4
+      Value = -1
     end
   end
 end

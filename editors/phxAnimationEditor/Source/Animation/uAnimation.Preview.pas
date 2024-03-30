@@ -5,7 +5,7 @@ interface
 uses
   SysUtils, Variants, Classes,
   Graphics, Controls, Forms, Dialogs, ExtCtrls,
-  ActnList, ImgList, ComCtrls, StdCtrls,
+  ActnList, ImgList, ComCtrls, StdCtrls, Buttons,
   phxTypes, phxGraphicsEx, phxImage, phxImageEx, EpikTimer;
 
 type
@@ -13,10 +13,9 @@ type
   TFrmAnimationPreview = class(TFrame)
     GroupBox1: TGroupBox;
     Panel1: TPanel;
-    ToolBar1: TToolBar;
-    btnPlay: TToolButton;
-    btnPause: TToolButton;
-    btnStop: TToolButton;
+    btnPlay: TSpeedButton;
+    btnPause: TSpeedButton;
+    btnStop: TSpeedButton;
     TrackBar1: TTrackBar;
     ImageList1: TImageList;
     ActionList1: TActionList;
@@ -181,9 +180,10 @@ end;
 
 //------------------------------------------------------------------------------
 procedure TFrmAnimationPreview.PaintBox1Paint(Sender: TObject);
-var Pattern: TPHXPattern;
+var {%H-}Pattern: TPHXPattern;
 var Rect: TRecti;
 begin
+
   with PaintBox1.Canvas do
   begin
     Brush.Color:= clWindow;

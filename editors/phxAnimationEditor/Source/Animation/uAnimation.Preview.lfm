@@ -1,100 +1,104 @@
 object FrmAnimationPreview: TFrmAnimationPreview
   Left = 0
-  Height = 335
+  Height = 359
   Top = 0
-  Width = 316
-  ClientHeight = 335
-  ClientWidth = 316
+  Width = 366
+  BorderSpacing.Around = 4
+  ClientHeight = 359
+  ClientWidth = 366
   TabOrder = 0
-  DesignLeft = 680
-  DesignTop = 452
+  DesignLeft = 417
+  DesignTop = 162
   object GroupBox1: TGroupBox
     Left = 0
-    Height = 335
+    Height = 359
     Top = 0
-    Width = 316
+    Width = 366
     Align = alClient
     Caption = 'Animation preview'
-    ClientHeight = 318
-    ClientWidth = 314
+    ClientHeight = 342
+    ClientWidth = 364
     TabOrder = 0
     object Panel1: TPanel
       Left = 0
       Height = 38
-      Top = 280
-      Width = 314
+      Top = 304
+      Width = 364
       Align = alBottom
       BevelOuter = bvNone
       ClientHeight = 38
-      ClientWidth = 314
+      ClientWidth = 364
       TabOrder = 0
-      object ToolBar1: TToolBar
-        Left = 0
-        Height = 38
-        Top = 0
-        Width = 80
-        Align = alLeft
-        ButtonHeight = 30
-        ButtonWidth = 23
-        Caption = 'ToolBar2'
-        EdgeInner = esNone
-        EdgeOuter = esNone
-        Images = ImageList1
-        TabOrder = 0
-        object btnPlay: TToolButton
-          Left = 1
-          Top = 0
-          Action = actPlay
-          AutoSize = True
-          ParentShowHint = False
-          ShowHint = True
-        end
-        object btnPause: TToolButton
-          Left = 24
-          Top = 0
-          Action = actPause
-          AutoSize = True
-          ParentShowHint = False
-          ShowHint = True
-        end
-        object btnStop: TToolButton
-          Left = 47
-          Top = 0
-          Action = actStop
-          AutoSize = True
-          ParentShowHint = False
-          ShowHint = True
-        end
-      end
       object TrackBar1: TTrackBar
-        Left = 80
+        Left = 95
         Height = 38
         Top = 0
-        Width = 234
+        Width = 267
         AutoSize = True
         OnChange = actAnimationUpdate
         PageSize = 1
         Position = 0
         ScalePos = trLeft
         Align = alClient
-        TabOrder = 1
+        BorderSpacing.Right = 2
+        TabOrder = 0
+      end
+      object btnPlay: TSpeedButton
+        Left = 2
+        Height = 30
+        Top = 4
+        Width = 31
+        Action = actPlay
+        Align = alLeft
+        BorderSpacing.Left = 2
+        BorderSpacing.Top = 4
+        BorderSpacing.Bottom = 4
+        Images = ImageList1
+        ImageIndex = 0
+        ShowCaption = False
+      end
+      object btnPause: TSpeedButton
+        Left = 33
+        Height = 30
+        Top = 4
+        Width = 31
+        Action = actPause
+        Align = alLeft
+        BorderSpacing.Top = 4
+        BorderSpacing.Bottom = 4
+        Images = ImageList1
+        ImageIndex = 1
+        ShowCaption = False
+      end
+      object btnStop: TSpeedButton
+        Left = 64
+        Height = 30
+        Top = 4
+        Width = 31
+        Action = actStop
+        Align = alLeft
+        BorderSpacing.Top = 4
+        BorderSpacing.Bottom = 4
+        Images = ImageList1
+        ImageIndex = 2
+        ShowCaption = False
       end
     end
     object Panel2: TPanel
       Left = 0
-      Height = 280
+      Height = 304
       Top = 0
-      Width = 314
+      Width = 364
       Align = alClient
       BevelOuter = bvNone
-      ClientHeight = 280
-      ClientWidth = 314
+      ClientHeight = 304
+      ClientWidth = 364
       TabOrder = 1
       object PaintBox1: TPaintBox
         Left = 0
-        Height = 280
+        Height = 304
         Top = 0
-        Width = 314
+        Width = 364
         Align = alClient
         OnPaint = PaintBox1Paint
       end

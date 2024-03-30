@@ -16,7 +16,6 @@ type
   TFrmImageList = class(TFrame)
     GroupBox1: TGroupBox;
     ListBox1: TListBox;
-    Panel1: TPanel;
     Button1: TButton;
   private
     { Private declarations }
