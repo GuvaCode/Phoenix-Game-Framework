@@ -1,171 +1,163 @@
 object FrmImageProperties: TFrmImageProperties
   Left = 0
-  Top = 0
-  Width = 250
   Height = 412
+  Top = 0
+  Width = 244
+  BorderSpacing.Around = 4
+  ClientHeight = 412
+  ClientWidth = 244
   TabOrder = 0
+  DesignLeft = 371
+  DesignTop = 180
   object GroupBox1: TGroupBox
     Left = 0
-    Top = 195
-    Width = 250
-    Height = 126
-    Align = alTop
+    Height = 180
+    Top = 232
+    Width = 244
+    Align = alClient
     Caption = 'Texture'
+    ClientHeight = 163
+    ClientWidth = 242
     TabOrder = 0
-    DesignSize = (
-      250
-      126)
     object Label4: TLabel
-      Left = 12
-      Top = 22
-      Width = 32
-      Height = 13
+      Left = 8
+      Height = 16
+      Top = 8
+      Width = 39
       Caption = '&Width:'
-      Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
       ParentFont = False
     end
     object Label5: TLabel
-      Left = 12
-      Top = 44
-      Width = 35
-      Height = 13
+      Left = 8
+      Height = 16
+      Top = 41
+      Width = 43
       Caption = '&Height:'
-      Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
       ParentFont = False
     end
     object Label6: TLabel
-      Left = 12
-      Top = 76
-      Width = 38
-      Height = 13
+      Left = 8
+      Height = 16
+      Top = 72
+      Width = 46
       Caption = '&Format:'
-      Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
       ParentFont = False
     end
     object edTextureWidth: TEdit
-      Left = 68
-      Top = 14
-      Width = 175
-      Height = 21
-      Anchors = [akLeft, akTop, akRight]
+      Left = 72
+      Height = 28
+      Top = 8
+      Width = 165
+      Anchors = [akTop, akLeft, akRight]
       Color = clBtnFace
       ReadOnly = True
       TabOrder = 0
     end
     object edTextureHeight: TEdit
-      Left = 68
-      Top = 41
-      Width = 175
-      Height = 21
-      Anchors = [akLeft, akTop, akRight]
+      Left = 72
+      Height = 28
+      Top = 40
+      Width = 165
+      Anchors = [akTop, akLeft, akRight]
       Color = clBtnFace
       ReadOnly = True
       TabOrder = 1
     end
     object edTextureFormat: TEdit
-      Left = 68
-      Top = 68
-      Width = 175
-      Height = 21
-      Anchors = [akLeft, akTop, akRight]
+      Left = 72
+      Height = 28
+      Top = 72
+      Width = 165
+      Anchors = [akTop, akLeft, akRight]
       Color = clBtnFace
       ReadOnly = True
       TabOrder = 2
     end
     object btnTexture: TButton
-      Left = 138
-      Top = 95
-      Width = 105
+      Left = 132
       Height = 25
+      Top = 112
+      Width = 105
       Anchors = [akTop, akRight]
       Caption = 'Texture settings'
       TabOrder = 3
+      Visible = False
     end
   end
   object GroupBox2: TGroupBox
     Left = 0
+    Height = 232
     Top = 0
-    Width = 250
-    Height = 195
+    Width = 244
     Align = alTop
     Caption = 'Image properties'
+    ClientHeight = 215
+    ClientWidth = 242
     TabOrder = 1
-    DesignSize = (
-      250
-      195)
     object Label1: TLabel
       Left = 8
-      Top = 21
-      Width = 31
-      Height = 13
+      Height = 16
+      Top = 8
+      Width = 38
       Caption = '&Name:'
     end
     object Label2: TLabel
       Left = 8
-      Top = 48
-      Width = 37
-      Height = 13
+      Height = 16
+      Top = 40
+      Width = 46
       Caption = '&Author:'
     end
     object Label3: TLabel
       Left = 8
-      Top = 75
-      Width = 39
-      Height = 13
+      Height = 16
+      Top = 72
+      Width = 48
       Caption = '&Version:'
     end
     object Label8: TLabel
       Left = 8
+      Height = 16
       Top = 102
-      Width = 49
-      Height = 13
+      Width = 61
       Caption = '&Comment:'
     end
     object edName: TEdit
-      Left = 68
-      Top = 18
-      Width = 175
-      Height = 21
-      Anchors = [akLeft, akTop, akRight]
+      Left = 72
+      Height = 28
+      Top = 8
+      Width = 165
+      Anchors = [akTop, akLeft, akRight]
       TabOrder = 0
       OnChange = edNameChange
     end
     object edAuthor: TEdit
-      Left = 68
-      Top = 45
-      Width = 175
-      Height = 21
-      Anchors = [akLeft, akTop, akRight]
+      Left = 72
+      Height = 28
+      Top = 40
+      Width = 165
+      Anchors = [akTop, akLeft, akRight]
       TabOrder = 1
       OnChange = edAuthorChange
     end
     object edComment: TMemo
-      Left = 68
-      Top = 99
-      Width = 175
+      Left = 72
       Height = 89
-      Anchors = [akLeft, akTop, akRight]
+      Top = 104
+      Width = 165
+      Anchors = [akTop, akLeft, akRight]
       TabOrder = 2
       OnChange = edCommentChange
     end
     object edVersion: TEdit
-      Left = 68
+      Left = 72
+      Height = 28
       Top = 72
-      Width = 175
-      Height = 21
-      Anchors = [akLeft, akTop, akRight]
+      Width = 165
+      Anchors = [akTop, akLeft, akRight]
       TabOrder = 3
       OnChange = edVersionChange
     end

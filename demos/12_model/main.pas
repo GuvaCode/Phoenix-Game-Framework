@@ -108,7 +108,7 @@ procedure TGame.Update;
 begin
   Timer.Update;
   Device.Update;
- // Camera.RotateLeft(45 * Timer.FrameTime);
+  Camera.RotateLeft(45 * Timer.FrameTime);
 end;
 
 procedure TGame.Render;

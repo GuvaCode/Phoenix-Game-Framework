@@ -4,13 +4,10 @@ interface
 
 uses
   SysUtils, Classes, Controls,  LCLType, LCLIntf, Graphics, Types, Messages, LMessages, Math,
-
   ComCtrls,  StdCtrls,  ExtCtrls,  Forms, ClipBrd,
 
   Generics.Collections,
-
   {XMLIntf,}
-
   phxTypes,
   phxGraphics,
   phxGraphicsEx;
@@ -100,6 +97,9 @@ TPHXEditorGrid = class(TPersistent)
 // FCenter: Center position in the viewport
 // FZoom  : Zoom factor
 //------------------------------------------------------------------------------
+
+{ TPHXEditorViewport }
+
 TPHXEditorViewport = class(TPersistent)
   private
     FOwner: TPHXEditor;
@@ -137,7 +137,7 @@ TPHXEditorViewport = class(TPersistent)
     Procedure ZoomOut(const X,Y: Integer); overload;
 
     Procedure Zoom100;
-
+    Procedure Zoom50;
     // Zoom to fit a rect in document coordinates
     Procedure ZoomRect(Rect: TRecti);
     Procedure ZoomFit;
@@ -963,7 +963,12 @@ end;
 procedure TPHXEditorViewport.Zoom100;
 begin
   SetZoom(1.0);
+  ScrollToCenter;
+end;
 
+procedure TPHXEditorViewport.Zoom50;
+begin
+  SetZoom(0.5);
   ScrollToCenter;
 end;
 
@@ -1129,7 +1134,7 @@ begin
   FBorderStyle:= bsSingle;
   
   FHoverTimer:= TTimer.Create(Self);
-  FHoverTimer.Interval:= 250;
+  FHoverTimer.Interval:= 50;  //250
   FHoverTimer.Enabled:= False;
   FHoverTimer.OnTimer:= ShowHover;
 end;

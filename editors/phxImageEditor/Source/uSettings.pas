@@ -3,10 +3,10 @@ unit uSettings;
 interface
 
 uses
-  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, StdCtrls, ExtCtrls, Mask,
-
-  JvExMask, JvSpin,
+ Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+ Dialogs, StdCtrls, ExtCtrls,
+ ColorBox,
+ Spin,
 
   phxEditor,
 
@@ -29,8 +29,8 @@ type
     edGridColor: TColorBox;
     edGridStyle: TComboBox;
     Label2: TLabel;
-    edGridSizeY: TJvSpinEdit;
-    edGridSizeX: TJvSpinEdit;
+    edGridSizeY: TSpinEdit;
+    edGridSizeX: TSpinEdit;
   private
     FSettings: TSettings;
 

@@ -27,6 +27,9 @@ uses
 type
 
 //------------------------------------------------------------------------------
+
+{ TFrmAnimationFrames }
+
 TFrmAnimationFrames = class(TFrame)
     ListImages: TImageList;
     ToolBar1: TToolBar;
@@ -40,6 +43,7 @@ TFrmAnimationFrames = class(TFrame)
     actFrameDel: TAction;
     ScrollBox1: TScrollBox;
     PaintBox1: TPaintBox;
+    procedure FrameResize(Sender: TObject);
     procedure PaintBox1Paint(Sender: TObject);
     procedure PaintBox1MouseDown(Sender: TObject; Button: TMouseButton;  Shift: TShiftState; X, Y: Integer);
     procedure PaintBox1DragOver(Sender, Source: TObject; X, Y: Integer;   State: TDragState; var Accept: Boolean);
@@ -309,6 +313,11 @@ begin
       end;
     end;
   end;
+end;
+
+procedure TFrmAnimationFrames.FrameResize(Sender: TObject);
+begin
+  PaintBox1.Invalidate;
 end;
 
 

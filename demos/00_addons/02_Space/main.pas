@@ -112,6 +112,7 @@ begin
 
   Sprites:= TPHXSpriteEngine.Create(Device);
   Sprites.Images:= Images;
+  //Sprites.Options := [soLimitScroll];
 
   Sprite:= TPHXSprite.Create(Sprites);
   Sprite.Name:= 'Ship001';
@@ -183,7 +184,7 @@ begin
   Device.Update;
   Player.Update(Timer.FrameTime, Input);
 
-  Sprites.Camera.ScrollX:= Device.Width div 2 - Player.Position.x ;
+  Sprites.Camera.ScrollX:= Device.Width div 2 - Player.Position.X;
   Sprites.Camera.ScrollY:= Device.Height div 2 - Player.Position.Y;
 
 

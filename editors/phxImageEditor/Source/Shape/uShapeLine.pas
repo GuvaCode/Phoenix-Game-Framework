@@ -3,8 +3,8 @@ unit uShapeLine;
 interface
 
 uses
-  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms, 
-  Dialogs, StdCtrls, Mask, JvExMask, JvSpin,
+  Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, Spin,
 
   phxShape,
   phxTypes,
@@ -16,10 +16,10 @@ type
 //------------------------------------------------------------------------------
 TFrmShapeLine = class(TFrame, IShapeEditor)
     Label1: TLabel;
-    edMinY: TJvSpinEdit;
-    edMinX: TJvSpinEdit;
-    edMaxX: TJvSpinEdit;
-    edMaxY: TJvSpinEdit;
+    edMinY: TSpinEdit;
+    edMinX: TSpinEdit;
+    edMaxX: TSpinEdit;
+    edMaxY: TSpinEdit;
     Label2: TLabel;
     Label3: TLabel;
     Label4: TLabel;
@@ -163,7 +163,7 @@ begin
     SetShape(TPHXLine(Value));
   end else
   begin
-    SetShape(nil);
+    SetShape(TPHXLine(nil));
   end;
 end;
 

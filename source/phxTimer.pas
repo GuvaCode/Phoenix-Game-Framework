@@ -124,9 +124,8 @@ implementation
 constructor TPHXTimer.Create;
 begin
   {$IFDEF WIN32}
-	QueryPerformanceFrequency(TimerFrequency);
-
-	QueryPerformanceCounter(TimerStart);
+     QueryPerformanceFrequency(TimerFrequency);
+     QueryPerformanceCounter(TimerStart);
   {$ELSE}
   {$ENDIF}
 
@@ -246,11 +245,10 @@ end;
 function TPHXTimer.GetCurrentTime: Double;
 begin
   {$IFDEF WIN32}
-	QueryPerformanceCounter(TimerFrame);
-
-  Result:= (TimerFrame - TimerStart) / TimerFrequency;
+    QueryPerformanceCounter(TimerFrame);
+    Result:= (TimerFrame - TimerStart) / TimerFrequency;
   {$ELSE}
-  Result := (LclIntf.GetTickCount mod High(LongInt)) / 1000;
+  Result := (LclIntf.GetTickCount64 mod High(LongInt)) / 1000;
   {$ENDIF};
 end;
 

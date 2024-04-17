@@ -180,7 +180,7 @@ object frmPacker: TfrmPacker
         TabOrder = 3
         OnClick = cbAutoSizeClick
       end
-      object edPadding: TJvSpinEdit
+      object edPadding: TSpinEdit
         Left = 98
         Top = 94
         Width = 121

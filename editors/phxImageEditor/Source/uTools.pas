@@ -3,11 +3,11 @@ unit uTools;
 interface
 
 uses
-  System.SysUtils, System.Classes, Winapi.Windows, Graphics, Controls, Types, Math,
+  SysUtils, Classes, Graphics, Controls, Types, Math,
+  LCLType,
 
 
-
-  Vcl.Dialogs,
+  Dialogs,
 
   phxEditor,
 
@@ -949,15 +949,15 @@ begin
   inherited;
   Editor.Cursor:= crCross;
 
-  if Key = Winapi.Windows.VK_RETURN  then
+  if Key = LCLType.VK_RETURN  then
   begin
     Finish;
   end else
-  if Key = Winapi.Windows.VK_ESCAPE  then
+  if Key = LCLType.VK_ESCAPE  then
   begin
     Cancel;
   end else
-  if Key = Winapi.Windows.VK_LEFT then
+  if Key = LCLType.VK_LEFT then
   begin
     if Editor.Grid.Enabled then
     begin
@@ -968,7 +968,7 @@ begin
     end;
   end else
   // Move right
-  if Key = Winapi.Windows.VK_RIGHT then
+  if Key = LCLType.VK_RIGHT then
   begin
     if Editor.Grid.Enabled then
     begin
@@ -978,7 +978,7 @@ begin
       Position.X:= Min( Position.X + 1                , Image.Width  - Buffer.Width);
     end;
   end else
-  if Key = Winapi.Windows.VK_UP then
+  if Key = LCLType.VK_UP then
   begin
     if Editor.Grid.Enabled then
     begin
@@ -988,7 +988,7 @@ begin
       Position.Y:= Max(0, Position.Y - 1);
     end;
   end else
-  if Key = Winapi.Windows.VK_DOWN then
+  if Key = LCLType.VK_DOWN then
   begin
     if Editor.Grid.Enabled then
     begin

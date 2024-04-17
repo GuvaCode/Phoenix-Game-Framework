@@ -7,18 +7,16 @@
       <Unit0>
         <Filename Value="Isometric.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <WindowIndex Value="-1"/>
-        <TopLine Value="-1"/>
-        <CursorPos X="-1" Y="-1"/>
+        <EditorIndex Value="1"/>
         <UsageCount Value="22"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
+        <Loaded Value="True"/>
       </Unit0>
       <Unit1>
         <Filename Value="main.pas"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <CursorPos Y="185"/>
+        <TopLine Value="439"/>
+        <CursorPos X="3" Y="67"/>
         <UsageCount Value="22"/>
         <Loaded Value="True"/>
       </Unit1>
@@ -85,14 +83,14 @@
       </Unit9>
       <Unit10>
         <Filename Value="../../../source/headers/Unzip.pas"/>
-        <EditorIndex Value="4"/>
+        <EditorIndex Value="5"/>
         <CursorPos X="52" Y="17"/>
         <UsageCount Value="11"/>
         <Loaded Value="True"/>
       </Unit10>
       <Unit11>
         <Filename Value="../../../source/headers/dglOpenGL.pas"/>
-        <EditorIndex Value="5"/>
+        <EditorIndex Value="6"/>
         <TopLine Value="14797"/>
         <CursorPos X="16" Y="14806"/>
         <UsageCount Value="11"/>
@@ -100,15 +98,15 @@
       </Unit11>
       <Unit12>
         <Filename Value="Map.pas"/>
-        <EditorIndex Value="2"/>
-        <TopLine Value="111"/>
-        <CursorPos X="62" Y="125"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="38"/>
+        <CursorPos X="57" Y="123"/>
         <UsageCount Value="11"/>
         <Loaded Value="True"/>
       </Unit12>
       <Unit13>
         <Filename Value="../../17_platformer/Tiles.pas"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="4"/>
         <TopLine Value="277"/>
         <CursorPos X="48" Y="299"/>
         <UsageCount Value="11"/>
@@ -116,14 +114,14 @@
       </Unit13>
       <Unit14>
         <Filename Value="../../../source/phxShape.pas"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="2"/>
         <TopLine Value="679"/>
         <CursorPos X="35" Y="558"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit14>
     </Units>
-    <JumpHistory Count="11" HistoryIndex="10">
+    <JumpHistory Count="12" HistoryIndex="11">
       <Position1>
         <Filename Value="main.pas"/>
         <Caret Line="484" Column="16" TopLine="457"/>
@@ -168,6 +166,9 @@
         <Filename Value="main.pas"/>
         <Caret Line="40" Column="13" TopLine="30"/>
       </Position11>
+      <Position12>
+        <Filename Value="Isometric.lpr"/>
+      </Position12>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>

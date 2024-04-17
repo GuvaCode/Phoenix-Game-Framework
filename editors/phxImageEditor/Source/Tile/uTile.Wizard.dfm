@@ -305,7 +305,7 @@ object frmTileWizard: TfrmTileWizard
       TabOrder = 2
       OnClick = cbDrawIndexClick
     end
-    object edOffsetX: TJvSpinEdit
+    object edOffsetX: TSpinEdit
       Left = 105
       Top = 89
       Width = 82
@@ -314,7 +314,7 @@ object frmTileWizard: TfrmTileWizard
       TabOrder = 3
       OnChange = EditChange
     end
-    object edOffsetY: TJvSpinEdit
+    object edOffsetY: TSpinEdit
       Left = 105
       Top = 116
       Width = 82
@@ -323,27 +323,27 @@ object frmTileWizard: TfrmTileWizard
       TabOrder = 4
       OnChange = EditChange
     end
-    object edWidth: TJvSpinEdit
+    object edWidth: TSpinEdit
       Left = 105
       Top = 35
       Width = 82
       Height = 21
-      Value = 32.000000000000000000
+      Value = 32
       Anchors = [akLeft, akTop, akRight]
       TabOrder = 5
       OnChange = EditChange
     end
-    object edHeight: TJvSpinEdit
+    object edHeight: TSpinEdit
       Left = 105
       Top = 62
       Width = 82
       Height = 21
-      Value = 32.000000000000000000
+      Value = 32
       Anchors = [akLeft, akTop, akRight]
       TabOrder = 6
       OnChange = EditChange
     end
-    object edHorzSpace: TJvSpinEdit
+    object edHorzSpace: TSpinEdit
       Left = 105
       Top = 143
       Width = 82
@@ -352,7 +352,7 @@ object frmTileWizard: TfrmTileWizard
       TabOrder = 7
       OnChange = EditChange
     end
-    object edVertSpace: TJvSpinEdit
+    object edVertSpace: TSpinEdit
       Left = 105
       Top = 170
       Width = 82
@@ -361,7 +361,7 @@ object frmTileWizard: TfrmTileWizard
       TabOrder = 8
       OnChange = EditChange
     end
-    object edSkip: TJvSpinEdit
+    object edSkip: TSpinEdit
       Left = 105
       Top = 205
       Width = 82
@@ -370,32 +370,32 @@ object frmTileWizard: TfrmTileWizard
       TabOrder = 9
       OnChange = EditChange
     end
-    object edMaxTiles: TJvSpinEdit
+    object edMaxTiles: TSpinEdit
       Left = 105
       Top = 232
       Width = 82
       Height = 21
-      Value = -1.000000000000000000
+      Value = -1
       Anchors = [akLeft, akTop, akRight]
       TabOrder = 10
       OnChange = EditChange
     end
-    object edMaxCols: TJvSpinEdit
+    object edMaxCols: TSpinEdit
       Left = 105
       Top = 259
       Width = 82
       Height = 21
-      Value = -1.000000000000000000
+      Value = -1
       Anchors = [akLeft, akTop, akRight]
       TabOrder = 11
       OnChange = EditChange
     end
-    object edMaxRows: TJvSpinEdit
+    object edMaxRows: TSpinEdit
       Left = 105
       Top = 286
       Width = 82
       Height = 21
-      Value = -1.000000000000000000
+      Value = -1
       Anchors = [akLeft, akTop, akRight]
       TabOrder = 12
       OnChange = EditChange

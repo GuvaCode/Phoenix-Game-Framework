@@ -3,8 +3,8 @@ unit uTag.Actions;
 interface
 
 uses
-  System.SysUtils, System.Classes, Vcl.ActnList, Vcl.Forms, Vcl.Dialogs,
-  Vcl.Controls,
+  SysUtils, Classes, ActnList, Forms, Dialogs,
+  Controls,
 
   phxTypes,
   phxImage,

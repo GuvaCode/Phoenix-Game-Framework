@@ -101,14 +101,14 @@ begin
    Mesh.Upload(Buffer);
 
    Camera := TPHXEditorCamera.Create(Device);
-   Camera.Distance:= 50;
+   Camera.Distance:= 100;
 end;
 
 procedure TGame.Update;
 begin
   Timer.Update;
   Device.Update;
- // Camera.RotateLeft(45 * Timer.FrameTime);
+  Camera.RotateLeft(45 * Timer.FrameTime);
 end;
 
 procedure TGame.Render;

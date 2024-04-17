@@ -3,7 +3,7 @@
   <ProjectSession>
     <Version Value="12"/>
     <BuildModes Active="Default"/>
-    <Units Count="11">
+    <Units Count="12">
       <Unit0>
         <Filename Value="Game.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -28,7 +28,6 @@
       </Unit2>
       <Unit3>
         <Filename Value="../../../source/phxConfig.inc"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="3"/>
         <TopLine Value="17"/>
         <CursorPos X="3" Y="31"/>
@@ -45,14 +44,14 @@
       </Unit4>
       <Unit5>
         <Filename Value="../../../source/phxTranslation.pas"/>
-        <EditorIndex Value="8"/>
+        <EditorIndex Value="9"/>
         <CursorPos Y="20"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit5>
       <Unit6>
         <Filename Value="../../../source/phxTypes.pas"/>
-        <EditorIndex Value="5"/>
+        <EditorIndex Value="6"/>
         <TopLine Value="2941"/>
         <CursorPos Y="2952"/>
         <UsageCount Value="10"/>
@@ -60,7 +59,7 @@
       </Unit6>
       <Unit7>
         <Filename Value="../../../source/phxEvents.pas"/>
-        <EditorIndex Value="7"/>
+        <EditorIndex Value="8"/>
         <TopLine Value="410"/>
         <CursorPos X="17" Y="421"/>
         <UsageCount Value="10"/>
@@ -75,7 +74,7 @@
       </Unit8>
       <Unit9>
         <Filename Value="../../../source/phxSimpleXML.pas"/>
-        <EditorIndex Value="4"/>
+        <EditorIndex Value="5"/>
         <TopLine Value="556"/>
         <CursorPos X="41" Y="568"/>
         <UsageCount Value="10"/>
@@ -83,14 +82,23 @@
       </Unit9>
       <Unit10>
         <Filename Value="../../../source/phxLogger.pas"/>
-        <EditorIndex Value="6"/>
+        <EditorIndex Value="7"/>
         <TopLine Value="165"/>
         <CursorPos X="27" Y="176"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit10>
+      <Unit11>
+        <Filename Value="../../../source/providers/graphics/phxOpenGL_SDL2.pas"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="37"/>
+        <CursorPos Y="8"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit11>
     </Units>
-    <JumpHistory Count="25" HistoryIndex="24">
+    <JumpHistory Count="26" HistoryIndex="25">
       <Position1>
         <Filename Value="../../../source/phxTypes.pas"/>
         <Caret Line="3094" Column="30" TopLine="3083"/>
@@ -191,6 +199,10 @@
         <Filename Value="../../../source/phxClasses.pas"/>
         <Caret Line="1282" Column="21" TopLine="1271"/>
       </Position25>
+      <Position26>
+        <Filename Value="../../../source/phxConfig.inc"/>
+        <Caret Line="31" Column="3" TopLine="17"/>
+      </Position26>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>

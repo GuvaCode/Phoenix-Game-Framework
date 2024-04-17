@@ -3,8 +3,8 @@ unit uPattern.Search;
 interface
 
 uses
-  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs,
+  Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, LclType,
 
   phxImage, StdCtrls;
 
@@ -83,7 +83,7 @@ end;
 //------------------------------------------------------------------------------
 procedure TFrmPatternSearch.edSearchKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
 begin
-  if (Key = VK_RETURN) and (lwPatterns.Count = 1) then
+  if (Key = LclType.VK_RETURN) and (lwPatterns.Count = 1) then
   begin
     PatternIndex:= Integer(lwPatterns.Items.Objects[0]);
     ModalResult:= mrOk;

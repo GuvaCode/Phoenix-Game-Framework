@@ -3,10 +3,10 @@ unit uShapeEditor.Box;
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes,
-  Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Mask,
+  Messages, SysUtils, Variants, Classes,
+  Graphics, Controls, Forms,Dialogs, StdCtrls,
 
-  JvExMask, JvSpin,
+  Spin,
 
   phxTypes,
   phxShape;
@@ -20,10 +20,10 @@ TFrmShapeBox = class(TFrame)
     Label3: TLabel;
     Label4: TLabel;
     Label5: TLabel;
-    edCenterX: TJvSpinEdit;
-    edCenterY: TJvSpinEdit;
-    edWidth: TJvSpinEdit;
-    edHeight: TJvSpinEdit;
+    edCenterX: TSpinEdit;
+    edCenterY: TSpinEdit;
+    edWidth: TSpinEdit;
+    edHeight: TSpinEdit;
     procedure edCenterXChange(Sender: TObject);
     procedure edCenterYChange(Sender: TObject);
     procedure edWidthChange(Sender: TObject);

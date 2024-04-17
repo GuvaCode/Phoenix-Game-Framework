@@ -3,11 +3,11 @@ unit uTag.List;
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes,
-  Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ComCtrls, Vcl.Mask,
-  Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.ToolWin,
+  Messages, SysUtils, Variants, Classes,
+  Graphics, Controls, Forms, Dialogs, ComCtrls,
+  StdCtrls, ExtCtrls, ToolWin,
 
-  JvExMask, JvSpin,
+  Spin,
 
   phxTypes,
   phxImage,
@@ -20,8 +20,13 @@ uses
 type
 
 //------------------------------------------------------------------------------
+
+{ TFrmTagList }
+
 TFrmTagList = class(TFrame, ITagList)
     lwTags: TListView;
+    Panel2: TPanel;
+    Splitter1: TSplitter;
     ToolBar1: TToolBar;
     PatternAdd: TToolButton;
     PatternDel: TToolButton;
@@ -71,10 +76,9 @@ implementation
 constructor TFrmTagList.Create(AOwner: TComponent);
 begin
   inherited;
-
   FrmTag:= TFrmTagProperties.Create(Self);
   FrmTag.Parent:= Panel1;
-  FrmTag.Align := alBottom;
+  FrmTag.Align := alClient;
 end;
 
 //------------------------------------------------------------------------------

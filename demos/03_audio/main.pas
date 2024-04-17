@@ -15,8 +15,8 @@ uses
   phxFont,
 
   phxAudio,
-  phxAudio_Bass;
-//  phxAudio_OpenAL;
+ // phxAudio_Bass;
+  phxAudio_OpenAL;
 
 type
 TGame = class(TPHXApplication)

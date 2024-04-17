@@ -3,13 +3,13 @@ unit uTile.Select;
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.ComCtrls, Vcl.ToolWin,
-  Vcl.ImgList,
+  SysUtils, Variants, Classes, Graphics,
+  Controls, Forms,Dialogs, StdCtrls, ExtCtrls, ComCtrls,
+  ImgList,
 
-  Vcl.Mask, JvExMask, JvSpin,
+  Spin,
 
-  phxTypes,
+
   phxMath,
 
   phxImage,
@@ -41,17 +41,17 @@ TFrmTileSelect = class(TForm)
     ScrollBox1: TScrollBox;
     PaintBox1: TPaintBox;
     GroupBox1: TGroupBox;
-    edGridHeight: TJvSpinEdit;
-    edGridWidth: TJvSpinEdit;
+    edGridHeight: TSpinEdit;
+    edGridWidth: TSpinEdit;
     Label6: TLabel;
     Label7: TLabel;
     cbGridDraw: TCheckBox;
     cbGridSnap: TCheckBox;
     GroupBox2: TGroupBox;
-    edTileHeight: TJvSpinEdit;
-    edTileWidth: TJvSpinEdit;
-    edTileY: TJvSpinEdit;
-    edTileX: TJvSpinEdit;
+    edTileHeight: TSpinEdit;
+    edTileWidth: TSpinEdit;
+    edTileY: TSpinEdit;
+    edTileX: TSpinEdit;
     edTileName: TEdit;
     Label5: TLabel;
     Label3: TLabel;

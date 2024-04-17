@@ -3,9 +3,8 @@ unit uImage.Properties;
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes,
-  Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls,
-
+  SysUtils, Variants, Classes,
+  Graphics, Controls, Forms, Dialogs, StdCtrls,
   phxGraphics,
   phxImage;
 

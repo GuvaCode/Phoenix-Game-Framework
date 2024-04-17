@@ -7,18 +7,19 @@ uses
  Graphics, Controls, Forms,Dialogs, StdCtrls,
 
 
-  phxImage, ExtCtrls;
+  phxImage, ExtCtrls, Buttons;
 
 type
 
   { TFrmImageList }
 
   TFrmImageList = class(TFrame)
+    BitBtn1: TBitBtn;
     GroupBox1: TGroupBox;
     ListBox1: TListBox;
-    Button1: TButton;
+
   private
-    { Private declarations }
+
   public
     procedure UpdateImages;
   end;
@@ -29,7 +30,7 @@ implementation
 
 uses uActions;
 
-{ TFrmImageList }
+
 
 procedure TFrmImageList.UpdateImages;
 var Image: TPHXImage;
@@ -38,7 +39,6 @@ begin
   for Image in ModActions.Images do
   begin
       ListBox1.Items.Add(Image.Name);
-
   end;
 
 end;

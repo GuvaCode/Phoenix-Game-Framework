@@ -1362,6 +1362,8 @@ begin
 end;
 
 //------------------------------------------------------------------------------
+
+
 procedure TPHXSprite.MoveForward(const Distance: Single);
 var Vector: TVector2f;
 begin

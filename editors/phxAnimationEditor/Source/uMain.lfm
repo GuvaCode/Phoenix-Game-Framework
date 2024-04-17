@@ -1,39 +1,41 @@
 object FrmMain: TFrmMain
-  Left = 289
-  Height = 571
-  Top = 115
+  Left = 368
+  Height = 475
+  Top = 187
   Width = 809
   Caption = 'phxAnimationEditor'
-  ClientHeight = 571
+  ClientHeight = 475
   ClientWidth = 809
+  DoubleBuffered = True
   Font.Color = clWindowText
   KeyPreview = True
   Menu = MainMenu1
   OnClose = FormClose
   OnKeyDown = FormKeyDown
+  ParentDoubleBuffered = False
   Position = poScreenCenter
   LCLVersion = '3.2.0.0'
   object Splitter1: TSplitter
     Left = 270
-    Height = 529
+    Height = 433
     Top = 24
     Width = 4
   end
   object StatusBar1: TStatusBar
     Left = 0
     Height = 18
-    Top = 553
+    Top = 457
     Width = 809
     Panels = <>
   end
   object PageControl1: TPageControl
     Left = 0
-    Height = 529
+    Height = 433
     Top = 24
     Width = 270
-    ActivePage = TabFrames
+    ActivePage = TabProperties
     Align = alLeft
-    TabIndex = 1
+    TabIndex = 0
     TabOrder = 1
     object TabProperties: TTabSheet
       Caption = '&Animation'
@@ -52,13 +54,13 @@ object FrmMain: TFrmMain
   end
   object Panel1: TPanel
     Left = 274
-    Height = 529
+    Height = 433
     Top = 24
     Width = 535
     Align = alClient
     BevelOuter = bvNone
     Caption = 'pnlClient'
-    ClientHeight = 529
+    ClientHeight = 433
     ClientWidth = 535
     ParentBackground = False
     TabOrder = 2
@@ -84,7 +86,7 @@ object FrmMain: TFrmMain
     end
     object gbPatterns: TGroupBox
       Left = 4
-      Height = 313
+      Height = 217
       Top = 212
       Width = 527
       Align = alClient
@@ -135,7 +137,6 @@ object FrmMain: TFrmMain
     object ToolButton2: TToolButton
       Left = 78
       Top = 2
-      Action = ModActions.actLoadImage
     end
   end
   object MainMenu1: TMainMenu
@@ -169,27 +170,25 @@ object FrmMain: TFrmMain
       Caption = '&Tools'
       object Export1: TMenuItem
         Caption = 'Export'
+        Visible = False
         object FramestoXML1: TMenuItem
-          Action = ModActions.actExportXML
         end
       end
       object Import1: TMenuItem
         Caption = 'Import'
+        Visible = False
         object FramesfromXML1: TMenuItem
-          Action = ModActions.actImportXML
         end
       end
       object N3: TMenuItem
         Caption = '-'
       end
       object Setanimationduration1: TMenuItem
-        Action = ModActions.actToolDuration
       end
       object N1: TMenuItem
         Caption = '-'
       end
       object ImageEditor1: TMenuItem
-        Action = ModActions.actToolImageEditor
       end
     end
     object About1: TMenuItem

@@ -136,7 +136,7 @@ object frmPacker: TfrmPacker
             '4096'
             '')
         end
-        object edPadding: TJvSpinEdit
+        object edPadding: TSpinEdit
           Left = 98
           Top = 70
           Width = 121

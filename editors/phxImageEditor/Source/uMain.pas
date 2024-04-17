@@ -3,9 +3,8 @@ unit uMain;
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, Vcl.ComCtrls, Vcl.ToolWin, Vcl.ExtCtrls,
-  Vcl.StdCtrls,
+  SysUtils, Variants, Classes, Graphics,
+  Controls, Forms, Dialogs, Menus, ComCtrls, ExtCtrls,
 
   phxTypes,
   phxMath,
@@ -25,8 +24,10 @@ uses
 type
 
 //------------------------------------------------------------------------------
+
+{ TFrmMain }
+
 TFrmMain = class(TForm)
-    ControlBar1: TControlBar;
     ToolBarStandard: TToolBar;
     ToolButton3: TToolButton;
     ToolButton4: TToolButton;
@@ -64,10 +65,8 @@ TFrmMain = class(TForm)
     ToolBarPattern: TToolBar;
     btnPatternAdd: TToolButton;
     btnPatternImport: TToolButton;
-    ToolButton7: TToolButton;
     btnPatternSelect: TToolButton;
     btnPatternMove: TToolButton;
-    ToolButton8: TToolButton;
     ToolBarTag: TToolBar;
     btnTagMove: TToolButton;
     Export1: TMenuItem;
@@ -100,6 +99,7 @@ TFrmMain = class(TForm)
     actEditPaste1: TMenuItem;
     procedure PageControl1Change(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure Panel1Resize(Sender: TObject);
   private
     Editor: TPHXImageEditor;
 
@@ -126,9 +126,9 @@ var
 
 implementation
 
-{$R *.dfm}
+{$R *.lfm}
 
-uses phxGraphics_FreeImage;
+uses phxGraphics_Vampyre;
 
 // TFrmMain
 //==============================================================================
@@ -247,6 +247,11 @@ begin
   end;
 end;
 
+procedure TFrmMain.Panel1Resize(Sender: TObject);
+begin
+  Editor.Invalidate;
+end;
+
 //------------------------------------------------------------------------------
 procedure TFrmMain.PageControl1Change(Sender: TObject);
 begin
@@ -257,6 +262,7 @@ begin
   end;
 
   ToolBarPattern.Visible:= PageControl1.ActivePage = TabPatterns;
+  if ToolBarPattern.Visible then ToolBarPattern.Repaint;
   ToolBarTag    .Visible:= PageControl1.ActivePage = TabTags;
 
   Editor.Invalidate;
@@ -342,7 +348,7 @@ begin
     end;
 
     Pen.Style:= psSolid;
-    Pen.Color:= clYellow;
+    Pen.Color:= clRed;
 
     Brush.Color:= clSilver;
     for Index:= 0 to Editor.Image.Tags.Count - 1 do

@@ -3,8 +3,8 @@ unit uShapeCircle;
 interface
 
 uses
-  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms, 
-  Dialogs, StdCtrls, Mask, JvExMask, JvSpin,
+  Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, Spin,
 
   phxTypes,
   phxShape,
@@ -16,9 +16,9 @@ type
 //------------------------------------------------------------------------------
 TFrmShapeCircle = class(TFrame, IShapeEditor)
     Label4: TLabel;
-    edCenterX: TJvSpinEdit;
-    edCenterY: TJvSpinEdit;
-    edRadius: TJvSpinEdit;
+    edCenterX: TSpinEdit;
+    edCenterY: TSpinEdit;
+    edRadius: TSpinEdit;
     Label5: TLabel;
     Label6: TLabel;
     procedure edCenterXChange(Sender: TObject);
@@ -162,7 +162,7 @@ begin
     SetShape(TPHXCircle(Value));
   end else
   begin
-    SetShape(nil);
+    SetShape(TPHXCircle(nil));
   end;
 end;
 

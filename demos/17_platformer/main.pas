@@ -367,7 +367,7 @@ begin
   // Jump
   if (isUp in Input.States) and OnPlatform then
   begin
-    FVelocity:= -40 * FSpeed;
+    FVelocity:= - 180  * FSpeed;
   end;
 end;
 

@@ -16,7 +16,6 @@
         <CursorPos X="54" Y="151"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit1>
       <Unit2>
         <Filename Value="../../../source/phxFont.pas"/>
@@ -92,7 +91,7 @@
         <Filename Value="../../../source/providers/graphics/phxOpenGL_SDL2.pas"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="4"/>
-        <TopLine Value="37"/>
+        <TopLine Value="8"/>
         <CursorPos Y="8"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>

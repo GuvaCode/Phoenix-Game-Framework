@@ -7,12 +7,9 @@ interface
 uses
   SysUtils, Classes, ImgList, Controls, ActnList, Menus,
   Dialogs, Forms,
-  Laz2_DOM, Laz2_XMLRead, Laz2_XMLWrite,
-
+ // Laz2_DOM, Laz2_XMLRead, Laz2_XMLWrite,
   //xmldom, XMLIntf, msxmldom, XMLDoc,
-
   Generics.Collections,
-
   phxTypes,
   phxTexture,
   phxImage,
@@ -37,8 +34,8 @@ TRecent = class
   public
     constructor Create;
     destructor Destroy; override;
-    procedure LoadFromXML(Node : TDOMNode);
-    procedure SaveToXML(Node : TDOMNode);
+    //procedure LoadFromXML(Node : TDOMNode);
+    //procedure SaveToXML(Node : TDOMNode);
     procedure Add(const FileName: String);
     property Items: TStrings read FItems write FItems;
     property Menu: TMenuItem read FMenu write SetMenu;
@@ -98,6 +95,9 @@ TDocument = class
 {$ENDREGION}
 
 //------------------------------------------------------------------------------
+
+{ TModActions }
+
 TModActions = class(TDataModule)
     ActionList1: TActionList;
     actFileNew: TAction;
@@ -113,8 +113,6 @@ TModActions = class(TDataModule)
     actLoadImage: TAction;
     actExportXML: TAction;
     actImportXML: TAction;
-    OpenXMLDialog: TOpenDialog;
-    SaveXMLDialog: TSaveDialog;
     actToolDuration: TAction;
     actToolImageEditor: TAction;
     procedure actFileNewExecute(Sender: TObject);
@@ -251,14 +249,14 @@ begin
 end;
 
 //------------------------------------------------------------------------------
-procedure TRecent.LoadFromXML(Node: TDOMNode);
+{procedure TRecent.LoadFromXML(Node: TDOMNode);
 var Index: Integer;
 begin
   Items.BeginUpdate;
   Items.Clear;
   for Index := 0 to Node.ChildNodes.Count - 1 do
   begin
-    { #todo : Fix Me } //Items.Add( Node.ChildNodes[Index].Attributes['filename'] )
+   todo Items.Add( Node.ChildNodes[Index].Attributes['filename'] )
   end;
   Items.EndUpdate;
 
@@ -271,10 +269,10 @@ var Index: Integer;
 begin
   for Index := 0 to Items.Count - 1 do
   begin
-  { #todo : Fix Me } // Node.AddChild('item').Attributes['filename']:= Items[Index];
+    Node.AddChild('item').Attributes['filename']:= Items[Index];
   end;
 end;
-
+}
 //------------------------------------------------------------------------------
 procedure TRecent.SetMenu(const Value: TMenuItem);
 begin
@@ -309,9 +307,9 @@ end;
 
 //------------------------------------------------------------------------------
 procedure TSettings.LoadSettings;
-var XMLDocument    : TXMLDocument;
-var XMLRoot     : TDOMNode;
-var XMLNode    : TDOMNode;
+// var XMLDocument    : TXMLDocument;
+// var XMLRoot     : TDOMNode;
+// var XMLNode    : TDOMNode;
 begin
   { #todo : Fix Me }
   {
@@ -339,9 +337,9 @@ end;
 
 //------------------------------------------------------------------------------
 procedure TSettings.SaveSettings;
-var XMLDocument : TXMLDocument;
-var XMLRoot     : TDOMNode;
-var XMLNode   : TDOMNode;
+// var XMLDocument : TXMLDocument;
+// var XMLRoot     : TDOMNode;
+// var XMLNode   : TDOMNode;
 begin
   { #todo : Fix Me }
  {
@@ -665,10 +663,10 @@ end;
 
 //------------------------------------------------------------------------------
 procedure TModActions.actExportXMLExecute(Sender: TObject);
-var Document: TXMLDocument;
-var Node    : TDOMNode;
-var Index   : Integer;
-var Frame   : TPHXAnimationFrame;
+// var Document: TXMLDocument;
+// var Node    : TDOMNode;
+// var Index   : Integer;
+// var Frame   : TPHXAnimationFrame;
 begin
   { #todo : Fix Me }
   {
@@ -696,9 +694,9 @@ end;
 
 //------------------------------------------------------------------------------
 procedure TModActions.actImportXMLExecute(Sender: TObject);
-var Document: TXMLDocument;
-var Node    : TDOMNode;
-var Index   : Integer;
+// var Document: TXMLDocument;
+// var Node    : TDOMNode;
+// var Index   : Integer;
 var Frame   : TPHXAnimationFrame;
 begin
   { #todo : Fix Me }

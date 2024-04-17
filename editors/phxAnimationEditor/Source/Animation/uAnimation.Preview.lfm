@@ -7,8 +7,8 @@ object FrmAnimationPreview: TFrmAnimationPreview
   ClientHeight = 359
   ClientWidth = 366
   TabOrder = 0
-  DesignLeft = 417
-  DesignTop = 162
+  DesignLeft = 491
+  DesignTop = 237
   object GroupBox1: TGroupBox
     Left = 0
     Height = 359
@@ -155,7 +155,7 @@ object FrmAnimationPreview: TFrmAnimationPreview
     Enabled = False
     Interval = 16
     OnTimer = Timer1Timer
-    Left = 28
+    Left = 24
     Top = 40
   end
 end

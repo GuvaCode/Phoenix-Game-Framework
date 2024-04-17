@@ -52,7 +52,7 @@ TMap = class
     FTileHeight: Integer;
 
     FApples : TList;
-   FBananas: TList;
+    FBananas: TList;
 
 
     function IsCollider(Tile: Integer): Boolean;
@@ -63,7 +63,7 @@ TMap = class
     procedure LoadLayer(Engine: TPHXSpriteEngine; Node: TXMLNode);
     procedure LoadObjects(Engine: TPHXSpriteEngine; Group: TXMLNode);
   public
-    constructor Create(ATileSet: TPHXImage; var TileWidth, TileHeight: Integer);
+    constructor Create(ATileSet: TPHXImage);
     destructor Destroy; override;
 
 
@@ -76,8 +76,8 @@ TMap = class
     property TileWidth: Integer read FTileWidth write FTileWidth;
     property TileHeight: Integer read FTileHeight write FTileHeight;
 
-    //property Apples : TList read FApples;
-   // property Bananas: TList read FBananas;
+    property Apples : TList read FApples;
+    property Bananas: TList read FBananas;
   end;
 
 
@@ -93,8 +93,7 @@ implementation
 // 49 = Wall
 // 57 = Wall
 //------------------------------------------------------------------------------
-constructor TMap.Create(ATileSet: TPHXImage; var TileWidth, TileHeight: Integer
-  );
+constructor TMap.Create(ATileSet: TPHXImage);
 begin
   FTileSet:= ATileSet;
   FTileWidth:= 32;

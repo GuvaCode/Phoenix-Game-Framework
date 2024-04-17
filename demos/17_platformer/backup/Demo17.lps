@@ -3,7 +3,7 @@
   <ProjectSession>
     <Version Value="12"/>
     <BuildModes Active="Default"/>
-    <Units Count="11">
+    <Units Count="13">
       <Unit0>
         <Filename Value="Demo17.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -17,8 +17,9 @@
       <Unit1>
         <Filename Value="main.pas"/>
         <IsPartOfProject Value="True"/>
-        <TopLine Value="100"/>
-        <CursorPos Y="103"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="356"/>
+        <CursorPos X="22" Y="370"/>
         <UsageCount Value="23"/>
         <Loaded Value="True"/>
       </Unit1>
@@ -83,16 +84,30 @@
       </Unit9>
       <Unit10>
         <Filename Value="Tiles.pas"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="1"/>
-        <TopLine Value="42"/>
-        <CursorPos X="4" Y="54"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="54"/>
+        <CursorPos X="43" Y="66"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit10>
+      <Unit11>
+        <Filename Value="../../source/phxFont.pas"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="22"/>
+        <CursorPos X="52" Y="37"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="../../source/phxSprite.pas"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="213"/>
+        <CursorPos X="14" Y="223"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit12>
     </Units>
-    <JumpHistory Count="4" HistoryIndex="3">
+    <JumpHistory Count="18" HistoryIndex="17">
       <Position1>
         <Filename Value="main.pas"/>
         <Caret Line="81" Column="2" TopLine="69"/>
@@ -109,6 +124,62 @@
         <Filename Value="main.pas"/>
         <Caret Line="103" TopLine="100"/>
       </Position4>
+      <Position5>
+        <Filename Value="Tiles.pas"/>
+        <Caret Line="54" Column="4" TopLine="42"/>
+      </Position5>
+      <Position6>
+        <Filename Value="Tiles.pas"/>
+        <Caret Line="204" Column="7" TopLine="179"/>
+      </Position6>
+      <Position7>
+        <Filename Value="Tiles.pas"/>
+        <Caret Line="80" Column="4" TopLine="62"/>
+      </Position7>
+      <Position8>
+        <Filename Value="main.pas"/>
+        <Caret Line="138" Column="41" TopLine="129"/>
+      </Position8>
+      <Position9>
+        <Filename Value="Tiles.pas"/>
+        <Caret Line="66" Column="23" TopLine="54"/>
+      </Position9>
+      <Position10>
+        <Filename Value="Tiles.pas"/>
+        <Caret Line="96" Column="44" TopLine="85"/>
+      </Position10>
+      <Position11>
+        <Filename Value="main.pas"/>
+        <Caret Line="138" Column="41" TopLine="203"/>
+      </Position11>
+      <Position12>
+        <Filename Value="../../source/phxFont.pas"/>
+        <Caret Line="476" Column="15" TopLine="465"/>
+      </Position12>
+      <Position13>
+        <Filename Value="../../source/phxFont.pas"/>
+        <Caret Line="37" Column="52" TopLine="22"/>
+      </Position13>
+      <Position14>
+        <Filename Value="main.pas"/>
+        <Caret Line="217" Column="90" TopLine="204"/>
+      </Position14>
+      <Position15>
+        <Filename Value="main.pas"/>
+        <Caret Line="218" Column="89" TopLine="151"/>
+      </Position15>
+      <Position16>
+        <Filename Value="main.pas"/>
+        <Caret Line="43" Column="5" TopLine="30"/>
+      </Position16>
+      <Position17>
+        <Filename Value="main.pas"/>
+        <Caret Line="71" Column="21" TopLine="55"/>
+      </Position17>
+      <Position18>
+        <Filename Value="main.pas"/>
+        <Caret Line="343" Column="38" TopLine="302"/>
+      </Position18>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>

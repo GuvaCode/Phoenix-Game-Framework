@@ -1,110 +1,138 @@
 object FrmPatternList: TFrmPatternList
   Left = 0
+  Height = 469
   Top = 0
-  Width = 250
-  Height = 250
-  Padding.Left = 4
-  Padding.Top = 4
-  Padding.Right = 4
-  Padding.Bottom = 4
+  Width = 308
+  ClientHeight = 469
+  ClientWidth = 308
   TabOrder = 0
-  object lwPatterns: TListView
-    Left = 4
-    Top = 4
-    Width = 242
-    Height = 220
-    Align = alClient
-    Columns = <
-      item
-        Caption = 'Name'
-        Width = 200
-      end>
-    HideSelection = False
-    ReadOnly = True
-    RowSelect = True
-    PopupMenu = PopupMenu1
-    ShowColumnHeaders = False
+  DesignLeft = 540
+  DesignTop = 178
+  object Panel1: TPanel
+    Left = 0
+    Height = 144
+    Top = 0
+    Width = 308
+    Align = alTop
+    BevelOuter = bvNone
+    Caption = 'Panel1'
+    ClientHeight = 144
+    ClientWidth = 308
     TabOrder = 0
-    ViewStyle = vsReport
-    OnClick = lwPatternsClick
-    OnDblClick = lwPatternsDblClick
-    OnKeyUp = lwPatternsKeyUp
-    OnSelectItem = lwPatternsSelectItem
-    ExplicitWidth = 239
-    ExplicitHeight = 228
-  end
-  object ToolBar1: TToolBar
-    Left = 4
-    Top = 224
-    Width = 242
-    Height = 22
-    Align = alBottom
-    Caption = 'ToolBar2'
-    Images = ModActions.ListImages
-    ParentShowHint = False
-    ShowHint = True
-    TabOrder = 1
-    ExplicitTop = 232
-    ExplicitWidth = 239
-    object PatternAdd: TToolButton
+    object ToolBar1: TToolBar
       Left = 0
+      Height = 22
       Top = 0
-      Action = actPatternAdd
+      Width = 308
+      Caption = 'ToolBar2'
+      EdgeBorders = []
+      Images = ModActions.ListImages
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 0
+      object PatternAdd: TToolButton
+        Left = 1
+        Top = 0
+        Action = actPatternAdd
+      end
+      object PatternDel: TToolButton
+        Left = 24
+        Top = 0
+        Action = actPatternDel
+      end
+      object ToolButton1: TToolButton
+        Left = 47
+        Height = 22
+        Top = 0
+        Caption = 'ToolButton1'
+        ImageIndex = 9
+        Style = tbsSeparator
+      end
+      object PatternDown: TToolButton
+        Left = 55
+        Top = 0
+        Action = actPatternDown
+      end
+      object PatternUp: TToolButton
+        Left = 78
+        Top = 0
+        Action = actPatternUp
+      end
+      object ToolButton3: TToolButton
+        Left = 101
+        Height = 22
+        Top = 0
+        Caption = 'ToolButton3'
+        ImageIndex = 9
+        Style = tbsSeparator
+      end
+      object btnTagSort: TToolButton
+        Left = 109
+        Top = 0
+        Action = actPatternSort
+      end
+      object btnTagSearch: TToolButton
+        Left = 132
+        Top = 0
+        Action = actPatternSearch
+      end
+      object ToolButton2: TToolButton
+        Left = 155
+        Height = 22
+        Top = 0
+        Caption = 'ToolButton2'
+        ImageIndex = 8
+        Style = tbsSeparator
+      end
+      object ToolButton4: TToolButton
+        Left = 163
+        Top = 0
+        Action = actPatternZoom
+      end
     end
-    object PatternDel: TToolButton
-      Left = 23
-      Top = 0
-      Action = actPatternDel
+    object lwPatterns: TListView
+      Left = 4
+      Height = 114
+      Top = 26
+      Width = 300
+      Align = alClient
+      BorderSpacing.Around = 4
+      Columns = <      
+        item
+          Caption = 'Name'
+          Width = 285
+        end>
+      HideSelection = False
+      PopupMenu = PopupMenu1
+      ReadOnly = True
+      RowSelect = True
+      ShowColumnHeaders = False
+      TabOrder = 1
+      ViewStyle = vsReport
+      OnClick = lwPatternsClick
+      OnDblClick = lwPatternsDblClick
+      OnKeyUp = lwPatternsKeyUp
+      OnSelectItem = lwPatternsSelectItem
     end
-    object ToolButton1: TToolButton
-      Left = 46
-      Top = 0
-      Width = 8
-      Caption = 'ToolButton1'
-      ImageIndex = 9
-      Style = tbsSeparator
-    end
-    object PatternDown: TToolButton
-      Left = 54
-      Top = 0
-      Action = actPatternDown
-    end
-    object PatternUp: TToolButton
-      Left = 77
-      Top = 0
-      Action = actPatternUp
-    end
-    object ToolButton3: TToolButton
-      Left = 100
-      Top = 0
-      Width = 8
-      Caption = 'ToolButton3'
-      ImageIndex = 9
-      Style = tbsSeparator
-    end
-    object btnTagSort: TToolButton
-      Left = 108
-      Top = 0
-      Action = actPatternSort
-    end
-    object btnTagSearch: TToolButton
-      Left = 131
-      Top = 0
-      Action = actPatternSearch
-    end
-    object ToolButton2: TToolButton
-      Left = 154
-      Top = 0
-      Width = 8
-      Caption = 'ToolButton2'
-      ImageIndex = 8
-      Style = tbsSeparator
-    end
-    object ToolButton4: TToolButton
-      Left = 162
-      Top = 0
-      Action = actPatternZoom
-    end
+  end
+  object Splitter1: TSplitter
+    Cursor = crVSplit
+    Left = 0
+    Height = 5
+    Top = 144
+    Width = 308
+    Align = alTop
+    ResizeAnchor = akTop
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 320
+    Top = 149
+    Width = 308
+    Align = alClient
+    BevelOuter = bvNone
+    Caption = 'Panel2'
+    TabOrder = 2
   end
   object PopupMenu1: TPopupMenu
     Left = 48

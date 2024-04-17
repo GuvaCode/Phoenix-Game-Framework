@@ -1,18 +1,20 @@
 unit uTile.Editor;
 
+{$MODE DELPHI}{$H+}
+
+
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes,
-  System.Math,
+  SysUtils, Variants, Classes,
+  Math, LCLType,
+  Graphics, Controls, Forms, Dialogs, ComCtrls, ExtCtrls, StdCtrls,
+  ImgList,
 
-  Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ComCtrls, Vcl.ToolWin, Vcl.ExtCtrls, Vcl.StdCtrls,
-  Vcl.ImgList, Vcl.Mask,
+  Spin,
 
-  JvExMask, JvSpin,
-
-  Generics.Defaults,
   Generics.Collections,
+  Generics.Defaults,
 
   phxTypes,
   phxMath,
@@ -23,7 +25,8 @@ uses
   phxGraphics,
   phxGraphicsEx,
 
-  uTile.Select, Vcl.ActnList;
+  uTile.Select, ActnList;
+
 
 type
 
@@ -49,14 +52,23 @@ TPHXTile = record
   Mirror: Boolean;
 end;
 
+
+
+
 //------------------------------------------------------------------------------
-TPHXTileComparer = class(TInterfacedObject, IComparer<TPHXTile>)
+type
+
+// TPHXTileComparer = class(TInterfacedObject, IComparer<TPHXTile>)
+ TPHXTileComparer = class(TComparer<TPHXTile>)
   public
     function Compare(const Left, Right: TPHXTile): Integer;
   end;
 
 
 //------------------------------------------------------------------------------
+
+{ TFrmTileEditor }
+
 TFrmTileEditor = class(TForm)
     Panel1: TPanel;
     brnOkey: TButton;
@@ -76,9 +88,9 @@ TFrmTileEditor = class(TForm)
     ActionList1: TActionList;
     actTileDelete: TAction;
     GroupBox1: TGroupBox;
-    edTileColumns: TJvSpinEdit;
-    edTileHeight: TJvSpinEdit;
-    edTileWidth: TJvSpinEdit;
+    edTileColumns: TSpinEdit;
+    edTileHeight: TSpinEdit;
+    edTileWidth: TSpinEdit;
     Label1: TLabel;
     Label2: TLabel;
     Label3: TLabel;
@@ -94,6 +106,8 @@ TFrmTileEditor = class(TForm)
     Label5: TLabel;
     edTileMode: TComboBox;
 
+    procedure actTileDownExecute(Sender: TObject);
+    procedure actTileUpExecute(Sender: TObject);
     procedure PaintBox1Paint(Sender: TObject);
     procedure edTileWidthChange(Sender: TObject);
     procedure edTileHeightChange(Sender: TObject);
@@ -115,7 +129,8 @@ TFrmTileEditor = class(TForm)
     FZoom       : Single;
     FSelected   : Integer;
 
-    FTiles      : TList<TPHXTile>;
+    FTiles       : TList<TPHXTile>;
+
     FTileHeight : Integer;
     FTileWidth  : Integer;
     FTileColumns: Integer;
@@ -161,8 +176,7 @@ var
   FrmTileEditor: TFrmTileEditor;
 
 implementation
-
-{$R *.dfm}
+{$R *.lfm}
 
 // TPHXTileComparer
 //------------------------------------------------------------------------------
@@ -194,6 +208,7 @@ end;
 //------------------------------------------------------------------------------
 destructor TFrmTileEditor.Destroy;
 begin
+
   FTiles.Free;
 
   FBuffer.Free;
@@ -227,7 +242,7 @@ begin
     FTiles.Add(Tile);
   end;
 
-  FTiles.Sort;
+  FTiles.Sort(TPHXTileComparer.Default);
 end;
 
 //------------------------------------------------------------------------------
@@ -335,7 +350,7 @@ begin
   H:= Round(FTileHeight * FZoom) + TileSpacing;
 
   PaintBox1.Width := (2 * TileOffset) + W * TileColumns;
-  PaintBox1.Height:= (2 * TileOffset) + H * Ceil(Tiles.Count div TileColumns);
+  PaintBox1.Height:= (2 * TileOffset) + H * Math.Ceil(Tiles.Count div TileColumns);
 
   PaintBox1.Invalidate;
 end;
@@ -391,7 +406,8 @@ begin
       Pen.Color:= clSilver;
       Pen.Style:= psSolid;
 
-      InflateRect(Rect, 1, 1);
+
+      //InflateRect(Rect, 1, 1);
 
       Rectangle(Rect);
 
@@ -401,7 +417,7 @@ begin
         Pen  .Color:= clBlack;
         Pen  .Style:= psSolid;
 
-        InflateRect(Rect, 1, 1);
+        //InflateRect(Rect, 1, 1);
 
         Rectangle(Rect);
       end;
@@ -469,7 +485,7 @@ begin
   end else
   begin
     PaintBox1.Width := (2 * TileOffset) + W * TileColumns;
-    PaintBox1.Height:= (2 * TileOffset) + H * Ceil(Tiles.Count / TileColumns);
+    PaintBox1.Height:= (2 * TileOffset) + H * Math.Ceil(Tiles.Count / TileColumns);
   end;
 
   with PaintBox1.Canvas do
@@ -495,6 +511,16 @@ begin
   end;
 end;
 
+procedure TFrmTileEditor.actTileUpExecute(Sender: TObject);
+begin
+
+end;
+
+procedure TFrmTileEditor.actTileDownExecute(Sender: TObject);
+begin
+
+end;
+
 //------------------------------------------------------------------------------
 procedure TFrmTileEditor.PaintBox1MouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 var Tile: Integer;
@@ -506,7 +532,6 @@ begin
     if Tile <> FSelected then
     begin
       FSelected:= Tile;
-
       PaintBox1.Invalidate;
     end;
   end;
@@ -534,11 +559,11 @@ end;
 //------------------------------------------------------------------------------
 procedure TFrmTileEditor.FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
 begin
-  if Key = Winapi.Windows.VK_INSERT then
+  if Key = LCLType.VK_INSERT then
   begin
     actTileAdd.Execute;
   end;
-  if Key = Winapi.Windows.VK_DELETE then
+  if Key = LCLType.VK_DELETE then
   begin
     actTileDelete.Execute;
   end;
@@ -628,8 +653,8 @@ begin
   finally
     Dialog.Free;
   end;
-
-  FTiles.Sort;
+  FTiles.Sort(TPHXTileComparer.Default);
+  //FTiles.Sort;
 end;
 
 //------------------------------------------------------------------------------

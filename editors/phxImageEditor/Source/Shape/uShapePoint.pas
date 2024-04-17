@@ -3,10 +3,10 @@ unit uShapePoint;
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes,
-  Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Mask,
+  Messages, SysUtils, Variants, Classes,
+  Graphics, Controls, Forms, Dialogs,StdCtrls,
 
-  JvExMask, JvSpin,
+  Spin,
 
   phxShape,
   phxTypes,
@@ -18,8 +18,8 @@ type
 //------------------------------------------------------------------------------
 TFrmShapePoint = class(TFrame, IShapeEditor)
     Label1: TLabel;
-    edPositionX: TJvSpinEdit;
-    edPositionY: TJvSpinEdit;
+    edPositionX: TSpinEdit;
+    edPositionY: TSpinEdit;
     Label4: TLabel;
     procedure edPositionXChange(Sender: TObject);
     procedure edPositionYChange(Sender: TObject);
@@ -142,7 +142,7 @@ begin
     SetShape(TPHXPoint(Value));
   end else
   begin
-    SetShape(nil);
+    SetShape(TPHXPoint(nil));
   end;
 end;
 

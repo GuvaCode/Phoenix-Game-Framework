@@ -1,90 +1,83 @@
 object FrmShapeBox: TFrmShapeBox
   Left = 0
-  Top = 0
-  Width = 357
   Height = 157
-  Padding.Left = 4
-  Padding.Top = 4
-  Padding.Right = 4
-  Padding.Bottom = 4
+  Top = 0
+  Width = 235
+  ClientHeight = 157
+  ClientWidth = 235
   TabOrder = 0
-  DesignSize = (
-    357
-    157)
+  DesignLeft = 196
+  DesignTop = 195
   object Label1: TLabel
-    Left = 4
-    Top = 11
-    Width = 50
+    Left = 14
     Height = 13
+    Top = 7
+    Width = 36
     Alignment = taRightJustify
     AutoSize = False
     Caption = '&X:'
   end
   object Label6: TLabel
-    Left = 4
-    Top = 37
-    Width = 50
+    Left = 14
     Height = 13
+    Top = 40
+    Width = 36
     Alignment = taRightJustify
     AutoSize = False
     Caption = '&Y:'
   end
   object Label7: TLabel
-    Left = 4
-    Top = 64
-    Width = 50
+    Left = 8
     Height = 13
+    Top = 72
+    Width = 42
     Alignment = taRightJustify
     AutoSize = False
     Caption = '&Width:'
   end
   object Label8: TLabel
-    Left = 4
-    Top = 91
-    Width = 50
+    Left = 0
     Height = 13
+    Top = 104
+    Width = 50
     Alignment = taRightJustify
     AutoSize = False
     Caption = '&Height:'
   end
-  object edCenterX: TJvSpinEdit
-    Left = 60
+  object edCenterX: TSpinEdit
+    Left = 64
+    Height = 28
     Top = 7
-    Width = 290
-    Height = 21
-    ValueType = vtFloat
-    Anchors = [akLeft, akTop, akRight]
-    TabOrder = 0
+    Width = 161
+    Anchors = [akTop, akLeft, akRight]
     OnChange = edCenterXChange
+    TabOrder = 0
   end
-  object edCenterY: TJvSpinEdit
-    Left = 60
-    Top = 34
-    Width = 290
-    Height = 21
-    ValueType = vtFloat
-    Anchors = [akLeft, akTop, akRight]
-    TabOrder = 1
+  object edCenterY: TSpinEdit
+    Left = 64
+    Height = 28
+    Top = 40
+    Width = 161
+    Anchors = [akTop, akLeft, akRight]
     OnChange = edCenterYChange
+    TabOrder = 1
   end
-  object edWidth: TJvSpinEdit
-    Left = 60
-    Top = 61
-    Width = 290
-    Height = 21
-    ValueType = vtFloat
-    Anchors = [akLeft, akTop, akRight]
-    TabOrder = 2
+  object edWidth: TSpinEdit
+    Left = 64
+    Height = 28
+    Top = 72
+    Width = 161
+    Anchors = [akTop, akLeft, akRight]
     OnChange = edWidthChange
+    TabOrder = 2
   end
-  object edHeight: TJvSpinEdit
-    Left = 60
-    Top = 88
-    Width = 290
-    Height = 21
-    ValueType = vtFloat
-    Anchors = [akLeft, akTop, akRight]
-    TabOrder = 3
+  object edHeight: TSpinEdit
+    Left = 64
+    Height = 28
+    Top = 104
+    Width = 161
+    Anchors = [akTop, akLeft, akRight]
     OnChange = edHeightChange
+    TabOrder = 3
   end
 end

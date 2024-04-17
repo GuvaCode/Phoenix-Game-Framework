@@ -3,9 +3,9 @@ unit uPattern.Properties;
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes,
-  Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Mask,
-  JvExMask, JvSpin,
+  SysUtils, Variants, Classes,
+  Graphics, Controls, Forms,Dialogs,StdCtrls,
+  Spin, ExtCtrls,
 
   phxTypes,
   phxImage,
@@ -15,6 +15,9 @@ uses
 type
 
 //------------------------------------------------------------------------------
+
+{ TFrmPatternProperties }
+
 TFrmPatternProperties = class(TFrame)
     GroupBox1: TGroupBox;
     Label1: TLabel;
@@ -25,12 +28,12 @@ TFrmPatternProperties = class(TFrame)
     Label6: TLabel;
     Label7: TLabel;
     edPatternName: TEdit;
-    edPatternX: TJvSpinEdit;
-    edPatternY: TJvSpinEdit;
-    edPatternWidth: TJvSpinEdit;
-    edPatternHeight: TJvSpinEdit;
-    edPatternPivotX: TJvSpinEdit;
-    edPatternPivotY: TJvSpinEdit;
+    edPatternX: TSpinEdit;
+    edPatternY: TSpinEdit;
+    edPatternWidth: TSpinEdit;
+    edPatternHeight: TSpinEdit;
+    edPatternPivotX: TSpinEdit;
+    edPatternPivotY: TSpinEdit;
     edPatternMirror: TCheckBox;
     edPatternFlip: TCheckBox;
     btnCenterPivot: TButton;

@@ -3,18 +3,18 @@ unit uShape;
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.ImgList, Vcl.Menus,
-  Vcl.ComCtrls, Vcl.ActnList, Vcl.ToolWin, System.Math,
+  SysUtils, Variants, Classes, Graphics,
+  Controls, Forms, Dialogs, StdCtrls, ExtCtrls, ImgList, Menus,
+  ComCtrls, ActnList, Math,
 
   phxEditor,
   phxTypes,
   phxImage,
-  phxImageEx,
+
   phxShape,
 
   phxGraphics,
-  phxGraphicsEx,
+
 
   uShapeProperties,
   uShapeTools;
@@ -22,6 +22,9 @@ uses
 type
 
 //------------------------------------------------------------------------------
+
+{ TFrmShapeEditor }
+
 TFrmShapeEditor = class(TForm)
     ActionImages: TImageList;
     PanelLeft: TPanel;
@@ -84,9 +87,6 @@ TFrmShapeEditor = class(TForm)
     btnZoomOut: TToolButton;
     btnZoom100: TToolButton;
     ToolButton8: TToolButton;
-    ToolBarPattern: TToolBar;
-    ToolButton5: TToolButton;
-    ToolButton6: TToolButton;
     ToolBar2: TToolBar;
     ToolButton2: TToolButton;
     ToolButton3: TToolButton;
@@ -103,6 +103,7 @@ TFrmShapeEditor = class(TForm)
     procedure btnZoomInClick(Sender: TObject);
     procedure btnZoomOutClick(Sender: TObject);
     procedure btnZoom100Click(Sender: TObject);
+    procedure FormShow(Sender: TObject);
     procedure lwShapesSelectItem(Sender: TObject; Item: TListItem;
       Selected: Boolean);
     procedure actAddPolygonExecute(Sender: TObject);
@@ -178,6 +179,7 @@ begin
   FEditor:= TPHXShapeEditor.Create(Self);
   FEditor.Align := alClient;
   FEditor.Parent:= PanelEditor;
+
 
   FProperties:= TFrmShape.Create(Self);
   FProperties.Align := alClient;
@@ -509,6 +511,11 @@ end;
 procedure TFrmShapeEditor.btnZoom100Click(Sender: TObject);
 begin
   FEditor.Viewport.Zoom100;
+end;
+
+procedure TFrmShapeEditor.FormShow(Sender: TObject);
+begin
+ FEditor.Viewport.Zoom50;
 end;
 
 //------------------------------------------------------------------------------

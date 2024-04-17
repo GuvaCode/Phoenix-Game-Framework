@@ -1,52 +1,45 @@
 object FrmShapePoint: TFrmShapePoint
   Left = 0
+  Height = 110
   Top = 0
   Width = 232
-  Height = 110
-  Padding.Left = 4
-  Padding.Top = 4
-  Padding.Right = 4
-  Padding.Bottom = 4
+  ClientHeight = 110
+  ClientWidth = 232
   TabOrder = 0
-  DesignSize = (
-    232
-    110)
   object Label1: TLabel
     Left = 4
-    Top = 10
-    Width = 50
     Height = 13
+    Top = 7
+    Width = 50
     Alignment = taRightJustify
     AutoSize = False
     Caption = '&X:'
   end
   object Label4: TLabel
     Left = 4
-    Top = 37
-    Width = 50
     Height = 13
+    Top = 40
+    Width = 50
     Alignment = taRightJustify
     AutoSize = False
     Caption = '&Y:'
   end
-  object edPositionX: TJvSpinEdit
+  object edPositionX: TSpinEdit
     Left = 60
+    Height = 28
     Top = 7
     Width = 165
-    Height = 21
-    ValueType = vtFloat
-    Anchors = [akLeft, akTop, akRight]
-    TabOrder = 0
+    Anchors = [akTop, akLeft, akRight]
     OnChange = edPositionXChange
+    TabOrder = 0
   end
-  object edPositionY: TJvSpinEdit
+  object edPositionY: TSpinEdit
     Left = 60
-    Top = 34
+    Height = 28
+    Top = 40
     Width = 165
-    Height = 21
-    ValueType = vtFloat
-    Anchors = [akLeft, akTop, akRight]
-    TabOrder = 1
+    Anchors = [akTop, akLeft, akRight]
     OnChange = edPositionYChange
+    TabOrder = 1
   end
 end

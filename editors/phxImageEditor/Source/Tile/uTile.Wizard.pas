@@ -3,10 +3,10 @@ unit uTile.Wizard;
 interface
 
 uses
-  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, StdCtrls, ExtCtrls, ImgList, ComCtrls, ToolWin, Mask,
+  Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ExtCtrls, ImgList, ComCtrls, ToolWin,
 
-  JvExMask, JvSpin,
+  Spin,
 
   Generics.Collections,
 
@@ -47,22 +47,22 @@ TfrmTileWizard = class(TForm)
     edTileName: TEdit;
     cbDrawIndex: TCheckBox;
     Label8: TLabel;
-    edOffsetX: TJvSpinEdit;
-    edOffsetY: TJvSpinEdit;
+    edOffsetX: TSpinEdit;
+    edOffsetY: TSpinEdit;
     Label9: TLabel;
     Label10: TLabel;
     ToolBar1: TToolBar;
     btnZoomIn: TToolButton;
     btnZoom100: TToolButton;
     btnZoomOut: TToolButton;
-    edWidth: TJvSpinEdit;
-    edHeight: TJvSpinEdit;
-    edHorzSpace: TJvSpinEdit;
-    edVertSpace: TJvSpinEdit;
-    edSkip: TJvSpinEdit;
-    edMaxTiles: TJvSpinEdit;
-    edMaxCols: TJvSpinEdit;
-    edMaxRows: TJvSpinEdit;
+    edWidth: TSpinEdit;
+    edHeight: TSpinEdit;
+    edHorzSpace: TSpinEdit;
+    edVertSpace: TSpinEdit;
+    edSkip: TSpinEdit;
+    edMaxTiles: TSpinEdit;
+    edMaxCols: TSpinEdit;
+    edMaxRows: TSpinEdit;
     btnCancel: TButton;
     edCenterPivots: TCheckBox;
     procedure PaintBox1Paint(Sender: TObject);

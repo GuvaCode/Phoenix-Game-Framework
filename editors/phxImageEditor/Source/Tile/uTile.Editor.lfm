@@ -1,0 +1,383 @@
+object FrmTileEditor: TFrmTileEditor
+  Left = 216
+  Height = 517
+  Top = 123
+  Width = 767
+  Caption = 'Tile Editor'
+  ClientHeight = 517
+  ClientWidth = 767
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  KeyPreview = True
+  OnKeyDown = FormKeyDown
+  Position = poScreenCenter
+  LCLVersion = '3.2.0.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 38
+    Top = 479
+    Width = 767
+    Align = alBottom
+    BevelOuter = bvNone
+    ClientHeight = 38
+    ClientWidth = 767
+    ParentBackground = False
+    TabOrder = 0
+    object brnOkey: TButton
+      Left = 602
+      Height = 25
+      Top = 6
+      Width = 75
+      Anchors = [akTop, akRight]
+      Caption = 'Ok'
+      Default = True
+      ModalResult = 1
+      TabOrder = 0
+    end
+    object btnCancel: TButton
+      Left = 683
+      Height = 25
+      Top = 6
+      Width = 75
+      Anchors = [akTop, akRight]
+      Cancel = True
+      Caption = 'Cancel'
+      ModalResult = 2
+      TabOrder = 1
+    end
+  end
+  object Panel2: TPanel
+    Left = 177
+    Height = 479
+    Top = 0
+    Width = 590
+    Align = alClient
+    BevelOuter = bvNone
+    Caption = 'Panel1'
+    ClientHeight = 479
+    ClientWidth = 590
+    ParentBackground = False
+    TabOrder = 1
+    object ScrollBox1: TScrollBox
+      Left = 0
+      Height = 456
+      Top = 23
+      Width = 590
+      HorzScrollBar.Page = 108
+      VertScrollBar.Page = 109
+      Align = alClient
+      ClientHeight = 454
+      ClientWidth = 588
+      ParentBackground = False
+      TabOrder = 0
+      object PaintBox1: TPaintBox
+        Left = 3
+        Height = 105
+        Top = 4
+        Width = 105
+        OnMouseDown = PaintBox1MouseDown
+        OnMouseMove = PaintBox1MouseMove
+        OnPaint = PaintBox1Paint
+      end
+    end
+    object ToolBar1: TToolBar
+      Left = 0
+      Height = 23
+      Top = 0
+      Width = 590
+      Caption = 'ToolBar1'
+      Images = ImageList1
+      TabOrder = 1
+      object btnZoomIn: TToolButton
+        Left = 1
+        Top = 2
+        Caption = 'btnZoomIn'
+        ImageIndex = 4
+        OnClick = btnZoomInClick
+      end
+      object btnZoomOut: TToolButton
+        Left = 24
+        Top = 2
+        Caption = 'btnZoomOut'
+        ImageIndex = 5
+        OnClick = btnZoomOutClick
+      end
+      object btnZoom100: TToolButton
+        Left = 47
+        Top = 2
+        Caption = 'btnZoom100'
+        ImageIndex = 6
+        OnClick = btnZoom100Click
+      end
+      object ToolButton1: TToolButton
+        Left = 70
+        Height = 22
+        Top = 2
+        Caption = 'ToolButton1'
+        ImageIndex = 6
+        Style = tbsSeparator
+      end
+      object btnAdd: TToolButton
+        Left = 78
+        Top = 2
+        Action = actTileAdd
+      end
+      object btnDelete: TToolButton
+        Left = 101
+        Top = 2
+        Action = actTileDelete
+      end
+      object ToolButton2: TToolButton
+        Left = 124
+        Height = 22
+        Top = 2
+        Caption = 'ToolButton2'
+        ImageIndex = 2
+        Style = tbsSeparator
+      end
+      object ToolButton3: TToolButton
+        Left = 132
+        Top = 2
+        Action = actTileDown
+      end
+      object ToolButton4: TToolButton
+        Left = 155
+        Top = 2
+        Action = actTileUp
+      end
+    end
+  end
+  object Panel3: TPanel
+    Left = 0
+    Height = 479
+    Top = 0
+    Width = 177
+    Align = alLeft
+    BevelOuter = bvNone
+    ClientHeight = 479
+    ClientWidth = 177
+    ParentBackground = False
+    TabOrder = 2
+    object GroupBox1: TGroupBox
+      Left = 0
+      Height = 208
+      Top = 0
+      Width = 177
+      Align = alTop
+      Caption = 'Tileset'
+      ClientHeight = 193
+      ClientWidth = 175
+      ParentBackground = False
+      TabOrder = 0
+      object Label1: TLabel
+        Left = 12
+        Height = 14
+        Top = 75
+        Width = 40
+        Caption = '&Height:'
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        ParentFont = False
+      end
+      object Label2: TLabel
+        Left = 12
+        Height = 14
+        Top = 48
+        Width = 36
+        Caption = '&Width:'
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        ParentFont = False
+      end
+      object Label3: TLabel
+        Left = 12
+        Height = 14
+        Top = 102
+        Width = 53
+        Caption = '&Columns:'
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        ParentFont = False
+      end
+      object Label4: TLabel
+        Left = 12
+        Height = 14
+        Top = 21
+        Width = 37
+        Caption = '&Name:'
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        ParentFont = False
+      end
+      object Label5: TLabel
+        Left = 12
+        Height = 14
+        Top = 129
+        Width = 34
+        Caption = '&Mode:'
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        ParentFont = False
+      end
+      object edTileColumns: TSpinEdit
+        Left = 68
+        Height = 26
+        Top = 99
+        Width = 100
+        Anchors = [akTop, akLeft, akRight]
+        MaxValue = 9999
+        MinValue = 1
+        OnChange = edTileColumnsChange
+        TabOrder = 0
+        Value = 8
+      end
+      object edTileHeight: TSpinEdit
+        Left = 68
+        Height = 26
+        Top = 72
+        Width = 100
+        Anchors = [akTop, akLeft, akRight]
+        OnChange = edTileHeightChange
+        TabOrder = 1
+        Value = 16
+      end
+      object edTileWidth: TSpinEdit
+        Left = 68
+        Height = 26
+        Top = 45
+        Width = 100
+        Anchors = [akTop, akLeft, akRight]
+        OnChange = edTileWidthChange
+        TabOrder = 2
+        Value = 15
+      end
+      object edTileName: TEdit
+        Left = 68
+        Height = 26
+        Top = 18
+        Width = 100
+        Anchors = [akTop, akLeft, akRight]
+        ReadOnly = True
+        TabOrder = 3
+      end
+      object edTileMode: TComboBox
+        Left = 68
+        Height = 25
+        Hint = 'Controls the pivot generation of the tiles'
+        Top = 126
+        Width = 100
+        Anchors = [akTop, akLeft, akRight]
+        ItemHeight = 0
+        ItemIndex = 0
+        Items.Strings = (
+          'Rectangular'
+          'Isometric'
+        )
+        ParentShowHint = False
+        ShowHint = True
+        Style = csDropDownList
+        TabOrder = 4
+        Text = 'Rectangular'
+      end
+    end
+    object cbDrawIndex: TCheckBox
+      Left = 8
+      Height = 23
+      Top = 216
+      Width = 89
+      Caption = 'Draw index'
+      Checked = True
+      State = cbChecked
+      TabOrder = 1
+      OnClick = cbDrawIndexClick
+    end
+  end
+  object ImageList1: TImageList
+    Left = 364
+    Top = 118
+    Bitmap = {
+      4C7A0B0000001000000010000000410500000000000078DAED9A2DD4AB300C86
+      3F89FC241639899C454E2267272727B193939358241289452291582412999B14
+      02A5B450B6FB7BEE7ACE7B601D4F92A60DECA75F5F3FAFE5170774CA50B6BCAE
+      656747E81DBEABF34D1B6B3C74ADB09186661B325FDE1C280665E1D0CF364E7A
+      1BCED50159DCC8E7A8D3241D1F7589D0C477006D035D53A1EF02BA2A134A56F8
+      B0B90B7E3687C31C744D29EC30AFC62CF3B3B1E0D811EE85B124C1C473CCAC53
+      1D8DE741751BF8816D6BD492279F2712B224E2487E7E163CE78E58521C98E367
+      9FB3F807BFBD4A888FE6FCCD63AE172C34665E8E99724CE394451C6B6BFD7CFD
+      E6F6A9FFF7EA3F33F8B7A97FD74DFA38A5E6798955FD3B4E0C8E57021DB9893E
+      B710C7B5FA1FF943D38BCEC5EBBA17D914B5AFAF7FAD8D3556A97FBD8D9EE598
+      E5DCA9F53F67EBB984FFB95F5DFDABE3EDF3594D395DA97F9A3791E781A51829
+      B7E39CB839B8DF8FD5FA679FDA7C68FAE5763D1EC156265EAC319E231A2BCE2F
+      8D1170AD439D0154E93ADF0D7CCB3CE5A8E8F96A9B7F27FE3FDD6C6337DDCF6D
+      F24F6CD8445A1B5BF9EFD91B3E5B51F57561632B66C1D63D1B5417389667AB67
+      D3C45E5197810D5127F08B60D586FA1C0CAAF3C8AAEF39D778438E60FD42EF97
+      AEA9317D252AC714A6A818F5C0544628BA9ED9437ED4F215B2052A432E413D91
+      BBA36E23DFB35EE66BF9ADF8D73E17FC0C7E6BFCB4F642C3FAB119BFBC7E5E89
+      3F10EBA75F03B66B4FB77E681E6D3F63F51CAE5989A5393CE43ECEE36164B7EA
+      87D73BCFBFCCDAD43F5DCBACABB0B6F75F62DCF460BC7FBC73FFFA57EEBFFFC3
+      F32FCF73389D4E70F4FD49C83D9FCF4D364D53F00F0788CE67C8F0FA0A5F678F
+      073CAF58B768E386C735DE475FF7CB05875E620A6A1C7A0E651C0BA5F73B04F8
+      7E1CEB3FCB507C21FA20A66D1A4C790655928818C439EA81FE4F41A0E52FE897
+      E226B6A92AE19398A628443C241A13E5638DE778C9B788056D756D2BECE6D867
+      E239FE058F79E8706D908D047369E2B32C07CF7521B9DD461B34EE3197783CE3
+      D8A32882255BE0F78440E4966CC4830D1103DA28F078C5351118D691EFA7103D
+      327C3F00DFF3E080A2B9BAA2BF335E4B6B220C432830973A3EC39B7F9402B8DE
+      1DAED73EBE047D52AC779C77DD5A97FB88F58E38BE73F6527DACB136FCF992C1
+      DE7BCDBBF7AA5FC57FEAFF53FF6BF5AF9F37FBFAD7C6BEA3FE75ED5FAAFFBFBD
+      7DEAFF53FF7FBAFE1DC701AE7FCA2BBD26F11AA4A3DC27D73FF74FBF7F2DCFD5
+      3EB5FEF7F26AFDEFE597BFD9BDCEF3F8B95FCD95A9CFD43CE7F5EF6CC49E5CFC
+      DEF8820D625DC17F8BE3F78B71B8CE7BDF39F7F8D5E5EA7B637ED5F1DAF2B20D
+      CEB39C2BD611FBE43541F2B1C649B20DD7E0DFB1F0BF77ACCE8E9C3A6FCEDFAB
+      BC9C2BD3786D6CA879FE5DF1EF694D1A82AA3A51148750A97A86503EFBEBED5B
+      37099F6B32CF9FA7B6D8F13AE21F4BBEE9A673FA5DB26EA7D7A5744EBFB7104F
+      E3E3462C8BD96A10B105A981F13F299567FF3AB61C58F64D2AEE4B7E8D9DF3CD
+      82DF62F341FC9F96CEFF826DE76CEFBF11BF55114F6B81E78779139B31DF0E7C
+      C47C3FB75B2CABFF3FAD865CE275732CC74CCAA4F319DF75B375B1F8CF71182F
+      31135FF5FC331C7EBFEBF46C3BB173F57C29F876073BFC8FD8F43CD530AD4356
+      41BACF45D72D74EBF5A9FFBFA7FED5FF16F6D6BFBAFF676FFDABFB776CEADF76
+      FF8FA9FE6DF7FF98EADF76FF8FA9FEEDF7FF6CD7BF76FFCF8EFA57F7FFD8D43F
+      F15CFB6ACC9FFAFF7F9EFFB4D74765A9CFA6FEE5FD3FCCCAFB7FB69EFF5BFB7F
+      6C9EFFA6FD3F7B9EFFEAFE9F3DCFFFEDFD3FE6FADFDEFF63AE7FCF7DCEF6FFF0
+      DCCAFB7FC43EAE95FA679FEAF39FFBD7EAFF07CDD75069
+    }
+  end
+  object ActionList1: TActionList
+    Images = ImageList1
+    Left = 376
+    Top = 264
+    object actTileAdd: TAction
+      Category = 'Tile'
+      Caption = 'actTileAdd'
+      ImageIndex = 0
+      OnExecute = actTileAddExecute
+    end
+    object actTileDelete: TAction
+      Category = 'Tile'
+      Caption = 'Delete'
+      ImageIndex = 1
+      OnExecute = actTileDeleteExecute
+      OnUpdate = actTileUpdate
+    end
+    object actTileUp: TAction
+      Category = 'Tile'
+      Caption = 'actTileUp'
+      ImageIndex = 2
+      OnExecute = actTileUpExecute
+      OnUpdate = actTileUpdate
+    end
+    object actTileDown: TAction
+      Category = 'Tile'
+      Caption = 'actTileDown'
+      ImageIndex = 3
+      OnExecute = actTileDownExecute
+      OnUpdate = actTileUpdate
+    end
+  end
+end

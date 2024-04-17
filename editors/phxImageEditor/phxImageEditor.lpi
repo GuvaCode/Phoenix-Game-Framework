@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="12"/>
+    <General>
+      <SessionStorage Value="InProjectDir"/>
+      <Title Value="phxImageEditor"/>
+      <UseAppBundle Value="False"/>
+      <ResourceType Value="res"/>
+      <Icon Value="0"/>
+    </General>
+    <BuildModes>
+      <Item Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <UseFileFilters Value="True"/>
+    </PublishOptions>
+    <RunParams>
+      <FormatVersion Value="2"/>
+    </RunParams>
+    <RequiredPackages>
+      <Item>
+        <PackageName Value="pgf"/>
+      </Item>
+      <Item>
+        <PackageName Value="LCL"/>
+      </Item>
+    </RequiredPackages>
+    <Units>
+      <Unit>
+        <Filename Value="phxImageEditor.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../_Library/phxGraphicsEx.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source/uMain.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmMain"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source/uActions.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ModActions"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source/Image/uImage.Properties.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmImageProperties"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source/Pattern/uPattern.List.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmPatternList"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source/Image/uImage.New.Empty.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmImageEmpty"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../_Library/phxEditor.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source/uEditor.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source/Image/uImage.New.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="NewDialog"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source/Image/uImage.New.Packer.pas"/>
+        <IsPartOfProject Value="True"/>
+        <HasResources Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source/Tools/Partitions.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source/Tag/uTag.List.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmTagList"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source/Tag/uTag.Actions.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ModTags"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source/uTools.pas"/>
+        <IsPartOfProject Value="True"/>
+        <HasResources Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../_Library/phxImagePanel.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../_Library/phxImageEx.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source/Tile/uTile.Wizard.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmTileWizard"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source/uSettings.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmSettings"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source/Pattern/uPattern.Properties.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmPatternProperties"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source/Image/uImage.Resize.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmImageResize"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source/Tile/uTile.Editor.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmTileEditor"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source/Tile/uTile.Select.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmTileSelect"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source/Shape/uShape.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmShapeEditor"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source/Shape/uShapeCircle.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmShapeCircle"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source/Shape/uShapeLine.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmShapeLine"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source/Shape/uShapePoint.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmShapePoint"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source/Shape/uShapePolygon.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmShapePolygon"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source/Shape/uShapeBox.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmShapeBox"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source/Shape/uShapeProperties.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmShape"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source/Shape/uShapeTools.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source/Pattern/uPattern.Search.pas"/>
+        <IsPartOfProject Value="True"/>
+        <HasResources Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source/Pattern/uPattern.Sort.pas"/>
+        <IsPartOfProject Value="True"/>
+        <HasResources Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source/Tag/uTag.Properties.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmTagProperties"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+      </Unit>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <SearchPaths>
+      <IncludeFiles Value="../_Library;Source;Source/Image;Source/Pattern;Source/Tools;Source/Tag;Source/Tile;Source/Shape;$(ProjOutDir)"/>
+      <OtherUnitFiles Value="../_Library;../_Library/codebot;Source;Source/Image;Source/Pattern;Source/Tools;Source/Tag;Source/Tile;Source/Shape"/>
+      <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <SyntaxMode Value="Delphi"/>
+      </SyntaxOptions>
+    </Parsing>
+    <Linking>
+      <Debugging>
+        <DebugInfoType Value="dsDwarf3"/>
+      </Debugging>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+    <Other>
+      <CustomOptions Value="-dBorland -dVer150 -dDelphi7 -dCompiler6_Up -dPUREPASCAL"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions>
+      <Item>
+        <Name Value="EAbort"/>
+      </Item>
+      <Item>
+        <Name Value="ECodetoolError"/>
+      </Item>
+      <Item>
+        <Name Value="EFOpenError"/>
+      </Item>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

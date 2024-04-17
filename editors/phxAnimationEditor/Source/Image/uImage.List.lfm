@@ -21,7 +21,7 @@ object FrmImageList: TFrmImageList
     TabOrder = 0
     object ListBox1: TListBox
       Left = 0
-      Height = 368
+      Height = 363
       Top = 0
       Width = 292
       Align = alClient
@@ -30,14 +30,16 @@ object FrmImageList: TFrmImageList
       TabOrder = 0
       TopIndex = -1
     end
-    object Button1: TButton
+    object BitBtn1: TBitBtn
       Left = 4
-      Height = 25
-      Top = 372
+      Height = 30
+      Top = 367
       Width = 284
       Action = ModActions.actLoadImage
       Align = alBottom
       BorderSpacing.Around = 4
+      Images = ModActions.ActionImages
+      ImageIndex = 18
       TabOrder = 1
     end
   end

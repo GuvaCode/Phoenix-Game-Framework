@@ -2,7 +2,7 @@ unit uEditor;
 
 interface
 
-uses Classes, Types, SysUtils, Windows, Graphics, Dialogs, Vcl.Controls,
+uses Classes, Types, SysUtils, Graphics, Dialogs, Controls,
 
   phxTypes,
   phxMath,
@@ -372,14 +372,14 @@ begin
      Pen.Style  := psSolid;
      Rectangle(rPattern);
 
-     Pen.Color  := clBlack;
+     Pen.Color  := clRed;//clBlack;
      Pen.Width  := 1;
-     Pen.Style  := psDot;
+     Pen.Style  := psSolid;//psDot;
      Rectangle(rPattern);
 
 
-     Pen.Color  := clYellow;
-     Pen.Style  := psDot;
+     Pen.Color  := clRed;
+     Pen.Style  := psDash;// psDot;
 
      if DrawPivot and (Pattern.Pivot.X  > 0) then
      begin
@@ -416,7 +416,7 @@ begin
   PatternRect.Right := Round(Viewport.Offset.X + (Pattern.X + Pattern.Width ) * Viewport.Zoom);
   PatternRect.Bottom:= Round(Viewport.Offset.Y + (Pattern.Y + Pattern.Height) * Viewport.Zoom);
 
-  Canvas.CopyRect(PatternRect,FMask.Canvas, SourceRect);
+  Canvas.CopyRect(PatternRect, FMask.Canvas, SourceRect);
 
 end;
 

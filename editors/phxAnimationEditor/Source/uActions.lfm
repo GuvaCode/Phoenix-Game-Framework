@@ -1,13 +1,13 @@
 object ModActions: TModActions
   OldCreateOrder = False
   Height = 375
-  HorizontalOffset = 0
-  VerticalOffset = 0
+  HorizontalOffset = 387
+  VerticalOffset = 124
   Width = 481
   object ActionList1: TActionList
     Images = ActionImages
-    Left = 32
-    Top = 16
+    Left = 192
+    Top = 160
     object actFileNew: TAction
       Category = 'File'
       Caption = '&New'
@@ -56,6 +56,7 @@ object ModActions: TModActions
       ImageIndex = 15
       OnExecute = actExportXMLExecute
       OnUpdate = actExportUpdate
+      Visible = False
     end
     object actImportXML: TAction
       Category = 'Import & Export'
@@ -63,6 +64,7 @@ object ModActions: TModActions
       ImageIndex = 15
       OnExecute = actImportXMLExecute
       OnUpdate = actExportUpdate
+      Visible = False
     end
     object actToolDuration: TAction
       Category = 'Tools'
@@ -80,8 +82,8 @@ object ModActions: TModActions
     end
   end
   object ActionImages: TImageList
-    Left = 112
-    Top = 16
+    Left = 192
+    Top = 88
     Bitmap = {
       4C7A140000001000000010000000131700000000000078DAED5C095894D7B9B6
       7DEE7DEE53DB1A9B36D5A44D43D2344D6CDA4C922EDAA4CD64A92549934EB328
@@ -273,7 +275,7 @@ object ModActions: TModActions
   end
   object ListImages: TImageList
     Left = 192
-    Top = 20
+    Top = 24
     Bitmap = {
       4C7A0C0000001000000010000000071000000000000078DAED9A7B58CC79FBC7
       9F3FBBBEF660B15BE45096F6C92E2BFC103DACB0CF3EB176598B4D2C85C78A65
@@ -410,33 +412,20 @@ object ModActions: TModActions
     DefaultExt = '.phximg'
     Filter = 'Phoenix image file (*.phximg)|*.phximg|All files (*.*)|*.*'
     Options = [ofHideReadOnly, ofAllowMultiSelect, ofEnableSizing]
-    Left = 46
-    Top = 194
+    Left = 64
+    Top = 88
   end
   object OpenDocumentDialog: TOpenDialog
     DefaultExt = '.phxani'
-    Filter = 'Phoenix animation file (*.phxani)|*.phxani|XML File (*.xml)|*.xml'
-    Left = 48
-    Top = 138
+    Filter = 'Phoenix animation file (*.phxani)|*.phxani'
+    Left = 64
+    Top = 24
   end
   object SaveDocumentDialog: TSaveDialog
     DefaultExt = '.phxani'
-    Filter = 'Phoenix animation file (*.phxani)|*.phxani|XML File (*.xml)|*.xml'
+    Filter = 'Phoenix animation file (*.phxani)|*.phxani'
     Options = [ofOverwritePrompt, ofHideReadOnly, ofEnableSizing]
-    Left = 160
-    Top = 142
-  end
-  object OpenXMLDialog: TOpenDialog
-    DefaultExt = '.xml'
-    Filter = 'XML Files (*.xml)|*.xml'
-    Left = 38
-    Top = 258
-  end
-  object SaveXMLDialog: TSaveDialog
-    DefaultExt = '.xml'
-    Filter = 'XML Files (*.xml)|*.xml'
-    Options = [ofOverwritePrompt, ofHideReadOnly, ofEnableSizing]
-    Left = 134
-    Top = 258
+    Left = 64
+    Top = 160
   end
 end

@@ -3,10 +3,10 @@ unit uShapeBox;
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes,
-  Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Mask,
+  Messages, SysUtils, Variants, Classes,
+  Graphics, Controls, Forms, Dialogs, StdCtrls,
 
-  JvExMask, JvSpin,
+  Spin,
 
   phxTypes,
   phxShape,
@@ -18,10 +18,10 @@ type
 //------------------------------------------------------------------------------
 TFrmShapeBox = class(TFrame, IShapeEditor)
     Label1: TLabel;
-    edCenterX: TJvSpinEdit;
-    edCenterY: TJvSpinEdit;
-    edWidth: TJvSpinEdit;
-    edHeight: TJvSpinEdit;
+    edCenterX: TSpinEdit;
+    edCenterY: TSpinEdit;
+    edWidth: TSpinEdit;
+    edHeight: TSpinEdit;
     Label6: TLabel;
     Label7: TLabel;
     Label8: TLabel;
@@ -194,7 +194,7 @@ begin
     SetShape(TPHXBox(Value));
   end else
   begin
-    SetShape(nil);
+    SetShape(TPHXBox(nil));
   end;
 end;
 

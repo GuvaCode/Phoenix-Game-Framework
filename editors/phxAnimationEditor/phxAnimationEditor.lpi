@@ -107,14 +107,17 @@
   </ProjectOptions>
   <CompilerOptions>
     <Version Value="11"/>
+    <Target>
+      <Filename Value="../../tools/phxAnimationEditor"/>
+    </Target>
     <SearchPaths>
-      <IncludeFiles Value="Source;../_Library;Source/Animation;Source/Image"/>
+      <IncludeFiles Value="Source;../_Library;Source/Animation;Source/Image;$(ProjOutDir)"/>
       <OtherUnitFiles Value="Source;../_Library;Source/Animation;Source/Image"/>
       <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
     <Parsing>
       <SyntaxOptions>
-        <SyntaxMode Value="delphi"/>
+        <SyntaxMode Value="Delphi"/>
       </SyntaxOptions>
     </Parsing>
     <Linking>

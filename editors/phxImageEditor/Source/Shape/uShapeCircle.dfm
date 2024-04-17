@@ -1,75 +1,66 @@
 object FrmShapeCircle: TFrmShapeCircle
   Left = 0
+  Height = 123
   Top = 0
   Width = 256
-  Height = 123
-  Padding.Left = 4
-  Padding.Top = 4
-  Padding.Right = 4
-  Padding.Bottom = 4
+  ClientHeight = 123
+  ClientWidth = 256
   TabOrder = 0
   TabStop = True
-  DesignSize = (
-    256
-    123)
+  DesignLeft = 175
+  DesignTop = 256
   object Label4: TLabel
-    Left = 4
-    Top = 10
-    Width = 50
+    Left = 0
     Height = 13
+    Top = 7
+    Width = 58
     Alignment = taRightJustify
     AutoSize = False
     Caption = '&Center X:'
   end
   object Label5: TLabel
-    Left = 4
-    Top = 37
-    Width = 50
+    Left = 0
     Height = 13
+    Top = 40
+    Width = 58
     Alignment = taRightJustify
     AutoSize = False
     Caption = '&Center Y:'
   end
   object Label6: TLabel
-    Left = 4
-    Top = 64
-    Width = 50
+    Left = 0
     Height = 13
+    Top = 72
+    Width = 58
     Alignment = taRightJustify
     AutoSize = False
     Caption = '&Radius:'
   end
-  object edCenterX: TJvSpinEdit
-    Left = 60
+  object edCenterX: TSpinEdit
+    Left = 64
+    Height = 28
     Top = 7
-    Width = 189
-    Height = 21
-    ValueType = vtFloat
-    Anchors = [akLeft, akTop, akRight]
-    TabOrder = 0
+    Width = 185
+    Anchors = [akTop, akLeft, akRight]
     OnChange = edCenterXChange
-    ExplicitWidth = 508
+    TabOrder = 0
   end
-  object edCenterY: TJvSpinEdit
-    Left = 60
-    Top = 34
-    Width = 189
-    Height = 21
-    ValueType = vtFloat
-    Anchors = [akLeft, akTop, akRight]
-    TabOrder = 1
+  object edCenterY: TSpinEdit
+    Left = 64
+    Height = 28
+    Top = 40
+    Width = 185
+    Anchors = [akTop, akLeft, akRight]
     OnChange = edCenterYChange
-    ExplicitWidth = 508
+    TabOrder = 1
   end
-  object edRadius: TJvSpinEdit
-    Left = 60
-    Top = 61
-    Width = 189
-    Height = 21
-    ValueType = vtFloat
-    Anchors = [akLeft, akTop, akRight]
-    TabOrder = 2
+  object edRadius: TSpinEdit
+    Left = 64
+    Height = 28
+    Top = 72
+    Width = 185
+    Anchors = [akTop, akLeft, akRight]
     OnChange = edRadiusChange
-    ExplicitWidth = 508
+    TabOrder = 2
   end
 end

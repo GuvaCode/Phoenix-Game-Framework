@@ -3,8 +3,8 @@ unit uShapePolygon;
 interface
 
 uses
-  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms, 
-  Dialogs, StdCtrls, Buttons, ComCtrls, Mask, JvExMask, JvSpin, Vcl.Grids,
+   Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, Buttons, ComCtrls,  Spin, Grids,
 
   phxShape,
   phxTypes,
@@ -18,7 +18,7 @@ type
 //------------------------------------------------------------------------------
 TFrmShapePolygon = class(TFrame, IShapeEditor)
     sgPoints: TStringGrid;
-    edSize: TJvSpinEdit;
+    edSize: TSpinEdit;
     Label3: TLabel;
     Label4: TLabel;
     btnCreateFromImage: TButton;
@@ -67,7 +67,7 @@ begin
   sgPoints.ColWidths[1]:= 64;
   sgPoints.ColWidths[2]:= 64;
 
-  SetShape(nil);
+ // fimxme SetShape(nil);
 end;
 
 //------------------------------------------------------------------------------
@@ -277,7 +277,7 @@ begin
     SetShape(TPHXPolygon(Value));
   end else
   begin
-    SetShape(nil);
+    SetShape(TPHXPolygon(nil));
   end;
 end;
 

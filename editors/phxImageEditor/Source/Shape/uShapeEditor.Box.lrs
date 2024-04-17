@@ -1,0 +1,25 @@
+{ This is an automatically generated lazarus resource file }
+
+LazarusResources.Add('TFrmShapeBox','FORMDATA',[
+  'TPF0'#12'TFrmShapeBox'#11'FrmShapeBox'#4'Left'#2#0#6'Height'#3#210#0#3'Top'#2
+  +#0#5'Width'#3#252#0#12'ClientHeight'#3#210#0#11'ClientWidth'#3#252#0#8'TabOr'
+  +'der'#2#0#10'DesignLeft'#3#155#0#9'DesignTop'#3#162#0#0#9'TGroupBox'#9'Group'
+  +'Box1'#4'Left'#2#0#6'Height'#3#152#0#3'Top'#2#0#5'Width'#3#252#0#5'Align'#7#5
+  +'alTop'#7'Caption'#6#3'Box'#12'ClientHeight'#3#135#0#11'ClientWidth'#3#250#0
+  +#8'TabOrder'#2#0#0#6'TLabel'#6'Label2'#4'Left'#2#8#6'Height'#2#16#3'Top'#2#8
+  +#5'Width'#2#11#7'Caption'#6#3'&X:'#0#0#6'TLabel'#6'Label3'#4'Left'#2#8#6'Hei'
+  +'ght'#2#16#3'Top'#2'('#5'Width'#2#10#7'Caption'#6#3'&Y:'#0#0#6'TLabel'#6'Lab'
+  +'el4'#4'Left'#2#8#6'Height'#2#16#3'Top'#2'H'#5'Width'#2''''#7'Caption'#6#7'&'
+  +'Width:'#0#0#6'TLabel'#6'Label5'#4'Left'#2#8#6'Height'#2#16#3'Top'#2'h'#5'Wi'
+  +'dth'#2'+'#7'Caption'#6#8'&Height:'#0#0#9'TSpinEdit'#9'edCenterX'#4'Left'#2
+  +'9'#6'Height'#2#28#3'Top'#2#8#5'Width'#3#186#0#7'Anchors'#11#5'akTop'#6'akLe'
+  +'ft'#7'akRight'#0#8'OnChange'#7#15'edCenterXChange'#8'TabOrder'#2#0#0#0#9'TS'
+  +'pinEdit'#9'edCenterY'#4'Left'#2'9'#6'Height'#2#28#3'Top'#2'('#5'Width'#3#186
+  +#0#7'Anchors'#11#5'akTop'#6'akLeft'#7'akRight'#0#8'OnChange'#7#15'edCenterYC'
+  +'hange'#8'TabOrder'#2#1#0#0#9'TSpinEdit'#7'edWidth'#4'Left'#2'9'#6'Height'#2
+  +#28#3'Top'#2'H'#5'Width'#3#186#0#7'Anchors'#11#5'akTop'#6'akLeft'#7'akRight'
+  +#0#8'OnChange'#7#13'edWidthChange'#8'TabOrder'#2#2#0#0#9'TSpinEdit'#8'edHeig'
+  +'ht'#4'Left'#2'9'#6'Height'#2#28#3'Top'#2'h'#5'Width'#3#186#0#7'Anchors'#11#5
+  +'akTop'#6'akLeft'#7'akRight'#0#8'OnChange'#7#14'edHeightChange'#8'TabOrder'#2
+  +#3#0#0#0#0
+]);

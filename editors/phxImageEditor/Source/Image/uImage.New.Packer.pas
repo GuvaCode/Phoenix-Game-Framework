@@ -1,21 +1,25 @@
 unit uImage.New.Packer;
 
+{$mode Delphi}
+
 interface
 
 uses
-  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, ComCtrls, StdCtrls, ImgList, ExtCtrls, ToolWin, Menus, Mask,
+  Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, ComCtrls, StdCtrls, ImgList, ExtCtrls, ToolWin, Menus,
 
-  Generics.Defaults,
-  Generics.Collections,
+ // Generics.Defaults,
+  //Generics.Collections,
+ // Generics.Helpers,
 
-  JvExMask, JvSpin,
+  Codebot.Collections,
+  Codebot.System,
+  Spin,
 
   phxDevice,
   phxGraphics,
   phxGraphicsEx,
-
-  phxTypes, Vcl.ActnList;
+  phxTypes, ActnList;
 
 type
 
@@ -40,10 +44,12 @@ TPHXPackerItem = class
     destructor Destroy; override;
   end;
 //------------------------------------------------------------------------------
-TPHXPackerWidthComparer = class(TInterfacedObject, IComparer<TPHXPackerItem>)
+{
+TPHXPackerWidthComparer = class(TInterfacedObject, TCompare<TPHXPackerItem>)
+public
   function Compare(const Left, Right: TPHXPackerItem): Integer;
 end;
-
+}
 
 //------------------------------------------------------------------------------
 TfrmPacker = class(TForm)
@@ -69,7 +75,7 @@ TfrmPacker = class(TForm)
     Label3: TLabel;
     cbWidth: TComboBox;
     cbHeight: TComboBox;
-    edPadding: TJvSpinEdit;
+    edPadding: TSpinEdit;
     GroupBox1: TGroupBox;
     lwImages: TListView;
     ToolBar1: TToolBar;
@@ -87,8 +93,8 @@ TfrmPacker = class(TForm)
     procedure actImageRemoveExecute(Sender: TObject);
     procedure actImageClearExecute(Sender: TObject);
     procedure actPackerPlaceExecute(Sender: TObject);
-  private
-     procedure DropFiles(var msg : TWMDropFiles) ; message WM_DROPFILES;
+  private   { #todo : https://forum.lazarus.freepascal.org/index.php?topic=42920.0 }
+     //procedure DropFiles(var msg : TWMDropFiles) ; message WM_DROPFILES;
   private
    FBuffer     : TBitmap;
     FTransparent: TBitmap;
@@ -123,7 +129,7 @@ implementation
 
 {$R *.dfm}
 
-uses Partitions, ShellApi;
+uses Partitions;
           {
 procedure QuickSort(SortList: PPackerItemList; L, R: Integer);
 var
@@ -179,11 +185,11 @@ end;
 
 // TPHXPackerWidthComparer
 //==============================================================================
-function TPHXPackerWidthComparer.Compare(const Left, Right: TPHXPackerItem): Integer;
+{function TPHXPackerWidthComparer.Compare(const Left, Right: TPHXPackerItem): Integer;
 begin
   Result:= Right.Width - Left.Width;
 end;
-
+ }
 // TfrmPacker
 //==============================================================================
 constructor TfrmPacker.Create(AOwner: TComponent);
@@ -206,11 +212,14 @@ begin
     Filter:=Filter + Format('%s|*.%s|', [List.Items[Index].Extension, List.Items[Index].Extension]);
   end;
   //form is ready to accept files
-  DragAcceptFiles( Handle, True ) ;
 
+  //////
+  {todo
+  DragAcceptFiles( Handle, True ) ;
+  }
   OpenImageDialog.Filter:= Filter;
 
-  FItems      := TObjectList<TPHXPackerItem>.Create;
+  FItems      := TObjectList<TPHXPackerItem>.Create(True);
   FImage      := TPHXBitmap.Create;
   FBuffer     := TBitmap.Create;
   FTransparent:= CreateTransparentImage(4);
@@ -439,8 +448,9 @@ var AHeight : Integer;
 var APadding: Integer;
 begin
   Screen.Cursor:= crHourGlass;
-
-  Items.Sort(TPHXPackerWidthComparer.Create);
+  /// FixME
+  Items.Sort({TPHXPackerWidthComparer.Create});
+  //Items.Sort(TPHXPackerWidthComparer.Create);
 
   if SameText(cbWidth.Text, '(auto)') or SameText(cbHeight.Text, '(auto)') then
   begin
@@ -510,6 +520,7 @@ end;
 
 
 //------------------------------------------------------------------------------
+{
 procedure TfrmPacker.DropFiles(var msg: TWMDropFiles);
 var Count: Integer;
 var Index: Integer;
@@ -531,7 +542,7 @@ begin
 
   lwImagesUpdate;
 end;
-
+}
 
 
 

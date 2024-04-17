@@ -1,131 +1,110 @@
 object FrmTagProperties: TFrmTagProperties
   Left = 0
+  Height = 213
   Top = 0
-  Width = 202
-  Height = 159
+  Width = 212
+  BorderSpacing.Around = 4
+  ClientHeight = 213
+  ClientWidth = 212
   TabOrder = 0
+  DesignLeft = 501
+  DesignTop = 153
   object GroupBox1: TGroupBox
     Left = 0
+    Height = 213
     Top = 0
-    Width = 202
-    Height = 159
+    Width = 212
     Align = alClient
     Caption = 'Tag properties'
+    ClientHeight = 196
+    ClientWidth = 210
     TabOrder = 0
-    DesignSize = (
-      202
-      159)
     object Label1: TLabel
       Left = 8
-      Top = 21
-      Width = 31
-      Height = 13
+      Height = 16
+      Top = 7
+      Width = 38
       Caption = '&Name:'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'MS Sans Serif'
-      Font.Style = []
       ParentFont = False
     end
     object Label4: TLabel
       Left = 8
-      Top = 48
-      Width = 37
-      Height = 13
+      Height = 16
+      Top = 40
+      Width = 48
       Caption = '&Pattern:'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'MS Sans Serif'
-      Font.Style = []
       ParentFont = False
     end
     object Label2: TLabel
       Left = 8
+      Height = 16
       Top = 75
-      Width = 10
-      Height = 13
+      Width = 11
       Caption = '&X:'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'MS Sans Serif'
-      Font.Style = []
       ParentFont = False
     end
     object Label3: TLabel
       Left = 8
-      Top = 102
+      Height = 16
+      Top = 112
       Width = 10
-      Height = 13
       Caption = '&Y:'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'MS Sans Serif'
-      Font.Style = []
       ParentFont = False
     end
     object Label5: TLabel
       Left = 8
-      Top = 129
-      Width = 40
-      Height = 13
+      Height = 16
+      Top = 144
+      Width = 52
       Caption = '&Rotation'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'MS Sans Serif'
-      Font.Style = []
       ParentFont = False
     end
     object edName: TEdit
-      Left = 54
-      Top = 18
-      Width = 141
-      Height = 21
-      Anchors = [akLeft, akTop, akRight]
+      Left = 70
+      Height = 28
+      Top = 7
+      Width = 135
+      Anchors = [akTop, akLeft, akRight]
       TabOrder = 0
       OnChange = edNameChange
     end
     object edPattern: TComboBox
-      Left = 54
-      Top = 45
-      Width = 141
-      Height = 21
+      Left = 70
+      Height = 30
+      Top = 40
+      Width = 135
+      Anchors = [akTop, akLeft, akRight]
+      ItemHeight = 0
       Style = csDropDownList
-      Anchors = [akLeft, akTop, akRight]
       TabOrder = 1
       OnChange = edPatternChange
     end
-    object edX: TJvSpinEdit
-      Left = 54
-      Top = 72
-      Width = 141
-      Height = 21
-      Anchors = [akLeft, akTop, akRight]
-      TabOrder = 2
+    object edX: TSpinEdit
+      Left = 70
+      Height = 28
+      Top = 75
+      Width = 135
+      Anchors = [akTop, akLeft, akRight]
       OnChange = edXChange
+      TabOrder = 2
     end
-    object edY: TJvSpinEdit
-      Left = 54
-      Top = 99
-      Width = 141
-      Height = 21
-      Anchors = [akLeft, akTop, akRight]
-      TabOrder = 3
+    object edY: TSpinEdit
+      Left = 70
+      Height = 28
+      Top = 110
+      Width = 135
+      Anchors = [akTop, akLeft, akRight]
       OnChange = edYChange
+      TabOrder = 3
     end
-    object edRotation: TJvSpinEdit
-      Left = 54
-      Top = 126
-      Width = 141
-      Height = 21
-      ValueType = vtFloat
-      Anchors = [akLeft, akTop, akRight]
-      TabOrder = 4
+    object edRotation: TSpinEdit
+      Left = 70
+      Height = 28
+      Top = 144
+      Width = 135
+      Anchors = [akTop, akLeft, akRight]
       OnChange = edRotationChange
+      TabOrder = 4
     end
   end
 end

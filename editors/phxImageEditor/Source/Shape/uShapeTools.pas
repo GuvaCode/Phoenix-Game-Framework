@@ -2,7 +2,7 @@ unit uShapeTools;
 
 interface
 
-uses Classes, Types, SysUtils, Windows, Graphics, Dialogs, Math,
+uses Classes, Types, SysUtils, Graphics, Dialogs, Math,
 
 
 

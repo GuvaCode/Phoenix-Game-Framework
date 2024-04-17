@@ -105,7 +105,7 @@ type
     Insert1: TMenuItem;
     Label3: TLabel;
     Splitter1: TSplitter;
-    edPadding: TJvSpinEdit;
+    edPadding: TSpinEdit;
     procedure FormCreate(Sender: TObject);
     procedure btnPackClick(Sender: TObject);
     procedure PaintBox1Paint(Sender: TObject);

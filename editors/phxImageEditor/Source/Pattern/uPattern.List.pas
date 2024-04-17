@@ -3,11 +3,10 @@ unit uPattern.List;
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes,
-  Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ComCtrls, Vcl.ToolWin,
-  Vcl.ExtCtrls, Vcl.Menus, Vcl.StdCtrls, Vcl.Mask, Vcl.ActnList,
-
-  JvExMask, JvSpin,
+  Messages, SysUtils, Variants, Classes,
+  Graphics, Controls, Forms, Dialogs, ComCtrls, ToolWin,
+  ExtCtrls, Menus, StdCtrls, ActnList,
+  Spin, LCLType,
 
   phxTypes,
   phxImage,
@@ -22,8 +21,14 @@ uses
 type
 
 //------------------------------------------------------------------------------
+
+{ TFrmPatternList }
+
 TFrmPatternList = class(TFrame, IPatternList)
     lwPatterns: TListView;
+    Panel1: TPanel;
+    Panel2: TPanel;
+    Splitter1: TSplitter;
     ToolBar1: TToolBar;
     PatternAdd: TToolButton;
     PatternDel: TToolButton;
@@ -97,8 +102,6 @@ resourcestring
   SDeletePattern = 'Delete the pattern "%s"?';
   SClearPatterns = 'Delete all patterns?';
 
-
-
 //------------------------------------------------------------------------------
 procedure Swap(var A: TPHXPattern; var B: TPHXPattern);
 var T: TPHXPattern;
@@ -107,7 +110,6 @@ begin
   A:= B;
   B:= T;
 end;
-
 
 //------------------------------------------------------------------------------
 function PatternSortByName(const A: TPHXPattern; const B: TPHXPattern): Integer;
@@ -130,8 +132,8 @@ constructor TFrmPatternList.Create(AOwner: TComponent);
 begin
   inherited;
   FrmPattern:= TFrmPatternProperties.Create(Self);
-  FrmPattern.Parent:= Self;
-  FrmPattern.Align := alBottom;
+  FrmPattern.Parent:= Panel2;
+  FrmPattern.Align := alClient;
 end;
 
 //------------------------------------------------------------------------------
@@ -179,8 +181,8 @@ begin
 
   if Active then
   begin
-    actPatternAdd.ShortCut:= ShortCut(Winapi.Windows.VK_INSERT, []);
-    actPatternDel.ShortCut:= ShortCut(Winapi.Windows.VK_DELETE, []);
+    actPatternAdd.ShortCut:= ShortCut(LCLType.VK_INSERT, []);
+    actPatternDel.ShortCut:= ShortCut(LClType.VK_DELETE, []);
   end else
   begin
     actPatternAdd.ShortCut:= ShortCut(0, []);

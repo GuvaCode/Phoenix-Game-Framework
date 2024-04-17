@@ -3,13 +3,10 @@ unit uTag.Properties;
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes,
-  Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Mask,
-  JvExMask, JvSpin,
-
-  phxTypes,
+  SysUtils, Variants, Classes,
+  Graphics, Controls, Forms, Dialogs, StdCtrls,
+  Spin,
   phxImage,
-
   uActions;
 
 type
@@ -22,9 +19,9 @@ type
     Label5: TLabel;
     edName: TEdit;
     edPattern: TComboBox;
-    edX: TJvSpinEdit;
-    edY: TJvSpinEdit;
-    edRotation: TJvSpinEdit;
+    edX: TSpinEdit;
+    edY: TSpinEdit;
+    edRotation: TSpinEdit;
     procedure edNameChange(Sender: TObject);
     procedure edXChange(Sender: TObject);
     procedure edPatternChange(Sender: TObject);

@@ -3,12 +3,12 @@ unit uActions;
 interface
 
 uses
-  System.SysUtils, System.Classes, Vcl.ImgList, Vcl.Controls, Vcl.ActnList, Windows,
+  SysUtils, Classes, ImgList, Controls,ActnList,
   Menus, Dialogs, Forms, ClipBrd,
 
-  Vcl.FileCtrl,
+  FileCtrl,
 
-  xmldom, XMLIntf, msxmldom, XMLDoc,
+ // xmldom, XMLIntf, msxmldom, XMLDoc,
 
   Generics.Collections,
 
@@ -53,8 +53,8 @@ TRecent = class
     constructor Create;
     destructor Destroy; override;
 
-    procedure LoadFromXML(Node : IXMLNode);
-    procedure SaveToXML(Node : IXMLNode);
+   // procedure LoadFromXML(Node : IXMLNode);
+   // procedure SaveToXML(Node : IXMLNode);
 
     procedure Add(const FileName: String);
 
@@ -324,7 +324,7 @@ function GetUserFromWindows: string;
 var UserName    : String;
 var UserNameLen : Cardinal;
 Begin
-  UserNameLen := 255;
+{  UserNameLen := 255;
 
   SetLength(userName, UserNameLen) ;
 
@@ -334,7 +334,7 @@ Begin
   end else
   begin
      Result := 'Unknown';
-  end;
+  end;  }
 end;
 
 var PatternCounter: Integer = 1;
@@ -452,7 +452,7 @@ begin
 end;
 
 //------------------------------------------------------------------------------
-procedure TRecent.LoadFromXML(Node: IXMLNode);
+{procedure TRecent.LoadFromXML(Node: IXMLNode);
 var Index: Integer;
 begin
   Items.BeginUpdate;
@@ -464,17 +464,17 @@ begin
   Items.EndUpdate;
 
   UpdateMenu;
-end;
+end;}
 
 //------------------------------------------------------------------------------
-procedure TRecent.SaveToXML(Node: IXMLNode);
+{procedure TRecent.SaveToXML(Node: IXMLNode);
 var Index: Integer;
 begin
   for Index := 0 to Items.Count - 1 do
   begin
     Node.AddChild('item').Attributes['filename']:= Items[Index];
   end;
-end;
+end; }
 
 //------------------------------------------------------------------------------
 procedure TRecent.SetMenu(const Value: TMenuItem);
@@ -514,11 +514,11 @@ end;
 
 //------------------------------------------------------------------------------
 procedure TSettings.LoadSettings;
-var XMLDocument    : IXMLDocument;
-var XMLRoot     : IXMLNode;
-var XMLNode    : IXMLNode;
+//var XMLDocument    : IXMLDocument;
+//var XMLRoot     : IXMLNode;
+//var XMLNode    : IXMLNode;
 begin
-  if not FileExists(FileName) then Exit;
+ { if not FileExists(FileName) then Exit;
 
   XMLDocument:= LoadXMLDocument(FileName);
 
@@ -544,17 +544,17 @@ begin
   begin
     Grid.LoadFromXml(XMLNode);
   end;
-
+ }
 
 end;
 
 //------------------------------------------------------------------------------
 procedure TSettings.SaveSettings;
-var XMLDocument : IXMLDocument;
-var XMLRoot     : IXMLNode;
-var XMLNode   : IXMLNode;
+//var XMLDocument : IXMLDocument;
+//var XMLRoot     : IXMLNode;
+//var XMLNode   : IXMLNode;
 begin
-
+{
   XMLDocument:= NewXMLDocument();
 
   XMLRoot:= XMLDocument.AddChild('phxImageEditor');
@@ -579,7 +579,8 @@ begin
 
 
   XMLDocument.SaveToFile(FileName);
-end;
+  }
+  end;
 
 {$ENDREGION}
 
@@ -1078,9 +1079,10 @@ begin
 
     Stream:= TMemoryStream.Create;
     try
-      Stream.Write(Pattern, SizeOf(Pattern));
 
-      CopyStreamToClipboard(ClipboardFormat_Pattern, Stream);
+      Stream.Write(Pattern, SizeOf(Pattern));
+      /// fixme CopyStreamToClipboard(ClipboardFormat_Pattern, Stream);
+
     finally
       Stream.Free;
     end;
@@ -1094,7 +1096,7 @@ begin
     try
       Stream.Write(Tag, SizeOf(Tag));
 
-      CopyStreamToClipboard(ClipboardFormat_Tag, Stream);
+      //// fixme CopyStreamToClipboard(ClipboardFormat_Tag, Stream);
     finally
       Stream.Free;
     end;
@@ -1115,7 +1117,7 @@ begin
   begin
     Stream:= TMemoryStream.Create;
     try
-      CopyStreamFromClipboard(ClipboardFormat_Pattern, Stream);
+      /// fixme CopyStreamFromClipboard(ClipboardFormat_Pattern, Stream);
 
       Stream.Read(Pattern, SizeOf(Pattern));
 
@@ -1137,7 +1139,7 @@ begin
   begin
     Stream:= TMemoryStream.Create;
     try
-      CopyStreamFromClipboard(ClipboardFormat_Tag, Stream);
+      //// fixme  CopyStreamFromClipboard(ClipboardFormat_Tag, Stream);
 
       Stream.Read(Tag, SizeOf(Tag));
 
@@ -1454,10 +1456,10 @@ end;
 procedure TModActions.actExportPatternXMLExecute(Sender: TObject);
 var Index  : Integer;
 var Pattern: TPHXPattern;
-var Doc    : IXMLDocument;
-var Node   : IXMLNode;
+//var Doc    : IXMLDocument;
+//var Node   : IXMLNode;
 begin
-  if SaveXMLDialog.Execute then
+ { if SaveXMLDialog.Execute then
   begin
     Doc:= NewXMLDocument;
     Doc.DocumentElement:=Doc.AddChild('patterns');
@@ -1477,17 +1479,17 @@ begin
       Node.Attributes['pivot.y']:=Pattern.Pivot.Y;
     end;
     Doc.SaveToFile(SaveXMLDialog.FileName);
-  end;
+  end;}
 end;
 
 //------------------------------------------------------------------------------
 procedure TModActions.actExportTagXMLExecute(Sender: TObject);
 var Index  : Integer;
 var Tag    : TPHXTag;
-var Doc    : IXMLDocument;
-var Node   : IXMLNode;
+//var Doc    : IXMLDocument;
+//var Node   : IXMLNode;
 begin
-  if SaveXMLDialog.Execute then
+{  if SaveXMLDialog.Execute then
   begin
     Doc:= NewXMLDocument;
     Doc.DocumentElement:=Doc.AddChild('Tags');
@@ -1506,7 +1508,7 @@ begin
     end;
 
     Doc.SaveToFile(SaveXMLDialog.FileName);
-  end;
+  end; }
 end;
 
 
@@ -1515,10 +1517,10 @@ end;
 procedure TModActions.actImportPatternXMLExecute(Sender: TObject);
 var Index  : Integer;
 var Pattern: TPHXPattern;
-var Doc    : IXMLDocument;
-var Node   : IXMLNode;
+//var Doc    : IXMLDocument;
+//var Node   : IXMLNode;
 begin
-  if OpenXMLDialog.Execute then
+{  if OpenXMLDialog.Execute then
   begin
     Doc:= LoadXMLDocument(OpenXMLDialog.FileName);
 
@@ -1543,17 +1545,17 @@ begin
       Editor.Image.Patterns.Add(Pattern);
     end;
     Document.Changed
-  end;
+  end; }
 end;
 
 //------------------------------------------------------------------------------
 procedure TModActions.actImportTagXMLExecute(Sender: TObject);
 var Index  : Integer;
 var Tag    : TPHXTag;
-var Doc    : IXMLDocument;
-var Node   : IXMLNode;
+//var Doc    : IXMLDocument;
+//var Node   : IXMLNode;
 begin
-  if OpenXMLDialog.Execute then
+{  if OpenXMLDialog.Execute then
   begin
     Doc:= LoadXMLDocument(OpenXMLDialog.FileName);
 
@@ -1577,7 +1579,7 @@ begin
       Editor.Image.Tags.Add(Tag);
     end;
     Document.Changed
-  end;
+  end;}
 end;
 
 
@@ -1595,7 +1597,9 @@ begin
       raise Exception.Create('You have to select a compressor for the image first');
     end;
            }
-    Dir:= ExtractFilePath(ParamStr(0));
+
+    // fix mememem
+    {   Dir:= ExtractFilePath(ParamStr(0));
 
     if SelectDirectory('Select directory to save images in', '', Dir, [sdNewFolder, sdShowEdit, sdShowShares, sdNewUI, sdValidateDir]) then
     begin
@@ -1616,7 +1620,9 @@ begin
       end;
 
     end;
-  end;
+  end;}
+end;
+
 end;
 
 {$ENDREGION}

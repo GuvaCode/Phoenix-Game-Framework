@@ -5,7 +5,10 @@ object FrmAnimationFrames: TFrmAnimationFrames
   Width = 433
   ClientHeight = 188
   ClientWidth = 433
+  OnResize = FrameResize
   TabOrder = 0
+  DesignLeft = 221
+  DesignTop = 88
   object ToolBar1: TToolBar
     Left = 0
     Height = 24
