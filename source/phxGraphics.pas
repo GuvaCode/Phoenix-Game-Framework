@@ -557,7 +557,6 @@ begin
   Color.Green:= 255;
   Color.Blue := 255;
   Color.Alpha:= Pixel^;
-
   Inc(Pixel);
 end;
 
@@ -565,7 +564,6 @@ end;
 procedure SetPixel_Alpha(var Pixel: PByte; const Color: TPHXPixel);
 begin
   Pixel^:= Color.Alpha;
-
   Inc(Pixel);
 end;
 
@@ -577,7 +575,6 @@ begin
   Color.Green:= Pixel^;
   Color.Blue := Pixel^;
   Color.Alpha:= 255;
-
   Inc(Pixel);
 end;
 
@@ -585,7 +582,6 @@ end;
 procedure SetPixel_Gray(var Pixel: PByte; const Color: TPHXPixel);
 begin
   Pixel^:= Color.Red;
-
   Inc(Pixel);
 end;
 
@@ -597,7 +593,6 @@ begin
   Color.Green:= 0;
   Color.Blue := 0;
   Color.Alpha:= 255;
-
   Inc(Pixel);
 end;
 
@@ -605,7 +600,6 @@ end;
 procedure SetPixel_Red(var Pixel: PByte; const Color: TPHXPixel);
 begin
   Pixel^:= Color.Red;
-
   Inc(Pixel);
 end;
 
@@ -617,7 +611,6 @@ begin
   Color.Green:= Pixel^;
   Color.Blue := 0;
   Color.Alpha:= 255;
-
   Inc(Pixel);
 end;
 
@@ -625,7 +618,6 @@ end;
 procedure SetPixel_Green(var Pixel: PByte; const Color: TPHXPixel);
 begin
   Pixel^:= Color.Green;
-
   Inc(Pixel);
 end;
 
@@ -637,7 +629,6 @@ begin
   Color.Green:= 0;
   Color.Blue := Pixel^;
   Color.Alpha:= 255;
-
   Inc(Pixel);
 end;
 
@@ -645,7 +636,6 @@ end;
 procedure SetPixel_Blue(var Pixel: PByte; const Color: TPHXPixel);
 begin
   Pixel^:= Color.Blue;
-
   Inc(Pixel);
 end;
 
@@ -1575,7 +1565,6 @@ end;
 procedure TPHXBitmap.Import(AWidth, AHeight: Integer; AFormat: TPHXPixelFormat; Data: Pointer);
 begin
   Resize(AWidth, AHeight, AFormat);
-
   Move(Data^, FPixels^, FSize);
 end;
 
@@ -1640,13 +1629,14 @@ begin
         end;
         pcRGBA:
         begin
+
           DstColor.Red  := SrcColor.Red;
           DstColor.Green:= SrcColor.Green;
           DstColor.Blue := SrcColor.Blue;
           DstColor.Alpha:= SrcColor.Alpha;
+
         end;
       end;
-
       SetPixel(DstPixel, DstColor);
     end;
   end;
@@ -1656,7 +1646,6 @@ end;
 procedure TPHXBitmap.Import(const Graphic: TPHXGraphic);
 begin
   Resize(Graphic.Width, Graphic.Height, Graphic.Format);
-
   Move(Graphic.Pixels^, FPixels^, FSize);
 end;
 
@@ -1666,7 +1655,6 @@ begin
   if Width <> AValue then
   begin
     FWidth:= AValue;
-
     ResizePixels;
   end;
 end;
@@ -1678,7 +1666,6 @@ begin
   if Height <> AValue then
   begin
     FHeight:= AValue;
-
     ResizePixels;
   end;
 end;
@@ -1689,10 +1676,8 @@ begin
   if Format <> AValue then
   begin
     FFormat:= AValue;
-
     FPixelGet:= GetPixelFormatGetter(FFormat);
     FPixelSet:= GetPixelFormatSetter(FFormat);
-
     ResizePixels;
   end;
 end;
@@ -1709,9 +1694,7 @@ begin
   if Assigned(FPixelSet) then
   begin
      pPixel:= @FPixels^[0];
-
      Inc(pPixel, (X + Y * Width) * GetPixelFormatSize(FFormat) );
-
      FPixelSet(pPixel, Value);
   end;
 end;
@@ -1728,9 +1711,7 @@ begin
   if Assigned(FPixelGet) then
   begin
      pPixel:= @FPixels^[0];
-
      Inc(pPixel, (X + Y * Width) * GetPixelFormatSize(FFormat) );
-
      FPixelGet(pPixel, Result);
   end;
 end;
@@ -1749,11 +1730,8 @@ begin
   begin
     raise Exception.Create('TPHXBitmap.getScanLine: Index out of bounds.');
   end;
-
   pPixel:= @FPixels^[0];
-
   Inc(pPixel, Row * Width * GetPixelFormatSize(FFormat));
-
   Result:= pPixel;
 end;
 
@@ -1787,7 +1765,6 @@ begin
     for X:=1 to Width do
     begin
       PixelGet(Source, Color);
-
       PixelSet(Dest, Color);
     end;
   end;
@@ -1821,9 +1798,7 @@ begin
     begin
       Self  .FPixelGet(Source1, Color1);
       Bitmap.FPixelGet(Source2, Color2);
-
       Color1.Alpha:= (Color2.Red + Color2.Green + Color2.Blue) div 3;
-
       FPixelSet(Dest1, Color1);
     end;
   end;

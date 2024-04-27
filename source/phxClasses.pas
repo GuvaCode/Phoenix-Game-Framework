@@ -2966,11 +2966,6 @@ end;
 
 {$ENDREGION}
 
-
-
-
-
-
 initialization
   TPHXContentManager.FLoader:= TPHXContentLoader.Create;
 
