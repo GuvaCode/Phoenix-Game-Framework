@@ -1141,7 +1141,8 @@ constructor TPHXContentLoader.Create;
 begin
   {$IFDEF DARWIN}
   FPath = '../Resources/' ;
-  {$ELSE}
+  {$ENDIF}
+  {$IFDEF WINDOWS}
   FPath:= ExtractFilePath( ParamStr(0) );
   {$ENDIF}
 end;
@@ -1155,10 +1156,17 @@ begin
     Result:= Name;
   end else
   begin
+    {$IFDEF WINDOWS}
     Result:= Path + Name;
-
-    Result:= StringReplace(Result, '/', PathDelim, [rfReplaceAll]);
-    Result:= StringReplace(Result, '\', PathDelim, [rfReplaceAll]);
+    {$ENDIF}
+    {$IFDEF DARWIN}
+     Result:= Path + Name;
+    {$ENDIF}
+    {$IFDEF LINUX}
+     Result:= Name;
+    {$ENDIF}
+     Result:= StringReplace(Result, '/', PathDelim, [rfReplaceAll]);
+     Result:= StringReplace(Result, '\', PathDelim, [rfReplaceAll]);
   end;
 end;
 
@@ -1175,6 +1183,7 @@ end;
 function TPHXContentLoader.CreateStream(const Name: String; const Kind: TPHXContentKind; const Mode: Word): TStream;
 var FileName: String;
 begin
+
   FileName:= Self.ExpandFileName(Name, Kind);
 
   TPHXLogger.Info('TPHXDefaultLoader.Load', 'Loading content: %s', [Name]);

@@ -3,10 +3,6 @@ object FrmModelProperties: TFrmModelProperties
   Top = 0
   Width = 250
   Height = 493
-  Padding.Left = 4
-  Padding.Top = 4
-  Padding.Right = 4
-  Padding.Bottom = 4
   TabOrder = 0
   object GroupBox1: TGroupBox
     Left = 4
@@ -16,9 +12,6 @@ object FrmModelProperties: TFrmModelProperties
     Align = alTop
     Caption = 'Model properties'
     TabOrder = 0
-    DesignSize = (
-      242
-      195)
     object Label1: TLabel
       Left = 8
       Top = 19
@@ -101,9 +94,6 @@ object FrmModelProperties: TFrmModelProperties
     Align = alTop
     Caption = 'Bounding box'
     TabOrder = 1
-    DesignSize = (
-      242
-      126)
     object Label5: TLabel
       Left = 8
       Top = 21
@@ -130,8 +120,6 @@ object FrmModelProperties: TFrmModelProperties
       Top = 18
       Width = 95
       Height = 21
-      Decimal = 3
-      ValueType = vtFloat
       TabOrder = 0
     end
     object edMaxX: TSpinEdit
@@ -139,8 +127,6 @@ object FrmModelProperties: TFrmModelProperties
       Top = 18
       Width = 95
       Height = 21
-      Decimal = 3
-      ValueType = vtFloat
       Anchors = [akLeft, akTop, akRight]
       TabOrder = 1
     end
@@ -149,8 +135,6 @@ object FrmModelProperties: TFrmModelProperties
       Top = 45
       Width = 95
       Height = 21
-      Decimal = 3
-      ValueType = vtFloat
       TabOrder = 2
     end
     object edMaxY: TSpinEdit
@@ -158,8 +142,6 @@ object FrmModelProperties: TFrmModelProperties
       Top = 45
       Width = 95
       Height = 21
-      Decimal = 3
-      ValueType = vtFloat
       Anchors = [akLeft, akTop, akRight]
       TabOrder = 3
     end
@@ -168,8 +150,6 @@ object FrmModelProperties: TFrmModelProperties
       Top = 72
       Width = 95
       Height = 21
-      Decimal = 3
-      ValueType = vtFloat
       TabOrder = 4
     end
     object edMaxZ: TSpinEdit
@@ -177,8 +157,6 @@ object FrmModelProperties: TFrmModelProperties
       Top = 72
       Width = 95
       Height = 21
-      Decimal = 3
-      ValueType = vtFloat
       Anchors = [akLeft, akTop, akRight]
       TabOrder = 5
     end
@@ -191,11 +169,6 @@ object FrmModelProperties: TFrmModelProperties
     Align = alTop
     Caption = 'Model &information'
     TabOrder = 2
-    ExplicitLeft = 1
-    ExplicitTop = 184
-    DesignSize = (
-      242
-      84)
     object Label8: TLabel
       Left = 8
       Top = 29

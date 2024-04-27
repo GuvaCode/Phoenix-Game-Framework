@@ -1,53 +1,44 @@
 object FrmImageResize: TFrmImageResize
-  Left = 0
-  Top = 0
+  Left = 475
+  Height = 165
+  Top = 210
+  Width = 234
   BorderIcons = [biSystemMenu]
   BorderStyle = bsDialog
   Caption = 'Resize image'
-  ClientHeight = 121
+  ClientHeight = 165
   ClientWidth = 234
   Color = clBtnFace
-  Font.Charset = DEFAULT_CHARSET
-  Font.Color = clWindowText
-  Font.Height = -11
-  Font.Name = 'Tahoma'
-  Font.Style = []
-  OldCreateOrder = False
   Position = poMainFormCenter
-  DesignSize = (
-    234
-    121)
-  PixelsPerInch = 96
-  TextHeight = 13
+  LCLVersion = '3.2.0.0'
   object Label1: TLabel
     Left = 6
-    Top = 11
-    Width = 28
-    Height = 13
+    Height = 16
+    Top = 8
+    Width = 36
     Caption = '&Width'
   end
   object Label2: TLabel
     Left = 6
-    Top = 38
-    Width = 31
-    Height = 13
+    Height = 16
+    Top = 40
+    Width = 40
     Caption = '&Height'
   end
   object Label3: TLabel
     Left = 6
-    Top = 65
-    Width = 34
-    Height = 13
+    Height = 16
+    Top = 72
+    Width = 43
     Caption = '&Format'
   end
   object edheight: TComboBox
     Left = 70
-    Top = 35
+    Height = 28
+    Top = 40
     Width = 156
-    Height = 21
-    Anchors = [akLeft, akTop, akRight]
-    TabOrder = 0
-    Text = 'edHeight'
+    Anchors = [akTop, akLeft, akRight]
+    ItemHeight = 0
     Items.Strings = (
       '32'
       '64'
@@ -57,16 +48,18 @@ object FrmImageResize: TFrmImageResize
       '1024'
       '2048'
       '4096'
-      '8192')
+      '8192'
+    )
+    TabOrder = 0
+    Text = 'edHeight'
   end
   object edWidth: TComboBox
     Left = 70
+    Height = 28
     Top = 8
     Width = 156
-    Height = 21
-    Anchors = [akLeft, akTop, akRight]
-    TabOrder = 1
-    Text = 'edWidth'
+    Anchors = [akTop, akLeft, akRight]
+    ItemHeight = 0
     Items.Strings = (
       '32'
       '64'
@@ -76,22 +69,26 @@ object FrmImageResize: TFrmImageResize
       '1024'
       '2048'
       '4096'
-      '8192')
+      '8192'
+    )
+    TabOrder = 1
+    Text = 'edWidth'
   end
   object edFormat: TComboBox
     Left = 70
-    Top = 62
+    Height = 28
+    Top = 72
     Width = 156
-    Height = 21
-    Anchors = [akLeft, akTop, akRight]
+    Anchors = [akTop, akLeft, akRight]
+    ItemHeight = 0
     TabOrder = 2
     Text = 'edFormat'
   end
   object Button2: TButton
     Left = 74
-    Top = 88
-    Width = 75
     Height = 25
+    Top = 132
+    Width = 75
     Anchors = [akRight, akBottom]
     Caption = 'Ok'
     Default = True
@@ -100,9 +97,9 @@ object FrmImageResize: TFrmImageResize
   end
   object Button1: TButton
     Left = 155
-    Top = 88
-    Width = 75
     Height = 25
+    Top = 132
+    Width = 75
     Anchors = [akRight, akBottom]
     Cancel = True
     Caption = 'Cancel'

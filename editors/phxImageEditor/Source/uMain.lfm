@@ -1,10 +1,10 @@
 object FrmMain: TFrmMain
-  Left = 417
-  Height = 481
-  Top = 299
+  Left = 263
+  Height = 433
+  Top = 199
   Width = 814
   Caption = 'Phoenix Image Editor'
-  ClientHeight = 481
+  ClientHeight = 433
   ClientWidth = 814
   DoubleBuffered = True
   Font.Color = clWindowText
@@ -15,13 +15,13 @@ object FrmMain: TFrmMain
   LCLVersion = '3.2.0.0'
   object Splitter1: TSplitter
     Left = 250
-    Height = 439
+    Height = 391
     Top = 24
     Width = 4
   end
   object PageControl1: TPageControl
     Left = 0
-    Height = 439
+    Height = 391
     Top = 24
     Width = 250
     ActivePage = TabPatterns
@@ -46,7 +46,7 @@ object FrmMain: TFrmMain
   object StatusBar1: TStatusBar
     Left = 0
     Height = 18
-    Top = 463
+    Top = 415
     Width = 814
     Panels = <    
       item
@@ -61,18 +61,18 @@ object FrmMain: TFrmMain
   end
   object pnlClient: TPanel
     Left = 254
-    Height = 439
+    Height = 391
     Top = 24
     Width = 560
     Align = alClient
     BevelOuter = bvNone
-    ClientHeight = 439
+    ClientHeight = 391
     ClientWidth = 560
     ParentBackground = False
     TabOrder = 2
     object Panel1: TPanel
       Left = 0
-      Height = 417
+      Height = 369
       Top = 22
       Width = 560
       Align = alClient

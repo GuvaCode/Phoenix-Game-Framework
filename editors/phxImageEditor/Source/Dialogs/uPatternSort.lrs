@@ -1,0 +1,18 @@
+{ This is an automatically generated lazarus resource file }
+
+LazarusResources.Add('TFrmPatternSort','FORMDATA',[
+  'TPF0'#15'TFrmPatternSort'#14'FrmPatternSort'#4'Left'#3'Y'#1#6'Height'#2'X'#3
+  +'Top'#3#210#0#5'Width'#3'/'#1#11'BorderStyle'#7#8'bsDialog'#7'Caption'#6#13
+  +'Sort patterns'#12'ClientHeight'#2'X'#11'ClientWidth'#3'/'#1#8'OnCreate'#7#10
+  +'FormCreate'#8'Position'#7#16'poMainFormCenter'#10'LCLVersion'#6#7'3.2.0.0'#0
+  +#6'TLabel'#6'Label1'#4'Left'#2#8#6'Height'#2#16#3'Top'#2#8#5'Width'#2'.'#7'C'
+  +'aption'#6#9'&Sort by:'#0#0#9'TComboBox'#10'cbSortType'#4'Left'#2'H'#6'Heigh'
+  +'t'#2#26#3'Top'#2#8#5'Width'#3#223#0#7'Anchors'#11#5'akTop'#6'akLeft'#7'akRi'
+  +'ght'#0#10'ItemHeight'#2#0#13'Items.Strings'#1#6#4'Name'#6#15'Name (Reversed'
+  +')'#0#5'Style'#7#14'csDropDownList'#8'TabOrder'#2#0#0#0#7'TButton'#5'btnOk'#4
+  +'Left'#3#139#0#6'Height'#2#25#3'Top'#2'/'#5'Width'#2'K'#7'Anchors'#11#7'akRi'
+  +'ght'#8'akBottom'#0#7'Caption'#6#4'Okey'#7'Default'#9#11'ModalResult'#2#1#8
+  +'TabOrder'#2#1#0#0#7'TButton'#9'btnCancel'#4'Left'#3#220#0#6'Height'#2#25#3
+  +'Top'#2'/'#5'Width'#2'K'#7'Anchors'#11#7'akRight'#8'akBottom'#0#6'Cancel'#9#7
+  +'Caption'#6#6'Cancel'#11'ModalResult'#2#2#8'TabOrder'#2#2#0#0#0
+]);

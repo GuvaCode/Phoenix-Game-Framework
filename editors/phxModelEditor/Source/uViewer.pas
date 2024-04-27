@@ -5,7 +5,7 @@ interface
 uses
   Messages, SysUtils, Variants, Classes,
   Graphics, Controls, Forms, Dialogs,
-
+  phxDevice,
   phxTypes,
   phxMath,
   phxClasses,

@@ -9,7 +9,7 @@ interface
 
 uses
   phxColorEditor, phxFontEx, phxGraphicsEx, phxTextureDialog, phxImageDialog, 
-  phxEditor, phxDraw, LazarusPackageIntf;
+  phxEditor, phxDraw, dglOpenGL, LazarusPackageIntf;
 
 implementation
 

@@ -1,46 +1,35 @@
 object FrmPatternSearch: TFrmPatternSearch
   Left = 0
+  Height = 150
   Top = 0
+  Width = 282
   BorderStyle = bsSizeToolWin
   Caption = 'Pattern Search'
   ClientHeight = 150
   ClientWidth = 282
-  Color = clBtnFace
-  Font.Charset = DEFAULT_CHARSET
-  Font.Color = clWindowText
-  Font.Height = -11
-  Font.Name = 'Tahoma'
-  Font.Style = []
-  OldCreateOrder = False
   Position = poMainFormCenter
-  DesignSize = (
-    282
-    150)
-  PixelsPerInch = 96
-  TextHeight = 13
+  LCLVersion = '3.2.0.0'
   object edSearch: TEdit
     Left = 8
+    Height = 28
     Top = 8
     Width = 266
-    Height = 21
-    Anchors = [akLeft, akTop, akRight]
+    Anchors = [akTop, akLeft, akRight]
     TabOrder = 0
     OnChange = edSearchChange
     OnKeyDown = edSearchKeyDown
-    ExplicitWidth = 455
   end
   object lwPatterns: TListBox
     Left = 8
+    Height = 107
     Top = 35
     Width = 266
-    Height = 107
-    Anchors = [akLeft, akTop, akRight, akBottom]
-    ItemHeight = 13
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    ItemHeight = 0
     TabOrder = 1
+    TopIndex = -1
     OnClick = lwPatternsClick
     OnDblClick = lwPatternsDblClick
     OnKeyUp = lwPatternsKeyUp
-    ExplicitWidth = 455
-    ExplicitHeight = 170
   end
 end

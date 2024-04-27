@@ -5,20 +5,24 @@ unit uImage.New.Packer;
 interface
 
 uses
-  Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, ComCtrls, StdCtrls, ImgList, ExtCtrls, ToolWin, Menus,
-
- // Generics.Defaults,
-  //Generics.Collections,
- // Generics.Helpers,
-
-  Codebot.Collections,
-  Codebot.System,
+  SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, ComCtrls, StdCtrls, ImgList, ExtCtrls, Menus,
+  Generics.Defaults,
+  Generics.Collections,
+  Generics.Helpers,
   Spin,
-
   phxDevice,
+
+
+   phxImage,
+  phxImageEx,
+
+
+
   phxGraphics,
   phxGraphicsEx,
+
+
   phxTypes, ActnList;
 
 type
@@ -35,6 +39,7 @@ TPHXPackerItem = class
     Height: Integer;
     // The image
     Image: TPHXBitmap;
+    Picture: TPicture;
     // True if the bitmap was added to the target
     Placed: Boolean;
     // The position of the bitmap in the packed image
@@ -50,9 +55,17 @@ public
   function Compare(const Left, Right: TPHXPackerItem): Integer;
 end;
 }
+TPHXPackerWidthComparer = class(TComparer<TPHXPackerItem>)
+public
+  function Compare(const Left, Right: TPHXPackerItem): Integer;
+end;
 
 //------------------------------------------------------------------------------
+
+{ TfrmPacker }
+
 TfrmPacker = class(TForm)
+    Image1: TImage;
     ImageList1: TImageList;
     OpenImageDialog: TOpenDialog;
     ImageList2: TImageList;
@@ -66,8 +79,6 @@ TfrmPacker = class(TForm)
     N1: TMenuItem;
     actImageClear1: TMenuItem;
     PanelClient: TPanel;
-    ScrollBox1: TScrollBox;
-    PaintBox1: TPaintBox;
     PanelLeft: TPanel;
     GroupBox2: TGroupBox;
     Label1: TLabel;
@@ -96,18 +107,13 @@ TfrmPacker = class(TForm)
   private   { #todo : https://forum.lazarus.freepascal.org/index.php?topic=42920.0 }
      //procedure DropFiles(var msg : TWMDropFiles) ; message WM_DROPFILES;
   private
-   FBuffer     : TBitmap;
+    FBuffer     : TBitmap;
     FTransparent: TBitmap;
     FItems      : TObjectList<TPHXPackerItem>;
-
     FImage: TPHXBitmap;
 
     procedure AddImage(const FileName: String);
-
-
     procedure DetermineSize(out AWidth: Integer; out AHeight: Integer);
-
-
     procedure lwImagesUpdate;
     procedure DrawPattern(Dest: TCanvas; Index: Cardinal);
   public
@@ -166,7 +172,8 @@ constructor TPHXPackerItem.Create(const FileName: String);
 begin
   Image:= TPHXBitmap.Create;
   Image.LoadBitmap(FileName);
-
+  Picture := TPicture.Create;
+  Picture.LoadFromFile(FileName);
   Name      := ChangeFileExt(ExtractFileName(FileName), '');
   Path      := ExtractFilePath(FileName);
   Width     := Image.Width;
@@ -181,6 +188,14 @@ destructor TPHXPackerItem.Destroy;
 begin
   Image.Free;
   inherited;
+end;
+
+{ TPHXPackerWidthComparer }
+
+function TPHXPackerWidthComparer.Compare(const Left, Right: TPHXPackerItem
+  ): Integer;
+begin
+  Result:= Right.Width - Left.Width;
 end;
 
 // TPHXPackerWidthComparer
@@ -221,10 +236,15 @@ begin
 
   FItems      := TObjectList<TPHXPackerItem>.Create(True);
   FImage      := TPHXBitmap.Create;
+
   FBuffer     := TBitmap.Create;
   FTransparent:= CreateTransparentImage(4);
 
-  ScrollBox1.DoubleBuffered:= True;
+//  FBuffer    := TBitmap.Create;
+//  FBackground:= TBitmap.CreateBackground(4);
+
+
+  //ScrollBox1.DoubleBuffered:= True;
 
   btnOk.Enabled:= False;
 end;
@@ -254,7 +274,6 @@ procedure TfrmPacker.AddImage(const FileName: String);
 var Item: TPHXPackerItem;
 begin
   Item:= TPHXPackerItem.Create(FileName);
-
   Items.Add(Item);
 end;
 
@@ -315,8 +334,8 @@ begin
      Pen.Style  := psSolid;
      Rectangle(rPattern.Left, rPattern.Top, rPattern.Right, rPattern.Bottom);
 
-     Pen.Color  := clBlack;
-     Pen.Width  := 1;
+     Pen.Color  := clRED;
+     Pen.Width  := 2;
      Pen.Style  := psDot;
      Rectangle(rPattern.Left, rPattern.Top, rPattern.Right, rPattern.Bottom);
   end;
@@ -325,14 +344,17 @@ end;
 //------------------------------------------------------------------------------
 procedure TfrmPacker.PaintBox1Paint(Sender: TObject);
 begin
-  PaintBox1.Width:= FBuffer.Width;
-  PaintBox1.Height:= FBuffer.Height;
+//  PaintBox1.Width:= FBuffer.Width;
+ // PaintBox1.Height:= FBuffer.Height;
+  //FImage.Draw(FBuffer);
+ // PaintBox1.Canvas.Draw(0, 0, FBuffer);
 
-  PaintBox1.Canvas.Draw(0, 0, FBuffer);
+  //StretchDraw(Rect, FBuffer);
+
 
   if btnOk.Enabled and (lwImages.SelCount > 0) then
   begin
-    DrawPattern(PaintBox1.Canvas, lwImages.Selected.Index);
+   // DrawPattern(PaintBox1.Canvas, lwImages.Selected.Index);
   end;
 end;
 
@@ -380,9 +402,12 @@ procedure TfrmPacker.lwImagesSelectItem(Sender: TObject; Item: TListItem; Select
 begin
   if (not btnOk.Enabled) and Selected then
   begin
-    Items[Item.Index].Image.Draw(FBuffer, FTransparent);
+   FItems.Items[Item.Index].Image.Draw(FBuffer, FTransparent);
+
   end;
-  ScrollBox1.Invalidate;
+  Image1.Picture := FItems[Item.Index].Picture;
+  //ScrollBox1.Invalidate;
+  Image1.Invalidate;
 end;
 
 
@@ -392,7 +417,6 @@ end;
 procedure TfrmPacker.actImageClearExecute(Sender: TObject);
 begin
   Items.Clear;
-
   lwImagesUpdate;
 end;
 
@@ -449,7 +473,7 @@ var APadding: Integer;
 begin
   Screen.Cursor:= crHourGlass;
   /// FixME
-  Items.Sort({TPHXPackerWidthComparer.Create});
+  Items.Sort(TPHXPackerWidthComparer.Default);
   //Items.Sort(TPHXPackerWidthComparer.Create);
 
   if SameText(cbWidth.Text, '(auto)') or SameText(cbHeight.Text, '(auto)') then
@@ -464,6 +488,7 @@ begin
 
 
   Image.Resize(AWidth, AHeight, pfRGBA);
+  //Image.Resize(AWidth, AHeight, pfRGB);
   Image.Fill(0, 0, 0, 0);
 
   Partition:= TPartition.Create(0, 0, AWidth, AHeight, ePackingMode_BestFitFromNWCorner);
@@ -496,12 +521,13 @@ begin
 
   FBuffer.Canvas.FillRect(FBuffer.Canvas.ClipRect);
 
-  Image.Draw(FBuffer, FTransparent);
-
   lwImagesUpdate;
 
-  ScrollBox1.Invalidate;
-  PaintBox1.Invalidate;
+  Image.Draw(FBuffer, FTransparent);
+
+  Image1.Invalidate;
+  //ScrollBox1.Invalidate;
+  //PaintBox1.Invalidate;
 
   Screen.Cursor:= crDefault;
 

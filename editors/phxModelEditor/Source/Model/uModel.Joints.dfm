@@ -3,10 +3,6 @@ object FrmModelJoints: TFrmModelJoints
   Top = 0
   Width = 250
   Height = 526
-  Padding.Left = 4
-  Padding.Top = 4
-  Padding.Right = 4
-  Padding.Bottom = 4
   TabOrder = 0
   object lwJoints: TListView
     Left = 4
@@ -35,9 +31,6 @@ object FrmModelJoints: TFrmModelJoints
     Align = alTop
     Caption = 'Joint properties'
     TabOrder = 1
-    DesignSize = (
-      242
-      76)
     object Label1: TLabel
       Left = 8
       Top = 21
@@ -77,9 +70,6 @@ object FrmModelJoints: TFrmModelJoints
     Align = alTop
     Caption = 'Rotation'
     TabOrder = 2
-    DesignSize = (
-      242
-      107)
     object Label6: TLabel
       Left = 8
       Top = 21
@@ -106,7 +96,6 @@ object FrmModelJoints: TFrmModelJoints
       Top = 18
       Width = 167
       Height = 21
-      ValueType = vtFloat
       Anchors = [akLeft, akTop, akRight]
       TabOrder = 0
     end
@@ -115,7 +104,6 @@ object FrmModelJoints: TFrmModelJoints
       Top = 45
       Width = 167
       Height = 21
-      ValueType = vtFloat
       Anchors = [akLeft, akTop, akRight]
       TabOrder = 1
     end
@@ -124,7 +112,6 @@ object FrmModelJoints: TFrmModelJoints
       Top = 72
       Width = 167
       Height = 21
-      ValueType = vtFloat
       Anchors = [akLeft, akTop, akRight]
       TabOrder = 2
     end
@@ -137,9 +124,6 @@ object FrmModelJoints: TFrmModelJoints
     Align = alTop
     Caption = 'Position'
     TabOrder = 3
-    DesignSize = (
-      242
-      101)
     object Label3: TLabel
       Left = 8
       Top = 21
@@ -166,7 +150,6 @@ object FrmModelJoints: TFrmModelJoints
       Top = 18
       Width = 167
       Height = 21
-      ValueType = vtFloat
       Anchors = [akLeft, akTop, akRight]
       TabOrder = 0
     end
@@ -175,7 +158,6 @@ object FrmModelJoints: TFrmModelJoints
       Top = 45
       Width = 167
       Height = 21
-      ValueType = vtFloat
       Anchors = [akLeft, akTop, akRight]
       TabOrder = 1
     end
@@ -184,7 +166,6 @@ object FrmModelJoints: TFrmModelJoints
       Top = 72
       Width = 167
       Height = 21
-      ValueType = vtFloat
       Anchors = [akLeft, akTop, akRight]
       TabOrder = 2
     end

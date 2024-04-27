@@ -51,7 +51,9 @@
       <Unit>
         <Filename Value="Source/Model/uModel.Properties.pas"/>
         <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmModelProperties"/>
         <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
       </Unit>
       <Unit>
         <Filename Value="Source/Model/uModel.Groups.pas"/>
@@ -61,12 +63,16 @@
       <Unit>
         <Filename Value="Source/Model/uModel.Joints.pas"/>
         <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmModelJoints"/>
         <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
       </Unit>
       <Unit>
         <Filename Value="Source/Model/uModel.Tags.pas"/>
         <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmModelTags"/>
         <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
       </Unit>
       <Unit>
         <Filename Value="Source/uTextures.pas"/>
@@ -100,7 +106,9 @@
       <Unit>
         <Filename Value="Source/Model/uModel.Material.pas"/>
         <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmModelMaterial"/>
         <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
       </Unit>
       <Unit>
         <Filename Value="Source/Tools/uTextureMapper.pas"/>
@@ -143,13 +151,13 @@
   <CompilerOptions>
     <Version Value="11"/>
     <SearchPaths>
-      <IncludeFiles Value="Source;Source/Model;Source/Formats;Source/Tools;Source/Dialogs"/>
-      <OtherUnitFiles Value="Source;Source/Model;Source/Formats;Source/Tools;Source/Dialogs"/>
+      <IncludeFiles Value="Source;Source/Model;Source/Formats;Source/Tools;Source/Dialogs;$(ProjOutDir)"/>
+      <OtherUnitFiles Value="../_Library;Source;Source/Model;Source/Formats;Source/Tools;Source/Dialogs"/>
       <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
     <Parsing>
       <SyntaxOptions>
-        <SyntaxMode Value="delphi"/>
+        <SyntaxMode Value="Delphi"/>
       </SyntaxOptions>
     </Parsing>
     <Linking>

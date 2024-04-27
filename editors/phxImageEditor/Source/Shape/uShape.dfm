@@ -1,10 +1,10 @@
 object FrmShapeEditor: TFrmShapeEditor
   Left = 289
-  Height = 494
+  Height = 470
   Top = 160
   Width = 784
   Caption = 'Shape editor'
-  ClientHeight = 494
+  ClientHeight = 470
   ClientWidth = 784
   Color = clBtnFace
   Font.Color = clWindowText
@@ -16,25 +16,25 @@ object FrmShapeEditor: TFrmShapeEditor
   LCLVersion = '3.2.0.0'
   object Splitter1: TSplitter
     Left = 214
-    Height = 476
+    Height = 452
     Top = 0
     Width = 4
   end
   object PanelLeft: TPanel
     Left = 0
-    Height = 476
+    Height = 452
     Top = 0
     Width = 214
     Align = alLeft
     BevelOuter = bvNone
-    ClientHeight = 476
+    ClientHeight = 452
     ClientWidth = 214
     ParentBackground = False
     ParentColor = False
     TabOrder = 0
     object GroupProperties: TGroupBox
       Left = 4
-      Height = 195
+      Height = 171
       Top = 277
       Width = 206
       Align = alClient
@@ -183,7 +183,7 @@ object FrmShapeEditor: TFrmShapeEditor
   object StatusBar1: TStatusBar
     Left = 0
     Height = 18
-    Top = 476
+    Top = 452
     Width = 784
     Panels = <    
       item
@@ -198,12 +198,12 @@ object FrmShapeEditor: TFrmShapeEditor
   end
   object PanelClient: TPanel
     Left = 218
-    Height = 476
+    Height = 452
     Top = 0
     Width = 566
     Align = alClient
     BevelOuter = bvNone
-    ClientHeight = 476
+    ClientHeight = 452
     ClientWidth = 566
     ParentBackground = False
     TabOrder = 2
@@ -262,7 +262,7 @@ object FrmShapeEditor: TFrmShapeEditor
     end
     object PanelEditor: TPanel
       Left = 0
-      Height = 452
+      Height = 428
       Top = 24
       Width = 566
       Align = alClient

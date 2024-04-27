@@ -6,6 +6,7 @@
     <CompilerOptions>
       <Version Value="11"/>
       <SearchPaths>
+        <OtherUnitFiles Value="../../source/headers"/>
         <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
       </SearchPaths>
     </CompilerOptions>
@@ -41,6 +42,10 @@
         <Filename Value="phxDraw.pas"/>
         <HasRegisterProc Value="True"/>
         <UnitName Value="phxDraw"/>
+      </Item>
+      <Item>
+        <Filename Value="../../source/headers/dglOpenGL.pas"/>
+        <UnitName Value="dglOpenGL"/>
       </Item>
     </Files>
     <RequiredPkgs>

@@ -89,7 +89,9 @@
       <Unit>
         <Filename Value="Source/Image/uImage.New.Packer.pas"/>
         <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmPacker"/>
         <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
       </Unit>
       <Unit>
         <Filename Value="Source/Tools/Partitions.pas"/>
@@ -240,7 +242,7 @@
     <Version Value="11"/>
     <SearchPaths>
       <IncludeFiles Value="../_Library;Source;Source/Image;Source/Pattern;Source/Tools;Source/Tag;Source/Tile;Source/Shape;$(ProjOutDir)"/>
-      <OtherUnitFiles Value="../_Library;../_Library/codebot;Source;Source/Image;Source/Pattern;Source/Tools;Source/Tag;Source/Tile;Source/Shape"/>
+      <OtherUnitFiles Value="../_Library;Source;Source/Image;Source/Pattern;Source/Tools;Source/Tag;Source/Tile;Source/Shape"/>
       <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
     <Parsing>

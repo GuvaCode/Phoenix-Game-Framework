@@ -497,7 +497,7 @@ begin
   GetPixel:= GetPixelFormatGetter(Bitmap.Format);
 
   {$IFDEF LINUX}
-  Dest.PixelFormat := pf24bit;
+  Dest.PixelFormat := pf32bit;
   {$ELSE}
   Dest.PixelFormat := pf32bit;
   {$ENDIF}

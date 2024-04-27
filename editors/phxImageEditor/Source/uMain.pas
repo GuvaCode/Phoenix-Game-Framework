@@ -5,19 +5,14 @@ interface
 uses
   SysUtils, Variants, Classes, Graphics,
   Controls, Forms, Dialogs, Menus, ComCtrls, ExtCtrls,
-
   phxTypes,
   phxMath,
   phxImage,
-
   uActions,
   uEditor,
   uTools,
-
   uImage.Properties,
-
   uPattern.List,
-
   uTag.Actions,
   uTag.List;
 

@@ -1,14 +1,14 @@
 unit phxDraw;
-
+ {$Mode Delphi}
 interface
 
 uses
   SysUtils, Classes, Controls, Messages, Graphics, LCLIntf, LCLType,
 
-  //dglOpenGl,
- // GLU,GL,
+  dglOpenGl,
+  GLU,GL,
   phxOpenGL,
-
+  generics.Collections,
   phxEvents,
   phxDevice,
   phxCanvas,
@@ -191,18 +191,21 @@ implementation
 function ConvertShiftState(Shift: TShiftState): TPHXShiftStates;
 begin
   Result:= [];
+  // Fix Me
+
   if Classes.ssCtrl in Shift then
   begin
-    Result:= Result + [phxEvents.ssCtrl];
+    Result:= Result + [phxTypes.ssCtrl];
   end;
   if Classes.ssAlt in Shift then
   begin
-    Result:= Result + [phxEvents.ssAlt];
+    Result:= Result + [phxTypes.ssAlt];
   end;
   if Classes.ssShift in Shift then
   begin
-    Result:= Result + [phxEvents.ssShift];
+    Result:= Result + [phxTypes.ssShift];
   end;
+
 end;
 
 (*
@@ -275,65 +278,65 @@ function ConvertVirtualKey(Const Key: Word): Integer;
 begin
   Result:= Key;
   case Key of
-    Windows.VK_ESCAPE        : Result:= phxEvents.VK_ESC          ;
-    Windows.VK_F1            : Result:= phxEvents.VK_F1           ;
-    Windows.VK_F2            : Result:= phxEvents.VK_F2           ;
-    Windows.VK_F3            : Result:= phxEvents.VK_F3           ;
-    Windows.VK_F4            : Result:= phxEvents.VK_F4           ;
-    Windows.VK_F5            : Result:= phxEvents.VK_F5           ;
-    Windows.VK_F6            : Result:= phxEvents.VK_F6           ;
-    Windows.VK_F7            : Result:= phxEvents.VK_F7           ;
-    Windows.VK_F8            : Result:= phxEvents.VK_F8           ;
-    Windows.VK_F9            : Result:= phxEvents.VK_F9           ;
-    Windows.VK_F10           : Result:= phxEvents.VK_F10          ;
-    Windows.VK_F11           : Result:= phxEvents.VK_F11          ;
-    Windows.VK_F12           : Result:= phxEvents.VK_F12          ;
-    Windows.VK_F13           : Result:= phxEvents.VK_F13          ;
-    Windows.VK_F14           : Result:= phxEvents.VK_F14          ;
-    Windows.VK_F15           : Result:= phxEvents.VK_F15          ;
-    Windows.VK_F16           : Result:= phxEvents.VK_F16          ;
-    Windows.VK_F17           : Result:= phxEvents.VK_F17          ;
-    Windows.VK_F18           : Result:= phxEvents.VK_F18          ;
-    Windows.VK_F19           : Result:= phxEvents.VK_F19          ;
-    Windows.VK_F20           : Result:= phxEvents.VK_F20          ;
-    Windows.VK_F21           : Result:= phxEvents.VK_F21          ;
-    Windows.VK_F22           : Result:= phxEvents.VK_F22          ;
-    Windows.VK_F23           : Result:= phxEvents.VK_F23          ;
-    Windows.VK_F24           : Result:= phxEvents.VK_F24          ;
+    LCLType.VK_ESCAPE        : Result:= Integer(VK_ESC);
+    LCLType.VK_F1            : Result:= Integer(VK_F1);
+    LCLType.VK_F2            : Result:= Integer(VK_F2);
+    LCLType.VK_F3            : Result:= Integer(VK_F3)           ;
+    LCLType.VK_F4            : Result:= Integer(VK_F4)           ;
+    LCLType.VK_F5            : Result:= Integer(VK_F5)           ;
+    LCLType.VK_F6            : Result:= Integer(VK_F6)           ;
+    LCLType.VK_F7            : Result:= Integer(phxTypes.VK_F7)           ;
+    LCLType.VK_F8            : Result:= Integer(phxTypes.VK_F8)           ;
+    LCLType.VK_F9            : Result:= Integer(phxTypes.VK_F9)           ;
+    LCLType.VK_F10           : Result:= Integer(phxTypes.VK_F10)          ;
+    LCLType.VK_F11           : Result:= Integer(phxTypes.VK_F11)          ;
+    LCLType.VK_F12           : Result:= Integer(phxTypes.VK_F12)          ;
+    LCLType.VK_F13           : Result:= Integer(phxTypes.VK_F13)          ;
+    LCLType.VK_F14           : Result:= Integer(phxTypes.VK_F14)          ;
+    LCLType.VK_F15           : Result:= Integer(phxTypes.VK_F15)          ;
+    LCLType.VK_F16           : Result:= Integer(phxTypes.VK_F16)          ;
+    LCLType.VK_F17           : Result:= Integer(phxTypes.VK_F17)          ;
+    LCLType.VK_F18           : Result:= Integer(phxTypes.VK_F18)          ;
+    LCLType.VK_F19           : Result:= Integer(phxTypes.VK_F19)          ;
+    LCLType.VK_F20           : Result:= Integer(phxTypes.VK_F20)          ;
+    LCLType.VK_F21           : Result:= Integer(phxTypes.VK_F21)          ;
+    LCLType.VK_F22           : Result:= Integer(phxTypes.VK_F22)          ;
+    LCLType.VK_F23           : Result:= Integer(phxTypes.VK_F23)          ;
+    LCLType.VK_F24           : Result:= Integer(phxTypes.VK_F24)          ;
 //    Windows.VK_F25           : Result:= phxEvents.VK_F25          ;
-    Windows.VK_UP            : Result:= phxEvents.VK_UP           ;
-    Windows.VK_DOWN          : Result:= phxEvents.VK_DOWN         ;
-    Windows.VK_LEFT          : Result:= phxEvents.VK_LEFT         ;
-    Windows.VK_RIGHT         : Result:= phxEvents.VK_RIGHT        ;
-    Windows.VK_LSHIFT        : Result:= phxEvents.VK_LSHIFT       ;
-    Windows.VK_RSHIFT        : Result:= phxEvents.VK_RSHIFT       ;
-    Windows.VK_LCONTROL      : Result:= phxEvents.VK_LCTRL        ;
-    Windows.VK_RCONTROL      : Result:= phxEvents.VK_RCTRL        ;
+    LCLType.VK_UP            : Result:= Integer(phxTypes.VK_UP)           ;
+    LCLType.VK_DOWN          : Result:= Integer(phxTypes.VK_DOWN)         ;
+    LCLType.VK_LEFT          : Result:= Integer(phxTypes.VK_LEFT)         ;
+    LCLType.VK_RIGHT         : Result:= Integer(phxTypes.VK_RIGHT)        ;
+    LCLType.VK_LSHIFT        : Result:= Integer(phxTypes.VK_LSHIFT)       ;
+    LCLType.VK_RSHIFT        : Result:= Integer(phxTypes.VK_RSHIFT)       ;
+    LCLType.VK_LCONTROL      : Result:= Integer(phxTypes.VK_LCTRL)        ;
+    LCLType.VK_RCONTROL      : Result:= Integer(phxTypes.VK_RCTRL)        ;
 //    Windows.VK_LALT          : Result:= phxEvents.VK_LALT         ;
 //    Windows.VK_RALT          : Result:= phxEvents.VK_RALT         ;
-    Windows.VK_TAB           : Result:= phxEvents.VK_TAB          ;
-    Windows.VK_RETURN        : Result:= phxEvents.VK_RETURN       ;
-    Windows.VK_BACK          : Result:= phxEvents.VK_BACKSPACE    ;
-    Windows.VK_INSERT        : Result:= phxEvents.VK_INSERT       ;
-    Windows.VK_DELETE        : Result:= phxEvents.VK_DEL          ;
+    LCLType.VK_TAB           : Result:= Integer(phxTypes.VK_TAB)          ;
+    LCLType.VK_RETURN        : Result:= Integer(phxTypes.VK_RETURN)       ;
+    LCLType.VK_BACK          : Result:= Integer(phxTypes.VK_BACKSPACE)    ;
+    LCLType.VK_INSERT        : Result:= Integer(phxTypes.VK_INSERT)       ;
+    LCLType.VK_DELETE        : Result:= Integer(phxTypes.VK_DEL)          ;
    // Windows.VK_PAGEUP        : Result:= phxEvents.VK_PAGEUP       ;
   //  Windows.VK_PAGEDOWN      : Result:= phxEvents.VK_PAGEDOWN     ;
-    Windows.VK_HOME          : Result:= phxEvents.VK_HOME         ;
-    Windows.VK_END           : Result:= phxEvents.VK_END          ;
-    Windows.VK_NUMPAD0         : Result:= phxEvents.VK_NUM_0        ;
-    Windows.VK_NUMPAD1         : Result:= phxEvents.VK_NUM_1        ;
-    Windows.VK_NUMPAD2         : Result:= phxEvents.VK_NUM_2        ;
-    Windows.VK_NUMPAD3         : Result:= phxEvents.VK_NUM_3        ;
-    Windows.VK_NUMPAD4         : Result:= phxEvents.VK_NUM_4        ;
-    Windows.VK_NUMPAD5         : Result:= phxEvents.VK_NUM_5        ;
-    Windows.VK_NUMPAD6         : Result:= phxEvents.VK_NUM_6        ;
-    Windows.VK_NUMPAD7         : Result:= phxEvents.VK_NUM_7        ;
-    Windows.VK_NUMPAD8         : Result:= phxEvents.VK_NUM_8        ;
-    Windows.VK_NUMPAD9         : Result:= phxEvents.VK_NUM_9        ;
-    Windows.VK_ADD             : Result:= phxEvents.VK_NUM_ADD   ;
-    Windows.VK_MULTIPLY         : Result:= phxEvents.VK_NUM_MULTIPLY ;
-    Windows.VK_SUBTRACT         : Result:= phxEvents.VK_NUM_SUBTRACT ;
-    Windows.VK_DIVIDE         : Result:= phxEvents.VK_NUM_DIVIDE  ;
+    LCLType.VK_HOME          : Result:= Integer(phxTypes.VK_HOME)         ;
+    LCLType.VK_END           : Result:= Integer(phxTypes.VK_END)          ;
+    LCLType.VK_NUMPAD0         : Result:= Integer(phxTypes.VK_NUM_0)        ;
+    LCLType.VK_NUMPAD1         : Result:= Integer(phxTypes.VK_NUM_1)        ;
+    LCLType.VK_NUMPAD2         : Result:= Integer(phxTypes.VK_NUM_2)        ;
+    LCLType.VK_NUMPAD3         : Result:= Integer(phxTypes.VK_NUM_3)        ;
+    LCLType.VK_NUMPAD4         : Result:= Integer(phxTypes.VK_NUM_4)        ;
+    LCLType.VK_NUMPAD5         : Result:= Integer(phxTypes.VK_NUM_5)        ;
+    LCLType.VK_NUMPAD6         : Result:= Integer(phxTypes.VK_NUM_6)        ;
+    LCLType.VK_NUMPAD7         : Result:= Integer(phxTypes.VK_NUM_7)        ;
+    LCLType.VK_NUMPAD8         : Result:= Integer(phxTypes.VK_NUM_8)        ;
+    LCLType.VK_NUMPAD9         : Result:= Integer(phxTypes.VK_NUM_9)        ;
+    LCLType.VK_ADD             : Result:= Integer(phxTypes.VK_NUM_ADD)   ;
+    LCLType.VK_MULTIPLY         : Result:= Integer(phxTypes.VK_NUM_MULTIPLY) ;
+    LCLType.VK_SUBTRACT         : Result:= Integer(phxTypes.VK_NUM_SUBTRACT) ;
+    LCLType.VK_DIVIDE         : Result:= Integer(phxTypes.VK_NUM_DIVIDE)  ;
 //    Windows.VK_ret     : Result:= phxEvents.VK_NUM_EQUAL    ;
 //    Windows.VK_NUMPAD_ENTER     : Result:= phxEvents.VK_NUM_ENTER    ;
  end;
@@ -347,9 +350,10 @@ begin
   Event.Mouse.X:= X;
   Event.Mouse.Y:= Y;
   Event.Mouse.Shift:= ConvertShiftState(Shift);
-  Event.Mouse.Button:= Integer(Button);
+  Event.Mouse.Button := TPHXMouseButton(Integer(Button));
 
-  Events.Push(Event);
+
+ // Event.Push(Event);
 end;
 
 //------------------------------------------------------------------------------
@@ -360,9 +364,9 @@ begin
   Event.Mouse.X:= X;
   Event.Mouse.Y:= Y;
   Event.Mouse.Shift:= ConvertShiftState(Shift);
-  Event.Mouse.Button:= 0;
+  Event.Mouse.Button:= TPHXMouseButton(0);
 
-  Events.Push(Event);
+  // Events.Push(Event);
 end;
 
 //------------------------------------------------------------------------------
@@ -373,9 +377,9 @@ begin
   Event.Mouse.X:= X;
   Event.Mouse.Y:= Y;
   Event.Mouse.Shift:= ConvertShiftState(Shift);
-  Event.Mouse.Button:= Integer(Button);
+  Event.Mouse.Button:= TPHXMouseButton(Integer(Button));
 
-  Events.Push(Event);
+  //Events.Push(Event);
 end;
 
 //------------------------------------------------------------------------------
@@ -383,21 +387,21 @@ class procedure TPHXDrawEvents.KeyDown(Sender: TObject; var Key: Word; Shift: TS
 var Event: TPHXEvent;
 begin
   Event.Keyboard.Event:= PHX_KEY_PRESSED;
-  Event.Keyboard.Key  := ConvertVirtualKey(Key);
+  Event.Keyboard.Key  := TPHXVirtualKey(ConvertVirtualKey(Key));
   Event.Keyboard.Shift:= ConvertShiftState(Shift);
 
-  Events.Push(Event);
+  //Events.Push(Event);
 end;
 
 //------------------------------------------------------------------------------
 class procedure TPHXDrawEvents.KeyPress(Sender: TObject; var Key: Char);
 var Event: TPHXEvent;
 begin
-  Event.Keyboard.Event:= PHX_KEY_TEXT;
-  Event.Keyboard.Key  := Ord(Key);
+  Event.Keyboard.Event:= PHX_KEY_CHARACTER;
+  Event.Keyboard.Key  := TPHXVirtualKey(Ord(Key));
   Event.Keyboard.Shift:= [];
 
-  Events.Push(Event);
+  //Events.Push(Event);
 end;
 
 //------------------------------------------------------------------------------
@@ -405,10 +409,10 @@ class procedure TPHXDrawEvents.KeyUp(Sender: TObject; var Key: Word; Shift: TShi
 var Event: TPHXEvent;
 begin
   Event.Keyboard.Event:= PHX_KEY_RELEASED;
-  Event.Keyboard.Key  := ConvertVirtualKey(Key);
+  Event.Keyboard.Key  := TPHXVirtualKey(ConvertVirtualKey(Key));
   Event.Keyboard.Shift:= ConvertShiftState(Shift);
 
-  Events.Push(Event);
+  //Events.Push(Event);
 end;
 
 //------------------------------------------------------------------------------
@@ -428,7 +432,7 @@ begin
     Event.Device.Height:= TControl(Sender).Height;
   end;
 
-  Events.Push(Event);
+  //Events.Push(Event);
 end;
 
 
@@ -454,11 +458,11 @@ begin
 end;
 
 //------------------------------------------------------------------------------
-function TPHXDrawProvider.CreateRenderer(Device: TPHXDevice): IPHXDevice;
+{function TPHXDrawProvider.CreateRenderer(Device: TPHXDevice): IPHXDevice;
 begin
   Result:= FRenderer;
 end;
-
+ }
 //------------------------------------------------------------------------------
 function TPHXDrawProvider.GetName: String;
 begin
@@ -469,7 +473,7 @@ function TPHXDrawProvider.GetTarget: TPHXProviderTarget;
 begin
   Result:=inherited GetTarget;
 end;
-
+{
 //------------------------------------------------------------------------------
 function TPHXDrawProvider.GetRenderer: String;
 begin
@@ -486,7 +490,7 @@ end;
 function TPHXDrawProvider.GetVersion: String;
 begin
 
-end;
+end;    }
 {$ENDREGION}
 
 {$REGION 'TPHXDrawRenderer'}
@@ -497,9 +501,9 @@ constructor TPHXDrawRenderer.Create(Owner: TPHXDraw);
 begin
   FOwner:= Owner;
 
-  MatProjection:= Matrix_Identity;
-  MatWorld     := Matrix_Identity;;
-  MatView      := Matrix_Identity;;
+//  MatProjection:= Matrix_Identity;
+//  MatWorld     := Matrix_Identity;;
+//  MatView      := Matrix_Identity;;
 end;
 
 //-----------------------------------------------------------------------------
@@ -511,7 +515,7 @@ end;
 //------------------------------------------------------------------------------
 procedure TPHXDrawRenderer.Initialize(const Parameters: TPHXDeviceParameters);
 begin
-  if RC <> 0 then Finalize;
+  if RC <> nil then Finalize;
 
   // Get the device context
   FDC := GetDC(Owner.Handle);
@@ -521,11 +525,11 @@ begin
 //  FRenderer.DeviceContext:= FDC;
 
   // Create the rendering context
-  FRC := CreateRenderingContext(FDC, [opDoubleBuffered], 32, 16, 16, 0, 0,0);
+ // fix me FRC := CreateRenderingContext(FDC, [opDoubleBuffered], 32, 16, 16, 0, 0,0);
 
-  if FRC = 0 then raise Exception.Create('Could not create rendering context!');
+  if FRC = nil then raise Exception.Create('Could not create rendering context!');
   // Activate the rendering context
-  ActivateRenderingContext(DC, RC);
+ // fixme ActivateRenderingContext(DC, RC);
 
 //  Device.Init('TPHXDraw', 100, 100);
 
@@ -537,18 +541,17 @@ end;
 //-----------------------------------------------------------------------------
 procedure TPHXDrawRenderer.Finalize;
 begin
-  wglMakeCurrent(0,0);
+ { Fixxxxx me }
+ //wglMakeCurrent(0,0);
 
-  if FRC <> 0 then DestroyRenderingContext(FRC);
+ // if FRC <> 0 then DestroyRenderingContext(FRC);
 
-  FRC:=0;
+  FRC:= nil;
+
 end;
 
 //-----------------------------------------------------------------------------
-procedure TPHXDrawRenderer.Reinitialize(const Mode: TPHXDisplayMode);
-begin
-//  TPHXEventFactory.DeviceReset(Mode.Width, Mode.Height) ;
-end;
+
 
 procedure TPHXDrawRenderer.Reinitialize(const Parameters: TPHXDeviceParameters);
 begin
@@ -569,7 +572,7 @@ begin
 end;
 
 //-----------------------------------------------------------------------------
-procedure TPHXDrawRenderer.Clear(const Color: TColor4f);
+{procedure TPHXDrawRenderer.Clear(const Color: TColor4f);
 begin
   if not Assigned(glClear) then Exit;
 
@@ -577,13 +580,13 @@ begin
 
   glClear( GL_COLOR_BUFFER_BIT or GL_DEPTH_BUFFER_BIT);
 end;
-
+ }
 //-----------------------------------------------------------------------------
 procedure TPHXDrawRenderer.Flip;
 begin
   glFlush();
   // Display the scene
-  SwapBuffers(DC);
+  //fix me SwapBuffers(DC);
 end;
 
 
@@ -622,7 +625,7 @@ begin
   begin
     Initialized:= True;
 
-    Device.Init('', Width, Height);
+    Device.Initialize('', Width, Height);
   end;
 
 end;
@@ -630,7 +633,7 @@ end;
 //------------------------------------------------------------------------------
 procedure TPHXDraw.MakeCurrent;
 begin
-  ActivateRenderingContext(DC, RC);
+ // fixme ActivateRenderingContext(DC, RC);
 
   SetBounds(Left, Top, Width, Height);
 end;
@@ -652,7 +655,7 @@ begin
     Event.Device.Width:= Width;
     Event.Device.Height:= Height;
 
-    phxEvents.Events.Push(Event);
+    //phxEvents.Events.Push(Event);
   end;
 
   IF (ComponentState = []) then
@@ -763,9 +766,9 @@ var Matrix: TMatrix4f;
 begin
   if GetOpenGLAvailable then
   begin
-    Matrix:= Matrix_LoadOrthographic(0, AWidth, AHeight, 0, -1000, 1000);
+   /// fixme Matrix:= Matrix_LoadOrthographic(0, AWidth, AHeight, 0, -1000, 1000);
 
-    Device.SetProjectionMatrix(Matrix );
+  //fixme  Device.SetProjectionMatrix(Matrix );
 
     Device.SetViewport(0,0, AWidth, AHeight);
   end;
@@ -783,13 +786,13 @@ function TPHXDraw.GetDC: HDC;
 begin
   Result:= Renderer.DC;
 end;
-
+ {
 //------------------------------------------------------------------------------
 function TPHXDraw.GetRC: HGLRC;
 begin
   Result:= Renderer.RC;
 end;
-
+   }
 {$ENDREGION}
 
 end.

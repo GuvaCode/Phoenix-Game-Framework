@@ -4,7 +4,7 @@ interface
 
 uses
   Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, StdCtrls, ComCtrls, Mask,
+  Dialogs, StdCtrls, ComCtrls,  Spin,
 
   uActions,
 

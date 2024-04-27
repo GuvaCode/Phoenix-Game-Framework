@@ -3,10 +3,6 @@ object FrmModelGroups: TFrmModelGroups
   Top = 0
   Width = 334
   Height = 483
-  Padding.Left = 4
-  Padding.Top = 4
-  Padding.Right = 4
-  Padding.Bottom = 4
   TabOrder = 0
   object lwGroups: TListView
     Left = 4
@@ -35,9 +31,6 @@ object FrmModelGroups: TFrmModelGroups
     Align = alTop
     Caption = 'Group properties'
     TabOrder = 1
-    DesignSize = (
-      326
-      103)
     object Label3: TLabel
       Left = 8
       Top = 19

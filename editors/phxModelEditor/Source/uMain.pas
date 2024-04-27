@@ -3,8 +3,8 @@ unit uMain;
 interface
 
 uses
-  Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, ComCtrls, ToolWin, ImgList, Menus, StdCtrls, Types,
+ SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, ComCtrls, ImgList, Menus, Types,
 
   uActions, ExtCtrls,
 

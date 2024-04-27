@@ -7,7 +7,7 @@ uses
   Controls, Forms, Dialogs, StdCtrls,
 
   phxModel,
-  phxGraphics,Mask;
+  phxGraphics;
 
 type
   TFrmDialogTexture = class(TForm)
@@ -61,11 +61,8 @@ procedure TFrmDialogTexture.edTextureNameButtonClick(Sender: TObject);
 var Path: String;
 begin
   Path:= ExtractFilePath(ModActions.Document.FileName);
-
   OpenDialog1.Filter:= GraphicFormats.Filter;
-
   OpenDialog1.InitialDir:= Path;
-
   OpenDialog1.FileName:= edTextureName.Text;
 
   if OpenDialog1.Execute then

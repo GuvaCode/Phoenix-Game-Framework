@@ -3,10 +3,6 @@ object FrmModelTags: TFrmModelTags
   Top = 0
   Width = 250
   Height = 634
-  Padding.Left = 4
-  Padding.Top = 4
-  Padding.Right = 4
-  Padding.Bottom = 4
   TabOrder = 0
   object GroupBox2: TGroupBox
     Left = 4
@@ -16,9 +12,6 @@ object FrmModelTags: TFrmModelTags
     Align = alTop
     Caption = 'Position'
     TabOrder = 0
-    DesignSize = (
-      242
-      195)
     object Label3: TLabel
       Left = 8
       Top = 21
@@ -45,7 +38,6 @@ object FrmModelTags: TFrmModelTags
       Top = 18
       Width = 167
       Height = 21
-      ValueType = vtFloat
       Anchors = [akLeft, akTop, akRight]
       TabOrder = 0
       OnChange = edPositionXChange
@@ -55,7 +47,6 @@ object FrmModelTags: TFrmModelTags
       Top = 45
       Width = 167
       Height = 21
-      ValueType = vtFloat
       Anchors = [akLeft, akTop, akRight]
       TabOrder = 1
       OnChange = edPositionXChange
@@ -65,7 +56,6 @@ object FrmModelTags: TFrmModelTags
       Top = 72
       Width = 167
       Height = 21
-      ValueType = vtFloat
       Anchors = [akLeft, akTop, akRight]
       TabOrder = 2
       OnChange = edPositionXChange
@@ -79,9 +69,6 @@ object FrmModelTags: TFrmModelTags
     Align = alTop
     Caption = 'Tag properties'
     TabOrder = 1
-    DesignSize = (
-      242
-      76)
     object Label1: TLabel
       Left = 8
       Top = 21
@@ -140,9 +127,6 @@ object FrmModelTags: TFrmModelTags
     Align = alTop
     Caption = 'Rotation'
     TabOrder = 3
-    DesignSize = (
-      242
-      107)
     object Label6: TLabel
       Left = 8
       Top = 21
@@ -169,7 +153,6 @@ object FrmModelTags: TFrmModelTags
       Top = 18
       Width = 167
       Height = 21
-      ValueType = vtFloat
       Anchors = [akLeft, akTop, akRight]
       TabOrder = 0
     end
@@ -178,7 +161,6 @@ object FrmModelTags: TFrmModelTags
       Top = 45
       Width = 167
       Height = 21
-      ValueType = vtFloat
       Anchors = [akLeft, akTop, akRight]
       TabOrder = 1
     end
@@ -187,7 +169,6 @@ object FrmModelTags: TFrmModelTags
       Top = 72
       Width = 167
       Height = 21
-      ValueType = vtFloat
       Anchors = [akLeft, akTop, akRight]
       TabOrder = 2
     end

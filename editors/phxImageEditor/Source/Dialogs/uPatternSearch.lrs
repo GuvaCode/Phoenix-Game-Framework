@@ -1,0 +1,15 @@
+{ This is an automatically generated lazarus resource file }
+
+LazarusResources.Add('TFrmPatternSearch','FORMDATA',[
+  'TPF0'#17'TFrmPatternSearch'#16'FrmPatternSearch'#4'Left'#2#0#6'Height'#3#150
+  +#0#3'Top'#2#0#5'Width'#3#26#1#11'BorderStyle'#7#13'bsSizeToolWin'#7'Caption'
+  +#6#14'Pattern Search'#12'ClientHeight'#3#150#0#11'ClientWidth'#3#26#1#8'Posi'
+  +'tion'#7#16'poMainFormCenter'#10'LCLVersion'#6#7'3.2.0.0'#0#5'TEdit'#8'edSea'
+  +'rch'#4'Left'#2#8#6'Height'#2#28#3'Top'#2#8#5'Width'#3#10#1#7'Anchors'#11#5
+  +'akTop'#6'akLeft'#7'akRight'#0#8'TabOrder'#2#0#8'OnChange'#7#14'edSearchChan'
+  +'ge'#9'OnKeyDown'#7#15'edSearchKeyDown'#0#0#8'TListBox'#10'lwPatterns'#4'Lef'
+  +'t'#2#8#6'Height'#2'k'#3'Top'#2'#'#5'Width'#3#10#1#7'Anchors'#11#5'akTop'#6
+  +'akLeft'#7'akRight'#8'akBottom'#0#10'ItemHeight'#2#0#8'TabOrder'#2#1#8'TopIn'
+  +'dex'#2#255#7'OnClick'#7#15'lwPatternsClick'#10'OnDblClick'#7#18'lwPatternsD'
+  +'blClick'#7'OnKeyUp'#7#15'lwPatternsKeyUp'#0#0#0
+]);

@@ -11,16 +11,16 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="23"/>
+        <UsageCount Value="24"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit0>
       <Unit1>
         <Filename Value="main.pas"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="356"/>
+        <TopLine Value="383"/>
         <CursorPos X="22" Y="370"/>
-        <UsageCount Value="23"/>
+        <UsageCount Value="24"/>
         <Loaded Value="True"/>
       </Unit1>
       <Unit2>
@@ -107,7 +107,7 @@
         <Loaded Value="True"/>
       </Unit12>
     </Units>
-    <JumpHistory Count="18" HistoryIndex="17">
+    <JumpHistory Count="17" HistoryIndex="16">
       <Position1>
         <Filename Value="main.pas"/>
         <Caret Line="81" Column="2" TopLine="69"/>
@@ -149,37 +149,33 @@
         <Caret Line="96" Column="44" TopLine="85"/>
       </Position10>
       <Position11>
-        <Filename Value="main.pas"/>
-        <Caret Line="138" Column="41" TopLine="203"/>
+        <Filename Value="../../source/phxFont.pas"/>
+        <Caret Line="476" Column="15" TopLine="465"/>
       </Position11>
       <Position12>
         <Filename Value="../../source/phxFont.pas"/>
-        <Caret Line="476" Column="15" TopLine="465"/>
+        <Caret Line="37" Column="52" TopLine="22"/>
       </Position12>
       <Position13>
-        <Filename Value="../../source/phxFont.pas"/>
-        <Caret Line="37" Column="52" TopLine="22"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="217" Column="90" TopLine="204"/>
       </Position13>
       <Position14>
         <Filename Value="main.pas"/>
-        <Caret Line="217" Column="90" TopLine="204"/>
+        <Caret Line="218" Column="89" TopLine="151"/>
       </Position14>
       <Position15>
         <Filename Value="main.pas"/>
-        <Caret Line="218" Column="89" TopLine="151"/>
+        <Caret Line="43" Column="5" TopLine="30"/>
       </Position15>
       <Position16>
         <Filename Value="main.pas"/>
-        <Caret Line="43" Column="5" TopLine="30"/>
+        <Caret Line="71" Column="21" TopLine="55"/>
       </Position16>
       <Position17>
         <Filename Value="main.pas"/>
-        <Caret Line="71" Column="21" TopLine="55"/>
-      </Position17>
-      <Position18>
-        <Filename Value="main.pas"/>
         <Caret Line="343" Column="38" TopLine="302"/>
-      </Position18>
+      </Position17>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>

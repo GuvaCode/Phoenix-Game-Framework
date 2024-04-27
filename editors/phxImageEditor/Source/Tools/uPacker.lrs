@@ -1,0 +1,118 @@
+{ This is an automatically generated lazarus resource file }
+
+LazarusResources.Add('TfrmPacker','FORMDATA',[
+  'TPF0'#10'TfrmPacker'#9'frmPacker'#4'Left'#3#218#0#6'Height'#3#225#1#3'Top'#2
+  +'s'#5'Width'#3#190#2#7'Caption'#6#14'Texture packer'#12'ClientHeight'#3#225#1
+  +#11'ClientWidth'#3#190#2#5'Color'#7#9'clBtnFace'#10'Font.Color'#7#12'clWindo'
+  +'wText'#11'Font.Height'#2#245#9'Font.Name'#6#6'Tahoma'#8'OnCreate'#7#10'Form'
+  +'Create'#9'OnDestroy'#7#11'FormDestroy'#8'Position'#7#14'poScreenCenter'#10
+  +'LCLVersion'#6#7'3.2.0.0'#0#9'TSplitter'#9'Splitter1'#4'Left'#3#225#0#6'Heig'
+  +'ht'#3#193#1#3'Top'#2#0#5'Width'#2#5#0#0#10'TScrollBox'#10'ScrollBox1'#4'Lef'
+  +'t'#3#230#0#6'Height'#3#193#1#3'Top'#2#0#5'Width'#3#216#1#18'HorzScrollBar.P'
+  +'age'#2'k'#18'VertScrollBar.Page'#2'k'#5'Align'#7#8'alClient'#12'ClientHeigh'
+  +'t'#3#191#1#11'ClientWidth'#3#214#1#16'ParentBackground'#8#8'TabOrder'#2#0#0
+  +#9'TPaintBox'#9'PaintBox1'#4'Left'#2#2#6'Height'#2'i'#3'Top'#2#2#5'Width'#2
+  +'i'#7'OnPaint'#7#14'PaintBox1Paint'#0#0#0#6'TPanel'#6'Panel2'#4'Left'#2#0#6
+  +'Height'#2' '#3'Top'#3#193#1#5'Width'#3#190#2#5'Align'#7#8'alBottom'#10'Beve'
+  +'lOuter'#7#6'bvNone'#12'ClientHeight'#2' '#11'ClientWidth'#3#190#2#16'Parent'
+  +'Background'#8#8'TabOrder'#2#1#0#6'TPanel'#6'Panel1'#4'Left'#3#29#2#6'Height'
+  +#2' '#3'Top'#2#0#5'Width'#3#161#0#5'Align'#7#7'alRight'#10'BevelOuter'#7#6'b'
+  +'vNone'#12'ClientHeight'#2' '#11'ClientWidth'#3#161#0#16'ParentBackground'#8
+  +#8'TabOrder'#2#0#0#7'TButton'#5'btnOk'#4'Left'#2#0#6'Height'#2#25#3'Top'#2#2
+  +#5'Width'#2'K'#7'Caption'#6#2'Ok'#11'ModalResult'#2#1#8'TabOrder'#2#0#0#0#7
+  +'TButton'#7'Button4'#4'Left'#2'Q'#6'Height'#2#25#3'Top'#2#2#5'Width'#2'K'#7
+  +'Caption'#6#6'Cancel'#7'Default'#9#11'ModalResult'#2#2#8'TabOrder'#2#1#0#0#0
+  +#0#6'TPanel'#6'Panel3'#4'Left'#2#0#6'Height'#3#193#1#3'Top'#2#0#5'Width'#3
+  +#225#0#5'Align'#7#6'alLeft'#10'BevelOuter'#7#6'bvNone'#12'ClientHeight'#3#193
+  +#1#11'ClientWidth'#3#225#0#16'ParentBackground'#8#8'TabOrder'#2#2#0#9'TGroup'
+  +'Box'#9'GroupBox2'#4'Left'#2#0#6'Height'#3#153#0#3'Top'#3'('#1#5'Width'#3#225
+  +#0#5'Align'#7#8'alBottom'#7'Caption'#6#15'Packer settings'#12'ClientHeight'#3
+  +#138#0#11'ClientWidth'#3#223#0#16'ParentBackground'#8#8'TabOrder'#2#0#0#6'TL'
+  +'abel'#6'Label1'#4'Left'#2#11#6'Height'#2#14#3'Top'#2','#5'Width'#2'H'#7'Cap'
+  +'tion'#6#12'Image width:'#0#0#6'TLabel'#6'Label2'#4'Left'#2#11#6'Height'#2#14
+  +#3'Top'#2'G'#5'Width'#2'M'#7'Caption'#6#13'Image height:'#0#0#6'TLabel'#6'La'
+  +'bel3'#4'Left'#2#11#6'Height'#2#14#3'Top'#2'a'#5'Width'#2'['#7'Caption'#6#16
+  +'Pattern padding:'#0#0#7'TButton'#7'btnPack'#4'Left'#3#140#0#6'Height'#2#25#3
+  +'Top'#2'y'#5'Width'#2'K'#7'Caption'#6#4'Pack'#8'TabOrder'#2#0#7'OnClick'#7#12
+  +'btnPackClick'#0#0#9'TComboBox'#7'cbWidth'#4'Left'#2'b'#6'Height'#2#27#3'Top'
+  +#2'('#5'Width'#2'y'#10'Font.Color'#7#12'clWindowText'#11'Font.Height'#2#245#9
+  +'Font.Name'#6#13'MS Sans Serif'#10'ItemHeight'#2#0#13'Items.Strings'#1#6#2'3'
+  +'2'#6#2'64'#6#3'128'#6#3'256'#6#3'512'#6#4'1024'#6#4'2048'#6#4'4096'#6#0#0#10
+  +'ParentFont'#8#8'TabOrder'#2#1#4'Text'#6#3'256'#0#0#9'TComboBox'#8'cbHeight'
+  +#4'Left'#2'b'#6'Height'#2#27#3'Top'#2'C'#5'Width'#2'y'#10'Font.Color'#7#12'c'
+  +'lWindowText'#11'Font.Height'#2#245#9'Font.Name'#6#13'MS Sans Serif'#10'Item'
+  +'Height'#2#0#13'Items.Strings'#1#6#2'32'#6#2'64'#6#3'128'#6#3'256'#6#3'512'#6
+  +#4'1024'#6#4'2048'#6#4'4096'#6#0#0#10'ParentFont'#8#8'TabOrder'#2#2#4'Text'#6
+  +#3'256'#0#0#9'TCheckBox'#10'cbAutoSize'#4'Left'#2#11#6'Height'#2#23#3'Top'#2
+  +#17#5'Width'#3#188#0#7'Caption'#6#28'Determine size automatically'#8'TabOrde'
+  +'r'#2#3#7'OnClick'#7#15'cbAutoSizeClick'#0#0#9'TSpinEdit'#9'edPadding'#4'Lef'
+  +'t'#2'b'#6'Height'#2#26#3'Top'#2'^'#5'Width'#2'y'#8'TabOrder'#2#4#0#0#0#9'TG'
+  +'roupBox'#9'GroupBox1'#4'Left'#2#0#6'Height'#3'('#1#3'Top'#2#0#5'Width'#3#225
+  +#0#5'Align'#7#8'alClient'#7'Caption'#6#13'Source images'#12'ClientHeight'#3
+  +#25#1#11'ClientWidth'#3#223#0#16'ParentBackground'#8#8'TabOrder'#2#1#0#9'TLi'
+  +'stView'#8'lwImages'#4'Left'#2#0#6'Height'#3#1#1#3'Top'#2#0#5'Width'#3#223#0
+  +#5'Align'#7#8'alClient'#7'Columns'#14#1#7'Caption'#6#4'Name'#5'Width'#2'd'#0
+  +#1#7'Caption'#6#1'X'#0#1#7'Caption'#6#1'Y'#5'Width'#2':'#0#0#9'PopupMenu'#7
+  +#10'PopupMenu1'#11'SmallImages'#7#10'ImageList1'#8'TabOrder'#2#0#9'ViewStyle'
+  +#7#8'vsReport'#12'OnSelectItem'#7#18'lwImagesSelectItem'#0#0#8'TToolBar'#8'T'
+  +'oolBar3'#4'Left'#2#0#6'Height'#2#24#3'Top'#3#1#1#5'Width'#3#223#0#5'Align'#7
+  +#8'alBottom'#7'Caption'#6#8'ToolBar2'#6'Images'#7#10'ImageList2'#14'ParentSh'
+  +'owHint'#8#8'ShowHint'#9#8'TabOrder'#2#1#0#11'TToolButton'#9'ButtonAdd'#4'Le'
+  +'ft'#2#1#4'Hint'#6#19'Add a image to pack'#3'Top'#2#2#7'Caption'#6#9'ButtonA'
+  +'dd'#10'ImageIndex'#2#1#7'OnClick'#7#14'ButtonAddClick'#0#0#11'TToolButton'#9
+  +'ButtonDel'#4'Left'#2#24#4'Hint'#6#25'Remove the selected image'#3'Top'#2#2#7
+  +'Caption'#6#9'ButtonDel'#10'ImageIndex'#2#0#7'OnClick'#7#14'ButtonDelClick'#0
+  +#0#0#0#0#10'TImageList'#10'ImageList1'#4'Left'#3'`'#1#3'Top'#3#156#0#6'Bitma'
+  +'p'#10#166#1#0#0'Lz'#1#0#0#0#16#0#0#0#16#0#0#0#144#1#0#0#0#0#0#0'x'#218'}S-'
+  +#144#132' '#20#222#184'q'#227#213#141#198#141'V#'#209'h5'#26#141'V"'#145'H%'
+  ,#18#137'V'#162#209'h'#221#184#241#226#187#247#161'0'#172#183'w'#204'0'#224
+  +#200#247#243#254'.'#151#223#203#250#153#164'q'#212'KK'#237'dhP'#150#230'9'
+  +#208#229#143'e'#156#167'f'#208't'#239'$'#221'ZI_'#157#138#231#189#215#244#24
+  +'M'#254#6#151'c'#238'3'#30'8'#233'W'#154#230#141'F'#191#209#224'Vj'#164#203
+  +#28#184#215#147#139#247#171#152'H'#140#250#141#7#239'Tx'#146'[_d'#150#23#201
+  +#249'I'#19'x'#236#194#250'6'#242#192#135'P'#158'Z'#222#13#251#128'f'#137#199
+  +'{'#197'X'#191'}'#147'g'#30#21'^'#164#153'S'#179''''#233#2#199' '#169'cl'#167
+  +'}'#244#3#31'%~d'#207#208'M'#28#203#198'^'#230#149'F'#27#162#238#173#219'= '
+  +#142'z'#178#239'x'#190'W'#131#137#177'Kh.'#223#17'+'#228#174#149'r'#177#227
+  +'-'#213#227';'#30'w'#228#6#27#28#240#174#252#146#177#25#207#26#192#226'<'#227
+  +';'#19'r'#173'F'#174#5'bNXh'#2#143#141#183'i'#151'x'#196#216#155#144#181#4
+  +#247#14#252#148#24'p#N'#232#148'x'#244#5#254#181'zf'#142'%'#214#232#222#171
+  +#220'?'#245'Q'#195'j'#216#191#171#147#255#16#2'U'#7'7'#226'@'#221'Q'#171#148
+  +#171#212#3#21#243#225#205#25#143#133'~'#186#181'S'#172#15#226#16'G'#220#143
+  +#136'7'#185#23#225#11#247#154#189#156#251#24'3s'#21'2'#230#162')'#176#240#157
+  +'r'#128'9'#193';x'#254'4K'#226#200#5'pI'#235#193#231#168#255#159#193'2'#23
+  +#152#15#244'7'#230#246#211#188#149#235#7'Ie'#218#144#0#0#11'TOpenDialog'#15
+  +'OpenImageDialog'#6'Filter'#6#25'All supported|*.bmp;*.jpg'#7'Options'#11#14
+  +'ofHideReadOnly'#18'ofAllowMultiSelect'#14'ofEnableSizing'#0#4'Left'#3#2#1#3
+  +'Top'#3#150#0#0#0#10'TImageList'#10'ImageList2'#4'Left'#3#168#1#3'Top'#3#160
+  +#0#6'Bitmap'#10'c'#2#0#0'Lz'#4#0#0#0#16#0#0#0#16#0#0#0'M'#2#0#0#0#0#0#0'x'
+  +#218#237#149'-'#144#163'0'#20#199'WF'#158#196'V"'#145'X$'#18'Y['#137#172#172
+  +']'#185#242'$'#22'Y'#137#196'"'#145#145#177#200'J'#228#187#247#18#2'I'#154'@'
+  +'v'#187'77ws'#153#249'O'#187','#191#247#253#210#183#183#239';'#253#133#129'O'
+  +#29'*'#150#247#157#238#204#164'^'#225'g'#209#31#218#216#227'a~H'#27#247'*l'
+  +#195#228#199'+'#131'aQW-'#207#181#141#210'o'#163#11#248''''#159#171#202'M&'
+  +#155'$'#173#138#211'8'#167'SKN'#1#30#19#204#19'G'#223#3#204#188#147'j'#13#158
+  +#177#6#216'i'#4#250#212'G>K'#6#249'){'#184#244'`'#158'Fi'#231#137'O''%'#250
+  +'.'#255#22'Jd'#19#243'V'#154#148'0'#150#182#176#227#183'l'#236#177#15#129'z'
+  +#230'm'#27#138#213'1'#155#181'#'#150#212'x'#253#11'['#210#191#237'Wi'#132'&w'
+  +#243#223#24'UO'#190#213#212'aa'#218'x'#234#155#172#243#194'R'#140'T'#219#181
+  +'''I'#15#201#143#15#153'/'#137'8-'#203'?'#202'['#15#207#243#223'u'#254#239
+  +#255'k'#251#207'j'#236#187#161#207#236#191#230'os+'#181#241#199#251#239#242
+  +#213#244'.y'#171#135#129#253'wc6y+'#151#192#254#155'1k'#149#226#182'~/'#248
+  +'u'#225#253#251'o'#250',I'#200#146#136'#e'#253'Y'#242#161#253#247#197#175'}Z'
+  +#241#239#236#191'[?;f'#177#187#255'.o'#198'L5'#214'{'#191#183#255#161#249#137
+  +#217#185':'#207'!V!^'#206#152#238'/'#229#138#253#165#28#1'g'#29'D'#7#192#239
+  +#251#252#188#240#15#205'S'#141#6#197#243'c'#254#149#248#255#244#137#141'='
+  +#212#207#152#250#19'[M7'#175#141#163#250'+'#246#138#187#133#18#245#147#141
+  +#163#152'%+'#20'['#240#11#228#227'9j67'#182'F]'#22#182'B'#149#144#13#197#174
+  +#13'w'#15#10'~^Y'#247#127#172'n'#14#196'$'#155#13'~'#191#244#142#192#242#141
+  +#168#30'KxG5'#168#15','#229#13'E'#239'k6'#237's/'#207#145#29'P'#29'r-'#234
+  +'''r'#239#168#235#202'+'#246#212'e^'#254'('#254#189'{'#225';'#248#163#252'i'
+  +#246#170#192#252#196#228'o'#206#207'W'#226'/'#228#252#168#25#136#157'='#223
+  +#252'P'#31'c'#239'X'#197#225#204#26','#245'0'#237'3'#236'c'#186#178'G'#251
+  +#163#231']'#247#223'dc'#246#159#222#213'l'#226#176#177#247'/1'#201'='#13#222
+  +#31#175#220'_'#127#203#253#251#175#254#254#253#2#144#238#165#153#0#0#10'TPop'
+  +'upMenu'#10'PopupMenu1'#4'Left'#2'h'#3'Top'#3#148#0#0#9'TMenuItem'#7'Insert1'
+  +#7'Caption'#6#7'&Insert'#7'OnClick'#7#14'ButtonAddClick'#0#0#9'TMenuItem'#8
+  +'btnClear'#7'Caption'#6#5'Clear'#7'OnClick'#7#13'btnClearClick'#0#0#0#0
+]);

@@ -985,31 +985,30 @@ begin
     SetDocument(Document);
 
     Settings.Recent.Add(Document.Name);
+
   end;
 end;
 
 //------------------------------------------------------------------------------
 procedure TModActions.actFileSaveAsExecute(Sender: TObject);
-var Name: String;
+var Name_: String;
 begin
   SaveDialog.FileName:= Document.Name;
 
   if SaveDialog.Execute then
   begin
-    Name:= ChangeFileExt( ExtractFileName( SaveDialog.FileName), '');
+    Document.Name    :=  SaveDialog.FileName;
+    Name_:= ChangeFileExt( ExtractFileName( SaveDialog.FileName), '');
 
-    Document.Name    := SaveDialog.FileName;
     Document.State   := [];
 
-    if not SameText(Name, Document.Image.Name) and (MessageDlg( Format(SRenameText, [Document.Image.Name, Name]), mtConfirmation, [mbYes, mbNo], 0) = mrYes) then
+    if not SameText(Name_, Document.Image.Name) and
+    (MessageDlg( Format(SRenameText, [Document.Image.Name, Name_]), mtConfirmation, [mbYes, mbNo], 0) = mrYes) then
     begin
-      Document.Image.Name:= Name;
-
+      Document.Image.Name:= Name_;
       SetDocument(FDocument);
     end;
-
     Document.SaveDocument;
-
     Settings.Recent.Add(SaveDialog.Filename);
   end;
 end;

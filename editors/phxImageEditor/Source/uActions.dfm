@@ -352,7 +352,7 @@ object ModActions: TModActions
   object SaveDialog: TSaveDialog
     DefaultExt = '.phximg'
     Filter = 'Phoenix image file (*.phximg)|*.phximg|XML Files (*.xml)|*.xml|All files (*.*)|*.*'
-    Options = [ofOverwritePrompt, ofHideReadOnly, ofEnableSizing]
+    Options = [ofHideReadOnly, ofEnableSizing, ofViewDetail]
     Left = 126
     Top = 194
   end

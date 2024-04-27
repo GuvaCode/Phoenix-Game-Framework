@@ -1,10 +1,10 @@
 object FrmMain: TFrmMain
-  Left = 189
-  Height = 686
-  Top = 68
+  Left = 344
+  Height = 662
+  Top = 102
   Width = 1008
   Caption = 'phxModelEditor'
-  ClientHeight = 686
+  ClientHeight = 662
   ClientWidth = 1008
   Color = clBtnFace
   Font.Color = clWindowText
@@ -14,17 +14,17 @@ object FrmMain: TFrmMain
   OnCreate = FormCreate
   OnShow = FormShow
   Position = poScreenCenter
-  LCLVersion = '3.0.0.3'
+  LCLVersion = '3.2.0.0'
   object Splitter1: TSplitter
     Left = 265
-    Height = 642
+    Height = 618
     Top = 26
     Width = 5
   end
   object StatusBar1: TStatusBar
     Left = 0
     Height = 18
-    Top = 668
+    Top = 644
     Width = 1008
     Panels = <    
       item
@@ -51,18 +51,18 @@ object FrmMain: TFrmMain
   end
   object pnlClient: TPanel
     Left = 270
-    Height = 642
+    Height = 618
     Top = 26
     Width = 738
     Align = alClient
     BevelOuter = bvNone
-    ClientHeight = 642
+    ClientHeight = 618
     ClientWidth = 738
     ParentBackground = False
     TabOrder = 1
     object PanelDraw: TPanel
       Left = 0
-      Height = 642
+      Height = 618
       Top = 0
       Width = 738
       Align = alClient
@@ -73,7 +73,7 @@ object FrmMain: TFrmMain
   end
   object PageControl1: TPageControl
     Left = 0
-    Height = 642
+    Height = 618
     Top = 26
     Width = 265
     ActivePage = TabTags

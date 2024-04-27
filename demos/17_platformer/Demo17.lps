@@ -3,7 +3,7 @@
   <ProjectSession>
     <Version Value="12"/>
     <BuildModes Active="Default"/>
-    <Units Count="13">
+    <Units Count="17">
       <Unit0>
         <Filename Value="Demo17.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -11,16 +11,14 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="24"/>
+        <UsageCount Value="25"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit0>
       <Unit1>
         <Filename Value="main.pas"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="356"/>
-        <CursorPos X="22" Y="370"/>
-        <UsageCount Value="24"/>
+        <CursorPos Y="166"/>
+        <UsageCount Value="25"/>
         <Loaded Value="True"/>
       </Unit1>
       <Unit2>
@@ -84,7 +82,7 @@
       </Unit9>
       <Unit10>
         <Filename Value="Tiles.pas"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="7"/>
         <TopLine Value="54"/>
         <CursorPos X="43" Y="66"/>
         <UsageCount Value="10"/>
@@ -92,7 +90,7 @@
       </Unit10>
       <Unit11>
         <Filename Value="../../source/phxFont.pas"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="6"/>
         <TopLine Value="22"/>
         <CursorPos X="52" Y="37"/>
         <UsageCount Value="10"/>
@@ -100,86 +98,169 @@
       </Unit11>
       <Unit12>
         <Filename Value="../../source/phxSprite.pas"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="5"/>
         <TopLine Value="213"/>
         <CursorPos X="14" Y="223"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit12>
+      <Unit13>
+        <Filename Value="../../source/phxApplication.pas"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="34"/>
+        <CursorPos Y="38"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="../../source/phxTimer.pas"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="59"/>
+        <CursorPos X="42" Y="245"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="../../editors/_Library/epiktimer.pas"/>
+        <UnitName Value="EpikTimer"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="414"/>
+        <CursorPos X="11" Y="424"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="../../editors/phxAnimationEditor/Source/Animation/uAnimation.Preview.pas"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="205"/>
+        <CursorPos Y="217"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit16>
     </Units>
-    <JumpHistory Count="18" HistoryIndex="17">
+    <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
         <Filename Value="main.pas"/>
-        <Caret Line="81" Column="2" TopLine="69"/>
+        <Caret Line="76" Column="58" TopLine="69"/>
       </Position1>
       <Position2>
         <Filename Value="main.pas"/>
-        <Caret Line="76" Column="58" TopLine="69"/>
+        <Caret Line="375" Column="27" TopLine="365"/>
       </Position2>
       <Position3>
         <Filename Value="main.pas"/>
-        <Caret Line="375" Column="27" TopLine="365"/>
+        <Caret Line="103" TopLine="100"/>
       </Position3>
       <Position4>
-        <Filename Value="main.pas"/>
-        <Caret Line="103" TopLine="100"/>
+        <Filename Value="Tiles.pas"/>
+        <Caret Line="54" Column="4" TopLine="42"/>
       </Position4>
       <Position5>
         <Filename Value="Tiles.pas"/>
-        <Caret Line="54" Column="4" TopLine="42"/>
+        <Caret Line="204" Column="7" TopLine="179"/>
       </Position5>
       <Position6>
         <Filename Value="Tiles.pas"/>
-        <Caret Line="204" Column="7" TopLine="179"/>
+        <Caret Line="80" Column="4" TopLine="62"/>
       </Position6>
       <Position7>
-        <Filename Value="Tiles.pas"/>
-        <Caret Line="80" Column="4" TopLine="62"/>
-      </Position7>
-      <Position8>
         <Filename Value="main.pas"/>
         <Caret Line="138" Column="41" TopLine="129"/>
+      </Position7>
+      <Position8>
+        <Filename Value="Tiles.pas"/>
+        <Caret Line="66" Column="23" TopLine="54"/>
       </Position8>
       <Position9>
         <Filename Value="Tiles.pas"/>
-        <Caret Line="66" Column="23" TopLine="54"/>
+        <Caret Line="96" Column="44" TopLine="85"/>
       </Position9>
       <Position10>
-        <Filename Value="Tiles.pas"/>
-        <Caret Line="96" Column="44" TopLine="85"/>
-      </Position10>
-      <Position11>
-        <Filename Value="main.pas"/>
-        <Caret Line="138" Column="41" TopLine="203"/>
-      </Position11>
-      <Position12>
         <Filename Value="../../source/phxFont.pas"/>
         <Caret Line="476" Column="15" TopLine="465"/>
-      </Position12>
-      <Position13>
+      </Position10>
+      <Position11>
         <Filename Value="../../source/phxFont.pas"/>
         <Caret Line="37" Column="52" TopLine="22"/>
+      </Position11>
+      <Position12>
+        <Filename Value="main.pas"/>
+        <Caret Line="217" Column="90" TopLine="204"/>
+      </Position12>
+      <Position13>
+        <Filename Value="main.pas"/>
+        <Caret Line="218" Column="89" TopLine="151"/>
       </Position13>
       <Position14>
         <Filename Value="main.pas"/>
-        <Caret Line="217" Column="90" TopLine="204"/>
+        <Caret Line="43" Column="5" TopLine="30"/>
       </Position14>
       <Position15>
         <Filename Value="main.pas"/>
-        <Caret Line="218" Column="89" TopLine="151"/>
+        <Caret Line="71" Column="21" TopLine="55"/>
       </Position15>
       <Position16>
         <Filename Value="main.pas"/>
-        <Caret Line="43" Column="5" TopLine="30"/>
+        <Caret Line="343" Column="38" TopLine="302"/>
       </Position16>
       <Position17>
         <Filename Value="main.pas"/>
-        <Caret Line="71" Column="21" TopLine="55"/>
+        <Caret Line="370" Column="22" TopLine="221"/>
       </Position17>
       <Position18>
         <Filename Value="main.pas"/>
-        <Caret Line="343" Column="38" TopLine="302"/>
+        <Caret Line="35" Column="5" TopLine="25"/>
       </Position18>
+      <Position19>
+        <Filename Value="../../source/phxApplication.pas"/>
+        <Caret Line="38" TopLine="34"/>
+      </Position19>
+      <Position20>
+        <Filename Value="../../editors/_Library/epiktimer.pas"/>
+        <Caret Line="193" Column="13" TopLine="187"/>
+      </Position20>
+      <Position21>
+        <Filename Value="../../editors/_Library/epiktimer.pas"/>
+        <Caret Line="424" Column="11" TopLine="414"/>
+      </Position21>
+      <Position22>
+        <Filename Value="../../editors/phxAnimationEditor/Source/Animation/uAnimation.Preview.pas"/>
+        <Caret Line="9" Column="50"/>
+      </Position22>
+      <Position23>
+        <Filename Value="../../editors/phxAnimationEditor/Source/Animation/uAnimation.Preview.pas"/>
+        <Caret Line="26" Column="5" TopLine="17"/>
+      </Position23>
+      <Position24>
+        <Filename Value="../../editors/phxAnimationEditor/Source/Animation/uAnimation.Preview.pas"/>
+        <Caret Line="62" Column="3" TopLine="52"/>
+      </Position24>
+      <Position25>
+        <Filename Value="../../editors/phxAnimationEditor/Source/Animation/uAnimation.Preview.pas"/>
+        <Caret Line="63" Column="3" TopLine="52"/>
+      </Position25>
+      <Position26>
+        <Filename Value="../../editors/phxAnimationEditor/Source/Animation/uAnimation.Preview.pas"/>
+        <Caret Line="64" Column="3" TopLine="52"/>
+      </Position26>
+      <Position27>
+        <Filename Value="../../editors/phxAnimationEditor/Source/Animation/uAnimation.Preview.pas"/>
+        <Caret Line="219" Column="3" TopLine="206"/>
+      </Position27>
+      <Position28>
+        <Filename Value="../../editors/phxAnimationEditor/Source/Animation/uAnimation.Preview.pas"/>
+        <Caret Line="220" Column="13" TopLine="206"/>
+      </Position28>
+      <Position29>
+        <Filename Value="../../editors/phxAnimationEditor/Source/Animation/uAnimation.Preview.pas"/>
+        <Caret Line="221" Column="3" TopLine="206"/>
+      </Position29>
+      <Position30>
+        <Filename Value="../../editors/phxAnimationEditor/Source/Animation/uAnimation.Preview.pas"/>
+        <Caret Line="222" Column="3" TopLine="206"/>
+      </Position30>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>

@@ -3,10 +3,6 @@ object FrmModelMaterial: TFrmModelMaterial
   Top = 0
   Width = 257
   Height = 480
-  Padding.Left = 4
-  Padding.Top = 4
-  Padding.Right = 4
-  Padding.Bottom = 4
   TabOrder = 0
   object GroupBox2: TGroupBox
     Left = 4
@@ -16,9 +12,6 @@ object FrmModelMaterial: TFrmModelMaterial
     Align = alTop
     Caption = 'Material'
     TabOrder = 0
-    DesignSize = (
-      249
-      79)
     object Label4: TLabel
       Left = 8
       Top = 19
@@ -63,9 +56,6 @@ object FrmModelMaterial: TFrmModelMaterial
     Height = 254
     Align = alTop
     Caption = 'Textures'
-    Padding.Left = 4
-    Padding.Top = 4
-    Padding.Right = 4
     TabOrder = 1
     object lwTextures: TListView
       Left = 6
@@ -87,9 +77,6 @@ object FrmModelMaterial: TFrmModelMaterial
       TabOrder = 0
       ViewStyle = vsReport
       OnDblClick = lwTexturesDblClick
-      ExplicitLeft = 7
-      ExplicitTop = 18
-      ExplicitHeight = 164
     end
     object ToolBar1: TToolBar
       Left = 6
@@ -100,7 +87,6 @@ object FrmModelMaterial: TFrmModelMaterial
       Caption = 'ToolBar1'
       Images = ImageList1
       TabOrder = 1
-      ExplicitTop = 165
       object ToolButton1: TToolButton
         Left = 0
         Top = 0

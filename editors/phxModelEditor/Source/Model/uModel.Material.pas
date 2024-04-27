@@ -6,7 +6,7 @@ uses
   Messages, SysUtils, Variants, Classes,
   Graphics, Controls, Forms, Dialogs, StdCtrls, ComCtrls, ExtCtrls,
 
-  uActions,
+  uActions, ColorBox,
 
   phxTypes,
   phxModel, ImgList, ActnList, ToolWin;

@@ -30,7 +30,6 @@ uses
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
-  Application.Title := 'phxModelEditor';
   Application.CreateForm(TFrmMain, FrmMain);
   Application.CreateForm(TFrmTextures, FrmTextures);
   Application.CreateForm(TFrmDialogTexture, FrmDialogTexture);

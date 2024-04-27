@@ -2,19 +2,15 @@ object NewDialog: TNewDialog
   Left = 529
   Height = 182
   Top = 289
-  Width = 364
+  Width = 380
   BorderIcons = [biSystemMenu]
   Caption = 'Create a new image'
   ClientHeight = 182
-  ClientWidth = 364
-  Color = clBtnFace
-  Font.Color = clWindowText
-  Font.Height = -11
-  Font.Name = 'Tahoma'
+  ClientWidth = 380
   Position = poMainFormCenter
   LCLVersion = '3.2.0.0'
   object btnCancel: TButton
-    Left = 281
+    Left = 297
     Height = 25
     Top = 149
     Width = 75
@@ -25,7 +21,7 @@ object NewDialog: TNewDialog
     TabOrder = 0
   end
   object btnOk: TButton
-    Left = 200
+    Left = 216
     Height = 25
     Top = 149
     Width = 75
@@ -39,14 +35,14 @@ object NewDialog: TNewDialog
     Left = 8
     Height = 135
     Top = 8
-    Width = 348
+    Width = 364
     Anchors = [akTop, akLeft, akRight, akBottom]
     Columns = <>
     Items.LazData = {
-      710000000300000000000000FFFFFFFFFFFFFFFF000000000F000000D0ADD0BB
-      D0B5D0BCD0B5D0BDD1823001000000FFFFFFFFFFFFFFFF000000000F000000D0
-      ADD0BBD0B5D0BCD0B5D0BDD1823102000000FFFFFFFFFFFFFFFF000000000F00
-      0000D0ADD0BBD0B5D0BCD0B5D0BDD18232
+      6B0000000300000000000000FFFFFFFFFFFFFFFF000000000B000000456D7074
+      7920496D61676501000000FFFFFFFFFFFFFFFF000000000E000000496D706F72
+      74205465787475726502000000FFFFFFFFFFFFFFFF000000000E000000546578
+      74757265205061636B6572
     }
     LargeImages = WizardImages
     TabOrder = 2
