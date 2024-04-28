@@ -1,0 +1,17 @@
+{ This is an automatically generated lazarus resource file }
+
+LazarusResources.Add('TFrmGeneratorDebug','FORMDATA',[
+  'TPF0'#18'TFrmGeneratorDebug'#17'FrmGeneratorDebug'#4'Left'#2#0#6'Height'#3
+  +#160#0#3'Top'#2#0#5'Width'#3#31#1#7'Caption'#6#17'FrmGeneratorDebug'#12'Clie'
+  +'ntHeight'#3#160#0#11'ClientWidth'#3#31#1#5'Color'#7#9'clBtnFace'#10'Font.Co'
+  +'lor'#7#12'clWindowText'#11'Font.Height'#2#245#9'Font.Name'#6#6'Tahoma'#8'Po'
+  +'sition'#7#16'poMainFormCenter'#10'LCLVersion'#6#7'3.2.0.0'#0#9'TGroupBox'#9
+  +'GroupBox5'#4'Left'#2#8#6'Height'#3#130#0#3'Top'#2#8#5'Width'#3#18#1#7'Capti'
+  +'on'#6#21'Character information'#12'ClientHeight'#2's'#11'ClientWidth'#3#16#1
+  +#16'ParentBackground'#8#8'TabOrder'#2#0#0#6'TLabel'#6'Label3'#4'Left'#3#175#0
+  +#6'Height'#2#14#3'Top'#2#23#5'Width'#2'%'#7'Caption'#6#6'Label3'#0#0#9'TPain'
+  +'tBox'#9'PaintBox1'#4'Left'#2#8#6'Height'#2'O'#3'Top'#2'*'#5'Width'#3#161#0#7
+  +'OnPaint'#7#14'PaintBox1Paint'#0#0#9'TComboBox'#11'cbCharacter'#4'Left'#2#8#6
+  +'Height'#2#27#3'Top'#2#15#5'Width'#3#161#0#10'ItemHeight'#2#0#8'TabOrder'#2#0
+  +#4'Text'#6#11'cbCharacter'#8'OnChange'#7#17'cbCharacterChange'#0#0#0#0
+]);

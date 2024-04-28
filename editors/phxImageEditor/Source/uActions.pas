@@ -1442,11 +1442,12 @@ begin
   begin
     Bitmap:= TPHXBitmap.Create;
     try
-     {$IFDEF LINUX} { #todo : разобраться с какого хера инверсия в лине  }
+
+     { #todo : разобраться с какого хера инверсия   }
        Bitmap.ImportAndSwapColor(Document.Image.Texture.Graphic);
-     {$ELSE}
-       Bitmap.Import(Document.Image.Texture.Graphic, pcRGBA);
-     {$ENDIF}
+
+   //    Bitmap.Import(Document.Image.Texture.Graphic, pcRGBA);
+
        Bitmap.SaveBitmap(SaveTextureDialog.FileName);
     finally
       Bitmap.Free;

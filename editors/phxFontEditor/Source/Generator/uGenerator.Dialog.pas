@@ -3,9 +3,9 @@ unit uGenerator.Dialog;
 interface
 
 uses
-  Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  LclType, LclIntf, LMessages, Messages, SysUtils, Variants, Classes,
+  Graphics, Controls, Forms,
   Dialogs, ComCtrls, StdCtrls, ExtCtrls, Buttons , Math,
-
   Generics.Collections,
 
 //  xmldom, XMLIntf, msxmldom, XMLDoc,
@@ -17,7 +17,7 @@ uses
   phxFontEx,
 
   uGenerator,
-  uGenerator.Characters, Vcl.ImgList;
+  uGenerator.Characters, ImgList;
 
 type
 
@@ -32,7 +32,7 @@ TFrmGenerator = class(TForm)
     edFont: TComboBox;
     edBold: TCheckBox;
     edItalic: TCheckBox;
-    edSize: TJvSpinEdit;
+    edSize: TSpinEdit;
     edUnderline: TCheckBox;
     GroupBox6: TGroupBox;
     Label9: TLabel;
@@ -46,15 +46,15 @@ TFrmGenerator = class(TForm)
     edLayout: TComboBox;
     edWidth: TComboBox;
     edHeight: TComboBox;
-    edPadding: TJvSpinEdit;
+    edPadding: TSpinEdit;
     GroupBox2: TGroupBox;
     edOutlineEnabled: TCheckBox;
-    edOutlineWidth: TJvSpinEdit;
+    edOutlineWidth: TSpinEdit;
     edOutlineColor: TColorBox;
     edBlurEnabled: TCheckBox;
-    edBlurRadius: TJvSpinEdit;
+    edBlurRadius: TSpinEdit;
     edShadowEnable: TCheckBox;
-    edShadowSize: TJvSpinEdit;
+    edShadowSize: TSpinEdit;
     TabControl1: TTabControl;
     ScrollBox1: TScrollBox;
     PaintBoxPreview: TPaintBox;

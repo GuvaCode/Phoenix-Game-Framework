@@ -1,16 +1,24 @@
 unit GLFW3;
 
-{$mode ObjFPC}
-{.$DEFINE VK_VERSION_1_0}
-{$DEFINE GLFW3_LASTEST}
+{$I ../phxConfig.inc}
+
 
 interface
 uses CTypes{$IFDEF VK_VERSION_1_0}, Vulkan{$ENDIF};
- {$DEFINE GLFW3_STATIC}
+
 const
 {$IFDEF WINDOWS}
-  cDllName = 'glfw3.dll';
+  {$IFDEF GLFW3_STATIC}
+  {$IFDEF GLFW3_STATIC_LINKDLL}
+    {$LINKLIB libglfw3dll.a}
+    {$ELSE}
+      {$LINKLIB libglfw3.a}
+  {$ENDIF}
+    {$ELSE}
+     cDllName = 'glfw3.dll';
+  {$ENDIF}
 {$ENDIF}
+
 {$IFDEF DARWIN}
   cDllName = 'libglfw3.dylib';
   {$ENDIF}

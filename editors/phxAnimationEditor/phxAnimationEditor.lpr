@@ -3,7 +3,7 @@ program phxAnimationEditor;
 {$MODE Delphi}
 
 uses
-  Forms, runtimetypeinfocontrols, Interfaces, PGF, 
+  Forms, Interfaces, PGF,
   uMain in 'Source\uMain.pas' {FrmMain},
   uActions in 'Source\uActions.pas' {ModActions: TDataModule},
   phxGraphicsEx in '..\_Library\phxGraphicsEx.pas',

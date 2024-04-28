@@ -3,20 +3,15 @@ unit uMain;
 interface
 
 uses
-  Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  LCLType, LCLIntf, LMessages, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, Menus, ComCtrls, ToolWin, StdCtrls, ExtCtrls,
-
   phxFont,
-
   uActions,
-
   uFont.Properties,
   uFont.Texture,
   uFont.Kernings,
   uFont.Preview,
-
-  uCharacter.List
-  ;
+  uCharacter.List;
 
 
 type
@@ -93,7 +88,7 @@ implementation
 
 {$R *.dfm}
 
-uses phxGraphics_FreeImage;
+uses phxGraphics_Vampyre;
 
 
 

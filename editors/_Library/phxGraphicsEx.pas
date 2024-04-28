@@ -480,8 +480,8 @@ begin
         Inc(SrcPixelB, 3);//  pf24bit
         Inc(SrcPixelM, 3);//  pf24bit
       {$ELSE}
-        Inc(SrcPixelB, 3);//  pf32bit
-        Inc(SrcPixelM, 3);//  pf32bit
+        Inc(SrcPixelB, 4);//  pf32bit
+        Inc(SrcPixelM, 4);//  pf32bit
       {$ENDIF}
 
     end;

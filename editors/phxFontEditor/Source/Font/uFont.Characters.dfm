@@ -3,10 +3,6 @@ object FrmFontCharacters: TFrmFontCharacters
   Top = 0
   Width = 592
   Height = 430
-  Padding.Left = 4
-  Padding.Top = 4
-  Padding.Right = 4
-  Padding.Bottom = 4
   TabOrder = 0
   object Splitter1: TSplitter
     Left = 336

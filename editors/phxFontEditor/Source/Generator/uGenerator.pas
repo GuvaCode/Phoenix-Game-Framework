@@ -3,7 +3,7 @@ unit uGenerator;
 interface
 
 uses
-  Types, Classes, Graphics, Math, LCLType, SysUtils,
+    LCLType, LCLIntf, LMessages, Types, Classes, Graphics, Math, SysUtils,
 //  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
 //  Dialogs, ComCtrls, StdCtrls, ExtCtrls, Buttons, Mask, JvExMask, JvSpin , Math,
 
@@ -373,10 +373,10 @@ begin
     else         dwQuality:= NONANTIALIASED_QUALITY;
   end;
 
-	Result:= Windows.CreateFont(
-		-Size,
-		0,0,0,
-		fnWeight,
+    Result:= {Windows.}CreateFont(
+    -Size,
+    0,0,0,
+    fnWeight,
     dwItalic,
     dwUnderline,
     0,
@@ -384,7 +384,6 @@ begin
     OUT_DEFAULT_PRECIS,
     CLIP_DEFAULT_PRECIS,
     dwQuality,
-
     DEFAULT_PITCH or FF_DONTCARE,
     PChar(Settings.Font)
   );
@@ -395,7 +394,8 @@ begin
   SetBkColor(Handle, RGB($00, $00, $00));
 
   SetTextColor(Handle, RGB($FF, $FF, $FF));
-  SetTextAlign(Handle, TA_TOP or TA_LEFT);
+
+  /// doto fixmeSetTextAlign(Handle, TA_TOP or TA_LEFT);
 end;
 
 
@@ -414,8 +414,8 @@ After drawing the character, the cursor should move right from the last draw_x b
 // http://www.gamedev.net/topic/584754-help-with-bitmap-font-rendering/
 //------------------------------------------------------------------------------
 procedure TPHXFontGenerator.Generate;
-var hDC  : Windows.HDC;
-var hFont: Windows.HFONT;
+var hDC  : {Windows.}HDC;
+var hFont: {Windows.}HFONT;
 //var TextMetric: TTextMetric;
 //var CellWidth : Integer;
 //var CellHeight: Integer;

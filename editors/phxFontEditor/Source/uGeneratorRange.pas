@@ -3,9 +3,8 @@ unit uGeneratorRange;
 interface
 
 uses
-  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  LclType, LclIntf, LMessages, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, ExtCtrls, StdCtrls, ComCtrls, ExtDlgs,
-
   Generics.Collections;
 
 {$REGION 'Unicode Character Database'}

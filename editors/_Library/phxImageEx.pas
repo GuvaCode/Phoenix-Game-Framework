@@ -331,7 +331,7 @@ var GetPixel: TGetPixel;
 begin
   GetPixel:= GetPixelFormatGetter(Texture.Format);
 
-  Dest.PixelFormat := pf24bit;
+ // Dest.PixelFormat := pf24bit;
   Dest.Width       := Width;
   Dest.Height      := Height;
 
@@ -349,7 +349,11 @@ begin
 
       PRGBTriple(DstPixel)^:= DstColor;
 
-      Inc(DstPixel, 4);//  pf32bit
+      {$IFDEF Windows}
+       Inc(DstPixel, 3);//  pf24bit
+      {$Else}
+       Inc(DstPixel, 4);//  pf24bit
+      {$EndIf}
     end;
   end;
 end;
@@ -366,7 +370,7 @@ var GetPixel: TGetPixel;
 begin
   GetPixel:= GetPixelFormatGetter(Texture.Format);
 
-  Dest.PixelFormat := pf24bit;
+ // Dest.PixelFormat := pf24bit;
   Dest.Width       := Width;
   Dest.Height      := Height;
 
@@ -402,7 +406,11 @@ begin
       DstColor.rgbtGreen:= Trunc(DstColor.rgbtGreen * (1- Alpha) + SrcColor.Green * (Alpha));
       DstColor.rgbtBlue := Trunc(DstColor.rgbtBlue  * (1- Alpha) + SrcColor.Blue  * (Alpha));
       PRGBTriple(DstPixel)^:= DstColor;
-      Inc(DstPixel, 4);//  pf24bit
+      {$IFDEF Windows}
+       Inc(DstPixel, 3);//  pf24bit
+      {$Else}
+       Inc(DstPixel, 4);//  pf24bit
+      {$EndIf}
     end;
   end;
   Dest.EndUpdate();
@@ -420,7 +428,7 @@ var GetPixel: TGetPixel;
 begin
   GetPixel:= GetPixelFormatGetter(Texture.Format);
 
-  Dest.PixelFormat := pf24bit;
+  //Dest.PixelFormat := pf24bit;
   Dest.Width       := Texture.Width;
   Dest.Height      := Texture.Height;
 
@@ -439,8 +447,11 @@ begin
       DstColor.rgbtBlue := Trunc( GetBValue(Background) * (1- Alpha) + SrcColor.Blue  * (Alpha));
 
       PRGBTriple(DstPixel)^:= DstColor;
-
-      Inc(DstPixel, 4);
+      {$IFDEF Windows}
+       Inc(DstPixel, 3);//  pf24bit
+      {$Else}
+       Inc(DstPixel, 4);//  pf24bit
+      {$EndIf}
     end;
   end;
 end;
@@ -510,7 +521,7 @@ var GetPixel: TGetPixel;
 begin
   GetPixel:= GetPixelFormatGetter(Texture.Format);
 
-  Dest.PixelFormat := pf24bit;
+ // Dest.PixelFormat := pf24bit;
   Dest.Width       := Width;
   Dest.Height      := Height;
 
@@ -546,7 +557,11 @@ begin
 
       PRGBTriple(DstPixel)^:= DstColor;
 
-      Inc(DstPixel, 4);//  pf32bit
+      {$IFDEF Windows}
+       Inc(DstPixel, 3);//  pf24bit
+      {$Else}
+       Inc(DstPixel, 4);//  pf24bit
+      {$EndIf}
     end;
   end;
   Dest.EndUpdate();

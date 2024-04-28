@@ -3,7 +3,7 @@ unit uGenerator.Debug;
 interface
 
 uses
-  Messages, SysUtils, Variants, Classes, Graphics,
+   LclType, LclIntf, LMessages, Messages, SysUtils, Variants, Classes, Graphics,
   Controls, Forms, Dialogs,
 
   phxFont,

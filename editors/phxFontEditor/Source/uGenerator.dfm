@@ -1,34 +1,29 @@
 object FrmGenerator: TFrmGenerator
   Left = 0
+  Height = 566
   Top = 0
+  Width = 692
   Caption = 'FrmGenerator'
   ClientHeight = 566
   ClientWidth = 692
   Color = clBtnFace
-  Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
   Font.Name = 'Tahoma'
-  Font.Style = []
-  OldCreateOrder = False
   Position = poMainFormCenter
-  DesignSize = (
-    692
-    566)
-  PixelsPerInch = 96
-  TextHeight = 13
+  LCLVersion = '3.2.0.0'
   object Label2: TLabel
     Left = 292
+    Height = 14
     Top = 272
-    Width = 31
-    Height = 13
+    Width = 37
     Caption = 'Label2'
   end
   object Image1: TImage
     Left = 24
+    Height = 209
     Top = 328
     Width = 197
-    Height = 209
     Picture.Data = {
       07544269746D6170CA730000424DCA7300000000000036040000280000009400
       0000C10000000100080000000000946F0000C40E0000C40E0000000100000001
@@ -956,115 +951,115 @@ object FrmGenerator: TFrmGenerator
       0101010101010101010101010101010101010101010101010101010101010101
       0101010101010101010101010101010101010101010101010101010101010101
       0101010101010101010101010100000000010101010101010101010101010101
-      01010101010101010101010101010101010101010101}
+      01010101010101010101010101010101010101010101
+    }
     Transparent = True
   end
   object Label4: TLabel
     Left = 266
+    Height = 14
     Top = 144
-    Width = 31
-    Height = 13
+    Width = 37
     Caption = 'Label4'
   end
   object Image2: TImage
     Left = 326
+    Height = 149
     Top = 8
     Width = 362
-    Height = 149
   end
   object Image3: TImage
     Left = 329
+    Height = 190
     Top = 163
     Width = 362
-    Height = 190
   end
   object Image4: TImage
     Left = 329
+    Height = 58
     Top = 359
     Width = 248
-    Height = 58
   end
   object GroupBox3: TGroupBox
     Left = 8
+    Height = 71
     Top = 8
     Width = 312
-    Height = 71
     Caption = 'Font'
+    ClientHeight = 56
+    ClientWidth = 310
+    ParentBackground = False
     TabOrder = 0
     object Label3: TLabel
       Left = 179
+      Height = 14
       Top = 21
-      Width = 23
-      Height = 13
+      Width = 27
       Caption = 'Size:'
-      Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -11
       Font.Name = 'Microsoft Sans Serif'
-      Font.Style = []
       ParentFont = False
     end
     object Label9: TLabel
       Left = 166
+      Height = 14
       Top = 53
-      Width = 60
-      Height = 13
+      Width = 66
       Caption = 'Text Colour:'
     end
     object edBackground: TShape
       Left = 277
-      Top = 49
-      Width = 19
       Height = 19
       Hint = 'Background Colour'
+      Top = 49
+      Width = 19
       Brush.Color = clBlack
       ParentShowHint = False
       Pen.Color = clGray
-      Pen.Style = psInsideFrame
-      ShowHint = True
+      Pen.Style = psinsideFrame
       OnMouseUp = SelectColor
+      ShowHint = True
     end
     object edForegrond: TShape
       Left = 232
-      Top = 49
-      Width = 19
       Height = 19
       Hint = 'Foreground Colour'
+      Top = 49
+      Width = 19
       ParentShowHint = False
       Pen.Color = clGray
-      Pen.Style = psInsideFrame
-      ShowHint = True
+      Pen.Style = psinsideFrame
       OnMouseUp = SelectColor
+      ShowHint = True
     end
     object Label1: TLabel
       Left = 256
+      Height = 14
       Top = 53
-      Width = 17
-      Height = 13
+      Width = 20
       Caption = 'BG:'
     end
     object edFont: TComboBox
       Left = 8
+      Height = 27
       Top = 17
       Width = 165
-      Height = 22
       DropDownCount = 15
-      Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -12
       Font.Name = 'Verdana'
-      Font.Style = []
+      ItemHeight = 0
       ParentFont = False
       TabOrder = 0
     end
     object edBold: TCheckBox
       Left = 9
+      Height = 23
       Top = 50
-      Width = 48
-      Height = 15
+      Width = 51
       Caption = 'Bold'
       Checked = True
-      Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -11
       Font.Name = 'Arial'
@@ -1076,11 +1071,10 @@ object FrmGenerator: TFrmGenerator
     end
     object edItalic: TCheckBox
       Left = 63
+      Height = 23
       Top = 50
       Width = 48
-      Height = 15
       Caption = 'Italic'
-      Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -11
       Font.Name = 'Arial'
@@ -1089,22 +1083,21 @@ object FrmGenerator: TFrmGenerator
       TabOrder = 2
       OnClick = edBoldClick
     end
-    object edSize: TJvSpinEdit
+    object edSize: TSpinEdit
       Left = 230
+      Height = 26
       Top = 22
       Width = 43
-      Height = 21
-      Value = 16.000000000000000000
-      TabOrder = 3
       OnChange = edSizeChange
+      TabOrder = 3
+      Value = 16
     end
     object edUnderline: TCheckBox
       Left = 112
+      Height = 23
       Top = 50
-      Width = 48
-      Height = 15
+      Width = 72
       Caption = 'Underline'
-      Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -11
       Font.Name = 'Arial'
@@ -1116,18 +1109,18 @@ object FrmGenerator: TFrmGenerator
   end
   object btnGenerate: TButton
     Left = 8
+    Height = 25
     Top = 288
     Width = 75
-    Height = 25
     Caption = 'Generate'
     TabOrder = 1
     OnClick = btnGenerateClick
   end
   object btnOk: TButton
     Left = 532
+    Height = 25
     Top = 538
     Width = 75
-    Height = 25
     Anchors = [akRight, akBottom]
     Caption = 'Ok'
     Default = True
@@ -1136,9 +1129,9 @@ object FrmGenerator: TFrmGenerator
   end
   object btnCancel: TButton
     Left = 613
+    Height = 25
     Top = 538
     Width = 75
-    Height = 25
     Anchors = [akRight, akBottom]
     Cancel = True
     Caption = 'Cancel'
@@ -1147,16 +1140,19 @@ object FrmGenerator: TFrmGenerator
   end
   object GroupBox1: TGroupBox
     Left = 8
+    Height = 148
     Top = 85
     Width = 224
-    Height = 148
     Caption = 'GroupBox1'
+    ClientHeight = 133
+    ClientWidth = 222
+    ParentBackground = False
     TabOrder = 4
     object SpeedButton1: TSpeedButton
       Left = 15
+      Height = 25
       Top = 20
       Width = 96
-      Height = 25
       Caption = 'Characters...'
       Glyph.Data = {
         36030000424D3603000000000000360000002800000010000000100000000100
@@ -1184,71 +1180,96 @@ object FrmGenerator: TFrmGenerator
         D7D4FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
         FF00FFEDE2DFB07050B07050D4BAAFFF00FFFF00FFFF00FFFF00FFFF00FFFF00
         FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFD2AB9CBB856BE9DBD6FF
-        00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF}
+        00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
+      }
       OnClick = SpeedButton1Click
     end
-    object edPadding: TJvSpinEdit
+    object edPadding: TSpinEdit
       Left = 63
+      Height = 26
       Top = 51
       Width = 43
-      Height = 21
-      TabOrder = 0
       OnChange = edSizeChange
+      TabOrder = 0
     end
-    object edWidth: TJvSpinEdit
+    object edWidth: TSpinEdit
       Left = 63
+      Height = 26
       Top = 78
       Width = 43
-      Height = 21
-      Value = 512.000000000000000000
-      TabOrder = 1
       OnChange = edSizeChange
+      TabOrder = 1
+      Value = 512
     end
-    object edHeight: TJvSpinEdit
+    object edHeight: TSpinEdit
       Left = 63
+      Height = 26
       Top = 105
       Width = 43
-      Height = 21
-      Value = 512.000000000000000000
-      TabOrder = 2
       OnChange = edSizeChange
+      TabOrder = 2
+      Value = 512
     end
   end
   object ComboBox1: TComboBox
     Left = 326
+    Height = 27
     Top = 423
     Width = 145
-    Height = 21
+    ItemHeight = 0
     TabOrder = 5
     Text = 'ComboBox1'
     OnChange = ComboBox1Change
   end
   object edBlurEnable: TCheckBox
     Left = 8
+    Height = 23
     Top = 239
-    Width = 97
-    Height = 17
+    Width = 49
     Caption = 'Blur'
     TabOrder = 6
   end
   object edDropshadow: TCheckBox
     Left = 8
+    Height = 23
     Top = 262
-    Width = 97
-    Height = 17
+    Width = 98
     Caption = 'Drop shadow'
     TabOrder = 7
   end
-  object edShadowSize: TJvSpinEdit
+  object edShadowSize: TSpinEdit
     Left = 111
+    Height = 26
     Top = 262
     Width = 43
-    Height = 21
-    Value = 16.000000000000000000
-    TabOrder = 8
     OnChange = edSizeChange
+    TabOrder = 8
+    Value = 16
   end
   object ColorDialog1: TColorDialog
+    Color = clBlack
+    CustomColors.Strings = (
+      'ColorA=000000'
+      'ColorB=000080'
+      'ColorC=008000'
+      'ColorD=008080'
+      'ColorE=800000'
+      'ColorF=800080'
+      'ColorG=808000'
+      'ColorH=808080'
+      'ColorI=C0C0C0'
+      'ColorJ=0000FF'
+      'ColorK=00FF00'
+      'ColorL=00FFFF'
+      'ColorM=FF0000'
+      'ColorN=FF00FF'
+      'ColorO=FFFF00'
+      'ColorP=FFFFFF'
+      'ColorQ=C0DCC0'
+      'ColorR=F0CAA6'
+      'ColorS=F0FBFF'
+      'ColorT=A4A0A0'
+    )
     Left = 244
     Top = 320
   end

@@ -2,13 +2,14 @@ unit uGenerator;
 
 interface
 
-uses      Partitions,
- Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, ComCtrls, StdCtrls, ExtCtrls, Buttons, Mask , Math,
+uses
+ Partitions, LclType, LclIntf, LMessages,  Messages, SysUtils, Variants, Classes,
+ Graphics, Controls, Forms,
+  Dialogs, ComCtrls, StdCtrls, ExtCtrls, Buttons , Math,
 
   Generics.Collections,
 
-  xmldom, XMLIntf, msxmldom, XMLDoc,
+  //xmldom, XMLIntf, msxmldom, XMLDoc,
 
 //  phxGraphics,
   phxGraphicsEx,
@@ -312,7 +313,7 @@ End;
 constructor TGeneratorSettings.Create;
 var Index: Integer;
 begin
-  FFont:= 'Tahoma';
+  FFont:= 'Default';
   FSize:= 16;
   FStyle:= [TFontStyle.fsBold];
   FCharacters:= TList<Cardinal>.Create;

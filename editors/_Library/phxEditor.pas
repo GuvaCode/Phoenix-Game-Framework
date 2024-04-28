@@ -230,7 +230,7 @@ TPHXEditor = class(TCustomControl)
     /// todo procedure WMDropFiles(var Message: TWMDropFiles); message WM_DROPFILES;
 
    // procedure WMRButtonDown(var Message: TLMRButtonDown); message LM_RBUTTONDOWN;
-    procedure WMMouseMove  (var Message: TWMMouseMove  ); message WM_MOUSEMOVE;
+    procedure WMMouseMove  (var Message: TLMMouseMove  ); message WM_MOUSEMOVE;
     procedure CMMouseLeave  (var Message: TMessage); message CM_MOUSELEAVE;
 
     procedure MouseMove(Shift: TShiftState; X: Integer; Y: Integer); override;
@@ -1631,7 +1631,7 @@ begin
 end;
  }
 //------------------------------------------------------------------------------
-procedure TPHXEditor.WMMouseMove(var Message: TWMMouseMove);
+procedure TPHXEditor.WMMouseMove(var Message: TLMMouseMove);
 var Shift: TShiftState;
 begin
   inherited;

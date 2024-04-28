@@ -149,12 +149,12 @@ object FrmGenerator: TFrmGenerator
           TabOrder = 2
           OnClick = edStyleChange
         end
-        object edSize: TJvSpinEdit
+        object edSize: TSpinEdit
           Left = 167
           Top = 19
           Width = 60
           Height = 21
-          Value = 16.000000000000000000
+          Value = 16
           TabOrder = 3
           OnChange = edSizeChange
         end
@@ -300,12 +300,12 @@ object FrmGenerator: TFrmGenerator
             '2048'
             '4096')
         end
-        object edPadding: TJvSpinEdit
+        object edPadding: TSpinEdit
           Left = 74
           Top = 99
           Width = 150
           Height = 21
-          Value = 1.000000000000000000
+          Value = 1
           TabOrder = 3
           OnChange = edPaddingChange
         end
@@ -342,12 +342,12 @@ object FrmGenerator: TFrmGenerator
           TabOrder = 0
           OnClick = edOutlineEnabledClick
         end
-        object edOutlineWidth: TJvSpinEdit
+        object edOutlineWidth: TSpinEdit
           Left = 72
           Top = 18
           Width = 60
           Height = 21
-          Value = 1.000000000000000000
+          Value = 1
           TabOrder = 1
           OnChange = edOutlineWidthChange
         end
@@ -370,15 +370,15 @@ object FrmGenerator: TFrmGenerator
           TabOrder = 3
           OnClick = edBlurEnabledClick
         end
-        object edBlurRadius: TJvSpinEdit
+        object edBlurRadius: TSpinEdit
           Left = 72
           Top = 45
           Width = 60
           Height = 21
           Decimal = 1
-          Increment = 0.100000000000000000
+          Increment = 0.1
           ValueType = vtFloat
-          Value = 1.000000000000000000
+          Value = 1
           TabOrder = 4
           OnChange = edBlurRadiusChange
         end
@@ -391,12 +391,12 @@ object FrmGenerator: TFrmGenerator
           TabOrder = 5
           OnClick = edShadowEnableClick
         end
-        object edShadowSize: TJvSpinEdit
+        object edShadowSize: TSpinEdit
           Left = 72
           Top = 72
           Width = 60
           Height = 21
-          Value = 16.000000000000000000
+          Value = 16
           TabOrder = 6
         end
       end

@@ -1,30 +1,26 @@
 object FrmMain: TFrmMain
-  Left = 296
-  Height = 592
-  Top = 128
+  Left = 249
+  Height = 544
+  Top = 113
   Width = 952
   Caption = 'phxFontEditor'
-  ClientHeight = 592
+  ClientHeight = 544
   ClientWidth = 952
-  Color = clBtnFace
-  Font.Color = clWindowText
-  Font.Height = -11
-  Font.Name = 'Tahoma'
   Menu = MainMenu1
   OnClose = FormClose
   OnCreate = FormCreate
   Position = poScreenCenter
-  LCLVersion = '3.0.0.3'
+  LCLVersion = '3.2.0.0'
   object Splitter1: TSplitter
     Left = 0
-    Height = 548
+    Height = 500
     Top = 26
     Width = 5
   end
   object StatusBar1: TStatusBar
     Left = 0
     Height = 18
-    Top = 574
+    Top = 526
     Width = 952
     Panels = <    
       item
@@ -39,7 +35,7 @@ object FrmMain: TFrmMain
   end
   object PageControl1: TPageControl
     Left = 5
-    Height = 548
+    Height = 500
     Top = 26
     Width = 947
     ActivePage = TabFont

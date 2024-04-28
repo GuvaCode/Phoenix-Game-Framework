@@ -3,7 +3,7 @@ unit uActions;
 interface
 
 uses
-  SysUtils, Classes, Dialogs, ImgList, Controls, Menus, Forms, ActnList,
+   LclType, LclIntf, LMessages, SysUtils, Classes, Dialogs, ImgList, Controls, Menus, Forms, ActnList,
 
   Generics.Collections,
 

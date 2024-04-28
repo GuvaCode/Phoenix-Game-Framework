@@ -1,62 +1,63 @@
 object FrmCharacter: TFrmCharacter
   Left = 0
+  Height = 565
   Top = 0
   Width = 250
-  Height = 565
+  ClientHeight = 565
+  ClientWidth = 250
   TabOrder = 0
   object Panel6: TPanel
     Left = 0
+    Height = 117
     Top = 0
     Width = 250
-    Height = 117
     Align = alTop
-    BevelKind = bkTile
     BevelOuter = bvNone
+    ClientHeight = 117
+    ClientWidth = 250
     TabOrder = 0
     object pbPreview: TPaintBox
       Left = 0
+      Height = 117
       Top = 0
-      Width = 246
-      Height = 113
+      Width = 250
       Align = alClient
       OnPaint = pbPreviewPaint
-      ExplicitLeft = -1
-      ExplicitTop = 2
-      ExplicitWidth = 188
     end
   end
   object GroupBox1: TGroupBox
     Left = 0
+    Height = 76
     Top = 425
     Width = 250
-    Height = 76
     Align = alTop
     Caption = 'Flags'
+    ClientHeight = 59
+    ClientWidth = 248
     TabOrder = 1
-    ExplicitTop = 469
     object edFlagWrap: TCheckBox
       Left = 64
+      Height = 23
       Top = 16
-      Width = 97
-      Height = 17
+      Width = 99
       Caption = 'edFlagWrap'
       TabOrder = 0
       OnClick = edFlagWrapClick
     end
     object edFlagNotStart: TCheckBox
       Left = 64
+      Height = 23
       Top = 39
-      Width = 97
-      Height = 17
+      Width = 99
       Caption = 'edFlagWrap'
       TabOrder = 1
       OnClick = edFlagNotStartClick
     end
     object edFlagNotEnd: TCheckBox
       Left = 64
+      Height = 23
       Top = 56
-      Width = 97
-      Height = 17
+      Width = 99
       Caption = 'edFlagWrap'
       TabOrder = 2
       OnClick = edFlagNotEndClick
@@ -64,193 +65,183 @@ object FrmCharacter: TFrmCharacter
   end
   object GroupBox2: TGroupBox
     Left = 0
+    Height = 132
     Top = 193
     Width = 250
-    Height = 132
     Align = alTop
     Caption = 'Texture coordinates'
+    ClientHeight = 115
+    ClientWidth = 248
     TabOrder = 2
-    DesignSize = (
-      250
-      132)
     object Label2: TLabel
       Left = 8
+      Height = 16
       Top = 23
-      Width = 10
-      Height = 13
+      Width = 11
       Caption = '&X:'
     end
     object Label3: TLabel
       Left = 8
+      Height = 16
       Top = 50
       Width = 10
-      Height = 13
       Caption = '&Y:'
     end
     object Label4: TLabel
       Left = 8
+      Height = 16
       Top = 77
-      Width = 28
-      Height = 13
+      Width = 36
       Caption = '&Width'
     end
     object Label5: TLabel
       Left = 8
+      Height = 16
       Top = 104
-      Width = 35
-      Height = 13
+      Width = 43
       Caption = '&Height:'
     end
     object edWidth: TSpinEdit
       Left = 84
+      Height = 28
       Top = 74
       Width = 156
-      Height = 21
-      Anchors = [akLeft, akTop, akRight]
+      Anchors = [akTop, akLeft, akRight]
       TabOrder = 0
     end
     object edY: TSpinEdit
       Left = 84
+      Height = 28
       Top = 47
       Width = 156
-      Height = 21
-      Anchors = [akLeft, akTop, akRight]
+      Anchors = [akTop, akLeft, akRight]
       TabOrder = 1
     end
     object edX: TSpinEdit
       Left = 84
+      Height = 28
       Top = 20
       Width = 156
-      Height = 21
-      Anchors = [akLeft, akTop, akRight]
+      Anchors = [akTop, akLeft, akRight]
       TabOrder = 2
     end
     object edHeight: TSpinEdit
       Left = 84
+      Height = 28
       Top = 101
       Width = 156
-      Height = 21
-      Anchors = [akLeft, akTop, akRight]
+      Anchors = [akTop, akLeft, akRight]
       TabOrder = 3
     end
   end
   object GroupBox3: TGroupBox
     Left = 0
+    Height = 100
     Top = 325
     Width = 250
-    Height = 100
     Align = alTop
     Caption = 'Character offsets'
+    ClientHeight = 83
+    ClientWidth = 248
     TabOrder = 3
-    DesignSize = (
-      250
-      100)
     object Label6: TLabel
       Left = 8
+      Height = 14
       Top = 22
-      Width = 40
-      Height = 13
+      Width = 45
       Caption = 'X Offset'
-      Font.Charset = DEFAULT_CHARSET
       Font.Color = clRed
       Font.Height = -11
       Font.Name = 'Tahoma'
-      Font.Style = []
       ParentFont = False
     end
     object Label7: TLabel
       Left = 8
+      Height = 14
       Top = 76
-      Width = 40
-      Height = 13
+      Width = 44
       Caption = 'Y Offset'
-      Font.Charset = DEFAULT_CHARSET
       Font.Color = clGreen
       Font.Height = -11
       Font.Name = 'Tahoma'
-      Font.Style = []
       ParentFont = False
     end
     object Label8: TLabel
       Left = 8
+      Height = 14
       Top = 49
-      Width = 55
-      Height = 13
+      Width = 63
       Caption = 'X Advance:'
-      Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlue
       Font.Height = -11
       Font.Name = 'Tahoma'
-      Font.Style = []
       ParentFont = False
     end
     object edXOffset: TSpinEdit
       Left = 84
+      Height = 28
       Top = 19
       Width = 156
-      Height = 21
-      Anchors = [akLeft, akTop, akRight]
+      Anchors = [akTop, akLeft, akRight]
       TabOrder = 0
     end
     object edYOffset: TSpinEdit
       Left = 84
+      Height = 28
       Top = 73
       Width = 156
-      Height = 21
-      Anchors = [akLeft, akTop, akRight]
-      TabOrder = 1
+      Anchors = [akTop, akLeft, akRight]
       OnChange = edYOffsetChange
+      TabOrder = 1
     end
     object edXAdvance: TSpinEdit
       Left = 84
+      Height = 28
       Top = 46
       Width = 156
-      Height = 21
-      Anchors = [akLeft, akTop, akRight]
+      Anchors = [akTop, akLeft, akRight]
       TabOrder = 2
     end
   end
   object GroupBox4: TGroupBox
     Left = 0
+    Height = 76
     Top = 117
     Width = 250
-    Height = 76
     Align = alTop
     Caption = 'Character'
+    ClientHeight = 59
+    ClientWidth = 248
     TabOrder = 4
-    ExplicitTop = 125
-    DesignSize = (
-      250
-      76)
     object Label10: TLabel
       Left = 8
+      Height = 16
       Top = 23
-      Width = 38
-      Height = 13
+      Width = 49
       Caption = '&Unicode'
     end
     object Label11: TLabel
       Left = 8
+      Height = 16
       Top = 50
-      Width = 26
-      Height = 13
+      Width = 29
       Caption = '&Text:'
     end
     object JvSpinEdit1: TSpinEdit
       Left = 84
+      Height = 28
       Top = 20
       Width = 160
-      Height = 21
-      Anchors = [akLeft, akTop, akRight]
-      TabOrder = 0
+      Anchors = [akTop, akLeft, akRight]
       OnChange = edCharacterChange
+      TabOrder = 0
     end
     object Edit1: TEdit
       Left = 84
+      Height = 28
       Top = 47
       Width = 156
-      Height = 21
-      Anchors = [akLeft, akTop, akRight]
+      Anchors = [akTop, akLeft, akRight]
       Color = clBtnFace
       ReadOnly = True
       TabOrder = 1
