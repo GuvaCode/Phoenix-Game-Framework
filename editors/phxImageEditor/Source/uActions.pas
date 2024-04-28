@@ -1435,35 +1435,6 @@ begin
 end;
 
 //------------------------------------------------------------------------------
-{ Костыль для инверсии -- проверить в винде как себя ведёт}
-function ImportInvert(const Graphic: TPHXGraphic): TPHXGraphic;
-var X, Y: Integer;
-var GetPixel: TGetPixel;
-var SetPixel: TSetPixel;
-var SrcPixel: pByte;
-var DstPixel: pByte;
-var SrcColor: TPHXPixel;
-var DstColor: TPHXPixel;
-begin
-  GetPixel:= GetPixelFormatGetter(Graphic.Format);
-  SetPixel:= GetPixelFormatSetter(result.Format);
-
-  SrcPixel:= @Graphic.Pixels^[0];
-  DstPixel:= @Result.Pixels^[0];
-  for Y:= 0 to Graphic.Height - 1 do
-  begin
-    for X:= 0 to Graphic.Width - 1 do
-    begin
-      GetPixel(SrcPixel, SrcColor);
-      DstColor.Red  := SrcColor.Blue;
-      DstColor.Green:= SrcColor.Green;
-      DstColor.Blue := SrcColor.RED;
-      DstColor.Alpha:= SrcColor.Alpha;
-      SetPixel(DstPixel, DstColor);
-    end;
-  end;
-end;
-
 procedure TModActions.actImageTextureSaveExecute(Sender: TObject);
 var Bitmap: TPHXBitmap;
 begin
@@ -1472,7 +1443,7 @@ begin
     Bitmap:= TPHXBitmap.Create;
     try
      {$IFDEF LINUX} { #todo : разобраться с какого хера инверсия в лине  }
-       Bitmap.Import(ImportInvert(Document.Image.Texture.Graphic));
+       Bitmap.ImportAndSwapColor(Document.Image.Texture.Graphic);
      {$ELSE}
        Bitmap.Import(Document.Image.Texture.Graphic, pcRGBA);
      {$ENDIF}

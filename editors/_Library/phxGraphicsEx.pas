@@ -476,9 +476,14 @@ begin
       DstColor.Alpha:= SrcAlpha.rgbtRed;
 
       SetPixel(DstPixel, DstColor);
+      {$IFDEF LINUX}
+        Inc(SrcPixelB, 3);//  pf24bit
+        Inc(SrcPixelM, 3);//  pf24bit
+      {$ELSE}
+        Inc(SrcPixelB, 3);//  pf32bit
+        Inc(SrcPixelM, 3);//  pf32bit
+      {$ENDIF}
 
-      Inc(SrcPixelB, 3);//  pf24bit
-      Inc(SrcPixelM, 3);//  pf24bit
     end;
   end;
 end;

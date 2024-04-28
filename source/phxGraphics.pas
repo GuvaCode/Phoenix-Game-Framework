@@ -308,6 +308,9 @@ type
 
 // The bitmap is a class for manipulating the pixels of a graphic
 //------------------------------------------------------------------------------
+
+{ TPHXBitmap }
+
 TPHXBitmap = class
   private
     FName: String;
@@ -374,6 +377,8 @@ TPHXBitmap = class
     procedure Import(AWidth, AHeight: Integer; AFormat: TPHXPixelFormat; Data: Pointer); overload;
     // Import the bitmap
     procedure Import(const Graphic: TPHXGraphic; const Channel: TPHXPixelChannel); overload;
+    // Import the bitmap and swap color
+    procedure ImportAndSwapColor(const Graphic: TPHXGraphic);
 
     // Fill with a color
     procedure Fill(const Red: Byte = 0; Green: Byte = 0; Blue: Byte = 0; Alpha: Byte = 0);
@@ -1640,6 +1645,37 @@ begin
       SetPixel(DstPixel, DstColor);
     end;
   end;
+end;
+
+procedure TPHXBitmap.ImportAndSwapColor(const Graphic: TPHXGraphic);
+var X, Y: Integer;
+var GetPixel: TGetPixel;
+var SetPixel: TSetPixel;
+var SrcPixel: pByte;
+var DstPixel: pByte;
+var SrcColor: TPHXPixel;
+var DstColor: TPHXPixel;
+begin
+  Resize(Graphic.Width, Graphic.Height, Graphic.Format);
+
+  GetPixel:= GetPixelFormatGetter(Graphic.Format);
+  SetPixel:= GetPixelFormatSetter(Self   .Format);
+
+  SrcPixel:= @Graphic.Pixels^[0];
+  DstPixel:= @Self   .Pixels^[0];
+  for Y:= 0 to Height - 1 do
+  begin
+    for X:= 0 to Width - 1 do
+    begin
+      GetPixel(SrcPixel, SrcColor);
+      DstColor.Red  := SrcColor.Blue;
+      DstColor.Green:= SrcColor.Green;
+      DstColor.Blue := SrcColor.Red;
+      DstColor.Alpha:= SrcColor.Alpha;
+      SetPixel(DstPixel, DstColor);
+    end;
+  end;
+
 end;
 
 //------------------------------------------------------------------------------
