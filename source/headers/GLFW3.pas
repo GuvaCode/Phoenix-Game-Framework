@@ -24,7 +24,7 @@ const
   {$ENDIF}
 {$IFDEF LINUX}
   {$IFDEF GLFW3_STATIC}
-  {$LINKLIB libglfw}
+  {$LINKLIB libglfw3}
   {$ELSE}
   cDllName = 'libglfw.so.3';
   {$ENDIF}

@@ -692,7 +692,7 @@ procedure RaiseImaging(const Msg: string; const Args: array of const); overload;
 procedure RaiseImaging(const Msg: string); overload; {$IFDEF USE_INLINE}inline;{$ENDIF}
 
 const
-  SImagingLibTitle = 'Vampyre Imaging Library';
+ SImagingLibTitle = 'Vampyre Imaging Library';
 
 implementation
 

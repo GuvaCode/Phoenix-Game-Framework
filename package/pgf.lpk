@@ -8,7 +8,7 @@
       <SearchPaths>
         <Libraries Value="../libs/$(TargetCPU)-$(TargetOS)"/>
         <OtherUnitFiles Value="../source;../source/headers;../source/headers/vampire;../source/headers/vampire/ZLib;../source/headers/vampire/JpegLib;../source/headers/Box2d;../source/providers/graphics;../source/providers/audio"/>
-        <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+        <UnitOutputDirectory Value="../temp/$(TargetCPU)-$(TargetOS)"/>
       </SearchPaths>
     </CompilerOptions>
     <Files Count="3">

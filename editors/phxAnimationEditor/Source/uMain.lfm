@@ -1,10 +1,10 @@
 object FrmMain: TFrmMain
   Left = 368
-  Height = 475
+  Height = 451
   Top = 187
   Width = 809
   Caption = 'phxAnimationEditor'
-  ClientHeight = 475
+  ClientHeight = 451
   ClientWidth = 809
   DoubleBuffered = True
   Font.Color = clWindowText
@@ -17,20 +17,20 @@ object FrmMain: TFrmMain
   LCLVersion = '3.2.0.0'
   object Splitter1: TSplitter
     Left = 270
-    Height = 433
+    Height = 409
     Top = 24
     Width = 4
   end
   object StatusBar1: TStatusBar
     Left = 0
     Height = 18
-    Top = 457
+    Top = 433
     Width = 809
     Panels = <>
   end
   object PageControl1: TPageControl
     Left = 0
-    Height = 433
+    Height = 409
     Top = 24
     Width = 270
     ActivePage = TabProperties
@@ -54,13 +54,13 @@ object FrmMain: TFrmMain
   end
   object Panel1: TPanel
     Left = 274
-    Height = 433
+    Height = 409
     Top = 24
     Width = 535
     Align = alClient
     BevelOuter = bvNone
     Caption = 'pnlClient'
-    ClientHeight = 433
+    ClientHeight = 409
     ClientWidth = 535
     ParentBackground = False
     TabOrder = 2
@@ -86,7 +86,7 @@ object FrmMain: TFrmMain
     end
     object gbPatterns: TGroupBox
       Left = 4
-      Height = 217
+      Height = 193
       Top = 212
       Width = 527
       Align = alClient
@@ -184,6 +184,7 @@ object FrmMain: TFrmMain
         Caption = '-'
       end
       object Setanimationduration1: TMenuItem
+        Action = ModActions.actToolDuration
       end
       object N1: TMenuItem
         Caption = '-'

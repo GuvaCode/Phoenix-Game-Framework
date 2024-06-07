@@ -226,7 +226,7 @@ procedure JpegError(CInfo: j_common_ptr);
     Buffer: AnsiString;
   begin
     // Create the message and raise exception
-    CInfo.err.format_message(CInfo, Buffer);
+    //CInfo.err.format_message(CInfo, ShortString(Buffer));
     // Warning: you can get "Invalid argument index in format" exception when
     // using FPC (see http://bugs.freepascal.org/view.php?id=21229).
     // Fixed in FPC 2.7.1

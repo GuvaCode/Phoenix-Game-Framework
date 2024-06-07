@@ -352,9 +352,9 @@ TPHXSprite = class(TObject)
     property FinalTransform: TMatrix4f read FFinalTransform;
 
     // Bounding box in releative sprite coordinates
- 		property LocalBounds: TRectf read FLocalBounds;
+    property LocalBounds: TRectf read FLocalBounds;
     // Bounding box in absolute world coordinates
- 		property FinalBounds: TRectf read FFinalBounds;
+    property FinalBounds: TRectf read FFinalBounds;
 
     // Shape in releative sprite coordinates
     property LocalShape: TPHXShape read FLocalShape;
