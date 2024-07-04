@@ -362,7 +362,7 @@ begin
   FFullscreen:= Parameters.Fullscreen;
 
   if SDL_Init( SDL_INIT_VIDEO ) < 0 then raise Exception.Create('Failed to initialize SDL2.');
-  SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
+  SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 0);
 
   Flags_:= SDL_WINDOW_SHOWN;
   if wfResizable in FWindowFlags then

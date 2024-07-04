@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.899,=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxAnimationEditor\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.376,C:\Mina Dokument\Delphi\Phoenix\Design\Editors\phxAnimationEditor\Source\Image\uImage.Patterns.dfm=C:\Mina Dokument\Delphi\Phoenix\Design\Editors\phxAnimationEditor\Source\uPatterns.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.003,C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxAnimationEditor\Source\uPatterns.pas=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxAnimationEditor\Unit2.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.053,=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxAnimationEditor\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.003,C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxAnimationEditor\Source\uPatterns.dfm=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxAnimationEditor\Unit2.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.435,=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxAnimationEditor\Unit2.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.345,=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxAnimationEditor\Unit2.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.277,C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxAnimationEditor\Source\uFrames.dfm=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxAnimationEditor\Unit2.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.344,=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxAnimationEditor\Unit2.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.384,C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxAnimationEditor\Source\Animation\uAnimation.Preview.dfm=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxAnimationEditor\Unit2.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.128,C:\Mina Dokument\Delphi\Phoenix\Design\Editors\phxAnimationEditor\Source\Image\uImage.List.dfm=C:\Mina Dokument\Delphi\Phoenix\Design\Editors\phxAnimationEditor\Unit1.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.047,C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxAnimationEditor\Source\Frame\uFrame.pas=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxAnimationEditor\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.393,C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxAnimationEditor\phxAnimationEditor.dproj=C:\Users\andrlago\Documents\RAD Studio\Projects\Project2.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.128,C:\Mina Dokument\Delphi\Phoenix\Design\Editors\phxAnimationEditor\Source\Image\uImage.List.pas=C:\Mina Dokument\Delphi\Phoenix\Design\Editors\phxAnimationEditor\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.047,C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxAnimationEditor\Source\Frame\uFrame.dfm=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxAnimationEditor\Unit1.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.451,C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxAnimationEditor\Source\Animation\uAnimation.Frames.pas=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxAnimationEditor\Source\uFrames.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.376,C:\Mina Dokument\Delphi\Phoenix\Design\Editors\phxAnimationEditor\Source\Image\uImage.Patterns.pas=C:\Mina Dokument\Delphi\Phoenix\Design\Editors\phxAnimationEditor\Source\uPatterns.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.110,C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxAnimationEditor\Source\Animation\uAnimation.Properties.dfm=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxAnimationEditor\Unit2.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.399,=C:\Mina Dokument\Delphi\Phoenix\Design\Editors\phxAnimationEditor\Unit2.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.243,=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxAnimationEditor\Unit2.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.277,C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxAnimationEditor\Source\uFrames.pas=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxAnimationEditor\Unit2.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.092,C:\Mina Dokument\Delphi\Phoenix\Design\Editors\phxAnimationEditor\Source\Animation\uAnimation.Frame.pas=C:\Mina Dokument\Delphi\Phoenix\Design\Editors\phxAnimationEditor\Source\Frame\uFrame.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.560,=C:\Mina Dokument\Delphi\Phoenix\Design\Editors\phxAnimationEditor\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.315,=C:\Users\andrlago\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.451,C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxAnimationEditor\Source\Animation\uAnimation.Frames.dfm=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxAnimationEditor\Source\uFrames.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.110,C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxAnimationEditor\Source\Animation\uAnimation.Properties.pas=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxAnimationEditor\Unit2.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.937,=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\_Library\phxGraphicsEx.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.092,C:\Mina Dokument\Delphi\Phoenix\Design\Editors\phxAnimationEditor\Source\Animation\uAnimation.Frame.dfm=C:\Mina Dokument\Delphi\Phoenix\Design\Editors\phxAnimationEditor\Source\Frame\uFrame.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.384,C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxAnimationEditor\Source\Animation\uAnimation.Preview.pas=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxAnimationEditor\Unit2.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.955,=C:\Users\andrlago\Documents\RAD Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.122,C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxAnimationEditor\Source\uActions.dfm=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxAnimationEditor\Unit1.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.359,C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxAnimationEditor\Source\uMain.dfm=C:\Users\andrlago\Documents\RAD Studio\Projects\Unit2.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.122,C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxAnimationEditor\Source\uActions.pas=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxAnimationEditor\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.957,=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\_Library\phxImageEx.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.359,C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxAnimationEditor\Source\uMain.pas=C:\Users\andrlago\Documents\RAD Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.785,=C:\Users\andrlago\Documents\RAD Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.753,=C:\Users\andrlago\Documents\RAD Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.084,=C:\Users\andrlago\Documents\RAD Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.143,=C:\Users\andrlago\Documents\RAD Studio\Projects\Unit2.pas</Transaction>
+  </Transactions>
+</BorlandProject>

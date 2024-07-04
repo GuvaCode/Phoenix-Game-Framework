@@ -5,7 +5,8 @@ interface
 
 
 uses
-  GLFW3, SysUtils, Classes, dglOpenGL, phxLogger, phxTypes, phxClasses, phxEvents, phxDevice, phxGraphics, phxOpenGL;
+  SysUtils, Classes, dglOpenGL, phxLogger, phxTypes, phxClasses, phxEvents,
+  phxDevice, phxGraphics, phxOpenGL, GLFW3;
 
 const
   ProviderName = 'OpenGL.GLFW3';

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.038,=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\_Library\phxEditor.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.pas,D:\Program\Programmering\Phoenix\Phoenix\editors\phxSkinEditor\src\dialogs\uElementProperties.pas=D:\Program\Programmering\Phoenix\Phoenix\editors\phxSkinEditor\src\element\uElementProperties.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.385,=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxSkinEditor\Source\Element\uElement.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.267,C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxSkinEditor\Source\Dialogs\uDialog.New.pas=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxSkinEditor\Source\Dialogs\uFont.New.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.pas,D:\Program\Programmering\Phoenix\Phoenix\editors\phxSkinEditor\src\Main.pas=D:\Program\Programmering\Phoenix\Phoenix\editors\phxSkinEditor\src\uMain.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.151,=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxSkinEditor\Source\uSettings.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.172,C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxSkinEditor\Source\Skin\uSkin.Elements.dfm=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxSkinEditor\Unit1.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.dfm,D:\Program\Programmering\Phoenix\Phoenix\editors\phxSkinEditor\src\dialogs\uStateProperties.dfm=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.dfm,C:\Dokument\Phoenix\editors\phxSkinEditor\src\element\uElementProperties.dfm=C:\Dokument\Phoenix\editors\phxSkinEditor\src\element\uElementName.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.514,C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxSkinEditor\Source\Phoenix.Graphics.SkinEx.pas=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxSkinEditor\Source\phxSkinEx.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.049,=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxSkinEditor\Source\Phoenix.Graphics.SkinEx.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.dfm,C:\Dokument\Phoenix\editors\phxSkinEditor\Unit2.dfm=C:\Dokument\Phoenix\editors\phxSkinEditor\src\frames\uSkin.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.689,=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxSkinEditor\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.148,=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxSkinEditor\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.pas,D:\Program\Programmering\Phoenix\Phoenix\editors\phxSkinEditor\src\uState.pas=D:\Program\Programmering\Phoenix\Phoenix\editors\phxSkinEditor\src\element\uElement.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.pas,C:\Dokument\Phoenix\editors\phxSkinEditor\Unit2.pas=C:\Dokument\Phoenix\editors\phxSkinEditor\src\frames\uSkin.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.dfm,D:\Program\Programmering\Phoenix\Phoenix\editors\phxSkinEditor\Unit1.dfm=D:\Program\Programmering\Phoenix\Phoenix\editors\phxSkinEditor\src\uActions.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.dfm,D:\Program\Programmering\Phoenix\Phoenix\editors\phxSkinEditor\Unit1.dfm=D:\Program\Programmering\Phoenix\Phoenix\editors\phxSkinEditor\src\uTools.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.290,=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxSkinEditor\Source\Element\uElementName.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.dfm,D:\Program\Programmering\Phoenix\Phoenix\editors\phxSkinEditor\Unit1.dfm=D:\Program\Programmering\Phoenix\Phoenix\editors\phxSkinEditor\src\uElement.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.183,=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxSkinEditor\Source\uTools.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.pas,C:\Dokument\Phoenix\editors\phxSkinEditor\Unit1.pas=C:\Dokument\Phoenix\editors\phxSkinEditor\src\temp\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.pas,C:\Dokument\Phoenix\editors\phxSkinEditor\Unit1.pas=C:\Dokument\Phoenix\editors\phxSkinEditor\src\element\uElementPreview.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.676,=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxSkinEditor\Source\Frames\uSkin.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.637,=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxSkinEditor\Source\Frames\uTexture.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.pas,D:\Program\Programmering\Phoenix\Phoenix\editors\phxImageEditor\src\dialogs\uNew.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.117,C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxSkinEditor\Source\Skin\uSkin.Properties.pas=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxSkinEditor\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.pas,C:\Dokument\Phoenix\editors\phxSkinEditor\src\element\uElementProperties.pas=C:\Dokument\Phoenix\editors\phxSkinEditor\src\element\uElementName.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.856,C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxSkinEditor\Source\Frames\uSkin.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.299,C:\Mina Dokument\Delphi\Phoenix\Design\Editors\phxSkinEditor\src\phxSkinEx.pas=C:\Mina Dokument\Delphi\Phoenix\Design\Editors\phxSkinEditor\src\Phoenix.Graphics.SkinEx.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.dfm,D:\Program\Programmering\Phoenix\Phoenix\editors\phxSkinEditor\src\uState.dfm=D:\Program\Programmering\Phoenix\Phoenix\editors\phxSkinEditor\src\element\uElement.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.074,=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxSkinEditor\Source\uActions.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.dfm,D:\Program\Programmering\Phoenix\Phoenix\editors\phxSkinEditor\src\dialogs\uElementProperties.dfm=D:\Program\Programmering\Phoenix\Phoenix\editors\phxSkinEditor\src\element\uElementProperties.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.267,C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxSkinEditor\Source\Dialogs\uDialog.New.dfm=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxSkinEditor\Source\Dialogs\uFont.New.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.dfm,D:\Program\Programmering\Phoenix\Phoenix\editors\phxSkinEditor\Unit2.dfm=D:\Program\Programmering\Phoenix\Phoenix\editors\phxSkinEditor\src\uSettings.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.595,=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxSkinEditor\Source\Dialogs\uNewDialog.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.dfm,D:\Program\Programmering\Phoenix\Phoenix\editors\phxSkinEditor\src\uSettings.dfm=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.142,=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxSkinEditor\Source\Dialogs\uFont.New.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.pas,C:\Users\Andreas Lago\Documents\RAD Studio\Projects\Unit1.pas=D:\Program\Programmering\Phoenix\Phoenix\editors\phxSkinEditor\src\Main.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.pas,D:\Program\Programmering\Phoenix\Phoenix\editors\phxSkinEditor\src\dialogs\uStateProperties.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.117,C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxSkinEditor\Source\Skin\uSkin.Properties.dfm=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxSkinEditor\Unit1.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.313,=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\_Library\phxGraphicsEx.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.pas,D:\Program\Programmering\Phoenix\Phoenix\editors\phxSkinEditor\src\uElement.pas=D:\Program\Programmering\Phoenix\Phoenix\editors\phxSkinEditor\src\uState.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.dfm,D:\Program\Programmering\Phoenix\Phoenix\editors\phxSkinEditor\src\Main.dfm=D:\Program\Programmering\Phoenix\Phoenix\editors\phxSkinEditor\src\uMain.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.dfm,C:\Dokument\Phoenix\editors\phxSkinEditor\src\temp\Unit1.dfm=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.565,=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxSkinEditor\Source\Tools\Partitions.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.dfm,C:\Dokument\Phoenix\editors\phxSkinEditor\Unit1.dfm=C:\Dokument\Phoenix\editors\phxSkinEditor\src\element\uElementPreview.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.pas,C:\Dokument\Phoenix\editors\phxSkinEditor\src\temp\Unit1.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.172,C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxSkinEditor\Source\Skin\uSkin.Elements.pas=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxSkinEditor\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.pas,D:\Program\Programmering\Phoenix\Phoenix\editors\phxSkinEditor\Unit1.pas=D:\Program\Programmering\Phoenix\Phoenix\editors\phxSkinEditor\src\uTools.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.pas,D:\Program\Programmering\Phoenix\Phoenix\editors\phxSkinEditor\Unit2.pas=D:\Program\Programmering\Phoenix\Phoenix\editors\phxSkinEditor\src\uSettings.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.dfm,D:\Program\Programmering\Phoenix\Phoenix\editors\phxSkinEditor\src\uElement.dfm=D:\Program\Programmering\Phoenix\Phoenix\editors\phxSkinEditor\src\uState.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.dfm,D:\Program\Programmering\Phoenix\Phoenix\editors\phxImageEditor\src\dialogs\uNew.dfm=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.336,=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxSkinEditor\Source\Element\uElementPreview.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.pas,D:\Program\Programmering\Phoenix\Phoenix\editors\phxSkinEditor\Unit1.pas=D:\Program\Programmering\Phoenix\Phoenix\editors\phxSkinEditor\src\uElement.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.121,=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxSkinEditor\Source\uMain.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.pas,D:\Program\Programmering\Phoenix\Phoenix\editors\phxSkinEditor\src\uSettings.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.dfm,C:\Dokument\Phoenix\editors\phxSkinEditor\Unit1.dfm=C:\Dokument\Phoenix\editors\phxSkinEditor\src\temp\Unit1.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.dproj,C:\Users\Andreas Lago\Documents\RAD Studio\Projects\Project1.dproj=D:\Program\Programmering\Phoenix\Phoenix\editors\phxSkinEditor\phxSkinEditor.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.pas,D:\Program\Programmering\Phoenix\Phoenix\editors\phxSkinEditor\Unit1.pas=D:\Program\Programmering\Phoenix\Phoenix\editors\phxSkinEditor\src\uActions.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.597,=C:\Mina Dokument\Delphi\Phoenix\Design.3\Editors\phxSkinEditor\Source\Tools\uPacker.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.dfm,C:\Users\Andreas Lago\Documents\RAD Studio\Projects\Unit1.dfm=D:\Program\Programmering\Phoenix\Phoenix\editors\phxSkinEditor\src\Main.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

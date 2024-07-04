@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.081,=D:\Program\Programmering\Phoenix\Design\Editors\phxSimpleGuiEditor\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.441,=D:\Program\Programmering\Phoenix\Design\Editors\phxSimpleGuiEditor\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.145,=D:\Program\Programmering\Phoenix\Design\Editors\phxSimpleGuiEditor\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.325,D:\Program\Programmering\Phoenix\Design\Editors\phxSimpleGuiEditor\Source\uPalette.pas=D:\Program\Programmering\Phoenix\Design\Editors\phxSimpleGuiEditor\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.526,C:\Mina Dokument\Delphi\Phoenix\Phoenix\Editors\phxGuiEditor\Source\uPalette.pas=C:\Mina Dokument\Delphi\Phoenix\Phoenix\Editors\phxGuiEditor\Source\Frames\uPalette.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.844,=D:\Program\Programmering\Phoenix\Design\Editors\phxSimpleGuiEditor\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.165,D:\Program\Programmering\Phoenix\Design\Editors\phxSimpleGuiEditor\Source\uActions.pas=D:\Program\Programmering\Phoenix\Design\Editors\phxSimpleGuiEditor\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.949,C:\Mina Dokument\Delphi\Phoenix\Phoenix\Editors\phxGuiEditor\Source\uInspector.dfm=C:\Mina Dokument\Delphi\Phoenix\Phoenix\Editors\phxGuiEditor\Source\Frames\uInspector.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.949,C:\Mina Dokument\Delphi\Phoenix\Phoenix\Editors\phxGuiEditor\Source\uInspector.pas=C:\Mina Dokument\Delphi\Phoenix\Phoenix\Editors\phxGuiEditor\Source\Frames\uInspector.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.615,=D:\Program\Programmering\Phoenix\Design\Editors\phxSimpleGuiEditor\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.371,=D:\Program\Programmering\Phoenix\Design\Editors\phxSimpleGuiEditor\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.376,C:\Mina Dokument\Delphi\Phoenix\Phoenix\Editors\phxGuiEditor\Source\uDesigner.dfm=C:\Mina Dokument\Delphi\Phoenix\Phoenix\Editors\phxGuiEditor\Source\Frames\uDesigner.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.937,C:\Mina Dokument\Delphi\Phoenix\Phoenix\Editors\phxGuiEditor\phxSimpleGuiEditor.dproj=C:\Mina Dokument\Delphi\Phoenix\Phoenix\Editors\phxGuiEditor\phxGuiEditor.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.058,C:\Mina Dokument\Delphi\Phoenix\Phoenix\Editors\phxGuiEditor\Source\uProject.pas=C:\Mina Dokument\Delphi\Phoenix\Phoenix\Editors\phxGuiEditor\Source\Project\uProject.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.178,C:\Mina Dokument\Delphi\Phoenix\Phoenix\Editors\phxGuiEditor\Source\uControls.pas=C:\Mina Dokument\Delphi\Phoenix\Phoenix\Editors\phxGuiEditor\Source\Project\uControls.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.826,=D:\Program\Programmering\Phoenix\Design\Editors\phxSimpleGuiEditor\Unit2.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.569,D:\Program\Programmering\Phoenix\Design\Editors\phxSimpleGuiEditor\Source\uMain.pas=D:\Program\Programmering\Phoenix\Design\Editors\phxSimpleGuiEditor\uMain.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.852,C:\Mina Dokument\Delphi\Phoenix\Phoenix\Editors\phxGuiEditor\Unit1.pas=C:\Mina Dokument\Delphi\Phoenix\Phoenix\Editors\phxGuiEditor\Source\uStructure.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.243,=C:\Mina Dokument\Delphi\Phoenix\Phoenix\Editors\phxGuiEditor\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.999,D:\Program\Programmering\Phoenix\Design\Editors\phxSimpleGuiEditor\uMain.dfm=D:\Program\Programmering\Phoenix\Design\Editors\phxSimpleGuiEditor\Source\uMain.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.410,D:\Program\Programmering\Phoenix\Design\Editors\phxSimpleGuiEditor\Source\uMain.pas=C:\Users\Andreas Lago\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.165,D:\Program\Programmering\Phoenix\Design\Editors\phxSimpleGuiEditor\Source\uActions.dfm=D:\Program\Programmering\Phoenix\Design\Editors\phxSimpleGuiEditor\Unit1.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.800,D:\Program\Programmering\Phoenix\Design\Editors\phxSimpleGuiEditor\Source\uDesigner.dfm=D:\Program\Programmering\Phoenix\Design\Editors\phxSimpleGuiEditor\Unit1.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.022,=C:\Users\Andreas Lago\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.263,D:\Program\Programmering\Phoenix\Design\Editors\phxSimpleGuiEditor\Source\uOutput.pas=D:\Program\Programmering\Phoenix\Design\Editors\phxSimpleGuiEditor\Unit2.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.325,D:\Program\Programmering\Phoenix\Design\Editors\phxSimpleGuiEditor\Source\uPalette.dfm=D:\Program\Programmering\Phoenix\Design\Editors\phxSimpleGuiEditor\Unit1.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.423,D:\Program\Programmering\Phoenix\Design\Editors\phxSimpleGuiEditor\Source\uInspector.dfm=D:\Program\Programmering\Phoenix\Design\Editors\phxSimpleGuiEditor\Unit1.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.357,=C:\Users\Andreas Lago\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.852,C:\Mina Dokument\Delphi\Phoenix\Phoenix\Editors\phxGuiEditor\Unit1.dfm=C:\Mina Dokument\Delphi\Phoenix\Phoenix\Editors\phxGuiEditor\Source\uStructure.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.423,D:\Program\Programmering\Phoenix\Design\Editors\phxSimpleGuiEditor\Source\uInspector.pas=D:\Program\Programmering\Phoenix\Design\Editors\phxSimpleGuiEditor\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.800,D:\Program\Programmering\Phoenix\Design\Editors\phxSimpleGuiEditor\Source\uDesigner.pas=D:\Program\Programmering\Phoenix\Design\Editors\phxSimpleGuiEditor\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.263,D:\Program\Programmering\Phoenix\Design\Editors\phxSimpleGuiEditor\Source\uOutput.dfm=D:\Program\Programmering\Phoenix\Design\Editors\phxSimpleGuiEditor\Unit2.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.553,C:\Mina Dokument\Delphi\Phoenix\Phoenix\Editors\phxGuiEditor\Source\uStructure.pas=C:\Mina Dokument\Delphi\Phoenix\Phoenix\Editors\phxGuiEditor\Source\Frames\uStructure.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.410,D:\Program\Programmering\Phoenix\Design\Editors\phxSimpleGuiEditor\Source\uMain.dfm=C:\Users\Andreas Lago\Documents\RAD Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.569,D:\Program\Programmering\Phoenix\Design\Editors\phxSimpleGuiEditor\Source\uMain.dfm=D:\Program\Programmering\Phoenix\Design\Editors\phxSimpleGuiEditor\uMain.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.376,C:\Mina Dokument\Delphi\Phoenix\Phoenix\Editors\phxGuiEditor\Source\uDesigner.pas=C:\Mina Dokument\Delphi\Phoenix\Phoenix\Editors\phxGuiEditor\Source\Frames\uDesigner.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.999,D:\Program\Programmering\Phoenix\Design\Editors\phxSimpleGuiEditor\uMain.pas=D:\Program\Programmering\Phoenix\Design\Editors\phxSimpleGuiEditor\Source\uMain.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.285,D:\Program\Programmering\Phoenix\Design\Editors\phxSimpleGuiEditor\Source\uProject.pas=D:\Program\Programmering\Phoenix\Design\Editors\phxSimpleGuiEditor\Source\uControls.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.881,D:\Program\Programmering\Phoenix\Design\Editors\phxSimpleGuiEditor\Source\uControls.pas=D:\Program\Programmering\Phoenix\Design\Editors\phxSimpleGuiEditor\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.553,C:\Mina Dokument\Delphi\Phoenix\Phoenix\Editors\phxGuiEditor\Source\uStructure.dfm=C:\Mina Dokument\Delphi\Phoenix\Phoenix\Editors\phxGuiEditor\Source\Frames\uStructure.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.301,D:\Program\Programmering\Phoenix\Design\Editors\phxSimpleGuiEditor\Source\phxSimpleGuiEditor.dproj=C:\Users\Andreas Lago\Documents\RAD Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.117,D:\Program\Programmering\Phoenix\Design\Editors\phxSimpleGuiEditor\phxSimpleGuiEditor.dproj=D:\Program\Programmering\Phoenix\Design\Editors\phxSimpleGuiEditor\Source\phxSimpleGuiEditor.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.074,D:\Program\Programmering\Phoenix\Design\Editors\phxSimpleGuiEditor\Source\uControls.pas=D:\Program\Programmering\Phoenix\Design\Editors\phxSimpleGuiEditor\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.526,C:\Mina Dokument\Delphi\Phoenix\Phoenix\Editors\phxGuiEditor\Source\uPalette.dfm=C:\Mina Dokument\Delphi\Phoenix\Phoenix\Editors\phxGuiEditor\Source\Frames\uPalette.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

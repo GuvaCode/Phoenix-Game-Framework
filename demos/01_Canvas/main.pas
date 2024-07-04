@@ -37,7 +37,7 @@ TGame = class(TPHXApplication)
 implementation
 
 uses
-  phxOpenGL_GLFW3,
+  phxOpenGL_SDL2,
   phxGraphics_Vampyre;
 
 constructor TGame.Create;
