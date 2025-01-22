@@ -175,7 +175,8 @@ uses
       List := FindAllFiles(Target, '*.lpi');
       List.Sort;
       for Result in List do
-        BuildProject(Result);
+        if not Result.Contains('backup') then
+          BuildProject(Result);
     finally
       List.Free;
     end;
